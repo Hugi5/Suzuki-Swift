@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA504015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1134
+</title>
+<servinfosub id = "AFRAP70AA504015001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1134: Batterie faible du dispositif de commande à distance 
+</emph>
+</ptxt>
+<ptxt>
+Signal de batterie du dispositif de commande à distance déchargée reçu du dispositif de commande à distance. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Batterie du dispositif de commande à distance 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Dispositif de commande à distance 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA504015002">
+<title>
+Procédure de confirmation de DTC 
+</title>
+<attention3>
+<ptxt>
+Préparer tous les dispositifs de commande à distance enregistrés avant de procéder à la procédure de confirmation de DTC. 
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Vérifier que le réglage &#34;Avertissement de batterie du dispositif de commande à distance&#34; est en mode &#34;actif&#34;. 
+<intxreftitleoff1 refid = "AFRAP70AA504009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Placer le dispositif de commande à distance dans la zone de fonctionnement de démarrage de moteur sans clé puis ouvrir et fermer la porte à plus de 2 reprises. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Répéter 6 fois l&#39;étape 3). 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Exécuter les étapes 3) et 4) avec tous les dispositifs de commande à distance enregistrés. 
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70AA504015003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70AA504015004">
+<testgroup id = "AFRAP70AA504015005">
+<title>
+Vérification du dispositif de commande à distance 
+</title>
+<test1>
+<ptxt>
+Préparer tous les dispositifs de commande à distance enregistrés. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34; en portant sur soi le dispositif de commande à distance. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier si le témoin de déchargement de pile de dispositif de commande à distance s&#39;allume sur le combiné d&#39;instruments. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Exécuter les étapes 2) à 4) pour tous les dispositifs de commande à distance. 
+</ptxt>
+</test1>
+<question>
+Le témoin de déchargement de pile de dispositif de commande à distance s&#39;allume-t-il sur le combiné d&#39;instruments? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. (signal de batterie du dispositif de commande à distance déchargée détecté dans le passé (le DTC n&#39;est pas effacé)). 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA504015006">
+<title>
+Vérification de la batterie du dispositif de commande à distance 
+</title>
+<test1>
+<ptxt>
+Remplacer la batterie du dispositif de commande à distance correspondant par un élément neuf. 
+<intxreftitleoff1 refid = "AFRAP70AA506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Effacer le DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Effectuer le point 
+<intxref refid = "AFRAP70AA504015002">Procédure de confirmation de DTC </intxref>
+, puis vérifier de nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC B1134 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le dispositif de commande à distance et vérifier à nouveau le DTC. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

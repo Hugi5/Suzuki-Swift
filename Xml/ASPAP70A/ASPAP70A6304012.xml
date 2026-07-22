@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70A6304012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1111 / C1113 / C1115 / C1116 
+</title>
+<servinfosub id = "ASPAP70A6304012001">
+<title>
+Condición de detección del DTC y área afectada 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.862in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1111: Avería en el circuito del sensor (principal) de par
+</emph>
+</ptxt>
+<ptxt>
+La tensión del circuito (principal) de la señal del sensor de par es superior al valor especificado (4,5 V) o inferior al valor especificado (0,5 V) durante un tiempo superior al especificado. 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensor de par (conjunto de la columna de dirección) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de P/S 
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1113: Diferencia de señal en el sensor de par (principal y secundario)
+</emph>
+</ptxt>
+<ptxt>
+La diferencia de tensión entre el circuito (principal) de la señal del sensor de par y el circuito (secundario) de la señal del sensor de par continúa siendo muy alta durante un tiempo superior al especificado. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1115: Avería en el circuito del sensor (secundario) de par
+</emph>
+</ptxt>
+<ptxt>
+La tensión del circuito (secundario) de la señal del sensor de par es superior al valor especificado (4,5 V) o inferior al valor especificado (0,5 V) durante un tiempo superior al especificado. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1116: Avería en el circuito de alimentación eléctrica (9 V) del sensor de par
+</emph>
+</ptxt>
+<ptxt>
+La tensión de la alimentación eléctrica de referencia (9 V) para el circuito del sensor de par es inferior al límite inferior especificado (7,0 V) durante un tiempo superior al especificado. 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70A6304012002">
+<title>
+Diagrama del circuito 
+</title>
+<figure>
+<graphic graphicname = "IAP70A630006.swf" width = "183.000mm" height = "83.767mm" ver = "01" gw = "372" gh = "221"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.277in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.487in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.468in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Conector &#34;E11&#34; del sensor de par (vista: [a]) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Alimentación eléctrica de referencia de 3 V para el circuito del sensor de par 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Sensor de par 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito (principal) de la señal del sensor de par 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A5: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Masa para el circuito del sensor de par 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Amplificador del sensor de par 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito (secundario) de la señal del sensor de par 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Módulo de control de P/S 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Regulador de 9 V 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Alimentación eléctrica de 9 V para el circuito del sensor de par 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+CPU
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPAP70A6304012003">
+<title>
+Procedimiento de confirmación del DTC 
+</title>
+<ptxt>
+Al finalizar la comprobación inicial, gire el volante de dirección en las dos direcciones (completamente cuando esté parado y girando durante la conducción). 
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70A6304012004">
+<title>
+Localización y reparación de averías 
+</title>
+<diag type = "test" id = "ASPAP70A6304012005">
+<testgroup id = "ASPAP70A6304012006">
+<question>
+¿Se ha realizado la &#34;Comprobación del sistema de P/S&#34;? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70A6304001">Comprobación del sistema de P/S</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70A6304012007">
+<title>
+Inspección del cable del circuito del sensor de par 
+</title>
+<test1>
+<ptxt>
+Compruebe visualmente si hay circuitos abiertos o cortocircuitos a masa en el circuito situado entre el conector y el sensor de par. 
+</ptxt>
+</test1>
+<question>
+¿Están en buenas condiciones? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el sensor de par (conjunto de la columna de dirección) 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70A6304012008">
+<title>
+Alimentación eléctrica de 9 V y alimentación eléctrica de referencia de 3 V para comprobar la tensión del circuito del sensor de par 
+</title>
+<test1>
+<ptxt>
+Con el encendido en &#34;ON&#34;, mida la tensión entre el terminal del conector del módulo de control de P/S (sensor de par) y la masa. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+El terminal &#34;E11-8&#34; del conector del módulo de control de P/S (sensor de par) y la conexión a masa tienen un valor de aproximadamente 9 V. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+El terminal &#34;E11-1&#34; del conector del módulo de control de P/S (sensor de par) y la conexión a masa tienen un valor de aproximadamente 3,3 V. 
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcta la tensión medida? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el módulo de control de P/S. 
+<intxreftitleoff1 refid = "ASPAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70A6304012009">
+<title>
+Inspección del circuito de masa de la señal del sensor de par 
+</title>
+<test1>
+<ptxt>
+Mida la tensión entre los terminales &#34;E11-1&#34; y &#34;E11-3&#34; del conector del módulo de control de P/S (sensor de par). 
+</ptxt>
+</test1>
+<question>
+¿Tiene la tensión un valor de aproximadamente 3,3 V? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el módulo de control de P/S. 
+<intxreftitleoff1 refid = "ASPAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70A6304012010">
+<title>
+Inspección del sensor de par 
+</title>
+<test1>
+<ptxt>
+Compruebe el sensor de par. 
+<intxreftitleoff1 refid = "ASPAP70A6306012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Está el circuito en buen estado? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el módulo de control de P/S y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el sensor de par (conjunto de la columna de dirección). 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

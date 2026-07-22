@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A1104073" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "AHUAP70A1104073001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<attention3>
+<ptxt>
+Ha az ECM újraprogramozása után P0602 DTC jelenik meg, lehetséges, hogy az ECM újraprogramozása nem fejeződött be hibátlanul.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.602in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.602in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0602: Vezérlőmodul programozási hiba
+</emph>
+</ptxt>
+<ptxt>
+Az ECM belső hibája vagy az ECM programozási hibája
+</ptxt>
+<ptxt>
+(1 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az ECM újraprogramozási hibája
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM tápáramköre és/vagy testáramköre
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104073002">
+<title>
+A rendszer leírása
+</title>
+<s1>
+<ptxt>
+Fordítsa a gyújtáskapcsolót 10 másodpercre ON helyzetbe.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104073003">
+<title>
+DTC megerősítési eljárás
+</title>
+<diag type = "test" id = "AHUAP70A1104073005">
+<testgroup id = "AHUAP70A1104073006">
+<title>
+DTC-újraellenőrzés
+</title>
+<test1>
+<ptxt>
+Törölje a DTC-t. 
+<intxreftitleoff1 refid = "AHUAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Kapcsolja ki a gyújtást.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Végezze el a DTC megerősítési eljárást, és ellenőrizze a DTC-ket.
+</ptxt>
+</test1>
+<question>
+Továbbra is észlelhető a P0602 DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ellenőrizze, hogy van-e időszakos hiba. 
+<intxreftitleoff1 refid = "AHUAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104073007">
+<title>
+ECM újraprogramozásának ellenőrzése
+</title>
+<question>
+Elvégezte az ECM újraprogramozását?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ismételje meg helyesen az ECM újraprogramozását.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104073008">
+<title>
+ECM táp- és testáramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze az ECM táp- és testáramkörét. 
+<intxreftitleoff1 refid = "AHUAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+A meglévő helyett tegyen be egy biztosan jó ECM-et, és ismételje meg az ellenőrzést. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

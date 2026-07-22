@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70AA501004" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Kulcsnélküli motorindítási funkció leírása
+</title>
+<servinfosub id = "AHUAP70AA501004001">
+<title>
+Gyújtási üzemmód kapcsolási funkció
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+	Ha a motorindító gombot megnyomja, amikor a távirányító az utastérben van, és a tengelykapcsoló pedált felengedi, a kulcsnélküli indítás vezérlőmodul összehasonlítja a távirányítótól kapott azonosító kódot a kulcsnélküli indítás vezérlőmodulban regisztrált azonosító kóddal. Ha az azonosító kódok egyeznek, a kulcsnélküli indítás vezérlőmodul vezérli az ACC, IG1 és IG2 relék be-/kikapcsolását a motorindító kapcsoló működésének megfelelően, amikor a gyújtási módot a következők szerint kapcsolja: “OFF” &#8594; “ACC” &#8594; “ON” (álló motor) &#8594; “OFF”. Ha a gyújtási üzemmód „ACC”, kigyullad az ACC visszajelző lámpa a műszeregységen. „ON” üzemmódban (álló motor mellett) az ON visszajelző lámpa kigyullad a műszeregységen.
+</ptxt>
+</item>
+<item>
+<ptxt>
+	Az alábbi táblázat bemutatja a gyújtási mód átmenetét a motorindító kapcsoló működtetésének megfelelően. Egyetlen nyíl jelzi az átmenetet, ha egyszer nyomja meg a motorindító kapcsolót.
+</ptxt>
+<attention3>
+<ptxt>
+Vészhelyzet kivételével ne állítsa le a motort haladás közben.
+</ptxt>
+</attention3>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70AA50001H.swf" width = "183.000mm" height = "74.686mm" ver = "01" gw = "388" gh = "195"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.383in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.294in"/>
+<colspec colnum = "4" colname = "4" colwidth = "3.158in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Mindig vált
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Csak akkor vált, ha a jármű áll.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Csak akkor vált, ha a távirányítótól érkező azonosító kód egyezik
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Haladás közben (akkor vált, amikor a motorindító kapcsolót hosszan lenyomja)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70AA501004002">
+<title>
+Motorindítási funkció
+</title>
+<ptxt>
+A motor elindításának módja a következő.
+</ptxt>
+<s1>
+<ptxt>
+A tengelykapcsoló benyomott állapotában a kulcsnélküli indítás vezérlőmodulja (1) a műszeregység PUSH visszajelző lámpájának aktiválására vonatkozó parancsjelet küld CAN kommunikáció útján a műszeregységhez (2).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ha a vezető megnyomja a motorindító kapcsolót (3), miközben a távirányító (4) nála van, a a motorindító kapcsoló jele a kulcsnélküli vezérlőmodulhoz továbbítódik.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+A kulcsnélküli indítás vezérlőmodul aktiválja a középső belső antennát (5), hogy parancsjelet küldjön a távirányítónak.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+A távirányító megkapja a parancsjelet és azonosító kódot küld a kulcsnélküli indítás vezérlőmodulnak a kulcsnélküli ajtónyitó rendszer vevőjén (6) keresztül.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+A kulcsnélküli indításvezérlő modul összehasonlítja a távirányító által elküldött azonosító kódot a kulcsnélküli indításvezérlő modulban regisztrált azonosító kóddal. Ha az azonosító kód egyezik, a kulcsnélküli indítás vezérlőmodul leadja a kormányzár kioldás parancsjelet a kormányzár egységnek (7). Ugyanakkor motorindítási jelet küld az ECM-nek (8) és bekapcsolja az indítómotor vezérlőrelét, aktiválva az indítómotort (9). Ez lehetővé teszi a kormányzár kioldását és a motor elindítását.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50004.swf" width = "183.000mm" height = "76.649mm" ver = "01" gw = "396" gh = "201"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.189in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jelfolyam &#34;1&#34;-től &#34;5&#34;-ig az 1) - 5) lépéshez kapcsolódóan.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "AHUAP70AA501004003">
+<title>
+Működési terület
+</title>
+<ptxt>
+A motor akkor indítható el, ha a távirányító a középső belső antenna észlelési területén (1) belül van.
+</ptxt>
+<attention3>
+<ptxt>
+Lehetséges, hogy a kulcsnélküli motorindítás funkció nem működik, ha a távirányító a műszerfalon, a tárolórekeszek egyikében, a vezető- vagy utasoldali lábtér környékén, az ajtózsebben, a csomagtérben stb. található.
+</ptxt>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50005.swf" width = "88.000mm" height = "56.543mm" ver = "01" gw = "230" gh = "144"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.630in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Középső belső antenna
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "AHUAP70AA501004004">
+<title>
+A motort nem lehet elindítani
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ha a távirányító nincs az utastérben, illetve csak nem regisztrált távirányító található az utastérben, a kulcsnélküli indítás vezérlőmodulja indításgátló visszajelző lámpa parancsjelet, PUSH visszajelző lámpa parancsjelet és figyelmeztető csipogó parancsjelet küld a műszeregységnek CAN kommunikáció segítségével, ezzel figyelmeztetve a vezetőt. Ugyanakkor kikapcsolja az ACC, IG1, IG 2 és indítómotor vezérlőreléket, letiltva a gyújtási mód átkapcsolását és az indítómotor aktiválását.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ha a távirányító eleme lemerült, vagy a rendszer meghibásodott, biztonsági megoldásként a motor elindítható a távirányító motorindítóra helyezésével. 
+<intxreftitleoff1 refid = "AHUAP70AA321003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

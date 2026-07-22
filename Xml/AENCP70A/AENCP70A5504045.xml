@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENCP70A5504045" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1825
+</title>
+<servinfosub id = "AENCP70A5504045001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.304in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.887in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P1825: TCM–Valve Body Assembly Correlation
+</emph>
+</ptxt>
+<ptxt>
+TCM and learning value in ROM disagree.
+</ptxt>
+<ptxt>
+(2 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+TCM learning value initialization has not been implemented.
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENCP70A5504045002">
+<title>
+System Description
+</title>
+<ptxt>
+When TCM data and learning value in ROM data do not match, TCM judges abnormality.
+</ptxt>
+<ptxt>
+DTC P1825 is detected if TCM learning value initialization has not been implemented:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+TCM is not replaced even though the CVT assembly is replaced.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Replacing used TCM.
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AENCP70A5504045003">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention3>
+<ptxt>
+Check that the following condition is satisfied in this procedure.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+11 V &#60; Battery voltage &#60; 15 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Set ignition ON for 10 sec. in P or N range.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition OFF, and leave ignition OFF for 10 sec.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Repeat Step 1).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENCP70A5504045004">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENCP70A5504045005">
+<testgroup id = "AENCP70A5504045006">
+<question>
+Was “CVT System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENCP70A5504001">CVT System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504045007">
+<title>
+DTC check
+</title>
+<question>
+Is there any DTC(s) other than P1825?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504045008">
+<title>
+DTC recheck
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENCP70A5506001">TCM Learning Value Initialization</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Clear DTC. 
+<intxreftitleoff1 refid = "AENCP70A5504012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform DTC confirmation procedure and check DTC.
+</ptxt>
+</test1>
+<question>
+Is DTC P1825 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Substitute a known-good TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENCP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

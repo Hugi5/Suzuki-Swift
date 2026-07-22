@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70A7224017" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1504-L
+</title>
+<servinfosub id = "AENAP70A7224017001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.859in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.336in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1504-L: Sunload Sensor and/or Its Circuit Malfunction
+</emph>
+</ptxt>
+<ptxt>
+Sunload sensor signal voltage is lower than specified value (0.1 V) for specified time continuously.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sunload sensor circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sunload sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70A7224017002">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "I9P60A723004.swf" width = "183.000mm" height = "60.727mm" ver = "02" gw = "330" gh = "156"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.574in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.706in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+HVAC control module connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+HVAC control module
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Sunload sensor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AENAP70A7224017003">
+<title>
+DTC Confirmation Procedure
+</title>
+<s1>
+<ptxt>
+Start engine and operate A/C system.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70A7224017004">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70A7224017005">
+<testgroup id = "AENAP70A7224017006">
+<title>
+Scan tool parameter check
+</title>
+<test1>
+<ptxt>
+Check “Sun Load” using “Data list” mode on SUZUKI scan tool. 
+<intxreftitleoff1 refid = "AENAP70A7224008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is sun load value over 2440 W/m<sup>2</sup> (Sunload sensor signal voltage is lower than specified value 0.1 V)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Intermittent trouble.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A7224017007">
+<title>
+Sunload sensor signal circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect sunload sensor connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check DTC. 
+<intxreftitleoff1 refid = "AENAP70A7224009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is DTC B1504-H detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace sunload sensor. 
+<intxreftitleoff1 refid = "AENAP70A7226031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A7224017008">
+<title>
+Sunload sensor signal circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect “G20” connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that voltage between the “PNK” wire terminal and ground is 0 – 1 V with ignition “ON”.
+</ptxt>
+</test1>
+<question>
+Is voltage as specified?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace HVAC control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace instrument panel harness.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

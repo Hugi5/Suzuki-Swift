@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENBP70A1104060" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "1">
+<title>
+DTC P2270 / P2271
+</title>
+<servinfosub id = "AENBP70A1104060001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<attention3>
+<ptxt>
+For type distinction of OBD system, refer to “Discrimination for OBD System” under 
+<intxref refid = "AENBP70A1101003">OBD System Description</intxref>
+.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.830in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.374in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2270: O2 Sensor Signal Biased / Stuck Lean (Sensor 2)
+</emph>
+</ptxt>
+<ptxt>
+HO2S-2 signal stays in lean state for 0.5 sec. with specified driving condition even if A/F is in enrichment control.
+</ptxt>
+<ptxt>
+(3 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+HO2S-2 and/or its circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Exhaust system
+</ptxt>
+</item>
+<item>
+<ptxt>
+Air intake system
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fuel system
+</ptxt>
+</item>
+<item>
+<ptxt>
+Engine compression
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ignition system
+</ptxt>
+</item>
+<item>
+<ptxt>
+Emission control system
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2271: O2 Sensor Signal Biased / Stuck Rich (Sensor 2)
+</emph>
+</ptxt>
+<ptxt>
+HO2S-2 signal stays in rich state for 5 sec. after warning up even if vehicle is under fuel cut condition.
+</ptxt>
+<ptxt>
+(Type A: 3 D/C detection logic)
+</ptxt>
+<ptxt>
+(Type B: 2 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENBP70A1104060002">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "IBP60B110011.swf" width = "183.000mm" height = "103.493mm" ver = "03" gw = "441" gh = "277"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.662in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.970in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.699in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-2 heater power supply circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-2 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-1 heater power supply circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-2 signal circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-1 signal circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-2 ground circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Shield wire
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-1 ground circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-2 heater drive circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-1 heater drive circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-1
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENBP70A1104060003">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention1>
+<ptxt>
+If you do not select a suitable route and take proper precautions when performing a road test, an accident can occur.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Select a level road with no traffic to minimize the risk of accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Perform the test extremely carefully.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Perform the road test using 2 persons, a driver and an assistant.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+Confirm that the following DTCs are not detected in this “DTC Confirmation Procedure”.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+HO2S-2 heater (P0036, P0037 and P0038)
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-2 (P0137, P0138 and P0140)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fuel trim system (P0171 and P0172)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cylinder misfire detected (P0300)
+</ptxt>
+</item>
+<item>
+<ptxt>
+CKP sensor (P0335)
+</ptxt>
+</item>
+<item>
+<ptxt>
+CMP sensor (P0340)
+</ptxt>
+</item>
+<item>
+<ptxt>
+EVAP canister purge valve (P0443, P0458 and P0459)
+</ptxt>
+</item>
+<item>
+<ptxt>
+System voltage (P0560, P0562 and P0563)
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Warm up engine to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Drive at vehicle 50 to 80 km/h (31 to 50 mile/h) constantly for 5 min. or more at 5th gear (M/T model) or D range (CVT model). (Keep throttle valve opening constantly in this step.)
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Release accelerator pedal, and keep vehicle coasting for 10 sec. in engine braking condition. (fuel cut)
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Stop vehicle, and run engine at idle for 5 min.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Check whether O2 sensor readiness / monitoring test has completed or not using scan tool. If O2 sensor readiness / monitoring test has not completed, check vehicle conditions (environmental) and repeat Steps 2) through 5).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENBP70A1104060004">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENBP70A1104060005">
+<testgroup id = "AENBP70A1104060006">
+<question>
+Was “Engine and Emission Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENBP70A1104001">Engine and Emission Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104060007">
+<title>
+DTC check
+</title>
+<question>
+Is there any DTC(s) other than P2270 and P2271?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104060008">
+<title>
+Exhaust system and air intake system check
+</title>
+<test1>
+<ptxt>
+Check exhaust system and air intake system for clog or leak.
+</ptxt>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104060009">
+<title>
+HO2S-2 signal and ground circuit check
+</title>
+<test1>
+<ptxt>
+Check the following point.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+“B2” and “B3” circuits: Refer to Step 3 under 
+<intxref refid = "AENBP70A1104026">DTC P0137 / P0138 / P0140</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104060010">
+<title>
+Engine mechanical systems check
+</title>
+<test1>
+<ptxt>
+Check the following points related to engine mechanical system.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Engine compression: 
+<intxreftitleoff1 refid = "AENBP70A1404001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fuel pressure: 
+<intxreftitleoff1 refid = "AENBP70A1704005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spark plug: 
+<intxreftitleoff1 refid = "AENBP70A1804002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective parts.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104060011">
+<title>
+Fuel system and emission control system check
+</title>
+<test1>
+<ptxt>
+Check the following points related to fuel system and emission control system.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+EVAP canister purge valve: 
+<intxreftitleoff1 refid = "AENBP70A1206002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+MAF sensor: 
+<intxreftitleoff1 refid = "AENBP70A1306022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+PCV valve: 
+<intxreftitleoff1 refid = "AENBP70A1206006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fuel injector: 
+<intxreftitleoff1 refid = "AENBP70A1706009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fuel injector circuit: 
+<intxreftitleoff1 refid = "AENBP70A1704003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective parts.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104060012">
+<title>
+Recheck DTC
+</title>
+<test1>
+<ptxt>
+Replace HO2S-2. 
+<intxreftitleoff1 refid = "AENBP70A1306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform “DTC Confirmation Procedure” and check DTC.
+</ptxt>
+</test1>
+<question>
+Is DTC P2270 or P2271 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

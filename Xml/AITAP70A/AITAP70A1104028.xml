@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0137 / P0138 / P0140
+</title>
+<servinfosub id = "AITAP70A1104028001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.842in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0137: Tensione circuito sonda Lambda bassa
+</emph>
+</ptxt>
+<ptxt>
+Quando la tensione del segnale HO2S è inferiore a 0,06 V, la tensione del circuito segnale HO2S non varia per 5 sec. applicando tensione al circuito medesimo.
+</ptxt>
+<ptxt>
+(Logica di rilevamento a 3 D/C)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sonda HO2S e/o il relativo circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riscaldatore HO2S e/o il relativo circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Impianto di scarico
+</ptxt>
+</item>
+<item>
+<ptxt>
+Impianto d&#39;aspirazione
+</ptxt>
+</item>
+<item>
+<ptxt>
+Impianto di alimentazione
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0138: Tensione circuito sonda Lambda alta
+</emph>
+</ptxt>
+<ptxt>
+La tensione di uscita del circuito segnale sonda Lambda è superiore a 1,1 V per 5 sec.
+</ptxt>
+<ptxt>
+(Logica di rilevamento a 3 D/C)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0140: Circuito sonda Lambda inattivo
+</emph>
+</ptxt>
+<ptxt>
+Viene soddisfatta una delle seguenti condizioni: 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Il circuito segnale HO2S è aperto.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La resistenza interna della sonda Lambda è superiore a quella specificata anche se la temperatura dei gas di scarico stimata è superiore a quella di specifica.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(Logica di rilevamento a 3 D/C)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A1104028002">
+<title>
+Schema del circuito
+</title>
+<figure>
+<graphic graphicname = "I9P60A111012.swf" width = "183.000mm" height = "121.825mm" ver = "02" gw = "440" gh = "329"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.266in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.088in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.824in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Connettore ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A6:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito di comando riscaldatore sensore A/F
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Resistenza di regolazione sensore A/F
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito di alimentazione riscaldatore sensore A/F
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito di alimentazione riscaldatore HO2S
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Connettore del sensore A/F
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito del segnale del sensore A/F (IA)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito segnale HO2S
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Cavo schermato
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito del segnale del sensore A/F (IP)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito di massa HO2S
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito del segnale del sensore A/F (VM)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito di comando riscaldatore HO2S
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Unità di elaborazione segnale A/F
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A5:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito del segnale del sensore A/F (UN)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Sensore A/F
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Sonda Lambda HO2S
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AITAP70A1104028003">
+<title>
+Procedura di conferma DTC
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Effettuare la prova su strada in una zona esente da traffico, onde evitare incidenti.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La prova su strada va effettuata su una strada pianeggiante e con a bordo due persone, una che guida e l’altra che esegue i controlli.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+Verificare che la &#34;Procedura di conferma DTC&#34; venga effettuata in presenza della condizione indicata di seguito.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Tensione batteria &#62; 10,7 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Portare il motore alla temperatura di esercizio.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Guidare il veicolo ad una velocità compresa tra 50 e 80 km/h (31 e 50 miglia/h) costantemente per almeno 20 min.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Fermare il veicolo e tenere il motore al regime minimo per 5 minuti.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A1104028004">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A1104028005">
+<testgroup id = "AITAP70A1104028006">
+<question>
+È stata eseguita la procedura &#34;Verifica del sistema di controllo del motore e delle emissioni&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104001">Verifica del sistema di controllo del motore e delle emissioni</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104028007">
+<title>
+Controllo presenza DTC
+</title>
+<question>
+Sono presenti DTC diversi da P0137, P0138 e P0140?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare alla ricerca guasti relativa ai DTC corrispondenti.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104028008">
+<title>
+Controllo dei circuiti segnale e massa della sonda HO2S
+</title>
+<test1>
+<ptxt>
+Con accensione su &#34;OFF&#34;, scollegare i connettori &#34;C01&#34; e &#34;E01&#34; della ECM e il connettore della sonda Lambda riscaldata.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verificare che il collegamento ai connettori &#34;C01&#34; e &#34;E01&#34; e al connettore della sonda Lambda riscaldata ECT sia corretto.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono in ordine, controllare i seguenti punti:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+resistenza dei circuiti &#34;B2&#34; e &#34;B3&#34;: meno di 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra ciascun circuito &#34;B2&#34; e &#34;B3&#34; e la massa: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il terminale del circuito &#34;B2&#34; e l&#39;altro terminale del connettore sonda lambda riscaldata: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il terminale del circuito &#34;B3&#34; e l&#39;altro terminale del connettore sonda lambda riscaldata: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+tensione dei circuiti &#34;B2&#34; e &#34;B3&#34;: 0 – 1 V (con accensione su &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire il cablaggio difettoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104028009">
+<title>
+Controllo dell&#39;impianto di scarico e dell&#39;impianto di aspirazione aria
+</title>
+<test1>
+<ptxt>
+Controllare se l&#39;impianto di scarico e l&#39;impianto d&#39;aspirazione aria sono occlusi o perdono.
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104028010">
+<title>
+Controllo del circuito riscaldatore HO2S
+</title>
+<test1>
+<ptxt>
+Controllare i circuiti riscaldatore sonda HO2S facendo riferimento ai passi da 2 a 3 in 
+<intxref refid = "AITAP70A1104016">DTC P0036 / P0037 / P0038</intxref>
+.
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104028011">
+<title>
+Controllo degli iniettori carburante e del relativo circuito
+</title>
+<test1>
+<ptxt>
+Controllare il circuito degli iniettori carburante. 
+<intxreftitleoff1 refid = "AITAP70A1704003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare gli iniettori carburante. 
+<intxreftitleoff1 refid = "AITAP70A1706009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Iniettore o relativo circuito difettosi.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104028012">
+<title>
+Ricontrollo presenza di DTC
+</title>
+<test1>
+<ptxt>
+Sostituire la sonda Lambda. 
+<intxreftitleoff1 refid = "AITAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Eseguire la procedura di conferma DTC e controllare la presenza di DTC.
+</ptxt>
+</test1>
+<question>
+È ancora presente il DTC P0137, P0138 o P0140?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la ECM e ripetere il controllo della presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

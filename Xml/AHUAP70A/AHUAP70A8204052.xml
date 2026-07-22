@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A8204052" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+SDM tápáramkörének és testáramkörének ellenőrzése
+</title>
+<servinfosub id = "AHUAP70A8204052001">
+<title>
+Kapcsolási rajz
+</title>
+<figure>
+<graphic graphicname = "I9P60A820108.swf" width = "183.000mm" height = "57.720mm" ver = "02" gw = "300" gh = "147"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.778in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.264in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.229in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+„L04” csatlakozó (nézet: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+“A/B” biztosíték
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Padlóbeli vezetékköteg
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Gyújtás áramellátása
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Elosztódoboz
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70A8204052002">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A8204052003">
+<testgroup id = "AHUAP70A8204052004">
+<title>
+Akkumulátorfeszültség ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze az akkumulátorfeszültséget.
+</ptxt>
+</test1>
+<question>
+A feszültség 9 – 16 V körül van?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Ellenőrizze és szükség esetén javítsa meg a töltőrendszert. 
+<intxreftitleoff1 refid = "AHUAP70A1A04003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204052005">
+<title>
+SDM csatlakozásának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze, hogy megfelelő-e a csatlakozás az SDM csatlakozóhoz.
+</ptxt>
+</test1>
+<question>
+Szilárdan vannak rögzítve?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<paragroup>
+<ptxt>
+Időszakos hiba. Ellenőrizze, hogy van-e időszakos hiba. 
+<intxreftitleoff1 refid = "AHUAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Ha megfelelő, helyettesítse egy biztosan jó SDM-et, és ismételje meg a csatlakoztatást. 
+<intxreftitleoff1 refid = "AHUAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204052006">
+<title>
+A biztosíték ellenőrzése
+</title>
+<test1>
+<ptxt>
+Győződjön meg arról, hogy a gyújtás „OFF” állásban található.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze az “A/B” biztosítékot.
+</ptxt>
+</test1>
+<question>
+Az “A/B” biztosíték állapota?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a padlóbeli vezetékköteget, azután cserélje ki az „A/B” biztosítékot.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204052007">
+<title>
+Tápáramkör ellenőrzése
+</title>
+<test1>
+<ptxt>
+Győződjön meg arról, hogy a gyújtás „OFF” állásban található.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Húzza ki az “L04” csatlakozót.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mérje meg a “L04-18” érintkező és a testelés közötti feszültséget.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L8B095">
+<s-part>
+(A)
+</s-part>
+<s-number num = "09932-76010">
+09932-76010
+</s-number>
+</servicetoolitem>
+</servicetool>
+<testfigure>
+<graphic graphicname = "IAW101820157.swf" width = "90.000mm" height = "34.401mm" ver = "01" gw = "194" gh = "81"/>
+</testfigure>
+</test1>
+<question>
+A feszültség 10 – 14 V körül van?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa az 5. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a padlóbeli vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204052008">
+<title>
+Testáramkör ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mérje meg az ellenállást az “L04-23” érintkező és a testelés között.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L8B096">
+<s-part>
+(A)
+</s-part>
+<s-number num = "09932-76010">
+09932-76010
+</s-number>
+</servicetoolitem>
+</servicetool>
+<testfigure>
+<graphic graphicname = "IAW101820158.swf" width = "90.000mm" height = "34.895mm" ver = "01" gw = "193" gh = "82"/>
+</testfigure>
+</test1>
+<question>
+Az ellenállás 1 &#937; vagy kevesebb?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Az SDM tápáramkörének és testáramkörének állapota megfelelő.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a padlóbeli vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

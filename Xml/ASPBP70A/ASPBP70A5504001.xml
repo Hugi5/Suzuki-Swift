@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A5504001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Inspección del sistema de la CVT
+</title>
+<diag type = "test" id = "ASPBP70A5504001001">
+<testgroup id = "ASPBP70A5504001002">
+<title>
+Análisis de la queja del cliente
+</title>
+<test1>
+<ptxt>
+Realice el análisis de quejas del cliente. 
+<intxreftitleoff1 refid = "ASPBP70A5504001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se ha realizado el análisis de la queja del cliente?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Realice el análisis de quejas del cliente.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001003">
+<title>
+Inspección, registro y borrado de códigos DTC / datos de imagen fija
+</title>
+<test1>
+<ptxt>
+Verifique el DTC (y los DTC pendientes). 
+<intxreftitleoff1 refid = "ASPBP70A5504001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Aparece algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Imprima el DTC y los datos de imagen fija o bien anótelos por escrito y, a continuación, bórrelos; para ello, consulte 
+<intxref refid = "ASPBP70A5504012">Borrado de DTC</intxref>
+. A continuación vaya al paso 3.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001004">
+<title>
+Inspección visual
+</title>
+<test1>
+<ptxt>
+Efectúe una inspección visual. 
+<intxreftitleoff1 refid = "ASPBP70A5504001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Existen anomalías?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Repare o sustituya la pieza defectuosa. A continuación vaya al paso 11.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001005">
+<title>
+Inspección visual
+</title>
+<test1>
+<ptxt>
+Efectúe una inspección visual. 
+<intxreftitleoff1 refid = "ASPBP70A5504001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Existen anomalías?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Repare o sustituya la pieza defectuosa. A continuación vaya al paso 11.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001006">
+<title>
+Confirmación de síntomas de avería
+</title>
+<test1>
+<ptxt>
+Confirme los síntomas de avería. 
+<intxreftitleoff1 refid = "ASPBP70A5504001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se ha identificado algún síntoma de avería?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001007">
+<title>
+Repetición de la comprobación y registro de DTC/datos de imagen fija
+</title>
+<test1>
+<ptxt>
+Vuelva a comprobar los DTC (actuales y pendientes) así como los datos de imagen fija. 
+<intxreftitleoff1 refid = "ASPBP70A5504001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Aparece algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001008">
+<title>
+Repetición de la comprobación y registro de DTC/datos de imagen fija
+</title>
+<test1>
+<ptxt>
+Vuelva a comprobar los DTC y los datos de imagen fija. 
+<intxreftitleoff1 refid = "ASPBP70A5504001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Aparece algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 10.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001009">
+<title>
+Comprobación básica y diagnóstico de síntomas de la CVT
+</title>
+<test1>
+<ptxt>
+Lleve a cabo la inspección básica y el diagnóstico de síntomas de la CVT. 
+<intxreftitleoff1 refid = "ASPBP70A5504001020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se han realizado todas las comprobaciones y reparaciones pertinentes?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Inspeccione y repare las piezas defectuosas. A continuación vaya al paso 11.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001010">
+<title>
+Localización y reparación de averías para el DTC
+</title>
+<test1>
+<ptxt>
+Realice la localización y reparación de averías del DTC correspondiente. 
+<intxreftitleoff1 refid = "ASPBP70A5504001021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se han realizado todas las comprobaciones y reparaciones pertinentes?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Inspeccione y repare las piezas defectuosas. A continuación vaya al paso 11.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001011">
+<title>
+Inspección de problemas intermitentes
+</title>
+<test1>
+<ptxt>
+Compruebe si hay problemas intermitentes. 
+<intxreftitleoff1 refid = "ASPBP70A5504001022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Existen anomalías?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Repare o sustituya las piezas defectuosas. A continuación vaya al paso 11.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504001012">
+<title>
+Prueba de confirmación final
+</title>
+<test1>
+<ptxt>
+Efectúe la prueba de confirmación final. 
+<intxreftitleoff1 refid = "ASPBP70A5504001025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Hay algún síntoma de problema, DTC o anomalía?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "ASPBP70A5504001013" page = "1">
+<title>
+Paso 1. Análisis de la queja del cliente
+</title>
+<ptxt>
+Registre los detalles del problema (fallos o quejas) y el modo en que éste surgió, según la descripción del cliente.
+</ptxt>
+<ptxt>
+Para este propósito, el uso de un formulario de inspección como el mostrado en la tabla siguiente facilitará la recopilación de información hasta el punto requerido para que sea posible realizar correctamente el análisis y el diagnóstico.
+</ptxt>
+<attention3>
+<ptxt>
+El formulario es estándar. Debe modificarse de acuerdo con las características de cada mercado.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Formulario de análisis de la queja del cliente (ejemplo)
+</title>
+<graphic graphicname = "IBP70A550099S.swf" width = "183.000mm" height = "161.594mm" ver = "02" gw = "501" gh = "442"/>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001014" page = "2">
+<title>
+Paso 2. Inspección, registro y borrado de DTC / datos de imagen fija
+</title>
+<ptxt>
+En primer lugar, verifique los DTC (actuales y pendientes). 
+<intxreftitleoff1 refid = "ASPBP70A5504011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Si se indica que hay algún DTC, imprímalo junto con los datos de imagen fija o bien anótelos y luego bórrelos. 
+<intxreftitleoff1 refid = "ASPBP70A5504012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001015" page = "2">
+<title>
+Pasos 3 y 4. Inspección visual
+</title>
+<ptxt>
+Como paso preliminar, asegúrese de realizar una inspección visual de los elementos relacionados con el funcionamiento adecuado del motor y la CVT. 
+<intxreftitleoff1 refid = "ASPBP70A5504002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001016" page = "2">
+<title>
+Paso 5. Confirmación de síntomas de avería
+</title>
+<topic id = "ASPBP70A5504001017">
+<title>
+En el supuesto de que no aparezca ningún DTC en el paso 2: 
+</title>
+<ptxt>
+Basándose en la información obtenida en 
+<intxref refid = "ASPBP70A5504001013">Paso 1. Análisis de la queja del cliente</intxref>
+ y 
+<intxref refid = "ASPBP70A5504001014">Paso 2. Inspección, registro y borrado de DTC / datos de imagen fija</intxref>
+, confirme los síntomas de la avería.
+</ptxt>
+</topic>
+<topic id = "ASPBP70A5504001018">
+<title>
+En el supuesto de que aparezca algún DTC en el paso 2: 
+</title>
+<ptxt>
+Vuelva a comprobar el DTC de acuerdo con el &#34;Procedimiento de confirmación de DTC&#34; descrito en cada proceso de localización y reparación de averías del DTC.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001019" page = "2">
+<title>
+Pasos 6 y 7. Repetición de la comprobación y el registro del DTC y los datos de imagen fija
+</title>
+<ptxt>
+Consulte 
+<intxref refid = "ASPBP70A5504011">Comprobación del DTC</intxref>
+ para revisar el procedimiento de comprobación.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001020" page = "2">
+<title>
+Paso 8. Inspección básica y diagnóstico de síntomas de la CVT
+</title>
+<s1>
+<ptxt>
+Lleve a cabo la inspección básica de la CVT. 
+<intxreftitleoff1 refid = "ASPBP70A5504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+En caso de que no se encuentre ninguna pieza defectuosa en el procedimiento &#34;Inspección básica de la CVT&#34;, realice 
+<intxref refid = "ASPBP70A5504009">Diagnóstico de síntomas de la CVT</intxref>
+ en función de los síntomas encontrados durante la inspección del vehículo en los elementos siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Análisis de la queja del cliente
+</ptxt>
+</item>
+<item>
+<ptxt>
+Confirmación de síntomas de avería
+</ptxt>
+</item>
+</list1>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001021" page = "2">
+<title>
+Paso 9. Localización y reparación de averías en el DTC
+</title>
+<ptxt>
+Realice la localización y reparación de averías del DTC correspondiente, y repare o sustituya las piezas defectuosas.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001022" page = "2">
+<title>
+Paso 10. Comprobación de problemas intermitentes
+</title>
+<topic id = "ASPBP70A5504001023">
+<title>
+En el supuesto de que no aparezca ningún DTC en el paso 2: 
+</title>
+<ptxt>
+Compruebe si hay problemas intermitentes 
+<intxreftitleoff1 refid = "ASPBP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</topic>
+<topic id = "ASPBP70A5504001024">
+<title>
+En el supuesto de que aparezca algún DTC en el paso 2: 
+</title>
+<ptxt>
+Compruebe las piezas relacionadas con los DTC detectados (por ejemplo, mazo de cables, conector, etc.). 
+<intxreftitleoff1 refid = "ASPBP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504001025" page = "2">
+<title>
+Paso 11. Prueba de confirmación final
+</title>
+<ptxt>
+Compruebe que el síntoma del problema haya desaparecido y que el vehículo no presente ningún comportamiento anómalo. Si las piezas reparadas están relacionadas con el DTC, borre el DTC una vez, realice el procedimiento de confirmación del DTC y confirme que no se indica ningún DTC.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

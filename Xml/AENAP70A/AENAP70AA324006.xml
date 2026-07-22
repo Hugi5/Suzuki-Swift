@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70AA324006" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1610
+</title>
+<servinfosub id = "AENAP70AA324006001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.281in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1610: Immobilizer ID Unregistered
+</emph>
+</ptxt>
+<ptxt>
+Immobilizer ID code is not registered.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECM ID code is not registered in keyless start control module
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN communication circuit / connector
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control module connected with CAN communication line
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70AA324006002">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70AA324006003">
+<testgroup id = "AENAP70AA324006005">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Check DTC in keyless start control module. 
+<intxreftitleoff1 refid = "AENAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is DTC B1173, B1175 or B1176 detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70AA324006004">
+<title>
+ECM registration
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70AA326003">ECM Registration:Keyless Push Start Model</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is DTC P1610 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End. (ECM was not registered)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70AA324006006">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Check DTC related to CAN communication.
+</ptxt>
+</test1>
+<question>
+Is there any CAN-DTC(s) detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

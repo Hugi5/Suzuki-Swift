@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A1104059" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2228 / P2229
+</title>
+<servinfosub id = "AHUAP70A1104059001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.143in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.027in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2228: „A” légkörinyomás-érzékelő áramköri feszültsége alacsony
+</emph>
+</ptxt>
+<ptxt>
+A légkörinyomás-érzékelő jeláramkörének kimenő feszültsége 5 másodpercig kisebb mint 0,2 V.
+</ptxt>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Légkörinyomás-érzékelő az ECM-ben
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2229: „A” légkörinyomás-érzékelő áramköri feszültsége magas
+</emph>
+</ptxt>
+<ptxt>
+A légkörinyomás-érzékelő jeláramkörének kimenő feszültsége 5 másodpercig nagyobb mint 4,8 V.
+</ptxt>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104059002">
+<title>
+DTC megerősítési eljárás
+</title>
+<s1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba 10 másodpercre.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104059003">
+<title>
+DTC-hibaelhárítás
+</title>
+<diag type = "test" id = "AHUAP70A1104059004">
+<testgroup id = "AHUAP70A1104059005">
+<question>
+Megtörtént “A motorvezérlő és károsanyagkibocsátás-csökkentő rendszer ellenőrzése”?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A1104001">Motorvezérlő és károsanyagkibocsátás-csökkentő rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104059006">
+<title>
+ECM táp- és testáramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze az ECM táp- és testáramkörét. 
+<intxreftitleoff1 refid = "AHUAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Cserélje ki az ECM-et, és ismételje meg a DTC-k ellenőrzését. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Javítsa meg az ECM táp- és testáramkörét.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

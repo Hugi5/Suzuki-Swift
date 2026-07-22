@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A1104009" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Základná kontrola motora
+</title>
+<ptxt>
+Táto kontrola je veľmi dôležitá pre riešenie problémov, keď riadiaca jednotka motora nezistila žiaden DTC a pri 
+<intxref refid = "ASLAP70A1104008">Vizuálna prehliadka</intxref>
+ sa nenašla žiadna odchýlka.
+</ptxt>
+<ptxt>
+Dôsledne dodržiavajte postupovú schému.
+</ptxt>
+<diag type = "test" id = "ASLAP70A1104009001">
+<testgroup id = "ASLAP70A1104009002">
+<question>
+Bola vykonaná &#34;Kontrola systému motora a riadenia emisií&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104001">Kontrola systému motora a riadenia emisií</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009003">
+<title>
+Skontrolujte napätie akumulátora
+</title>
+<question>
+Je jeho hodnota 11 V alebo vyššia?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Nabite alebo vymeňte akumulátor.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009004">
+<question>
+Je motor naštartovaný?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1904001">Diagnostika symptómov štartovania</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009005">
+<question>
+Štartuje motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009006">
+<title>
+Kontrola voľnobežných otáčok
+</title>
+<test1>
+<ptxt>
+Skontrolujte voľnobežné otáčky motora. 
+<intxreftitleoff1 refid = "ASLAP70A1106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104010">Diagnostika príznakov motora</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009007">
+<title>
+Kontrola systému zapaľovania
+</title>
+<test1>
+<ptxt>
+Skontrolujte systém zapaľovania. 
+<intxreftitleoff1 refid = "ASLAP70A1804001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104010">Diagnostika príznakov motora</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte chybné časti.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009008">
+<title>
+Kontrola činnosti systému imobilizéra
+</title>
+<test1>
+<ptxt>
+Skontrolujte činnosť systému imobilizéra.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model so spínačom zapaľovania: 
+<intxreftitleoff1 refid = "ASLAP70AA314001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model s bezkľúčovým štartovaním: 
+<intxreftitleoff1 refid = "ASLAP70AA324001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Porucha riaidaceho systému imobilizéra.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009009">
+<title>
+Kontrola palivového systému
+</title>
+<test1>
+<ptxt>
+Kontrola palivového systému. 
+<intxreftitleoff1 refid = "ASLAP70A1706014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104010">Diagnostika príznakov motora</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte chybné časti.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104009010">
+<title>
+Kontrola obvodu vstrekovacieho ventilu paliva
+</title>
+<test1>
+<ptxt>
+Skontrolujte vstrekovací ventil paliva podľa časti 
+<intxref refid = "ASLAP70A1704003">Kontrola obvodu vstrekovacieho ventilu</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104010">Diagnostika príznakov motora</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1704003">Kontrola obvodu vstrekovacieho ventilu</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104059" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2228 / P2229
+</title>
+<servinfosub id = "AGEAP70A1104059001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.143in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.027in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2228: Niedrige Spannung im Umgebungsdrucksensor-Schaltkreis &#34;A&#34; 
+</emph>
+</ptxt>
+<ptxt>
+Signalspannung des Luftdrucksensors liegt für 5 Sek. unter 0,2 V.
+</ptxt>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Umgebungsdrucksensor im ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2229: Hohe Spannung im Umgebungsdrucksensor-Schaltkreis &#34;A&#34; 
+</emph>
+</ptxt>
+<ptxt>
+Signalspannung des Luftdrucksensors liegt für 5 Sek. über 4,8 V.
+</ptxt>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104059002">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<s1>
+<ptxt>
+Die Zündung 10 Sek. lang auf &#34;ON&#34; stellen.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104059003">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A1104059004">
+<testgroup id = "AGEAP70A1104059005">
+<question>
+Wurde die &#34;Überprüfung des Motor- und Abgassteuerungssystems&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104001">Überprüfung des Motor- und Abgassteuerungssystems</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104059006">
+<title>
+Überprüfung von ECM-Stromversorgungs- und ECM-Massekreis
+</title>
+<test1>
+<ptxt>
+Stromversorgungs- und Masseschaltkreis des ECM überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+ECM-Stromversorgungs- und Massekreis reparieren.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

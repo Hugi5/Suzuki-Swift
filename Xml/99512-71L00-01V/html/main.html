@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/prototype.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/model.js"></script>
+<script type="text/javascript" src="../js/diagram.js"></script>
+<script type="text/javascript" src="../js/event.js"></script>
+<script type="text/javascript" src="../js/drag.js"></script>
+<script type="text/javascript" src="../js/head.js"></script>
+<script type="text/javascript" src="../js/list.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+</head>
+<body id="root" onload="Load();" onresize="Resize();" onclose="Close();" onunload="Unload();">
+	<div id="divHead">
+		<div id="divLeftNavi">
+			<select id="cmbPage" onchange="headSelectPage('manual');"></select>
+			<input type="button" id="btnListSwitch" value="<" onclick="headListSwitch()" />
+		</div>
+		<div id="divSvgNavi">
+			<img id="fit"    src="../img/icon-arrow2.gif"    onclick="headSize('fitheight')" />
+			<img id="d_zIn"  src="../img/icon-zoomin.gif"    onclick="headSize('in')" />
+			<img id="d_zOut" src="../img/icon-zoomout.gif"   onclick="headSize('out')" />
+			<img id="d_fit"  src="../img/icon-arrow4.gif"    onclick="headSize('fit')" />
+			<img id="hand"   src="../img/icon-closehand.gif" />
+		</div>
+		<div id="divPrintNavi">
+			<!-- <img id="preview" src="../img/icon-preview.gif" title="Print preview" onclick="headPreview();" /> ^-->
+			<!-- <img             src="../img/icon-print.gif"   title="Print"         onclick="headPrint();" />  -->
+			<img id="print" src="../img/icon-print.gif" onclick="headPreview();" />
+		</div>
+		<div id="divRightNavi">
+			<img id="search"   src="../img/icon-search.gif"   onclick="OpenSearch();" />
+			<img id="glossary" src="../img/icon-glossary.gif" onclick="OpenGlossary();" />
+			<img id="help"     src="../img/icon_help.gif"     onclick="window.open('../pdf/' + CUR_LANGUAGE + '/HowToOperate.pdf','','toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes,status=yes');" />
+			<img id="top"      src="../img/icon-home.gif"     onclick="headHome();" />
+		</div>
+	</div>
+	<div id="divList"></div>
+	<div id="divDiagramTop"></div>
+	<div id="divDiagramBottom"></div>
+	<div id="divToolTip"></div>
+</body>
+</html>

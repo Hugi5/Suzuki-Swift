@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70AA104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Überprüfung des Tempomatsystems
+</title>
+<diag type = "test" id = "AGEAP70AA104001001">
+<testgroup id = "AGEAP70AA104001002">
+<test1>
+<ptxt>
+Einzelheiten der Störung notieren. Ein Fragebogen hilft Ihnen beim Sammeln der Informationen für eine einwandfreie Analyse und Diagnose.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Überprüfen, ob das in 
+<intxref refid = "AGEAP70AA104002">Diagnosefragebogen (Beispiel)</intxref>
+ beschriebene Problem tatsächlich im Fahrzeug auftritt. (Diesen Schritt möglichst im Beisein des Kunden ausführen.)
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+DTCs für das ECM und das ESP<sup>&#174;</sup>-Steuermodul abrufen und aufzeichnen.
+</ptxt>
+</test1>
+<question>
+Liegen DTCs vor, die keinen Bezug zum Geschwindigkeitsregelsystem haben (andere als DTC P0504, P0575 und P0649)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA104001003">
+<question>
+Liegen DTCs für das Tempomatsystem vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Fehlersuche für betreffenden DTC, und danach weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA104001004">
+<test1>
+<ptxt>
+Grundkomponenten überprüfen und reparieren. Siehe dazu 
+<intxref refid = "AGEAP70AA104007">Symptomdiagnose des Tempomatsystems</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Defekte(s) Bauteil(e) reparieren oder auswechseln, dann weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA104001005">
+<test1>
+<ptxt>
+Auf zeitweilige Störungen überprüfen. Siehe dazu 
+<intxref refid = "AGEAP70A0006002">Überprüfung auf Wackelkontakt und schlechte Verbindungen</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Defekte(s) Bauteil(e) reparieren oder auswechseln, dann weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA104001006">
+<test1>
+<ptxt>
+Sicherstellen, dass die Störung behoben ist und das Geschwindigkeitsregelsystem einwandfrei funktioniert. Falls die erfolgte Reparatur mit einem DTC in Beziehung stand, den betreffenden DTC einmal löschen und sicherstellen, dass kein DTC mehr angezeigt wird.
+</ptxt>
+</test1>
+<question>
+Treten irgendwelche Störungssymptome, DTCs oder fehlerhaften Zustände auf?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit 2) von Schritt 1, und danach Fehlersuche erneut durchführen.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104030" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0722
+</title>
+<servinfosub id = "AENAP70B5104030001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.780in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.424in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0722: Output Speed Sensor Circuit No Signal
+</emph>
+</ptxt>
+<ptxt>
+Output shaft speed signal is not input even if input shaft speed signal is input.
+</ptxt>
+<ptxt>
+(1 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Output shaft speed sensor and/or its circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor gear (drive gear)
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70B5104030002">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "I9P60A510009.swf" width = "183.000mm" height = "59.296mm" ver = "02" gw = "312" gh = "152"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.480in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.165in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.614in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TCM connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Output shaft speed sensor signal circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TCM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Output shaft speed sensor power supply circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Output shaft speed sensor ground circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Output shaft speed sensor
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENAP70B5104030003">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Perform road test in a place where there is no traffic to prevent an accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Road test should be performed with two persons, a driver and a tester, on a level road.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<s1>
+<ptxt>
+Warm up engine to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Drive vehicle at more than 50 km/h (31 mile/h) in “D” range for 3 min.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70B5104030004">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70B5104030005">
+<testgroup id = "AENAP70B5104030006">
+<question>
+Was “A/T Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B5104001">A/T Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104030007">
+<title>
+Output shaft speed sensor power supply circuit check
+</title>
+<test1>
+<ptxt>
+Set ignition “OFF” and disconnect connector from output shaft speed sensor.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connection to output shaft speed sensor connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, set ignition “ON”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that voltage between output shaft speed sensor power supply circuit (A1) and ground is battery voltage.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104030008">
+<title>
+Output shaft speed sensor ground circuit check
+</title>
+<test1>
+<ptxt>
+Check that voltage between output shaft speed sensor power supply circuit (A1) and ground circuit (A3) is battery voltage.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104030009">
+<title>
+Output shaft speed sensor signal circuit check
+</title>
+<test1>
+<ptxt>
+Set ignition “OFF” and disconnect connectors from TCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connection to TCM connectors.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check that output shaft speed sensor signal circuit (A2) is as follows.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Wiring harness resistance of output shaft speed sensor signal circuit is less than 1 Ω.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Insulation resistance between output shaft speed sensor signal circuit and ground is infinity.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Insulation resistance of wire harness is infinity between output shaft speed sensor signal circuit terminal and each terminal at output shaft speed sensor connector.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuit voltage of output shaft speed sensor signal circuit is approx. 0 V with ignition “ON”.
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104030010">
+<title>
+Output shaft speed sensor check
+</title>
+<test1>
+<ptxt>
+Check output shaft speed sensor. 
+<intxreftitleoff1 refid = "AENAP70B5106019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace output shaft speed sensor. 
+<intxreftitleoff1 refid = "AENAP70B5106018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104030011">
+<title>
+Output shaft speed sensor gears visual check
+</title>
+<test1>
+<ptxt>
+Check output shaft speed sensor gears visually as follows.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+No damage in drive gear on differential case
+</ptxt>
+</item>
+<item>
+<ptxt>
+No damage in driven gear in output shaft speed sensor
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is result satisfactory?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Substitute a known-good TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70B5106030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace drive gear and/or output shaft speed sensor.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

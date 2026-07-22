@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70AA104009" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0649
+</title>
+<servinfosub id = "AHRAP70AA104009001">
+<title>
+Detektirano DTC stanje i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.981in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.227in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano DTC stanje
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+DTC P0649: Upravljački strujni krug svjetla kontrole brzine
+</emph>
+</ptxt>
+<ptxt>
+Svjetlosni signal indikatorskog svjetla &#34;CRUISE / SET&#34; s kombiniranog mjerača ostaje nepromijenjen čak i ako ECM šalje zahtjev za uključivanje ili isključivanje &#34;upravljačkog signala indikatorskog svjetla CRUISE / SET&#34; kombiniranom mjeraču putem CAN komunikacije.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Strujni krug CAN komunikacije
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kombinirani mjerač
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70AA104009002">
+<title>
+Rješavanje DTC problema
+</title>
+<diag type = "test" id = "AHRAP70AA104009003">
+<testgroup id = "AHRAP70AA104009004">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provjerite javljaju li upravljački moduli koji komuniciraju putem CAN-a DTC-ove.
+</ptxt>
+</test1>
+<question>
+Postoje li CAN-DTC-ovi?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na postupak rješavanja problema za dotični DTC. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite kombinirani mjerač i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ Ako se i dalje detektira DTC P0649, zamijenite ECM i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

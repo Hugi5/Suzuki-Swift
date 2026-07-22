@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A1104059" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2228 / P2229
+</title>
+<servinfosub id = "AGKAP70A1104059001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.143in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.027in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2228: Κύκλωμα Αισθητήρα Βαρομετρικής Πίεσης &#34;Α&#34; Χαμηλό 
+</emph>
+</ptxt>
+<ptxt>
+Η τάση εξόδου του σήματος αισθητήρα βαρομετρικής πίεσης είναι χαμηλότερη από 0,2 V για 5 sec.
+</ptxt>
+<ptxt>
+(λογική ανίχνευσης 3 D/C)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Αισθητήρας βαρομετρικής πίεσης μέσα στον ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2229: Κύκλωμα Αισθητήρα Βαρομετρικής Πίεσης &#34;Α&#34; Υψηλό 
+</emph>
+</ptxt>
+<ptxt>
+Η τάση εξόδου του σήματος αισθητήρα βαρομετρικής πίεσης  είναι υψηλότερη από 4,8 V για 5 sec.
+</ptxt>
+<ptxt>
+(λογική ανίχνευσης 3 D/C)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A1104059002">
+<title>
+Διαδικασία Επιβεβαίωσης Κωδικού Βλάβης DTC
+</title>
+<s1>
+<ptxt>
+Θέστε το διακόπτη ανά&#248;λεξης στη θέση &#34;ON&#34; για 10 sec.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGKAP70A1104059003">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A1104059004">
+<testgroup id = "AGKAP70A1104059005">
+<question>
+Έγινε &#34;Έλεγχος του Κινητήρα και του Συστήματος Ελέγχου Εκπομπής Ρύπων&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A1104001">Έλεγχος του Κινητήρα και του Συστήματος Ελέγχου Εκπομπής Ρύπων</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A1104059006">
+<title>
+Έλεγχος κυκλώματος τρο&#248;οδοσίας και γείωσης του εγκε&#248;άλου ECM
+</title>
+<test1>
+<ptxt>
+Ελέγξτε το κύκλωμα τρο&#248;οδοσίας και το κύκλωμα γείωσης του ECM. 
+<intxreftitleoff1 refid = "AGKAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι το αποτέλεσμα του ελέγχου ΟΚ;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε τον εγκέ&#248;αλο ECM και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Επισκευάστε το κύκλωμα τρο&#248;οδοσίας και γείωσης του εγκέ&#248;αλου ECM.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

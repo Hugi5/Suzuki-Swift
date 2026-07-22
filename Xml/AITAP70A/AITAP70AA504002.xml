@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70AA504002" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Funzione di autodiagnosi della centralina sistema di avviamento senza chiave
+</title>
+<servinfosub id = "AITAP70AA504002001">
+<title>
+Descrizione
+</title>
+<ptxt>
+La centralina sistema di avviamento senza chiave monitora le condizioni dei componenti e dei circuiti che compongono il sistema. In presenza di anomalia nel sistema, la centralina sistema di avviamento senza chiave effettua i controlli descritti sotto.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70AA504002002">
+<title>
+Funzione di autodiagnosi
+</title>
+<ptxt>
+La centralina sistema di avviamento senza chiave è dotata di funzione di autodiagnosi che memorizza i DTC relativi alle anomalie rilevate nel sistema di avviamento senza chiave e nel sistema immobilizzatore. I DTC memorizzati rimangono salvati fino a che l&#39;anomalia non viene riparata o fino a che non vengono cancellati.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70AA504002003">
+<title>
+Funzione di avvertenza
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Quando viene rilevato un malfunzionamento nel sistema di avviamento senza chiave o nel sistema immobilizzatore, la centralina sistema di avviamento senza chiave fa accendere la spia antifurto, la spia immobilizzatore e/o la spia consumo batteria telecomando per avvisare il conducente. 
+</ptxt>
+<attention3>
+<ptxt>
+Quando viene rilevato il DTC B1194, la spia immobilizzatore rimane accesa fino a che non viene rilevata la condizione normale per almeno due volte di seguito.
+</ptxt>
+</attention3>
+</item>
+<item>
+<ptxt>
+Dopo aver rilevato un&#39;anomalia, la spia antifurto e la spia immobilizzatore si accendono. Si spengono quando viene rilevato il ripristino della condizione normale.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Per maggiori informazioni circa il comportamento della spia antifurto e della spia immobilizzatore durante la funzione di avvertenza, fare riferimento alle informazioni dettagliate che seguono.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Sistema di controllo immobilizzatore: 
+<intxreftitleoff1 refid = "AITAP70AA324005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sistema di avviamento senza chiave: 
+<intxreftitleoff1 refid = "AITAP70AA504005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</servinfosub>
+<servinfosub id = "AITAP70AA504002004">
+<title>
+Controllo funzionamento in emergenza (fail-safe)
+</title>
+<ptxt>
+La centralina sistema di avviamento senza chiave attiva il controllo funzionamento in emergenza (fail-safe) quando viene riscontrato un guasto relativo al sistema di avviamento senza chiave ed interrompe tutti i controlli al fine di proteggere il sistema medesimo. I dettagli del controllo fail-safe variano in funzione del DTC rilevato. 
+<intxreftitleoff1 refid = "AITAP70AA504006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<attention3>
+<ptxt>
+Quando viene rilevata un&#39;anomalia del sistema immobilizzatore, la centralina sistema di avviamento senza chiave non esegue il controllo funzionamento in emergenza (fail-safe).
+</ptxt>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

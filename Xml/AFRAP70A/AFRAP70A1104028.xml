@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A1104028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0137 / P0138 / P0140 
+</title>
+<servinfosub id = "AFRAP70A1104028001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.078in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.126in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0137: Tension faible du circuit de capteur O2 
+</emph>
+</ptxt>
+<ptxt>
+Lorsque la tension de signal HO2S est inférieure à 0,06 V, la tension du circuit de signal HO2S ne change pas pendant 5 s en appliquant la tension au circuit de signal HO2S. 
+</ptxt>
+<ptxt>
+(logique de détection sur 3 D/C) 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+HO2S et/ou son circuit 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Réchauffeur HO2S et/ou son circuit 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Système d&#39;échappement 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Système d&#39;admission d&#39;air 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Système de carburant 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0138: Tension élevée du circuit de capteur O2 
+</emph>
+</ptxt>
+<ptxt>
+La tension de sortie du circuit de signal de capteur HO2S est supérieure à 1,1 V pendant 5 s
+</ptxt>
+<ptxt>
+(logique de détection sur 3 D/C) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0140: Aucune activité détectée au niveau du circuit du capteur O2 
+</emph>
+</ptxt>
+<ptxt>
+L&#39;une des conditions suivantes est remplie. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le circuit de signal HO2S est ouvert. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+La résistance interne HO2S est supérieure aux spécifications, même si la température estimée des gaz d&#39;échappement est supérieure aux spécifications. 
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(logique de détection sur 3 D/C) 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104028002">
+<title>
+Schéma du circuit 
+</title>
+<figure>
+<graphic graphicname = "I9P60A111012F.swf" width = "183.000mm" height = "121.825mm" ver = "02" gw = "440" gh = "329"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.662in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.970in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.699in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Connecteur de l&#39;ECM (vue: [a]) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A6: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit d&#39;entraînement de réchauffeur de capteur A/F 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Résistance de réglage de capteur A/F 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit d&#39;alimentation électrique de réchauffeur de capteur A/F 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit d&#39;alimentation électrique de réchauffeur HO2S 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Connecteur de capteur A/F 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit de signal de capteur A/F (IA) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit de signal HO2S 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Câble de protection 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit de signal de capteur A/F (IP) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit de mise à la masse HO2S 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+5. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit de signal de capteur A/F (VM) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit d&#39;entraînement de réchauffeur HO2S 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+6. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Unité de traitement de signal A/F 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A5: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuit de signal de capteur A/F (UN) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Capteur A/F 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+7. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104028003">
+<title>
+Procédure de confirmation de DTC 
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Effectuer un essai sur route dans un lieu peu fréquenté pour éviter les accidents. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+L&#39;essai sur route doit être effectué sur une route plane et par deux personnes: un conducteur et un technicien qui procédera aux essais. 
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+S&#39;assurer que les conditions suivantes sont réunies dans le cadre de cette &#34;Procédure de confirmation des DTC&#34;. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Tension de batterie &#62; 10,7 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Faire monter le moteur en température jusqu&#39;à sa température normale de fonctionnement. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conduire le véhicule à une vitesse constante de 50 à 80 km/h (31 à 50 mile/h) pendant 20 min. minimum. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Arrêter le véhicule puis faire tourner le moteur au ralenti pendant 5 min..
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104028004">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A1104028005">
+<testgroup id = "AFRAP70A1104028006">
+<question>
+La procédure de &#34;Vérification du système de commande du moteur et des émissions&#34; a-t-elle été effectuée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A1104001">Vérification du système de régulation des émissions et de commande du moteur</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104028007">
+<title>
+Vérification des DTC 
+</title>
+<question>
+Y a-t-il d&#39;autres DTC que P0137, P0138 et P0140? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le(s) DTC correspondant(s). 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104028008">
+<title>
+Vérification du circuit de signal et de mise à la masse du HO2S 
+</title>
+<test1>
+<ptxt>
+Lorsque l&#39;allumage est sur &#34;OFF&#34;, débrancher les connecteurs &#34;C01&#34; et &#34;E01&#34; de l&#39;ECM et le connecteur HO2S. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier que la borne correcte est branchée sur les connecteurs &#34;C01&#34; et &#34;E01&#34; et le connecteur HO2S. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si les branchements sont corrects, vérifier les points suivants. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Résistance des circuits &#34;B2&#34; et &#34;B3&#34;: en dessous de 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Résistance entre les circuits &#34;B2&#34; et &#34;B3&#34; respectivement et la masse: infinie 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Résistance entre la borne du circuit &#34;B2&#34; et l&#39;autre borne au niveau du connecteur HO2S: infinie 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Résistance entre la borne du circuit &#34;B3&#34; et l&#39;autre borne au niveau du connecteur HO2S: infinie 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tension des circuits &#34;B2&#34; et &#34;B3&#34;: 0 à 1 V(Lorsque l&#39;allumage est sur &#34;ON&#34;) 
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 4. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer le faisceau de câbles défectueux. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104028009">
+<title>
+Vérification du système d&#39;échappement et du système d&#39;admission d&#39;air 
+</title>
+<test1>
+<ptxt>
+Vérifier l&#39;absence d&#39;obstruction ou de fuite au niveau du système d&#39;échappement et du système d&#39;admission d&#39;air. 
+</ptxt>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer la pièce défectueuse. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104028010">
+<title>
+Vérification du circuit de réchauffeur HO2S 
+</title>
+<test1>
+<ptxt>
+Vérifier les circuits de réchauffeur HO2S en se reportant aux étapes 2 à 3 du point 
+<intxref refid = "AFRAP70A1104016">DTC P0036 / P0037 / P0038</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 6. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer la pièce défectueuse. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104028011">
+<title>
+Vérification des injecteurs de carburant et de leur circuit 
+</title>
+<test1>
+<ptxt>
+Vérifier le circuit d&#39;injecteur de carburant. 
+<intxreftitleoff1 refid = "AFRAP70A1704003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier les injecteurs de carburant. 
+<intxreftitleoff1 refid = "AFRAP70A1706009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 7. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Injecteur(s) ou leur(s) circuit(s) défectueux. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104028012">
+<title>
+Nouvelle vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Remplacer le réchauffeur HO2S. 
+<intxreftitleoff1 refid = "AFRAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Effectuer la procédure de confirmation des DTC pour vérifier les DTC. 
+</ptxt>
+</test1>
+<question>
+Le DTC P0137, P0138 ou P0140 est-il détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer l&#39;ECM et vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

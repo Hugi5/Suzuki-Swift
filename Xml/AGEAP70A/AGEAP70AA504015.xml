@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70AA504015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1134
+</title>
+<servinfosub id = "AGEAP70AA504015001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1134: Fernbedienungsbatterie fast leer 
+</emph>
+</ptxt>
+<ptxt>
+Fernbedienung empfängt Signal über niedrigen Batteriestatus der Fernbedienungsbatterie.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fernbedienungsbatterie
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fernbedienung
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70AA504015002">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<attention3>
+<ptxt>
+Vor Durchführen des DTC-Bestätigungsverfahrens alle registrierten Fernbedienungen bereitlegen.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Sicherstellen, dass die Einstellung &#34;Warnung über niedrigen Status der Fernbedienungsbatterie&#34; im Modus &#34;Aktiv&#34; ist. 
+<intxreftitleoff1 refid = "AGEAP70AA504009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Fernbedienung in den Betriebsbereich für das schlüssellose Starten legen und Türen mehr als 2 Mal öffnen und schließen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Schritt 3) 6-mal wiederholen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Schritte 3) und 4) mit allen registrierten Fernbedienungen wiederholen.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70AA504015003">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70AA504015004">
+<testgroup id = "AGEAP70AA504015005">
+<title>
+Überprüfung der Fernbedienung
+</title>
+<test1>
+<ptxt>
+Alle registrierten Fernbedienungen bereitlegen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Bei mitgeführter Fernbedienung die Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Prüfen, ob die Fernbedienungsbatterie-Warnleuchte im Kombiinstrument aufleuchtet.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die Zündung auf &#34;OFF&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Schritte 2) bis 4) für alle Fernbedienungen wiederholen.
+</ptxt>
+</test1>
+<question>
+Leuchtet die Fernbedienungsbatterie-Warnleuchte im Kombiinstrument auf?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende. (Signal über niedrigen Batteriestatus der Fernbedienung wurde bereits einmal erfasst. (DTC wurde nicht gelöscht))
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA504015006">
+<title>
+Überprüfung der Fernbedienungsbatterie
+</title>
+<test1>
+<ptxt>
+Batterie der jeweiligen Fernbedienung durch neue Batterie ersetzen. 
+<intxreftitleoff1 refid = "AGEAP70AA506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+DTC löschen. 
+<intxreftitleoff1 refid = "AGEAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70AA504015002">Überprüfung von Diagnosecodes</intxref>
+ durchführen, und dann DTCs erneut überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird DTC B1134 weiterhin erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fernbedienung austauschen und DTC erneut prüfen.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

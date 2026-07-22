@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A7204014" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1503 / B1562
+</title>
+<servinfosub id = "ASPBP70A7204014001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.657in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.558in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1503: Avería en el sensor de temperatura del evaporador y/o en su circuito 
+</emph>
+</ptxt>
+<ptxt>
+El módulo de control HVAC recibe datos no válidos del sensor de temperatura del evaporador provenientes del BCM de manera continua a través de la línea de comunicación CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuito del sensor de temperatura del evaporador
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de temperatura del evaporador
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control HVAC
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1562: Avería en el sensor de temperatura del aire del exterior y/o en su circuito 
+</emph>
+</ptxt>
+<ptxt>
+El módulo de control HVAC recibe datos no válidos del sensor de temperatura del aire exterior provenientes del BCM de manera continua a través de la línea de comunicación CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuito del sensor de temperatura del aire exterior
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de temperatura del aire exterior
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control HVAC
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A7204014002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention3>
+<ptxt>
+Compruebe que se cumplen las condiciones siguientes cuando se utiliza este procedimiento.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+No se detectan U0073 y/o U0140 
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Arranque el motor y después ponga en marcha el sistema de A/C.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A7204014003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A7204014004">
+<testgroup id = "ASPBP70A7204014005">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Compruebe el siguiente DTC del BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+B1503: B1145 y/o B1146
+</ptxt>
+</item>
+<item>
+<ptxt>
+B1562: B1141 y/o B1142
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Se detecta algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización de averías del DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el módulo de control HVAC y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPBP70A7206010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

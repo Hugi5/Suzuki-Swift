@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70A1101009" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Opis riadiaceho systému alternátora
+</title>
+<ptxt>
+Regulačný systém alternátora pozostáva z alternátora (1), prúdového snímača elektrickej záťaže (6) a ECM (4).
+</ptxt>
+<ptxt>
+ECM reguluje vytvorený elektrický prúd (nastavuje napätie regulátora IC (2)) tak, aby bol vhodný pre motor a podmienky zaťaženia motora. Aby ste predišli poklesu rýchlosti voľnobehu, ktorá vyústi z rýchleho uvoľnenia elektrického zaťaženia a následného zvýšenia zaťaženia motora, ECM vykoná kontrolu, aby sa výstup alternátora zvyšoval postupne. V prípade dočasného zvýšenia produkovania elektriny požadovanej počas jazdy, ECM vykoná kontrolu obmedzenia prevádzky alternátora a tak zvýši limity zaťaženia motora, aby udržala výkon motora, kedykoľvek je to potrebné (napríklad počas akcelerácie).
+</ptxt>
+<servinfosub id = "ASLAP70A1101009001">
+<title>
+Činnosť
+</title>
+<ptxt>
+ECM optimálne riadi výstupné napätie alternátora zmenou pomeru výkonu signálu do svorky „C“ (svorka regulácie alternátora), a to na základe nasledovných informácií.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Podmienky motora (ECT, rýchlosť vozidla, otáčky motora, teplota, atď.) (8)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napätie akumulátora (napätie napájania ECM) (9)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Podmienky elektrickej záťaže (motor ventilátora, odhmlievač okna zadných koncových dverí, predné svetlá, ventilátor chladiča, klimatizácia atď.) (10)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Výstup svorky FR (regulátor výkonu budiacej cievky (3)), ktorý stanovuje prevádzkový výkon budiacej cievky.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Signál pracovného cyklu do svorky „C“ alternátora nastavuje regulované napätie IC regulátora, ktorý prepína ovládanie pomeru výkonu budiacej cievky a tým výstupné napätie (výstup svorky „B“) alternátora.
+</ptxt>
+<ptxt>
+(Podrobnosti o výstupnom vytvorenom napätí si pozrite v časti Systém dobíjania v kapitole 1J.)
+</ptxt>
+<ptxt>
+Navyše, vytvorené podmienky alternátora sú riadené na optimálnu úroveň snímačom elektrického zaťaženia (6), ktorý detekuje podmienky elektrického zaťaženia (spotrebu prúdu) lineárne, dokonca aj vtedy, keď sa vyskytne náhle elektrické zaťaženie a z toho dôvodu sa zníži zaťaženie motora.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A111040.swf" width = "183.000mm" height = "76.506mm" ver = "01" gw = "415" gh = "200"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.331in"/>
+<colspec colnum = "2" colname = "2" colwidth = "4.615in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.331in"/>
+<colspec colnum = "4" colname = "4" colwidth = "0.854in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.331in"/>
+<colspec colnum = "6" colname = "6" colwidth = "0.690in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Spínač zapaľovania (model so spínačom zapaľovania) alebo relé IG1 (model s bezkľúčovým štartovaním)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Ovládač CAN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Akumulátor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Združený prístroj
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

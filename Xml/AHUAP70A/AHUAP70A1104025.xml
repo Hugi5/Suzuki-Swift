@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A1104025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0131 / P0132 / P2237 / P2243 / P2251/ P2626
+</title>
+<servinfosub id = "AHUAP70A1104025001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.872in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.303in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0131: Lambdaszonda áramkörének feszültsége alacsony
+</emph>
+</ptxt>
+<ptxt>
+Az alábbi feltételek bármelyike teljesül. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (VM) kimenő feszültsége 10 másodpercig kisebb az előírt értéknél, miközben a motor jár.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (UN) kimenő feszültsége 10 másodpercig kisebb az előírt értéknél, miközben a motor jár.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (IA) kimenő feszültsége 10 másodpercig kisebb az előírt értéknél, miközben a motor jár.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/F érzékelő és/vagy áramköre
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0132: Lambdaszonda áramkörének feszültsége nagy
+</emph>
+</ptxt>
+<ptxt>
+Az alábbi feltételek bármelyike teljesül. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (VM) kimenő feszültsége 10 másodpercig nagyobb az előírt értéknél, miközben a motor jár.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (UN) kimenő feszültsége 10 másodpercig nagyobb az előírt értéknél, miközben a motor jár.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (IA) kimenő feszültsége 10 másodpercig nagyobb az előírt értéknél, miközben a motor jár.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2237: Lambdaszonda pozitív áramvezérlő áramköre / megszakadt
+</emph>
+</ptxt>
+<ptxt>
+Az alábbi feltételek bármelyike teljesül.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az A/F érzékelő jele meghatározott ideig a meghatározott érték alatt marad.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (IP) kimenő feszültsége 5 másodpercig kisebb mint 1,7 V, üzemanyag-elzárás vezérlése közben.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (IP) kimenő feszültsége 10 másodpercig az előírt tartományban marad dúsítás / szegényítés vezérlése közben is.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2243: Lambdaszonda referenciafeszültség-áramkör / megszakadt
+</emph>
+</ptxt>
+<ptxt>
+Az alábbi feltételek bármelyike teljesül.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (UN) kimenő feszültsége 5 másodpercig nagyobb mint 4,7 V, miközben a motor jár.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/F érzékelő jeláramkörének (UN) kimenő feszültsége 5 másodpercig kisebb mint 0,3 V, miközben a motor jár.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2251: Lambdaszonda negatív áramvezérlő áramköre / megszakadt
+</emph>
+</ptxt>
+<ptxt>
+Az A/F érzékelő jeláramkörének (VM) kimenő feszültsége 5 másodpercig 1,47 és 1,53 V között található.
+</ptxt>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2626: Lambdaszonda gerjesztőáram-kiegyenlítő áramköre / megszakadt
+</emph>
+</ptxt>
+<ptxt>
+Az A/F érzékelő jeláramkörének (IA) kimenő feszültsége 5 másodpercig nagyobb mint 4,8 V.
+</ptxt>
+<ptxt>
+(3 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104025002">
+<title>
+Kapcsolási rajz
+</title>
+<figure>
+<graphic graphicname = "I9P60A111012.swf" width = "183.000mm" height = "121.825mm" ver = "02" gw = "440" gh = "329"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.870in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.108in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.699in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM csatlakozó (nézet: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A6:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő fűtőelemének vezérlő áramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő szabályozó ellenállása
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Az A/F érzékelő fűtésének tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S fűtés tápáramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő csatlakozója
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő jeláramkör (IA)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S jeláramkör
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Árnyékolóvezeték
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő jel áramkör (IP)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Lambdaszonda testáramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő jeláramkör (VM)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Lambdaszonda fűtés vezérlő áramkör
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F jelfeldolgozó egység
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A5:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő jeláramkör (UN)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104025003">
+<title>
+DTC megerősítési eljárás
+</title>
+<topic id = "AHUAP70A1104025004">
+<title>
+P0131 / P0132
+</title>
+<attention3>
+<ptxt>
+Győződjön meg arról, hogy a következő feltételek teljesülnek a „DTC megerősítési eljárás” során.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Akkumulátorfeszültség &#62; 10,7 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Járassa a motort alapjáraton 30 mp-ig.
+</ptxt>
+</s1>
+</topic>
+<topic id = "AHUAP70A1104025005">
+<title>
+P2237 / P2626
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A balesetek elkerülése érdekében a menetpróbát olyan helyen végezze, ahol nincs forgalom.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A menetpróbát vízszintes útszakaszon két személy hajtsa végre: a vezető és a vizsgálatot végző személy.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ügyeljen arra, hogy először a „DTC megerősítési eljárás” során váratlanul észlelt hibakódokkal kapcsolatban végezzen hibakeresést.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Győződjön meg arról, hogy a következő feltételek teljesülnek a “DTC megerősítési eljárás” során.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Akkumulátorfeszültség &#62; 10,7 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0030, P0031, P0032, P0443, P0458 vagy P0459 nem észlelhető.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Indítsa be a motort, majd melegítse be normál működési hőmérsékletre.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Járassa a motort alapjáraton 3 percig.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Haladjon a járművel 50 – 80 km/h (31 – 50 mérföld/h) állandó sebességgel legalább 10 percig.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Engedje fel a gázpedált és hagyja szabadon futni a járművet 5 másodpercig motorfék üzemmódban (üzemanyag-lezárási állapot).
+</ptxt>
+</s1>
+</topic>
+<topic id = "AHUAP70A1104025006">
+<title>
+P2243 / P2251
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ügyeljen arra, hogy először a „DTC megerősítési eljárás” során váratlanul észlelt hibakódokkal kapcsolatban végezzen hibakeresést.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Győződjön meg arról, hogy a következő feltételek teljesülnek a “DTC megerősítési eljárás” során.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Akkumulátorfeszültség &#62; 10,7 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0030, P0031 vagy P0032 nem észlelhető.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Indítsa be a motort, majd melegítse be normál működési hőmérsékletre.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Járassa a motort alapjáraton 3 percig.
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104025007">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A1104025008">
+<testgroup id = "AHUAP70A1104025009">
+<question>
+Megtörtént “A motorvezérlő és károsanyagkibocsátás-csökkentő rendszer ellenőrzése”?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A1104001">Motorvezérlő és károsanyagkibocsátás-csökkentő rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104025010">
+<title>
+DTC ellenőrzése
+</title>
+<question>
+Észlelhető más DTC, mint a következők: P0131, P0132, P2237, P2243, P2251 és P2626?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa az érintett DTC-hez tartozó hibaelhárítással.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104025011">
+<title>
+A/F érzékelő jeláramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+A gyújtás „OFF” állásában válassza le az ECM „C01” és “E01” csatlakozóját és az A/F érzékelő csatlakozóját.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy megfelelő-e az érintkezők csatlakozása a „C01” és „E01” csatlakozóknál és az A/F érzékelő csatlakozójánál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozások megfelelők, ellenőrizze a következőket.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az „A2”, „A3”, „A4” és „A5” áramkörök ellenállása: kevesebb mint 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az „A2”, „A3”, „A4” és „A5” áramkör és a testelés közötti ellenállás: végtelen nagy
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az “A2” áramkör érintkezője és az A/F érzékelő egyes csatlakozói közötti ellenállás: végtelen
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az “A3” áramkör érintkezője és az A/F érzékelő egyes csatlakozói közötti ellenállás: végtelen
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az “A4” áramkör érintkezője és az A/F érzékelő egyes csatlakozói közötti ellenállás: végtelen
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az “A5” áramkör érintkezője és az A/F érzékelő egyes csatlakozói közötti ellenállás: végtelen
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az „A2”, „A3”, “A4” és “A5” áramkörök feszültsége: 0-1 V (a gyújtás „ON” állásában)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104025012">
+<title>
+DTC-újraellenőrzés
+</title>
+<test1>
+<ptxt>
+Cserélje ki az A/F érzékelőt. 
+<intxreftitleoff1 refid = "AHUAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Hajtsa végre el a DTC megerősítési eljárást a DTC-k ellenőrzéséhez.
+</ptxt>
+</test1>
+<question>
+Továbbra is észlelhető a P0131, a P0132, a P2237, a P2243, a P2251 és/vagy a P2626 DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Cserélje ki az ECM-et, és ismételje meg a DTC-k ellenőrzését. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vége.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "6">
+<servinfo servinfosgmlid = "AHUAP70A1106001" svcinfotypenbr = "08" svcinfoqualnbr = "03" page = "2" supplyoff = "1" modify = "0">
+<title>
+Alapjárati fordulatszám és IAC fojtószelep nyitás ellenőrzése
+</title>
+<ptxt>
+Az alapjárati fordulatszám ellenőrzése előtt feltétlenül győződjön meg az alábbiakról:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az elektronikus üzemanyag-befecskendező rendszer, illetve a motorvezérlő és károsanyagkibocsátás-csökkentő rendszer vezetékeinek és tömlői megfelelően csatlakoznak.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A szelephézag ellenőrzése a karbantartási tervnek megfelelően megtörtént.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A gyújtásbeállítás az előírt értéktartományban található.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az összes elektromos rendszer (ablaktörlők, fűtés, lámpák, A/C stb.) nem működik.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A levegőszűrő felszerelése és állapota megfelelő.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nincs rendellenes levegőbeszívás a levegőbeszívó rendszernél.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nincs eltömődés a PCV szelepnél, vagy a tömlőiben.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nincs DTC az ECM-ben.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A következő elemek a vizsgálókészülék „Data List” üzemmódjával történő ellenőrzés után kikapcsolódnak.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+A/C Comp Relay (A/C kompresszor relé)
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/C Switch (A/C kapcsoló)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Brake Switch (Fékkapcsoló)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Electric Load (Elektromos terhelés)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Blower Fan (Ventilátor)
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+A fenti ellenőrzések elvégzése után ellenőrizze az alapjárati fordulatszámot és az IAC fojtószelep nyitást a következők szerint.
+</ptxt>
+<attention3>
+<ptxt>
+A motor indítása előtt állítsa a sebességváltó karját üres helyzetbe, valamint húzza be a rögzítőféket és támassza ki a hajtó kerekeket.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+A gyújtás „OFF” állásában csatlakoztassa a SUZUKI vizsgálókészüléket a DLC-hez (1).
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L1A002">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+SUZUKI vizsgálókészülék (SUZUKI-SDT)
+</s-number>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I9P60A121001.jpg" width = "88.000mm" height = "67.502mm" ver = "02" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Melegítse be a motort normál működési hőmérsékletre.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ellenőrizze a motor alapjárati fordulatszámát és az „IAC throttle opening” menüpontot a vizsgálókészülék „Data List” üzemmódjában.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ha az ellenőrzés a megadott határon kívüli értékeket mutat, ellenőrizze a motor alapjárati fordulatszámát a következők szerint: 
+<intxref refid = "AHUAP70A1104010">Motor hibajelenségeinek diagnosztizálása</intxref>
+, „Nem megfelelő alapjárat, vagy nincs alapjárat”.
+</ptxt>
+<spec-sdm>
+<sdm-title>
+Motor alapjárati fordulatszáma
+</sdm-title>
+<sdm1>
+<sdm-condition>
+A/C OFF
+</sdm-condition>
+<sdm-value>
+590 – 690 f/perc (IAC fojtószelepnyílás: 20 és 50% között)
+</sdm-value>
+</sdm1>
+<sdm1>
+<sdm-condition>
+A/C ON
+</sdm-condition>
+<sdm-value>
+700 – 900 f/perc (IAC fojtószelepnyílás: 50 és 80% között)
+</sdm-value>
+</sdm1>
+</spec-sdm>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

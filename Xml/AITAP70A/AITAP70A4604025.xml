@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A4604025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1039 / C1071
+</title>
+<servinfosub id = "AITAP70A4604025001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1039: Guasto interno gruppo sensore d’imbardata/sensore G
+</emph>
+</ptxt>
+<ptxt>
+È stato rilevato un guasto interno al sensore di imbardata / sensore G.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1071: Guasto interno centralina ESP<sup>®</sup>
+</emph>
+</ptxt>
+<ptxt>
+È stato rilevato un guasto interno alla centralina ESP<sup>®</sup>.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A4604025002">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A4604025003">
+<testgroup id = "AITAP70A4604025004">
+<question>
+È stato eseguito il &#34;Controllo sistema ESP<sup>®</sup>&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A4604001">Controllo sistema ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604025005">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70A4604005">Controllo presenza DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC diversi da C1039 e C1071?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fare riferimento alla procedura diagnostica relativa al DTC rilevato.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup> e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

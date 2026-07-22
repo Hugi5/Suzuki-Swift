@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA504011" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1122
+</title>
+<servinfosub id = "AFRAP70AA504011001">
+<title>
+Condition de détection du DTC et organe incriminé
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.161in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.043in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1122: Dysfonctionnement de l&#39;alimentation électrique de secours 
+</emph>
+</ptxt>
+<ptxt>
+La tension du circuit d&#39;alimentation électrique de secours du fusible &#34;BCM&#34; est inférieure à la valeur spécifiée.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fusible &#34;BCM&#34;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande de démarrage sans clé
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA504011002">
+<title>
+Procédure de confirmation de DTC
+</title>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70AA504011003">
+<title>
+Recherche de pannes à partir de DTC
+</title>
+<diag type = "test" id = "AFRAP70AA504011004">
+<testgroup id = "AFRAP70AA504010005">
+<title>
+Vérification du fusible
+</title>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier le fusible &#34;BCM&#34;.
+</ptxt>
+</test1>
+<question>
+Son état est-il correct?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le module de commande de démarrage sans clé et vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer le fusible &#34;BCM&#34; et passer à l&#39;étape 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA504010006">
+<title>
+Vérification de DTC
+</title>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC B1122 est-il toujours détecté?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le fusible &#34;BCM&#34; et le module de commande de démarrage sans clé, puis vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

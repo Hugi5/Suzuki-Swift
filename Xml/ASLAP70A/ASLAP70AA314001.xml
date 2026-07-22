@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA314001" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+Kontrola riadiaceho systému imobilizéra
+</title>
+<attention3>
+<ptxt>
+Pred začatím kontroly si preštudujte časť 
+<intxref refid = "ASLAP70AA310002">Bezpečnostné opatrenia v systéme imobilizéra:Model so spínačom zapaľovania</intxref>
+.
+</ptxt>
+</attention3>
+<diag type = "test" id = "ASLAP70AA314001001">
+<testgroup id = "ASLAP70AA314001002">
+<question>
+Je motor naštartovaný?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1904001">Diagnostika symptómov štartovania</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314001003">
+<title>
+Kontrola štartovania motora
+</title>
+<question>
+Štartuje motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314001004">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Nachádza sa tam nejaké chybné DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riadiaci systém imobilizéra je v dobrom stave.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314001005">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Nachádza sa tam nejaké chybné DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314001006">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC prislúchajúce ku komunikácii CAN. 
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké CAN-DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104009">Základná kontrola motora</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

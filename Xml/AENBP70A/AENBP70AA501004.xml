@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENBP70AA501004" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description of Keyless Engine Start Function
+</title>
+<servinfosub id = "AENBP70AA501004001">
+<title>
+Changing Ignition Mode
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+When engine switch is pushed with remote controller inside cabin and brake pedal (CVT model) or clutch pedal (M/T model) released, keyless start control module compares the ID code sent by remote controller with the ID code registered in keyless start control module. When these ID codes match, keyless start control module controls ON/OFF of the ACC, IG1, and IG2 relays according to engine switch operation for switching ignition mode from OFF → ACC → ON (engine not running) → OFF. When ignition mode is ACC, “ACC” indicator light lights on the combination meter. When mode is ON (engine not running), “ON” indicator light lights up in combination meter.
+</ptxt>
+</item>
+<item>
+<ptxt>
+For CVT model, keyless start control module judges whether select lever is in P position or not by the state of P position switch. This prohibits ignition mode switching from ACC to OFF with select lever in any position other than P position.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Table below shows transition of ignition mode according to engine switch operation. One arrow indicates transition by pressing engine switch once.
+</ptxt>
+<attention3>
+<ptxt>
+Except in emergency situations, do not stop engine while driving.
+</ptxt>
+</attention3>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAW101A50048.swf" width = "183.000mm" height = "159.063mm" ver = "03" gw = "478" gh = "434"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.237in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.294in"/>
+<colspec colnum = "4" colname = "4" colwidth = "3.040in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+CVT model
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[E]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Shift only while the vehicle is stopped
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+M/T model
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[F]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+While driving (shift when holding the engine switch down longer)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Always shift
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+*1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+While driving, shift when holding the engine switch down longer
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Shift only when the ID code sent from the remote controller matches
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENBP70AA501004002">
+<title>
+Starting Engine
+</title>
+<ptxt>
+The method of starting engine is as follows.
+</ptxt>
+<s1>
+<ptxt>
+When brake pedal is depressed with shift position in P or N (CVT model) or when clutch pedal is depressed (M/T model), keyless start control module (1) sends request signal to combination meter (2) through CAN communication to light up push indicator light in combination meter.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Push engine switch (3) with remote controller (4) being carried.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Keyless start control module activates mid inside antenna (5) to send request signal to remote controller.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Remote controller receives request signal and then sends ID code to keyless start control module via keyless entry receiver (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Keyless start control module compares ID code sent from remote controller with ID code registered in keyless start control module. If ID codes match, keyless start control module outputs a steering lock release request signal to steering lock unit (7). At the same time, it outputs engine start signal to ECM (8) and turns the starting motor control relay ON to activate the starting motor (9). This enables the steering lock to be released and the engine to be started.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50004.swf" width = "183.000mm" height = "76.649mm" ver = "01" gw = "396" gh = "201"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.140in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signal flow “1” to “5” link with Step 1) to 5)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "AENBP70AA501004003">
+<title>
+Operation area
+</title>
+<ptxt>
+Engine can be started when remote controller is within mid inside antenna detection area (1).
+</ptxt>
+<attention3>
+<ptxt>
+Keyless engine start function may not operate when remote controller is on instrument panel, in one of the storage boxes, around foot area of driver side or passenger side, in door pocket, or in luggage compartment etc.
+</ptxt>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50005.swf" width = "88.000mm" height = "56.543mm" ver = "01" gw = "230" gh = "144"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.123in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Mid inside antenna
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "AENBP70AA501004004">
+<title>
+Engine Cannot Be Started
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+When remote controller is not in vehicle compartment or there is only an unregistered one in vehicle compartment, keyless start control module sends immobilizer indicator light request signal, push indicator light request signal, and warning buzzer request signal to combination meter through CAN communication to warn driver. At the same time, it turns ACC, IG1, IG2 and starting motor control relays OFF to prohibit ignition mode from switching and the starting motor from activating.
+</ptxt>
+</item>
+<item>
+<ptxt>
+If remote controller battery has run down or system malfunction has occurred, engine can be started by placing remote controller on the engine switch as an emergency measure. 
+<intxreftitleoff1 refid = "AENBP70AA301003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

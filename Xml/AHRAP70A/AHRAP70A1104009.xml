@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A1104009" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Osnovni pregled motora
+</title>
+<ptxt>
+Ova provjera vrlo je važna za rješavanje problema kada je ECM detektirao da nema DTC-a i nisu pronađene nepravilnosti u 
+<intxref refid = "AHRAP70A1104008">Vizualni pregled</intxref>
+.
+</ptxt>
+<ptxt>
+Pažljivo pratite tok.
+</ptxt>
+<diag type = "test" id = "AHRAP70A1104009001">
+<testgroup id = "AHRAP70A1104009002">
+<question>
+Je li izvršena &#34;Provjera sustava upravljanja motorom i emisijom&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1104001">Provjera sustava upravljanja motorom i emisijom</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009003">
+<title>
+Provjerite napon akumulatora
+</title>
+<question>
+Je li 11 V ili veći?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Napunite ili zamijenite akumulator.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009004">
+<question>
+Je li se motor okretao pri pokretanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 4. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1904001">Dijagnostika simptoma sustava za pokretanje</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009005">
+<question>
+Je li se motor pokrenuo?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 5. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 7. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009006">
+<title>
+Provjera brzine vrtnje motora u praznom hodu
+</title>
+<test1>
+<ptxt>
+Provjerite brzinu vrtnje motora u praznom hodu. 
+<intxreftitleoff1 refid = "AHRAP70A1106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 6. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1104010">Dijagnostika simptoma motora</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009007">
+<title>
+Provjera sustava paljenja
+</title>
+<test1>
+<ptxt>
+Provjerite sustav paljenja. 
+<intxreftitleoff1 refid = "AHRAP70A1804001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1104010">Dijagnostika simptoma motora</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravne dijelove.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009008">
+<title>
+Provjera rada sustava blokade motora
+</title>
+<test1>
+<ptxt>
+Provjerite upravljački sustav blokade motora.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model s kontakt bravom: 
+<intxreftitleoff1 refid = "AHRAP70AA314001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa: 
+<intxreftitleoff1 refid = "AHRAP70AA324001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 8. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kvar upravljačkog sustava blokade motora.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009009">
+<title>
+Provjera dobave goriva
+</title>
+<test1>
+<ptxt>
+Provjerite dobavu goriva. 
+<intxreftitleoff1 refid = "AHRAP70A1706014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1104010">Dijagnostika simptoma motora</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravne dijelove.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104009010">
+<title>
+Provjera kruga brizgaljke goriva
+</title>
+<test1>
+<ptxt>
+Brizgaljku goriva provjerite prema uputama u 
+<intxref refid = "AHRAP70A1704003">Provjera kruga brizgaljke goriva</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1104010">Dijagnostika simptoma motora</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1704003">Provjera kruga brizgaljke goriva</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

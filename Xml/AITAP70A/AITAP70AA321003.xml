@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70AA321003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descrizione della procedura di avviamento motore
+</title>
+<ptxt>
+Se la batteria del telecomando fosse scarica, se il sistema presentasse un guasto e/o se il sistema di avviamento motore a pulsante senza chiave fosse disabilitato, la procedura di avviamento motore sarebbe come segue.
+</ptxt>
+<s1>
+<ptxt>
+Alla pressione del pedale della frizione, la centralina sistema di avviamento senza chiave invia un segnale spia PUSH via linea di comunicazione CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Premere l&#39;interruttore motore.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+La centralina sistema di avviamento senza chiave invia un segnale spia immobilizzatore e un segnale spia PUSH attraverso la linea di comunicazione CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Posizionare il telecomando sull&#39;interruttore motore per circa 2 secondi mentre sul quadro strumenti lampeggia la spia PUSH.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+La centralina sistema di avviamento senza chiave legge il codice transponder del telecomando attraverso l&#39;antenna a bobina dell&#39;immobilizzatore, integrata nell&#39;interruttore motore.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Il relè di controllo motorino di avviamento si eccita e il motorino di avviamento si avvia, la richiesta di sblocco del bloccasterzo viene inviata al gruppo bloccasterzo attraverso la linea di comunicazione seriale e viene inviato un messaggio alla ECM per permettere l&#39;avviamento del motore soltanto quando il codice transponder corrisponde a quello registrato.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Quando il codice trasponder non corrisponde a quello registrato, la centralina sistema di avviamento senza chiave non eccita il relè di controllo motorino di avviamento per inibire il funzionamento del motorino medesimo.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA32001I.swf" width = "183.000mm" height = "134.726mm" ver = "03" gw = "511" gh = "365"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

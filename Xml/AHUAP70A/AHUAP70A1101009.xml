@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70A1101009" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Generátorvezérlő rendszer leírása
+</title>
+<ptxt>
+A generátorvezérlő rendszer részei a generátor (1), az elektromosterhelés-érzékelő (6) és az ECM (4).
+</ptxt>
+<ptxt>
+Az ECM szabályozza a generált feszültséget (az IC szabályozó (2) feszültségének beállításával), ezért az megfelel a motor és az elektromos terhelés aktuális állapotának. Hogy az alapjárati fordulatszám ne essen, és ezáltal az elektromos terhelés és végső soron a motor terhelése ne nőjön meg hirtelen, az ECM úgy végzi a vezérlést, hogy a generátor kimenő teljesítménye fokozatosan növekedjen. Amennyiben az elektromosság generálására vonatkozó igény vezetés közben ideiglenesen megnő, az ECM korlátozza a generátor működését, és ezzel a motor terhelését, hogy a motor teljesítménye szükség esetén mindig rendelkezésre álljon (pl. gyorsításhoz).
+</ptxt>
+<servinfosub id = "AHUAP70A1101009001">
+<title>
+Működés
+</title>
+<ptxt>
+Az ECM optimálisan szabályozza a generátor kimenő feszültségét. Ehhez a következő információk alapján módosítja a „C” érintkezőre (generátor-vezérlő érintkező) adott jel kitöltési tényezőjét.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A motor állapota (ECT, jármű sebessége, motor fordulatszáma, TP stb.) (8)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Akkumulátorfeszültség (ECM tápfeszültsége) (9)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az elektromos terhelés állapota (szellőztetőmotor, hátsó ablak páramentesítő, fényszórók, hűtőventilátor, A/C stb.) (10)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az „FR” érintkező kimenet (gerjesztőtekercs (3) vezérlésének kitöltési tényezője), ami a gerjesztőtekercs működési arányát jelzi.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+A generátor „C” érintkezőjére érkező kitöltési tényező jel beállítja az IC szabályozó szabályozási feszültségét, ami pedig a gerjesztőtekercs kitöltési tényezőjét, és ezzel a generátor kimentő feszültségét („B” érintkező kimenet) vezérli.
+</ptxt>
+<ptxt>
+(A generátor kimenő feszültségével kapcsolatos további információkat lásd: 1J fejezet, Töltőrendszer c. része.)
+</ptxt>
+<ptxt>
+A generátor gerjesztési állapotát ezen kívül az elektromos terhelésérzékelő (6) tartja optimális értékek. Az érzékelő lineárisan érzékeli az elektromos terhelést (az aktuális fogyasztást) olyankor is, mikor az elektromos terhelés hirtelen változik, és ezáltal a motor terhelése csökken.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A111040.swf" width = "183.000mm" height = "76.506mm" ver = "01" gw = "415" gh = "200"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.331in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.039in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.331in"/>
+<colspec colnum = "4" colname = "4" colwidth = "0.861in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.331in"/>
+<colspec colnum = "6" colname = "6" colwidth = "0.759in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Gyújtáskapcsoló (gyújtáskapcsolóval szerelt modell) vagy IG1 relé (nyomógombos indítórendszerrel szerelt modell)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN vezérlő
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Akkumulátor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Műszeregység
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

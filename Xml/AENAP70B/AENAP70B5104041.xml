@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104041" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1878
+</title>
+<servinfosub id = "AENAP70B5104041001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.821in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.383in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P1878: Torque Converter Clutch Shudder
+</emph>
+</ptxt>
+<ptxt>
+Variation of output revolution speed is detected in specified amplitude and specified cycle under slip lock-up condition. (20 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ATF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Torque converter clutch
+</ptxt>
+</item>
+<item>
+<ptxt>
+Valve body
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70B5104041002">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Perform road test in a place where there is no traffic to prevent an accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Road test should be performed with two persons, a driver and a tester, on a level road.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<s1>
+<ptxt>
+Warm up engine to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Shift select lever to “D” range and drive the vehicle at 3rd or 4th gear with slip controlled lock-up ON for 20 sec.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70B5104041003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70B5104041004">
+<testgroup id = "AENAP70B5104041005">
+<question>
+Was “A/T Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B5104001">A/T Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104041006">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Change ATF. 
+<intxreftitleoff1 refid = "AENAP70B5106003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check DTC after performing “DTC Confirmation Procedure”.
+</ptxt>
+</test1>
+<question>
+Is DTC P1878 still indicated?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace torque converter and/or valve body.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

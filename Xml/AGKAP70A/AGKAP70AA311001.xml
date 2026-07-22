@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGKAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Εισαγωγή συστήματος ελέγχου immobilizer
+</title>
+<ptxt>
+Όταν ο διακόπτης ανά&#248;λεξης γυρίσει &#34;ON&#34;, η κεραία του πηνίου του immobiliser λαμβάνει τον κωδικό του πομποδέκτη από το κλειδί ανά&#248;λεξης.
+</ptxt>
+<ptxt>
+Στη συνέχεια, η κεραία του πηνίου του immobiliser μεταδίδει τον κωδικό του πομποδέκτη, ο οποίος λαμβάνεται από τον εγκέ&#248;αλο BCM μέσω σειριακής επικοινωνίας.
+</ptxt>
+<ptxt>
+Ο εγκέ&#248;αλος BCM συγκρίνει αυτόν τον κωδικό πομποδέκτη με τον κωδικό πομποδέκτη που έχει ήδη καταχωρηθεί στον εγκέ&#248;αλο BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Εάν οι δύο κωδικοί πομποδέκτη συμ&#248;ωνούν μεταξύ τους, ο εγκέ&#248;αλος BCM στέλνει ένα σήμα άδειας εκκίνησης κινητήρα στον εγκέ&#248;αλο ECM μέσω επικοινωνίας CAN.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Εάν οι δύο κωδικοί πομποδέκτη δεν συμ&#248;ωνούν μεταξύ τους, ο εγκέ&#248;αλος BCM στέλνει ένα σήμα απαγόρευσης εκκίνησης κινητήρα στον εγκέ&#248;αλο ECM μέσω επικοινωνίας CAN.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Με τη λήψη του σήματος απαγόρευσης εκκίνησης του κινητήρα, ο εγκέ&#248;αλος ECM προκαλεί την αναστολή του ψεκασμού καυσίμου, απαγορεύοντας έτσι την εκκίνηση του κινητήρα.
+</ptxt>
+<ptxt>
+Ταυτόχρονα, ο εγκέ&#248;αλος BCM ή ECM στέλνει ένα σήμα στον πίνακα οργάνων, ζητώντας το άναμμα ή το αναβόσβημα της ενδεικτικής λυχνίας immobiliser. Κατόπιν, ο οδηγός ειδοποιείται για την παρουσία ανωμαλίας από το άναμμα ή το αναβόσβημα της ενδεικτικής λυχνίας immobiliser.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001R.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "501" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

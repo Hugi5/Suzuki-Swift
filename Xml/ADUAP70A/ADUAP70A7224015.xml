@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A7224015" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1503 / B1562
+</title>
+<servinfosub id = "ADUAP70A7224015001">
+<title>
+DTC-waarnemingsvoorwaarde en plaats van de storing
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.657in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.558in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC-waarnemingsvoorwaarde
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Plaats van de storing
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1503: Storing in de verdampertemperatuursensor en/of het bijbehorende circuit
+</emph>
+</ptxt>
+<ptxt>
+Het HVAC-regelapparaat ontvangt onafgebroken ongeldige gegevens van de verdampertemperatuursensor van de BCM via de CAN-communicatielijn.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuit van de verdampertemperatuursensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+Verdampertemperatuursensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC-regelapparaat
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1562: Storing in de buitenluchttemperatuursensor en/of het bijbehorende circuit
+</emph>
+</ptxt>
+<ptxt>
+Het HVAC-regelapparaat ontvangt onafgebroken ongeldige gegevens van de buitenluchttemperatuursensor van de BCM via de CAN-communicatielijn.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuit van de buitenluchttemperatuursensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+Buitenluchttemperatuursensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC-regelapparaat
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ADUAP70A7224015002">
+<title>
+DTC-controleprocedure
+</title>
+<attention3>
+<ptxt>
+Controleer bij deze procedure of aan de volgende voorwaarde is voldaan.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+U0073 en/of U0140 zijn niet waargenomen
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Start de motor en bedien het A/C-systeem.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ADUAP70A7224015003">
+<title>
+DTC-storingzoeken
+</title>
+<diag type = "test" id = "ADUAP70A7224015004">
+<testgroup id = "ADUAP70A7224015005">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Controleer de volgende DTC van de BCM.
+</ptxt>
+<ptxt>
+B1503: B1145 en/of B1146
+</ptxt>
+<ptxt>
+B1562: B1141 en/of B1142
+</ptxt>
+</test1>
+<question>
+Zijn er DTC&#39;s?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar DTC-storingzoeken van de betrokken DTC. 
+<intxreftitleoff1 refid = "ADUAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vervang het HVAC-regelapparaat en controleer de DTC opnieuw. 
+<intxreftitleoff1 refid = "ADUAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

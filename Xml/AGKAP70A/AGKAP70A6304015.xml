@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A6304015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1160
+</title>
+<servinfosub id = "AGKAP70A6304015001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.778in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1160: Σ&#248;άλμα Προγραμματισμού του Εγκε&#248;άλου
+</emph>
+</ptxt>
+<ptxt>
+Τα δεδομένα χάρτη υποβοήθησης δεν έχουν ορισθεί στη μονάδα ελέγχου P/S.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Εγκέ&#248;αλος P/S
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A6304015002">
+<title>
+Διαδικασία Επιβεβαίωσης Κωδικού Βλάβης DTC
+</title>
+<s1>
+<ptxt>
+Θέστε τον διακόπτη ανά&#248;λεξης στη θέση &#34;ON&#34;.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Θέστε τον διακόπτη ανά&#248;λεξης στη θέση &#34;OFF&#34;.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Θέστε τον διακόπτη ανά&#248;λεξης στη θέση &#34;ON&#34;.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGKAP70A6304015003">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A6304015004">
+<testgroup id = "AGKAP70A6304015005">
+<question>
+Είχε πραγματοποιηθεί &#34;Έλεγχος συστήματος P/S&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε τη μονάδα ελέγχου P/S και επανελέγξτε τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A6304001">Έλεγχος συστήματος P/S</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

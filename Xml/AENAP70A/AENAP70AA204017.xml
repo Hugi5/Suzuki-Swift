@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10B">
+<servcat sctnbr = "10" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70AA204017" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1157
+</title>
+<servinfosub id = "AENAP70AA204017001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.635in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.573in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition	
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1157: Air Bag Deployment Signal Input
+</emph>
+</ptxt>
+<ptxt>
+Air bag deployment signal is fed from SDM to BCM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70AA204017002">
+<title>
+DTC Confirmation Procedure
+</title>
+<s1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition “OFF”.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70AA204017003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70AA204017004">
+<testgroup id = "AENAP70AA204017005">
+<title>
+DTC recheck
+</title>
+<test1>
+<ptxt>
+Clear DTC. 
+<intxreftitleoff1 refid = "AENAP70AA204004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70AA204017002">DTC Confirmation Procedure</intxref>
+ and then recheck DTC.
+</ptxt>
+</test1>
+<question>
+Is DTC B1157 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End. (Air bag has deployed in past. (DTC is not cleared))
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70AA204017006">
+<title>
+DTC recheck
+</title>
+<test1>
+<ptxt>
+Replace SDM. 
+<intxreftitleoff1 refid = "AENAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70AA204017002">DTC Confirmation Procedure</intxref>
+ and then recheck DTC.
+</ptxt>
+</test1>
+<question>
+Is DTC B1157 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace BCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End. (SDM was faulty)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

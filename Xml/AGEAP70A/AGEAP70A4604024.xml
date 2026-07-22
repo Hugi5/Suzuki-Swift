@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A4604024" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1038
+</title>
+<servinfosub id = "AGEAP70A4604024001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.259in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.896in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1038: Lenkwinkelsensor erfasst Zählerstörung
+</emph>
+</ptxt>
+<ptxt>
+Lenkwinkelsensor erfasst ungültige CAN-Daten vom ESP<sup>&#174;</sup>-Steuermodul.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN-Kommunikationsschaltkreis
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lenkwinkelsensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604024002">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A4604024003">
+<testgroup id = "AGEAP70A4604024004">
+<question>
+Wurde die &#34;ESP<sup>&#174;</sup>-Systemprüfung&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A4604001">ESP&#174;-Systemprüfung</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604024005">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604005">DTC-Überprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Liegen andere DTCs als C1038 vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604024006">
+<title>
+Prüfung des Lenkwinkelsensors
+</title>
+<test1>
+<ptxt>
+Sicherstellen, dass die Zündung ausgeschaltet ist.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Lenkwinkelsensor austauschen. 
+<intxreftitleoff1 refid = "AGEAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die DTCs abrufen.
+</ptxt>
+</test1>
+<question>
+Wird DTC C1038 erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ESP<sup>&#174;</sup>-Hydraulikeinheit/Steuermodul-Baugruppe austauschen und DTC erneut überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

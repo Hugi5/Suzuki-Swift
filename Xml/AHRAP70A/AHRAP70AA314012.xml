@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70AA314012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1167
+</title>
+<servinfosub id = "AHRAP70AA314012001">
+<title>
+Detektirano DTC stanje i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.260in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.945in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano DTC stanje
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1167: Neusklađene informacije blokade motora
+</emph>
+</ptxt>
+<ptxt>
+Pogreška potvrde između BCM-a i ECM-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ID kod ECM-a nije registriran u BCM.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ključ za pokretanje nije registriran
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70AA314012002">
+<title>
+Rješavanje problema DTC-a
+</title>
+<attention3>
+<ptxt>
+Ako se radi o BCM-u koji je bio registriran u drugom vozilu (prethodno korištena stavka), ključ za pokretanje ne može se registrirati. Kada je zamjena neophodna, uvijek ugradite novi BCM.
+</ptxt>
+</attention3>
+<diag type = "test" id = "AHRAP70AA314012003">
+<testgroup id = "AHRAP70AA314012004">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provjerite DTC u ECM-u. 
+<intxreftitleoff1 refid = "AHRAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li otkriven DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na postupak rješavanja problema za dotični DTC.	
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA314012005">
+<title>
+Ponovna provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70AA316003">Registracija u ECM:Model s kontakt bravom</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Potvrdite da je kontakt isključen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Detektira li se i dalje DTC B1167?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj. (ECM nije registriran)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA314012006">
+<title>
+Registracija ključa za pokretanje
+</title>
+<test1>
+<ptxt>
+Izvršite &#34;Registraciju ključa blokade motora&#34;. 
+<intxreftitleoff1 refid = "AHRAP70AA316002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uvjerite se da je kontakt isključen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Detektira li se i dalje DTC B1167?
+</question>
+<result type = "yes"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Zamijenite BCM i ponovo provjerite DTC. Ako se i dalje detektira DTC B1167, zamijenite ECM i ponovno provjerite DTC.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+BCM: 
+<intxreftitleoff1 refid = "AHRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM: 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj. (Ključ za pokretanje nije registriran)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

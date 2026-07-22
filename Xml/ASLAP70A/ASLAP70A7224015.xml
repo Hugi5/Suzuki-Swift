@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A7224015" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1503 / B1562
+</title>
+<servinfosub id = "ASLAP70A7224015001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.657in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.558in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1503: Porucha snímača teploty výparníka a/alebo jeho obvodu
+</emph>
+</ptxt>
+<ptxt>
+Riadiaca jednotka HVAC neustále prijíma neplatné údaje snímača teploty výparníka z BCM cez komunikačnú linku CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Obvod snímača teploty výparníka
+</ptxt>
+</item>
+<item>
+<ptxt>
+Snímač teploty výparníka
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka HVAC
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1562: Porucha snímača teploty vonkajšieho vzduchu a/alebo jeho obvodu
+</emph>
+</ptxt>
+<ptxt>
+Riadiaca jednotka HVAC neustále prijíma neplatné údaje snímača teploty vonkajšieho vzduchu z BCM cez komunikačnú linku CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Okruh snímača vonkajšej teploty vzduchu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Snímač vonkajšej teploty vzduchu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka HVAC
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A7224015002">
+<title>
+Postup potvrdenia DTC
+</title>
+<attention3>
+<ptxt>
+Pred vykonaním tohto postupu sa najskôr uistite, že sú splnené nasledovné podmienky.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+U0073 a/alebo U0140 nie sú detekované.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Naštartujte motor a ovládajte systém klimatizácie.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A7224015003">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A7224015004">
+<testgroup id = "ASLAP70A7224015005">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte nasledovné DTC BCM.
+</ptxt>
+<ptxt>
+B1503: B1145 a/alebo B1146
+</ptxt>
+<ptxt>
+B1562: B1141 a/alebo B1142
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným procesom riešenia DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte riadiacu jednotku HVAC a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

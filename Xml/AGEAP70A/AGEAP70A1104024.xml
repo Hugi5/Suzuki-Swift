@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104024" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0122 / P0123
+</title>
+<servinfosub id = "AGEAP70A1104024001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.217in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.973in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0122: Niedrige Spannung im Schaltkreis des Pedal-/Drosselklappenstellungssensors/-schalters &#34;A&#34;
+</emph>
+</ptxt>
+<ptxt>
+Die Ausgangsspannung des TP-Sensorsignalkreises (Hauptsensor) liegt unter 0,2 V.
+</ptxt>
+<ptxt>
+(1-Fahrten-Testlogik)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+TP-Sensor (Hauptsensor) und/oder zugehöriger Schaltkreis
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0123: Hohe Spannung im Schaltkreis des Pedal-/Drosselklappenstellungssensors/-schalters &#34;A&#34;
+</emph>
+</ptxt>
+<ptxt>
+Die Ausgangsspannung des TP-Sensorsignalkreises (Hauptsensor) liegt über 4,8 V.
+</ptxt>
+<ptxt>
+(1-Fahrten-Testlogik)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104024002">
+<title>
+Schaltplan
+</title>
+<figure>
+<graphic graphicname = "I9P60A111016.swf" width = "183.000mm" height = "94.194mm" ver = "03" gw = "440" gh = "250"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.313in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.618in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.313in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.237in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.252in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.275in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM-Steckverbinder (Ansicht: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Signalkreis des TP-Sensors (Hauptsensor)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP-Sensor (Hauptsensor)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Steuerkreis des Drosselklappenstellglieds (geschlossen)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B3: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Signalkreis des TP-Sensors (Nebensensor)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP-Sensor (Nebensensor)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Steuerkreis des Drosselklappenstellglieds (geöffnet)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Masseschaltkreis des TP-Sensors
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Drosselklappenstellglied
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Stromversorgungskreis des TP-Sensors
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Elektrische Drosselklappengehäuse-Baugruppe
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104024003">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<attention3>
+<ptxt>
+Zunächst muss die Fehlersuche für die DTCs durchgeführt werden, die unerwartet bei der &#34;Überprüfung von Diagnosecodes&#34; erfasst wurden.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Die Zündung 10 Sek. lang auf &#34;ON&#34; stellen.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104024004">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A1104024005">
+<testgroup id = "AGEAP70A1104024006">
+<question>
+Wurde die &#34;Überprüfung des Motor- und Abgassteuerungssystems&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104001">Überprüfung des Motor- und Abgassteuerungssystems</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104024007">
+<title>
+Überprüfung des Stromversorgungskreises des TP-Sensors
+</title>
+<test1>
+<ptxt>
+Die Zündung ausschalten und den Stecker des TP-Sensors lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Klemmenanschluss am Stecker des TP-Sensors prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Wenn die Anschlüsse in Ordnung sind, die Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Sicherstellen, dass zwischen &#34;B1&#34; und &#34;B4&#34; eine Spannung von ca. 5 V anliegt.
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104024008">
+<title>
+Überprüfung des Masseschaltkreises des TP-Sensors
+</title>
+<test1>
+<ptxt>
+Sicherstellen, dass zwischen &#34;B1&#34; und Masse eine Spannung von ca. 5 V anliegt.
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Den Schaltkreis &#34;B4&#34; reparieren.
+</ptxt>
+<ptxt>
+Falls dieser DTC wieder erfasst wird, das ECM austauschen und erneute DTC-Prüfung durchführen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Den Schaltkreis &#34;B1&#34; reparieren.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104024009">
+<title>
+Überprüfung des Signalstromkreises des TP-Sensors (Hauptsensor)
+</title>
+<test1>
+<ptxt>
+Bei Zündung auf &#34;OFF&#34; die Steckverbinder &#34;C01&#34; und &#34;E01&#34; vom ECM abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf korrekten Klemmenanschluss der Steckverbinder &#34;C01&#34; und &#34;E01&#34; prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Wenn die Anschlüsse in Ordnung sind, folgende Punkte überprüfen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Widerstand im Schaltkreis &#34;B2&#34;: weniger als 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Schaltkreis &#34;B2&#34; und Masse: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Anschlussklemme &#34;B2&#34; und den anderen Klemmen am Stecker des TP-Sensors: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spannung im Schaltkreis &#34;B2&#34;: 0 bis 1 V (bei Zündung auf &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Den Signalstromkreis des TP-Sensors (Hauptsensor) reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104024010">
+<title>
+Überprüfung des TP-Sensors
+</title>
+<test1>
+<ptxt>
+Den TP-Sensor gemäß &#34;Funktionsprüfung des Drosselklappenstellungssensors&#34; unter 
+<intxref refid = "AGEAP70A1306004">Überprüfung der elektrischen Drosselklappengehäuse-Baugruppe am Fahrzeug</intxref>
+ überprüfen.
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Die elektrische Drosselklappengehäuse-Baugruppe austauschen.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

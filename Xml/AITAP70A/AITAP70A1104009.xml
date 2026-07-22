@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104009" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Ispezione di base del motore
+</title>
+<ptxt>
+Questo controllo è di fondamentale importanza per la ricerca guasti qualora non siano stati riscontrati DTC nell&#39;ECM e a seguito dei controlli descritti in 
+<intxref refid = "AITAP70A1104008">Ispezione visiva</intxref>
+.
+</ptxt>
+<ptxt>
+Seguire la scheda scrupolosamente.
+</ptxt>
+<diag type = "test" id = "AITAP70A1104009001">
+<testgroup id = "AITAP70A1104009002">
+<question>
+È stata eseguita la procedura &#34;Verifica del sistema di controllo del motore e delle emissioni&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104001">Verifica del sistema di controllo del motore e delle emissioni</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009003">
+<title>
+Controllo della tensione della batteria
+</title>
+<question>
+È pari o superiore a 11 V?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Caricare o sostituire la batteria.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009004">
+<question>
+Il motorino d’avviamento funziona?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1904001">Diagnosi dell&#39;impianto d’avviamento basata sui sintomi</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009005">
+<question>
+Il motore si avvia?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009006">
+<title>
+Controllo del regime minimo
+</title>
+<test1>
+<ptxt>
+Controllare il regime del minimo del motore. 
+<intxreftitleoff1 refid = "AITAP70A1106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104010">Diagnosi del motore basata sui sintomi</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009007">
+<title>
+Controllo dell&#39;impianto di accensione
+</title>
+<test1>
+<ptxt>
+Controllare l’impianto di accensione. 
+<intxreftitleoff1 refid = "AITAP70A1804001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104010">Diagnosi del motore basata sui sintomi</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009008">
+<title>
+Controllo del funzionamento dell&#39;impianto immobilizzatore
+</title>
+<test1>
+<ptxt>
+Verificare il sistema di controllo immobilizzatore.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Modello con commutatore di accensione: 
+<intxreftitleoff1 refid = "AITAP70AA314001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Modello con sistema di avviamento motore a pulsante senza chiave: 
+<intxreftitleoff1 refid = "AITAP70AA324001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+L’impianto immobilizzatore è malfunzionante.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009009">
+<title>
+Controllo dell&#39;alimentazione del carburante
+</title>
+<test1>
+<ptxt>
+Controllare l&#39;alimentazione del carburante. 
+<intxreftitleoff1 refid = "AITAP70A1706014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104010">Diagnosi del motore basata sui sintomi</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104009010">
+<title>
+Controllo del circuito degli iniettori carburante
+</title>
+<test1>
+<ptxt>
+Controllare il circuito degli iniettori carburante facendo riferimento a 
+<intxref refid = "AITAP70A1704003">Controllo circuito iniettori carburante</intxref>
+.
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104010">Diagnosi del motore basata sui sintomi</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1704003">Controllo circuito iniettori carburante</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

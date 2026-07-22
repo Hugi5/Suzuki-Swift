@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGKAP70A1101009" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Περιγρα&#248;ή Συστήματος Ελέγχου Γεννήτριας
+</title>
+<ptxt>
+Το Σύστημα Ελέγχου Γεννήτριας αποτελείται από μία γεννήτρια (1), αισθητήρα ηλεκτρικού &#248;ορτίου (6) και ECM (4).
+</ptxt>
+<ptxt>
+Ο ECM ελέγχει τον παραγόμενο ηλεκτρισμό (προσαρμόζοντας την τάση του ρυθμιστή IC (2)) ώστε να είναι ο κατάλληλος για τον κινητήρα και τις συνθήκες ηλεκτρικού &#248;όρτου. Για να εμποδιστεί πτώση των στρο&#248;ών ρελαντί που θα μπορούσε να είναι αποτέλεσμα ταχείας αύξησης του ηλεκτρικού &#248;ορτίου και επακόλουθης αύξησης στο &#248;ορτίο του κινητήρα, ο εγκέ&#248;αλος ECM εκτελεί έλεγχο έτσι ώστε η έξοδος της γεννήτριας να αυξάνει προοδευτικά. Στην περίπτωση προσωρινής αύξησης στη ζήτηση παραγωγής ηλεκτρικής ενέργειας κατά την οδήγηση, ο εγκέ&#248;αλος ECM εκτελεί έλεγχο για να περιορίσει τη λειτουργία της γεννήτριας και συνεπώς να περιορίσει την αύξηση του &#248;ορτίου στον κινητήρα, ώστε να διατηρήσει την απόδοση του κινητήρα, όπου είναι αναγκαίο (κατά την επιτάχυνση, για παράδειγμα).
+</ptxt>
+<servinfosub id = "AGKAP70A1101009001">
+<title>
+Λειτουργία
+</title>
+<ptxt>
+Ο εγκέ&#248;αλος ECM ελέγχει την τάση εξόδου της γεννήτριας αλλάζοντας το λόγο απόδοσης του σήματος στον ακροδέκτη &#34;C&#34; (ακροδέκτης ελέγχου γεννήτριας) βασιζόμενος στις παρακάτω πληρο&#248;ορίες.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Κατάσταση κινητήρα (ECT, ταχύτητα οχήματος, στρο&#248;ές κινητήρα, TP, κ.λ.π.) (8)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Τάση μπαταρίας (τάση ισχύος ECM) (9)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Κατάσταση ηλεκτρικού &#248;ορτίου (μοτέρ ανεμιστήρα, μηχανισμός ξεθαμπώματος πίσω παρμπρίζ, προβολείς, ανεμιστήρας ψυγείου, A/C κ.λ.π.) (10)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Έξοδος ακροδέκτη &#34;FR&#34; (έλεγχος σχέσης απόδοσης πηνίου διέγερσης (3)) το οποίο απεικονίζει τον ρυθμό λειτουργίας του πηνίου διέγερσης.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Η σχέση απόδοσης στον ακροδέκτη &#34;C&#34; της γεννήτριας προσαρμόζει την τάση του ρυθμιστή IC, o οποίος με τη σειρά του ελέγχει τη σχέση απόδοσης του πηνίου διέγερσης και συνεπώς την τάση εξόδου (έξοδος ακροδέκτη &#34;B&#34;) της γεννήτριας.
+</ptxt>
+<ptxt>
+Για περισσότερες πληρο&#248;ορίες σχετικά με την τάση εξόδου της γεννήτριας, ανατρέξτε στο Σύστημα Φόρτισης στην Ενότητα 1J.
+</ptxt>
+<ptxt>
+Επιπλέον, η κατάσταση παραγωγής της γεννήτριας ελέγχεται στο μέγιστο επίπεδό της από τον αισθητήρα ηλεκτρικού &#248;ορτίου (6), ο οποίος εντοπίζει την κατάσταση ηλεκτρικού &#248;ορτίου (κατανάλωση ηλεκτρισμού) γραμμικά, ακόμη και όταν εμ&#248;ανιστεί οποιαδήποτε διακύμανση ηλεκτρικού &#248;ορτίου με συνέπεια να μειωθεί το ηλεκτρικό &#248;ορτίο του κινητήρα.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A111040.swf" width = "183.000mm" height = "76.506mm" ver = "01" gw = "415" gh = "200"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.331in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.685in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.331in"/>
+<colspec colnum = "4" colname = "4" colwidth = "0.937in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.331in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.176in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Διακόπτης εκκίνησης (μοντέλο διακόπτη εκκίνησης) ή ρελέ IG1 (μοντέλο με μπουτόν εκκίνησης χωρίς κλειδί)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Κύκλωμα οδήγησης CAN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Μπαταρία
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Πίνακας οργάνων
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70AA501004" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descrizione della funzione di avviamento del motore senza chiave
+</title>
+<servinfosub id = "AITAP70AA501004001">
+<title>
+Funzione di commutazione della modalità di accensione
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+	Quando l&#39;interruttore motore viene premuto con telecomando all&#39;interno dell&#39;abitacolo e pedale della frizione rilasciato, la centralina sistema di avviamento senza chiave confronta il codice ID inviato dal telecomando con il codice ID registrato nella sua memoria. Se questi codici ID corrispondono, la centralina sistema di avviamento senza chiave comanda l&#39;eccitazione/diseccitazione dei relè ACC, IG1 e IG2, in funzione dell&#39;operazione che l&#39;interruttore motore deve compiere per far passare la modalità di accensione nelle varie condizioni &#34;OFF&#34; &#8594; &#34;ACC&#34; &#8594; &#34;ON&#34; (motore fermo) &#8594; &#34;OFF&#34;. Quando la modalità di accensione si trova su &#34;ACC&#34;, la spia ACC si accende sul quadro strumenti. Quando è selezionata la modalità &#34;ON&#34; (motore fermo), la spia ON si accende sul quadro strumenti.
+</ptxt>
+</item>
+<item>
+<ptxt>
+	La tabella riportata di seguito illustra come la modalità di accensione varia in base all&#39;operazione dell&#39;interruttore motore. Una freccia indica il passaggio mediante doppia pressione dell&#39;interruttore motore.
+</ptxt>
+<attention3>
+<ptxt>
+Tranne in caso di emergenza, non arrestare mai il motore durante la marcia.
+</ptxt>
+</attention3>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70AA50001I.swf" width = "183.000mm" height = "74.686mm" ver = "01" gw = "388" gh = "195"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.383in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.294in"/>
+<colspec colnum = "4" colname = "4" colwidth = "3.158in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Cambio sempre possibile
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Cambio solo quando il veicolo è fermo
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Cambio solo quando il codice ID inviato dal telecomando corrisponde
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Durante la marcia (cambio quando l&#39;interruttore motore viene mantenuto premuto a lungo)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AITAP70AA501004002">
+<title>
+Funzione di avviamento del motore
+</title>
+<ptxt>
+Il metodo di avviamento del motore è il seguente.
+</ptxt>
+<s1>
+<ptxt>
+Premendo il pedale della frizione, la centralina sistema di avviamento senza chiave (1) invia il segnale di richiesta al quadro strumenti (2) via linea di comunicazione CAN per far accendere l&#39;indicatore PUSH sul quadro medesimo.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Premendo l&#39;interruttore motore (3) avendo con sé il telecomando (4), il segnale interruttore motore viene inviato alla centralina sistema di avviamento senza chiave.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+La centralina sistema di avviamento senza chiave attiva l&#39;antenna interna intermedia (5) per inviare il segnale di richiesta al telecomando.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Il telecomando riceve il segnale di richiesta, quindi invia il codice ID alla centralina sistema di avviamento senza chiave tramite il ricevitore (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+La centralina sistema di avviamento senza chiave confronta il codice ID inviato dal telecomando con il codice ID registrato nella centralina sistema di avviamento senza chiave. Se i codici ID corrispondono, la centralina sistema di avviamento senza chiave invia un segnale di richiesta sblocco bloccasterzo al gruppo bloccasterzo (7). Contemporaneamente, invia il segnale di avviamento motore alla ECM (8) ed eccita il relè di controllo motorino di avviamento al fine di attivare il motorino medesimo (9). In questo modo, il volante si sblocca e il motore può essere avviato.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50004.swf" width = "183.000mm" height = "76.649mm" ver = "01" gw = "396" gh = "201"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.189in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Percorso del segnale da &#34;1&#34; a &#34;5&#34; - passi da 1) a 5)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "AITAP70AA501004003">
+<title>
+Raggio d&#39;azione
+</title>
+<ptxt>
+Il motore può essere avviato quando il telecomando si trova all&#39;interno dell&#39;area di rilevamento (1) dell&#39;antenna interna intermedia.
+</ptxt>
+<attention3>
+<ptxt>
+La funzione di avviamento del motore senza chiave può non essere attiva quando il telecomando si trova sul cruscotto, in uno dei cassetti portaoggetti, intorno al vano piedi lati guida e passeggero, in una tasca delle porte o nel bagagliaio.
+</ptxt>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50005.swf" width = "88.000mm" height = "56.543mm" ver = "01" gw = "230" gh = "144"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.630in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antenna interna intermedia
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "AITAP70AA501004004">
+<title>
+Avviamento motore impossibile
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Se il telecomando non si trova all&#39;interno dell&#39;abitacolo oppure, all&#39;interno del veicolo ve n&#39;è uno non registrato, la centralina sistema di avviamento senza chiave invia il segnale di richiesta spia immobilizzatore, il segnale di richiesta spia PUSH e il segnale di richiesta cicalino al quadro strumenti via linea di comunicazione CAN per avvisare il conducente. Contemporaneamente, diseccita i relè ACC, IG1, IG2 e di controllo motorino di avviamento al fine di impedire la variazione della modalità di accensione e l&#39;attivazione del motorino di avviamento.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Se la batteria del telecomando è scarica o in presenza di anomalia del sistema, l&#39;avviamento del motore avviene posizionando il telecomando sull&#39;interruttore motore, quale operazione di emergenza. 
+<intxreftitleoff1 refid = "AITAP70AA321003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

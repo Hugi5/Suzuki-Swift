@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B5104040" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1706
+</title>
+<servinfosub id = "ASPAP70B5104040001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.004in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.174in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1706: Error de comunicación de solicitud de par desde el TCM
+</emph>
+</ptxt>
+<ptxt>
+EL ECM detecta anormalidades en los datos de comunicación CAN, las cuales transmite el TCM.
+</ptxt>
+<ptxt>
+(Lógica de detección de 1 ciclos de conducción)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70B5104040002">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPAP70B5104040003">
+<testgroup id = "ASPAP70B5104040004">
+<title>
+Verificación de DTC
+</title>
+<question>
+¿Aparece algún otro DTC además del P1706?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización de averías del DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B5104040005">
+<title>
+Comprobación del DTC del ECM
+</title>
+<test1>
+<ptxt>
+Compruebe los DTC del ECM. 
+<intxreftitleoff1 refid = "ASPAP70B1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Aparece algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización de averías del DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el TCM por uno en buen estado y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPAP70B5106030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

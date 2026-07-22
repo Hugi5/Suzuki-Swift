@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A1104073" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "AGKAP70A1104073001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<attention3>
+<ptxt>
+Μετά τον επαναπρογραμματισμό του εγκεφάλου ECM, εάν υποδεικνύεται ο DTC P0602, είναι πιθανόν ότι ο επαναπρογραμματισμός του εγκεφάλου ECM να μην έχει ολοκληρωθεί σωστά.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.602in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.602in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0602: Σφάλμα προγραμματισμού του εγκεφάλου
+</emph>
+</ptxt>
+<ptxt>
+Εσωτερική βλάβη εγκεφάλου ECM ή σφάλμα προγραμματισμού εγκεφάλου ECM
+</ptxt>
+<ptxt>
+(λογική ανίχνευσης 1 D/C)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Σφάλμα επαναπρογραμματισμού εγκεφάλου ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Κύκλωμα τροφοδοσίας ρεύματος εγκεφάλου ECM ή/και κύκλωμα γείωσης
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A1104073002">
+<title>
+Διαδικασία Επιβεβαίωσης Κωδικού Βλάβης DTC
+</title>
+<s1>
+<ptxt>
+Γυρίστε το διακόπτη ανάφλεξης στη θέση ΟΝ για 10 δευτ.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGKAP70A1104073003">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A1104073005">
+<testgroup id = "AGKAP70A1104073006">
+<title>
+Επανέλεγχος κωδικών DTC
+</title>
+<test1>
+<ptxt>
+Διαγράψτε τον Κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Γυρίστε το διακόπτη ανάφλεξης σε θέση OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Πραγματοποιήστε την διαδικασία επιβεβαίωσης του Κωδικού DTC και ελέγξτε τον Κωδικό DTC.
+</ptxt>
+</test1>
+<question>
+Εξακολουθεί να ανιχνεύεται ο Κωδικός DTC P0602;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ελέγξτε για διακοπτόμενο πρόβλημα. 
+<intxreftitleoff1 refid = "AGKAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A1104073007">
+<title>
+Έλεγχος επαναπρογραμματισμού εγκεφάλου ECM
+</title>
+<question>
+Εκτελέστηκε ο επαναπρογραμματισμός του εγκεφάλου ECM;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Εκτελέστε επαναπρογραμματισμό του εγκεφάλου ECM ακόμη μία φορά σωστά.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A1104073008">
+<title>
+Έλεγχος του κυκλώματος τροφοδοσίας και γείωσης του εγκεφάλου ECM
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τα κυκλώματα τροφοδοσίας και γείωσης του εγκεφάλου ECM. 
+<intxreftitleoff1 refid = "AGKAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι το αποτέλεσμα του ελέγχου ΟΚ;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Τοποθετήστε έναν εγκέφαλο ECM που γνωρίζετε ότι λειτουργεί σωστά και ελέγξτε ξανά. 
+<intxreftitleoff1 refid = "AGKAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Επισκευάστε ή αντικαταστήστε την ελαττωματική ηλεκτρική καλωδίωση.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPBP70A1101011" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Tabla de entrada / salida de control del motor y de las emisiones
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.596in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.561in"/>
+<colspec colnum = "3" colname = "3" colwidth = "3.975in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Función
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Salida
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Entrada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de la inyección
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Inyector de combustible
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CMP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor APP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-1
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-2
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión del refrigerante del A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de la batería
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor de la luz de freno / interruptor de freno
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de estado del interruptor de A/C)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de ESP<sup>&#174;</sup> (señal de velocidad de la rueda y señal de solicitud de aumento / reducción de par)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de P/S
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM (señal de solicitud de límite de régimen del motor y señal de solicitud de aumento / reducción de par) (modelo con CVT)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del inmovilizador
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Inyector de combustible
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de arranque sin llave
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del encendido
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Conjunto de la bobina de encendido
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CMP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor APP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de detonación
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de la batería
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de carga eléctrica y señal de solicitud de estado del A/C)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de ESP<sup>&#174;</sup> (señal de velocidad de la rueda y señal de solicitud de aumento / reducción de par)
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM (señal de solicitud de límite de régimen del motor y señal de solicitud de reducción de par) (modelo con CVT)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del régimen de ralentí
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Actuador de la mariposa
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor APP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-1
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-2
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión del refrigerante del A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor de la luz de freno / interruptor de freno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Generador (señal medida de la bobina de campo)
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de carga eléctrica y señal de solicitud de estado del A/C)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de ESP<sup>&#174;</sup> (señal de velocidad de la rueda y señal de solicitud de aumento / reducción de par)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de P/S
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM (señal de posición del cambio de la transmisión y señal de solicitud de aumento / reducción de par) (modelo con CVT)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de la válvula de mariposa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Actuador de la mariposa
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor APP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-1
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-2
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión del refrigerante del A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor de la luz de freno / interruptor de freno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Generador (señal medida de la bobina de campo)
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de carga eléctrica y señal de solicitud de estado del A/C)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control del ESP<sup>&#174;</sup> (señal de solicitud de aumento/reducción del par)
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM (señal de solicitud de límite de régimen del motor y señal de solicitud de aumento / reducción de par) (modelo CVT)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de crucero (modelos con control de crucero)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Actuador de la mariposa
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor CPP (interruptor de posición del pedal de embrague) n&#176; 2 (modelos con M/T)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor de la luz de freno / interruptor de freno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Mando de control de crucero
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control del ESP<sup>&#174;</sup> (señal de velocidad de las ruedas)
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM (señal de solicitud de límite de régimen del motor, señal de solicitud de posición del cambio de la transmisión y señal de solicitud de aumento / reducción de par) (modelo con CVT)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del generador
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Generador
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor APP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal del sensor de corriente de carga eléctrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Generador (señal medida de campo)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de la batería
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de carga eléctrica)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control del ESP<sup>&#174;</sup> (señal de velocidad de las ruedas)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del calentador de HO2S-1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-1
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de la batería
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del calentador de HO2S-2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-2
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de la batería
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de purga de EVAP
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Válvula de purga del recipiente de EVAP
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-1
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-2
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control del ESP<sup>&#174;</sup> (señal de velocidad de las ruedas)
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de carga eléctrica y señal de solicitud de estado del A/C)
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM (señal de solicitud de límite de régimen del motor y señal de solicitud de aumento / reducción de par) (modelo con CVT)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de sincronización de válvula variable
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OCV
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CMP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor IAT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor de la luz de freno / interruptor de freno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control del ESP<sup>&#174;</sup> (señal de velocidad de las ruedas)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de IMT
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Actuador de la válvula de IMT
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CMP
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del compresor del A/C
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé del compresor del A/C
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor APP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión del refrigerante del A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor MAF (modelo con CVT)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión barométrica (modelo con CVT)
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de carga eléctrica y señal de solicitud de estado del A/C)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control del ESP<sup>&#174;</sup> (señal de velocidad de las ruedas)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de presión del refrigerante del A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM (señal de carga eléctrica y señal de solicitud de estado del A/C)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control del ESP<sup>&#174;</sup> (señal de velocidad de las ruedas)
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de la bomba de combustible
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé de la bomba de combustible
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del relé de control del motor de arranque
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé de control del motor de arranque
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Señal de encendido en la posición START (arranque)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del relé principal
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé principal
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal de encendido en ON
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

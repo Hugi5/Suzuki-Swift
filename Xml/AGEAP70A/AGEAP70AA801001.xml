@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschreibung des Kommunikationssystems
+</title>
+<servinfosub id = "AGEAP70AA801001001">
+<title>
+Systembeschreibung
+</title>
+<ptxt>
+Die Kommunikation aller Steuermodule und -geräte erfolgt durch ein fortwährendes Senden und Empfangen von digitalen EIN/AUS-Signalen, wobei verschiedene Datenelemente parallel verarbeitet werden. Das Senden/Empfangen dieser Daten wird erfolgt über eine serielle Kommunikationsschnittstelle.
+</ptxt>
+<ptxt>
+Für das Kommunikationssystem im Fahrzeug wurden serielle Kommunikationsschnittstellen nach UART-, CAN- und LIN-Protokollen (Kommunikationsstandards) übernommen.
+</ptxt>
+<ptxt>
+UART wird bei der Kommunikation vom Steuermodul für schlüsselloses Starten zur Lenkschlosseinheit verwendet.
+</ptxt>
+<ptxt>
+LIN wird für die Kommunikation zwischen Kombiinstrument und Parksensorsystem-Steuermodul sowie zwischen HVAC-Steuermodul und Auto-A/C-Bedienfeld verwendet.
+</ptxt>
+<ptxt>
+Darüber hinaus senden/empfangen das Steuermodul für schlüsselloses Starten (Modell mit schlüssellosem Startsystem), BCM, ECM, Kombiinstrument, P/S-Steuermodul, HVAC-Steuermodul (Auto-A/C-Modell), ESP<sup>&#174;</sup>-Steuermodul, SDM und der Lenkwinkelsensor, die über das CAN-Netzwerk miteinander verbunden sind, Daten über ein verdrilltes Leiterpaar aus zwei Kommunikationsleitungen (CAN High und CAN Low). Die von einem Steuermodul empfangenen Daten können per CAN-Kommunikation auch von dem anderen Steuermodul verwendet werden.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70AA801001002">
+<title>
+CAN-Kommunikationssignal
+</title>
+<ptxt>
+Beim CAN-Kommunikationssystem handelt es sich um ein serielles Kommunikationssystem zur Übertragung einer Vielzahl von Datenelementen (Werte von Sensoren, Steuerungsdaten und Steuersignale) in Form von digitalen EIN/AUS-Signalen über die Kommunikationsleitungen. Dieses System verwendet zwei Leitungen (CAN High und CAN Low) für den Kommunikationsschaltkreis, so dass auch dann eine hohe Zuverlässigkeit gegeben ist, wenn es für die serielle Hochgeschwindigkeitskommunikation verwendet wird.
+</ptxt>
+<ptxt>
+Wie unten gezeigt, werden bei der seriellen Kommunikation 2,5 V als Referenzwert für sowohl das CAN-High-Signal (1) als auch das CAN-Low-Signal (2) verwendet. Das CAN-High-Signal liegt innerhalb eines Bereichs von 2,5 V bis ungefähr 3,5 V; das CAN-Low-Signal liegt in einem Bereich von 2,5 V bis ungefähr 1,5 V. Liegen beide bei 2,5 V, wird das Signal als AUS gewertet. Ist das CAN-High-Signal 3,5 V und das CAN-Low-Signal 1,5 V (d. h. die Differenz zwischen hoher und niedriger Spannung beträgt mehr als 2 V), dann wird das Signal als EIN gewertet. Aus diesem Grund liegt ein Merkmal des CAN-Kommunikationssignals darin, dass die Signalwellenform zwischen den CAN-High- und CAN-Low-Signalen im Hinblick auf den Wert von 2,5 V symmetrisch ist. Die CAN-Kommunikation schlägt fehl, wenn diese symmetrische Signalform zusammenbricht.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002G.swf" width = "183.000mm" height = "47.725mm" ver = "01" gw = "338" gh = "119"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

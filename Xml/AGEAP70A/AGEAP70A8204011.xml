@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A8204011" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1011
+</title>
+<servinfosub id = "AGEAP70A8204011001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.242in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.951in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1011: Falscher Zusammenbau des SDM 
+</emph>
+</ptxt>
+<ptxt>
+SDM weist widersprüchlichen ID-Code auf.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A8204011002">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A8204011003">
+<testgroup id = "AGEAP70A8204011004">
+<question>
+Wurde die &#34;Überprüfung des Airbag-Diagnosesystems&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A8204001">Überprüfung des Airbag-Diagnosesystems</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A8204011005">
+<title>
+Überprüfung des Airbagsystemtyps
+</title>
+<test1>
+<ptxt>
+Die Airbag-Kanalnummer des SDM anhand der SDM-Teilenummer identifizieren.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die Airbag-Kanalnummer des Fahrzeugs anhand der im Fahrzeug eingebauten Module oder Gurtstraffer identifizieren.
+</ptxt>
+</test1>
+<question>
+Ist das SDM für die Fahrzeugspezifikation zutreffend?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+SDM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Das SDM durch ein mit der Airbag-Spezifikation des Fahrzeugs kompatibles Teil ersetzen.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<attention3>
+<ptxt>
+Nach Abschluss der Überprüfung und der Reparaturarbeiten die folgenden Arbeiten durchführen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Alle Bauteile des Airbagsystems wieder anschließen und sicherstellen, dass sie einwandfrei montiert sind.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Eventuelle DTCs löschen, wenn DTCs festgestellt wurden. Siehe dazu 
+<intxref refid = "AGEAP70A8204006">Löschen von DTCs</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+<intxref refid = "AGEAP70A8204001">Überprüfung des Airbag-Diagnosesystems</intxref>
+ wiederholen, um sicherzustellen, dass die Störung behoben wurde.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

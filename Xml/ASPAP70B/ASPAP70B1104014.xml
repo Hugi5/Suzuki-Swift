@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B1104014" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0011
+</title>
+<servinfosub id = "ASPAP70B1104014001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.971in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.227in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph etype = "bold">
+P0011: Posición del árbol de levas &#34;A&#34;, sincronización demasiado avanzada o rendimiento del sistema 
+</emph>
+</ptxt>
+<ptxt>
+La CMP medida no alcanza la CMP deseada durante el tiempo especificado.
+</ptxt>
+<ptxt>
+(Lógica de detección de 3 ciclos de conducción)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+OCV y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor CKP y placa del sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+El sensor de posición CMP y el rotor de señales
+</ptxt>
+</item>
+<item>
+<ptxt>
+Conducto de aceite de la OCV
+</ptxt>
+</item>
+<item>
+<ptxt>
+Actuador de CMP
+</ptxt>
+</item>
+<item>
+<ptxt>
+Distribución de válvula
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70B1104014002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "IAP70B110005.swf" width = "183.000mm" height = "88.252mm" ver = "02" gw = "440" gh = "234"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.098in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.803in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "0.508in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conector del ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de accionamiento de la OCV
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica de la OCV
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+OCV
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPAP70B1104014003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Efectúe una prueba en carretera en un lugar donde no haya tráfico para evitar accidentes.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La prueba en carretera deben realizarla dos personas, un conductor y un probador, en una carretera nivelada.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+En primer lugar, asegúrese de realizar la localización de averías de los DTC inesperados detectados previamente en el &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Caliente el motor y repita la aceleración y desaceleración entre 30 y 80 km/h (18 y 50 mile/h) más de 10 veces.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPAP70B1104014004">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPAP70B1104014005">
+<testgroup id = "ASPAP70B1104014006">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014007">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Compruebe el DTC.
+</ptxt>
+</test1>
+<question>
+¿Aparece algún otro DTC además del P0011?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al DTC pertinente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014008">
+<title>
+Comprobación del circuito de alimentación eléctrica de la OCV y circuito de accionamiento de la OCV
+</title>
+<test1>
+<ptxt>
+Compruebe los circuitos &#34;A1&#34; y &#34;A2&#34; de acuerdo con los pasos 2 y 3 en 
+<intxref refid = "ASPAP70B1104013">DTC P0010 / P2088 / P2089</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014009">
+<title>
+Comprobación de la presión de aceite
+</title>
+<test1>
+<ptxt>
+Compruebe la presión de aceite. 
+<intxreftitleoff1 refid = "ASPAP70B1504001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o reemplace las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014010">
+<title>
+Comprobación visual del circuito de aceite de la OCV
+</title>
+<test1>
+<ptxt>
+Extraiga la tapa de la culata. 
+<intxreftitleoff1 refid = "ASPAP70B1406011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si hay fugas de presión de aceite en el circuito de aceite de la OCV.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o reemplace las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014011">
+<title>
+Comprobación del sensor CKP y de la placa del sensor
+</title>
+<test1>
+<ptxt>
+Compruebe el sensor CKP y la placa del sensor.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensor CKP: 
+<intxreftitleoff1 refid = "ASPAP70B1306020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Placa del sensor: 
+<intxreftitleoff1 refid = "ASPAP70B1406042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o reemplace las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014012">
+<title>
+Comprobación del sensor CMP y del rotor de señales
+</title>
+<test1>
+<ptxt>
+Compruebe el sensor CMP y el rotor de señales.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensor CMP: 
+<intxreftitleoff1 refid = "ASPAP70B1306018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Rotor de señales: 
+<intxreftitleoff1 refid = "ASPAP70B1406014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o reemplace las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014013">
+<title>
+Comprobación de la OCV
+</title>
+<test1>
+<ptxt>
+Compruebe la OCV. 
+<intxreftitleoff1 refid = "ASPAP70B1306027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya la OCV. 
+<intxreftitleoff1 refid = "ASPAP70B1406020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014014">
+<title>
+Comprobación del actuador de CMP
+</title>
+<test1>
+<ptxt>
+Compruebe el actuador de CMP. 
+<intxreftitleoff1 refid = "ASPAP70B1406014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 10.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el actuador de CMP. 
+<intxreftitleoff1 refid = "ASPAP70B1406013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104014015">
+<title>
+Comprobación de la sincronización de válvulas
+</title>
+<test1>
+<ptxt>
+Inspeccione las piezas relacionadas con la cadena de distribución y compruebe su estado de instalación. 
+<intxreftitleoff1 refid = "ASPAP70B1406023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPAP70B1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vuelva a instalar correctamente las piezas relacionadas con la cadena de distribución o sustituya las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

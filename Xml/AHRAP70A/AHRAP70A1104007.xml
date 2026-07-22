@@ -1,0 +1,2189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A1104007" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Podaci alata za skeniranje
+</title>
+<scantool>
+<scantool-title>
+ECM
+</scantool-title>
+<ptxt>
+S obzirom da su vrijednosti podataka standardne vrijednosti procijenjene na osnovi vrijednosti prikupljenih u vozilima koja normalno rade upotrebom alata za skeniranje, koristite ih kao referentne vrijednosti. Čak i kada je vozilo u dobrom stanju, mogu postojati slučajevi kada provjerena vrijednost nije unutar propisanog raspona. Stoga se ocjena je li to neuobičajeno ne smije donijeti samo na temelju ovih podataka.
+</ptxt>
+<ptxt>
+Također, uvjeti koji se mogu provjeriti alatom za skeniranje oni su koje je detektirao ECM i koji izlaze iz ECM-a kao komande pa mogu postojati slučajevi u kojima motor ili aktuator ne rade (u uvjetima) kako to prikazuje alat za skeniranje. Budite sigurni da koristite stroboskopsko svjetlo za provjeru kuta paljenja. 
+<intxreftitleoff1 refid = "AHRAP70A1806005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+S generičkim alatom za skeniranje mogu se očitati samo podaci označeni zvjezdicom (*) u sljedećoj tablici.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Prilikom provjere podataka dok motor radi u praznom hodu ili s velikim brojem okretaja, svakako ručicu mjenjača postavite u neutralan položaj i zategnite parkirnu kočnicu do kraja. Također, ako nije naznačeno ništa ili je naznačeno &#34;nema opterećenja&#34;, isključite klima uređaj, sve električne potrošače, servoupravljač i sve ostale potrebne prekidače.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.241in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.634in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.843in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.768in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.708in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podaci alata za skeniranje
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Stanje vozila
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Normalno stanje/referentna vrijednost
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fuel System 
+<intxreftitleoff1 refid = "AHRAP70A1104007002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrola otvorene petlje prije zadovoljavanja kontrolnih uvjeta zatvorene petlje (ECT &#62;10 &#176;C, IAT, TP, A/F senzor/sustav = OK)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL (otvorena petlja)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrola otvorene petlje zbog uvjeta vožnje (veća snaga itd.)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL-Drive (otvorena petlja)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrola otvorene petlje zbog detektiranja pogreške sustava
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL-Fault (otvorena petlja)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrola zatvorene petlje koristi HO2S i A/F senzore kao senzore za povratnu informaciju kontrole dobave goriva
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CL (zatvorena petlja)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrola zatvorene petlje zbog detektiranja pogreške sustava
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CL-pogreška (zatvorena petlja)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kad se motor zaustavi s uključenim kontaktom
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Short Term Fuel Trim 
+<intxreftitleoff1 refid = "AHRAP70A1104007003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno –20 do 20 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Long Term Fuel Trim 
+<intxreftitleoff1 refid = "AHRAP70A1104007004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno –20 do 20 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Total Fuel Trim 
+<intxreftitleoff1 refid = "AHRAP70A1104007005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno -30 do 30 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Inj Pulse Width 
+<intxreftitleoff1 refid = "AHRAP70A1104007006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod bez opterećenja nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 1,6 do 4,0 m/s
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ignition Advance 
+<intxreftitleoff1 refid = "AHRAP70A1104007007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod bez opterećenja nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1 do 15&#176; BTDC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Calculated Load 
+<intxreftitleoff1 refid = "AHRAP70A1104007008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod bez opterećenja nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 20 do 40 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Engine Speed 
+<intxreftitleoff1 refid = "AHRAP70A1104007009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+<ptxt>
+Ventilator hlađenja hladnjaka: zaustavljen
+</ptxt>
+<ptxt>
+Sva električna oprema: ISKLJ.
+</ptxt>
+<ptxt>
+Poluga mjenjača: neutralan položaj
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+590 – 690 okr./min
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Desired Idle 
+<intxreftitleoff1 refid = "AHRAP70A1104007010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+<ptxt>
+Ventilator hlađenja hladnjaka: zaustavljen
+</ptxt>
+<ptxt>
+Sva električna oprema: ISKLJ.
+</ptxt>
+<ptxt>
+Poluga mjenjača: neutralan položaj
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+640 okr./min
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF 
+<intxreftitleoff1 refid = "AHRAP70A1104007011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod bez opterećenja nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1,0 do 4,0 g/s
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vehicle Speed 
+<intxreftitleoff1 refid = "AHRAP70A1104007012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vozilo se giba
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Skoro ista kao i na očitanju brzinomjera
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP 
+<intxreftitleoff1 refid = "AHRAP70A1104007013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 20 do 55 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT 
+<intxreftitleoff1 refid = "AHRAP70A1104007014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 80 do 105 &#176;C (176 do 221 &#176;F)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Intake Air Temperature 
+<intxreftitleoff1 refid = "AHRAP70A1104007015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+-5 &#176;C (9 &#176;F) + temperatura okoline do 40 &#176;C (72 &#176;F) + temperatura okoline
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Barometric Pres 
+<intxreftitleoff1 refid = "AHRAP70A1104007016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prikazan je barometarski tlak.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+EVAP Canist Prg Duty 
+<intxreftitleoff1 refid = "AHRAP70A1104007017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+VVT Gap B1 IN 
+<intxreftitleoff1 refid = "AHRAP70A1104007018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–1,0 do 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+VVT Gap B1 EX 
+<intxreftitleoff1 refid = "AHRAP70A1104007019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–1,0 do 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+IAC Throttle Opening 
+<intxreftitleoff1 refid = "AHRAP70A1104007020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod bez opterećenja nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 20 do 50 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+<ptxt>
+Prekidač klima uređaja: UKLJ.
+</ptxt>
+<ptxt>
+Prekidač brzine puhala: maks.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 50 do 80 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP Sensor 1 Volt 
+<intxreftitleoff1 refid = "AHRAP70A1104007021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 do 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,1 do 4,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP Sensor 2 Volt 
+<intxreftitleoff1 refid = "AHRAP70A1104007022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,0 do 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,5 do 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+APP Sensor 1 Volt 
+<intxreftitleoff1 refid = "AHRAP70A1104007023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 do 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+3,7 do 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+APP Sensor 2 Volt 
+<intxreftitleoff1 refid = "AHRAP70A1104007024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,3 do 0,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1,8 do 2,2 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accel Position 
+<intxreftitleoff1 refid = "AHRAP70A1104007025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 do 2 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 do 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Throttle Position 
+<intxreftitleoff1 refid = "AHRAP70A1104007026"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 do 10 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 do 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Target Throttle Posi 
+<intxreftitleoff1 refid = "AHRAP70A1104007027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 do 10 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 do 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+O2S B1 S2 
+<intxreftitleoff1 refid = "AHRAP70A1104007028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: 2000 okr./min tijekom 3 minute ili više nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 0 do 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/F B1 S1 Current 
+<intxreftitleoff1 refid = "AHRAP70A1104007029"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod tijekom od 2 minute nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno -0,1 do 0,1 mA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Battery Voltage 
+<intxreftitleoff1 refid = "AHRAP70A1104007030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 13 do 15 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fuel Tank Level 
+<intxreftitleoff1 refid = "AHRAP70A1104007031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 do 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C Pressure 
+<intxreftitleoff1 refid = "AHRAP70A1104007032"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod
+</ptxt>
+<ptxt>
+Prekidač klima uređaja: UKLJ.
+</ptxt>
+<ptxt>
+Prekidač brzine puhala: MAKS.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+600 do 1300 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Generator Cont Duty 
+<intxreftitleoff1 refid = "AHRAP70A1104007033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 20 do 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Generator Field Duty 
+<intxreftitleoff1 refid = "AHRAP70A1104007034"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Približno 20 do 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Battery Current 
+<intxreftitleoff1 refid = "AHRAP70A1104007035"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+2 do 8 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Prednje svjetlo: UKLJ.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+14 do 22 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Prednje svjetlo: UKLJ.
+</ptxt>
+<ptxt>
+Prekidač brzine puhala: MAKS.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+22 do 33 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Radiator Fan 
+<intxreftitleoff1 refid = "AHRAP70A1104007037"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilator hlađenja hladnjaka: isklj.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Isklj.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilator hlađenja hladnjaka: niska brzina
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sporo
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilator hlađenja hladnjaka: visoka brzina
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Brzo
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C Comp Relay 
+<intxreftitleoff1 refid = "AHRAP70A1104007038"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač klima uređaja: UKLJ.
+</ptxt>
+<ptxt>
+Prekidač brzine puhala: UKLJ.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Osim gore navedenog stanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fuel Pump 
+<intxreftitleoff1 refid = "AHRAP70A1104007039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor radi
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Osim gore navedenog stanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Starter SW 
+<intxreftitleoff1 refid = "AHRAP70A1104007040"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: &#34;ST&#34; (pokretanje motora)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Osim gore navedenog stanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C Switch 
+<intxreftitleoff1 refid = "AHRAP70A1104007041"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač klima uređaja: UKLJ.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Osim gore navedenog stanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Blower Fan 
+<intxreftitleoff1 refid = "AHRAP70A1104007042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ručni klima uređaj: položaj 2. ili viši
+</ptxt>
+<ptxt>
+Automatski klima uređaj: položaj 4. ili veće brzine
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ručni klima uređaj: osim gore navedenog stanja
+</ptxt>
+<ptxt>
+Automatski klima uređaj: osim gore navedenog stanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Brake Switch 
+<intxreftitleoff1 refid = "AHRAP70A1104007043"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Papučica kočnice: pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Papučica kočnice: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Električno opterećenje 
+<intxreftitleoff1 refid = "AHRAP70A1104007044"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Model s DRL-om
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Model bez DRL-a
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač prednjeg svjetla: UKLJ.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač prednjeg svjetla: ISKLJ.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Clutch SW 
+<intxreftitleoff1 refid = "AHRAP70A1104007046"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Papučica spojke: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Odvajanje
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Papučica spojke: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Zahvaćeno
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cruise RES/ACC Switch 
+<intxreftitleoff1 refid = "AHRAP70A1104007047"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač &#34;RES/+&#34;: pritisnut
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač &#34;RES/+&#34;: otpušten
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cruise SET/COAST Switch 
+<intxreftitleoff1 refid = "AHRAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač “SET/–”: pritisnut
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač “SET/–”: otpušten
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cruise CANCEL Switch 
+<intxreftitleoff1 refid = "AHRAP70A1104007049"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač “CANCEL”: pritisnut
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač “CANCEL”: otpušten
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cruise ON/OFF Switch 
+<intxreftitleoff1 refid = "AHRAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač &#34;Cruise&#34;: pritisnut
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+pritisnut
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač &#34;Cruise&#34;: otpušten
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Otpušten
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fuel Cut 
+<intxreftitleoff1 refid = "AHRAP70A1104007051"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+<ptxt>
+Stanje motora: 2000 okr./min ili više nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Closed Throttle Pos 
+<intxreftitleoff1 refid = "AHRAP70A1104007052"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: otpuštena
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+UKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontakt: “UKLJ.”
+</ptxt>
+<ptxt>
+Papučica gasa: potpuno pritisnuta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ISKLJ.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+O2S B1 S2 Act 
+<intxreftitleoff1 refid = "AHRAP70A1104007053"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aktivan
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/F B1 S1 Act 
+<intxreftitleoff1 refid = "AHRAP70A1104007054"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: prazan hod nakon zagrijavanja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aktivan
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</scantool>
+<servinfosub id = "AHRAP70A1104007001" page = "2">
+<title>
+Definicije podataka alata za skeniranje
+</title>
+<topic id = "AHRAP70A1104007002">
+<title>
+Sustav goriva (status sustava goriva):
+</title>
+<ptxt>
+Status petlje povratne informacije o omjeru A/F-a prikazan je kao jedan od sljedećih:
+</ptxt>
+<ptxt>
+OL: Kontrola otvorene petlje prije zadovoljavanja kontrolnih uvjeta zatvorene petlje (ECT &#62; 10 &#176;C, IAT, TP, A/F senzor/sustav = OK).
+</ptxt>
+<ptxt>
+CL: Kontrola zatvorene petlje pomoću senzora kisika i povratnih senzora.
+</ptxt>
+<ptxt>
+OL-DRIVE: Kontrola otvorene petlje zbog uvjeta vožnje (veća snaga itd.).
+</ptxt>
+<ptxt>
+OL-FAULT: Kontrola otvorene petlje zbog detektiranja pogreške sustava.
+</ptxt>
+<ptxt>
+CL-FAULT: Kontrola zatvorene petlje zbog detektiranja pogreške sustava.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007003">
+<title>
+Kratkoročno namještanje smjese goriva (%):
+</title>
+<ptxt>
+Vrijednost kratkoročnog namještanja smjese goriva predstavlja kratkoročne korekcije mješavine zrak/gorivo. Vrijednost 0 (nula) označava da nema korekcije, vrijednost veća od 0 označava korekciju s obogaćivanjem, a vrijednost manja od 0 označava korekciju s osiromašivanjem.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007004">
+<title>
+Dugoročno namještanje smjese goriva (%):
+</title>
+<ptxt>
+Vrijednost dugoročnog namještanja smjese goriva predstavlja dugoročne korekcije mješavine zrak/gorivo. Vrijednost 0 (nula) označava da nema korekcije, vrijednost veća od 0 označava korekciju s obogaćivanjem, a vrijednost manja od 0 označava korekciju s osiromašivanjem.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007005">
+<title>
+Ukupno namještanje smjese goriva (%):
+</title>
+<ptxt>
+Ukupno namještanje smjese goriva izračunava se iz kratkoročnog namještanja smjese goriva i dugoročnog namještanja smjese goriva. Ova vrijednost označava kolika je korekcija potrebna za održavanje stehiometrijske mješavine zrak/gorivo.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007006">
+<title>
+Širina impulsnog signala (širina impulsnog signala ubrizgavanja goriva, m/s):
+</title>
+<ptxt>
+Ovaj parametar označava širinu (vrijeme) pogonskog impulsa brizgaljke za vrijeme kojeg ventil brizgaljke ostaje otvoren kako mu je naređeno od strane ECM-a. (Za pojedinačno ubrizgavanje goriva, vrijeme pogona brizgaljke odnosi se na brizgaljku cilindra br. 1.)
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007007">
+<title>
+Preuranjeni kut paljenja (preuranjeni kut paljenja za cilindar br. 1, &#176; BTDC):
+</title>
+<ptxt>
+Ovaj parametar označava kut paljenja za cilindar br. 1 kako mu je ECM naredio. Stvarni kut paljenja potrebno je provjeriti upotrebom stroboskopskog svjetla.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007008">
+<title>
+Izračunato opterećenje (vrijednost izračunatog opterećenja, %):
+</title>
+<ptxt>
+Ovaj parametar označava izračunato opterećenje motora u postotcima. Opterećenje se izračunava na temelju ulaznih signala koji dolaze u ECM s raznih senzora motora.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007009">
+<title>
+Brzina vrtnje motora (okr./min):
+</title>
+<ptxt>
+Brzina vrtnje motora izračunava se putem referentnih impulsa sa senzora položaja bregastog vratila.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007010">
+<title>
+Željeni prazni hod (željena brzina vrtnje u praznom hodu, okr./min):
+</title>
+<ptxt>
+Željena brzina vrtnje u praznom hodu interni je parametar ECM-a koji označava zahtijevani prazni hod ECM-a. Ako motor ne radi, ovaj broj nije valjan.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007011">
+<title>
+MAF (stopa masenog protoka zraka, g/s, lb/min):
+</title>
+<ptxt>
+Predstavlja ukupnu masu zraka koji ulazi u usisnu granu i mjeri se MAF senzorom.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007012">
+<title>
+Brzina vozila (km/h, milja/h):
+</title>
+<ptxt>
+Brzina vozila izračunava se na temelju impulsnih signala senzora brzine kotača.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007013">
+<title>
+MAP (apsolutni tlak u grani, kPa, mmHg, inHg, psi, inH2O):
+</title>
+<ptxt>
+Ovaj parametar označava izračunati tlak u grani na temelju signala MAP senzora.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007014">
+<title>
+ECT (temperatura rashladne tekućine motora &#176;C, &#176;F):
+</title>
+<ptxt>
+Detektira se putem senzora temperature rashladne tekućine motora.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007015">
+<title>
+Temperatura usisanog zraka. (&#176;C, &#176;F):
+</title>
+<ptxt>
+Detektira se pomoću senzora temperature usisanog zraka.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007016">
+<title>
+Barometarski tlak (barometarski tlak, kPa, mmHg, inHg, psi, inH2O):
+</title>
+<ptxt>
+Ovaj parametar predstavlja mjerenje barometarskog tlaka zraka i koristi se za korekciju visine stope ubrizgavanja goriva.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007017">
+<title>
+Radni ciklus pražnjenja EVAP spremnika (protok pri pražnjenju EVAP spremnika, %):
+</title>
+<ptxt>
+Ovaj parametar označava vrijeme uključivanja ventila (ventil otvoren) unutar određenog postavljenog ciklusa za ventil pražnjenja EVAP spremnika koji kontrolira količinu pražnjenja EVAP sustava.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007018">
+<title>
+Razlika VVT-a B1 IN (razlika varijabilnog vremena otvaranja ventila između ciljanog i stvarnog položaja (strana usisa), &#176;):
+</title>
+<ptxt>
+Ovaj parametar označava razliku između ciljanog položaja bregastog vratila (strana usisa) i stvarnog položaja bregastog vratila (strana usisa).
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007019">
+<title>
+Razlika VVT-a B1 EX (razlika varijabilnog vremena otvaranja ventila između ciljanog i stvarnog položaja (strana ispuha), &#176;):
+</title>
+<ptxt>
+Ovaj parametar označava razliku između ciljanog položaja bregastog vratila (strana ispuha) i stvarnog položaja bregastog vratila (strana ispuha).
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007020">
+<title>
+Otvaranje IAC zaklopke (otvaranje ventila zaklopke zraka u praznom hodu, %):
+</title>
+<ptxt>
+Ovaj parametar označava otvaranje zaklopke sustava kontrole zraka u praznom hodu u postotcima (100 % označava maksimalni protok zraka u praznom hodu).
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007021">
+<title>
+Napon TP senzora 1 (izlazni napon TP senzora (glavnog), V):
+</title>
+<ptxt>
+Podaci TP senzora (glavnog) osiguravaju informaciju o otvaranju zaklopke u obliku napona.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007022">
+<title>
+Napon TP senzora 2 (izlazni napon TP senzora (pomoćnog), V):
+</title>
+<ptxt>
+Podaci TP senzora (pomoćnog) osiguravaju informaciju o otvaranju zaklopke u obliku napona.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007023">
+<title>
+Napon APP senzora 1 (izlazni napon APP senzora (glavnog), V):
+</title>
+<ptxt>
+Podaci APP senzora (glavnog) osiguravaju informaciju o položaju papučice gasa u obliku napona.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007024">
+<title>
+Napon APP senzora 2 (izlazni napon APP senzora (pomoćnog), V):
+</title>
+<ptxt>
+Podaci APP senzora (pomoćnog) osiguravaju informaciju o položaju papučice gasa u obliku napona.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007025">
+<title>
+Položaj papučice gasa (apsolutni položaj papučice gasa, %):
+</title>
+<ptxt>
+Ovaj parametar označava izračunat položaj papučice gasa u postotku koji se temelji na ulaznom signalu sa senzora položaja papučice gasa.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007026">
+<title>
+Položaj zaklopke (apsolutni položaj zaklopke, %):
+</title>
+<ptxt>
+Ovaj parametar označava izračunato otvaranje zaklopke u postotku koje se temelji na ulaznom signalu sa senzora položaja zaklopke.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007027">
+<title>
+Ciljani položaj zaklopke (ciljani položaj zaklopke, %):
+</title>
+<ptxt>
+Ciljani položaj zaklopke je interni parametar ECM-a koji označava položaj zaklopke koji je ECM zahtijevao.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007028">
+<title>
+O2S B1 S2 (HO2S, V):
+</title>
+<ptxt>
+Označava izlazni napon HO2S-a ugrađenog na ispušnu granu (iza katalizatora trostrukog djelovanja). Koristi se za detektiranje dotrajalosti katalizatora.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007029">
+<title>
+A/F B1 S1 struja (izlazna struja A/F senzora, mA):
+</title>
+<ptxt>
+Ovaj parametar ukazuje na izlaznu struju A/F senzora ugrađenog na ispušnu granu (prije katalizatora trostrukog djelovanja).
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007030">
+<title>
+Napon akumulatora (V):
+</title>
+<ptxt>
+Ovaj parametar označava napon akumulatora koji se prima s glavnog releja u ECM.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007031">
+<title>
+Razina spremnika goriva (%):
+</title>
+<ptxt>
+Ovaj parametar označava približnu razinu goriva u spremniku goriva. Podaci razine goriva prikazani su u postocima od 0 do 100 %.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007032">
+<title>
+Tlak klima uređaja (apsolutni tlak rashladnog sredstva klima uređaja, kPa):
+</title>
+<ptxt>
+Ovaj parametar označava apsolutni tlak rashladnog sredstva klima uređaja koji je detektirao senzor tlaka rashladnog sredstva klima uređaja.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007033">
+<title>
+Kontinuirani rad generatora (%):
+</title>
+<ptxt>
+Ovaj parametar označava radni omjer kontrole generatora pri kojem ECM upravlja izlazom generatora.
+</ptxt>
+<ptxt>
+100 %: nema ograničenja u radu generatora.
+</ptxt>
+<ptxt>
+0 %: maksimalno ograničenje u radu generatora.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007034">
+<title>
+Radni ciklus polja generatora (%):
+</title>
+<ptxt>
+Ovaj parametar označava radni omjer (status izlaza) generatora prema radnom omjeru uzbudnog namota.
+</ptxt>
+<ptxt>
+100 %: maksimalni rad.
+</ptxt>
+<ptxt>
+0 %: minimalni rad.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007035">
+<title>
+Struja akumulatora (A):
+</title>
+<ptxt>
+Ovaj parametar označava vrijednost električnog opterećenja (potrošnju struje) koju detektira senzor struje električnog opterećenja.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007037">
+<title>
+Ventilator hladnjaka (upravljački relej ventilatora hlađenja hladnjaka, nisko/visoko/isključeno):
+</title>
+<ptxt>
+Nisko: naredba uključivanja upućuje se releju ventilatora hlađenja hladnjaka br. 1.
+</ptxt>
+<ptxt>
+Visoko: naredba uključivanja upućuje se relejima ventilatora hlađenja hladnjaka br. 2 i br. 3.
+</ptxt>
+<ptxt>
+Isklj: nije upućena naredba.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007038">
+<title>
+Relej kompresora klima uređaja (relej kompresora klima uređaja, UKLJ./ISKLJ.):
+</title>
+<ptxt>
+Ovaj parametar označava stanje releja kompresora klima uređaja.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007039">
+<title>
+Pumpa goriva (UKLJ./ISKLJ.):
+</title>
+<ptxt>
+ON je prikazano kada ECM aktivira pumpu goriva putem prekidača releja pumpe goriva.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007040">
+<title>
+Prekidač pokretača (prekidač pokretača, UKLJ./ISKLJ.):
+</title>
+<ptxt>
+Ovaj parametar označava stanje izlaza releja elektropokretača.
+</ptxt>
+<ptxt>
+UKLJ.: relej elektropokretača je uključen.
+</ptxt>
+<ptxt>
+ISKLJ.: relej elektropokretača je isključen.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007041">
+<title>
+Prekidač klima uređaja (UKLJ./ISKLJ.):
+</title>
+<ptxt>
+UKLJ.: naredba za rad klima uređaja poslana je iz ECM-a u HVAC.
+</ptxt>
+<ptxt>
+ISKLJ.: naredba za rad klima uređaja nije poslana.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007042">
+<title>
+Ventilator puhala (UKLJ./ISKLJ.):
+</title>
+<ptxt>
+Ovaj parametar označava stanje prekidača brzine puhala.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007043">
+<title>
+Prekidač kočnice (UKLJ./ISKLJ.):
+</title>
+<ptxt>
+Ovaj parametar označava stanje prekidača kočnice.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007044">
+<title>
+Električno opterećenje (UKLJ./ISKLJ.):
+</title>
+<ptxt>
+UKLJ.: Prima se signal uključivanja prednjeg svjetla, pozicijskih svjetala ili grijača prozora vrata prtljažnika.
+</ptxt>
+<ptxt>
+ISKLJ.: svi gore navedeni električni potrošači su isključeni.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007046">
+<title>
+Prekidač spojke (odspojeno/zahvaćeno) (model s M/T-om):
+</title>
+<ptxt>
+Odspojeno: Papučica spojke potpuno je pritisnuta.
+</ptxt>
+<ptxt>
+Zahvaćeno: Papučica spojke je otpuštena.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007047">
+<title>
+Prekidač tempomata RES/ACC (prekidač &#34;RES/+&#34;, ISKLJ./UKLJ.):
+</title>
+<ptxt>
+UKLJ.: prekidač &#34;RES/+&#34; pritisnut.
+</ptxt>
+<ptxt>
+ISKLJ.: prekidač &#34;RES/+&#34; otpušten.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007048">
+<title>
+Prekidač tempomata SET/COAST (prekidač &#34;SET/–”, ISKLJ./UKLJ.):
+</title>
+<ptxt>
+UKLJ.: prekidač “SET/–” pritisnut.
+</ptxt>
+<ptxt>
+ISKLJ.: prekidač “SET/–” otpušten.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007049">
+<title>
+Prekidač tempomata CANCEL (prekidač &#34;CANCEL&#34;, ISKLJ./UKLJ.):
+</title>
+<ptxt>
+UKLJ.: prekidač &#34;CANCEL&#34; pritisnut.
+</ptxt>
+<ptxt>
+ISKLJ.: prekidač &#34;CANCEL&#34; otpušten.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007050">
+<title>
+Prekidač tempomata UKLJ./ISKLJ. (otpušten/pritisnut):
+</title>
+<ptxt>
+Pritisnut: prekidač &#34;Cruise&#34; pritisnut.
+</ptxt>
+<ptxt>
+Otpušten: prekidač &#34;Cruise&#34; otpušten.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007051">
+<title>
+Prekid dobave goriva (UKLJ./ISKLJ.):
+</title>
+<ptxt>
+UKLJ.: ubrizgavanje goriva je prekinuto (izlazni signal prema brizgaljki je zaustavljen).
+</ptxt>
+<ptxt>
+ISKLJ.: ubrizgavanje goriva nije prekinuto.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007052">
+<title>
+Zatvoreni položaj zaklopke (zatvoreni položaj zaklopke, UKLJ./ISKLJ.):
+</title>
+<ptxt>
+Ovaj parametar je &#34;uključeno&#34; kada je zaklopka u potpunosti zatvorena ili &#34;isključeno&#34; kada nije u potpunosti zatvorena.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007053">
+<title>
+O2S B1 S2 ACT (HO2S, aktivan/neaktivan):
+</title>
+<ptxt>
+Ovaj parametar označava stanje aktiviranosti za HO2S.
+</ptxt>
+<ptxt>
+AKTIVAN: senzor je aktiviran.
+</ptxt>
+<ptxt>
+NEAKTIVAN: senzor se zagrijava ili nije aktiviran.
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1104007054">
+<title>
+AF B1 S1 ACT (A/F senzor, aktivan/neaktivan):
+</title>
+<ptxt>
+Ovaj parametar označava stanje aktiviranosti A/F senzora.
+</ptxt>
+<ptxt>
+AKTIVAN: senzor je aktiviran.
+</ptxt>
+<ptxt>
+NEAKTIVAN: senzor se zagrijava ili nije aktiviran.
+</ptxt>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

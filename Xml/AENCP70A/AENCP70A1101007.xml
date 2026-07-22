@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENCP70A1101007" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Description of Electric Throttle Control System Calibration
+</title>
+<ptxt>
+ECM calculates controlled opening of the throttle valve on the basis of the completely closed throttle valve position of the electric throttle control system. The completely closed position data is saved in memory of ECM. However, the completely closed position of the throttle valve of the electric throttle control system (signal voltage from throttle position sensor when throttle is completely closed) differs one from the other depending on individual differences of the throttle valve and throttle position sensor. As such individual differences must be taken into account for controlling the throttle valve, it is necessary to register the completely closed throttle valve position data in ECM. When such data is registered in ECM, it is saved in RAM (memory) of ECM and used as the base data for controlling the throttle valve. This data is cleared, when any of the works described in “Precautions for Electric Throttle Control System Calibration” under 
+<intxref refid = "AENCP70A1000001">Precautions for Engine</intxref>
+ is performed.
+</ptxt>
+<ptxt>
+Also, after replacement of the throttle body and/or APP sensor assembly, the completely closed position data in memory of ECM must be cleared once and a new one must be registered, or ECM cannot judge the complete closure position properly.
+</ptxt>
+<ptxt>
+For the procedure to register such data, refer to 
+<intxref refid = "AENCP70A1306004">Electric Throttle Control System Calibration</intxref>
+. (After the completely closed position data is cleared from ECM, for the first time only, the throttle valve opens and closes for about 60 sec. after ignition is “ON”, for registration of the completely closed throttle valve position. If the engine is started during this registration process, such symptom as “longer cranking time” or “slow rise of engine speed immediately after start-up” may occur. However, set ignition “OFF” once and then restarting the engine will register the position to ECM correctly.)
+</ptxt>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

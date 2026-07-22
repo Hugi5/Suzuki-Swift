@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70AA501003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descrizione della funzione di chiusura centralizzata porte del sistema di avviamento senza chiave
+</title>
+<ptxt>
+La funzione di chiusura centralizzata porte consente di effettuare il blocco / sblocco delle porte in 3 modi: tramite l&#39;interruttore di richiesta porta, tramite il sistema di accesso senza chiave e mediante l&#39;uso del cilindretto serratura porta.
+</ptxt>
+<servinfosub id = "AITAP70AA501003001">
+<title>
+Blocco / sblocco tramite l&#39;interruttore di richiesta porta
+</title>
+<ptxt>
+Tutte le porte si bloccano e sbloccano agendo su un qualsiasi interruttore di richiesta montato sulle maniglie esterne delle porte anteriori (lato guida e passeggero) e sul portellone, nel modo che segue.
+</ptxt>
+<s1>
+<ptxt>
+Premendo il pulsante dell&#39;interruttore di richiesta, il segnale di richiesta blocco o sblocco viene inviato alla centralina sistema di avviamento senza chiave.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+La centralina sistema di avviamento senza chiave (1) attiva l&#39;antenna interna intermedia (2), l&#39;antenna interna posteriore (3), l&#39;antenna esterna posteriore (4) per trasmettere il segnale di richiesta all&#39;interno dell&#39;abitacolo e del bagagliaio.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Quando la centralina sistema di avviamento senza chiave rileva che il telecomando (5) non si trova né all&#39;interno dell&#39;abitacolo, né del bagagliaio, attiva l&#39;antenna esterna della porta il cui interruttore di richiesta è stato premuto ed invia il segnale di richiesta al telecomando.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Il telecomando che riceve il segnale di richiesta invia il codice ID alla centralina sistema di avviamento senza chiave tramite l&#39;antenna esterna la quale funge da ricevitore sistema di apertura senza chiave (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+La centralina sistema di avviamento senza chiave confronta il codice ID inviato dal telecomando con il codice ID registrato nella centralina sistema di avviamento senza chiave. Se i codici corrispondono, la centralina sistema di avviamento senza chiave invia il segnale di richiesta blocco / sblocco porte (in funzione dello stato dell&#39;interruttore serratura) alla BCM (7) via linea di comunicazione CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+La BCM attiva l&#39;attuatore serratura porta.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50001.swf" width = "183.000mm" height = "96.389mm" ver = "02" gw = "414" gh = "257"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.440in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.884in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.884in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Percorso del segnale da &#34;1&#34; a &#34;6&#34; - passi da 1) a 6)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antenna esterna lato passeggero
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Interruttore di richiesta portellone posteriore
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Interruttore di richiesta porta lato guida
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antenna esterna lato guida
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Interruttore di richiesta porta lato passeggero
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Ciascuno degli attuatori delle serrature porte
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "AITAP70AA501003002">
+<title>
+Raggio d&#39;azione
+</title>
+<ptxt>
+Per garantire la funzione di chiusura centralizzata porte, la distanza tra il telecomando e ciascuna antenna porta deve essere di max circa 80 cm (31,5 in; 2,6 ft) (1). Inoltre, il blocco e lo sblocco avvengono esclusivamente se il telecomando si trova all&#39;interno del raggio d&#39;azione dell&#39;interruttore di richiesta premuto. Ad esempio: se è stato premuto l&#39;interruttore di richiesta porta lato guida, il telecomando deve trovarsi all&#39;interno del raggio d&#39;azione dell&#39;antenna esterna porta lato guida.
+</ptxt>
+<attention3>
+<ptxt>
+Il blocco o lo sblocco delle porte potrebbe non funzionare nelle seguenti condizioni:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+collocando il telecomando troppo vicino al veicolo, vicino al suono o troppo in alto.
+</ptxt>
+</item>
+<item>
+<ptxt>
+quando esistono due veicoli di medesimo tipo uno accanto all&#39;altro, entrambi dotati di sistema di avviamento senza chiave che vengono attivati contemporaneamente. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+portando insieme, contemporaneamente, il telecomando registrato e quello non registrato.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50002.swf" width = "88.000mm" height = "60.211mm" ver = "01" gw = "234" gh = "154"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.968in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.968in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.968in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antenna esterna lato passeggero
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antenna esterna lato guida
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antenna posteriore esterna
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+<topic id = "AITAP70AA501003003">
+<title>
+Funzione di sicurezza
+</title>
+<ptxt>
+Il blocco delle porte non avviene tramite interruttore di richiesta quando si verifica una delle seguenti condizioni:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+La modalità di accensione è su &#34;ACC&#34; o &#34;ON&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Una delle porte è aperta.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La centralina sistema di avviamento senza chiave rileva che il telecomando si trova all&#39;interno dell&#39;abitacolo.
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "AITAP70AA501003004">
+<title>
+Funzione antibloccaggio del telecomando all&#39;interno del veicolo
+</title>
+<ptxt>
+Questa funzione impedisce di abbandonare il veicolo bloccandole porte quando il telecomando si trova all&#39;interno dell&#39;abitacolo.
+</ptxt>
+<ptxt>
+Quando l&#39;antenna interna intermedia (1) o l&#39;antenna interna posteriore (2) rileva il telecomando (ossia rileva che il telecomando si trova all&#39;interno dell&#39;abitacolo) nelle seguenti condizioni, la centralina sistema di avviamento senza chiave invia un segnale di sblocco porte alla BCM via linea di comunicazione CAN.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le porte vengono bloccate tramite il cilindretto serratura porta (chiave di emergenza) o il pomellino blocco porte quando una delle porte è aperte.
+</ptxt>
+</item>
+</list1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+La funzione antibloccaggio del telecomando all&#39;interno del veicolo può non essere attiva quando il telecomando si trova sul cruscotto, in uno dei cassetti portaoggetti, intorno al vano piedi lati guida e passeggero, in una tasca delle porte, ecc.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Quando la funzione sistema di avviamento senza chiave è disattiva, la funzione antibloccaggio del telecomando all&#39;interno del veicolo non è disponibile.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50003.swf" width = "88.000mm" height = "50.137mm" ver = "01" gw = "200" gh = "126"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.619in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.497in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Area di rilevamento antenna interna intermedia
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Area di rilevamento antenna interna posteriore
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "AITAP70AA501003005">
+<title>
+Blocco / sblocco tramite il sistema di accesso senza chiave
+</title>
+<ptxt>
+Quando una delle seguenti condizioni viene soddisfatta e il segnale di blocco o sblocco proveniente dal telecomando viene inviato alla centralina sistema di avviamento senza chiave tramite il ricevitore sistema di apertura senza chiave, la quale invia il segnale di richiesta blocco / sblocco porte (a seconda dello stato in cui si trova l’interruttore serratura porta) alla BCM mediante linea di comunicazione CAN. Quando la BCM riceve il segnale, attiva gli attuatori di ciascuna porta.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Modalità di accensione &#34;OFF&#34;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tutte le porte chiuse (al bloccaggio delle porte)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AITAP70AA501003006">
+<title>
+Blocco / sblocco mediante l&#39;uso del cilindretto serratura porta
+</title>
+<ptxt>
+Quando il segnale di blocco o sblocco proveniente dall&#39;interruttore cilindretto serratura porta viene inviato alla centralina sistema di avviamento senza chiave tramite azionamento del cilindretto medesimo, la centralina medesima invia il segnale di richiesta blocco / sblocco porte (a seconda dello stato in cui si trova l’interruttore serratura porta) alla BCM mediante linea di comunicazione CAN. Quando la BCM riceve il segnale, attiva gli attuatori di ciascuna porta.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70AA501003007">
+<title>
+Funzione di bloccaggio temporizzato
+</title>
+<ptxt>
+Questa funzione riblocca automaticamente le porte se, dopo essere state sbloccare tramite l&#39;interruttore di richiesta o il sistema di accesso senza chiave, nessuna di esse viene aperta entro circa 30 secondi.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

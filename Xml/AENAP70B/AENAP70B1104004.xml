@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B1104004" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+DTC Clearance
+</title>
+<s1>
+<ptxt>
+Connect SUZUKI scan tool or CAN communication OBD generic scan tool (Euro-OBD model) to DLC in the same manner as when making this connection for DTC check.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition “OFF” and then “ON”.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Clear DTC and pending DTC according to instructions displayed on scan tool. Refer to scan tool operator&apos;s manual for further details.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+After completing the clearance, set ignition “OFF” and disconnect scan tool from DLC.
+</ptxt>
+<attention3>
+<ptxt>
+DTC and freeze frame data stored in ECM memory are also cleared in the following case. Be careful not to clear them before keeping their record.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+When the same malfunction (DTC) is not detected again during 40 engine warm-up cycles. (See “Warm-Up Cycle” of 
+<intxref refid = "AENAP70B1101003">OBD System Description</intxref>
+.)
+</ptxt>
+</item>
+</list1>
+</attention3>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

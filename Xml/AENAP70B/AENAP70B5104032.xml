@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104032" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0751 / P0752 / P0756 / P0757
+</title>
+<servinfosub id = "AENAP70B5104032001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.492in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.661in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0751: Shift Solenoid “A” Performance / Stuck Off
+</emph>
+</ptxt>
+<ptxt>
+3rd gear is detected even if targeted gear is 2nd for specified time.
+</ptxt>
+<ptxt>
+(2 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Shift solenoid valve “A”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Valve body assembly
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/T (clutch, brake or gear etc.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0752: Shift Solenoid “A” Stuck On
+</emph>
+</ptxt>
+<ptxt>
+2nd gear is detected even if targeted gear is 3rd for specified time.
+</ptxt>
+<ptxt>
+(2 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0756: Shift Solenoid “B” Performance / Stuck Off
+</emph>
+</ptxt>
+<ptxt>
+3rd gear is detected even if targeted gear is 4th for specified time.
+</ptxt>
+<ptxt>
+(2 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Shift solenoid valve “B”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Valve body assembly
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/T (clutch, brake or gear etc.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0757: Shift Solenoid “B” Stuck On
+</emph>
+</ptxt>
+<ptxt>
+4th gear is detected even if targeted gear is 3rd for specified time.
+</ptxt>
+<ptxt>
+(2 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70B5104032002">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Perform road test in a place where there is no traffic to prevent an accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Road test should be performed with two persons, a driver and a tester, on a level road.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<s1>
+<ptxt>
+Warm up engine to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Shift select lever to “D” range, and drive vehicle at 65 km/h (40 mile/h) for 20 sec.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Stop vehicle and set ignition “OFF”.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Repeat Step 2).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70B5104032003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70B5104032004">
+<testgroup id = "AENAP70B5104032005">
+<question>
+Was “A/T Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B5104001">A/T Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104032006">
+<title>
+Shift solenoid valve check for operation
+</title>
+<test1>
+<ptxt>
+Check shift solenoid valves “A” and “B” for operation. 
+<intxreftitleoff1 refid = "AENAP70B5106029"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Are they in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Clean fluid passage or replace valve body assembly. 
+<intxreftitleoff1 refid = "AENAP70B5106026"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+If DTC P0751, P0752, P0756 and/or P0757 is still detected, substitute a known-good TCM and recheck DTC.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace shift solenoid valve “A” or “B”. 
+<intxreftitleoff1 refid = "AENAP70B5106028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

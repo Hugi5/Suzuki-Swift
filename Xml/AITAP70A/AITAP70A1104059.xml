@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104059" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2228 / P2229
+</title>
+<servinfosub id = "AITAP70A1104059001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.143in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.027in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2228: Tensione circuito sensore di pressione barometrica &#34;A&#34; bassa
+</emph>
+</ptxt>
+<ptxt>
+La tensione di uscita del segnale sensore della pressione barometrica è inferiore a 0,2 V per 5 sec.
+</ptxt>
+<ptxt>
+(Logica di rilevamento a 3 D/C)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore della pressione barometrica nell&#39;ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2229: Tensione circuito sensore di pressione barometrica &#34;A&#34; alta
+</emph>
+</ptxt>
+<ptxt>
+La tensione di uscita del segnale sensore della pressione barometrica è superiore a 4,8 V per 5 sec.
+</ptxt>
+<ptxt>
+(Logica di rilevamento a 3 D/C)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A1104059002">
+<title>
+Procedura di conferma DTC
+</title>
+<s1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34; per 10 secondi.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A1104059003">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A1104059004">
+<testgroup id = "AITAP70A1104059005">
+<question>
+È stata eseguita la procedura &#34;Verifica del sistema di controllo del motore e delle emissioni&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104001">Verifica del sistema di controllo del motore e delle emissioni</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104059006">
+<title>
+Controllo del circuito di alimentazione e di massa dell&#39;ECM.
+</title>
+<test1>
+<ptxt>
+Controllare i circuiti di alimentazione e di massa dell&#39;ECM. 
+<intxreftitleoff1 refid = "AITAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la ECM e ripetere il controllo della presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare i circuiti di alimentazione e di massa dell&#39;ECM.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

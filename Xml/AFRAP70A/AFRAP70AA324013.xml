@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA324013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1168
+</title>
+<servinfosub id = "AFRAP70AA324013001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.234in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.970in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1168: Mot de passe ne correspondant pas 
+</emph>
+</ptxt>
+<ptxt>
+Un mot de passe incorrect a été saisi. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Un mot de passe incorrect a été saisi 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA324013002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70AA324013003">
+<testgroup id = "AFRAP70AA324013004">
+<title>
+Saisie du mot de passe du dispositif antidémarrage 
+</title>
+<test1>
+<ptxt>
+Saisir à nouveau le mot de passe du dispositif antidémarrage. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC B1168 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vérifier à nouveau le mot de passe du dispositif antidémarrage. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. (un mot de passe incorrect a été saisi) 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

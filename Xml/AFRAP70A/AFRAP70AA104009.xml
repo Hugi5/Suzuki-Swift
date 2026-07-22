@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA104009" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0649
+</title>
+<servinfosub id = "AFRAP70AA104009001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.981in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.227in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+DTC P0649: Circuit de commande de témoin de commande de vitesse 
+</emph>
+</ptxt>
+<ptxt>
+Le &#34;signal d&#39;éclairage de témoin CRUISE/SET&#34; du combiné d&#39;instruments reste inchangé, même si l&#39;ECM émet une requête pour activer ou désactiver le &#34;signal de commande de témoin CRUISE/SET&#34; au combiné d&#39;instruments par la communication CAN. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuit de communication CAN 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Combiné d&#39;instruments 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA104009002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70AA104009003">
+<testgroup id = "AFRAP70AA104009004">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC des modules de commande en communication via le CAN. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC CAN sont-ils détectés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer le combiné d&#39;instruments et revérifier le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ Si le DTC P0649 est toujours détecté, remplacer l&#39;ECM et vérifier de nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A4604016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1015/C1017/C1023
+</title>
+<servinfosub id = "AHRAP70A4604016001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.257in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1015: Kvar na senzoru uzdužne G sile u sklopu senzora brzine zanošenja/G sile
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal senzora uzdužne G sile nije u okviru određenog raspona.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal senzora uzdužne G sile ne mijenja se iako vozilo ubrzava ili usporava.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nosač aktuatora
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1017: Rad kruga senzora poprečne G sile
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal senzora poprečne G sile nije u okviru određenog raspona.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal senzora poprečne G sile ne mijenja se iako vozilo skreće lijevo ili desno.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1023: Rad kruga senzora brzine zanošenja
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal senzora brzine zanošenja nije u okviru propisanog raspona.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Iako vozilo nije u pokretu, signal senzora brzine zanošenja veći je od propisane vrijednosti.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70A4604016002">
+<title>
+Rješavanje problema DTC-a
+</title>
+<diag type = "test" id = "AHRAP70A4604016003">
+<testgroup id = "AHRAP70A4604016004">
+<question>
+Je li izvršena “Provjera ESP<sup>®</sup> sustava”?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A4604001">Provjera ESP® sustava</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604016006">
+<title>
+Provjera nosača aktuatora i upravljačkog modula ESP®-a
+</title>
+<test1>
+<ptxt>
+Provjerite sklop hidrauličkog uređaja/upravljačkog modula ESP<sup>®</sup>-a i nosač aktuatora. 
+<intxreftitleoff1 refid = "AHRAP70A4606004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravne dijelove.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604016005">
+<title>
+Provjera DTC-a za ESP®
+</title>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70A4604005">Provjera DTC-a</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Postoje li DTC-ovi osim C1015, C1017 i C1023?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na odgovarajuće rješavanje problema za dotični DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite sklop hidrauličkog uređaja/upravljačkog modula ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

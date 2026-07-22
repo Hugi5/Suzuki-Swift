@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A7224025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1544
+</title>
+<servinfosub id = "AHUAP70A7224025001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1544: Érvénytelen adatok a HVAC vezérlőmodul és az auto A/C panel között.
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A HVAC vezérlőmodul érvénytelen jelet küldött az auto A/C panelnek.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A HVAC vezérlőmodul érvénytelen jelet kap az Auto A/C paneltől.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Automatikus A/C panel
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A7224025002">
+<title>
+DTC megerősítési eljárás
+</title>
+<s1>
+<ptxt>
+Indítsa be a motort, és működtesse az A/C rendszert.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHUAP70A7224025003">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A7224025004">
+<testgroup id = "AHUAP70A7224025005">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” helyzetbe.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba, és ellenőrizze a DTC-ket.
+</ptxt>
+</test1>
+<question>
+Továbbra is észlelhető a B1544 DTC?
+</question>
+<result>
+Igen
+</result>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A meglévő helyett tegyen be egy biztosan jó HVAC vezérlőmodult és/vagy automatikus A/C paneljét, majd újból kérdezze le a DTC-ket.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+HVAC vezérlőmodul: 
+<intxreftitleoff1 refid = "AHUAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Automatikus A/C panel: 
+<intxreftitleoff1 refid = "AHUAP70A7226009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Időszakos hiba.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

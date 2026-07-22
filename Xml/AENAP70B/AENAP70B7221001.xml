@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENAP70B7221001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+HVAC System Description
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+This HVAC system is of a manually controlled air conditioning type.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Setting of airflow mode and temperature are possible using air flow selector and temperature selector respectively.
+</ptxt>
+<ptxt>
+When these selectors are set in desired positions, the corresponding cables move air flow control door and temperature control door accordingly.
+</ptxt>
+</item>
+<item>
+<ptxt>
+There are two other selectors: air intake selector and blower speed selector.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Air inlet mode can be switched between recirculated air mode and fresh air mode by air intake selector. When the desired mode is selected, the air intake actuator moves the air intake door to the corresponding position.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Air flow rate can be adjusted by blower speed selector. Four positions are available: LO, ML, MH and HI.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Rear defogger switch is located on the HVAC control unit.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/C switch turns on and off the A/C system. Signal from the A/C switch is transmitted to ECM via BCM through CAN communication system. The ECM circuits related to the A/C system controls A/C compressor relay and radiator (condenser) cooling fan relay according to the signal. Refer to 
+<intxref refid = "AENAP70B7221003">A/C Operation Description at ECM:Manual Type</intxref>
+ for details.
+</ptxt>
+</item>
+<item>
+<ptxt>
+The ECM circuits related to the A/C system also controls evaporator temperature depending on the data from A/C evaporator temperature sensor. Refer to 
+<intxref refid = "AENAP70B7221003">A/C Operation Description at ECM:Manual Type</intxref>
+ for details. On the other hand A/C compressor can adjust the flow rate of refrigerant, monitoring the A/C refrigerant pressure mechanically.
+</ptxt>
+<ptxt>
+This also helps to keep the evaporator temperature at an optimum level.
+</ptxt>
+</item>
+<item>
+<ptxt>
+The A/C system uses an A/C refrigerant pressure sensor that is capable of detecting linear changes in refrigerant pressure.
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC unit incorporates blower motor unit, heater core unit and evaporator unit. The HVAC unit also incorporates an air filter.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Each side ventilator has a shutter mechanism.
+</ptxt>
+</item>
+<item>
+<ptxt>
+The condenser is of a sub-cool type. It is integral with the receiver / dryer and mounted on the vehicle body in a floating manner.
+</ptxt>
+</item>
+<item>
+<ptxt>
+For the electronic control system components location, refer to 
+<intxref refid = "AENAP70B7223001">Manual A/C Control System Component Location:Manual Type</intxref>
+.
+</ptxt>
+<ptxt>
+For the A/C system components location, refer to 
+<intxref refid = "AENAP70B7226002">A/C System Major Components:Manual Type</intxref>
+.
+</ptxt>
+<ptxt>
+For the A/C electrical control input / output diagram, refer to 
+<intxref refid = "AENAP70B7222001">Manual A/C Electronic Control Input / Output Block Diagram:Manual Type</intxref>
+.
+</ptxt>
+</item>
+</list1>
+<servinfosub id = "AENAP70B7221001001">
+<title>
+HVAC System Construction
+</title>
+<figure>
+<graphic graphicname = "IAP70B722001.swf" width = "183.000mm" height = "149.571mm" ver = "01" gw = "447" gh = "407"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "8" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.357in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.512in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.357in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.422in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.357in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.399in"/>
+<colspec colnum = "7" colname = "7" colwidth = "0.348in"/>
+<colspec colnum = "8" colname = "8" colwidth = "1.375in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Air flow
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Discharge hose
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Defroster air
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+19.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Air flow control door
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Refrigerant flow
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Suction hose
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Demister air
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "bottom" align = "right">
+<ptxt>
+20.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Heater core
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engine coolant flow
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Liquid pipe
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+14.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fresh air
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+21.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+HVAC air filter
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HVAC unit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Expansion valve
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+15.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Recirculation air
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "bottom" align = "right">
+<ptxt>
+22.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Engine
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+A/C compressor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Side ventilation air
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+16.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+A/C evaporator
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "bottom" align = "right">
+<ptxt>
+23.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Radiator
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Condenser assembly
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Center ventilation air
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+17.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Air intake door
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+24.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Reservoir
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Receiver / dryer
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Front foot air
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+18.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Temperature control door
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

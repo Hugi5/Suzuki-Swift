@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104029" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0717
+</title>
+<servinfosub id = "AENAP70B5104029001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.066in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.120in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0717: Input / Turbine Speed Sensor “A” Circuit No signal
+</emph>
+</ptxt>
+<ptxt>
+Input shaft speed signal is not input even if output shaft speed signal is input.
+</ptxt>
+<ptxt>
+(1 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Input shaft speed sensor and/or its circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Direct clutch
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70B5104029002">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "I8C50B510021.swf" width = "183.000mm" height = "56.775mm" ver = "03" gw = "312" gh = "144"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.321in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.194in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.321in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.136in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.389in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.844in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TCM connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Input shaft speed sensor (–) circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Input shaft speed sensor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Input shaft speed sensor (+) circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AENAP70B5104029003">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Perform road test in a place where there is no traffic to prevent an accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Road test should be performed with two persons, a driver and a tester, on a level road.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<s1>
+<ptxt>
+Warm up engine to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Drive vehicle at more than 50 km/h (31 mile/h) in “D” range for 5 min.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70B5104029004">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70B5104029005">
+<testgroup id = "AENAP70B5104029006">
+<question>
+Was “A/T Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B5104001">A/T Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104029007">
+<title>
+Input shaft speed sensor circuit check
+</title>
+<test1>
+<ptxt>
+Set ignition “OFF” and disconnect connectors from input shaft speed sensor and TCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connection to input shaft speed sensor and TCM connectors.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check that each input shaft speed sensor circuit (A1, A2) is as follows.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Wiring harness resistance of each input shaft speed sensor circuit is less than 1 Ω.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Insulation resistance of each input shaft speed sensor circuit is infinity between input shaft speed sensor connector and ground.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Insulation resistance of wire harness is infinity between input shaft speed sensor (+) circuit terminal and (–) circuit terminal at input shaft speed sensor connector.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuit voltage of each input shaft speed sensor circuit is approx. 0 V with ignition “ON”.
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Are they in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104029008">
+<title>
+Input shaft speed sensor check
+</title>
+<test1>
+<ptxt>
+Check input shaft speed sensor. 
+<intxreftitleoff1 refid = "AENAP70B5106021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace input shaft speed sensor. 
+<intxreftitleoff1 refid = "AENAP70B5106020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104029009">
+<title>
+Input shaft speed sensor visual check
+</title>
+<test1>
+<ptxt>
+Remove input shaft speed sensor. 
+<intxreftitleoff1 refid = "AENAP70B5106020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check input shaft speed sensor visually as follows.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+No damage
+</ptxt>
+</item>
+<item>
+<ptxt>
+No foreign material attached
+</ptxt>
+</item>
+<item>
+<ptxt>
+Correct installation
+</ptxt>
+</item>
+</list1>
+<testfigure>
+<graphic graphicname = "I2RH0B510020.swf" width = "90.000mm" height = "27.270mm" ver = "01" gw = "101" gh = "61"/>
+</testfigure>
+</test1>
+<question>
+Are they in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Check for intermittent trouble. 
+<intxreftitleoff1 refid = "AENAP70B0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+If OK, substitute a known-good TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70B5106030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Clean, repair or replace input shaft speed sensor.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

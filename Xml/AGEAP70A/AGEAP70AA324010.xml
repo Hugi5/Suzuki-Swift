@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70AA324010" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1644
+</title>
+<servinfosub id = "AGEAP70AA324010001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.166in"/>
+<colspec colnum = "2" colname = "2" colwidth = "4.039in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1644: Nicht übereinstimmende Wegfahrsperren-ID
+</emph>
+</ptxt>
+<ptxt>
+Verifizierungsfehler zwischen ECM und Steuermodul für schlüsselloses Starten
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fernbedienung
+</ptxt>
+</item>
+<item>
+<ptxt>
+ID-Code des ECM ist nicht im Steuermodul für schlüsselloses Starten registriert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fernbedienung ist nicht registriert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Stromkreis/Steckverbinder des Motorschalters
+</ptxt>
+</item>
+<item>
+<ptxt>
+Motorschalter
+</ptxt>
+</item>
+<item>
+<ptxt>
+Stromversorgungs- bzw. Massekreis des Steuermoduls für schlüsselloses Starten
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Steuermodul für schlüsselloses Starten
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70AA324010002">
+<title>
+DTC-Fehlersuche
+</title>
+<attention3>
+<ptxt>
+Wurde das Steuermodul für schlüsselloses Starten zuvor mit einem anderen Fahrzeug registriert, können die Fernbedienungen nicht registriert werden. Wenn Austausch erforderlich ist, immer neues Steuermodul für schlüsselloses Starten einbauen.
+</ptxt>
+</attention3>
+<diag type = "test" id = "AGEAP70AA324010003">
+<testgroup id = "AGEAP70AA324010004">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+DTCs im Steuermodul für schlüsselloses Starten abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird auch der DTC B1189 erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70AA324018">DTC B1189:Modell mit schlüssellosem Startsystem</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324010005">
+<title>
+DTCs erneut abrufen
+</title>
+<test1>
+<ptxt>
+Sicherstellen, dass sich die Fernbedienung innerhalb des Wirkungsbereiches der schlüssellosen Motoranlassfunktion befindet.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Sicherstellen, dass die Zündung ausgeschaltet ist.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird DTC P1644 noch immer erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende. (Eine Möglichkeit, die Fernbedienung außerhalb des Wirkungsbereiches zu platzieren).
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324010006">
+<title>
+Überprüfung von Stromversorgungsschaltkreis und Massekreis des Steuermoduls für schlüsselloses Starten
+</title>
+<test1>
+<ptxt>
+Stromversorgungsschaltkreis und Masseverbindung des Steuermoduls für schlüsselloses Starten überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70AA504031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324010007">
+<title>
+ECM-Registrierung
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70AA326003">ECM-Registrierung:Modell mit schlüssellosem Startsystem</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird DTC P1644 noch immer erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende. (ECM war nicht registriert)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324010008">
+<title>
+Registrierung der Fernbedienung
+</title>
+<test1>
+<ptxt>
+&#34;Wgfhrspr-Schlsslreg.&#34; durchführen. 
+<intxreftitleoff1 refid = "AGEAP70AA326002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Sicherstellen, dass die Zündung ausgeschaltet ist.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird DTC P1644 noch immer erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. Wenn DTC P1644 noch immer erfasst wird, Steuermodul für schlüsselloses Starten austauschen und DTC erneut überprüfen.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+ECM: 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Steuermodul für schlüsselloses Starten: 
+<intxreftitleoff1 refid = "AGEAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende. (Fernbedienung war nicht registriert).
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

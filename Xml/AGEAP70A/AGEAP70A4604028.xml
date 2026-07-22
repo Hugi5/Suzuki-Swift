@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A4604028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1047/C1048
+</title>
+<servinfosub id = "AGEAP70A4604028001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.814in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.366in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1047: Signalleistung Raddrehzahlsensoren oder Codierer vorn 
+</emph>
+</ptxt>
+<ptxt>
+Die von beiden Vorderrad-Drehzahlsensoren berechnete Gierrate stimmt nicht mit dem Gierratensensorsignal überein.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Lenkwinkelsensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+Raddrehzahlsensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+Schaltkreis des Raddrehzahlsensors
+</ptxt>
+</item>
+<item>
+<ptxt>
+Raddrehzahlsensor-Codierer
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1048: Signalleistung Raddrehzahlsensoren oder Codierer hinten 
+</emph>
+</ptxt>
+<ptxt>
+Die von beiden Hinterrad-Drehzahlsensoren berechnete Gierrate stimmt nicht mit dem Gierratensensorsignal überein.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604028002">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A4604028003">
+<testgroup id = "AGEAP70A4604028004">
+<question>
+Wurde die &#34;ESP<sup>&#174;</sup>-Systemprüfung&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A4604001">ESP&#174;-Systemprüfung</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604028005">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604005">DTC-Überprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Liegen andere DTCs als C1047 oder C1048 vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604028006">
+<title>
+Überprüfung des Lenkwinkelsensors am Fahrzeug
+</title>
+<test1>
+<ptxt>
+Lenkwinkelsensor prüfen. 
+<intxreftitleoff1 refid = "AGEAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Den Lenkwinkelsensor austauschen und erneut DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604028007">
+<title>
+Überprüfung des Raddrehzahlsensors
+</title>
+<test1>
+<ptxt>
+Den betreffenden Raddrehzahlsensor, Raddrehzahlsensor-Codierer und/oder Schaltkreis des Raddrehzahlsensors gemäß 
+<intxref refid = "AGEAP70A4604018">DTC C1021/C1022/C1025/C1026/C1031/C1032/C1033/C1035/C1036</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ESP<sup>&#174;</sup>-Hydraulikeinheit/Steuermodul-Baugruppe austauschen und DTC erneut überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekte Teile reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

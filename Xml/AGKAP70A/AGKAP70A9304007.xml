@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9C">
+<servcat sctnbr = "09" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A9304007" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1820
+</title>
+<servinfosub id = "AGKAP70A9304007001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.597in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.597in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1820: Σ&#248;άλμα Εσωτερικής Μονάδας Ελέγχου EEPROM 
+</emph>
+</ptxt>
+<ptxt>
+Η μνήμη στον πίνακα οργάνων είναι ελαττωματική.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Πίνακας οργάνων
+</ptxt>
+</item>
+<item>
+<ptxt>
+Μονάδα ελέγχου συστήματος αισθητήρων στάθμευσης
+</ptxt>
+</item>
+<item>
+<ptxt>
+Κύκλωμα επικοινωνίας LIN
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A9304007002">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A9304007003">
+<testgroup id = "AGKAP70A9304007004">
+<title>
+Έλεγχος Κωδικού Βλάβης DTC
+</title>
+<test1>
+<ptxt>
+Διαγράψτε τον Κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70AA204004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Επιβεβαιώστε ότι ο διακόπτης ανά&#248;λεξης βρίσκεται στη θέση &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Θέστε τον διακόπτη ανά&#248;λεξης στη θέση &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ελέγξτε για κωδικό βλάβης. 
+<intxreftitleoff1 refid = "AGKAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Εξακολουθεί να ανιχνεύεται ο Κωδικός DTC B1820;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε τον πίνακα οργάνων και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ελέγξτε για διακοπτόμενο πρόβλημα. 
+<intxreftitleoff1 refid = "AGKAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

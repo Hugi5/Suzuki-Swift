@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B4604022" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C102A
+</title>
+<servinfosub id = "AENAP70B4604022001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C102A: ABS Control Continuous Operation
+</emph>
+</ptxt>
+<ptxt>
+ABS control is activated on all wheels continuously.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ESP<sup>®</sup> control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<ptxt>
+In emergency stop mode, when ESP<sup>®</sup> control module stops the control, the warning light will turn off but the DTC will remain as the present DTC during the current ignition cycle.
+</ptxt>
+<ptxt>
+It is normal if DTC becomes history DTC when switching ignition from “OFF” to “ON”.
+</ptxt>
+</attention3>
+</servinfosub>
+<servinfosub id = "AENAP70B4604022002">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70B4604022003">
+<testgroup id = "AENAP70B4604022004">
+<question>
+Was “ESP<sup>®</sup> System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B4604001">ESP® System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B4604022005">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604005">DTC Check</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is DTC C102A detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ESP<sup>®</sup> hydraulic unit / control module assembly and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70B4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

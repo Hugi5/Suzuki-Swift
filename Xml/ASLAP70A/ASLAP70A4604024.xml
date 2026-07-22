@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A4604024" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1038
+</title>
+<servinfosub id = "ASLAP70A4604024001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.259in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.896in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1038: Snímač uhla natočenia volantu zistil poruchu opačného klopenia vozidla
+</emph>
+</ptxt>
+<ptxt>
+Snímač uhla natočenia volantu zistil abnormálne údaje CAN z riadiacej jednotky ESP<sup>®</sup>.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Komunikačný obvod CAN
+</ptxt>
+</item>
+<item>
+<ptxt>
+Snímač uhla natočenia volantu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka ESP<sup>®</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A4604024002">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A4604024003">
+<testgroup id = "ASLAP70A4604024004">
+<question>
+Bola vykonaná „Kontrola systému ESP<sup>®</sup>“?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A4604001">Kontrola systému ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A4604024005">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Vykonajte 
+<intxref refid = "ASLAP70A4604005">Kontrola DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je zobrazené aj iné DTC ako C1038?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným procesom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A4604024006">
+<title>
+Kontrola snímača uhla natočenia volantu
+</title>
+<test1>
+<ptxt>
+Spínač zapaľovania sa nachádza v polohe OFF (VYP).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vymeňte snímač uhla natočenia volantu. 
+<intxreftitleoff1 refid = "ASLAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte DTC.
+</ptxt>
+</test1>
+<question>
+Rozoznáva sa DTC C1038?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte zostavu hydraulickej jednotky/riadiacej jednotky ESP<sup>®</sup> a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

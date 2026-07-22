@@ -1,0 +1,1453 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70AA804004" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Rješavanje problema isključene sabirnice komunikacije
+</title>
+<attention3>
+<ptxt>
+Obavezno izvršite 
+<intxref refid = "AHRAP70AA804001">Provjera CAN komunikacije</intxref>
+ prije početka izvršavanja ovog toka.
+</ptxt>
+</attention3>
+<servinfosub id = "AHRAP70AA804004001">
+<title>
+Shema ožičenja
+</title>
+<figure>
+<graphic graphicname = "IAP70AA80002.swf" width = "183.000mm" height = "159.041mm" ver = "02" gw = "484" gh = "434"/>
+</figure>
+<figure>
+<graphic graphicname = "IAP70AA80003.swf" width = "183.000mm" height = "126.802mm" ver = "01" gw = "503" gh = "343"/>
+<callout-l>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.507in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.763in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.280in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.075in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.196in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Model s kontakt bravom
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul servoupravljača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[a] do [j]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN komunikacijski vod (veza sa dijagnostičkim tokovima [a] do [j] od &#34;Tablice za odabir dijagnostičkog toka&#34;)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa (model pokretanja pritiskom prekidača)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN pobuđivač
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[k]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Pogled na konektor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Senzor kuta zakretanja upravljača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G308)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kombinirani mjerač
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul HVAC sustava (model s automatskim klima uređajem)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G309)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+DLC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout-l>
+</figure>
+</servinfosub>
+<servinfosub id = "AHRAP70AA804004002">
+<title>
+Postupak dijagnosticiranja
+</title>
+<ptxt>
+Kad se u bilo kojem upravljačkom modulu detektira &#34;Sabirnica CAN komunikacije isključena&#34; ili kada nije moguće komunicirati sa svim upravljačkim modulima / senzorom preko CAN-a pomoću SUZUKI alata za skeniranje, provjerite sljedeći postupak.
+</ptxt>
+<s1>
+<ptxt>
+Priključite osciloskop ili SUZUKI alat za skeniranje na DLC s isključenim kontaktom.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pomoću osciloskopa ili funkcije osciloskopa SUZUKI alata za skeniranje, promotrite valni oblik pod sljedećim uvjetom kada je kontakt uključen.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.285in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.285in"/>
+<colspec colnum = "3" colname = "3" colwidth = "4.618in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Kanal
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ticalo
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Terminal br.
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-11 
+<intxreftitleoff1 refid = "AHRAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Uzemljenje
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-3 
+<intxreftitleoff1 refid = "AHRAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Uzemljenje
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s1>
+<s1>
+<ptxt>
+Usporedite opaženi valni oblik signala s valnim oblicima danim kao &#34;Referetni valni oblik:&#34;. Nađite najsličniji valni oblik signala i identificirajte sustav s problemom i uzrok problema. 
+<intxreftitleoff1 refid = "AHRAP70AA804004003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Izvršite rješavanje problema. 
+<intxreftitleoff1 refid = "AHRAP70AA804004006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AHRAP70AA804004003">
+<title>
+Referentni valni oblik
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Donje tablice prikazuju valne oblike promatrane funkcijom osciloskopa SUZUKI alata za skeniranje. Oni služe kao referentni primjeri.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Valni oblici u &#34;Primjeri nepravilnih valnih oblika&#34; odabrani su primjeri valnih oblika CAN komunikacije uočeni kada se nepravilnost pojavljuje. Međutim, ovi valni oblici ne moraju izgledati jednako kao promatrani valni oblici. Stoga, za utvrđivanje nepravilnosti, odaberite valni oblik iz 
+<intxref refid = "AHRAP70AA804004005">Primjeri poremećenih valnih oblika</intxref>
+ najsličniji promatranom valnom obliku.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AHRAP70AA804004004">
+<title>
+Normalni valni oblik
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.075in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.692in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.771in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Normalni valni oblik
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Opis
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81005.swf" width = "137.083mm" height = "70.379mm" ver = "07" gw = "312" gh = "188"/>
+</entry>
+<entry colname = "5" morerows = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Referentni napon i CAN signala visokog napona i CAN signala niskog napona je 2,5 V. Valni oblik CAN signala visokog napona je 2,5 – 3,5 V i od CAN signala niskog napona je 2,5 – 1,5 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Donja razina svakog kanala
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Valni oblik kanala 1 (CAN signal visokog napona)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Napon/podjeljak svakog kanala
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[E]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Valni oblik kanala 2 (CAN signal niskog napona)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Vrijeme/podjeljak svakog kanala
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+<topic id = "AHRAP70AA804004005">
+<title>
+Primjeri poremećenih valnih oblika
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.349in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.026in"/>
+<colspec colnum = "3" colname = "3" colwidth = "2.068in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.766in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Mogući uzrok
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Karakteristični valni oblik
+</ptxt>
+</entry>
+<entry colname = "4" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Opis
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Signal CAN High
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Signal CAN Low
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+U kratkom spoju s uzemljenjem
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81007.swf" width = "51.460mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81008.swf" width = "52.527mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+U slučaju da je žica signala CAN High kratko spojena s uzemljenjem
+</emph>
+</ptxt>
+<ptxt>
+I signal CAN High i signal CAN Low fiksirani su na razinu GND (0 V)
+</ptxt>
+<ptxt>
+<emph>
+U slučaju da je žica signala CAN Low kratko spojena s uzemljenjem
+</emph>
+</ptxt>
+<ptxt>
+Referentna razina i CAN signala visokog napona i CAN signala niskog napona je razina GND (0 V) i valni oblik CAN signala visokog napona nepravilno oscilira.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal CAN High: Između 0 V i 3 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal CAN Low: Fiksiran na 0 V
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Otvoren
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80004.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80005.jpg" width = "52.527mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+U slučaju da je žica CAN signala visokog napona u prekidu
+</emph>
+</ptxt>
+<ptxt>
+Referentni napon CAN signala visokog napona i CAN signala niskog napona je 2,5 V i ovi valni oblici nepravilno osciliraju.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal CAN High: Između 3,5 V i 1,0 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal CAN Low: Između 2,5 V i 1,0 V
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+U slučaju da je žica CAN signala niskog napona u prekidu
+</emph>
+</ptxt>
+<ptxt>
+Referentni napon CAN signala visokog napona i CAN signala niskog napona je 2,5 V i ovi valni oblici nepravilno osciliraju.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal CAN High: Između 2,5 V i 4,0 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal CAN Low: Između 1,5 V i 4,0 V
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+U kratkom spoju s krugom napajanja (12 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80006.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81011.swf" width = "52.527mm" height = "68.770mm" ver = "09" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+U slučaju da je žica signala CAN High kratko spojena s krugom napajanja (12 V)
+</emph>
+</ptxt>
+<ptxt>
+CAN signal visokog napona fiksiran je na 12 V i CAN signal niskog napona nepravilno oscilira između 12 V i 2 V.
+</ptxt>
+<ptxt>
+<emph>
+U slučaju da je žica signala CAN Low kratko spojena s krugom napajanja (12 V)
+</emph>
+</ptxt>
+<ptxt>
+I signal CAN High i signal CAN Low fiksirani su na 12 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+U kratkom spoju s krugom napajanja (5 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80007.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8T201A80010.swf" width = "52.527mm" height = "68.812mm" ver = "01" gw = "138" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+U slučaju da je žica signala CAN High kratko spojena s krugom napajanja (5 V)
+</emph>
+</ptxt>
+<ptxt>
+Referentni napon CAN signala visokog napona i CAN signala niskog napona je 5,0 V i ovi valni oblici nepravilno osciliraju.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal CAN High: Između 5,5 V i 4,5 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal CAN Low: Između 5,0 V i 1,5 V
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+U slučaju da je žica signala CAN Low kratko spojena s krugom napajanja (5 V)
+</emph>
+</ptxt>
+<ptxt>
+Referentni napon iznosi 5 V i na istoj je fazi i za CAN signal visokog napona i CAN signal niskog napona i valni oblici nepravilno osciliraju između 5 V i 2,5 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Žice signala CAN High i signala CAN Low su međusobno u kratkom spoju
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81014.swf" width = "103.987mm" height = "68.770mm" ver = "08" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+I CAN signal visokog napona i CAN signal niskog napona fiksirani su na blizu 2,5 V
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+<servinfosub id = "AHRAP70AA804004006">
+<title>
+Rješavanje problema
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Prije dijagnosticiranja pogreške, obavezno provjerite opremu vozila koje se servisira kao i upravljačke module i senzor spojene na komunikacijski vod CAN-a.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Prije uporabe alata za skeniranje pročitajte njegov Korisnički priručnik (s uputama za rad) kako biste ga znali koristiti.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kada izvršavate Provjeru komunikacijske sabirnice pomoću SUZUKI alata za skeniranje u ovom rješavanju problema, pogledajte 
+<intxref refid = "AHRAP70AA804004024">Procjena provjere komunikacijske sabirnice </intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AHRAP70AA804004007">
+<testgroup id = "AHRAP70AA804004008">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektore sa svih upravljačkih modula i senzora s kojima CAN komunicira. 
+<intxreftitleoff1 refid = "AHRAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja svakog kruga CAN komunikacije za sve konektore upravljačkog modula / senzora (s kojima CAN komunicira) i DLC-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite sljedeće točke svakog kruga CAN komunikacije na temelju rezultata dobivenih u 2. koraku od 
+<intxref refid = "AHRAP70AA804004002">Postupak dijagnosticiranja</intxref>
+.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Prekinut krug
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kratak spoj s krugom napajanja
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kratak spoj s krugom uzemljenja
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kratak spoj među žicama CAN komunikacije
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004009">
+<title>
+Provjera zaključnog otpora ECM-a
+</title>
+<test1>
+<ptxt>
+Spojite konektor &#34;E01&#34; na ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izmjerite otpor između terminala “E24-2” i “E24-16” konektora upravljačkog modula ESP<sup>®</sup>-a.
+</ptxt>
+</test1>
+<question>
+Je li otpor 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite ECM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004010">
+<title>
+Provjera zaključnog otpora kombiniranog mjerača
+</title>
+<test1>
+<ptxt>
+Spojite konektor na kombinirani mjerač.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izmjerite otpor između terminala “G211-11” i “G211-3” DLC-a.
+</ptxt>
+</test1>
+<question>
+Je li otpor 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 4. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite kombinirani mjerač i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004012">
+<title>
+Provjera komunikacije kombiniranog mjerača, BCM-a, upravljačkog modula ESP®-a, ECM-a i upravljačkog modula sustava pokretanja bez ključa
+</title>
+<test1>
+<ptxt>
+Spojite konektore na upravljački modul P/S-a, BCM, upravljački modul ESP<sup>®</sup>-a i upravljački modul sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spojite negativni kabel (–) na akumulator.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite da se CAN komunikacija odvija normalno između kombiniranog mjerača, upravljačkog modula P/S-a, BCM-a, upravljačkog modula ESP<sup></sup>-a, ECM-a i upravljačkog modula sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa). 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li komunikacija normalna?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Izvršite &#34;Provjeru komunikacije&#34; prema spojenim senzorima /upravljačkim modulima. 
+<intxreftitleoff1 refid = "AHRAP70AA804004019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 5. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004013">
+<title>
+Provjera komunikacije upravljačkog modula servoupravljača
+</title>
+<test1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor &#34;G50&#34; upravljačkog modula servoupravljača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spojite sljedeće terminale konektora upravljačkog modula P/S-a pomoću servisnih žica.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Između terminala “G50-4” i “G50-5”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Između terminala “G50-7” i “G50-6”
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite da se CAN komunikacija odvija normalno za kombinirani mjerač, BCM, upravljački modul ESP<sup>®</sup>-a, ECM i upravljački modul sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa). 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li komunikacija normalna?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul P/S-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 6. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004014">
+<title>
+Provjera komunikacije BCM-a
+</title>
+<test1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite servisne žice s konektora upravljačkog modula P/S-a, a zatim spojite konektor na upravljački modul P/S-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite sljedeće konektore s BCM-a.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model s kontakt bravom: konektore “G04” i &#34;E04&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa: konektore “G05” i &#34;E05&#34;.
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Spojite sljedeće terminale konektora BCM-a pomoću servisnih žica.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model s kontakt bravom:
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Između terminala “G04-2” i “E04-5”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Između terminala “G04-18” i “E04-12”
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa:
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Između terminala “G05-2” i “E05-6”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Između terminala “G05-1” i “E05-7”
+</ptxt>
+</item>
+</list2>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite da se CAN komunikacija odvija normalno između kombiniranog mjerača, upravljačkog modula P/S-a, upravljačkog modula ESP<sup>®</sup>-a, ECM-a i upravljačkog modula sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa). 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li komunikacija normalna?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite BCM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 7. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004016">
+<title>
+Provjera komunikacije upravljačkog modula ESP®-a
+</title>
+<test1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite servisne žice s konektora BCM-a, a zatim spojite konektore na BCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor upravljačkog modula ESP<sup>®</sup>-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spojite sljedeće terminale konektora upravljačkog modula ESP<sup>®</sup>-a pomoću servisnih žica.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Između terminala “E24-1” i “E24-2”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Između terminala “E24-15” i “E24-16”
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite da se CAN komunikacija odvija normalno za kombinirani mjerač, upravljački modul P/S-a, BCM, ECM i upravljački modul sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa). 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li komunikacija normalna?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 8. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004017">
+<title>
+Provjera komunikacije kombiniranog mjerača
+</title>
+<test1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite servisne žice s konektora upravljačkog modula ESP<sup>®</sup>-a i zatim spojite konektor na upravljački modul ESP<sup>®</sup>-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Zamijenite kombinirani mjerač. 
+<intxreftitleoff1 refid = "AHRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite da se CAN komunikacija odvija normalno između upravljačkog modula P/S-a, BCM-a, upravljačkog modula ESP<sup>®</sup>-a, ECM-a i upravljačkog modula sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa). 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li komunikacija normalna?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Kraj. (Kombinirani mjerač je neispravan.)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Model s kontakt bravom: Zamijenite ECM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa: Idite na 9. korak.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804004018">
+<title>
+Provjera komunikacije ECM-a
+</title>
+<test1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Zamijenite ECM. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite da se CAN komunikacija odvija normalno između kombiniranog mjerača, upravljačkog modula P/S-a, BCM-a, upravljačkog modula ESP<sup></sup>-a, ECM-a i upravljačkog modula sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa). 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li komunikacija normalna?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Kraj. (ECM je neispravan.)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul sustava pokretanja bez ključa i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+<servinfosub id = "AHRAP70AA804004019">
+<title>
+Provjera komunikacije
+</title>
+<topic id = "AHRAP70AA804004020">
+<title>
+Senzor kuta zakretanja upravljača
+</title>
+<s1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Spojite konektor na senzor kuta zakreta upravljača.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrdite da CAN komunikacija koja već povezuje upravljačke module, senzor i senzor kuta zakretanja radi normalno. 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ako pronađete bilo kakav kvar, zamijenite senzor kuta zakretanja i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "AHRAP70AA804004021">
+<title>
+SDM
+</title>
+<s1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Spojite konektor &#34;G11&#34; na SDM.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrdite da je CAN komunikacija na koju su upravljački moduli, senzor i SDM već bili spojeni u normalnom stanju. 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ako pronađete bilo kakav kvar, zamijenite SDM i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "AHRAP70AA804004022">
+<title>
+Upravljački modul HVAC sustava (model s automatskim klima uređajem)
+</title>
+<s1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Spojite konektor na upravljački modul HVAC sustava.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Odaberite stavku &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrdite da je CAN komunikacija na koju su upravljački moduli, senzor i upravljački modul HVAC-a već bili spojeni u normalnom stanju. 
+<intxreftitleoff1 refid = "AHRAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ako pronađete bilo kakav kvar, zamijenite upravljački modul HVAC-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "AHRAP70AA804004024">
+<title>
+Procjena provjere komunikacijske sabirnice 
+</title>
+<ptxt>
+Kada izvršavate &#34;Provjeru komunikacijske sabirnice&#34; pomoću SUZUKI alata za skeniranje, pogledajte sljedeću tablicu za procjenu.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.542in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.677in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ocjenjivanje
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Prikaz provjere komunikacijske sabirnice
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Normalno
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Svi spojeni upravljački moduli / senzori (koji komuniciraju putem CAN-a) prikazani su i njihova boja pozadine je &#34;bijela&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Gore opisano stanje se ne mijenja tijekom promatranja duljeg od 1 minute.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Abnormalno
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Nije prikazan nijedan od spojenih upravljačkih modula / senzora (koji komuniciraju putem CAN-a).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Boja pozadine naziva upravljačkih modula / senzora (koji komuniciraju putem CAN-a) je prikazan u &#34;sivoj&#34; ili &#34;svijetlo plavoj&#34; boji.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Boja pozadine naziva upravljačkih modula / senzora (koji komuniciraju putem CAN-a) mijenja se u &#34;sivu&#34; (brojevi upravljačkih modula / senzora padaju) ili &#34;svijetlo plavu&#34; boju (brojevi upravljačkih modula / senzora rastu).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ne može se izvršiti &#34;Provjera sabirnice komunikacije&#34;.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

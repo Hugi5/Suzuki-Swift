@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104004" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+DTC Clearance
+</title>
+<s1>
+<ptxt>
+With ignition “OFF”, connect CAN communication OBD generic scan tool or SUZUKI scan tool to DLC.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Clear DTC and pending DTC according to instructions displayed on scan tool. Freeze frame data is cleared together with DTC. Refer to scan tool operator’s manual for details.
+</ptxt>
+<ptxt>
+If communication between scan tool and TCM is not possible, go to 
+<intxref refid = "AENAP70BA804004">Troubleshooting for Communication Bus Off</intxref>
+.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+After completing the clearance, set ignition “OFF” and disconnect scan tool from DLC.
+</ptxt>
+<attention3>
+<ptxt>
+DTC and freeze frame data stored in TCM memory are also cleared in the following cases. Be careful not to clear them before recording them.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+When power to TCM is cut off (by disconnecting battery cable, removing fuse or disconnecting TCM (connectors)).
+</ptxt>
+</item>
+<item>
+<ptxt>
+When the same malfunction (DTC) is not detected again during 40 engine warm-up cycles.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

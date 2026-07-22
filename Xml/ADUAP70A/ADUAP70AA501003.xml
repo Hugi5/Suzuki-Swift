@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ADUAP70AA501003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschrijving van de portiervergrendelingsfunctie van het startsysteem met afstandsbediening
+</title>
+<ptxt>
+De portiervergrendelingsfunctie bestaat uit 3 typen vergrendelings-/ontgrendelingsmethoden: met portierregelschakelaar, met centrale portiervergrendeling met afstandsbediening en met slotcilinder.
+</ptxt>
+<servinfosub id = "ADUAP70AA501003001">
+<title>
+Vergrendeling/ontgrendeling met de portierregelschakelaar
+</title>
+<ptxt>
+Alle portieren worden als volgt vergrendeld en ontgrendeld met elke portierregelschakelaar gemonteerd op de portierkrukken aan de buitenzijde van de voorportieren (bestuurders- en passagierszijde) en de achterklep.
+</ptxt>
+<s1>
+<ptxt>
+Door op de knop van de regelschakelaar te drukken, wordt een vergrendel- of ontgrendelverzoeksignaal naar het regelapparaat van het startsysteem met afstandsbediening verzonden.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Het regelapparaat van het startsysteem met afstandsbediening (1) activeert de binnenantenne midden (2), de binnenantenne achter (3), de buitenantenne achter (4) zodat deze een verzoeksignaal verzendt in het voertuiginterieur en de bagageruimte.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Wanneer het regelapparaat van het startsysteem met afstandsbediening bepaalt dat de afstandsbediening (5) zich niet in het voertuig of de kofferruimte bevindt, wordt de buitenantenne van het portier geactiveerd waarvan de regelschakelaar is ingedrukt. Deze stuurt een verzoeksignaal naar de afstandsbediening.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+De afstandsbediening die het verzoeksignaal ontvangt stuurt de ID-code naar het regelapparaat van het startsysteem met afstandsbediening via de buitenantenne, die werkt als ontvanger van de centrale portiervergrendeling met afstandsbediening (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Het regelapparaat van het startsysteem met afstandsbediening vergelijkt de ID-code die is verzonden door de afstandsbediening met de ID-code in het regelapparaat van het startsysteem met afstandsbediening. Als de ID-codes met elkaar overeenkomen, stuurt het regelapparaat van het startsysteem met afstandsbediening een verzoeksignaal voor vergrendeling of ontgrendeling (afhankelijk van de status van de portiervergrendelingsschakelaar) via CAN-communicatie uit naar de BCM (7).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+De BCM activeert de portiervergrendelingsstelmotor.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50001.swf" width = "183.000mm" height = "96.389mm" ver = "02" gw = "414" gh = "257"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.440in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.884in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.884in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+De signaalstroom &#34;1&#34; tot en met &#34;6&#34; stemt overeen met stap 1) tot en met 6)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Buitenantenne aan de passagierszijde
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Achterklepregelschakelaar
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Portierregelschakelaar aan de bestuurderszijde
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Buitenantenne aan de bestuurderszijde
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Portierregelschakelaar aan de passagierszijde
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Elke portiervergrendelingsstelmotor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "ADUAP70AA501003002">
+<title>
+Werkingsgebied
+</title>
+<ptxt>
+De afstand tussen de afstandsbediening en elke portierantenne moet voor een goede werking van de portiervergrendeling binnen ongeveer 80 cm (31,5 in, 2,6 ft.) (1) vallen. Vergrendeling en ontgrendeling zijn bovendien alleen mogelijk als de afstandsbediening zich binnen het werkingsgebied bevindt waar op de portierregelschakelaar is gedrukt. (Bij voorbeeld: Als de regelschakelaar van het bestuurdersportier is ingedrukt, moet de afstandsbediening zich binnen het dekkingsgebied van de buitenantenne aan de bestuurderszijde bevinden).
+</ptxt>
+<attention3>
+<ptxt>
+Het vergrendelen of ontgrendelen van een portier werkt mogelijk niet onder de volgende omstandigheden: 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Als de afstandsbediening zich te dicht bij het voertuig, dicht bij de grond of te hoog bevindt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Als twee voertuigen van hetzelfde type, uitgerust met startsysteem met afstandsbediening, naast elkaar komen te staan en beide startsystemen met afstandsbediening tegelijkertijd worden bediend.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Als de geregistreerde afstandsbediening en de ongeregistreerde afstandsbediening tegelijkertijd worden meegenomen.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50002.swf" width = "88.000mm" height = "60.211mm" ver = "01" gw = "234" gh = "154"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.968in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.968in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.968in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Buitenantenne aan de passagierszijde
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Buitenantenne aan de bestuurderszijde
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Buitenantenne achter
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+<topic id = "ADUAP70AA501003003">
+<title>
+Veiligheidsfunctie
+</title>
+<ptxt>
+De portieren kunnen niet met de portierregelschakelaar vergrendeld worden als een van de volgende toestanden vastgesteld wordt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ontstekingsmodus staat op &#34;ACC&#34; of &#34;ON&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Een van de portieren staat open.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Het startsysteem met afstandsbediening stelt vast dat de afstandsbediening zich in de voertuigruimte bevindt.
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "ADUAP70AA501003004">
+<title>
+Functie ter preventie van opsluiting van de afstandsbediening in het voertuig
+</title>
+<ptxt>
+Deze functie voorkomt dat de bestuurder de portieren vergrendelt en het voertuig verlaat terwijl de afstandsbediening nog in de voertuigruimte ligt.
+</ptxt>
+<ptxt>
+Als de middelste binnenantenne (1) of de binnenantenne achter (2) de afstandsbediening in de volgende situatie waarneemt (d.w.z. de afstandsbediening ligt in de voertuigruimte), stuurt het regelapparaat van het startsysteem met afstandsbediening via CAN-communicatie een portierontgrendelingssignaal naar de BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+De portieren zijn vergrendeld met de slotcilinder (noodsleutel) of de portiervergrendelingsknop van een van de portieren is open.
+</ptxt>
+</item>
+</list1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+De functie ter preventie van opsluiting van de afstandsbediening in het voertuig werkt mogelijk niet als de afstandsbediening zich op het instrumentenpaneel, in een van de opbergvakken, in de buurt van de voetenruimte aan de bestuurders- of passagierszijde, in het portiervak of iets dergelijks bevindt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Als de startsysteem met afstandsbediening uitgeschakeld is, werkt ook de functie ter preventie van opsluiting van de afstandsbediening in het voertuig niet.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50003.swf" width = "88.000mm" height = "50.137mm" ver = "01" gw = "200" gh = "126"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.619in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.497in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Waarnemingszone van de middelste binnenantenne
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Waarnemingszone van de binnenantenne achter
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "ADUAP70AA501003005">
+<title>
+Vergrendelen / ontgrendelen met de centrale deurvergrendeling met afstandsbediening
+</title>
+<ptxt>
+Als aan alle onderstaande voorwaarden wordt voldaan en het vergrendelings- of ontgrendelingssignaal van de afstandsbediening via de ontvanger van de centrale portiervergrendeling met afstandsbediening in het regelapparaat van het startsysteem met afstandsbediening wordt ingevoerd, stuurt het regelapparaat van het startsysteem met afstandsbediening via CAN-communicatie een vergrendelings-/ontgrendelingsverzoeksignaal (afhankelijk van de stand van de portiervergrendelingsschakelaar) naar de BCM. Als de BCM het signaal ontvangt, activeert het de portiervergrendelingsstelmotoren.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+De ontstekingsmodus staat op &#34;OFF&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Alle portieren zijn gesloten. (Bij het vergrendelen van de portieren)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "ADUAP70AA501003006">
+<title>
+Vergrendelen / ontgrendelen met de slotcilinder
+</title>
+<ptxt>
+Als het vergrendelings- of ontgrendelingssignaal van de slotcilinderschakelaar via de bediening van de slotcilinder in het regelapparaat van het startsysteem met afstandsbediening wordt ingevoerd, stuurt het regelapparaat van het startsysteem met afstandsbediening via CAN-communicatie een vergrendelings-/ontgrendelingsverzoeksignaal (afhankelijk van de stand van de portiervergrendelingsschakelaar) naar de BCM. Als de BCM het signaal ontvangt, activeert het de portiervergrendelingsstelmotoren.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ADUAP70AA501003007">
+<title>
+Timerfunctie van de vergrendeling
+</title>
+<ptxt>
+Deze functie vergrendelt de portieren automatisch als de deuren ontgrendeld worden met de portierregelschakelaar of de centrale portiervergrendeling met afstandsbediening en als er na ongeveer 30 seconden geen deur geopend wordt.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

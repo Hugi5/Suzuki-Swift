@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9B">
+<servcat sctnbr = "09" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A9204016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1970
+</title>
+<servinfosub id = "ASPBP70A9204016001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.193in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.012in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1970: Avería en el sensor de velocidad de la rueda y/o en su circuito 
+</emph>
+</ptxt>
+<ptxt>
+No entra señal de velocidad del vehículo a través de la comunicación CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Línea de comunicación CAN
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor de velocidad de las ruedas y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Codificador del sensor de velocidad de la rueda
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de la nivelación automática de los faros y del lavafaros
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A9204016002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention1>
+<ptxt>
+Si no se selecciona una carretera apta ni se toman las medidas de precaución adecuadas al efectuar una prueba de carretera, podría producirse un accidente.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Elija una carretera nivelada y sin tráfico para reducir el riesgo de sufrir un accidente.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Realice la prueba con sumo cuidado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Para la realización de la prueba de carretera, se requiere la presencia de 2 personas: un conductor y un ayudante.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+En primer lugar, asegúrese de realizar la localización de averías de los DTC inesperados detectados previamente en el &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Conduzca el vehículo a 40 km/h (25 mile/h) durante 10 seg. o más.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A9204016003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A9204016004">
+<testgroup id = "ASPBP70A9204016007">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Verifique los DTC relacionados con la comunicación CAN.
+</ptxt>
+</test1>
+<question>
+¿Se detecta algún DTC relacionado con la CAN?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A9204016005">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Borre el DTC. 
+<intxreftitleoff1 refid = "ASPBP70A9204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Desconecte el encendido (posición OFF).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Realice el &#34;Procedimiento de confirmación del DTC&#34; y vuelva a verificarlo. 
+<intxreftitleoff1 refid = "ASPBP70A9204002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC B1970?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Problema intermitente.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A9204016006">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Compruebe el DTC en el módulo de control del ESP<sup>&#174;</sup>. 
+<intxreftitleoff1 refid = "ASPBP70A9204002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se detecta algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías para el DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el módulo de control de la nivelación automática de los faros y del lavafaros y vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPBP70A9206015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

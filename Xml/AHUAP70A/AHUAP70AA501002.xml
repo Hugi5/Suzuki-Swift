@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70AA501002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Kulcsnélküli indítórendszer alkatrészeinek és funkcióinak leírása
+</title>
+<ptxt>
+<intxrefpoff refid = "AHUAP70AA503001">Kulcsnélküli indítórendszer alkatrészeinek elhelyezkedése</intxrefpoff>
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.968in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.236in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Alkatrész
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Felépítés / funkció
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kulcsnélküli indítás vezérlőmodulja
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A vezető oldalán, a műszerfal alsó oldalára szerelve. Információkat továbbít CAN kommunikáció segítségével az ECM, BCM és a műszeregység stb. között.
+</ptxt>
+<ptxt>
+Folyamatosan figyeli valamennyi ajtó jeladókapcsoló, ajtókapcsoló és a motorindító gomb állapotát. Utasítást ad az ajtó reteszelésére és nyitására, a motor indítására és a kormányzár kioldására.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Távirányító
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Veszi az egyes antennáktól a kérőjeleket. Továbbítja az azonosító kódokat és a parancsjeleket a kulcsnélküli ajtónyitó rendszer vevőjéhez. A következő berendezést és funkciókat tartalmazza.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Működés visszajelző lámpája
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ha „ON” gyújtási üzemmódban az akkumulátor töltése lecsökken, a kulcsnélküli indítás vezérlőmodulja jelet kap annak érdekében, hogy a műszeregység távirányító akkumulátorának merülésére figyelmeztető lámpájának aktiválásával figyelmeztesse a vezetőt a távirányító akkumulátorának lemerülésére.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Biztonsági kulcs az ajtók zárására és nyitására, ha a kulcsnélküli indítórendszer az elemek lemerülése stb. miatt nem működik.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Záró/nyitó gombok az ajtók zárásához, nyitásához, a kulcsnélküli indítórendszer működése alatt.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motorindító kapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A műszerfal vezetőoldali részén található. Tartalmazza a működési állapotot észlelő nyomógombot.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vezetőoldali külső antenna
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Az ajtókilincs külső oldalán helyezkedik el. Továbbítja a parancsjeleket a járművön kívül található távirányítókhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Utasoldali külső antenna
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Hátsó külső antenna
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A hátpanel hátoldalán található. Továbbítja a parancsjeleket a járművön kívül található távirányítókhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Középső belső antenna
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A középkonzolrekeszben található. Továbbítja a parancsjeleket a járművön belül található távirányítókhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Hátsó belső antenna
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A hátpanel első oldalán található. Továbbítja a kérőjeleket a csomagtérben található távirányítóhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vezetőoldali ajtó jeladókapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Az ajtókilincs külső oldalán helyezkedik el. Továbbítja az ON/OFF információt az ajtók jeladókapcsolóitól a kulcsnélküli indításvezérlő modulhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Utasoldali ajtó jeladókapcsoló
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Csomagtérajtó jeladókapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A csomagtérajtóban található. Továbbítja az ON/OFF információt a csomagtérajtók jeladókapcsolóitól a kulcsnélküli indítás vezérlőmodulhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Valamennyi ajtókapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Továbbítja a nyitás/zárás információt az ajtóktól a kulcsnélküli indításvezérlő modulhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Csomagtérajtó kapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A csomagtérajtó zárjában található. Továbbítja a nyitás/zárás információt az csomagtérajtóktól a kulcsnélküli indítás vezérlőmodulhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kormányzár egység
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A kormányoszlopban található. Feloldja vagy lezárja a kormányzárat.
+</ptxt>
+<ptxt>
+Tartalmazza a nyitás érzékelő kapcsolót és a zárás érzékelő kapcsolót, melyek észlelik a kormányzár állapotát. Továbbítja az állapot-információkat a kulcsnélküli indítás vezérlőmodul felé soros kommunikáció segítségével.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Indításgátló visszajelző lámpa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A műszeregységben helyezkedik el. Kialszik, ha a távirányító azonosító kódja megfelelő a motorindító kapcsoló benyomásakor. Kigyullad, ha a távirányító nem észlelhető a motorindító kapcsoló benyomásakor.
+</ptxt>
+<ptxt>
+Kigyullad vagy villog, ha a rendszer működése hibás.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Riasztóberendezés visszajelző lámpája
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A vészvillogó kapcsolójában található. Kigyullad vagy villog riasztás esetén, vagy ha a rendszer működése hibás.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ACC visszajelző lámpa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A műszeregységben helyezkedik el. Kigyullad, ha a gyújtási üzemmód „ACC”.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ON visszajelző lámpa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A műszeregységben helyezkedik el. Kigyullad, ha a gyújtási üzemmód „ON”, miközben a motor áll.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+PUSH visszajelző lámpa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A műszeregységben helyezkedik el. 
+</ptxt>
+<ptxt>
+Kigyullad a tengelykapcsoló pedál benyomásakor.
+</ptxt>
+<ptxt>
+A motorindító kapcsoló megnyomásakor villog, ha a távirányító azonosító kódja nincs regisztrálva.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ACC reléje
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Az elosztódobozban található. Átkapcsolja a gyújtási módot a kulcsnélküli indítás vezérlőmodul vezérlése alatt.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+IG1 relé
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+IG2 relé
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Indítómotor vezérlőrelé
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A főrelétáblában található. Bekapcsolja és árammal látja el az indítómotort, amikor a kulcsnélküli indítás vezérlőmodul úgy ítéli meg, hogy az indítás lehetséges.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CPP kapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A tengelykapcsoló pedálon található. Továbbítja a működési információkat a tengelykapcsoló pedáltól a kulcsnélküli indításvezérlő modulhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Külső figyelmeztető csipogó
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A vezetőoldalon, a motortérburkolat felső oldalpanelének külsején található. Megszólal, ha a riasztó vagy figyelmeztető funkció működik.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vezetőoldali / utasoldali ajtózárkapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Mindkét ajtózár-aktuátorban megtalálható. Továbbítja a seteszelési / kioldási információt a vezetőoldali / utasoldali ajtótól a kulcsnélküli indítás vezérlőmoduljához.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Zárbetét kapcsoló
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A vezetőoldali ajtózár aktuátorban található. Továbbítja a nyitás/zárás információt az ajtó zárbetétjétől a kulcsnélküli indítás vezérlőmodulhoz.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kulcsnélküli ajtónyitó rendszer vevője
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A középkonzolrekeszben található. Jelet fogad a távirányítótól és kimenő jelet ad a kulcsnélküli indítás vezérlőmodul felé soros kommunikáció segítségével.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

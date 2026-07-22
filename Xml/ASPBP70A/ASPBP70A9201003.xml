@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9B">
+<servcat sctnbr = "09" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPBP70A9201003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descripción del sistema de ajuste de altura automática de los faros
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+El sistema de nivelación automática de los faros se compone del módulo de control de nivelación automática de los faros y del lavafaros, el actuador de ajuste de altura de los faros, el sensor de altura trasera del vehículo, el interruptor de iluminación y el juego de instrumentos.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando el encendido está conectado (posición ON), el módulo de control de la nivelación automática de los faros y del lavafaros controla la posición del vehículo basándose en las señales del sensor de altura trasera del vehículo, instalado en la suspensión trasera.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El módulo de control de la nivelación automática de los faros y del lavafaros se comunica con otros módulos de control a través de la línea de comunicación CAN.
+</ptxt>
+<ptxt>
+Para obtener información más detallada sobre la comunicación CAN, consulte 
+<intxref refid = "ASPBP70AA801001">Descripción del sistema de comunicación</intxref>
+.
+</ptxt>
+</item>
+</list1>
+<servinfosub id = "ASPBP70A9201003001">
+<title>
+Control de nivelación automática de los faros
+</title>
+<topic id = "ASPBP70A9201003002">
+<title>
+Control de la nivelación automática cuando el vehículo está parado
+</title>
+<ptxt>
+Cuando la misma altura del vehículo se mantiene durante un tiempo especificado después de que la altura del vehículo cambia y los faros están encendidos, el módulo de control de la nivelación automática de los faros y del lavafaros acciona los actuadores de ajuste automático de altura para mantener el eje óptico correcto en función de la altura del vehículo detectada inmediatamente antes de encender los faros.
+</ptxt>
+</topic>
+<topic id = "ASPBP70A9201003003">
+<title>
+Control de la nivelación automática cuando el vehículo está en movimiento
+</title>
+<ptxt>
+Cuando se detecta una marcha a velocidad constante de 30 km/h (19 mile/h) o más en carreteras que no sean irregulares durante un tiempo especificado y los faros están encendidos, el módulo de control de la nivelación automática de los faros y del lavafaros acciona los actuadores de ajuste automático de altura de los faros a fin de mantener el eje óptico correcto en función de la altura del vehículo detectada inmediatamente antes de encender los faros. Cuando se detecta un cambio en la altura del vehículo durante un tiempo especificado, el módulo de control de la nivelación automática de los faros y del lavafaros determina que el vehículo se conduce en una carretera irregular y se detiene el control de la nivelación automática.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPBP70A9201003004">
+<title>
+Inicialización del sistema de nivelación automática de los faros
+</title>
+<ptxt>
+En caso de que se sustituya el módulo de control de la nivelación automática de los faros y del lavafaros o se extraiga, vuelva a instalar o sustituya el sensor de altura trasera del vehículo, se debe reinicializar el sistema de nivelación automática de los faros. 
+<intxreftitleoff1 refid = "ASPBP70A9206018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPBP70A9201003005">
+<title>
+Función de autodiagnóstico
+</title>
+<ptxt>
+Cuando el módulo de control de la nivelación automática de los faros y del lavafaros detecta una anomalía en el sistema de nivelación automática de altura de los faros, hace que se encienda la luz de advertencia de nivelación automática (1) en el juego de instrumentos (2).
+</ptxt>
+<figure>
+<graphic graphicname = "IBP60B920001.swf" width = "88.000mm" height = "61.182mm" ver = "01" gw = "205" gh = "157"/>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPBP70A9201003006">
+<title>
+Función a prueba de fallos
+</title>
+<ptxt>
+Cuando el módulo de control de la nivelación automática de los faros y del lavafaros detecta una anomalía en el sistema de nivelación automática de los faros, inicia el control a prueba de fallos e interrumpe el funcionamiento del los actuadores de ajuste de altura de los faros.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

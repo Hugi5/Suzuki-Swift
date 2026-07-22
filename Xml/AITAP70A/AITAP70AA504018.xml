@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70AA504018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1161 / B1163
+</title>
+<servinfosub id = "AITAP70AA504018001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.816in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.388in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1161: Informazioni gruppo bloccasterzo discrepanti
+</emph>
+</ptxt>
+<ptxt>
+Errore di controllo tra la centralina sistema di avviamento senza chiave e il gruppo bloccasterzo.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuito / connettore gruppo bloccasterzo
+</ptxt>
+</item>
+<item>
+<ptxt>
+Gruppo bloccasterzo
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina sistema di avviamento senza chiave
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1163: Gruppo bloccasterzo non registrato
+</emph>
+</ptxt>
+<ptxt>
+Mancata registrazione del gruppo bloccasterzo.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70AA504018002">
+<title>
+Procedura di conferma DTC
+</title>
+<s1>
+<ptxt>
+Verificare che l&#39;accensione sia in posizione &#34;OFF&#34;.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34;.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ripetere diverse volte i passi e 1) e 2).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70AA504018003">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70AA504018004">
+<testgroup id = "AITAP70AA504018005">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Cancellare il DTC. 
+<intxreftitleoff1 refid = "AITAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Portare l&#39;accensione su &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70AA504018002">Procedura di conferma DTC</intxref>
+ e ricontrollare la presenza di DTC.
+</ptxt>
+</test1>
+<question>
+È ancora presente il DTC B1161 o B1163?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine (Guasto intermittente)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70AA504018006">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Sostituire il gruppo bloccasterzo. 
+<intxreftitleoff1 refid = "AITAP70A6206014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70AA504018002">Procedura di conferma DTC</intxref>
+ e ricontrollare la presenza di DTC.
+</ptxt>
+</test1>
+<question>
+È ancora presente il DTC B1161 o B1163?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la centralina sistema di avviamento senza chiave e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine (Il gruppo bloccasterzo era difettoso.)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70A7211001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschreibung des HVAC-Systems
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Dieses HVAC-System besteht aus einer manuell zu bedienenden Klimaanlage.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die Einstellungen von Luftstrom und Temperatur werden über die Vorwahl für die Luftverteilung bzw. den Temperaturregler vorgenommen. Befinden sich diese Regler in den gewünschten Positionen, werden Luftstromregelklappe und Temperaturregelungsklappe durch die zugehörigen Züge entsprechend verstellt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es gibt zwei andere Vorwahlen: Vorwahl für Lufteinlass und Vorwahl für Gebläsedrehzahl.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Der Lufteinlassmodus kann über die Lufteinlass-Vorwahl zwischen Umluft und Frischluft gewählt werden. Nach Auswahl des gewünschten Modus bewegt das Luftansaugstellglied die Luftansaugklappe in die entsprechende Position.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Der Luftstrom kann über die Vorwahl für Gebläsedrehzahl verstellt werden. Vier Positionen sind möglich: LO, ML, MH und HI.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Der Heckscheibenheizungsschalter befindet sich in der HVAC-Steuereinheit.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/C-Schalter schaltet A/C-System ein und aus. Signal des A/C-Schalters wird per BCM über das CAN-Kommunikationssystem an den ECM übertragen. Die mit dem A/C-System verbundenen ECM-Schaltkreise steuern A/C-Kompressorrelais und Kühlerlüfterrelais (Kondensator) entsprechend dem Signal. Einzelheiten siehe 
+<intxref refid = "AGEAP70A7211003">Funktionsbeschreibung der Klimaanlage bei ECM:Manuelle Ausführung</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die mit dem A/C-System verbundenen ECM-Schaltkreise steuern außerdem auch die Verdampfertemperatur entsprechend den Daten vom Temperatursensor für A/C-Verdampfer. Einzelheiten siehe 
+<intxref refid = "AGEAP70A7211003">Funktionsbeschreibung der Klimaanlage bei ECM:Manuelle Ausführung</intxref>
+. Auf der anderen Seite kann der A/C-Kompressor die Durchflussmenge des Kältemittels durch mechanische Überwachung des A/C-Kältemitteldrucks regeln. So kann auch die Verdampfertemperatur auf optimalem Niveau gehalten werden.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Das A/C-System verfügt über einen A/C-Kältemittel-Drucksensor, mit dem lineare Schwankungen des Kältemitteldrucks erfasst werden können.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die HVAC-Einheit beinhaltet eine Gebläsemotor-, eine Wärmetauscher- und eine Verdampfereinheit. Daneben verfügt die HVAC-Einheit über einen Luftfilter (falls vorhanden).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Jedes Seitengebläse verfügt über einen Verschlussmechanismus.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Der Kondensator enthält ein Sekundärkühlungssystem. Dieser ist Teil des Empfängers/Trockners und ist so an der Karosserie angebracht, dass er nicht aufliegt.
+</ptxt>
+<ptxt>
+Die Einbauorte der A/C-Systemkomponenten sind unter 
+<intxref refid = "AGEAP70A7216002">Hauptkomponenten des A/C-Systems:Manuelle Ausführung</intxref>
+ aufgeführt.
+</ptxt>
+<ptxt>
+Für den Eingabe/Ausgabe-Plan der elektronischen Klimaanlagensteuerung siehe 
+<intxref refid = "AGEAP70A7212001">Eingangs-/Ausgangs-Blockdiagramm der elektronischen Steuerung der manuellen Klimaanlage:Manuelle Ausführung</intxref>
+.
+</ptxt>
+</item>
+</list1>
+<servinfosub id = "AGEAP70A7211001001">
+<title>
+Aufbau des HVAC-Systems
+</title>
+<figure>
+<graphic graphicname = "IAP70A721001.swf" width = "183.000mm" height = "149.571mm" ver = "01" gw = "447" gh = "407"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "8" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.276in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.241in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.276in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.575in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.276in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.378in"/>
+<colspec colnum = "7" colname = "7" colwidth = "0.276in"/>
+<colspec colnum = "8" colname = "8" colwidth = "1.813in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Luftstrom
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Ansaugschlauch
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+14.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Frischluft
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "bottom" align = "right">
+<ptxt>
+22.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Motor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kältemittelfluss
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Flüssigkeitsleitung
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+15.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Umwälzluft
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "bottom" align = "right">
+<ptxt>
+23.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Kühler
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Motorkühlmittelfluss
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Expansionsventil
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+16.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Verdampfer
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+24.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Behälter
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HVAC-Einheit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Seitliche Belüftungsdüse
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+17.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Luftansaugklappe
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+25.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Fußraumluft hinten (sofern vorhanden)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kompressor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Luft der mittleren Belüftungsdüse
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+18.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Temperaturregelungsklappe
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kondensator-Baugruppe
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fußraumluft vorn
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+19.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Luftstromregelklappe
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Trocknerflasche
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Entfrosterluft
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "bottom" align = "right">
+<ptxt>
+20.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+Wärmetauscher
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Ablaufschlauch
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Gebläseluft
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+21.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+<ptxt>
+HVAC-Luftfilter
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "bottom">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

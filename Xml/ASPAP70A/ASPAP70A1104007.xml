@@ -1,0 +1,2189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70A1104007" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Datos de la herramienta de escaneado 
+</title>
+<scantool>
+<scantool-title>
+ECM
+</scantool-title>
+<ptxt>
+Como los valores de los datos son valores estándar estimados a partir de los valores obtenidos mediante una herramienta de escaneado en vehículos que funcionan con normalidad, utilice estos datos como valores de referencia. Aunque el vehículo esté en buen estado, puede haber casos en los que los valores obtenidos no se ajusten a los intervalos especificados. Por tanto, no determine la existencia de una situación anómala en función exclusivamente de estos datos. 
+</ptxt>
+<ptxt>
+Asimismo, los estados que se pueden verificar mediante la herramienta de escaneado son los detectados por el módulo ECM y emitidos por el mismo como comandos, y puede haber casos en los que el motor o el actuador no funcionen (en el estado en cuestión) como lo indica la herramienta de escaneado. Asegúrese de utilizar la luz de sincronización para comprobar el ajuste del encendido. 
+<intxreftitleoff1 refid = "ASPAP70A1806005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Con la herramienta de escaneado genérica sólo se pueden leer los datos marcados con un asterisco (*) en la tabla siguiente. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando compruebe los datos con el motor en marcha al ralentí o acelerando, asegúrese de colocar la palanca de cambios en &#34;punto muerto&#34; y aplique el freno de estacionamiento completamente. Asimismo, si no se indica nada o se indica &#34;sin carga&#34;, desactive el A/C, todas las cargas eléctricas, la P/S y todos los demás interruptores. 
+</ptxt>
+</item>
+</list1>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.241in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.634in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.843in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.768in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.708in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Datos de la herramienta de escaneado 
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Estado del vehículo 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Estado normal / valor de referencia 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sistema Combust 
+<intxreftitleoff1 refid = "ASPAP70A1104007002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control del bucle abierto antes de satisfacer las condiciones de control del bucle cerrado (ECT &#62;10 &#176;C, sistema/sensor IAT, TP, A/F = OK) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BUCLE ABIERTO (bucle abierto) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de bucle abierto debido a las condiciones de conducción (enriquecimiento de potencia, etc.) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BA POR CONDUCCIÓN (bucle abierto) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de bucle abierto debido a la detección de un fallo en el sistema 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BA POR AVERÍA (bucle abierto) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de bucle cerrado utilizando los sensores HO2S y A/F como sensores realimentación para el control de combustible 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CL (bucle cerrado) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Control de bucle cerrado debido a la detección de un fallo en el sistema 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BC por avería (bucle cerrado) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cuando el motor se detiene con el encendido en posición &#34;ON&#34; 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+— 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Reaj combust cort plaz 
+<intxreftitleoff1 refid = "ASPAP70A1104007003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente –20 a 20 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Reaj combust larg plaz 
+<intxreftitleoff1 refid = "ASPAP70A1104007004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente –20 a 20 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ajuste Comb Total 
+<intxreftitleoff1 refid = "ASPAP70A1104007005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente –30 a 30 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ancho Pulso Inyec 
+<intxreftitleoff1 refid = "ASPAP70A1104007006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Motor a ralentí sin carga después del calentamiento 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 1,6 a 4,0 mseg.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Avance Encendido 
+<intxreftitleoff1 refid = "ASPAP70A1104007007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Motor a ralentí sin carga después del calentamiento 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1 a 15&#176; BTDC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Carga calculada 
+<intxreftitleoff1 refid = "ASPAP70A1104007008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Motor a ralentí sin carga después del calentamiento 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 20 a 40 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régimen de Motor 
+<intxreftitleoff1 refid = "ASPAP70A1104007009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+<ptxt>
+Ventilador de refrigeración del radiador: Detenido 
+</ptxt>
+<ptxt>
+Todo el equipo eléctrico: OFF 
+</ptxt>
+<ptxt>
+Palanca de cambios: Punto muerto 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+590 a 690 rpm
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ralentí Deseado 
+<intxreftitleoff1 refid = "ASPAP70A1104007010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+<ptxt>
+Ventilador de refrigeración del radiador: Detenido 
+</ptxt>
+<ptxt>
+Todo el equipo eléctrico: OFF 
+</ptxt>
+<ptxt>
+Palanca de cambios: Punto muerto 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+640 rpm
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF 
+<intxreftitleoff1 refid = "ASPAP70A1104007011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Motor a ralentí sin carga después del calentamiento 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1,0 a 4,0 g/seg.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Velocidad Vehículo 
+<intxreftitleoff1 refid = "ASPAP70A1104007012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vehículo en marcha 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Casi igual que la lectura del velocímetro 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP 
+<intxreftitleoff1 refid = "ASPAP70A1104007013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 20 a 55 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT 
+<intxreftitleoff1 refid = "ASPAP70A1104007014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 80 a 105 &#176;C (176 a 221 &#176;F)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Temp Aire Admisión 
+<intxreftitleoff1 refid = "ASPAP70A1104007015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–5 &#176;C (9 &#176;F) + temperatura ambiente hasta 40 &#176;C (72 &#176;F) + temperatura ambiente 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Presión Baromét 
+<intxreftitleoff1 refid = "ASPAP70A1104007016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+— 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Se muestra la presión barométrica. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Serv purg recip EVAP 
+<intxreftitleoff1 refid = "ASPAP70A1104007017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Separación VVT B1 AD 
+<intxreftitleoff1 refid = "ASPAP70A1104007018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–1,0 a 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Separación VVT B1 ES 
+<intxreftitleoff1 refid = "ASPAP70A1104007019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–1,0 a 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Apt IAC Mariposa 
+<intxreftitleoff1 refid = "ASPAP70A1104007020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Motor a ralentí sin carga después del calentamiento 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 20 a 50 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+<ptxt>
+Interruptor del A/C: ON 
+</ptxt>
+<ptxt>
+Selector de velocidad del soplador: Máx 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 50 a 80 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensión Sensor TP 1 
+<intxreftitleoff1 refid = "ASPAP70A1104007021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 a 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,1 a 4,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensión Sensor TP 2 
+<intxreftitleoff1 refid = "ASPAP70A1104007022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,0 a 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,5 a 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensión Sensor APP 1 
+<intxreftitleoff1 refid = "ASPAP70A1104007023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 a 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+3,7 a 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensión Sensor APP 2 
+<intxreftitleoff1 refid = "ASPAP70A1104007024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,3 a 0,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1,8 a 2,2 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posición Acelerador 
+<intxreftitleoff1 refid = "ASPAP70A1104007025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 a 2 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 a 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posición Maripos Gas 
+<intxreftitleoff1 refid = "ASPAP70A1104007026"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 a 10 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 a 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pos Deseada 
+<intxreftitleoff1 refid = "ASPAP70A1104007027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 a 10 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 a 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+O2S B1 S2 
+<intxreftitleoff1 refid = "ASPAP70A1104007028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: A 2.000 rpm durante 3 min. o más tras calentar el motor 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 0 a 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Corriente S1 B1 A/F 
+<intxreftitleoff1 refid = "ASPAP70A1104007029"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí durante 2 min. tras el calentamiento 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente –0,1 a 0,1 mA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensión de Batería 
+<intxreftitleoff1 refid = "ASPAP70A1104007030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 13 a 15 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nivel Tanq Combust 
+<intxreftitleoff1 refid = "ASPAP70A1104007031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 a 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Presión de A/C 
+<intxreftitleoff1 refid = "ASPAP70A1104007032"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí 
+</ptxt>
+<ptxt>
+Interruptor del A/C: ON 
+</ptxt>
+<ptxt>
+Selector de velocidad del soplador: MÁX. 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+600 a 1.300 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Serv cont generador 
+<intxreftitleoff1 refid = "ASPAP70A1104007033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 20 a 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Serv campo generador 
+<intxreftitleoff1 refid = "ASPAP70A1104007034"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Aproximadamente 20 a 100 %
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Corriente de Batería 
+<intxreftitleoff1 refid = "ASPAP70A1104007035"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+2 a 8 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Faros: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+14 a 22 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Faros: ON 
+</ptxt>
+<ptxt>
+Selector de velocidad del soplador: MÁX. 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+22 a 33 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilador Radiador 
+<intxreftitleoff1 refid = "ASPAP70A1104007037"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilador de refrigeración del radiador: Off 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Off 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilador de refrigeración del radiador: Velocidad baja 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Bajo 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilador de refrigeración del radiador: Velocidad alta 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Alto 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé Comp del A/C 
+<intxreftitleoff1 refid = "ASPAP70A1104007038"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor del A/C: ON 
+</ptxt>
+<ptxt>
+Selector de velocidad del soplador: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Situación distinta a las anteriores 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Bomba Combustible 
+<intxreftitleoff1 refid = "ASPAP70A1104007039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor en funcionamiento 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Situación distinta a las anteriores 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interrupt Arranque 
+<intxreftitleoff1 refid = "ASPAP70A1104007040"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ST&#34; (arranque del motor) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Situación distinta a las anteriores 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor A/C 
+<intxreftitleoff1 refid = "ASPAP70A1104007041"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor del A/C: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Situación distinta a las anteriores 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventil soplador 
+<intxreftitleoff1 refid = "ASPAP70A1104007042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C manual: Velocidad en 2ª posición o superior 
+</ptxt>
+<ptxt>
+A/C automático: 4ª velocidad o superior 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C manual: Situación distinta a las anteriores 
+</ptxt>
+<ptxt>
+A/C automático: Situación distinta a las anteriores 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor Freno 
+<intxreftitleoff1 refid = "ASPAP70A1104007043"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedal del freno: pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedal del freno: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Carga Eléctrica 
+<intxreftitleoff1 refid = "ASPAP70A1104007044"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Modelos con DRL 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Modelos sin DRL 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor de los faros: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor de los faros: OFF 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor del embrague 
+<intxreftitleoff1 refid = "ASPAP70A1104007046"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedal de embrague: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Desembrague 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedal de embrague: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Embragado 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor RES/ACC de crucero 
+<intxreftitleoff1 refid = "ASPAP70A1104007047"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;RES / +&#34;: Pulsado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;RES / +&#34;: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor SET/COAST de crucero 
+<intxreftitleoff1 refid = "ASPAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;SET / -&#34;: Pulsado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;SET / -&#34;: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor CANCEL de crucero 
+<intxreftitleoff1 refid = "ASPAP70A1104007049"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;CANCEL&#34;: Pulsado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;CANCEL&#34;: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor ON/OFF de crucero 
+<intxreftitleoff1 refid = "ASPAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;Cruise&#34;: Pulsado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pulsado 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruptor &#34;Cruise&#34;: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sin pisar 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Corte combustible 
+<intxreftitleoff1 refid = "ASPAP70A1104007051"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+<ptxt>
+Estado del motor: 2.000 rpm o más tras calentar el motor 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pos Mar Gas Cerr 
+<intxreftitleoff1 refid = "ASPAP70A1104007052"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Sin pisar 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Encendido: &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pedal del acelerador: Totalmente pisado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+O2S B1 S2 activado 
+<intxreftitleoff1 refid = "ASPAP70A1104007053"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Activo 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Act S1 B1 A/F 
+<intxreftitleoff1 refid = "ASPAP70A1104007054"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motor: Régimen de ralentí tras el calentado 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Activo 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</scantool>
+<servinfosub id = "ASPAP70A1104007001" page = "2">
+<title>
+Definiciones de los datos de la herramienta de escaneado 
+</title>
+<topic id = "ASPAP70A1104007002">
+<title>
+Sistema combustible (estado del sistema de combustible): 
+</title>
+<ptxt>
+El estado del bucle de realimentación de la relación de A/F (aire/combustible) se muestra de la siguiente manera. 
+</ptxt>
+<ptxt>
+BUCLE ABIERTO: Control del bucle abierto antes de satisfacer las condiciones para el control del bucle cerrado (ECT &#62; 10 &#176;C, sistema/sensor IAT, TP, A/F = OK). 
+</ptxt>
+<ptxt>
+BUCLE CERRADO: Control de bucle cerrado que utiliza sensores de oxígeno como sensores de realimentación. 
+</ptxt>
+<ptxt>
+BA POR CONDUCCIÓN: Control de bucle abierto debido al requisito de conducción (enriquecimiento de aumento de potencia, etc.) 
+</ptxt>
+<ptxt>
+BA POR AVERÍA: Control de bucle abierto debido a la detección de un fallo en el sistema. 
+</ptxt>
+<ptxt>
+BC POR AVERÍA: Control de bucle cerrado debido a la detección de un fallo en el sistema. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007003">
+<title>
+Reaj combust cort plaz (%): 
+</title>
+<ptxt>
+El valor del reajuste del combustible a corto plazo representa las correcciones a corto plazo en la mezcla de aire/combustible. Un valor de &#34;0&#34; (cero) indica que no hay corrección, un valor superior a &#34;0&#34; indica una corrección de enriquecimiento, y un valor inferior a &#34;0&#34; indica una corrección de empobrecimiento. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007004">
+<title>
+Reaj combust larg plaz (%): 
+</title>
+<ptxt>
+El valor del reajuste del combustible a largo plazo representa las correcciones a largo plazo en la mezcla de aire/combustible. Un valor de &#34;0&#34; (cero) indica que no hay corrección, un valor superior a &#34;0&#34; indica una corrección de enriquecimiento, y un valor inferior a &#34;0&#34; indica una corrección de empobrecimiento. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007005">
+<title>
+Ajuste Comb Total (%): 
+</title>
+<ptxt>
+El reajuste de combustible total se calcula partiendo del reajuste de combustible a corto plazo y del reajuste de combustible a largo plazo. Este valor indica la corrección necesaria para mantener la mezcla estequiométrica de aire/combustible. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007006">
+<title>
+Ancho Pulso Inyec (ancho de pulso de la inyección de combustible, mseg.): 
+</title>
+<ptxt>
+Este parámetro indica el ancho (tiempo) del impulso de activación del inyector durante el cual la válvula del inyector permanece abierta por orden del ECM. (Para la inyección de combustible multipuerto, el tiempo de activación del inyector es el del cilindro n&#176; 1.) 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007007">
+<title>
+Avance Encendido (avance del ajuste del encendido para el cilindro n&#176; 1,&#176; BTDC): 
+</title>
+<ptxt>
+Este parámetro indica el ajuste del encendido del cilindro n&#176; 1 ordenado por el ECM. El ajuste del encendido real se debe verificar con la luz temporizadora. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007008">
+<title>
+Carga calculada (valor de la carga calculada, %): 
+</title>
+<ptxt>
+Este parámetro indica la carga del motor calculada en tanto por ciento. La carga se calcula en función de las señales de entrada en el ECM procedentes de varios sensores del motor. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007009">
+<title>
+Régimen de Motor (rpm): 
+</title>
+<ptxt>
+La velocidad del motor se calcula tomando como referencia los impulsos del sensor de posición del árbol de levas. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007010">
+<title>
+Ralentí deseado (rpm deseadas de velocidad de ralentí): 
+</title>
+<ptxt>
+El régimen de ralentí deseado es un parámetro interno del ECM que indica el régimen de ralentí solicitado por el ECM. Si el motor no está en funcionamiento, este número no es válido. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007011">
+<title>
+MAF (velocidad del flujo de masa de aire, g/seg., lb/min): 
+</title>
+<ptxt>
+Representa la masa total de aire que entra en el colector de admisión y que mide el sensor MAF. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007012">
+<title>
+Velocidad Vehículo (km/h, mph): 
+</title>
+<ptxt>
+La velocidad del vehículo se calcula en función de las señales de impulso procedentes de los sensores de velocidad de las ruedas. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007013">
+<title>
+MAP (presión absoluta del colector, kPa, mmHg, inHg, psi., inH2O): 
+</title>
+<ptxt>
+Este parámetro indica la presión del colector calculada en función de la señal del sensor MAP. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007014">
+<title>
+ECT (temperatura del refrigerante del motor ( &#176;C, &#176;F)): 
+</title>
+<ptxt>
+Detectada mediante el sensor de temperatura del refrigerante del motor. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007015">
+<title>
+Temp Aire Admisión ( &#176;C, &#176;F): 
+</title>
+<ptxt>
+La detecta el sensor de temperatura del aire de admisión. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007016">
+<title>
+Presión Baromét (presión barométrica, kPa, mmHg, inHg, psi., inH2O): 
+</title>
+<ptxt>
+Este parámetro representa una medida de la presión barométrica del aire y se utiliza para corregir la altitud de la cantidad de inyección de combustible. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007017">
+<title>
+Serv purg recip EVAP (servicio de flujo de purga del recipiente de EVAP, %): 
+</title>
+<ptxt>
+Este parámetro indica la proporción de tiempo que la válvula está en posición ON (válvula abierta) dentro de un determinado ciclo establecido de la válvula de purga del recipiente de EVAP que controla la cantidad de purga del sistema EVAP. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007018">
+<title>
+Separación VVT B1 AD (diferencia de la sincronización de válvulas variable entre la posición deseada y la posición real [lado de admisión],&#176;): 
+</title>
+<ptxt>
+Este parámetro indica la diferencia entre la posición del árbol de levas deseada (lado de admisión) y la posición real del árbol de levas (lado de admisión). 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007019">
+<title>
+Separación VVT B1 ES (diferencia de la sincronización de válvulas variable entre la posición deseada y la posición real [lado de escape],&#176;): 
+</title>
+<ptxt>
+Este parámetro indica la diferencia entre la posición del árbol de levas deseada (lado de escape) y la posición real del árbol de levas (lado de escape). 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007020">
+<title>
+Apt IAC Mariposa (apertura de la válvula de mariposa de aire de ralentí, %): 
+</title>
+<ptxt>
+Este parámetro indica la apertura de la válvula de mariposa del control del aire de ralentí en % (100 % indica el flujo máximo de aire de ralentí). 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007021">
+<title>
+Tensión Sensor TP 1 (tensión de salida del sensor TP [principal], V): 
+</title>
+<ptxt>
+Los datos del sensor TP (principal) suministran información sobre la apertura de la válvula de mariposa en forma de tensión. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007022">
+<title>
+Tensión Sensor TP 2 (tensión de salida del sensor TP [secundario], V): 
+</title>
+<ptxt>
+Los datos del sensor TP (secundario) suministran información sobre la apertura de la válvula de mariposa en forma de tensión. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007023">
+<title>
+Tensión Sensor APP 1 (tensión de salida del sensor APP [principal], V): 
+</title>
+<ptxt>
+Los datos del sensor APP (principal) suministran información sobre la posición del pedal del acelerador en forma de tensión. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007024">
+<title>
+Tensión Sensor APP 2 (tensión de salida del sensor APP [secundario], V): 
+</title>
+<ptxt>
+Los datos del sensor APP (secundario) suministran información sobre la posición del pedal del acelerador en forma de tensión. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007025">
+<title>
+Posición Acelerador (posición absoluta del pedal del acelerador, %): 
+</title>
+<ptxt>
+Este parámetro indica la posición calculada del pedal del acelerador en tanto por ciento en función de lo recibido desde el sensor de posición del pedal del acelerador. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007026">
+<title>
+Posición Maripos Gas (posición absoluta de la mariposa, %): 
+</title>
+<ptxt>
+Este parámetro indica la apertura calculada de la mariposa en tanto por ciento en unción de lo recibido desde el sensor de posición de la mariposa. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007027">
+<title>
+Pos deseada mariposa (posición deseada de la válvula de mariposa, %): 
+</title>
+<ptxt>
+La posición deseada de la válvula de mariposa es un parámetro interno del módulo ECM que indica la posición de la válvula de mariposa solicitada por el módulo ECM. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007028">
+<title>
+O2S B1 S2 (HO2S, V): 
+</title>
+<ptxt>
+Este sensor indica la tensión de salida del HO2S instalado en el colector de escape (post-TWC). Se utiliza para detectar el deterioro del catalizador. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007029">
+<title>
+Corriente S1 B1 A/F (corriente de salida del sensor A/F (aire/combustible), mA): 
+</title>
+<ptxt>
+Este parámetro indica la corriente de salida del sensor A/F instalado en el colector de escape (pre-TWC). 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007030">
+<title>
+Tensión de Batería (V): 
+</title>
+<ptxt>
+Este parámetro indica la tensión de la batería que llega al ECM procedente del relé principal. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007031">
+<title>
+Nivel Tanq Combust (%): 
+</title>
+<ptxt>
+Este parámetro indica, aproximadamente, el nivel de combustible en el depósito de combustible. Los datos del nivel de combustible se proporcionan en tanto por ciento de 0 a 100 %. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007032">
+<title>
+Presión de A/C (presión absoluta del refrigerante del A/C, kPa): 
+</title>
+<ptxt>
+Este parámetro indica la presión absoluta del refrigerante del A/C detectada por el sensor de presión del refrigerante del A/C. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007033">
+<title>
+Serv cont generador (%): 
+</title>
+<ptxt>
+Este parámetro indica el factor de marcha del control del generador en el que el ECM controla la salida del generador. 
+</ptxt>
+<ptxt>
+100 %: sin límite en la operación del generador. 
+</ptxt>
+<ptxt>
+0 %: límite máximo en la operación del generador. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007034">
+<title>
+Serv campo generador (%): 
+</title>
+<ptxt>
+Este parámetro indica el rango de funcionamiento (estado de la salida) del generador mediante el factor de marcha de la bobina de campo. 
+</ptxt>
+<ptxt>
+100 %: Funcionamiento máximo 
+</ptxt>
+<ptxt>
+0 %: Funcionamiento mínimo 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007035">
+<title>
+Corriente de Batería (A): 
+</title>
+<ptxt>
+Este parámetro indica el valor de carga eléctrica (consumo de corriente) detectada por el sensor de corriente de carga eléctrica. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007037">
+<title>
+Ventilador del radiador (relé de control del ventilador de refrigeración del radiador, bajo/alto/apagado): 
+</title>
+<ptxt>
+Bajo: El comando ON se envía al relé del ventilador de refrigeración del radiador n&#176; 1. 
+</ptxt>
+<ptxt>
+Alto: El comando ON se envía a los relés del ventilador del radiador n&#176; 2 y n&#176; 3. 
+</ptxt>
+<ptxt>
+Off: No se emite comando alguno. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007038">
+<title>
+Relé Comp del A/C (relé del compresor del A/C, ON/OFF): 
+</title>
+<ptxt>
+Este parámetro indica el estado del relé compresor del A/C. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007039">
+<title>
+Bomba de combustible (ON/OFF): 
+</title>
+<ptxt>
+Se visualiza ON cuando el módulo ECM activa la bomba de combustible a través del interruptor del relé de la bomba de combustible. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007040">
+<title>
+Interrupt Arranque (interruptor del motor de arranque, On/Off): 
+</title>
+<ptxt>
+Este parámetro indica el estado de la salida del relé del motor de arranque. 
+</ptxt>
+<ptxt>
+ON: Relé del motor de arranque activado. 
+</ptxt>
+<ptxt>
+OFF: Relé del motor de arranque desactivado. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007041">
+<title>
+Interruptor A/C (ON/OFF): 
+</title>
+<ptxt>
+ON: El módulo ECM envía al HVAC el comando de funcionamiento del A/C. 
+</ptxt>
+<ptxt>
+OFF: No se envía el comando de funcionamiento del A/C. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007042">
+<title>
+Ventil soplador (ON/OFF): 
+</title>
+<ptxt>
+Este parámetro indica el estado del selector de velocidad del soplador. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007043">
+<title>
+Interruptor Freno (ON/OFF): 
+</title>
+<ptxt>
+Este parámetro indica el estado del interruptor del freno. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007044">
+<title>
+Carga Eléctrica (ON/OFF): 
+</title>
+<ptxt>
+ON: Se recibe la señal ON de los faros, las luces de posición o del desempañador de la luneta de la puerta del maletero. 
+</ptxt>
+<ptxt>
+OFF: Todas las cargas eléctricas anteriores se desactivan. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007046">
+<title>
+Interruptor del embrague (Desembrague/Embragado) (modelos con M/T): 
+</title>
+<ptxt>
+Desembrague: El pedal de embrague está pisado a fondo. 
+</ptxt>
+<ptxt>
+Embragado: El pedal de embrague está liberado. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007047">
+<title>
+Interruptor RES/ACC de crucero (interruptor &#34;RES / +&#34;, ON/OFF): 
+</title>
+<ptxt>
+ON: Interruptor &#34;RES / +&#34; pulsado. 
+</ptxt>
+<ptxt>
+OFF: Interruptor &#34;RES / +&#34; sin pulsar. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007048">
+<title>
+Interruptor SET/COAST de crucero (interruptor &#34;SET / -&#34;, OFF/ON): 
+</title>
+<ptxt>
+ON: Interruptor &#34;SET / -&#34; pulsado. 
+</ptxt>
+<ptxt>
+OFF: Interruptor &#34;SET / -&#34; sin pulsar. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007049">
+<title>
+Interruptor CANCEL de crucero (interruptor &#34;CANCEL&#34;, OFF/ON): 
+</title>
+<ptxt>
+ON: Interruptor &#34;CANCEL&#34; pulsado. 
+</ptxt>
+<ptxt>
+OFF: Interruptor &#34;CANCEL&#34; sin pulsar. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007050">
+<title>
+Interruptor ON/OFF de crucero (sin pulsar / pulsado): 
+</title>
+<ptxt>
+Pulsado: Interruptor &#34;Cruise&#34; pulsado. 
+</ptxt>
+<ptxt>
+Sin pulsar: Interruptor &#34;Cruise&#34; sin pulsar. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007051">
+<title>
+Corte combustible (ON/OFF): 
+</title>
+<ptxt>
+ON: Se corta la inyección de combustible (se interrumpe la señal de salida al inyector). 
+</ptxt>
+<ptxt>
+OFF: No se corta la inyección de combustible. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007052">
+<title>
+Pos Mar Gas Cerr (posición de mariposa cerrada, ON/OFF): 
+</title>
+<ptxt>
+Este parámetro está en ON cuando la válvula de mariposa está cerrada completamente, y en OFF cuando no lo está. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007053">
+<title>
+O2S B1 S2 ACT (HO2S, Activo/Inactivo): 
+</title>
+<ptxt>
+Este parámetro indica el estado de activación de HO2S. 
+</ptxt>
+<ptxt>
+ACTIVO: El sensor está activado. 
+</ptxt>
+<ptxt>
+INACTIVO: El sensor se está calentando pero no está activado. 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1104007054">
+<title>
+ACT S1 B1 A/F (sensor A/F (aire/combustible), Activo/Inactivo): 
+</title>
+<ptxt>
+Este parámetro indica el estado de activación del sensor A/F. 
+</ptxt>
+<ptxt>
+ACTIVO: El sensor está activado. 
+</ptxt>
+<ptxt>
+INACTIVO: El sensor se está calentando pero no está activado. 
+</ptxt>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

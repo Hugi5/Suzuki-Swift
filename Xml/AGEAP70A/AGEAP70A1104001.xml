@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Überprüfung des Motor- und Abgassteuerungssystems
+</title>
+<ptxt>
+Detaillierte Angaben zu den einzelnen Prüfschritten finden sich unter den folgenden Punkten.
+</ptxt>
+<diag type = "test" id = "AGEAP70A1104001001">
+<testgroup id = "AGEAP70A1104001002">
+<title>
+Analyse des Diagnosefragebogens 
+<intxreftitleoff1 refid = "AGEAP70A1104001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Die Analyse des Diagnosefragebogens durchführen. Siehe hierzu 
+<intxref refid = "AGEAP70A1104001013">Schritt 1: Analyse des Diagnosefragebogens</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Wurde die Analyse des Diagnosefragebogens durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Die Analyse des Diagnosefragebogens durchführen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001003">
+<title>
+Abrufen, Aufzeichnen und Löschen von DTCs/Schnappschussdaten 
+<intxreftitleoff1 refid = "AGEAP70A1104001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+DTCs (einschließlich vorgemerkter DTCs) abrufen. Siehe dazu 
+<intxref refid = "AGEAP70A1104001014">Schritt 2: Abrufen, Aufzeichnen und Löschen von DTCs/Schnappschussdaten</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegen DTC(s)/Schnappschussdaten vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+DTCs und Schnappschussdaten ausdrucken bzw. notieren und dann löschen (siehe 
+<intxref refid = "AGEAP70A1104004">Löschen von DTCs</intxref>
+). Weiter mit Schritt 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001004">
+<title>
+Sichtprüfung 
+<intxreftitleoff1 refid = "AGEAP70A1104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eine Sichtprüfung gemäß 
+<intxref refid = "AGEAP70A1104008">Sichtprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Defekte Bauteile reparieren oder austauschen, dann weiter mit Schritt 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001005">
+<title>
+Sichtprüfung 
+<intxreftitleoff1 refid = "AGEAP70A1104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eine Sichtprüfung gemäß 
+<intxref refid = "AGEAP70A1104008">Sichtprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Defekte Bauteile reparieren oder austauschen, dann weiter mit Schritt 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001006">
+<title>
+Bestätigung von Störungssymptomen 
+<intxreftitleoff1 refid = "AGEAP70A1104001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Störungssymptom gemäß 
+<intxref refid = "AGEAP70A1104001016">Schritt 5: Bestätigung von Störungssymptomen</intxref>
+ bestätigen.
+</ptxt>
+</test1>
+<question>
+Wurde das Störungssymptom identifiziert?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001007">
+<title>
+Erneutes Abrufen und Aufzeichnen von DTCs/Schnappschussdaten 
+<intxreftitleoff1 refid = "AGEAP70A1104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+DTCs und Schnappschussdaten erneut abrufen. Siehe hierzu 
+<intxref refid = "AGEAP70A1104003">DTC-Überprüfung</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegen DTCs vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001008">
+<title>
+Erneutes Abrufen und Aufzeichnen von DTCs/Schnappschussdaten 
+<intxreftitleoff1 refid = "AGEAP70A1104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+DTCs und Schnappschussdaten erneut abrufen. Siehe hierzu 
+<intxref refid = "AGEAP70A1104003">DTC-Überprüfung</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegen DTCs vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 10.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001009">
+<title>
+Grundlegende Motorüberprüfung und Motorsymptomdiagnose 
+<intxreftitleoff1 refid = "AGEAP70A1104001020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Überprüfen und reparieren. Siehe hierzu 
+<intxref refid = "AGEAP70A1104009">Grundlegende Motorüberprüfung</intxref>
+ und 
+<intxref refid = "AGEAP70A1104010">Motorsymptomdiagnose</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Sind Überprüfung und Reparatur abgeschlossen?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekte(s) Bauteil(e) überprüfen und reparieren, dann weiter mit Schritt 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001010">
+<title>
+DTC-Fehlersuche 
+<intxreftitleoff1 refid = "AGEAP70A1104001021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Gemäß Fehlersuchplan für den betreffenden DTC prüfen und reparieren.
+</ptxt>
+</test1>
+<question>
+Sind Überprüfung und Reparatur abgeschlossen?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekte(s) Bauteil(e) überprüfen und reparieren, dann weiter mit Schritt 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001011">
+<title>
+Untersuchung auf Wackelkontakte 
+<intxreftitleoff1 refid = "AGEAP70A1104001022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Auf zeitweilige Störungen überprüfen. Siehe dazu 
+<intxref refid = "AGEAP70A1104001022">Schritt 10: Überprüfung auf Wackelkontakte</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Defekte(s) Bauteil(e) reparieren oder auswechseln, dann weiter mit Schritt 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104001012">
+<title>
+Endkontrolle 
+<intxreftitleoff1 refid = "AGEAP70A1104001025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vorliegende DTC löschen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die Endkontrolle gemäß 
+<intxref refid = "AGEAP70A1104001025">Schritt 11: Endkontrolle</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Treten irgendwelche Störungssymptome, DTCs oder fehlerhaften Zustände auf?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "AGEAP70A1104001013">
+<title>
+Schritt 1: Analyse des Diagnosefragebogens
+</title>
+<ptxt>
+Die Einzelheiten zur Störung (Defekt, Beanstandung) und deren Auftreten notieren, wie sie vom Kunden beschrieben werden. Zu diesem Zweck erleichtert ein Kundenfragebogen das Erfassen von Informationen, die für eine korrekte Analyse und Diagnose erforderlich sind.
+</ptxt>
+<attention3>
+<ptxt>
+Dieser Fragebogen ist ein allgemeines Beispiel. Er sollte an die einschlägigen Bedingungen des jeweiligen Einsatzgebietes angepasst werden.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Kundenfragebogen für Diagnose (Beispiel)
+</title>
+<graphic graphicname = "I9P60A111042G.swf" width = "183.000mm" height = "219.360mm" ver = "01" gw = "524" gh = "605"/>
+</figure>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001014" page = "2">
+<title>
+Schritt 2: Abrufen, Aufzeichnen und Löschen von DTCs/Schnappschussdaten
+</title>
+<ptxt>
+Zunächst auf DTCs prüfen (einschließlich ausstehende DTCs). 
+<intxreftitleoff1 refid = "AGEAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Werden DTCs angezeigt, diese zusammen mit den Schnappschussdaten ausdrucken oder aufschreiben und dann löschen. 
+<intxreftitleoff1 refid = "AGEAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001015" page = "2">
+<title>
+Schritt 3 und 4: Sichtprüfung
+</title>
+<ptxt>
+Zunächst eine Sichtprüfung aller Teile durchführen, die für eine ordnungsgemäße Funktion des Motors relevant sind. 
+<intxreftitleoff1 refid = "AGEAP70A1104008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001016" page = "2">
+<title>
+Schritt 5: Bestätigung von Störungssymptomen
+</title>
+<topic id = "AGEAP70A1104001017">
+<title>
+Kein DTC in Schritt 2: 
+</title>
+<ptxt>
+Die Störungssymptome auf Grundlage der in 
+<intxref refid = "AGEAP70A1104001013">Schritt 1: Analyse des Diagnosefragebogens</intxref>
+ und 
+<intxref refid = "AGEAP70A1104001014">Schritt 2: Abrufen, Aufzeichnen und Löschen von DTCs/Schnappschussdaten</intxref>
+ erhaltenen Informationen überprüfen.
+</ptxt>
+</topic>
+<topic id = "AGEAP70A1104001018">
+<title>
+DTC in Schritt 2: 
+</title>
+<ptxt>
+Außerdem gemäß &#34;Überprüfung von Diagnosecodes&#34; in der jeweiligen DTC-Fehlersuche erneut prüfen, ob ein DTC vorliegt.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001019" page = "2">
+<title>
+Schritt 6 und 7: Erneutes Abrufen und Aufzeichnen von DTCs/Schnappschussdaten
+</title>
+<ptxt>
+Prüfvorgang siehe 
+<intxref refid = "AGEAP70A1104003">DTC-Überprüfung</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001020" page = "2">
+<title>
+Schritt 8: Grundlegende Motorüberprüfung und Motorsymptomdiagnose
+</title>
+<s1>
+<ptxt>
+Grundlegende Motorüberprüfung durchführen. 
+<intxreftitleoff1 refid = "AGEAP70A1104009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Werden bei dem Prüfverfahren &#34;Grundlegende Motorüberprüfung&#34; keine defekten Teile vorgefunden, 
+<intxref refid = "AGEAP70A1104010">Motorsymptomdiagnose</intxref>
+ entsprechend den bei den folgenden Schritten während der Fahrzeugüberprüfung festgestellten Symptome durchführen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Analyse des Diagnosefragebogens
+</ptxt>
+</item>
+<item>
+<ptxt>
+Bestätigung von Störungssymptomen
+</ptxt>
+</item>
+</list1>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001021" page = "2">
+<title>
+Schritt 9: DTC-Fehlersuche
+</title>
+<ptxt>
+Betreffende DTC-Fehlersuche durchführen und defekte Teile reparieren oder austauschen.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001022" page = "2">
+<title>
+Schritt 10: Überprüfung auf Wackelkontakte
+</title>
+<topic id = "AGEAP70A1104001023">
+<title>
+Kein DTC in Schritt 2: 
+</title>
+<ptxt>
+Auf Wackelkontakte überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</topic>
+<topic id = "AGEAP70A1104001024">
+<title>
+DTC in Schritt 2: 
+</title>
+<ptxt>
+Die betreffenden Teile der erkannten DTCs überprüfen (z. B. Kabelbaum, Steckverbinder usw.).
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104001025" page = "2">
+<title>
+Schritt 11: Endkontrolle
+</title>
+<ptxt>
+Sicherstellen, dass die Störung behoben ist und dass der Motor einwandfrei funktioniert. Falls der behobene Fehler durch den DTC angezeigt wurde, diesen DTC löschen und eine erneute Überprüfung von Diagnosecodes durchführen, um sicherzustellen, dass kein DTC mehr angezeigt wird.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

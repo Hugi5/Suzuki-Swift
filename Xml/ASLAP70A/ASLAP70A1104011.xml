@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A1104011" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+Kontrolka poruchy sa pri spínači zapaľovania v stave ON a vypnutom motore nezapne (ale motor je možné naštartovať)
+</title>
+<servinfosub id = "ASLAP70A1104011001">
+<title>
+Riešenie problémov
+</title>
+<diag type = "test" id = "ASLAP70A1104011002">
+<testgroup id = "ASLAP70A1104011003">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC prislúchajúce ku komunikácii CAN.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké CAN-DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104011004">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC pre združený merač.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte činnosť MIL. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

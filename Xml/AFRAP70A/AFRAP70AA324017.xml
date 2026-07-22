@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA324017" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1176
+</title>
+<servinfosub id = "AFRAP70AA324017001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.229in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.966in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1176: Informations de spécification non enregistrées 
+</emph>
+</ptxt>
+<ptxt>
+Les spécifications du véhicule ne sont pas enregistrées dans le module de commande de démarrage sans clé. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le dispositif de commande à distance n&#39;est pas enregistré 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande de démarrage sans clé 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA324017002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<attention3>
+<ptxt>
+Si l&#39;enregistrement du dispositif antidémarrage ne s&#39;est pas terminé normalement, vérifier si les informations de spécification ont été correctement chargées. 
+</ptxt>
+</attention3>
+<diag type = "test" id = "AFRAP70AA324017003">
+<testgroup id = "AFRAP70AA324017006">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC dans le module de commande de démarrage sans clé. 
+<intxreftitleoff1 refid = "AFRAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC CAN sont-ils détectés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA324017005">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC associés à la communication CAN. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC CAN sont-ils détectés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA324017004">
+<title>
+Enregistrement du dispositif de commande à distance 
+</title>
+<test1>
+<ptxt>
+Effectuer l&#39;&#34;Enregistrement de clé du dispositif antidémarrage&#34;. 
+<intxreftitleoff1 refid = "AFRAP70AA326002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC B1176 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le module de commande de démarrage sans clé et vérifier à nouveau le DTC.	 
+<intxreftitleoff1 refid = "AFRAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. (le dispositif de commande à distance n&#39;a pas été enregistré) 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

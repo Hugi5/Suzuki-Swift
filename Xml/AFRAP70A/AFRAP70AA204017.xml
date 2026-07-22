@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10B">
+<servcat sctnbr = "10" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA204017" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1157
+</title>
+<servinfosub id = "AFRAP70AA204017001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.635in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.573in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC	 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1157: Entrée de signal de déploiement d&#39;airbag
+</emph>
+</ptxt>
+<ptxt>
+Un signal de déploiement d&#39;airbag est transmis du SDM au BCM. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA204017002">
+<title>
+Procédure de confirmation de DTC 
+</title>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;OFF&#34;. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70AA204017003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70AA204017004">
+<testgroup id = "AFRAP70AA204017005">
+<title>
+Nouvelle vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Effacer le DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA204004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Effectuer le point 
+<intxref refid = "AFRAP70AA204017002">Procédure de confirmation de DTC </intxref>
+, puis vérifier de nouveau le DTC. 
+</ptxt>
+</test1>
+<question>
+Le DTC B1157 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. (L&#39;airbag s&#39;est déployé dans le passé. (le DTC n&#39;est pas effacé)). 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA204017006">
+<title>
+Nouvelle vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Remplacer le SDM. 
+<intxreftitleoff1 refid = "AFRAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Effectuer le point 
+<intxref refid = "AFRAP70AA204017002">Procédure de confirmation de DTC </intxref>
+, puis vérifier de nouveau le DTC. 
+</ptxt>
+</test1>
+<question>
+Le DTC B1157 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le BCM et vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. (le SDM était défectueux) 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

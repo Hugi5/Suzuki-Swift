@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ADUAP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Beschrijving van de HVAC-regeling
+</title>
+<servinfosub id = "ADUAP70A7221002001">
+<title>
+Temperatuurregeling
+</title>
+<ptxt>
+Het HVAC-regelapparaat berekent de doelpositie van de temperatuurregelklep op basis van signalen van de temperatuurkeuzeschakelaar, de binnenluchttemperatuursensor, de buitenluchttemperatuursensor en de sensor voor het meten van de zonnewarmte, en regelt de stelmotor van de temperatuurregeling zodat de huidige positie van de temperatuurregelklep met de doelpositie overeenkomt.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ADUAP70A7221002002">
+<title>
+Ventilatortoerentalregeling
+</title>
+<ptxt>
+Het HVAC-regelapparaat berekent het aanjagerventilatordoeltoerental op basis van signalen van de temperatuurkeuzeschakelaar, binnenluchttemperatuursensor, buitenluchttemperatuursensor, ECT-sensor en de sensor voor het meten van de zonnewarmte, en vergelijkt het aldus berekende toerental met het huidige aanjagerventilatortoerental, dat door de aanjagermotorstuureenheid wordt ingevoerd om het huidige aanjagerventilatortoerental op het doelniveau te brengen.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ADUAP70A7221002003">
+<title>
+Luchtstroomuitlaatregeling
+</title>
+<ptxt>
+Het HVAC-regelapparaat berekent de doelpositie van de temperatuurregelklep op basis van signalen van de temperatuurkeuzeschakelaar, de binnenluchttemperatuursensor, de buitenluchttemperatuursensor, de ECT-sensor en sensor voor het meten van de zonnewarmte. Op basis van de verkregen doelpositie van de temperatuurregelklep, berekent het de doelpositie van de luchtstroomregelklep en regelt het de stelmotor van de luchtstroomregeling zodat de luchtstroomregelklep vanuit de huidige positie in de doelpositie wordt gebracht.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ADUAP70A7221002004">
+<title>
+Luchtinlaatpositieregeling
+</title>
+<ptxt>
+Het HVAC-regelapparaat bepaalt de positie van de luchtinlaatregelklep op basis van signalen van de temperatuurkeuzeschakelaar, de binnenluchttemperatuursensor, de buitenluchttemperatuursensor en de sensor voor het meten van de zonnewarmte en kiest een van de volgende standen door de positie van de luchtinlaatregelklep te regelen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Buitenluchtstand (FRE)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Recirculatiestand (REC)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Mengstand (MIX)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<c-change/>
+<servinfosub id = "ADUAP70A7221002005">
+<title>
+A/C-compressorrelaisregeling
+</title>
+<ptxt>
+Het HVAC-regelapparaat stuurt het ON-signaal van de A/C-schakelaar via de BCM naar de ECM uit als de voertuigtoestand aan de onderstaande voorwaarden voldoet.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+De A/C-schakelaar is ingeschakeld
+</ptxt>
+</item>
+<item>
+<ptxt>
+De verdampertemperatuur is hoger dan de voorgeschreven waarde
+</ptxt>
+</item>
+<item>
+<ptxt>
+Er wordt geen storing in de verdampertemperatuursensor waargenomen
+</ptxt>
+</item>
+</list1>
+<ptxt>
+De communicatie van de ECM en de BCM verloopt via het CAN (controller area netwerk). (Raadpleeg 
+<intxref refid = "ADUAP70AA801001">Beschrijving van het communicatiesysteem</intxref>
+ voor nadere bijzonderheden over CAN-communicatie).
+</ptxt>
+<ptxt>
+De ECM schakelt het A/C-compressorrelais in als de voertuigtoestand aan de onderstaande voorwaarden voldoet.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Het ON-signaal van A/C-schakelaar wordt ingevoerd
+</ptxt>
+</item>
+<item>
+<ptxt>
+De A/C-koelmiddeldruk valt binnen het voorgeschreven bereik
+</ptxt>
+</item>
+<item>
+<ptxt>
+Het motortoerental valt binnen het voorgeschreven bereik
+</ptxt>
+</item>
+<item>
+<ptxt>
+De motorkoelvloeistoftemperatuur is lager dan de voorgeschreven waarde
+</ptxt>
+</item>
+<item>
+<ptxt>
+De gasklepopening is lager dan de voorgeschreven waarde
+</ptxt>
+</item>
+<item>
+<ptxt>
+Het voertuig bevindt zich niet in de toestand van starten of snelle versnelling
+</ptxt>
+</item>
+<item>
+<ptxt>
+Er wordt geen ECT-sensorstoring waargenomen
+</ptxt>
+</item>
+<item>
+<ptxt>
+Er wordt geen A/C-koelmiddeldruksensorstoring waargenomen
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "ADUAP70A7221002006">
+<title>
+Radiateurkoelventilatorrelaisregeling
+</title>
+<ptxt>
+De ECM schakelt het radiateurkoelventilatorrelais in op het ogenblik dat de ECM het A/C-compressorrelais inschakelt.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ADUAP70A7221002007">
+<title>
+Bouw van het HVAC-systeem
+</title>
+<ptxt>
+Zie &#34;Constructie van het HVAC-systeem&#34; in 
+<intxref refid = "ADUAP70A7211001">Beschrijving van het HVAC-systeem:Handmatig type</intxref>
+.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

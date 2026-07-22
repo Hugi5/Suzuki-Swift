@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA324006" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1610
+</title>
+<servinfosub id = "AFRAP70AA324006001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.281in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1610: ID du dispositif antidémarrage non enregistré 
+</emph>
+</ptxt>
+<ptxt>
+Le code ID du dispositif antidémarrage n&#39;est pas enregistré. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le code ID de l&#39;ECM n&#39;est pas enregistré dans le module de commande de démarrage sans clé 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuit / connecteur de communication CAN 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande connecté à la ligne de communication CAN 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA324006002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70AA324006003">
+<testgroup id = "AFRAP70AA324006005">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC dans le module de commande de démarrage sans clé. 
+<intxreftitleoff1 refid = "AFRAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC B1173, B1175 ou B1176 est-il détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA324006004">
+<title>
+Enregistrement de l&#39;ECM 
+</title>
+<test1>
+<ptxt>
+Suivre le point 
+<intxref refid = "AFRAP70AA326003">Enregistrement de l&#39;ECM:Modèle à démarrage sans clé</intxref>
+. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC P1610 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. (l&#39;ECM n&#39;a pas été enregistré) 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA324006006">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC associés à la communication CAN. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC CAN sont-ils détectés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer l&#39;ECM et vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

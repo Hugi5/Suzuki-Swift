@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A8204012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1012
+</title>
+<servinfosub id = "ADUAP70A8204012001">
+<title>
+DTC-waarnemingsvoorwaarde en plaats van de storing
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.597in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.597in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC-waarnemingsvoorwaarde
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Plaats van de storing
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1012: Sporadische aansluiting van de SDM-stekkerverbinding 
+</emph>
+</ptxt>
+<ptxt>
+Defecte aansluiting van de SDM-stekkerverbinding.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+SDM-stekkerverbinding
+</ptxt>
+</item>
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ADUAP70A8204012002">
+<title>
+DTC-storingzoeken
+</title>
+<diag type = "test" id = "ADUAP70A8204012003">
+<testgroup id = "ADUAP70A8204012004">
+<question>
+Werd de &#34;Controle van het airbagdiagnosesysteem&#34; uitgevoerd?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A8204001">Controle van het airbagdiagnosesysteem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A8204012005">
+<title>
+Controle van de SDM-stekkerverbinding
+</title>
+<test1>
+<ptxt>
+Controleer of de SDM-stekkerverbinding juist is aangesloten en controleer de &#34;aansluitingswaarnemingspen&#34; van de SDM-stekkerverbinding.
+</ptxt>
+</test1>
+<question>
+Is ze in goede staat?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vervang de SDM door een nieuw exemplaar. 
+<intxreftitleoff1 refid = "ADUAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Controleer op sporadische storingen. 
+<intxreftitleoff1 refid = "ADUAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<attention3>
+<ptxt>
+Voer na het onderzoek en de reparaties de volgende stappen uit.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sluit alle componenten van het airbagsysteem weer aan en controleer of ze juist zijn gemonteerd.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Wis eventuele DTC&#39;s volgens 
+<intxref refid = "ADUAP70A8204006">Wissen van DTC</intxref>
+, als een DTC wordt waargenomen.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Herhaal 
+<intxref refid = "ADUAP70A8204001">Controle van het airbagdiagnosesysteem</intxref>
+ om te controleren of de storing is opgelost.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

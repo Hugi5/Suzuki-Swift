@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1G">
+<servcat sctnbr = "01" scnbr = "07">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1704001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Ispezione del sistema carburante
+</title>
+<diag type = "test" id = "AITAP70A1704001001">
+<testgroup id = "AITAP70A1704001002">
+<title>
+Ispezione della pompa del carburante
+</title>
+<test1>
+<ptxt>
+Rimuovere il tappo serbatoio carburante e portare l&#39;accensione su &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Confermare che sia possibile udire dal bocchettone di immissione carburante il suono di funzionamento emesso dalla pompa del carburante, per 2 secondi, prima dell&#39;arresto.
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Controllare il circuito della pompa carburante. 
+<intxreftitleoff1 refid = "AITAP70A1704004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1704001003">
+<title>
+Controllo pressione carburante
+</title>
+<test1>
+<ptxt>
+Controllare la pressione del carburante. 
+<intxreftitleoff1 refid = "AITAP70A1704005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare la parte difettosa.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1704001004">
+<title>
+Prova di bilanciamento della potenza
+</title>
+<test1>
+<ptxt>
+Controllare il bilanciamento della potenza. 
+<intxreftitleoff1 refid = "AITAP70A1704002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Il sistema carburante è in buone condizioni.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1704001005">
+<title>
+Controllo circuito iniettori carburante
+</title>
+<test1>
+<ptxt>
+Controllare il circuito degli iniettori carburante. 
+<intxreftitleoff1 refid = "AITAP70A1704003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare la parte difettosa.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1704001006">
+<title>
+Controllo iniettori carburante
+</title>
+<test1>
+<ptxt>
+Controllare l&#39;iniettore del carburante. 
+<intxreftitleoff1 refid = "AITAP70A1706009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la ECM e ripetere il controllo della presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire l&#39;iniettore del carburante. 
+<intxreftitleoff1 refid = "AITAP70A1706008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

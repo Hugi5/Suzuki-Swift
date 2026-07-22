@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENBP70A5504016" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+Transmission Warning Light Does Not Come ON with Ignition ON and Engine Stopped (but Engine Can Be Started)
+</title>
+<servinfosub id = "AENBP70A5504016001">
+<title>
+Troubleshooting
+</title>
+<diag type = "test" id = "AENBP70A5504016002">
+<testgroup id = "AENBP70A5504016003">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Check DTC related to CAN communication.
+</ptxt>
+</test1>
+<question>
+Is there CAN-DTC(s) detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A5504016004">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Check DTC for combination meter.
+</ptxt>
+</test1>
+<question>
+Is there any DTC(s)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Substitute a known-good TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

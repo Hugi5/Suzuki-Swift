@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104019" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+No Lock-Up Occurs
+</title>
+<servinfosub id = "AENAP70B5104019001">
+<title>
+Symptom Description
+</title>
+<ptxt>
+TCM turns off TCC solenoid under any of the following conditions.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Brake light switch is turned on (Brake pedal is depressed).
+</ptxt>
+</item>
+<item>
+<ptxt>
+ATF temperature is less than –40 &#176;C (–40 &#176;F).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Throttle opening is as much as 0%.
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM detects the following DTCs.
+</ptxt>
+<ptxt>
+P0705 / P0707 / P0712 / P0713 / P0717 / P0722 / P0787 / P0788 / P0961 / P0962 / P0963 / P0973 / P0974/ P0976 / P0977 / P1702 / P2762 / P2763 / P2764 / U0073 / U0100
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AENAP70B5104019002">
+<title>
+Troubleshooting
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Perform road test in a place where there is no traffic to prevent an accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Road test should be performed with two persons, a driver and a tester, on a level road.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<diag type = "test" id = "AENAP70B5104019003">
+<testgroup id = "AENAP70B5104019004">
+<question>
+Was “A/T Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B5104001">A/T Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104019005">
+<title>
+DTC check
+</title>
+<question>
+Is DTC P0705, P0707, P0712, P0713, P0717, P0722, P0787, P0788, P0961, P0962, P0963, P0973, P0974, P0976, P0977, P1702, P1706, P2762, P2763, P2764, U0073 and/or U0100 detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to applicable DTC troubleshooting.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104019006">
+<title>
+Brake light switch signal check
+</title>
+<test1>
+<ptxt>
+With ignition “ON”, check voltage between terminal of ECM connector and ground.
+</ptxt>
+<ptxt>
+For details of ECM connector, refer to 
+<intxref refid = "AENAP70B1102003">Electronic Control System Circuit Diagram</intxref>
+.
+</ptxt>
+<spec>
+<title>
+Brake light switch signal specification
+</title>
+<ptxt>
+Brake pedal is released: 0 – 1 V
+</ptxt>
+<ptxt>
+Brake pedal is depressed: 8 – 14 V
+</ptxt>
+</spec>
+</test1>
+<question>
+Are results as specified?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Substitute a known-good TCM and recheck lock-up operation.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Miss-adjusted brake light switch or faulty brake light switch.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70A1101007" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Opis kalibracije sustava upravljanja električnom zaklopkom
+</title>
+<ptxt>
+ECM izračunava kontrolirani otvor zaklopke na osnovi potpuno zatvorenog položaja zaklopke u sustavu upravljanja električnom zaklopkom. Podaci potpuno zatvorenog položaja pohranjeni su u memoriju ECM-a. Ipak, potpuno zatvoreni položaj zaklopke sustava upravljanja električnom zaklopkom (signal napona sa senzora položaja zaklopke kada je zaklopka potpuno zatvorena) razlikuju se jedan od drugoga ovisno o pojedinačnim razlikama između zaklopke i senzora položaja zaklopke. S obzirom da takve pojedinačne razlike moraju biti uzete u obzir za upravljanje zaklopkom, neophodno je registrirati podatke potpuno zatvorenog položaja zaklopke u ECM. Kada se takvi podaci registriraju u ECM, snimaju se u RAM (memoriju) ECM-a i koriste kao osnovni podaci za kontroliranje zaklopke. Ovi podaci brišu se kada se izvrši bilo koji od radova opisanih u &#34;Mjere opreza za kalibraciju sustava upravljanja električnog zaklopkom&#34; 
+<intxref refid = "AHRAP70A1000001">Mjere opreza za motor</intxref>
+.
+</ptxt>
+<ptxt>
+Također, nakon zamjene tijela zaklopke i/ili sklopa APP senzora, podaci potpuno zatvorenog položaja u memoriji ECM-a moraju se izbrisati i moraju se registrirati novi; u suprotnom ECM ne može pravilno ocijeniti potpuno zatvoreni položaj.
+</ptxt>
+<ptxt>
+Za proceduru registriranja takvih podataka pogledajte 
+<intxref refid = "AHRAP70A1306005">Kalibracija upravljačkog sustava električne zaklopke gasa</intxref>
+. (Nakon što su podaci potpuno zatvorenog položaja obrisani iz ECM-a, samo prvi put zaklopka se otvara i zatvara približno 60 s nakon uključivanja kontakta u svrhu registriranja potpuno zatvorenog položaja zaklopke. Ako se motor pokrene tijekom ovog procesa registriranja, mogu se pojaviti simptomi kao što su &#34;dulje vrijeme pokretanja&#34; ili &#34;spori rast brzine vrtnje motora neposredno nakon pokretanja&#34;. Međutim, jednom isključite kontakt i tada će se ponovnim pokretanjem motora ispravno registrirati položaj u ECM.)
+</ptxt>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

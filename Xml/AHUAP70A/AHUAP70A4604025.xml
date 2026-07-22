@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A4604025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1039 / C1071
+</title>
+<servinfosub id = "AHUAP70A4604025001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.981in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.210in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1039: Szögsebesség- / G-érzékelő egység belső hibája
+</emph>
+</ptxt>
+<ptxt>
+A rendszer a szögsebesség- / G-érzékelő belső hibáját észlelte.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1071: ESP<sup>®</sup> vezérlőmodul belső hibája
+</emph>
+</ptxt>
+<ptxt>
+A rendszer az ESP<sup>®</sup> vezérlőmodulban belső hibát észlelt.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604025002">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A4604025003">
+<testgroup id = "AHUAP70A4604025004">
+<question>
+Végrehajtásra került az „ESP<sup>®</sup> rendszer ellenőrzése”?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604025005">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Hajtsa végre a következőket: 
+<intxref refid = "AHUAP70A4604005">DTC ellenőrzése</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Található(k) a C1039 és C1071 DTC-ken kívül más hibakód(ok) is?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a vonatkozó DTC-hibaelhárítással.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

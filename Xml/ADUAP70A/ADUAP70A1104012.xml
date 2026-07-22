@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A1104012" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+Het MIL blijft ingeschakeld na het starten van de motor
+</title>
+<servinfosub id = "ADUAP70A1104012001">
+<title>
+Storingzoeken
+</title>
+<diag type = "test" id = "ADUAP70A1104012002">
+<testgroup id = "ADUAP70A1104012003">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Start de motor en hercontroleer de ECM op DTC&#39;s terwijl de motor draait.
+</ptxt>
+</test1>
+<question>
+Zijn er DTC&#39;s?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar storingzoeken voor de betrokken MIL-werking.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Sluit een goed bevonden combimeter aan en voer de DTC-controle opnieuw uit. 
+<intxreftitleoff1 refid = "ADUAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Als het MIL blijft branden, vervang de ECM en controleer het MIL opnieuw. 
+<intxreftitleoff1 refid = "ADUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

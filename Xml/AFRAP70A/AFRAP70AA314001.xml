@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA314001" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+Vérification du système de commande de dispositif antidémarrage 
+</title>
+<attention3>
+<ptxt>
+Avant d&#39;effectuer une vérification, s&#39;assurer d&#39;avoir lu le point 
+<intxref refid = "AFRAP70AA310002">Précautions relatives au système de dispositif antidémarrage:Modèle à contacteur d&#39;allumage</intxref>
+. 
+</ptxt>
+</attention3>
+<diag type = "test" id = "AFRAP70AA314001001">
+<testgroup id = "AFRAP70AA314001002">
+<question>
+Le moteur est-il lancé? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A1904001">Diagnostic des symptômes du système de lancement du moteur</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA314001003">
+<title>
+Vérification du démarrage du moteur 
+</title>
+<question>
+Le moteur démarre-t-il? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 4. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA314001004">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Y a-t-il un (des) DTC? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Le système de commande de dispositif antidémarrage est en bon état. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA314001005">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Y a-t-il un (des) DTC? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 5. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA314001006">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC associés à la communication CAN. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC CAN sont-ils détectés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A1104009">Vérification de base du moteur</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

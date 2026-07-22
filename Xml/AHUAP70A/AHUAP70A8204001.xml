@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A8204001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Légzsák diagnosztikai rendszerének ellenőrzése
+</title>
+<ptxt>
+Lásd 
+<intxref refid = "AHUAP70A8200001">Légzsákrendszer szervizelésével kapcsolatos óvintézkedések</intxref>
+ , ellenőrizze a légzsákrendszert az alábbi eljárás szerint.
+</ptxt>
+<servinfosub id = "AHUAP70A8204001001">
+<title>
+Légzsák diagnosztikai rendszerének ellenőrzési folyamata
+</title>
+<diag type = "test" id = "AHUAP70A8204001002">
+<testgroup id = "AHUAP70A8204001003">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a DTC-ket, lásd: 
+<intxref refid = "AHUAP70A8204005">DTC ellenőrzése</intxref>
+.
+</ptxt>
+<paragroup>
+<attention3>
+<ptxt>
+Ha a SUZUKI vizsgálókészülék és a jármű között nem lehetséges kommunikáció, végezze el a következőt: „DLC és kommunikációjának ellenőrzése (Nincs kommunikáció az SDM-mel)”.
+</ptxt>
+</attention3>
+</paragroup>
+</test1>
+<test1>
+<ptxt>
+Törölje a DTC-t, lásd: 
+<intxref refid = "AHUAP70A8204006">DTC törlése</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Észlelhető valamilyen DTC az újbóli ellenérzés alkalmával?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Lépjen a vonatkozó DTC hibakereséshez, és folytassa az 5. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204001004">
+<title>
+Szemrevételezés
+</title>
+<test1>
+<ptxt>
+Végezze el a szemrevételezést a következők szerint: 
+<intxref refid = "AHUAP70A8204002">Szemrevételezés</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Észlelhető valamilyen hiba?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Javítsa meg a hibás alkatrészt, majd folytassa az 5. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204001005">
+<title>
+Ütközés jelének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Vizsgálja meg a járművet az ütközés jeleit keresve.
+</ptxt>
+</test1>
+<question>
+Vannak ütközésre utaló jelek?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Vizsgálja meg és cserélje ki a hibás csatlakozásokat, lásd: 
+<intxref refid = "AHUAP70A8204054">Baleset után elvégzendő vizsgálat és javítás</intxref>
+ és folytassa az 5. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204001006">
+<title>
+Visszatérő hibák ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a visszatérő hibákat, lásd: 
+<intxref refid = "AHUAP70A0006002">Időszakos és nem megfelelő érintkezés ellenőrzése</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Észlelhető valamilyen hiba?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Javítsa meg a hibás alkatrészt, majd folytassa az 5. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa az 5. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A8204001007">
+<title>
+Végső ellenőrzés
+</title>
+<test1>
+<ptxt>
+Győződjön meg arról, hogy a hibajelenség megszűnt és a légzsák rendszer minden tekintetben hibátlanul működik. Ha az, amit kijavított, a DTC-vel állt kapcsolatban, törölje a DTC-t, és győződjön meg arról, hogy jelentkezik-e ismét DTC.
+</ptxt>
+</test1>
+<question>
+Ismét jelentkezik a működési hiba?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Térjen vissza az 1. lépésre.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Vége.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70AA501004" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Opis funkcije pokretanja motora bez ključa
+</title>
+<servinfosub id = "AHRAP70AA501004001">
+<title>
+Funkcija prebacivanja načina paljenja
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+	Kada pritisnete prekidač motora dok je daljinski upravljač u kabini i papučica spojke otpuštena, upravljački modul sustava pokretanja bez ključa uspoređuje ID kod koji je poslao daljinski upravljač s ID kodom registriranim u upravljačkom modulu sustava pokretanja bez ključa. Kada se ovi ID kodovi podudaraju, upravljački modul sustava pokretanja bez ključa kontrolira uključivanje i isključivanje releja ACC-a, IG1 i IG2  prema radu prekidača motora za prebacivanje načina paljenja iz “ISKLJ.” &#8594; “ACC” &#8594; “UKLJ.” (motor ne radi) &#8594; “ISKLJ.”. Kada je način paljenja &#34;ACC&#34;, indikatorsko svjetlo ACC svijetli na kombiniranom mjeraču. Kada je način paljenja &#34;UKLJ.&#34;, indikatorsko svjetlo UKLJ. svijetli na kombiniranom mjeraču.
+</ptxt>
+</item>
+<item>
+<ptxt>
+	Donja tablica pokazuje prebacivanje načina paljenja prema radu prekidača motora. Jedna strjelica označava prijenos jednim pritiskom prekidača motora.
+</ptxt>
+<attention3>
+<ptxt>
+Osim u slučajevima nužde, ne zaustavljajte rad motora tijekom vožnje.
+</ptxt>
+</attention3>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70AA50001Q.swf" width = "183.000mm" height = "74.686mm" ver = "01" gw = "388" gh = "195"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.383in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.294in"/>
+<colspec colnum = "4" colname = "4" colwidth = "3.158in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Uvijek  promijenite
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Promijenite samo kad je vozilo zaustavljeno
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Promijenite samo kada se ID kod poslan od daljinskog upravljača pododara.
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Za vrijeme vožnje (promijenite kada dulje vrijeme držite prekidač motora)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHRAP70AA501004002">
+<title>
+Funkcija pokretanja motora
+</title>
+<ptxt>
+Metoda pokretanja motora je sljedeća.
+</ptxt>
+<s1>
+<ptxt>
+Prilikom pritiskanja papučice spojke, upravljački modul pokretanja bez ključa (1) šalje signal zahtjeva kombiniranom mjeraču (2) putem CAN komunikacije da upali indikatorsko svjetlo PUSH.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pritiskom prekidača motora (3) dok nosite daljinski upravljač (4), signal prekidača motora šalje se na upravljački modul pokretanja bez ključa.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Upravljački modul pokretanja bez ključa aktivira srednju unutrašnju antenu (5) kako bi poslao signal zahtjeva na daljinski upravljač.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Daljinski upravljač prima signal zahtjeva i zatim šalje ID kod upravljačkom modulu sustava pokretanja bez ključa putem prijamnika ulaska bez ključa (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa uspoređuje ID kod kojega je poslao daljinski upravljač s ID kodom registriranim u upravljački modul sustava pokretanja bez ključa. Ako se ID kodovi podudaraju, upravljački modul sustava pokretanja bez ključa šalje signal zahtjeva jedinici brave upravljača (7). Istovremeno, šalje i signal pokretanja motora ECM-u (8) i uključuje upravljački relej elektropokretača kako bi aktivirao elektropokretač (9). Ovo omogućuje da se brava upravljača oslobodi i da se motor pokrene.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50004.swf" width = "183.000mm" height = "76.649mm" ver = "01" gw = "396" gh = "201"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.189in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Tok signala &#34;1&#34; do &#34;5&#34; povezan je s koracima 1) do 5)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "AHRAP70AA501004003">
+<title>
+Područje rada
+</title>
+<ptxt>
+Motor se može pokrenuti kada je daljinski upravljač unutar područja detekcije (1) srednje unutrašnje antene.
+</ptxt>
+<attention3>
+<ptxt>
+Funkcija pokretanja motora bez ključa možda neće raditi kada je daljinski upravljač na ploči s instrumentima, u jednom od pretinaca, oko područja za noge na strani vozača ili suvozača ili u pretincu u vratima, itd.
+</ptxt>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50005.swf" width = "88.000mm" height = "56.543mm" ver = "01" gw = "230" gh = "144"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.630in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Srednja unutrašnja antena
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "AHRAP70AA501004004">
+<title>
+Motor se ne može pokrenuti
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kada daljinski upravljač nije u kabini vozila ili se samo neregistrirani nalazi u kabini vozila, upravljački modul sustava pokretanja bez ključa šalje signal zahtjeva indikatorskog svjetla blokade motora, signal zahtjeva indikatorskog svjetla PUSH i signal zahtjeva zujalice upozorenja kombiniranom mjeraču putem CAN komunikacije kako bi upozorilo vozača. Istovremeno, isključuje upravljačke releje ACC-a, IG1, IG2 i elektropokretača kako bi zabranio promjenu načina paljenja i aktivaciju elektropokretača.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ako se baterija daljinskog upravljača isprazni ili se pojavi greška u sustavu, motor se može pokrenuti postavljanjem daljinskog upravljača  na prekidač motora kao mjera za slučaj nužde. 
+<intxreftitleoff1 refid = "AHRAP70AA321003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

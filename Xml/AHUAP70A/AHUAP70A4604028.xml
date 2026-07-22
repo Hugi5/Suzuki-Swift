@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A4604028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1047 / C1048
+</title>
+<servinfosub id = "AHUAP70A4604028001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.210in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.991in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1047 : Mindkét első kerékfordulatszám-érzékelő vagy jeladótárcsa működése
+</emph>
+</ptxt>
+<ptxt>
+A két első kerékfordulatszám-érzékelő által becsült szögsebesség nem egyezik a becsült szögsebesség-érzékelő jelével.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kormányszög-érzékelő
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kerékfordulatszám-érzékelő
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kerékfordulatszám-érzékelő áramköre
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kerékfordulatszám-érzékelő jeladótárcsája
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1048 : Mindkét hátsó kerékfordulatszám-érzékelő vagy jeladótárcsa működése
+</emph>
+</ptxt>
+<ptxt>
+A két hátsó kerékfordulatszám-érzékelő által becsült szögsebesség nem egyezik a becsült szögsebesség-érzékelő jelével.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604028002">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A4604028003">
+<testgroup id = "AHUAP70A4604028004">
+<question>
+Végrehajtásra került az „ESP<sup>®</sup> rendszer ellenőrzése”?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604028005">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Hajtsa végre a következőket: 
+<intxref refid = "AHUAP70A4604005">DTC ellenőrzése</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Észlelhető a C1047 és C1048-n kívül más hibakód is?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a vonatkozó DTC-hibaelhárítással.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604028006">
+<title>
+Kormányszög-érzékelő ellenőrzése járműbe szerelt állapotban
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a kormányszög-érzékelőt. 
+<intxreftitleoff1 refid = "AHUAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Megfelelő az állapota?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<paragroup>
+<ptxt>
+Cserélje ki a kormányszög-érzékelőt, majd ellenőrizze újra a DTC-t. 
+<intxreftitleoff1 refid = "AHUAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604028007">
+<title>
+Kerékfordulatszám-érzékelő ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a megfelelő kerékfordulatszám-érzékelőt, kerékfordulatszám-érzékelő kódolót és/vagy kerékfordulatszám-érzékelő áramkört a következők szerint: 
+<intxref refid = "AHUAP70A4604018">DTC C1021 / C1022 / C1025 / C1026 / C1031 / C1032 / C1033 / C1035 / C1036</intxref>
+ .
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás alkatrészt.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

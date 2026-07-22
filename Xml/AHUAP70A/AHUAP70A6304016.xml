@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A6304016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1161 / C1162
+</title>
+<servinfosub id = "AHUAP70A6304016001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.778in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1161: Érvénytelen CAN-adat a jármű sebességéről
+</emph>
+</ptxt>
+<ptxt>
+Érvénytelen adat érkezett a BCM-től.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN kommunikációs áramkör
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Szervokormány-vezérlő modul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1162: Érvénytelen CAN-adat a motorfordulatszámról
+</emph>
+</ptxt>
+<ptxt>
+Érvénytelen adat érkezett a BCM-től.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A6304016002">
+<title>
+DTC megerősítési eljárás
+</title>
+<topic id = "AHUAP70A6304016003">
+<title>
+DTC C1161
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Lásd a P0500 „A” járműsebesség-érzékelő DTC megerősítési eljárását. 
+<intxreftitleoff1 refid = "AHUAP70A1104039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "AHUAP70A6304016004">
+<title>
+DTC C1162
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Lásd a P0335 „A” forgattyústengelyhelyzet-érzékelő DTC megerősítési eljárását. 
+<intxreftitleoff1 refid = "AHUAP70A1104033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+</servinfosub>
+<servinfosub id = "AHUAP70A6304016005">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A6304016006">
+<testgroup id = "AHUAP70A6304016007">
+<question>
+A “Szervokormányrendszer ellenőrzése” megtörtént?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A6304001">Szervokormányrendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A6304016008">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+ Ellenőrizze a DTC-t az ECM-ben. 
+<intxreftitleoff1 refid = "AHUAP70A6304003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Észlelhető valamilyen DTC?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa az érintett DTC-hez tartozó hibaelhárítással. (ECM-mel kapcsolatos hiba) 
+<intxreftitleoff1 refid = "AHUAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a szervokormány-vezérlő modult, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ADUAP70AA321003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschrijving van de motorstartprocedure
+</title>
+<ptxt>
+Als de batterij van de afstandsbediening leeg is, er sprake is van een systeemstoring en/of het drukknopstartsysteem uitgeschakeld is, verloopt de motorstartprocedure als volgt.
+</ptxt>
+<s1>
+<ptxt>
+Wanneer het koppelingspedaal wordt ingedrukt, stuurt het regelapparaat van het startsysteem met afstandsbediening een PUSH-controlelichtjesignaal uit door middel van CAN-communicatie.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Druk op de motorschakelaar.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Het regelapparaat van het startsysteem met afstandsbediening stuurt een startblokkeringscontrolelichtjesignaal en een PUSH-controlelichtjesignaal uit door middel van CAN-communicatie.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Plaats de afstandsbediening ongeveer 2 seconden op de motorschakelaar, terwijl de combimeter het PUSH-controlelichtje doet knipperen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Het regelapparaat van het startsysteem met afstandsbediening leest de transpondercode van de afstandsbediening via de spoelantenne van de startblokkering in de motorschakelaar.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Het startmotorregelrelais wordt ingeschakeld en de startmotor wordt gestart, via seriële communicatie wordt een stuurslotontgrendelverzoek naar de stuursloteenheid gestuurd en naar de ECM wordt een bericht gestuurd om ervoor te zorgen dat de motor alleen start als de transpondercode overeenstemt met de geregistreerde code.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Als de transpondercode niet met de geregistreerde code overeenstemt, schakelt het regelapparaat van het startsysteem met afstandsbediening het startmotorrelais niet in, zodat startmotorwerking geblokkeerd wordt.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA32001D.swf" width = "183.000mm" height = "137.937mm" ver = "03" gw = "498" gh = "374"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

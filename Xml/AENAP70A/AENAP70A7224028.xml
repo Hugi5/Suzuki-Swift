@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70A7224028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1557 / B1561 / B1563
+</title>
+<servinfosub id = "AENAP70A7224028001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.922in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.288in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1557: Wheel Speed Sensor and/or Its Circuit Malfunction
+</emph>
+</ptxt>
+<ptxt>
+HVAC control module receives invalid data of vehicle speed sensor signal from ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Wheel speed sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> control module
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1561: Engine Coolant Temperature Sensor and/or Its Circuit Malfunction
+</emph>
+</ptxt>
+<ptxt>
+HVAC control module receives invalid data of ECT signal from ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECT sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1563: A/C Refrigerant Pressure Sensor and/or Its Circuit Malfunction
+</emph>
+</ptxt>
+<ptxt>
+HVAC control module receives invalid data of A/C refrigerant pressure signal from ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/C refrigerant pressure sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70A7224028002">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention3>
+<ptxt>
+Check that the following condition is satisfied when using this procedure.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+U0073, U0100, U0140 and/or U0155 are not detected
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Start engine and operate A/C system.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+B1557: Drive vehicle for about 1 minute.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70A7224028003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70A7224028004">
+<testgroup id = "AENAP70A7224028005">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Check DTC of ECM. 
+<intxreftitleoff1 refid = "AENAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any DTC(s) detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to applicable DTC troubleshooting. 
+<intxreftitleoff1 refid = "AENAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace HVAC control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

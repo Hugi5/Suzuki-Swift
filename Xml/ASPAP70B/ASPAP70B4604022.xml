@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B4604022" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C102A
+</title>
+<servinfosub id = "ASPAP70B4604022001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+ C102A: Funcionamiento continuo del control de ABS
+</emph>
+</ptxt>
+<ptxt>
+El control de ABS es activado en todas las ruedas de manera continua.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Módulo de control ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<ptxt>
+En el modo de parada de emergencia, cuando el módulo de control del ESP<sup>&#174;</sup> para el control, se apagará la luz de advertencia pero el DTC permanecerá en el DTC actual durante el ciclo de encendido actual.
+</ptxt>
+<ptxt>
+Es normal si el DTC se convierte DTC de historial cuando se cambia el encendido de la posición &#34;OFF&#34; a &#34;ON&#34;.
+</ptxt>
+</attention3>
+</servinfosub>
+<servinfosub id = "ASPAP70B4604022002">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPAP70B4604022003">
+<testgroup id = "ASPAP70B4604022004">
+<question>
+¿Se ha llevado a cabo el procedimiento de &#34;Inspección del sistema ESP<sup>&#174;</sup>&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B4604001">Comprobación del sistema del ESP&#174;</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B4604022005">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Efectúe 
+<intxref refid = "ASPAP70B4604005">Comprobación del DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Se ha detectado algún DTC C102A?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el conjunto de la unidad hidráulica/módulo de control del ESP<sup>&#174;</sup> y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPAP70B4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

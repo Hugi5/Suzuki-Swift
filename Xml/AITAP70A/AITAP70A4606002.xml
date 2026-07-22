@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "6">
+<servinfo servinfosgmlid = "AITAP70A4606002" svcinfotypenbr = "08" svcinfoqualnbr = "03" page = "2" supplyoff = "1" modify = "0">
+<title>
+Calibrazione del sensore
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Se vengono rilevati DTC diversi da C1074, C1075, la calibrazione del sensore non può essere completata. Riparare innanzitutto la causa del DTC.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il gruppo centralina elettroidraulica ESP<sup>®</sup> contiene dei valori di riferimento per il sensore di pressione pompa freni e il sensore di imbardata/sensore G. Inoltre, il sensore angolo sterzo contiene il proprio punto di riferimento.
+</ptxt>
+<ptxt>
+Il controllo della trazione e il controllo della stabilità vengono eseguiti in base allo scostamento di questi sensori dai rispettivi valori di riferimento. Se il valore di riferimento viene perso o cambia a causa della manutenzione, è necessario procedere con la calibrazione.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.961in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.460in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Sensore
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Manutenzione
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Sensore di imbardata/sensore G
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup> (C1074).
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Sensore angolo sterzo
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup>.
+</ptxt>
+<ptxt>
+Sostituire il sensore angolo sterzo (C1075).
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>
+Quando viene eseguita la calibrazione, vengono calibrati tutti i sensori.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Parcheggiare il veicolo in piano, tirare il freno di stazionamento, arrestare il motore con accensione su &#34;ON&#34;, spostare il volante in posizione di marcia rettilinea e rilasciare il pedale del freno.
+</ptxt>
+<attention3>
+<ptxt>
+Mantenere la condizione di cui al Passo 4) per calibrare correttamente il sensore, sino al termine dell’operazione.
+</ptxt>
+</attention3>
+</s1>
+<s1>
+<ptxt>
+Collegare lo strumento di diagnosi SUZUKI alla DLC (1) con accensione su OFF.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L4F003">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+Analizzatore SUZUKI (SUZUKI-SDT)
+</s-number>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I9P60A460010.jpg" width = "88.000mm" height = "67.502mm" ver = "01" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34; e confermare l&#39;assenza di DTC ad eccezione di C1074 e C1075. In presenza di DTC, riparare o sostituire l&#39;area in cui si è verificato il problema.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Selezionare &#34;Calibrazione sensore&#34; della modalità &#34;Utilità&#34; dello strumento di diagnosi SUZUKI e calibrare il sensore con accensione su &#34;ON&#34;. Per maggiori dettagli consultare il manuale d&#39;impiego dello strumento di diagnosi.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Dopo avere completato la calibrazione, controllare che i DTC non siano memorizzati nel gruppo centralina elettroidraulica ESP<sup>®</sup>.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Confermare che l&#39;accensione sia su &#34;OFF&#34;, quindi scollegare lo strumento di diagnosi SUZUKI dalla presa DLC.
+</ptxt>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

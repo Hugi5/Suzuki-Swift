@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70AA501002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Opis dijelova i funkcija sustava pokretanja bez ključa
+</title>
+<ptxt>
+<intxrefpoff refid = "AHRAP70AA503001">Lokacija komponenti sustava pokretanja bez ključa</intxrefpoff>
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.968in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.236in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Dio
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Konstrukcija/funkcija
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ugrađen na donjoj strani ploče s instrumentima na strani suvozača. Odašilje informacije putem CAN komunikacije između ECM-a, BCM-a i kombiniranog mjerača, itd.
+</ptxt>
+<ptxt>
+Nadzire status svakog prekidača zahtjeva vrata, prekidača vrata i prekidača motora. Radi zahtjeve za zaključavanje i otključavanje vrata, pokretanje motora, te otpuštanje brave upravljača.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Daljinski upravljač
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prima signal zahtjeva sa svake antene. Šalje ID kod i signal zahtjeva prijamniku sustava ulaska bez ključa. Također sadrži sljedeću opremu i funkcije.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Indikatorsko svjetlo rada
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kada je način paljenja uključen, ako napon akumulatora padne, šalje signal na upravljački modul sustava pokretanja bez ključa kako bi ukazao da je baterija daljinskog upravljača prazna da bi uključio svjetlo upozorenja potrošnje baterije daljinskog upravljača u kombiniranom mjeraču kako bi upozorio vozača da zamijeni bateriju.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sadrži ključ za nuždu koji otključava ili zaključava vrata kada sustav pokretanja bez ključa ne radi zbog prazne baterije, itd.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sadrži tipke za zaključavanje / otključavanje koje služe zaključavanju ili otključavanju vrata pomoću funkcije sustava ulaska bez ključa.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač motora
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ugrađen na vozačevoj strani ploče s instrumentima. Uključuje prekidač za pritiskanje koji detektira status rada.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vanjska antena na strani vozača
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ugrađena u vanjsku dršku vrata. Šalje signal zahtjeva daljinskom upravljaču izvan vozila.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vanjska antena na strani suvozača
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vanjska antena na stražnjem kraju
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smještena na stražnjoj strani stražnje ploče Šalje signal zahtjeva daljinskom upravljaču izvan vozila.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Srednja unutrašnja antena
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smještena u središnju kutiju konzole. Šalje signal zahtjeva daljinskom upravljaču unutar vozila.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Stražnja unutrašnja antena
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smještena na prednjoj strani stražnje ploče. Šalje signal zahtjeva daljinskom upravljaču u prostor prtljažnika.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač zahtjeva vozačevih vrata
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješten u svaku vanjsku dršku vrata. Šalje informaciju UKLJ./ISKLJ. s prekidača zahtjeva svakih vrata upravljačkom modulu sustava pokretanja bez ključa.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač zahtjeva suvozačevih vrata
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač zahtjeva vrata prtljažnika
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješten u vratima prtljažnika. Šalje informaciju UKLJ./ISKLJ. s prekidača zahtjeva vrata prtljažnika upravljačkom modulu sustava pokretanja bez ključa.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač svakih vrata
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Šalje informaciju otvaranja / zatvaranja svakih vrata upravljačkom modulu sustava pokretanja bez ključa.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač vrata prtljažnika
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ugrađen u kopču vrata prtljažnika. Šalje informaciju otvaranja / zatvaranja od vrata prtljažnika upravljačkom modulu sustava pokretanja bez ključa.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Jedinica brave upravljača
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ugrađen u stup upravljača. Otpušta ili zaključava bravu upravljača.
+</ptxt>
+<ptxt>
+Sadrži prekidač detekcije otključavanja i prekidač detekcije zaključavanja koji detektira status brave upravljača. Šalje status upravljačkom modulu sustava pokretanja bez ključa putem serijske komunikacije.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Indikatorsko svjetlo blokade motora
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješteno u kombiniranom mjeraču. Isključuje se ako se ID kod daljinskog upravljača podudara kada se pritisne prekidač motora. Uključuje se ako se daljinski upravljač ne može detektirati kada se pritisne prekidač motora.
+</ptxt>
+<ptxt>
+Svijetli ili treperi kada se pojavi greška sustava.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Svjetlo zastrašivanja provalnika
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješteno na prekidaču svih pokazivača smjera. Svijetli ili treperi kada se postavi sigurnosni alarm ili se pojavi greška sustava.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Indikatorsko svjetlo ACC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješteno u kombiniranom mjeraču. Svijetli kada je odabran način paljenja &#34;ACC&#34;.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Indikatorsko svjetlo uključeno
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Smješteno u kombiniranom mjeraču. Svijetli kada je način paljenja uključen dok je motor nepomičan.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Indikatorsko svjetlo PUSH
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Smješteno u kombiniranom mjeraču. 
+</ptxt>
+<ptxt>
+Svijetli kada pritisnete papučicu spojke.
+</ptxt>
+<ptxt>
+Treperi ako ID kod daljinskog upravljača nije registriran kada se pritisne prekidač motora.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ACC relej
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješten u J/B. Upravljački modul sustava pokretanja bez ključa upravlja prebacivanjem načina paljenja.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relej IG1
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relej IG2
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Upravljački relej elektropokretača
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješten u glavnoj kutiji s osiguračima. Uključuje se i napaja elektropokretač kada upravljački modul sustava pokretanja bez ključa utvrdi da je pokretanje motora moguće.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CPP prekidač
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smješten na papučici spojke. Šalje informaciju rada s papučice spojke upravljačkom modulu sustava pokretanja bez ključa.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vanjska zujalica upozorenja
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Smještena na vanjskom dijelu gornje bočne ploče pokrova na strani vozača. Oglašava se kada rade alarm ili funkcija upozorenja.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač brave vozačevih / suvozačevih vrata
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ugrađen u aktuatore obje brave prednjih vrata. Šalje informaciju zaključavanja / otključavanja od vrata vozača / suvozača upravljačkom modulu sustava pokretanja bez ključa.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prekidač cilindra brave
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Uključen u aktuator brave vrata vozača. Šalje informaciju zaključavanja / otključavanja od cilindra brave vrata upravljačkom modulu sustava pokretanja bez ključa.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prijemnik sustava ulaska bez ključa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Uključen u središnju kutiju konzole. Prima signal s daljinskog upravljača i šalje ga upravljačkom modulu sustava pokretanja bez ključa putem serijske komunikacije.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

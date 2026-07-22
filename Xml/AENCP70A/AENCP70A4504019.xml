@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4E">
+<servcat sctnbr = "04" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENCP70A4504019" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1071
+</title>
+<servinfosub id = "AENCP70A4504019001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1071: ABS Control Module Internal Failure
+</emph>
+</ptxt>
+<ptxt>
+ABS control module internal failure is detected.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ABS control module
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENCP70A4504019002">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENCP70A4504019003">
+<testgroup id = "AENCP70A4504019004">
+<question>
+Was “ABS Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENCP70A4504001">ABS Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A4504019005">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENCP70A4504005">DTC Check</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is there DTC(s) other than C1071?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to applicable DTC troubleshooting.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace ABS hydraulic unit / control module assembly and recheck DTC. 
+<intxreftitleoff1 refid = "AENCP70A4506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

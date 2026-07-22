@@ -1,0 +1,2191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104007" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Dati forniti dallo strumento di diagnosi
+</title>
+<scantool>
+<scantool-title>
+ECM
+</scantool-title>
+<ptxt>
+Poiché i valori forniti sono standard, stimati sulla base dei valori ricavati mediante lo strumento di diagnosi da un veicolo esente da anomalie, vanno presi come puro riferimento. Può succedere che un valore controllato non rientri nel campo dei valori normali anche se il veicolo è esente da anomalie. Pertanto non bisogna dare per scontata l’esistenza di un malfunzionamento solo perché il suddetto valore è anomalo.
+</ptxt>
+<ptxt>
+Inoltre le condizioni operative che possono essere controllate mediante lo strumento di diagnosi sono quelle rilevate dall&#39;ECM e ai comandi emessi dal medesimo, per cui può succedere che a volte la condizione operativa del motore o di un attuatore non sia quella indicata dallo strumento di diagnosi. Usare sempre la luce stroboscopica per controllare la fasatura dell’accensione. 
+<intxreftitleoff1 refid = "AITAP70A1806005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Con lo strumento di diagnosi generico, è possibile leggere solamente i dati contrassegnati in tabella con un asterisco (*).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Quando si controllano i dati con il motore al regime di minimo o al massimo, accertarsi di posizionare la leva del cambio in &#34;Folle&#34; e avere il freno di stazionamento completamente tirato. Inoltre, in mancanza di indicazioni o in presenza dell’indicazione &#34;nessun carico&#34;, disattivare l’A/C, tutte le utenze elettriche, il servosterzo e qualunque altro carico.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.241in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.634in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.843in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.768in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.708in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Dati forniti dallo strumento di diagnosi
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni del veicolo
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizione normale / valore di riferimento
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Impianto di alimentazione 
+<intxreftitleoff1 refid = "AITAP70A1104007002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Il sistema è nello stato di controllo a ciclo aperto non essendosi ancora verificate le condizioni motore per passare allo stato di controllo a ciclo chiuso (ECT &#62; 10 &#176;C, sensore/sistema IAT, TP, A/F = OK).
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL (ciclo aperto)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Il sistema è nello stato di controllo a ciclo aperto a causa delle condizioni di guida (arricchimento per incremento della potenza, ecc.).
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL - Guida (ciclo aperto)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Il sistema è nello stato di controllo a ciclo aperto essendo stato rilevato un malfunzionamento nel sistema stesso.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL - Difetto (ciclo aperto)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Il sistema è nello stato di controllo a ciclo chiuso e utilizza i segnali della sonda Lambda e del sensore A/F come ritorno per la regolazione della miscela.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CL (ciclo chiuso)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Il sistema è nello stato di controllo a ciclo chiuso essendo stato rilevato un malfunzionamento nel sistema stesso.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CL - Difetto (ciclo chiuso)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Quando il motore si arresta con accensione &#34;ON&#34;
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fattore di regolazione a breve termine della miscela 
+<intxreftitleoff1 refid = "AITAP70A1104007003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa -20 a 20%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fattore di regolazione a lungo termine della miscela 
+<intxreftitleoff1 refid = "AITAP70A1104007004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa -20 a 20%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fattore di regolazione complessivo della miscela 
+<intxreftitleoff1 refid = "AITAP70A1104007005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ 
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa -30 a 30%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ampiezza impulso d’iniezione 
+<intxreftitleoff1 refid = "AITAP70A1104007006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: al regime minimo, senza carichi applicati, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 1,6 a 4,0 msec
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Anticipo accensione 
+<intxreftitleoff1 refid = "AITAP70A1104007007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: al regime minimo, senza carichi applicati, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da 1 a 15&#176; PPMS
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Carico calcolato 
+<intxreftitleoff1 refid = "AITAP70A1104007008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: al regime minimo, senza carichi applicati, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 20 a 40%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Regime motore 
+<intxreftitleoff1 refid = "AITAP70A1104007009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+<ptxt>
+Ventola di raffreddamento radiatore: all&#39;arresto
+</ptxt>
+<ptxt>
+Tutto l&#39;equipaggiamento elettrico: OFF
+</ptxt>
+<ptxt>
+Selettore: posizione di folle
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+da 590 a 690 giri/min.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Minimo desiderato 
+<intxreftitleoff1 refid = "AITAP70A1104007010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+<ptxt>
+Ventola di raffreddamento radiatore: all&#39;arresto
+</ptxt>
+<ptxt>
+Tutto l&#39;equipaggiamento elettrico: OFF
+</ptxt>
+<ptxt>
+Selettore: posizione di folle
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+640 giri/min
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF 
+<intxreftitleoff1 refid = "AITAP70A1104007011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: al regime minimo, senza carichi applicati, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da 1,0 a 4,0 g/sec
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Velocità del veicolo 
+<intxreftitleoff1 refid = "AITAP70A1104007012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Veicolo in funzione
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pressoché la medesima indicazione del tachimetro
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP 
+<intxreftitleoff1 refid = "AITAP70A1104007013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Circa 20 - 55 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT 
+<intxreftitleoff1 refid = "AITAP70A1104007014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Circa 80 - 105 &#176;C (176 - 221 &#176;F)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Temperatura aria aspirata 
+<intxreftitleoff1 refid = "AITAP70A1104007015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–5 Da –5 &#176;C (9 &#176;F) + temperatura ambiente a 40 &#176;C (72 &#176;F) + temperatura ambiente
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pressione barometrica 
+<intxreftitleoff1 refid = "AITAP70A1104007016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Viene visualizzata la pressione barometrica.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ciclo di lavoro spurgo canister EVAP 
+<intxreftitleoff1 refid = "AITAP70A1104007017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sfasamento variatore di fase bancata 1 aspirazione 
+<intxreftitleoff1 refid = "AITAP70A1104007018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da –1,0 a 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sfasamento variatore di fase bancata 1 scarico 
+<intxreftitleoff1 refid = "AITAP70A1104007019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da –1,0 a 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Apertura farfalla IAC 
+<intxreftitleoff1 refid = "AITAP70A1104007020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: al regime minimo, senza carichi applicati, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 20 a 50%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+<ptxt>
+Interruttore A/C: ON
+</ptxt>
+<ptxt>
+Selettore di velocità del ventilatore: Max
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 50 a 80%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensione sensore TP 1 
+<intxreftitleoff1 refid = "AITAP70A1104007021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 - 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,1 - 4,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensione sensore TP 2 
+<intxreftitleoff1 refid = "AITAP70A1104007022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,0 - 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,5 - 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensione sensore APP 1 
+<intxreftitleoff1 refid = "AITAP70A1104007023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 - 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+3,7 - 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensione sensore APP 2 
+<intxreftitleoff1 refid = "AITAP70A1104007024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,3 - 0,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1,8 - 2,2 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione acceleratore 
+<intxreftitleoff1 refid = "AITAP70A1104007025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 - 2%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 - 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione farfalla 
+<intxreftitleoff1 refid = "AITAP70A1104007026"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 - 10%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 - 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione valvola a farfalla obiettivo 
+<intxreftitleoff1 refid = "AITAP70A1104007027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 - 10%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 - 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sonda lambda bancata 1 sensore 2 
+<intxreftitleoff1 refid = "AITAP70A1104007028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: da 2.000 giri/min per 3 min. o più dopo il riscaldamento
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 0 a 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Corrente sensore A/F bancata 1 sensore 1 
+<intxreftitleoff1 refid = "AITAP70A1104007029"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: al regime del minimo per 2 minuti, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa -0,1 a 0,1 mA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+*
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensione batteria 
+<intxreftitleoff1 refid = "AITAP70A1104007030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime del minimo
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 13 a 15 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Livello del carburante nel serbatoio (
+<intxreftitleoff1 refid = "AITAP70A1104007031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+)
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 - 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pressione A/C 
+<intxreftitleoff1 refid = "AITAP70A1104007032"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime del minimo
+</ptxt>
+<ptxt>
+Interruttore A/C: ON
+</ptxt>
+<ptxt>
+Selettore di velocità del ventilatore: MAX
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da 600 a 1.300 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ciclo di lavoro dispositivo di controllo alternatore 
+<intxreftitleoff1 refid = "AITAP70A1104007033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 20 a 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ciclo di lavoro bobina di campo alternatore 
+<intxreftitleoff1 refid = "AITAP70A1104007034"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Da circa 20 a 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Corrente di batteria 
+<intxreftitleoff1 refid = "AITAP70A1104007035"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+2 - 8 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Fari ON
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+14 - 22 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Fari ON
+</ptxt>
+<ptxt>
+Selettore di velocità del ventilatore: MAX
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+22 - 33 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventola del radiatore 
+<intxreftitleoff1 refid = "AITAP70A1104007037"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventola di raffreddamento radiatore: Spenta
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spenta
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventola di raffreddamento radiatore: bassa velocità
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Velocità bassa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventola di raffreddamento radiatore: alta velocità
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Velocità alta
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relè compressore A/C 
+<intxreftitleoff1 refid = "AITAP70A1104007038"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore A/C: ON
+</ptxt>
+<ptxt>
+Selettore di velocità del ventilatore: ON
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+eccetto le condizioni summenzionate.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pompa del carburante 
+<intxreftitleoff1 refid = "AITAP70A1104007039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore in funzione
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+eccetto le condizioni summenzionate.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore motorino d’avviamento 
+<intxreftitleoff1 refid = "AITAP70A1104007040"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ST&#34; (avviamento del motore)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Eccetto le condizioni summenzionate.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore A/C 
+<intxreftitleoff1 refid = "AITAP70A1104007041"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore A/C: ON
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Eccetto le condizioni summenzionate.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilatore 
+<intxreftitleoff1 refid = "AITAP70A1104007042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C manuale: 2a posizione o superiore
+</ptxt>
+<ptxt>
+A/C automatico: 4a posizione o superiore
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C manuale: Eccetto le condizioni summenzionate.
+</ptxt>
+<ptxt>
+A/C automatico: Eccetto le condizioni summenzionate.
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore del freno 
+<intxreftitleoff1 refid = "AITAP70A1104007043"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedale del freno: premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedale del freno: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Carico elettrico 
+<intxreftitleoff1 refid = "AITAP70A1104007044"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Modelli con sistema DRL
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Modelli senza sistema DRL
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore fari: ON
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore fari: OFF
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore frizione 
+<intxreftitleoff1 refid = "AITAP70A1104007046"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedale della frizione: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Disinnestare frizione
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedale della frizione: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Frizione innestata
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;RES/ACC&#34; Cruise control 
+<intxreftitleoff1 refid = "AITAP70A1104007047"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;RES / +&#34;: premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;RES / +&#34;: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore SET/COAST Cruise control 
+<intxreftitleoff1 refid = "AITAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;SET / –&#34;: premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;SET / –&#34;: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore CANCEL Cruise control 
+<intxreftitleoff1 refid = "AITAP70A1104007049"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;CANCEL&#34;: premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;CANCEL&#34;: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore ON/OFF Cruise control 
+<intxreftitleoff1 refid = "AITAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;Cruise&#34;: premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+premuto
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Interruttore &#34;Cruise&#34;: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+rilasciato
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Intercettazione mandata carburante 
+<intxreftitleoff1 refid = "AITAP70A1104007051"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+<ptxt>
+Condizioni del motore: 2.000 giri/min o superiore dopo il riscaldamento
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione di farfalla chiusa 
+<intxreftitleoff1 refid = "AITAP70A1104007052"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: rilasciato
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Accensione: &#34;ON&#34;
+</ptxt>
+<ptxt>
+Pedale dell’acceleratore: completamente premuto
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sonda lambda bancata 1 sensore 2 attiva 
+<intxreftitleoff1 refid = "AITAP70A1104007053"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Attiva
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sensore A/F bancata 1 sensore 1 attivo 
+<intxreftitleoff1 refid = "AITAP70A1104007054"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motore: regime minimo, in temperatura
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Attiva
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</scantool>
+<servinfosub id = "AITAP70A1104007001" page = "2">
+<title>
+Definizione dei dati forniti dallo strumento di diagnosi
+</title>
+<topic id = "AITAP70A1104007002">
+<title>
+Stato impianto di alimentazione:
+</title>
+<ptxt>
+Viene indicato lo stato del ciclo di feedback del rapporto aria/carburante secondo la logica seguente:
+</ptxt>
+<ptxt>
+OL: Il sistema è nello stato di controllo a ciclo aperto non essendosi ancora verificate le condizioni motore per passare allo stato di controllo a ciclo chiuso (ECT &#62; 10 &#176;C, sensore/sistema IAT, TP, A/F = OK).
+</ptxt>
+<ptxt>
+CL: controllo a ciclo chiuso che utilizza la sonda(e) Lambda come sensore di feedback.
+</ptxt>
+<ptxt>
+OL-DRIVE: controllo a ciclo aperto a causa delle richieste di guida (arricchimento per incremento della potenza, ecc.).
+</ptxt>
+<ptxt>
+OL-FAULT: Il sistema è nello stato di controllo a ciclo aperto essendo stato rilevato un malfunzionamento nel sistema stesso.
+</ptxt>
+<ptxt>
+CL-FAULT: Il sistema è nello stato di controllo a ciclo chiuso essendo stato rilevato un malfunzionamento nel sistema stesso.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007003">
+<title>
+Fattore di regolazione a breve termine della miscela (%):
+</title>
+<ptxt>
+La regolazione a breve termine della miscela rappresenta il fattore di compensazione applicato alla miscela aria/carburante nel breve termine. 0 (zero) indica nessuna correzione, un valore maggiore di 0 indica correzione verso l&#39;arricchimento e un valore inferiore a 0 indica correzione verso l&#39;impoverimento.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007004">
+<title>
+Fattore di regolazione a lungo termine della miscela (%):
+</title>
+<ptxt>
+La regolazione a lungo termine della miscela rappresenta il fattore di compensazione applicato alla miscela aria/carburante nel lungo termine. 0 (zero) indica nessuna correzione, un valore maggiore di 0 indica correzione verso l&#39;arricchimento e un valore inferiore a 0 indica correzione verso l&#39;impoverimento.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007005">
+<title>
+Fattore di regolazione complessivo della miscela (%):
+</title>
+<ptxt>
+Il fattore di regolazione complessivo della miscela è calcolato sulla base del fattore di regolazione a breve termine della miscela e del fattore di regolazione a lungo termine della miscela. Questo valore indica il tasso di correzione necessario per mantenere il rapporto aria/carburante stechiometrico.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007006">
+<title>
+Ampiezza impulso d’iniezione carburante (msec.):
+</title>
+<ptxt>
+Questo parametro indica l&#39;ampiezza degli impulsi di comando degli iniettori (durata) nella quale la valvola dell&#39;iniettore rimane aperta come comandato dalla ECM. (Relativamente all&#39;iniezione carburante multipoint, con tempo di comando degli iniettori si intende quello del cilindro n. 1)
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007007">
+<title>
+Anticipo accensione (per il cilindro n. 1, &#176; PPMS):
+</title>
+<ptxt>
+Questo parametro indica la fasatura di accensione del cilindro n. 1 comandata dalla ECM. La fasatura di accensione effettiva va controllata usando una luce stroboscopica.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007008">
+<title>
+Carico calcolato (valore, %):
+</title>
+<ptxt>
+Questo parametro indica il carico motore calcolato in percentuale. Il carico è calcolato sulla base dei segnali in ingresso alla ECM dai vari sensori del motore.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007009">
+<title>
+Regime motore (giri/min):
+</title>
+<ptxt>
+Il regime motore viene calcolato partendo dagli impulsi di riferimento emessi dal sensore di posizione dell&#39;albero a camme.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007010">
+<title>
+Minimo desiderato (regime di minimo desiderato, giri/min):
+</title>
+<ptxt>
+Il regime del minimo desiderato è un parametro interno della ECM che indica il minimo richiesto dalla ECM. A motore spento questo dato non ha valore.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007011">
+<title>
+MAF (quantità aria aspirata, g/sec, lb/min.):
+</title>
+<ptxt>
+Rappresenta il volume della massa d&#39;aria che entra nel collettore d&#39;aspirazione misurato dal sensore MAF.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007012">
+<title>
+Velocità del veicolo (km/h, miglia/h):
+</title>
+<ptxt>
+La velocità del veicolo è calcolata sulla base dei segnali ad impulsi provenienti dai sensori di velocità ruote.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007013">
+<title>
+MAP (pressione assoluta nel collettore, kPa, mmHg, inHg, psi, inH2O):
+</title>
+<ptxt>
+Questo parametro indica il valore calcolato della pressione del collettore sulla base del segnale sensore MAP.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007014">
+<title>
+ECT (temperatura liquido di raffreddamento del motore &#176;C, &#176;F):
+</title>
+<ptxt>
+Rilevata dal sensore della temperatura del liquido di raffreddamento del motore.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007015">
+<title>
+Temperatura aria aspirata (&#176;C, &#176;F):
+</title>
+<ptxt>
+Viene rilevata dal sensore temperatura aria aspirata.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007016">
+<title>
+Pressione barometrica (kPa, mmHg, inHg, psi, inH2O):
+</title>
+<ptxt>
+Questo parametro rappresenta la misurazione della pressione barometrica e viene usato per compensare l’influenza dell’altitudine nel calcolo della quantità di carburante da iniettare.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007017">
+<title>
+Ciclo di lavoro spurgo canister EVAP (%):
+</title>
+<ptxt>
+Questo parametro indica il lasso di tempo, espresso sotto forma di percentuale rispetto alla durata complessiva di un ciclo prestabilito, durante il quale la valvola di spurgo del canister EVAP resta ON, cioè aperta.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007018">
+<title>
+Sfasamento variatore di fase bancata 1 aspirazione (differenza di fasatura variabile delle valvole tra la posizione obiettivo e quella reale, lato aspirazione, &#176;):
+</title>
+<ptxt>
+Questo parametro indica la differenza tra la posizione obiettivo e reale dell&#39;albero a camme (lato aspirazione).
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007019">
+<title>
+Sfasamento variatore di fase bancata 1 scarico (differenza di fasatura variabile delle valvole tra la posizione obiettivo e quella reale, lato di scarico, &#176;):
+</title>
+<ptxt>
+Questo parametro indica la differenza tra la posizione obiettivo e reale dell&#39;albero a camme (lato scarico).
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007020">
+<title>
+Apertura farfalla IAC (apertura valvola farfalla aria minimo, %):
+</title>
+<ptxt>
+Questo parametro indica la percentuale di apertura della valvola che regola l’afflusso dell’aria nella farfalla (100% indica la portata massima dell&#39;aria al minimo).
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007021">
+<title>
+Tensione sensore TP 1 (tensione di uscita sensore TP principale, V):
+</title>
+<ptxt>
+I dati del sensore TP (principale) forniscono la posizione della valvola a farfalla sotto forma di segnale di tensione.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007022">
+<title>
+Tensione sensore TP 2 (tensione di uscita sensore TP secondario, V):
+</title>
+<ptxt>
+I dati del sensore TP (secondario) forniscono la posizione della valvola a farfalla sotto forma di segnale di tensione.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007023">
+<title>
+Tensione sensore APP 1 (tensione di uscita sensore APP (principale), V):
+</title>
+<ptxt>
+I dati del sensore APP (principale) forniscono la posizione del pedale dell&#39;acceleratore sotto forma di segnale di tensione.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007024">
+<title>
+Tensione sensore APP 2 (tensione di uscita sensore APP (secondario), V):
+</title>
+<ptxt>
+I dati del sensore APP (secondario) forniscono la posizione del pedale dell&#39;acceleratore sotto forma di segnale di tensione.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007025">
+<title>
+Posizione acceleratore (posizione assoluta pedale acceleratore, %):
+</title>
+<ptxt>
+Questo parametro indica la posizione del pedale dell&#39;acceleratore in percentuale, calcolata sulla base del segnale in ingresso dal sensore di posizione pedale dell&#39;acceleratore.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007026">
+<title>
+Posizione farfalla (posizione assoluta della farfalla, %):
+</title>
+<ptxt>
+Questo parametro indica l&#39;apertura della farfalla sotto forma di percentuale, calcolata sulla base del segnale in ingresso dal sensore di posizione farfalla.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007027">
+<title>
+Posizione valvola a farfalla obiettivo (%):
+</title>
+<ptxt>
+È il valore della posizione della valvola a farfalla memorizzato nella mappatura dell&#39;ECM.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007028">
+<title>
+Sonda lambda bancata 1 sensore 2 (HO2S, V):
+</title>
+<ptxt>
+Indica il valore di tensione del segnale emesso dalla sonda Lambda riscaldata installata sul collettore di scarico (a valle del catalizzatore trivalente). Viene usato per rilevare il deterioramento del catalizzatore.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007029">
+<title>
+Corrente sensore A/F bancata 1 sensore 1 (corrente di uscita del sensore A/F, mA):
+</title>
+<ptxt>
+Questo parametro indica il valore della corrente erogata dal sensore A/F installato sul collettore di scarico (a monte del catalizzatore trivalente).
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007030">
+<title>
+Tensione batteria (V):
+</title>
+<ptxt>
+Questo parametro indica il valore della tensione fornita dalla batteria all&#39;ECM attraverso il relè principale.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007031">
+<title>
+Livello del carburante nel serbatoio (%):
+</title>
+<ptxt>
+Questo parametro indica approssimativamente quanto carburante c’è nel serbatoio. I dati relativi al livello carburante sono forniti sotto forma di percentuale da 0 a 100%.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007032">
+<title>
+Pressione A/C (pressione assoluta refrigerante A/C, kPa):
+</title>
+<ptxt>
+Questo parametro indica la pressione assoluta del refrigerante A/C misurata dal sensore di pressione del refrigerante A/C.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007033">
+<title>
+Ciclo di lavoro dispositivo di controllo alternatore (%):
+</title>
+<ptxt>
+Questo parametro indica la percentuale del ciclo di lavoro utile del controllo alternatore al quale l&#39;ECM comanda l&#39;uscita dell&#39;alternatore.
+</ptxt>
+<ptxt>
+100%: nessuna limitazione sul funzionamento dell&#39;alternatore.
+</ptxt>
+<ptxt>
+0%: limitazione massima sul funzionamento dell&#39;alternatore.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007034">
+<title>
+Ciclo di lavoro bobina di campo alternatore (%):
+</title>
+<ptxt>
+Questo parametro indica il tasso di operatività (stato di produzione) dell’alternatore attraverso il ciclo di lavoro della bobina di campo.
+</ptxt>
+<ptxt>
+100%: operatività massima.
+</ptxt>
+<ptxt>
+0%: operatività minima.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007035">
+<title>
+Corrente batteria (A):
+</title>
+<ptxt>
+Questo parametro indica il valore del carico elettrico (corrente assorbita) rilevato dal sensore assorbimento di corrente elettrica.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007037">
+<title>
+Ventola del radiatore (relè di controllo ventola di raffreddamento radiatore, Basso/Alto/Off):
+</title>
+<ptxt>
+Basso: comando ON inviato al relè n. 1 ventola di raffreddamento radiatore.
+</ptxt>
+<ptxt>
+Alto: comando ON inviato ai relè n. 2 e n. 3 della ventola di raffreddamento radiatore.
+</ptxt>
+<ptxt>
+Off: comando non inviato
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007038">
+<title>
+Relè compressore A/C (ON / OFF):
+</title>
+<ptxt>
+Questo parametro indica lo stato del relè del compressore A/C.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007039">
+<title>
+Pompa del carburante (ON/OFF):
+</title>
+<ptxt>
+Viene visualizzato ON quando l&#39;ECM attiva la pompa del carburante per mezzo del relativo interruttore relè.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007040">
+<title>
+Interruttore motorino d’avviamento (ON/OFF):
+</title>
+<ptxt>
+Questo parametro indica lo stato del segnale di controllo del relè del motorino d’avviamento.
+</ptxt>
+<ptxt>
+ON: il relè del motorino di avviamento è eccitato.
+</ptxt>
+<ptxt>
+OFF: il relè del motorino di avviamento è diseccitato.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007041">
+<title>
+Interruttore A/C (ON / OFF):
+</title>
+<ptxt>
+ON: l&#39;ECM sta inviando il comando di attivazione A/C alla centralina HVAC.
+</ptxt>
+<ptxt>
+OFF: Segnale operativo diretto all&#39;A/C non emesso.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007042">
+<title>
+Ventilatore (ON/OFF):
+</title>
+<ptxt>
+Questo parametro indica lo stato operativo del selettore di velocità del ventilatore.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007043">
+<title>
+Interruttore del freno (ON/OFF):
+</title>
+<ptxt>
+Questo parametro indica lo stato operativo dell&#39;interruttore del freno.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007044">
+<title>
+Carico elettrico (ON/OFF):
+</title>
+<ptxt>
+ON: invio segnale di attivazione fari, luci di posizione o lunotto termico
+</ptxt>
+<ptxt>
+OFF: le utenze elettriche indicate sopra sono tutte spente.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007046">
+<title>
+Interruttore frizione (Disinnestare frizione / Frizione innestata) (modelli con M/T):
+</title>
+<ptxt>
+Disinnestare frizione: viene premuto a fondo il pedale della frizione.
+</ptxt>
+<ptxt>
+Frizione innestata: il pedale della frizione è rilasciato;
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007047">
+<title>
+Interruttore &#34;RES/ACC&#34; Cruise control (interruttore &#34;RES / +&#34;, OFF / ON):
+</title>
+<ptxt>
+ON: interruttore &#34;RES / +&#34; premuto.
+</ptxt>
+<ptxt>
+OFF: interruttore &#34;RES / +&#34; rilasciato.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007048">
+<title>
+Interruttore SET/COAST Cruise control (interruttore &#34;SET / –&#34;, OFF / ON):
+</title>
+<ptxt>
+ON: interruttore &#34;SET / –&#34; premuto.
+</ptxt>
+<ptxt>
+OFF: interruttore &#34;SET / –&#34; rilasciato.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007049">
+<title>
+Interruttore CANCEL Cruise control (interruttore &#34;CANCEL&#34;, OFF / ON):
+</title>
+<ptxt>
+ON: interruttore &#34;CANCEL&#34; premuto.
+</ptxt>
+<ptxt>
+OFF: interruttore &#34;CANCEL&#34; rilasciato.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007050">
+<title>
+Interruttore ON/OFF Cruise control (Rilasciato / Premuto):
+</title>
+<ptxt>
+Premuto: interruttore &#34;CRUISE&#34; premuto.
+</ptxt>
+<ptxt>
+Rilasciato: interruttore &#34;CRUISE&#34; rilasciato.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007051">
+<title>
+Intercettazione mandata carburante (ON/OFF):
+</title>
+<ptxt>
+ON: la mandata di carburante è intercettata (interruzione del segnale diretto agli iniettori).
+</ptxt>
+<ptxt>
+OFF: la mandata di carburante non viene intercettata.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007052">
+<title>
+Posizione di farfalla chiusa (ON/FF):
+</title>
+<ptxt>
+Questo parametro è ON con valvola a farfalla completamente chiusa e OFF con valvola a farfalla non completamente chiusa.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007053">
+<title>
+Sonda lambda bancata 1 sensore 2 attiva (HO2S, Attiva / Non attiva):
+</title>
+<ptxt>
+Questo parametro indica se la sonda Lambda riscaldata è attiva o meno.
+</ptxt>
+<ptxt>
+ATTIVO: il sensore è attivato.
+</ptxt>
+<ptxt>
+INATTIVO: il sensore è in corso di riscaldamento o non è attivo.
+</ptxt>
+</topic>
+<topic id = "AITAP70A1104007054">
+<title>
+Sensore A/F bancata 1 sensore 1 attivo (Attivo / Inattivo):
+</title>
+<ptxt>
+Questo parametro indica se il sensore A/F è attivo o meno.
+</ptxt>
+<ptxt>
+ATTIVO: il sensore è attivato.
+</ptxt>
+<ptxt>
+INATTIVO: il sensore è in corso di riscaldamento o non è attivo.
+</ptxt>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

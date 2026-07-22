@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "3">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPAP70B7231002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Descripción del control de HVAC
+</title>
+<servinfosub id = "ASPAP70B7231002001">
+<title>
+Control de la temperatura
+</title>
+<ptxt>
+El módulo de control HVAC calcula la posición deseada de la puerta de control de la temperatura a partir de señales del selector de temperatura, el sensor interior de temperatura del aire, el sensor exterior de temperatura del aire y el sensor solar, y controla el actuador de control de la temperatura de forma que la posición actual de la puerta de control de la temperatura coincida con la deseada.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70B7231002002">
+<title>
+Control de la velocidad del ventilador
+</title>
+<ptxt>
+El módulo de control HVAC calcula la velocidad deseada del ventilador del soplador a partir de las señales del selector de temperatura, el sensor de temperatura del aire del interior, el sensor de temperatura del aire del exterior, el sensor ECT y el sensor solar, y compara la velocidad calculada con la velocidad del ventilador del soplador introducida por el controlador del motor del soplador para alcanzar el nivel deseado de velocidad del ventilador del soplador.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70B7231002003">
+<title>
+Control del flujo de aire de salida
+</title>
+<ptxt>
+El módulo de control HVAC calcula la posición de la portezuela de control de la temperatura deseada mediante las señales del selector de temperatura, el sensor de temperatura del aire del interior, el sensor de temperatura del aire del exterior, el sensor ECT y el sensor solar. A partir de la posición deseada de la puerta de control de la temperatura, calcula la posición de la compuerta de control del flujo de aire deseado y regula el actuador de control del flujo de aire de modo que la posición de la compuerta sea la deseada.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70B7231002004">
+<title>
+Control de la posición de admisión de aire
+</title>
+<ptxt>
+El módulo de control HVAC determina la posición de la puerta de control de admisión de aire basándose en las señales del selector de temperatura, el sensor interior de temperatura, el sensor de temperatura exterior y el sensor solar, y selecciona cualquiera de las posiciones siguientes controlando la posición de la puerta de control de admisión de aire.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Posición de aire FRESCO (FRE)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Posición de RECIRCULACIÓN de aire (REC)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Posición de MEZCLA de aire (MIX)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "ASPAP70B7231002005">
+<title>
+Control del relé del compresor del A/C
+</title>
+<ptxt>
+El módulo de control HVAC envía la señal ON del interruptor A/C al ECM mediante el BCM cuando el vehículo se encuentra en las condiciones descritas a continuación.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+El interruptor del A/C está en ON.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La temperatura del evaporador es mayor que el valor especificado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+No se ha detectado ninguna avería en el sensor de temperatura del evaporador.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+La comunicación del ECM y el BCM se establece mediante CAN (red de área del controlador). (Para más obtener información sobre la comunicación CAN, consulte 
+<intxref refid = "ASPAP70BA801001">Descripción del sistema de comunicación</intxref>
+).
+</ptxt>
+<ptxt>
+El ECM coloca en ON el relé del compresor del A/C cuando el vehículo cumple las condiciones descritas a continuación.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Señal del interruptor de A/C en ON introducida
+</ptxt>
+</item>
+<item>
+<ptxt>
+La presión del refrigerante del A/C se encuentra en el margen especificado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El régimen del motor se encuentra en el margen especificado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La temperatura del refrigerante del motor es inferior al valor especificado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La apertura de la mariposa es inferior al valor especificado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El vehículo no se encuentra en estado de arranque o de aceleración rápida.
+</ptxt>
+</item>
+<item>
+<ptxt>
+No se ha detectado ninguna avería en el sensor ECT.
+</ptxt>
+</item>
+<item>
+<ptxt>
+No se ha detectado ninguna avería en el sensor de presión del refrigerante del A/C.
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "ASPAP70B7231002006">
+<title>
+Control del relé del ventilador de refrigeración del radiador
+</title>
+<ptxt>
+El ECM activa el relé del ventilador de refrigeración del radiador a la vez que activa el relé del compresor del A/C.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70B7231002007">
+<title>
+Estructura del sistema HVAC
+</title>
+<ptxt>
+Consulte la &#34;Estructura del sistema HVAC&#34; en 
+<intxref refid = "ASPAP70B7221001">Descripción del sistema HVAC:Tipo manual</intxref>
+ .
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

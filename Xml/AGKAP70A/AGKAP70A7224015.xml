@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A7224015" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1503 / B1562
+</title>
+<servinfosub id = "AGKAP70A7224015001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.657in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.558in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1503: Δυσλειτουργία του αισθητήρα θερμοκρασίας εξατμιστή ή/και του κυκλώματός του 
+</emph>
+</ptxt>
+<ptxt>
+Η μονάδα ελέγχου HVAC λαμβάνει άκυρα δεδομένα αισθητήρα θερμοκρασίας εξατμιστή από τον BCM συνεχόμενα μέσω της γραμμής επικοινωνίας CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Κύκλωμα αισθητήρα θερμοκρασίας εξατμιστή
+</ptxt>
+</item>
+<item>
+<ptxt>
+Αισθητήρας θερμοκρασίας εξατμιστή
+</ptxt>
+</item>
+<item>
+<ptxt>
+Εγκέ&#248;αλος HVAC
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1562: Δυσλειτουργία του αισθητήρα θερμοκρασίας εξωτερικού αέρα ή/και του κυκλώματός του 
+</emph>
+</ptxt>
+<ptxt>
+Η μονάδα ελέγχου HVAC λαμβάνει άκυρα δεδομένα αισθητήρα θερμοκρασίας εξωτερικού αέρα από τον BCM συνεχόμενα μέσω της γραμμής επικοινωνίας CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Κύκλωμα αισθητήρα θερμοκρασίας εξωτερικού αέρα
+</ptxt>
+</item>
+<item>
+<ptxt>
+Αισθητήρας θερμοκρασίας εξωτερικού αέρα
+</ptxt>
+</item>
+<item>
+<ptxt>
+Εγκέ&#248;αλος HVAC
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A7224015002">
+<title>
+Διαδικασία Επιβεβαίωσης Κωδικού Βλάβης DTC
+</title>
+<attention3>
+<ptxt>
+Ελέγξτε ότι οι παρακάτω συνθήκες ικανοποιούνται όταν χρησιμοποιείτε αυτή τη διαδικασία.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Δεν ανιχνεύεται ο U0073 ή/και ο U0140
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Ξεκινήστε τον κινητήρα και λειτουργήστε το σύστημα κλιματισμού A/C.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGKAP70A7224015003">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A7224015004">
+<testgroup id = "AGKAP70A7224015005">
+<title>
+Έλεγχος Κωδικού Βλάβης DTC
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τους ακόλουθους κωδικούς DTC του BCM.
+</ptxt>
+<ptxt>
+B1503: B1145 ή/και B1146
+</ptxt>
+<ptxt>
+B1562: B1141 ή/και B1142
+</ptxt>
+</test1>
+<question>
+Έχει ανιχνευτεί κάποιος(οι) Κωδικός (οί) DTC;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στην ισχύουσα διάγνωση κωδικού βλάβης. 
+<intxreftitleoff1 refid = "AGKAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Αντικαταστήστε τη μονάδα ελέγχου HVAC και επανελέγξτε τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104009" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Grundlegende Motorüberprüfung
+</title>
+<ptxt>
+Diese Überprüfung ist sehr wichtig, wenn das ECM keinen DTC erfasst hat und in 
+<intxref refid = "AGEAP70A1104008">Sichtprüfung</intxref>
+ keine Mängel festgestellt wurden.
+</ptxt>
+<ptxt>
+Den Ablaufplan sorgfältig einhalten.
+</ptxt>
+<diag type = "test" id = "AGEAP70A1104009001">
+<testgroup id = "AGEAP70A1104009002">
+<question>
+Wurde die &#34;Überprüfung des Motor- und Abgassteuerungssystems&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104001">Überprüfung des Motor- und Abgassteuerungssystems</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009003">
+<title>
+Batteriespannung prüfen
+</title>
+<question>
+Beträgt sie mindestens 11 V?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Batterie laden oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009004">
+<question>
+Dreht der Motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1904001">Symptomdiagnose für das Anlassersystem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009005">
+<question>
+Springt der Motor an?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009006">
+<title>
+Leerlaufdrehzahl überprüfen
+</title>
+<test1>
+<ptxt>
+Leerlaufdrehzahl überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104010">Motorsymptomdiagnose</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009007">
+<title>
+Zündsystem überprüfen
+</title>
+<test1>
+<ptxt>
+Zündsystem überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1804001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104010">Motorsymptomdiagnose</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009008">
+<title>
+Funktion des Wegfahrsperrensystems überprüfen
+</title>
+<test1>
+<ptxt>
+Wegfahrsperren-Steuersystem überprüfen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Modell mit Zündschalter: 
+<intxreftitleoff1 refid = "AGEAP70AA314001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Modell mit schlüssellosem Startsystem: 
+<intxreftitleoff1 refid = "AGEAP70AA324001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Störung des Wegfahrsperren-Steuersystems.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009009">
+<title>
+Kraftstoffzufuhr überprüfen
+</title>
+<test1>
+<ptxt>
+Kraftstoffzufuhr überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1706014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104010">Motorsymptomdiagnose</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104009010">
+<title>
+Schaltkreis des Einspritzventils überprüfen
+</title>
+<test1>
+<ptxt>
+Den Schaltkreis des Einspritzventils überprüfen. Siehe dazu 
+<intxref refid = "AGEAP70A1704003">Überprüfung des Einspritzventil-Schaltkreises</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104010">Motorsymptomdiagnose</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1704003">Überprüfung des Einspritzventil-Schaltkreises</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

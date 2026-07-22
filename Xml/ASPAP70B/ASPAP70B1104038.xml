@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B1104038" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0481 / P0694
+</title>
+<servinfosub id = "ASPAP70B1104038001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.168in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.047in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0481: Circuito de control del ventilador 2
+</emph>
+</ptxt>
+<ptxt>
+El circuito de accionamiento del relé n&#176; 2 y/o n&#176; 3 del ventilador de refrigeración del radiador está abierto o cortocircuitado a masa.
+</ptxt>
+<ptxt>
+(Lógica de detección de 3 ciclos de conducción, pero la MIL no se enciende)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Relé del ventilador de refrigeración del radiador n&#176; 1 (lado del interruptor) y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Relé del ventilador de refrigeración del radiador n&#176; 2 (lado de la bobina) y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Relé del ventilador de refrigeración del radiador n&#176; 3 (lado de la bobina) y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+ P0694: Tensión alta en el circuito de control del ventilador 2
+</emph>
+</ptxt>
+<ptxt>
+El circuito de accionamiento del relé n&#176; 2 y/o n&#176; 3 del ventilador de refrigeración del radiador está cortocircuitado a la alimentación eléctrica.
+</ptxt>
+<ptxt>
+(Lógica de detección de 3 ciclos de conducción, pero la MIL no se enciende)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70B1104038002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "I9P60A111021.swf" width = "183.000mm" height = "111.584mm" ver = "02" gw = "440" gh = "300"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.300in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.236in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.317in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.399in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.317in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.574in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conector del ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de control de los relés n&#176; 2 y n&#176; 3 del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relé n&#176; 2 del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica del relé n&#176; 1 del ventilador de refrigeración del radiador (lado de la bobina)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica del relé n&#176; 1 del ventilador de refrigeración del radiador (lado del interruptor)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relé n&#176; 3 del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica del relé n&#176; 2 del ventilador de refrigeración del radiador (lado de la bobina)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica del relé n&#176; 2 del ventilador de refrigeración del radiador (lado del interruptor)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Motor del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica del relé n&#176; 3 del ventilador de refrigeración del radiador (lado de la bobina)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C3: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica del relé n&#176; 3 del ventilador de refrigeración del radiador (lado del interruptor)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fusible &#34;RDTR&#34;
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de accionamiento del relé n&#176; 1 del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relé n&#176; 1 del ventilador de refrigeración del radiador
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPAP70B1104038003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+En primer lugar, asegúrese de realizar la localización de averías de los DTC inesperados detectados previamente en el &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Compruebe que se cumplen las siguientes condiciones en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Tensión de la batería &#62; 8,5 V
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Caliente el motor hasta que llegue a la temperatura normal de funcionamiento.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Mantenga el motor en régimen de ralentí hasta que la temperatura del refrigerante del motor sea de 102&#176;C (215,6&#176;F) o más.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPAP70B1104038004">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPAP70B1104038005">
+<testgroup id = "ASPAP70B1104038006">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104038007">
+<title>
+Comprobación del circuito de alimentación eléctrica del relé n&#176; 1 del ventilador de refrigeración del radiador (lado del interruptor)
+</title>
+<test1>
+<ptxt>
+Con el encendido en posición &#34;OFF&#34;, extraiga los relés del ventilador de refrigeración del radiador n&#176; 1, n&#176; 2 y n&#176; 3.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe que la conexión del terminal a los conectores de los relés n&#176; 1, n&#176; 2 y n&#176; 3 del ventilador de refrigeración del radiador sea correcta.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, conecte el encendido (posición “ON”).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verifique que la tensión entre &#34;C1&#34; y la masa equivale a la tensión de la batería.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Compruebe que el fusible &#34;RDTR&#34; no está fundido. Si el fusible no está fundido, repare o sustituya el circuito &#34;C1&#34;.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104038008">
+<title>
+Inspección del relé del ventilador de refrigeración del radiador
+</title>
+<test1>
+<ptxt>
+Compruebe los relés n&#176; 1, n&#176; 2 y n&#176; 3 del ventilador de refrigeración del radiador 
+<intxreftitleoff1 refid = "ASPAP70B1606011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya los relés n&#176; 1, n&#176; 2 y/o n&#176; 3 del ventilador de refrigeración del radiador.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104038009">
+<title>
+Inspección del circuito de alimentación eléctrica de los relés n&#176; 2 y n&#176; 3 del ventilador de refrigeración del radiador (lado de la bobina)
+</title>
+<test1>
+<ptxt>
+Con el encendido desconectado (posición &#34;OFF&#34;), desconecte los conectores &#34;C01&#34; y &#34;E01&#34; del ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si la conexión de los terminales a los conectores &#34;C01&#34; y &#34;E01&#34; es correcta.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, compruebe los puntos siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistencia de los circuitos &#34;A2&#34; y &#34;A3&#34;: menos de 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre cada uno de los circuitos &#34;A2&#34; y &#34;A3&#34; y la masa: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el terminal del circuito &#34;A2&#34; y otro terminal en el conector del relé n&#176; 2 del ventilador de refrigeración del radiador: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el terminal del circuito &#34;A3&#34; y otro terminal en el conector del relé n&#176; 3 del ventilador de refrigeración del radiador: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de los circuitos &#34;A2&#34; y &#34;A3&#34;: Aproximadamente 0 V (cuando el encendido está en posición &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104038010">
+<title>
+Inspección del circuito de control de los relés n&#176; 2 y n&#176; 3 del ventilador de refrigeración del radiador
+</title>
+<test1>
+<ptxt>
+Con el encendido desconectado (posición &#34;OFF&#34;), compruebe los siguientes puntos.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistencia del circuito &#34;B2&#34;: menos de 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el circuito &#34;B2&#34; y la masa: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el terminal del circuito &#34;B2&#34; y otro terminal en el conector del circuito de accionamiento de los relés del ventilador de refrigeración del radiador n&#176; 2 y n&#176; 3: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión del circuito &#34;B2&#34;: Aproximadamente 0 V (cuando el encendido está en posición &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPAP70B1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

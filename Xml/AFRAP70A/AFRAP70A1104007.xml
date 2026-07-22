@@ -1,0 +1,2189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A1104007" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Données de l&#39;outil de balayage 
+</title>
+<scantool>
+<scantool-title>
+ECM
+</scantool-title>
+<ptxt>
+Etant donné que les valeurs de données sont des valeurs standard basées sur les valeurs obtenues par l&#39;outil de balayage sur un véhicule fonctionnant normalement, il convient de les utiliser en tant que valeurs de référence. Même lorsque le véhicule est en bon état de fonctionnement, il peut y avoir des cas où la valeur relevée ne correspond pas aux fourchettes de données spécifiées. Pour cette raison, il ne faut pas considérer un système comme anormal en se basant uniquement sur ces données. 
+</ptxt>
+<ptxt>
+De plus, les conditions susceptibles d&#39;être vérifiées par l&#39;outil de balayage sont celles détectées et transmises par l&#39;ECM et, dans certains cas, le moteur ou l&#39;actionneur ne fonctionne pas (exactement) comme indiqué par l&#39;outil de balayage. Ne jamais oublier d&#39;utiliser une lampe stroboscopique pour vérifier l&#39;avance à l&#39;allumage. 
+<intxreftitleoff1 refid = "AFRAP70A1806005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Avec l&#39;outil de balayage générique, seules les données marquées d&#39;un astérisque (*) dans le tableau suivant pourront être relevées. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lors de la vérification des données avec le moteur tournant au ralenti ou en accélération, veiller à placer le levier de changement de vitesse au &#34;point mort&#34; et serrer à fond le frein de stationnement. De même, si rien ou la mention &#34;aucune charge&#34; est indiquée, mettre la climatisation, toutes les charges électriques, la P/S et tous les autres contacteurs en position OFF. 
+</ptxt>
+</item>
+</list1>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.241in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.634in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.843in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.768in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.708in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Données de l&#39;outil de balayage 
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Etat du véhicule 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Etat normal / valeur de référence 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Système de carburant 
+<intxreftitleoff1 refid = "AFRAP70A1104007002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Commande de circuit ouvert avant que les conditions de commande de circuit fermé ne soient remplies (capteur/système ECT &#62;10 &#176;C, IAT, TP, A/F = OK) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL (circuit ouvert) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Commande de circuit ouvert en raison des conditions de conduite (enrichissement de puissance, etc.) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL-Drive (circuit ouvert) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Commande de circuit ouvert suite à la détection d&#39;un dysfonctionnement du système 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OL-Fault (circuit ouvert) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Commande de circuit fermé utilisant les capteurs HO2S et A/F comme capteurs de rétroaction pour la commande de carburant 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CL (circuit fermé) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Commande de circuit fermé suite à la détection d&#39;un dysfonctionnement du système 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CL-Défaut (circuit fermé) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Lorsque le moteur s&#39;arrête avec l&#39;allumage en position &#34;ON&#34; 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+— 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régulation lambda à court terme 
+<intxreftitleoff1 refid = "AFRAP70A1104007003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ –20 à 20%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régulation lambda à long terme 
+<intxreftitleoff1 refid = "AFRAP70A1104007004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ –20 à 20%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régulation lambda totale 
+<intxreftitleoff1 refid = "AFRAP70A1104007005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ –30 à 30%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Larg Impuls INJ 
+<intxreftitleoff1 refid = "AFRAP70A1104007006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Au régime de ralenti sans charge après montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 1,6 à 4,0 ms
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Avance à l&#39;allumage 
+<intxreftitleoff1 refid = "AFRAP70A1104007007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Au régime de ralenti sans charge après montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1 à 15&#176; BTDC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Charge calculée 
+<intxreftitleoff1 refid = "AFRAP70A1104007008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Au régime de ralenti sans charge après montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 20 à 40%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régime moteur 
+<intxreftitleoff1 refid = "AFRAP70A1104007009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+<ptxt>
+Ventilateur de refroidissement de radiateur: arrêté 
+</ptxt>
+<ptxt>
+Tout l&#39;équipement électrique: OFF 
+</ptxt>
+<ptxt>
+Levier de changement de vitesses: Position neutre 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+590 à 690 tr/min
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ralenti désiré 
+<intxreftitleoff1 refid = "AFRAP70A1104007010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+<ptxt>
+Ventilateur de refroidissement de radiateur: arrêté 
+</ptxt>
+<ptxt>
+Tout l&#39;équipement électrique: OFF 
+</ptxt>
+<ptxt>
+Levier de changement de vitesses: Position neutre 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+640 tr/min
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF 
+<intxreftitleoff1 refid = "AFRAP70A1104007011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Au régime de ralenti sans charge après montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1,0 à 4,0 g/s
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vitesse du véhicule 
+<intxreftitleoff1 refid = "AFRAP70A1104007012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Véhicule en marche 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Quasiment identique à l&#39;indication du compteur de vitesse 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP 
+<intxreftitleoff1 refid = "AFRAP70A1104007013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 20 à 55 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT 
+<intxreftitleoff1 refid = "AFRAP70A1104007014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 80 à 105 &#176;C (176 à 221 &#176;F)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Température d&#39;air d&#39;admission 
+<intxreftitleoff1 refid = "AFRAP70A1104007015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–5 &#176;C (9 &#176;F) + température ambiante de 40 &#176;C (72 &#176;F) + température ambiante 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Press barométrique 
+<intxreftitleoff1 refid = "AFRAP70A1104007016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+— 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+La pression barométrique est affichée. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cycle opér purg cuve EVAP 
+<intxreftitleoff1 refid = "AFRAP70A1104007017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ecart VVT B1 IN 
+<intxreftitleoff1 refid = "AFRAP70A1104007018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–1,0 à 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ecart VVT B1 EX 
+<intxreftitleoff1 refid = "AFRAP70A1104007019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+–1,0 à 1,0&#176; CA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ouverture du papillon IAC 
+<intxreftitleoff1 refid = "AFRAP70A1104007020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Au régime de ralenti sans charge après montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 20 à 50%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+<ptxt>
+Contacteur A/C: ON 
+</ptxt>
+<ptxt>
+Sélecteur de vitesse de soufflante: Max 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 50 à 80%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tension Capteur TP1 
+<intxreftitleoff1 refid = "AFRAP70A1104007021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 à 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,1 à 4,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tension Capteur TP2 
+<intxreftitleoff1 refid = "AFRAP70A1104007022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+4,0 à 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,5 à 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tension Capt APP1 
+<intxreftitleoff1 refid = "AFRAP70A1104007023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,6 à 0,9 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+3,7 à 4,4 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tension Capt APP2 
+<intxreftitleoff1 refid = "AFRAP70A1104007024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0,3 à 0,5 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+1,8 à 2,2 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Position Accél 
+<intxreftitleoff1 refid = "AFRAP70A1104007025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 à 2%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 à 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Position du papillon 
+<intxreftitleoff1 refid = "AFRAP70A1104007026"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 à 10%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 à 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posit Papil Cible 
+<intxreftitleoff1 refid = "AFRAP70A1104007027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 à 10%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+90 à 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+O2S B1 S2 
+<intxreftitleoff1 refid = "AFRAP70A1104007028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: 2.000 tr/min pendant 3 min. minimum après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 0 à 1,0 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Air/Carb B1 S1 Cour 
+<intxreftitleoff1 refid = "AFRAP70A1104007029"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti pendant 2 min. après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ –0,1 à 0,1 mA
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+* 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tension de batterie 
+<intxreftitleoff1 refid = "AFRAP70A1104007030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 13 à 15 V
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Niveau réservoir carb 
+<intxreftitleoff1 refid = "AFRAP70A1104007031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+0 à 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pression A/C 
+<intxreftitleoff1 refid = "AFRAP70A1104007032"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti 
+</ptxt>
+<ptxt>
+Contacteur A/C: ON 
+</ptxt>
+<ptxt>
+Sélecteur de vitesse de soufflante: MAX 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+600 à 1.300 kPa
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Service Comm Génér 
+<intxreftitleoff1 refid = "AFRAP70A1104007033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 20 à 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Service Réel Génér 
+<intxreftitleoff1 refid = "AFRAP70A1104007034"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Environ 20 à 100%
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Courant de batterie 
+<intxreftitleoff1 refid = "AFRAP70A1104007035"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+2 à 8 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Phare: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+14 à 22 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Phare: ON 
+</ptxt>
+<ptxt>
+Sélecteur de vitesse de soufflante: MAX 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+22 à 33 A
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventil de radiateur 
+<intxreftitleoff1 refid = "AFRAP70A1104007037"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilateur de refroidissement de radiateur: Hors fonction 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Hors fonction 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilateur de refroidissement de radiateur: Vitesse faible 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Faible 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventilateur de refroidissement de radiateur: Vitesse élevée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Elevé(e) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relais Comp A/C 
+<intxreftitleoff1 refid = "AFRAP70A1104007038"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur A/C: ON 
+</ptxt>
+<ptxt>
+Sélecteur de vitesse de soufflante: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Conditions autres que celles mentionnées ci-dessus 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pompe à carburant 
+<intxreftitleoff1 refid = "AFRAP70A1104007039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur en marche 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Conditions autres que celles mentionnées ci-dessus 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur Démarrage 
+<intxreftitleoff1 refid = "AFRAP70A1104007040"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: &#34;ST&#34; (lancement du moteur) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Conditions autres que celles mentionnées ci-dessus 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur A/C 
+<intxreftitleoff1 refid = "AFRAP70A1104007041"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur A/C: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Conditions autres que celles mentionnées ci-dessus 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ventil de soufflante 
+<intxreftitleoff1 refid = "AFRAP70A1104007042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C manuelle: rapport de 2ème ou supérieur 
+</ptxt>
+<ptxt>
+A/C automatique: rapport de 4ème ou supérieur 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/C manuelle: Conditions autres que celles mentionnées ci-dessus 
+</ptxt>
+<ptxt>
+A/C automatique: Conditions autres que celles mentionnées ci-dessus 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur de frein 
+<intxreftitleoff1 refid = "AFRAP70A1104007043"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pédale de frein: Enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pédale de frein: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Charge électrique 
+<intxreftitleoff1 refid = "AFRAP70A1104007044"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Modèle avec DRL 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Modèle sans DRL 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur de phare: ON 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur de phare: OFF 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur embray 
+<intxreftitleoff1 refid = "AFRAP70A1104007046"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pédale d&#39;embrayage: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Débrayée 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pédale d&#39;embrayage: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Embrayée 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cont RES/ACC vit 
+<intxreftitleoff1 refid = "AFRAP70A1104007047"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;RES / +&#34;: Enfoncé 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;RES / +&#34;: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cont SET/COAST vit 
+<intxreftitleoff1 refid = "AFRAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;SET / -&#34;: Enfoncé 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;SET / -&#34;: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cont CANCEL régul vit 
+<intxreftitleoff1 refid = "AFRAP70A1104007049"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;CANCEL&#34;: Enfoncé 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;CANCEL&#34;: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur ON/OFF de régulateur 
+<intxreftitleoff1 refid = "AFRAP70A1104007050"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;CRUISE&#34;: Enfoncé 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Enfoncé 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Contacteur &#34;CRUISE&#34;: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relâché 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Coupure de carb 
+<intxreftitleoff1 refid = "AFRAP70A1104007051"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+<ptxt>
+Etat du moteur: 2.000 tr/min minimum après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pos papillon fermé 
+<intxreftitleoff1 refid = "AFRAP70A1104007052"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Relâché 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ON 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Allumage: en position &#34;ON&#34; 
+</ptxt>
+<ptxt>
+Pédale d&#39;accélérateur: Complètement enfoncée 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+OFF 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+O2S B1 S2 Act 
+<intxreftitleoff1 refid = "AFRAP70A1104007053"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Actif 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+A/F B1 S1 Act 
+<intxreftitleoff1 refid = "AFRAP70A1104007054"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry namest = "3" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Moteur: Régime de ralenti après la montée en température 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Actif 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</scantool>
+<servinfosub id = "AFRAP70A1104007001" page = "2">
+<title>
+Définitions des données de l&#39;outil de balayage 
+</title>
+<topic id = "AFRAP70A1104007002">
+<title>
+Système de carburant (statut du système de carburant): 
+</title>
+<ptxt>
+Le statut du circuit de rétroaction du mélange air/carburant (A/F) est affiché dans une des conditions suivantes. 
+</ptxt>
+<ptxt>
+OL: Commande de circuit ouvert avant que les conditions de commande de circuit fermé ne soient remplies (capteur/système ECT &#62; 10 &#176;C, IAT, TP, A/F = OK). 
+</ptxt>
+<ptxt>
+CL: Commande de circuit fermé utilisant le(s) capteur(s) d&#39;oxygène comme capteur(s) de rétroaction. 
+</ptxt>
+<ptxt>
+OL-DRIVE: Commande de circuit ouvert en raison des conditions particulières de conduite (enrichissement de puissance, etc.). 
+</ptxt>
+<ptxt>
+OL-FAULT: Commande de circuit ouvert suite à la détection d&#39;un dysfonctionnement du système. 
+</ptxt>
+<ptxt>
+CL-FAULT: Commande de circuit fermé suite à la détection d&#39;un dysfonctionnement du système. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007003">
+<title>
+Régulation lambda à court terme (%): 
+</title>
+<ptxt>
+La valeur de régulation lambda à court terme représente les corrections à court terme du mélange air/carburant. 0 (zéro) indique aucune correction, une valeur supérieure à 0 indique un enrichissement et une valeur inférieure à 0 indique un appauvrissement du mélange. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007004">
+<title>
+Régulation lambda à long terme (%): 
+</title>
+<ptxt>
+La valeur de régulation lambda à long terme représente les corrections à long terme du mélange air/carburant. 0 (zéro) indique aucune correction, une valeur supérieure à 0 indique un enrichissement et une valeur inférieure à 0 indique un appauvrissement du mélange. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007005">
+<title>
+Régulation lambda totale (%): 
+</title>
+<ptxt>
+La régulation lambda totale est calculée à partir de la régulation lambda à court terme et la régulation lambda à long terme. Cette valeur indique la correction nécessaire pour maintenir le mélange air/carburant stœchiométrique. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007006">
+<title>
+Larg d&#39;impuls d&#39;inj (largeur d&#39;impulsion d&#39;injection de carburant, ms): 
+</title>
+<ptxt>
+Ce paramètre indique la largeur d&#39;impulsion d&#39;entraînement d&#39;injecteur (en temps) pendant laquelle la soupape d&#39;injecteur reste ouverte tel que commandé par l&#39;ECM. (Pour l&#39;injection de carburant multipoints, le temps d&#39;entraînement de l&#39;injecteur correspond à celui du cylindre n&#176; 1.) 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007007">
+<title>
+Avance à l&#39;allumage (avance à l&#39;allumage pour le cylindre n&#176; 1,&#176; BTDC): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;avance à l&#39;allumage du cylindre n&#176; 1 commandée par l&#39;ECM. L&#39;avance à l&#39;allumage réelle doit être vérifiée à l&#39;aide d&#39;une lampe stroboscopique. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007008">
+<title>
+Charge calculée (valeur de charge calculée,%): 
+</title>
+<ptxt>
+Ce paramètre indique la charge calculée du moteur en pourcent. Cette charge est calculée sur la base des signaux d&#39;entrée vers l&#39;ECM depuis divers capteurs du moteur. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007009">
+<title>
+Régime moteur (tr/min): 
+</title>
+<ptxt>
+Le régime moteur est calculé à partir d&#39;impulsions de référence transmises par le capteur de position d&#39;arbre à cames. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007010">
+<title>
+Ralenti désiré (régime de ralenti désiré, tr/min): 
+</title>
+<ptxt>
+Le régime de ralenti désiré est un paramètre interne de l&#39;ECM qui indique le régime de ralenti requis par l&#39;ECM. Si le moteur ne tourne pas, cette valeur n&#39;est pas activée. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007011">
+<title>
+MAF (taux de débit d&#39;air massique, g/sec., lb/min): 
+</title>
+<ptxt>
+Il représente la masse d&#39;air totale entrant par le collecteur d&#39;admission mesurée par le capteur MAF. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007012">
+<title>
+Vitesse du véhicule (km/h, mph): 
+</title>
+<ptxt>
+La vitesse du véhicule est calculée sur la base des signaux d&#39;impulsion des capteurs de vitesse de roue. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007013">
+<title>
+MAP (pression absolue au collecteur, kPa, mmHg, inHg, psi., dans de l&#39;H2O): 
+</title>
+<ptxt>
+Ce paramètre indique la pression du collecteur calculée sur la base du signal de capteur MAP. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007014">
+<title>
+ECT (température de liquide de refroidissement du moteur, &#176;C, &#176;F): 
+</title>
+<ptxt>
+Elle est détectée par le capteur de température du liquide de refroidissement du moteur. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007015">
+<title>
+Température d&#39;air d&#39;admission. ( &#176;C, &#176;F): 
+</title>
+<ptxt>
+Elle est détectée par le capteur de température d&#39;air d&#39;admission. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007016">
+<title>
+Pression Baro (pression barométrique, kPa, mmHg, inHg, psi., dans de l&#39;H2O): 
+</title>
+<ptxt>
+Ce paramètre représente une mesure de la pression d&#39;air barométrique et est utilisé pour la correction d&#39;altitude du taux d&#39;injection de carburant. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007017">
+<title>
+Cycle opér purg cuve EVAP (cycle opérationnel de purge de collecteur EVAP,%): 
+</title>
+<ptxt>
+Ce paramètre indique le temps d&#39;activation de la soupape (ouverte) dans un cycle défini de la soupape de purge de cartouche EVAP qui commande le volume de purge EVAP. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007018">
+<title>
+Ecart VVT B1 IN (différence de distribution de soupape variable entre position cible et actuelle (côté admission),&#176;): 
+</title>
+<ptxt>
+Ce paramètre indique la différence entre la position d&#39;arbre à cames cible (côté admission) et la position d&#39;arbre à cames actuelle (côté admission). 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007019">
+<title>
+Ecart VVT B1 EX (différence de distribution de soupape variable entre position cible et actuelle (côté échappement),&#176;): 
+</title>
+<ptxt>
+Ce paramètre indique la différence entre la position d&#39;arbre à cames cible (côté échappement) et la position d&#39;arbre à cames actuelle (côté échappement). 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007020">
+<title>
+Ouvert Papillon IAC (ouverture de papillon de commande d&#39;air de ralenti,%): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;ouverture du papillon de la commande d&#39;air de ralenti en% (100% indique le flux d&#39;air de ralenti maximum). 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007021">
+<title>
+Tension Capteur TP1 (tension de sortie de capteur TP (principal), V): 
+</title>
+<ptxt>
+Les données du capteur TP (principal) fournissent sous forme de tension des informations destinées à définir l&#39;angle d&#39;ouverture du papillon. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007022">
+<title>
+Tension Capteur TP2 (tension de sortie de capteur TP (secondaire), V): 
+</title>
+<ptxt>
+Les données du capteur TP (secondaire) fournissent sous forme de tension des informations destinées à définir l&#39;angle d&#39;ouverture du papillon. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007023">
+<title>
+Tension Capt APP 1 (tension de sortie de capteur APP (principal), V): 
+</title>
+<ptxt>
+Les données du capteur APP (principal) fournissent des informations de position de la pédale d&#39;accélérateur sous forme de tension. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007024">
+<title>
+Tension Capt APP 2 (tension de sortie de capteur APP (secondaire), V): 
+</title>
+<ptxt>
+Les données du capteur APP (secondaire) fournissent des informations de position de la pédale d&#39;accélérateur sous forme de tension. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007025">
+<title>
+Position Accél (position absolue de pédale d&#39;accélérateur,%): 
+</title>
+<ptxt>
+Ce paramètre indique la position de pédale d&#39;accélération calculée en pourcent sur la base des entrées provenant du capteur de position de la pédale d&#39;accélérateur. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007026">
+<title>
+Position Papillon (position absolue de papillon,%): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;ouverture de papillon calculée en pourcent sur la base des entrées provenant du capteur de position de papillon. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007027">
+<title>
+Posit Papil Cible (position de papillon cible,%): 
+</title>
+<ptxt>
+La position cible du papillon est un paramètre interne de l&#39;ECM qui indique la position du papillon demandée par l&#39;ECM. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007028">
+<title>
+O2S B1 S2 (HO2S, V): 
+</title>
+<ptxt>
+Indique la tension de sortie du capteur HO2S situé sur le collecteur d&#39;échappement (post-TWC). Il est utilisé pour détecter toute détérioration du catalyseur. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007029">
+<title>
+Air/Carb B1 S1 Cour (courant de sortie de capteur A/F, mA): 
+</title>
+<ptxt>
+Ce paramètre indique le courant de sortie du capteur A/F installé sur le collecteur d&#39;échappement (pré-TWC). 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007030">
+<title>
+Tension de batterie (V): 
+</title>
+<ptxt>
+Ce paramètre indique la valeur de tension de la batterie transmise par le relais principal à l&#39;ECM. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007031">
+<title>
+Niveau résrvoir carb (%): 
+</title>
+<ptxt>
+Ce paramètre indique le niveau approximatif de carburant dans le réservoir. Les données de niveau de carburant sont fournies en pourcent de 0 à 100%. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007032">
+<title>
+Pression A/C (pression absolue de réfrigérant A/C, kPa): 
+</title>
+<ptxt>
+Ce paramètre indique la pression absolue de réfrigérant A/C détectée par le capteur de pression de réfrigérant A/C. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007033">
+<title>
+Service Comm Génér (%): 
+</title>
+<ptxt>
+Ce paramètre indique le taux de service de commande de générateur auquel l&#39;ECM contrôle la sortie du générateur. 
+</ptxt>
+<ptxt>
+100%: aucune limitation de fonctionnement du générateur. 
+</ptxt>
+<ptxt>
+0%: limitation maximum de fonctionnement du générateur. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007034">
+<title>
+Service Réel Générateur (%): 
+</title>
+<ptxt>
+Ce paramètre indique le taux de fonctionnement (état de sortie) du générateur sur la base du taux de service de la bobine d&#39;induction. 
+</ptxt>
+<ptxt>
+100%: fonctionnement maximum. 
+</ptxt>
+<ptxt>
+0%: fonctionnement minimum. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007035">
+<title>
+Courant de batterie (A): 
+</title>
+<ptxt>
+Ce paramètre indique la valeur de la charge électrique (consommation de courant) détectée par le capteur de courant de charge électrique. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007037">
+<title>
+Ventilateur de radiateur (relais de commande de ventilateur de refroidissement de radiateur, Bas / Haut / Eteint): 
+</title>
+<ptxt>
+Faible: La commande ON est envoyée au relais de ventilateur de refroidissement de radiateur n&#176; 1. 
+</ptxt>
+<ptxt>
+Elevé(e): La commande ON est envoyée aux relais de ventilateur de refroidissement de radiateur n&#176; 2 et n&#176; 3. 
+</ptxt>
+<ptxt>
+Off: Aucune commande n&#39;est envoyée. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007038">
+<title>
+Relais Comp A/C (relais de compresseur A/C, ON/OFF): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;état du relais de compresseur A/C. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007039">
+<title>
+Pompe à carburant (ON/OFF): 
+</title>
+<ptxt>
+ON s&#39;affiche lorsque l&#39;ECM active la pompe à carburant via le contacteur du relais de pompe à carburant. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007040">
+<title>
+Contacteur Démarrage (contacteur de démarrage, ON / OFF): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;état de sortie du relais du moteur de démarrage. 
+</ptxt>
+<ptxt>
+ON: Le relais du moteur de démarrage est en position ON. 
+</ptxt>
+<ptxt>
+OFF: Le relais du moteur de démarrage est en position OFF. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007041">
+<title>
+Contacteur A/C (ON/OFF): 
+</title>
+<ptxt>
+ON: La commande de fonctionnement A/C est émise par l&#39;ECM vers l&#39;HVAC. 
+</ptxt>
+<ptxt>
+OFF: Absence de commande de fonctionnement A/C. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007042">
+<title>
+Ventilateur soufflante (ON/OFF): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;état du contacteur du sélecteur de vitesse de soufflante. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007043">
+<title>
+Contacteur de frein (ON / OFF): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;état du contacteur de frein. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007044">
+<title>
+Charge électrique (ON/OFF): 
+</title>
+<ptxt>
+ON: Les signaux ON des feux de route, des feux de position ou du désembueur de lunette arrière sont envoyés. 
+</ptxt>
+<ptxt>
+OFF: Tous les accessoires électriques cités ci-dessus en position OFF. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007046">
+<title>
+Contacteur embray (débrayé / embrayé) (modèle M/T): 
+</title>
+<ptxt>
+Débrayé: Pédale d&#39;embrayage complètement enfoncée. 
+</ptxt>
+<ptxt>
+Embrayé: La pédale d&#39;embrayage est relâchée. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007047">
+<title>
+Cont RES/ACC vit (contacteur &#34;RES / +&#34;, OFF / ON): 
+</title>
+<ptxt>
+ON: Contacteur &#34;RES / +&#34; enfoncé. 
+</ptxt>
+<ptxt>
+OFF: Contacteur &#34;RES / +&#34; relâché. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007048">
+<title>
+Cont SET/COAST vit (contacteur &#34;SET / -&#34;, OFF / ON): 
+</title>
+<ptxt>
+ON: Contacteur &#34;SET / -&#34; enfoncé. 
+</ptxt>
+<ptxt>
+OFF: Contacteur &#34;SET / -&#34; relâché. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007049">
+<title>
+Cont CANCEL régul vit (contacteur &#34;CANCEL&#34;, OFF / ON): 
+</title>
+<ptxt>
+ON: Contacteur &#34;CANCEL&#34; enfoncé. 
+</ptxt>
+<ptxt>
+OFF: Contacteur &#34;CANCEL&#34; relâché. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007050">
+<title>
+Cont ON/OFF régul vit (relâché / enfoncé): 
+</title>
+<ptxt>
+Enfoncé: Contacteur &#34;CRUISE&#34; enfoncé. 
+</ptxt>
+<ptxt>
+Relâché: Contacteur &#34;CRUISE&#34; relâché. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007051">
+<title>
+Coupure de carburant (ON/OFF): 
+</title>
+<ptxt>
+ON: L&#39;injection de carburant est coupée (le signal transmis à l&#39;injecteur est coupé). 
+</ptxt>
+<ptxt>
+OFF: L&#39;injection de carburant n&#39;est pas coupée. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007052">
+<title>
+Pos papil gaz fermé (position de papillon fermé, ON/OFF): 
+</title>
+<ptxt>
+Ce paramètre affiche ON lorsque le papillon est complètement fermé et OFF lorsqu&#39;il n&#39;est pas complètement fermé. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007053">
+<title>
+O2S B1 S2 ACT (HO2S, actif / inactif): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;état d&#39;activation de l&#39;HO2S. 
+</ptxt>
+<ptxt>
+ACTIF: Le capteur est activé. 
+</ptxt>
+<ptxt>
+INACTIF: Le capteur est en cours de chauffe ou n&#39;est pas activé. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104007054">
+<title>
+Air/Carb B1 S1 Act (capteur A/F, actif / inactif): 
+</title>
+<ptxt>
+Ce paramètre indique l&#39;état d&#39;activation du capteur A/F. 
+</ptxt>
+<ptxt>
+ACTIF: Le capteur est activé. 
+</ptxt>
+<ptxt>
+INACTIF: Le capteur est en cours de chauffe ou n&#39;est pas activé. 
+</ptxt>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

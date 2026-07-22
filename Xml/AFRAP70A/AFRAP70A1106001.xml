@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "6">
+<servinfo servinfosgmlid = "AFRAP70A1106001" svcinfotypenbr = "08" svcinfoqualnbr = "03" page = "2" supplyoff = "1" modify = "0">
+<title>
+Vérification du régime de ralenti et de l&#39;ouverture du papillon IAC 
+</title>
+<ptxt>
+Avant de procéder à la vérification du régime de ralenti, vérifier les points suivants. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Les câbles conducteurs et les durites des systèmes d&#39;injection de carburant électronique et de commande du moteur et des émissions sont correctement branchés. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le jeu des soupapes a été vérifié conformément au programme d&#39;entretien. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+L&#39;avance à l&#39;allumage est conforme aux spécifications. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tous les systèmes électriques (essuie-glaces, chauffage, feux, A/C, etc.) sont coupés. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le filtre à air est correctement posé et en bon état. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il n&#39;y a pas d&#39;aspiration d&#39;air anormale dans le système d&#39;admission d&#39;air. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il n&#39;y a pas d&#39;obstruction dans la soupape PCV ou ses durites. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il n&#39;y a pas de DTC dans l&#39;ECM. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Les éléments suivants sont désactivés à mesure qu&#39;ils sont vérifiés en utilisant le mode &#34;Liste de données&#34; de l&#39;outil de balayage. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Relais Comp A/C 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Contacteur A/C 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Contacteur de frein 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Charge électrique 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ventil de soufflante 
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Après vérification de tous ces éléments, vérifier le régime de ralenti et l&#39;ouverture du papillon IAC comme suit. 
+</ptxt>
+<attention3>
+<ptxt>
+Avant de faire démarrer le moteur, placer le levier de changement de vitesses au &#34;point mort&#34;, serrer le frein de stationnement et bloquer les roues motrices. 
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Avec l&#39;allumage sur &#34;OFF&#34;, raccorder l&#39;outil de balayage SUZUKI au DLC (1). 
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L1A002">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+Dispositif de balayage SUZUKI (SUZUKI-SDT)
+</s-number>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I9P60A121001.jpg" width = "88.000mm" height = "67.502mm" ver = "02" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Faire monter le moteur en température jusqu&#39;à sa température normale de fonctionnement. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Vérifier le régime de ralenti du moteur et l&#39;&#34;ouverture du papillon IAC&#34; en utilisant le mode &#34;Liste de données&#34; de l&#39;outil de balayage. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Si le résultat de la vérification est hors spécification, vérifier le régime de ralenti moteur en se reportant à la section &#34;Ralenti du moteur inapproprié ou échec du ralenti moteur&#34; du point 
+<intxref refid = "AFRAP70A1104010">Diagnostic des symptômes du moteur</intxref>
+. 
+</ptxt>
+<spec-sdm>
+<sdm-title>
+ Régime de ralenti du moteur 
+</sdm-title>
+<sdm1>
+<sdm-condition>
+ A/C OFF 
+</sdm-condition>
+<sdm-value>
+590 à 690 tr/min (ouverture de papillon IAC: 20 à 50%) 
+</sdm-value>
+</sdm1>
+<sdm1>
+<sdm-condition>
+ A/C en position ON 
+</sdm-condition>
+<sdm-value>
+700 à 900 tr/min (ouverture de papillon IAC: 50 à 80%) 
+</sdm-value>
+</sdm1>
+</spec-sdm>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

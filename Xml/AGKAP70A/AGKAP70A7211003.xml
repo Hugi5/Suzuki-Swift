@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGKAP70A7211003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Περιγρα&#248;ή Λειτουργίας A/C στον ECM
+</title>
+<ptxt>
+Όταν ο εγκέ&#248;αλος ECM λάβει το σήμα ON του διακόπτη A/C που στέλνει η μονάδα ελέγχου HVAC, ελέγχει το ρελέ του συμπιεστή A/C και το ρελέ του ανεμιστήρα ψύξης ψυγείου (συμπυκνωτή) όπως περιγρά&#248;εται στον παρακάτω πίνακα.
+</ptxt>
+<ptxt>
+Το σήμα ON του διακόπτη A/C αποστέλλεται από τη μονάδα ελέγχου HVAC στο BCM. Στη συνέχεια, μεταδίδεται στον εγκέ&#248;αλο ECM ως σήμα αιτήματος A/C μέσω CAN. Για το σύστημα επικοινωνίας CAN, ανατρέξτε στο 
+<intxref refid = "AGKAP70AA801001">Περιγρα&#248;ή Συστήματος Επικοινωνίας</intxref>
+.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.043in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.043in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.043in"/>
+<colspec colnum = "4" colname = "4" colwidth = "4.076in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αντικείμενο ελέγχου
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αισθητήρας εισόδου (ή σήμα)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιγρα&#248;ή
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος ρελέ συμπιεστή A/C
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος θερμοκρασίας εξατμιστή
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αισθητήρας θερμοκρασίας εξατμιστή
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ο εγκέ&#248;αλος ECM ελέγχει τον συμπιεστή κλιματισμού ενεργοποιώντας/απενεργοποιώντας το ρελέ συμπιεστή κλιματισμού σύμ&#248;ωνα με το σήμα αιτήματος από το BCM. Το BCM αποστέλλει το σήμα βάσει του σήματος από τον αισθητήρα θερμοκρασίας του εξατμιστή για απο&#248;υγή παγώματος του εξατμιστή.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος όταν οι στρο&#248;ές του κινητήρα είναι χαμηλές
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αισθητήρας CΚP (στρο&#248;ές κινητήρα)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά το συμπιεστή A/C θέτοντας το ρελέ του συμπιεστή A/C σε κατάσταση OFF σύμ&#248;ωνα με το σήμα από τον αισθητήρα CKP (στρο&#248;ές κινητήρα) ώστε να αποτραπεί το σβήσιμο του κινητήρα όταν οι στρο&#248;ές του κινητήρα είναι χαμηλές.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος όταν οι στρο&#248;ές του κινητήρα είναι υψηλές
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά το συμπιεστή A/C θέτοντας το ρελέ του συμπιεστή A/C σε κατάσταση OFF σύμ&#248;ωνα με το σήμα από τον αισθητήρα CKP (στρο&#248;ές κινητήρα) ώστε να αποτραπεί η λειτουργία του συμπιεστή A/C με υπερβολικές στρο&#248;ές όταν οι στρο&#248;ές του κινητήρα είναι υψηλές.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος στην εκκίνηση του κινητήρα
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά προσωρινά το συμπιεστή A/C θέτοντας το ρελέ του συμπιεστή A/C σε κατάσταση OFF σύμ&#248;ωνα με το σήμα από τον αισθητήρα CKP (στρο&#248;ές κινητήρα) και άλλα, ώστε να εξασ&#248;αλιστούν οι σταθερές στρο&#248;ές ρελαντί αμέσως μετά την εκκίνηση του κινητήρα.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος σε μη κανονική πίεση ψυκτικού
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αισθητήρας πίεσης ψυκτικού υγρού του κλιματισμού A/C
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά τον συμπιεστή A/C θέτοντας σε κατάσταση OFF του ρελέ συμπιεστή A/C σύμ&#248;ωνα με το σήμα από τον αισθητήρα πίεσης ψυκτικού A/C για να προστατευθεί το σύστημα όταν η πίεση του ψυκτικού δεν είναι η κανονική.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά το συμπιεστή A/C θέτοντας το ρελέ συμπιεστή A/C σε κατάσταση OFF όταν δυσλειτουργεί ο αισθητήρας πίεσης ψυκτικού A/C.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος κατά την επιτάχυνση
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αισθητήρας θέσης πεντάλ γκαζιού και αισθητήρας ταχύτητας τροχών
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά προσωρινά τον συμπιεστή κλιματισμού θέτοντας το ρελέ συμπιεστή κλιματισμού σε κατάσταση OFF σύμ&#248;ωνα με το σήμα από τον αισθητήρα θέσης πεντάλ γκαζιού ώστε να εξασ&#248;αλιστεί η επιτάχυνση όταν το πεντάλ γκαζιού είναι πλήρως πατημένο ανεξάρτητα από την ταχύτητα του αυτοκινήτου.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά προσωρινά τον συμπιεστή κλιματισμού θέτοντας το ρελέ συμπιεστή κλιματισμού σε κατάσταση OFF σύμ&#248;ωνα με το σήμα από τον αισθητήρα θέσης πεταλούδας γκαζιού ώστε να εξασ&#248;αλιστεί η επιτάχυνση όταν το πεντάλ γκαζιού είναι πατημένο περισσότερο από τις προδιαγρα&#248;ές όταν η ταχύτητα του αυτοκινήτου είναι χαμηλή.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος σε υψηλή θερμοκρασία ψυκτικού υγρού κινητήρα
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αισθητήρας ECT
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά το συμπιεστή A/C θέτοντας το ρελέ του συμπιεστή A/C σε κατάσταση OFF σύμ&#248;ωνα με το σήμα από τον αισθητήρα ECT ώστε να αποτραπεί η υπερθέρμανση όταν η θερμοκρασία του ψυκτικού υγρού του κινητήρα είναι υψηλότερη από το καθορισμένο επίπεδο.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ο εγκέ&#248;αλος ECM σταματά το συμπιεστή A/C θέτοντας το ρελέ συμπιεστή A/C σε κατάσταση OFF όταν δυσλειτουργεί ο αισθητήρας ECT.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Έλεγχος ρελέ του ανεμιστήρα ψύξης του ψυγείου (συμπυκνωτή)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Αισθητήρας πίεσης ψυκτικού A/C και αισθητήρας ταχύτητας τροχών
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ο εγκέ&#248;αλος ECM ελέγχει τον ανεμιστήρα ψύξης του ψυγείου στη λειτουργία χαμηλών ή υψηλών στρο&#248;ών υπό τις παρακάτω συνθήκες θέτοντας τα ρελέ No. 1, No. 2 και No. 3 του ανεμιστήρα ψύξης του ψυγείου σε κατάσταση ON/OFF σύμ&#248;ωνα με τα σήματα από τον αισθητήρα πίεσης ψυκτικού A/C και τον αισθητήρα ταχύτητας τροχών όταν το ρελέ συμπιεστή A/C είναι σε κατάσταση ON.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Λειτουργία χαμηλών στρο&#248;ών (Ρελέ Νο. 1 ανεμιστήρα ψύξης ψυγείου σε κατάσταση ON)
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Η ταχύτητα του αυτοκινήτου είναι μικρότερη της καθορισμένης περιοχής
+</ptxt>
+</item>
+<item>
+<ptxt>
+Η ταχύτητα του αυτοκινήτου είναι μεγαλύτερη της καθορισμένης περιοχής και η πίεση του ψυκτικού είναι μεγαλύτερη της καθορισμένης περιοχής
+</ptxt>
+</item>
+<item>
+<ptxt>
+Δεν ανιχνεύεται δυσλειτουργία του αισθητήρα ταχύτητας τροχών
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Λειτουργία υψηλών στρο&#248;ών (Ρελέ ανεμιστήρα ψύξης ψυγείου Νο. 1, Νο. 2 και Νο. 3 σε κατάσταση ΟΝ)
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Πίεση ψυκτικού μεγαλύτερη της καθορισμένης περιοχής
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

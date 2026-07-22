@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A7224015" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1503/B1562
+</title>
+<servinfosub id = "AHRAP70A7224015001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.657in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.558in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1503: Kvar na senzoru temperature isparivača i/ili njegovom krugu
+</emph>
+</ptxt>
+<ptxt>
+Upravljački modul HVAC sustava kontinuirano putem CAN komunikacijskog voda prima netočne podatke o senzoru temperature isparivača.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Krug senzora temperature isparivača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Senzor temperature isparivača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Upravljački modul HVAC sustava
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1562: Kvar na senzoru temperature zraka u okolini i/ili u njegovom krugu
+</emph>
+</ptxt>
+<ptxt>
+HVAC upravljački modul kontinuirano putem CAN komunikacijskog voda prima netočne podatke senzora temperature zraka u okolini s BCM-a.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Krug senzora temperature zraka u okolini
+</ptxt>
+</item>
+<item>
+<ptxt>
+Senzor temperature zraka u okolini
+</ptxt>
+</item>
+<item>
+<ptxt>
+Upravljački modul HVAC sustava
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70A7224015002">
+<title>
+Postupak potvrde DTC-a
+</title>
+<attention3>
+<ptxt>
+Provjerite da su zadovoljeni sljedeći uvjeti prilikom primjene ovog postupka.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+U0073 i/ili U0140 nisu detektirani
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Pokrenite motor i uključite sustav klima uređaja.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHRAP70A7224015003">
+<title>
+Rješavanje problema DTC-a
+</title>
+<diag type = "test" id = "AHRAP70A7224015004">
+<testgroup id = "AHRAP70A7224015005">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provjerite sljedeći DTC BCM-a.
+</ptxt>
+<ptxt>
+B1503: B1145 i/ili B1146
+</ptxt>
+<ptxt>
+B1562: B1141 i/ili B1142
+</ptxt>
+</test1>
+<question>
+Je li detektiran jedan ili više DTC-ova?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na odgovarajuće rješavanje problema za dotični DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul HVAC sustava i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

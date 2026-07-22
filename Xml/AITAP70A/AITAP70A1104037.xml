@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104037" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0480 / P0692
+</title>
+<servinfosub id = "AITAP70A1104037001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.855in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.349in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0480: Circuito di controllo ventola 1
+</emph>
+</ptxt>
+<ptxt>
+Il circuito di comando relè n. 1 ventola di raffreddamento radiatore è in corto a massa o aperto.
+</ptxt>
+<ptxt>
+(Logica di rilevamento a 3 D/C senza accensione della spia MIL)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Relè n. 1 ventola di raffreddamento radiatore e/o il relativo circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0692: Tensione circuito di controllo ventola 1 alta
+</emph>
+</ptxt>
+<ptxt>
+Il circuito di comando del relè n. 1 ventola di raffreddamento radiatore è in corto verso l&#39;alimentazione.
+</ptxt>
+<ptxt>
+(Logica di rilevamento a 3 D/C senza accensione della spia MIL)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A1104037002">
+<title>
+Schema del circuito
+</title>
+<figure>
+<graphic graphicname = "I9P60A111021.swf" width = "183.000mm" height = "111.584mm" ver = "02" gw = "440" gh = "300"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.300in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.055in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.317in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.142in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.317in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.268in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Connettore ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di comando relè n. 2 e n. 3 ventola di raffreddamento radiatore
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relè n. 2 ventola di raffreddamento radiatore
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione relè n. 1 ventola di raffreddamento radiatore (lato bobina)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione relè n. 1 ventola di raffreddamento radiatore (lato interruttore)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relè n. 3 ventola di raffreddamento radiatore
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione relè n. 2 ventola di raffreddamento radiatore (lato bobina)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione relè n. 2 ventola di raffreddamento radiatore (lato interruttore)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Motorino ventola di raffreddamento radiatore
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione relè n. 3 ventola di raffreddamento radiatore (lato bobina)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione relè n. 3 ventola di raffreddamento radiatore (lato interruttore)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fusibile &#34;RDTR&#34;
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di comando relè n. 1 ventola di raffreddamento radiatore
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relè n. 1 ventola di raffreddamento radiatore
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AITAP70A1104037003">
+<title>
+Procedura di conferma DTC
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Eseguire innanzitutto la ricerca guasti dei DTC inattesi, rilevati in precedenza nella &#34;Procedura di conferma DTC&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Verificare che la &#34;Procedura di conferma DTC&#34; venga effettuata in presenza delle condizioni indicate di seguito.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Tensione batteria &#62; 8,5 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+La tensione della batteria è inferiore a 18 V quando la velocità del veicolo è superiore a 20 km/h (12 miglia/h).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Non viene rilevato il DTC P0563.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Portare il motore alla temperatura di esercizio.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Mantenere il motore al regime di minimo finché la temperatura del liquido di raffreddamento motore raggiunge almeno 97 &#176;C (206,6 &#176;F).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A1104037004">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A1104037005">
+<testgroup id = "AITAP70A1104037006">
+<question>
+È stata eseguita la procedura &#34;Verifica del sistema di controllo del motore e delle emissioni&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104001">Verifica del sistema di controllo del motore e delle emissioni</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104037007">
+<title>
+Controllo circuito di alimentazione relè n. 1 ventola di raffreddamento radiatore (lato bobina)
+</title>
+<test1>
+<ptxt>
+Con accensione in posizione &#34;OFF&#34;, rimuovere il relè ventola di raffreddamento radiatore.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare i collegamenti al connettore del relè n. 1 ventola di raffreddamento radiatore.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono OK, portare l&#39;accensione in posizione &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare che la tensione tra &#34;A1&#34; e la massa corrisponda alla tensione di batteria.
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire il cablaggio difettoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104037008">
+<title>
+Controllo relè n. 1 ventola di raffreddamento radiatore
+</title>
+<test1>
+<ptxt>
+Controllare il relè n. 1 ventola di raffreddamento radiatore. 
+<intxreftitleoff1 refid = "AITAP70A1606011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire il relè n. 1 ventola di raffreddamento radiatore.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104037009">
+<title>
+Controllo circuito di comando relè ventola di raffreddamento radiatore
+</title>
+<test1>
+<ptxt>
+Con accensione su &#34;OFF&#34;, scollegare i connettori &#34;C01&#34; e &#34;E01&#34; dalla ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare l&#39;integrità dei collegamenti dei terminali ai connettori &#34;C01&#34; e &#34;E01&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono in ordine, controllare i seguenti punti:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+resistenza del circuito &#34;B1&#34;: meno di 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il circuito &#34;B1&#34; e la massa: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il terminale del circuito &#34;B1&#34; e l&#39;altro terminale del connettore relè n. 1 ventola di raffreddamento radiatore. infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+tensione del circuito &#34;B1&#34;: 0 – 1 V (con accensione su &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la ECM e ripetere il controllo della presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire il cablaggio difettoso.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

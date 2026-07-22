@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENCP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "1">
+<title>
+Communication System Description
+</title>
+<servinfosub id = "AENCP70AA801001001">
+<title>
+System Description
+</title>
+<ptxt>
+Communication for each control module and device is established through continuous input / output of ON/OFF digital signals with various data items being managed in parallel. Transmitting / receiving these data is called as serial communication interface.
+</ptxt>
+<ptxt>
+Types of serial communication interface such as UART, CAN and LIN protocols (communication standards) have been adopted for in-car communication system.
+</ptxt>
+<ptxt>
+UART is used for communication from keyless start control module to steering lock unit.
+</ptxt>
+<ptxt>
+LIN is used for communication from HVAC control module to auto A/C panel.
+</ptxt>
+<ptxt>
+In addition, keyless start control module (keyless push start model), BCM, ECM, TCM (CVT model), combination meter, P/S control module, HVAC control module (auto A/C model), ABS control module and SDM are transmitted / received data through a twist pair of two communication lines (CAN High and CAN Low) connected through CAN communication. Data obtained by one control module can be shared with the other control module communicated through CAN.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENCP70AA801001002">
+<title>
+CAN Communication Signal
+</title>
+<ptxt>
+CAN communication system is a serial communication system for transmitting multiple data items (values from sensors, control data and control signals) as ON-OFF digital signals through communication lines. This system uses two lines (CAN High and CAN Low) for the communication circuit so as to maintain high reliability even when used for high-speed serial communication. 
+</ptxt>
+<ptxt>
+Serial communication is established as shown below with 2.5 V as the reference level for both CAN High signal (1) and CAN Low signal (2). The range of CAN High signal is from 2.5 V to about 3.5 V and that of CAN Low signal is from 2.5 V to about 1.5 V. When both are at 2.5 V, signal is judged as OFF. When CAN High signal is 3.5 V and CAN Low signal is 1.5 V (that is, when the difference between High voltage and Low voltage is more than about 2 V), signal is judged as ON. For this reason, a feature of CAN communication signal is that the signal waveform between CAN High and CAN Low signals is symmetrical with respect to 2.5 V level. CAN communication fails when the symmetrical signal form collapses.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002.swf" width = "183.000mm" height = "47.725mm" ver = "01" gw = "338" gh = "119"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

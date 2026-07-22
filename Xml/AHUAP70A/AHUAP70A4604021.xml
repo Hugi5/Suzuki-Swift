@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A4604021" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1028
+</title>
+<servinfosub id = "AHUAP70A4604021001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.135in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.056in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1028: Főhengernyomás-érzékelő áramkörének feszültsége
+</emph>
+</ptxt>
+<ptxt>
+A főfékhengernyomás-érzékelő jele kívül esik az előírt meghatározott tartományon.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fékrendszer
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604021002">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A4604021003">
+<testgroup id = "AHUAP70A4604021004">
+<question>
+Végrehajtásra került az „ESP<sup>®</sup> rendszer ellenőrzése”?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604021005">
+<title>
+Fékrendszer ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze az alábbiakat.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fékfolyadék szivárgás vagy levegő a hidraulikus fékrendszerben.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Túl nagy a fékbetét és féktárcsa közötti hézag. 
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+A vizsgálatok eredményei megfelelőek?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Javítsa meg, cserélje ki vagy állítsa be a fékrendszert.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

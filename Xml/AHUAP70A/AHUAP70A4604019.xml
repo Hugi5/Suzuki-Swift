@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A4604019" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1024
+</title>
+<servinfosub id = "AHUAP70A4604019001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.217in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.972in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1024: Kormányszög-érzékelő áramkörének teljesítménye
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A CPU a kormányszög-érzékelőben belső hibát észlel.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A kormányszög-érzékelő jele az előírt tartományon kívül van.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A kormányszög-érzékelő jele nem változik, pedig a jármű jobbra vagy balra fordul.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kormányszög-érzékelő
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604019002">
+<title>
+DTC hibakeresés
+</title>
+<attention2>
+<ptxt>
+A DTC C1024 és C1075 számú hibakódok együttes észlelése a kormányszög-érzékelő belső hibáját jelenti. Cserélje ki a kormányszög-érzékelőt. 
+<intxreftitleoff1 refid = "AHUAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</attention2>
+<diag type = "test" id = "AHUAP70A4604019003">
+<testgroup id = "AHUAP70A4604019004">
+<question>
+Végrehajtásra került az „ESP<sup>®</sup> rendszer ellenőrzése”?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604019005">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Hajtsa végre a következőket: 
+<intxref refid = "AHUAP70A4604005">DTC ellenőrzése</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Észlelhető U0073 és/vagy U0126 hibakód?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a vonatkozó DTC-hibaelhárítással.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604019006">
+<question>
+Észlelhető együtt a DTC C1024 és C1075 hibakód?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki a kormányszög-érzékelőt. 
+<intxreftitleoff1 refid = "AHUAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604019007">
+<title>
+Kormányszög-érzékelő ellenőrzése járműbe szerelt állapotban
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a kormányszög-érzékelőt. 
+<intxreftitleoff1 refid = "AHUAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a kormányszög-érzékelőt. 
+<intxreftitleoff1 refid = "AHUAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

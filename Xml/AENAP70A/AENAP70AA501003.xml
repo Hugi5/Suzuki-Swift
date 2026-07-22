@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENAP70AA501003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description of Keyless Start System Door Lock Function
+</title>
+<ptxt>
+Door lock function consists of 3 types of lock / unlock methods: using door request switch, using keyless entry system, and using key cylinder operation.
+</ptxt>
+<servinfosub id = "AENAP70AA501003001">
+<title>
+Lock / Unlock using Door Request Switch
+</title>
+<ptxt>
+All of the doors are locked and unlocked with any door request switch installed on the door outside handles of the front doors (driver and passenger) and the rear end door as follows.
+</ptxt>
+<s1>
+<ptxt>
+Pushing the button of the request switch, the lock or unlock request signal is sent to the keyless start control module.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Keyless start control module (1) activates mid inside antenna (2), rear inside antenna (3), rear outside antenna (4) to transmit request signal within the vehicle compartment and luggage compartment.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+When keyless start control module determines that remote controller (5) is not in vehicle compartment and luggage compartment, it activates the outside antenna of door at which door request switch was pushed and sends request signal to remote controller.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+The remote controller that receives request signal sends ID code to keyless start control module via external antenna which acts as keyless entry receiver (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Keyless start control module compares ID code sent from remote controller with ID code registered in keyless start control module. If ID codes match, keyless start control module outputs door lock / unlock request signal (depending on door lock switch state) to BCM (7) through CAN communication.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+BCM activates door lock actuator.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50001.swf" width = "183.000mm" height = "96.389mm" ver = "02" gw = "414" gh = "257"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.197in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.683in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.571in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signal flow “1” to “6” linked with Step 1) to 6)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Passenger side outside antenna
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Rear end door request switch
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Driver door request switch
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Driver side outside antenna
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Passenger door request switch
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Each door lock actuator
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "AENAP70AA501003002">
+<title>
+Operation area
+</title>
+<ptxt>
+Distance between remote controller and each door antenna should be within approximately 80 cm (31.5 in, 2.6 ft) (1), to ensure operation of door lock function. Also, locking and unlocking are possible only when remote controller is within operation area where door request switch has been pushed. (For example: When driver door request switch has been pushed, remote controller should be within operation area of driver outside antenna.)
+</ptxt>
+<attention3>
+<ptxt>
+Door lock or unlock may not function under any of the following conditions:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+If remote controller is placed too close to vehicle, near to the ground, or too high up.
+</ptxt>
+</item>
+<item>
+<ptxt>
+If the same type of vehicles equipped with keyless start system are placed next to each other, and both keyless start systems are operated at the same time.
+</ptxt>
+</item>
+<item>
+<ptxt>
+If the registered remote controller and the unregistered one are carried at the same time.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50002.swf" width = "88.000mm" height = "60.211mm" ver = "01" gw = "234" gh = "154"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.704in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.489in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.253in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Passenger side outside antenna
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Driver side outside antenna
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Rear outside antenna
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+<topic id = "AENAP70AA501003003">
+<title>
+Safety function
+</title>
+<ptxt>
+Doors cannot be locked with door request switch when any of the following conditions is present.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ignition mode is “ACC” or “ON”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+One of the doors is open.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Keyless start control module determines that remote controller is in vehicle compartment.
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "AENAP70AA501003004">
+<title>
+Remote controller lock-in vehicle prevention function
+</title>
+<ptxt>
+This function prevents driver from locking doors and leaving vehicle with remote controller left behind in vehicle compartment.
+</ptxt>
+<ptxt>
+When mid inside antenna (1) or rear inside antenna (2) detects remote controller (i.e., remote controller is in the vehicle compartment) under the following condition, keyless start control module outputs the door unlock signal to BCM through CAN communication.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Doors are locked with key cylinder (emergency key) or door lock knob with one of the doors open.
+</ptxt>
+</item>
+</list1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Remote controller lock-in vehicle prevention function may not operate when remote controller is on instrument panel, in one of the storage boxes, around the foot area of driver side or passenger side, or in door pocket, etc.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When keyless start system function is off, remote controller lock-in vehicle prevention function does not operate.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50003.swf" width = "88.000mm" height = "50.137mm" ver = "01" gw = "200" gh = "126"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.786in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.851in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Mid inside antenna detection area
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Rear inside antenna detection area
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "AENAP70AA501003005">
+<title>
+Lock / Unlock with Keyless Entry System
+</title>
+<ptxt>
+When all of the following conditions are met and the lock or unlock signal from remote controller is inputted into keyless start control module via keyless entry receiver, keyless start control module outputs door lock / unlock request signal (depending on the door lock switch state) to BCM through CAN communication. When BCM receives signal, it activates each door lock actuator.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ignition mode is “OFF”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+All doors are closed. (When locking doors)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AENAP70AA501003006">
+<title>
+Lock / Unlock with Key Cylinder
+</title>
+<ptxt>
+When the lock or unlock signal from key cylinder switch is inputted into keyless start control module by key cylinder operation, keyless start control module outputs door lock / unlock request signal (depending on the door lock switch state) to BCM through CAN communication. When BCM receives signal, it activates each door lock actuator.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70AA501003007">
+<title>
+Timer Lock Function
+</title>
+<ptxt>
+This function automatically locks doors again if doors are unlocked with door request switch or keyless entry system and no door is opened within approximately 30 seconds.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

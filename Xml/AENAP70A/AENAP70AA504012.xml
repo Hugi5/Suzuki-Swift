@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70AA504012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1123
+</title>
+<servinfosub id = "AENAP70AA504012001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.461in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.744in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1123: Backup Power Supply Malfunction
+</emph>
+</ptxt>
+<ptxt>
+Backup power supply circuit voltage from “DOME” fuse is lower than specified value.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+“DOME” fuse
+</ptxt>
+</item>
+<item>
+<ptxt>
+Each system connected via “DOME” fuse
+</ptxt>
+</item>
+<item>
+<ptxt>
+Keyless start control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70AA504012002">
+<title>
+DTC Confirmation Procedure
+</title>
+<s1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70AA504012003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70AA504012004">
+<testgroup id = "AENAP70AA504012005">
+<title>
+Fuse check
+</title>
+<test1>
+<ptxt>
+Confirm that ignition is “OFF”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check “DOME” fuse.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace keyless start control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace “DOME” fuse and go to Step 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70AA504012006">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check DTC. 
+<intxreftitleoff1 refid = "AENAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is DTC B1123 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70AA504012007">
+<title>
+Each system check connected via “DOME” fuse
+</title>
+<test1>
+<ptxt>
+Check each system connected via “DOME” fuse, except keyless start control module.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace “DOME” fuse and replace keyless start control module, and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part and/or wire harness, and then replace “DOME” fuse and recheck DTC.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

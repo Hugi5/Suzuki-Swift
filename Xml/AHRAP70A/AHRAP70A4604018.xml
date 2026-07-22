@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A4604018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1021/C1022/C1025/C1026/C1031/C1032/C1033/C1035/C1036
+</title>
+<servinfosub id = "AHRAP70A4604018001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.823in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.366in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1021/C1025/C1031/C1035: Napon u strujnom krugu senzora brzine prednjeg desnog/prednjeg lijevog/stražnjeg desnog/stražnjeg lijevog kotača
+</emph>
+</ptxt>
+<ptxt>
+Signal senzora brzine kotača nije u okviru određenog raspona.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Senzor brzine kotača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Strujni krug senzora brzine kotača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Enkoder senzora brzine kotača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1022/C1026/C1032/C1036: Rad signala kruga senzora brzine prednjeg desnog/prednjeg lijevog/stražnjeg desnog/stražnjeg lijevog kotača ili enkodera
+</emph>
+</ptxt>
+<ptxt>
+Neprestano se detektira neuobičajen signal senzora brzine kotača.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1033: Odstupanje senzora brzine kotača
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Neprestano se detektira neuobičajeni signal senzora brzine kotača na dva ili više senzora brzine kotača.
+</ptxt>
+</item>
+<item>
+<ptxt>
+ABS kontrola aktivira se dulje od propisanog vremena.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napon napajanja pokretača senzora brzine kotača izvan je propisanog raspona.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<ptxt>
+Kada se vozilo koristi u bilo kojem od sljedećih uvjeta, može se postaviti jedan od ovih DTC-a iako je senzor u dobrom stanju. Ako se sumnja na takvu mogućnost, očistite DTC jednom 
+<intxreftitleoff1 refid = "AHRAP70A4604006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ i provjerite postoji li nepravilnost ili ne, vršenjem probne vožnje, kao što je opisano u 3. koraku 
+<intxref refid = "AHRAP70A4604001">Provjera ESP® sustava</intxref>
+.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vozilo se vozilo sa zategnutom polugom parkirne kočnice.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Došlo je do proklizivanja kotača tijekom vožnje.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kotač(i) su se okretali dok je vozilo bilo podignuto.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+<servinfosub id = "AHRAP70A4604018002">
+<title>
+Shema ožičenja
+</title>
+<figure>
+<graphic graphicname = "IAP70A460008.swf" width = "183.000mm" height = "79.150mm" ver = "03" gw = "372" gh = "208"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.423in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.337in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.228in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.534in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Konektor upravljačkog modula ESP<sup>®</sup>-a (pogled: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug napajanja senzora brzine stražnjeg lijevog kotača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Senzor brzine prednjeg desnog kotača
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug napajanja senzora brzine prednjeg lijevog kotača
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug signala senzora brzine stražnjeg lijevog kotača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Senzor brzine stražnjeg lijevog kotača
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug signala senzora brzine prednjeg lijevog kotača
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+D1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug napajanja senzora brzine stražnjeg desnog kotača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Senzor brzine stražnjeg desnog kotača
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug napajanja senzora brzine prednjeg desnog kotača
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+D2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug signala senzora brzine stražnjeg desnog kotača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Krug signala senzora brzine prednjeg desnog kotača
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Senzor brzine prednjeg lijevog kotača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Pokretač senzora brzine kotača
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHRAP70A4604018003">
+<title>
+Rješavanje problema DTC-a
+</title>
+<topic id = "AHRAP70A4604018004">
+<title>
+Priprema
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Potvrdite da nije detektiran DTC C1057.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Izvedite slijedeću proceduru kontinuirano više od 8 puta.
+</ptxt>
+</item>
+</list1>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Vozite brzinom od preko 20 km/h (12 milja/h) dulje od 1 minute.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Uvjerite se da je kontakt isključen.
+</ptxt>
+</s1>
+</topic>
+<diag type = "test" id = "AHRAP70A4604018005">
+<testgroup id = "AHRAP70A4604018006">
+<question>
+Je li izvršena &#34;Provjera ESP® sustava&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A4604001">Provjera ESP® sustava</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604018007">
+<title>
+Provjera tlaka u gumama
+</title>
+<test1>
+<ptxt>
+Provjerite odgovara li tlak u gumama propisanoj vrijednosti.
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prilagodite tlak u gumama ili zamijenite gumu i ponovno provjerite DTC.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604018008">
+<title>
+Provjera kruga napajanja i kruga signala senzora brzine kotača.
+</title>
+<test1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite “E24” i konektore senzora brzine kotača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spojeva na “E24” i sve konektore senzora brzine kotača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite sljedeće točke.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Otpor krugova “A1”, “A2”, “B1”, “B2”, “C1”, “C2”, “D1” i “D2”: manji od 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između svakog od krugova “A1”, “A2”, “B1”, “B2”, “C1”, “C2”, “D1” i “D2” i uzemljenja: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između terminala kruga &#34;A1&#34; i drugih terminala konektora senzora brzine prednjeg lijevog kotača: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između terminala kruga &#34;B1&#34; i drugih terminala konektora senzora brzine prednjeg desnog kotača: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između terminala kruga &#34;C1&#34; i drugih terminala konektora senzora brzine stražnjeg lijevog kotača: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između terminala kruga &#34;D1&#34; i drugih terminala konektora senzora brzine stražnjeg desnog kotača: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napon krugova “A1”, “A2”, “B1”, “B2”, “C1”, “C2”, “D1” i “D2”: 0 do 1 V (kada je kontakt uključen)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 4. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604018009">
+<title>
+Provjera signala senzora brzine kotača
+</title>
+<test1>
+<ptxt>
+Provjerite izlazni napon i valni oblik odgovarajućeg senzora brzine kotača. 
+<intxreftitleoff1 refid = "AHRAP70A4606006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat u skladu sa specifikacijama?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite sklop hidrauličkog uređaja/upravljačkog modula ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 5. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604018010">
+<title>
+Provjera senzora brzine kotača
+</title>
+<test1>
+<ptxt>
+Provjerite odgovarajući senzor brzine kotača. 
+<intxreftitleoff1 refid = "AHRAP70A4606009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 6. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Očistite, popravite ili zamijenite senzor brzine kotača.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Senzor brzine prednjeg kotača: 
+<intxreftitleoff1 refid = "AHRAP70A4606010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Senzor brzine stražnjeg kotača: 
+<intxreftitleoff1 refid = "AHRAP70A4606011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604018011">
+<title>
+Provjera enkodera senzora brzine kotača
+</title>
+<test1>
+<ptxt>
+Provjerite enkoder odgovarajućeg senzora brzine kotača. 
+<intxreftitleoff1 refid = "AHRAP70A4606012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite sklop hidrauličkog uređaja/upravljačkog modula ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Očistite, popravite ili zamijenite enkoder senzora brzine kotača.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Enkoder senzora brzine prednjeg kotača: 
+<intxreftitleoff1 refid = "AHRAP70A4606010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Enkoder senzora brzine stražnjeg kotača: 
+<intxreftitleoff1 refid = "AHRAP70A4606011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+:
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

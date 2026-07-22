@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Popis regulácie HVAC
+</title>
+<servinfosub id = "ASLAP70A7221002001">
+<title>
+Ovládanie teploty
+</title>
+<ptxt>
+Riadiaca jednotka HVAC počíta cieľovú polohu regulačnej klapky teploty na základe signálov z voliča teploty, snímača teploty vnútorného vzduchu, snímača teploty vonkajšieho vzduchu a snímača slnečného žiarenia, pričom reguluje ovládač regulácie teploty tak, aby bola aktuálna poloha klapky regulácie teploty v súlade s jej cieľovou polohou.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A7221002002">
+<title>
+Ovládanie otáčok ventilátora
+</title>
+<ptxt>
+Riadiaca jednotka HVAC vypočítava cieľové otáčky ventilátora dúchadla na základe signálov z ovládača teploty, snímača teploty vzduchu vo vnútri vozidla, snímača vonkajšej teploty, snímača ECT a snímača slnečného žiarenia, porovnáva ich s údajom o aktuálnych otáčkach ventilátora dúchadla privádzaným z ovládača motora dúchadla tak, aby aktuálne otáčky ventilátora dúchadla zodpovedali jeho cieľovým otáčkam.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A7221002003">
+<title>
+Ovládanie výstupu vzduchu
+</title>
+<ptxt>
+Riadiaca jednotka HVAC vypočítava cieľovú polohu klapky regulácie teploty na základe signálov z ovládača teploty, snímača teploty vzduchu vo vnútri vozidla, snímača vonkajšej teploty, snímača ECT a snímača slnečného žiarenia. Pomocou týchto údajov sa získava cieľová poloha regulačnej klapky teploty, ďalej sa počíta cieľová poloha regulačnej klapky prúdenia vzduchu a riadi sa ovládač regulácie prúdania vzduchu tak, aby bola aktuálna poloha regulačnej klapky prúdenia vzduchu cieľovou polohou.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A7221002004">
+<title>
+Ovládanie polohy nasávania vzduchu
+</title>
+<ptxt>
+Riadiaca jednotka HVAC stanovuje polohu klapky naasávania vzduchu na základe signálov z ovládača teploty, snímača vnútornej teploty, snímača vonkajšej teploty a snímača slnečného žiarenia, pričom si vyberá spomedzi nasledovných polôh, a to reguláciou polohy klapky prívodu vzduchu.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Poloha FRESH (FRE)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Poloha RECIRCULATION (REC)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Poloha MIX (MIX)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<c-change/>
+<servinfosub id = "ASLAP70A7221002005">
+<title>
+Regulácia relé kompresora klimatizácie
+</title>
+<ptxt>
+Riadiaca jednotka HVAC vyvádza signál zopnutia klimatizácie do ECM cez BCM, ak stav vozidla vyhovuje nižšie uvedeným podmienkam.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Spínač klimatizácie v polohe ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Teplota výparníka je vyššia ako prespísaná hodnota
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nezistila sa porucha snímača teploty výparníka
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Komunikácia medzi ECM a TCM sa realizuje cez CAN (Sieť oblasti ovládača). (Podrobnosti o komunikácii v CAN nájdete v časti 
+<intxref refid = "ASLAP70AA801001">Popis komunikačného systému</intxref>
+.)
+</ptxt>
+<ptxt>
+ECM zapína relé kompresora klimatizácie, keď stav vozidla spĺňa požiadavky popísané nižšie.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Privádza sa signál zapnutia klimatizácie
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tlak chladiacej zmesi klimatizácie je v rámci predpísaného rozsahu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otáčky motora sú v rámci predpísaného rozsahu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Teplota chladiacej kvapaliny motora je nižšia ako predpísaná hodnota
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otvorenie škrtiacej klapky je menšie ako predpísaná hodnota
+</ptxt>
+</item>
+<item>
+<ptxt>
+Vozidlo nie je ani v stave štartovania, ani rýchlej akcelerácie
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nezistila sa porucha snímača ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nezistila sa porucha snímača tlaku chladiacej zmesi klimatizácie
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "ASLAP70A7221002006">
+<title>
+Kontrola relé ventilátora chladiča
+</title>
+<ptxt>
+ECM zapína relé ventilátora chladiča v tom istom čase, ako ECM zapína relé kompresora klimatizácie.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A7221002007">
+<title>
+Konštrukcia systému HVAC
+</title>
+<ptxt>
+Obráťte sa na “Konštrukcia systému HVAC” v 
+<intxref refid = "ASLAP70A7211001">Popis systému HVAC:Manuálny typ</intxref>
+ .
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A4604020" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1027
+</title>
+<servinfosub id = "AITAP70A4604020001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.050in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.113in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1027: Guasto interruttore ESP<sup>®</sup> OFF 
+</emph>
+</ptxt>
+<ptxt>
+L&#39;interruttore ESP<sup>®</sup> OFF rimane inserito (ON) per un periodo superiore a quello specificato.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Interruttore ESP<sup>®</sup> OFF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuito interruttore ESP<sup>®</sup> OFF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A4604020002">
+<title>
+Schema del circuito
+</title>
+<figure>
+<graphic graphicname = "IAP70A460009.swf" width = "183.000mm" height = "78.255mm" ver = "02" gw = "314" gh = "205"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "8" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.305in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.065in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.305in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.603in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.305in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.048in"/>
+<colspec colnum = "7" colname = "7" colwidth = "0.305in"/>
+<colspec colnum = "8" colname = "8" colwidth = "1.204in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Connettore centralina ESP<sup>®</sup> (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale interruttore ESP<sup>®</sup> OFF
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Interruttore ESP<sup>®</sup> OFF
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AITAP70A4604020003">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A4604020004">
+<testgroup id = "AITAP70A4604020005">
+<question>
+È stato eseguito il &#34;Controllo sistema ESP<sup>®</sup>&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A4604001">Controllo sistema ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604020006">
+<title>
+Controllo interruttore ESP® OFF
+</title>
+<test1>
+<ptxt>
+Verificare che l&#39;accensione sia in posizione &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Rimuovere l&#39;interruttore ESP<sup>®</sup> OFF. 
+<intxreftitleoff1 refid = "AITAP70A4606017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare il collegamento su ciascun terminale dell&#39;interruttore ESP<sup>®</sup> OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono OK, controllare l&#39;interruttore ESP<sup>®</sup> OFF. 
+<intxreftitleoff1 refid = "AITAP70A4606018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire l&#39;interruttore ESP<sup>®</sup> OFF.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604020007">
+<title>
+Controllo circuito interruttore ESP® OFF
+</title>
+<test1>
+<ptxt>
+Scollegare il connettore &#34;E24&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare lo stato del collegamento al terminale &#34;E24-38&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se il collegamento è OK, controllare la resistenza tra il terminale &#34;E24-38&#34; e la massa.
+</ptxt>
+</test1>
+<question>
+La resistenza ha valore infinito?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup> e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire il circuito “A1” se è in corto.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

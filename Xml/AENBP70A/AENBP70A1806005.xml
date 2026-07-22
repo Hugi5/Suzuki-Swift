@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1H">
+<servcat sctnbr = "01" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "6">
+<servinfo servinfosgmlid = "AENBP70A1806005" svcinfotypenbr = "08" svcinfoqualnbr = "03" page = "2" supplyoff = "1" modify = "0">
+<title>
+Ignition Timing Inspection
+</title>
+<attention3>
+<ptxt>
+For identification of each cylinder, refer to 
+<intxref refid = "AENBP70A1101001">Statement on Cleanliness and Care</intxref>
+.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Connect SUZUKI scan tool to DLC (1) with ignition OFF.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L1H001">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+SUZUKI scan tool (SUZUKI-SDT)
+</s-number>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I9P60A180005.jpg" width = "88.000mm" height = "67.502mm" ver = "01" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Start engine and warm it up to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Check that all electrical loads except ignition system are switched off.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Check that idle speed is within specification referring to 
+<intxref refid = "AENBP70A1106001">Idle Speed and IAC Throttle Valve Opening Inspection</intxref>
+.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Fix ignition timing using “Fixed Spark” function in “Active Test” mode on scan tool.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set timing light (1) to ignition coil harness for No.1 cylinder (2) and check that ignition timing is within specification.
+</ptxt>
+<spec-sdm>
+<sdm-title>
+Initial ignition timing
+</sdm-title>
+<sdm1>
+<sdm-condition>
+Fixed with SUZUKI scan tool
+</sdm-condition>
+<sdm-value>
+5 ± 3&#176; BTDC (at specified idle speed)
+</sdm-value>
+</sdm1>
+</spec-sdm>
+<spec>
+<title>
+Ignition order
+</title>
+<ptxt>
+1 – 3 – 4 – 2
+</ptxt>
+</spec>
+<servicetool>
+<servicetoolitem id = "L1H002">
+<s-part>
+(A)
+</s-part>
+<s-number num = "09930-76420">
+09930–76420
+</s-number>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "IBP60B180007.swf" width = "88.000mm" height = "64.512mm" ver = "01" gw = "144" gh = "166"/>
+</figure>
+<figure>
+<graphic graphicname = "I7V20A180007.swf" width = "88.000mm" height = "52.060mm" ver = "01" gw = "178" gh = "131"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+If check result is out of specification, check the following points.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CKP sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+CKP sensor plate
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM and its circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+CMP sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+CMP sensor rotor tooth of camshaft
+</ptxt>
+</item>
+<item>
+<ptxt>
+Crankshaft
+</ptxt>
+</item>
+<item>
+<ptxt>
+Crankshaft pulley
+</ptxt>
+</item>
+<item>
+<ptxt>
+Crankshaft pulley key
+</ptxt>
+</item>
+</list1>
+</s1>
+<s1>
+<ptxt>
+After checking initial ignition timing, release ignition timing fixation using scan tool.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+With engine idling (throttle opening at default position and vehicle stopped), check that ignition timing is about 5&#176; – 15&#176; BTDC (Constant variation within a few degrees from 5&#176; – 15&#176; BTDC indicates no abnormality but proves operation of ignition timing control system.) Also, check that increasing engine speed advances ignition timing.
+</ptxt>
+<ptxt>
+If the check result is not OK, check the following points.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECM and its circuit: 
+<intxreftitleoff1 refid = "AENBP70A1104067"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+TP sensor: 
+<intxreftitleoff1 refid = "AENBP70A1306003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+APP sensor: 
+<intxreftitleoff1 refid = "AENBP70A1306005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

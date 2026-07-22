@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A6304015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1160
+</title>
+<servinfosub id = "AFRAP70A6304015001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.778in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1160: Erreur de programmation du module de commande
+</emph>
+</ptxt>
+<ptxt>
+Les données de la carte d&#39;assistance ne sont pas définies dans le module de commande P/S. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Module de commande P/S 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A6304015002">
+<title>
+Procédure de confirmation de DTC 
+</title>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;OFF&#34;. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70A6304015003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A6304015004">
+<testgroup id = "AFRAP70A6304015005">
+<question>
+La &#34;vérification du système P/S&#34; a-t-elle été réalisée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le module de commande P/S et revérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A6304001">Vérification du système P/S</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

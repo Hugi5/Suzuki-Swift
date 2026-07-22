@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A5504019" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P062F / P1824
+</title>
+<servinfosub id = "ASPBP70A5504019001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.057in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.133in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P062F: Error de EEPROM del módulo de control interno 
+</emph>
+</ptxt>
+<ptxt>
+Fallo interno del TCM (error de EEPROM).
+</ptxt>
+<ptxt>
+(Lógica de detección de 1 ciclo de conducción para tipos A y C)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+TCM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1824: Error de lectura de datos de calibración 
+</emph>
+</ptxt>
+<ptxt>
+Fallo interno del TCM (error de EEPROM).
+</ptxt>
+<ptxt>
+(Lógica de detección de 1 ciclo de conducción para tipo B)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504019002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention3>
+<ptxt>
+Compruebe que se cumple la siguiente condición en este procedimiento.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+11 V &#60; Tensión de la batería &#60; 15 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Coloque el interruptor de encendido en la posición ON durante 10 seg. en la posición P o N.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504019003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A5504019004">
+<testgroup id = "ASPBP70A5504019005">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de la CVT&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A5504001">Inspección del sistema de la CVT</intxref>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504019006">
+<title>
+Verificación de DTC
+</title>
+<question>
+¿Aparece algún otro DTC además del P062F / P1824?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504019007">
+<title>
+Configuración de la inicialización del valor de aprendizaje
+</title>
+<test1>
+<ptxt>
+Realice 
+<intxref refid = "ASPBP70A5506001">Inicialización del valor de aprendizaje del TCM</intxref>
+ y borre el DTC. 
+<intxreftitleoff1 refid = "ASPBP70A5504012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Realice el &#34;Procedimiento de confirmación del DTC&#34; y vuelva a verificarlo.
+</ptxt>
+</test1>
+<question>
+¿Se detecta el DTC P062F / P1824 u otros DTC que no sean P062F / P1824?
+</question>
+<result type = "yes"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Si el DTC P062F / P1824 se sigue detectando, sustituya el conjunto del CVT, y vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPBP70A5506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si se detecta un DTC diferente del DTC P062F / P1824, vaya a la localización y reparación de averías para el DTC correspondiente.
+</ptxt>
+</item>
+</list1>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Problema intermitente.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

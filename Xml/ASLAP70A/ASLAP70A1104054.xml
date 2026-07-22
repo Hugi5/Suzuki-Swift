@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A1104054" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2122 / P2123
+</title>
+<servinfosub id = "ASLAP70A1104054001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.948in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.242in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2122: Nízke napätie obvodu „D“ spínača/snímača polohy plynového pedála/škrt. klapky
+</emph>
+</ptxt>
+<ptxt>
+Výstupné napätie signálneho obvodu snímača APP (hlavný) je vyššie ako 0,7 V.
+</ptxt>
+<ptxt>
+(Logika rozpoznávania 1 jazdného cyklu)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Snímač APP (hlavný) a/alebo jeho obvod
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2123: Vysoké napätie obvodu „D“ spínača/snímača polohy plynového pedála/škrt. klapky
+</emph>
+</ptxt>
+<ptxt>
+Výstupné napätie signálneho obvodu snímača APP (hlavný) je nižšie ako 4,8 V.
+</ptxt>
+<ptxt>
+(Logika rozpoznávania 1 jazdného cyklu)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104054002">
+<title>
+Schéma obvodu
+</title>
+<figure>
+<graphic graphicname = "I9P60A111031.swf" width = "183.000mm" height = "87.310mm" ver = "07" gw = "440" gh = "231"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.066in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.354in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.211in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.311in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.211in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Konektor ECM (Pohľad: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Obvod napájania snímača APP (pomocného)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Snímač APP (pomocný)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Obvod napájania snímača APP (hlavného)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signálny obvod snímača APP (pomocného)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signálny obvod snímača APP (hlavného)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Obvod uzemnenia snímača APP (pomocného)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Obvod uzemnenia snímača APP (hlavného)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Snímač APP (hlavný)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104054003">
+<title>
+Postup potvrdenia DTC
+</title>
+<attention3>
+<ptxt>
+Potvrďte, že nasledovné podmienky sú splnené v tomto „Postupe potvrdenia DTC“.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Napätie akumulátora &#62; 8 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „ON“ na 10 sek.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104054004">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A1104054005">
+<testgroup id = "ASLAP70A1104054006">
+<question>
+Bola vykonaná &#34;Kontrola systému motora a riadenia emisií&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104001">Kontrola systému motora a riadenia emisií</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104054007">
+<title>
+Montážna kontrola zostavy plynového pedálu (spojenej so snímačom APP)
+</title>
+<test1>
+<ptxt>
+Skontrolujte, či je zostava plynového pedála (spojená so snímačom APP) správne namontovaná na karosériu vozidla (nesmie byť pricviknutý podlahový koberec atď.).
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zostavu plynového pedálu (spojenej so snímačom APP) opätovne nainštalujte správne. 
+<intxreftitleoff1 refid = "ASLAP70A1306007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104054008">
+<title>
+Kontrola obvodu napájania snímača APP (hlavného)
+</title>
+<test1>
+<ptxt>
+Ak je zapaľovanie odpojené, odpojte konektor snímača APP.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie konektora snímača APP na každej svorke.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, prepnite spínač zapaľovania do polohy „ON (zap.)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, že napätie medzi obvodom „A1“ a „A3“ je pribl. 5 V.
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104054009">
+<title>
+Kontrola obvodu uzemnenia snímača APP (hlavného)
+</title>
+<test1>
+<ptxt>
+Skontrolujte, že napätie medzi obvodom „A1“ a uzemnením je pribl. 5 V.
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Opravte obvod „A3“.
+</ptxt>
+<ptxt>
+Ak je detekovaná táto DTC opätovne, vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte obvod „A1“.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104054010">
+<title>
+Kontrola signálneho obvodu snímača APP (hlavného)
+</title>
+<test1>
+<ptxt>
+Ak je zapaľovanie vypnuté, odpojte konektory „C01“ a „E01“ z ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie ku konektorom „C01“ a „E01“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, skontrolujte nasledovné.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Odpor obvodu „A2“: menej ako 1Ω
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi obvodom „A2“ a uzemnením: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi obvodom „A2“ a ďalšou svorkou v konektore snímača APP: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napätie obvodu „A2“: 0 až 1 V (keď je zapaľovanie zapnuté)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte signálny obvod snímača APP (hlavného).
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104054011">
+<title>
+Kontrola snímača APP
+</title>
+<test1>
+<ptxt>
+Skontrolujte snímač APP. 
+<intxreftitleoff1 refid = "ASLAP70A1306008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte zostavu plynového pedála (spojenej so snímačom APP) a opätovne nainštalujte správne.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

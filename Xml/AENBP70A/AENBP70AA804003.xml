@@ -1,0 +1,1606 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENBP70AA804003" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Troubleshooting for Lost Communication
+</title>
+<servinfosub id = "AENBP70AA804003001">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "IBP70AA80004.swf" width = "183.000mm" height = "158.542mm" ver = "04" gw = "492" gh = "433"/>
+</figure>
+<figure>
+<graphic graphicname = "IBP70AA80005.swf" width = "183.000mm" height = "88.788mm" ver = "02" gw = "507" gh = "235"/>
+<callout-l>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.510in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.469in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.243in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.591in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.253in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.059in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+M/T model
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+P/S control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CVT model
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Keyless start control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TCM (CVT model)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[a] to [m]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN communication line (linked with diagnosis flows [a] to [m] of “Diagnosis Flow Selection Table”)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Steering angle sensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN driver
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[n]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Connector view
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HVAC control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+14.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G308)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Combination meter
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+15.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G309)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+DLC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Headlight auto leveling and washer control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ESP<sup>®</sup> control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout-l>
+</figure>
+</servinfosub>
+<servinfosub id = "AENBP70AA804003002">
+<title>
+Diagnosis Procedure
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Be sure to perform 
+<intxref refid = "AENBP70AA804001">CAN Communication Check</intxref>
+ before perform this flow.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Occurrence of multiple troubles is not included in the scope of this trouble diagnosis.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<ptxt>
+When “Lost Communication” is detected in any control module, perform diagnosing according to the following procedure.
+</ptxt>
+<s1>
+<ptxt>
+Connect SUZUKI scan tool to DLC.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool and check for disabled communicating control module (it is not displayed on screen).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Based on above check results, select applicable diagnosis flow ([a] to [m]) from 
+<intxref refid = "AENBP70AA804003003">Diagnosis Flow Selection Table</intxref>
+.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Perform troubleshooting according to selected diagnosis flow.
+</ptxt>
+</s1>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AENBP70AA804003003">
+<title>
+Diagnosis Flow Selection Table
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Check if the contact condition at connectors including power supply and ground circuits is in good condition, before performing this diagnosis.
+</ptxt>
+</item>
+<item>
+<ptxt>
+If it is not possible to select suitable diagnosis flow from “Diagnosis Flow Selection Table” or “two or more diagnosis flows are selectable”, perform 
+<intxref refid = "AENBP70AA804004">Troubleshooting for Communication Bus Off</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Diagnosis flows [a] to [m] link with CAN communication lines [a] to [m] of 
+<intxref refid = "AENBP70AA804003001">Circuit Diagram</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<title>
+M/T model
+</title>
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.842in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Disabled communicating control module / sensor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Diagnosis flow
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+All control modules and sensor communicating by CAN
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[a] 
+<intxreftitleoff1 refid = "AENBP70AA804003005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Keyless start control module, steering angle sensor, HVAC control module, P/S control module, BCM, ESP<sup>®</sup> control module, ECM and headlight auto leveling and washer control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[b] 
+<intxreftitleoff1 refid = "AENBP70AA804003009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+P/S control module, BCM, ESP<sup>®</sup> control module and ECM 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[c] 
+<intxreftitleoff1 refid = "AENBP70AA804003012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BCM, ESP<sup>®</sup> control module and ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[d] 
+<intxreftitleoff1 refid = "AENBP70AA804003015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ESP<sup>®</sup> control module and ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[e] 
+<intxreftitleoff1 refid = "AENBP70AA804003019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[h] 
+<intxreftitleoff1 refid = "AENBP70AA804003023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[i] 
+<intxreftitleoff1 refid = "AENBP70AA804003027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Keyless start control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[j] 
+<intxreftitleoff1 refid = "AENBP70AA804003031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Steering angle sensor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[k] 
+<intxreftitleoff1 refid = "AENBP70AA804003034"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+HVAC control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[l] 
+<intxreftitleoff1 refid = "AENBP70AA804003037"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Headlight auto leveling and washer control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[m] 
+<intxreftitleoff1 refid = "AENBP70AA804003040"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame = "all" colsep = "1" rowsep = "1">
+<title>
+CVT model
+</title>
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.842in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Disabled communicating control module / sensor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Diagnosis flow
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+All control modules and sensor communicating by CAN
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[a] 
+<intxreftitleoff1 refid = "AENBP70AA804003005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Keyless start control module, steering angle sensor, HVAC control module, P/S control module, BCM, TCM, ESP<sup>®</sup> control module, ECM and headlight auto leveling and washer control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[b] 
+<intxreftitleoff1 refid = "AENBP70AA804003009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+P/S control module, BCM, TCM, ESP<sup>®</sup> control module and ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[c] 
+<intxreftitleoff1 refid = "AENBP70AA804003012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BCM, TCM, ESP<sup>®</sup> control module and ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[d] 
+<intxreftitleoff1 refid = "AENBP70AA804003015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TCM, ESP<sup>®</sup> control module and ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[f] 
+<intxreftitleoff1 refid = "AENBP70AA804003043"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ESP<sup>®</sup> control module and ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[g] 
+<intxreftitleoff1 refid = "AENBP70AA804003045"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[h] 
+<intxreftitleoff1 refid = "AENBP70AA804003023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[i] 
+<intxreftitleoff1 refid = "AENBP70AA804003027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Keyless start control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[j] 
+<intxreftitleoff1 refid = "AENBP70AA804003031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Steering angle sensor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[k] 
+<intxreftitleoff1 refid = "AENBP70AA804003034"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+HVAC control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[l] 
+<intxreftitleoff1 refid = "AENBP70AA804003037"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Headlight auto leveling and washer control module
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[m] 
+<intxreftitleoff1 refid = "AENBP70AA804003040"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENBP70AA804003004">
+<title>
+Troubleshooting
+</title>
+<topic id = "AENBP70AA804003005">
+<title>
+Diagnosis flow: [a]
+</title>
+<diag type = "test" id = "AENBP70AA804003006">
+<testgroup id = "AENBP70AA804003007">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect combination meter connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to DLC and combination meter.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [a] between DLC and combination meter connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804003008">
+<title>
+Combination meter terminating resistance check
+</title>
+<test1>
+<ptxt>
+Connect combination meter connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect ECM connector “E01”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “G211-11” and “G211-3” terminals of DLC.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENBP70AA804004">Troubleshooting for Communication Bus Off</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace combination meter and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003009">
+<title>
+Diagnosis flow: [b]
+</title>
+<diag type = "test" id = "AENBP70AA804003010">
+<testgroup id = "AENBP70AA804003011">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect combination meter connector and P/S control module connector “G50”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to combination meter.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [b] between combination meter connector and P/S control module connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace combination meter and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check the following items and repair or replace the defective part.
+</ptxt>
+<ptxt>
+• CAN communication circuit [b] is faulty between combination meter and J/C
+</ptxt>
+<ptxt>
+• J/C “G308” is faulty
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003012">
+<title>
+Diagnosis flow: [c]
+</title>
+<diag type = "test" id = "AENBP70AA804003013">
+<testgroup id = "AENBP70AA804003014">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect P/S control module connector “G50” and combination meter connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to P/S control module.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [c] between P/S control module connector and combination meter connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace P/S control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check the following items and repair or replace the defective part.
+</ptxt>
+<ptxt>
+• CAN communication circuit [c] is faulty between P/S control module and J/C
+</ptxt>
+<ptxt>
+• J/C “G308” is faulty
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003015">
+<title>
+Diagnosis flow: [d]
+</title>
+<diag type = "test" id = "AENBP70AA804003016">
+<testgroup id = "AENBP70AA804003017">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect P/S control module connector “G50” and BCM connector “G05”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to P/S control module connector and BCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [d] between P/S control module connector and BCM connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804003018">
+<title>
+CAN communication circuit resistance check
+</title>
+<test1>
+<ptxt>
+Connect P/S control module connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “G05-2” and “G05-1” terminals of BCM connector.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace BCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70AA206001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace P/S control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003019">
+<title>
+Diagnosis flow: [e]
+</title>
+<diag type = "test" id = "AENBP70AA804003020">
+<testgroup id = "AENBP70AA804003021">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect ESP<sup>®</sup> control module connector and BCM connector “E05”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to BCM connector and ESP<sup>®</sup> control module.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [e] between BCM connector and ESP<sup>®</sup> control module connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804003022">
+<title>
+CAN communication circuit resistance check
+</title>
+<test1>
+<ptxt>
+Connect BCM connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “E24-1” and “E24-15” terminals of ESP<sup>®</sup> control module connector.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ESP<sup>®</sup> control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace BCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70AA206001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003043">
+<title>
+Diagnosis flow: [f]
+</title>
+<diag type = "test" id = "AENBP70AA804003044">
+<testgroup id = "AENBP70AA804003046">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect BCM connector “E05” and TCM connector “E19”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to BCM and TCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [f] between BCM connector and TCM connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804003047">
+<title>
+CAN communication circuit resistance check
+</title>
+<test1>
+<ptxt>
+Connect BCM connector “E05”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “E19-22” and “E19-13” terminals of TCM connector.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace BCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70AA206001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003045">
+<title>
+Diagnosis flow: [g]
+</title>
+<diag type = "test" id = "AENBP70AA804003048">
+<testgroup id = "AENBP70AA804003049">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect TCM connector “E19” and ESP<sup>&#174;</sup> control module connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to TCM and ESP<sup>&#174;</sup> control module.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [g] between TCM connector and ESP<sup>&#174;</sup> control module connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804003050">
+<title>
+CAN communication circuit resistance check
+</title>
+<test1>
+<ptxt>
+Connect TCM connector “E19” connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “E24-1” and “E24-15” terminals of ESP<sup>&#174;</sup> control module connector.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ESP<sup>&#174;</sup> control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003023">
+<title>
+Diagnosis flow: [h]
+</title>
+<diag type = "test" id = "AENBP70AA804003024">
+<testgroup id = "AENBP70AA804003025">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect ESP<sup>®</sup> control module connector and ECM connector “E01”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to ESP<sup>®</sup> control module and ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [h] between ESP<sup>®</sup> control module connector and ECM connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804003026">
+<title>
+ECM terminating resistance check
+</title>
+<test1>
+<ptxt>
+Connect ECM connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “E24-2” and “E24-16” terminals of ESP<sup>®</sup> control module connector.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ESP<sup>&#174;</sup> control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003027">
+<title>
+Diagnosis flow: [i]
+</title>
+<diag type = "test" id = "AENBP70AA804003028">
+<testgroup id = "AENBP70AA804003029">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect combination meter connector and SDM connector “G11”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to combination meter and SDM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [i] between combination meter connector and SDM connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check the following items and repair or replace the defective part.
+</ptxt>
+<ptxt>
+• CAN communication circuit [i] is faulty between combination meter and SDM.
+</ptxt>
+<ptxt>
+• Poor connection of “G369” and “G370” connectors
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804003030">
+<title>
+CAN communication circuit resistance check
+</title>
+<test1>
+<ptxt>
+Connect combination meter connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect ECM connector “E01”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “G11-13” and “G11-14” terminals of SDM connector.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace SDM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace combination meter and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003031">
+<title>
+Diagnosis flow: [j]
+</title>
+<diag type = "test" id = "AENBP70AA804003032">
+<testgroup id = "AENBP70AA804003033">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect combination meter connector and keyless start control module connector “G28”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to combination meter and keyless start control module.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [j] between keyless start control module connector and combination meter for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace keyless start control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70AA506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check the following items and repair or replace the defective part.
+</ptxt>
+<ptxt>
+• CAN communication circuit [j] is faulty between keyless start control module and J/C.
+</ptxt>
+<ptxt>
+• J/C “G309” is faulty.
+</ptxt>
+<ptxt>
+• Poor connection of “G308” and “G309” connectors
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003034">
+<title>
+Diagnosis flow: [k]
+</title>
+<diag type = "test" id = "AENBP70AA804003035">
+<testgroup id = "AENBP70AA804003036">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect steering angle sensor connector and combination meter connector. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to steering angle sensor and combination meter.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [k] between steering angle sensor connector and combination meter connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace steering angle sensor and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check the following items and repair or replace the defective part.
+</ptxt>
+<ptxt>
+• CAN communication circuit [k] is faulty between steering angle sensor and J/C.
+</ptxt>
+<ptxt>
+• J/C “G309” is faulty.
+</ptxt>
+<ptxt>
+• Poor connection of “G308” and “G309” connectors
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003037">
+<title>
+Diagnosis flow: [l]
+</title>
+<diag type = "test" id = "AENBP70AA804003038">
+<testgroup id = "AENBP70AA804003039">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect HVAC control module connector and combination meter connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to HVAC control module and combination meter.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [l] between combination meter connector and HVAC control module connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace HVAC control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A7206010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check the following items and repair or replace the defective part.
+</ptxt>
+<ptxt>
+• CAN communication circuit [l] is faulty between HVAC control module and J/C.
+</ptxt>
+<ptxt>
+• J/C “G309” is faulty.
+</ptxt>
+<ptxt>
+• Poor connection of “G308” and “G309” connectors
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AENBP70AA804003040">
+<title>
+Diagnosis flow: [m]
+</title>
+<diag type = "test" id = "AENBP70AA804003041">
+<testgroup id = "AENBP70AA804003042">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect headlight auto leveling and washer control module connector and combination meter connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to headlight auto leveling and washer control module and combination meter.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check CAN communication circuit [m] between headlight auto leveling and washer control module connector and combination meter connector for open circuit.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace headlight auto leveling and washer control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A9206015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check the following items and repair or replace the defective part.
+</ptxt>
+<ptxt>
+• CAN communication circuit [m] is faulty between headlight auto leveling and washer control module and J/C.
+</ptxt>
+<ptxt>
+• J/C “G308” is faulty.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

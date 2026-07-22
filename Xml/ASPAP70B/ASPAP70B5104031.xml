@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B5104031" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0741 / P0742
+</title>
+<servinfosub id = "ASPAP70B5104031001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.431in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.747in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0741: Rendimiento/agarrotamiento en OFF del circuito del embrague del convertidor de par 
+</emph>
+</ptxt>
+<ptxt>
+La diferencia entre el régimen del motor y la velocidad del eje de entrada es superior al valor especificado, aunque el solenoide del TCC esté activado.
+</ptxt>
+<ptxt>
+(Lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Válvula de solenoide de TCC
+</ptxt>
+</item>
+<item>
+<ptxt>
+Conjunto del cuerpo de la válvula
+</ptxt>
+</item>
+<item>
+<ptxt>
+Embrague del convertidor de par
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0742: Agarrotamiento en ON del circuito del embrague del convertidor de par 
+</emph>
+</ptxt>
+<ptxt>
+La diferencia entre el régimen del motor y la velocidad del eje de entrada es inferior al valor especificado, aunque el solenoide del TCC esté desactivado.
+</ptxt>
+<ptxt>
+(Lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70B5104031002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Efectúe una prueba en carretera en un lugar donde no haya tráfico para evitar accidentes.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La prueba en carretera deben realizarla dos personas, un conductor y un probador, en una carretera nivelada.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<s1>
+<ptxt>
+Caliente el motor hasta que llegue a la temperatura normal de funcionamiento.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conduzca el vehículo en la posición &#34;D&#34; durante 10 seg.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conduzca el vehículo en engranaje de 4ª en la posición &#34;D&#34; y el enclavamiento activado durante 20 seg.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Active el interruptor de corte de O/D y conduzca el vehículo a 40 km/h (25 mile/h) durante 20 seg.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Detenga el vehículo y desconecte el encendido (posición &#34;OFF&#34;).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Repita los pasos del 2) al 4).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPAP70B5104031003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPAP70B5104031004">
+<testgroup id = "ASPAP70B5104031005">
+<question>
+¿Se ha llevado a cabo el procedimiento de &#34;Inspección del sistema de control de la A/T&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B5104001">Inspección del sistema de control de A/T</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B5104031006">
+<title>
+Inspección del funcionamiento de la válvula solenoide de TCC
+</title>
+<test1>
+<ptxt>
+Inspeccione el funcionamiento de la válvula solenoide de TCC. 
+<intxreftitleoff1 refid = "ASPAP70B5106029"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Están en buenas condiciones?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Limpie el conducto de líquido o reemplace el conjunto del cuerpo de válvulas. 
+<intxreftitleoff1 refid = "ASPAP70B5106026"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Si todavía se detecta el DTC P0741 y/o el DTC P0742, sustituya el TCM por uno en buen estado y vuelva a efectuar la comprobación del DTC. 
+<intxreftitleoff1 refid = "ASPAP70B5106030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya la válvula solenoide de TCC. 
+<intxreftitleoff1 refid = "ASPAP70B5106028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

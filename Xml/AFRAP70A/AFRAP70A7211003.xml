@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70A7211003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description du fonctionnement A/C au niveau de l&#39;ECM 
+</title>
+<ptxt>
+A réception du signal ON de contacteur A/C en provenance de l&#39;unité de commande HVAC, l&#39;ECM commande le relais de compresseur A/C et le relais de ventilateur de refroidissement de radiateur (condenseur) tel que décrit dans le tableau ci-dessous. 
+</ptxt>
+<ptxt>
+Le signal ON de contacteur A/C est envoyé de l&#39;unité de commande HVAC au BCM. Il est ensuite transmis à l&#39;ECM en tant que signal de demande d&#39;A/C via le CAN. Pour le système de communication CAN, se reporter au point 
+<intxref refid = "AFRAP70AA801001">Description du système de communication</intxref>
+. 
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.043in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.043in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.043in"/>
+<colspec colnum = "4" colname = "4" colwidth = "4.076in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Elément de commande 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Capteur d&#39;entrée (ou signal) 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Description 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande de relais de compresseur A/C 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande de température d&#39;évaporateur 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Capteur de température d&#39;évaporateur 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+L&#39;ECM commande le compresseur A/C en activant/désactivant le relais de compresseur A/C en fonction du signal de demande en provenance du BCM. Le BCM envoie le signal en fonction du signal transmis par le capteur de température d’évaporateur pour empêcher l&#39;évaporateur de geler. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande lorsque le régime moteur est bas 
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Capteur CKP (régime moteur) 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+L&#39;ECM arrête le compresseur A/C en désactivant le relais de compresseur A/C sur la base du signal transmis par le capteur CKP (régime moteur) afin d&#39;éviter que le moteur ne cale lorsqu&#39;il tourne à bas régime. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande lorsque le régime moteur est élevé 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+L&#39;ECM arrête le compresseur A/C en désactivant le relais de compresseur A/C sur la base du signal transmis par le capteur CKP (régime moteur) afin d&#39;éviter que le compresseur A/C ne connaisse un surrégime lorsque le moteur tourna à haut régime. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande au démarrage du moteur 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+L&#39;ECM arrête provisoirement le compresseur A/C en désactivant le relais de compresseur A/C sur la base des signaux transmis par le capteur CKP (régime moteur) et les autres capteurs afin de garantir un régime de ralenti stable au moteur lorsqu&#39;il démarre. 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande lorsque la pression de réfrigérant est anormale 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Capteur de pression de réfrigérant A/C 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+L&#39;ECM arrête le compresseur A/C en désactivant le relais de compresseur A/C sur la base du signal transmis par le capteur de pression de réfrigérant A/C afin de protéger le système lorsque la pression de réfrigérant est anormale. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+L&#39;ECM arrête le compresseur A/C en désactivant le relais de compresseur A/C lorsque le capteur de pression de réfrigérant A/C présente des dysfonctionnements. 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande pendant l&#39;accélération 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Capteur de position de pédale d&#39;accélérateur et capteur de vitesse de roue 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+L&#39;ECM arrête provisoirement le compresseur A/C en désactivant le relais de compresseur A/C sur la base du signal en provenance du capteur de position de pédale d&#39;accélérateur afin de garantir l&#39;accélération lorsque la pédale d&#39;accélérateur est complètement enfoncée, et ce indépendamment de la vitesse du véhicule. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+L&#39;ECM arrête provisoirement le compresseur A/C en désactivant le relais de compresseur A/C sur la base du signal en provenance du capteur de position de papillon afin de garantir l&#39;accélération lorsque l&#39;enfoncement de la pédale d&#39;accélérateur est supérieure aux spécifications et que la vitesse du véhicule est faible. 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande lorsque la température de liquide de refroidissement du moteur est élevée 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Capteur ECT 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+L&#39;ECM arrête le compresseur A/C en désactivant le relais de compresseur A/C sur la base du signal transmis par le capteur ECT afin d&#39;éviter une surchauffe lorsque la température de liquide de refroidissement du moteur est supérieure au niveau prescrit. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+L&#39;ECM arrête le compresseur A/C en désactivant le relais de compresseur A/C lorsque le capteur ECT présente un dysfonctionnement. 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Commande de relais de ventilateur de refroidissement de radiateur (condenseur) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Capteur de pression de réfrigérant A/C et capteur de vitesse de roue 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+L&#39;ECM entraîne le ventilateur de refroidissement de radiateur en mode vitesse rapide ou lente, selon les conditions suivantes, en activant/désactivant les relais de ventilateur de refroidissement de radiateur n&#176; 1, n&#176; 2 et n&#176; 3 en fonction des signaux en provenance du capteur de pression de réfrigérant A/C et du capteur de vitesse de roue, lorsque le relais de compresseur A/C est activé. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Mode de vitesse lente (relais de ventilateur de refroidissement de radiateur n&#176; 1 activé) 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+La vitesse du véhicule est inférieure à la plage spécifiée. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+La vitesse du véhicule est supérieure à la plage spécifiée, et la pression de réfrigérant est supérieure à la plage spécifiée. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Détection d&#39;un dysfonctionnement au niveau du capteur de vitesse de roue 
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Mode de vitesse rapide (relais de ventilateur de refroidissement de radiateur n&#176; 1, n&#176; 2 et n&#176; 3 activés) 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+La pression de réfrigérant est supérieure à la plage spécifiée 
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

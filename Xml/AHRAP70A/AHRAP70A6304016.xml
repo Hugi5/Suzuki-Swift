@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A6304016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1161/C1162
+</title>
+<servinfosub id = "AHRAP70A6304016001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.778in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1161: Netočni CAN podaci iz brzine vozila
+</emph>
+</ptxt>
+<ptxt>
+Primljeni su netočni podaci iz ECM-a.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Strujni krug CAN komunikacije
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Upravljački modul servoupravljača
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1162: Netočni CAN podaci iz brzine vrtnje motora
+</emph>
+</ptxt>
+<ptxt>
+Primljeni su netočni podaci iz ECM-a.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70A6304016002">
+<title>
+Postupak potvrde DTC-a
+</title>
+<topic id = "AHRAP70A6304016003">
+<title>
+DTC C1161
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pogledajte Postupak potvrde za DTC P0500 senzora &#34;A&#34; brzine vozila. 
+<intxreftitleoff1 refid = "AHRAP70A1104039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "AHRAP70A6304016004">
+<title>
+DTC C1162
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pogledajte Postupak potvrde za DTC P0335 senzora &#34;A&#34; položaja koljenastog vratila. 
+<intxreftitleoff1 refid = "AHRAP70A1104033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+</servinfosub>
+<servinfosub id = "AHRAP70A6304016005">
+<title>
+Rješavanje problema DTC-a
+</title>
+<diag type = "test" id = "AHRAP70A6304016006">
+<testgroup id = "AHRAP70A6304016007">
+<question>
+Je li izvršena &#34;Provjera sustava P/S-a&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A6304001">Provjera sustava P/S-a</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A6304016008">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+ Provjerite DTC u ECM-u. 
+<intxreftitleoff1 refid = "AHRAP70A6304003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li detektiran jedan ili više DTC-ova?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na postupak rješavanja problema za dotični DTC. (ECM-neispravno povezan) 
+<intxreftitleoff1 refid = "AHRAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul P/S-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

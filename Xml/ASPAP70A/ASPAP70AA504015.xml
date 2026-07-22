@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70AA504015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1134
+</title>
+<servinfosub id = "ASPAP70AA504015001">
+<title>
+Condición de detección del DTC y área afectada 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1134: Nivel de carga de la pila del mando a distancia bajo 
+</emph>
+</ptxt>
+<ptxt>
+Se recibe una señal de pila del mando a distancia agotada procedente del mando a distancia. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pila del mando a distancia 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Mando a distancia 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70AA504015002">
+<title>
+Procedimiento de confirmación del DTC 
+</title>
+<attention3>
+<ptxt>
+Prepare todos los mandos a distancia registrados antes de efectuar el procedimiento de confirmación de DTC. 
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Conecte el encendido (posición &#34;ON&#34;). 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Asegúrese de que la configuración del &#34;Aviso de la pila del mando a distancia&#34; corresponde al modo &#34;Activo&#34;. 
+<intxreftitleoff1 refid = "ASPAP70AA504009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Sitúe el mando a distancia dentro del área de funcionamiento del sistema de arranque del motor sin llave y abra y cierre la puerta al menos 2 veces. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Repita el paso 3) 6 veces. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Efectúe los pasos 3) y 4) con cada uno de los mandos a distancia registrados. 
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPAP70AA504015003">
+<title>
+Localización y reparación de la avería correspondiente al DTC 
+</title>
+<diag type = "test" id = "ASPAP70AA504015004">
+<testgroup id = "ASPAP70AA504015005">
+<title>
+Inspección del mando a distancia 
+</title>
+<test1>
+<ptxt>
+Prepare todos los mandos a distancia registrados. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Conecte el encendido (posición “ON”) mientras lleva el mando a distancia con usted. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si se enciende la luz de advertencia de consumo de la batería del mando a distancia en el juego de instrumentos. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Desconecte el encendido (posición “OFF”). 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Efectúe los pasos del 2) al 4) con todos los mandos a distancia. 
+</ptxt>
+</test1>
+<question>
+¿Se enciende la luz de advertencia de consumo de la batería del mando a distancia en el juego de instrumentos? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección. (Se detectó una señal de pila del mando a distancia agotada en el pasado. [No se borró el DTC]) 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70AA504015006">
+<title>
+Inspección de la pila del mando a distancia 
+</title>
+<test1>
+<ptxt>
+Sustituya la pila del mando a distancia en cuestión por una nueva. 
+<intxreftitleoff1 refid = "ASPAP70AA506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Borre el DTC. 
+<intxreftitleoff1 refid = "ASPAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Efectúe 
+<intxref refid = "ASPAP70AA504015002">Procedimiento de confirmación del DTC </intxref>
+ y vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC B1134? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el mando a distancia y vuelva a realizar la comprobación de DTC. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "0">
+<servinfo servinfosgmlid = "AENAP70B5100001" svcinfotypenbr = "01" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Precautions for Diagnosing Trouble
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+There are two types of OBD system depending on the vehicle specification. For identification, refer to 
+<intxref refid = "AENAP70B5100003">Precaution for OBD System</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+For Euro-OBD model, diagnostic information stored in TCM memory can be cleared as well as checked by using SUZUKI scan tool or CAN communication OBD generic scan tool. Before using scan tool, read its “Operator’s (Instruction) Manual” to know how to use it.
+</ptxt>
+<ptxt>
+It is indistinguishable which module turns on MIL because not only ECM but also TCM turns on MIL.
+</ptxt>
+<ptxt>
+Therefore, check both ECM and TCM for DTC when MIL turns on.
+</ptxt>
+<ptxt>
+When checking TCM for DTC, keep in mind that DTC is displayed on the scan tool as follows depending on the scan tool.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+SUZUKI scan tool displays DTC detected by TCM.
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN communication OBD generic scan tool displays DTC detected by both of ECM and TCM simultaneously.
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+For non-Euro-OBD model, diagnostic information stored in TCM memory can be cleared as well as checked by using SUZUKI scan tool or CAN communication OBD generic scan tool. Before using scan tool, read its “Operator’s (Instruction) Manual” to know how to use it.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When replacing TCM with used one, all learned controls which are stored in TCM memory should be erased after the replacement referring to 
+<intxref refid = "AENAP70B5106001">TCM Learning Control Initialization</intxref>
+. Neglecting this initialization may cause excessive shift shock.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Be sure to read 
+<intxref refid = "AENAP70B0000002">Precautions for Electrical Circuit Service</intxref>
+ before inspection, and understand well what is written there.
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM replacement
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+When substituting a known-good TCM, check that all relays and actuators have resistance of specified value.
+</ptxt>
+<ptxt>
+Neglecting this check may result in damage to the known-good TCM.
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Communication of ECM, TCM, BCM, combination meter, P/S control module, HVAC control module (auto A/C model), SDM, steering angle sensor (ESP<sup>®</sup> model) and ABS / ESP<sup>®</sup> control module is established by CAN.
+</ptxt>
+<ptxt>
+For more detail of CAN communication for TCM, refer to 
+<intxref refid = "AENAP70BA801001">Communication System Description</intxref>
+.
+</ptxt>
+<ptxt>
+Also, be sure to handle CAN communication line with care. 
+<intxreftitleoff1 refid = "AENAP70B0000014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

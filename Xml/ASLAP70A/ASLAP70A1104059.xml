@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A1104059" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2228 / P2229
+</title>
+<servinfosub id = "ASLAP70A1104059001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.143in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.062in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2228: Nízke napätie obvodu snímača atmosférického tlaku „A“
+</emph>
+</ptxt>
+<ptxt>
+Výstupné napätie snímača atmosférického tlaku je nižšie ako 0,2 V na 5 sek.
+</ptxt>
+<ptxt>
+(Logika rozpoznávania 3 jazdného cyklu)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Snímač atmosférického tlaku v riadiacej jednotke motora
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2229: Vysoké napätie obvodu snímača atmosférického tlaku „A“
+</emph>
+</ptxt>
+<ptxt>
+Výstupné napätie snímača atmosférického tlaku je vyššie ako 4,8 V na 5 sek.
+</ptxt>
+<ptxt>
+(Logika rozpoznávania 3 jazdného cyklu)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104059002">
+<title>
+Postup potvrdenia DTC
+</title>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „ON“ na 10 sek.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104059003">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A1104059004">
+<testgroup id = "ASLAP70A1104059005">
+<question>
+Bola vykonaná &#34;Kontrola systému motora a riadenia emisií&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104001">Kontrola systému motora a riadenia emisií</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104059006">
+<title>
+Kontrola obvodu uzemnenia a napájania riadiacej jednotky motora
+</title>
+<test1>
+<ptxt>
+Skontrolujte napájací a uzemňovací okruh riadiacej jednotky motora. 
+<intxreftitleoff1 refid = "ASLAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte poškodený obvod napájania a uzemnenia ECM.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

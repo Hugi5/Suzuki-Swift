@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B1104003" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Comprobación del DTC
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Para el tipo de distinción del modelo OBD, consulte &#34; Discriminación del sistema OBD&#34; en 
+<intxref refid = "ASPAP70B1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+En el caso del modelo Euro-OBD, en caso de que el MIL se encienda, la avería se detecta ya sea en el ECM o en el TCM (modelo con A/T) y éste almacena la información de la avería (DTC, datos de imagen fija, etc.) en su memoria.
+</ptxt>
+<ptxt>
+Verifique la información de la avería según el tipo de herramienta de escaneado como se especifica a continuación.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Herramienta de escaneado SUZUKI: 
+</ptxt>
+<ptxt>
+Revise el ECM y el TCM (modelos con A/T) por separado porque la información de averías en ambos módulos no se puede leer y mostrar simultáneamente.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Herramienta de escaneado genérica OBD con comunicación CAN: 
+</ptxt>
+<ptxt>
+Inspeccione el ECM y el TCM (modelo con A/T) simultáneamente.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Prepare la herramienta de escaneado SUZUKI o la herramienta de escaneado genérica OBD con comunicación CAN.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L1A001">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+Herramienta de escaneado de SUZUKI (SUZUKI-SDT)
+</s-number>
+<ptxt>
+</ptxt>
+</servicetoolitem>
+</servicetool>
+</s1>
+<s1>
+<ptxt>
+Conecte la herramienta de escaneado al DLC (1) con el encendido en la posición &#34;OFF&#34;.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A121001.jpg" width = "88.000mm" height = "67.502mm" ver = "02" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Conecte el encendido (posición &#34;ON&#34;) y compruebe que se enciende la MIL.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Lea el DTC, el DTC pendiente y los datos de imagen fija, de acuerdo con las instrucciones indicadas en la herramienta de escaneado, e imprima o anote estos datos. Para obtener más información, consulte el manual del usuario de la herramienta de escaneado.
+</ptxt>
+<ptxt>
+Si no es posible establecer comunicación entre la herramienta de escaneado y el ECM, consulte 
+<intxref refid = "ASPAP70BA804004">Localización y reparación de averías para Bus de comunicación apagado</intxref>
+.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Tras la verificación, desconecte el encendido (posición &#34;OFF&#34;) y desconecte la herramienta de escaneado del DLC.
+</ptxt>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

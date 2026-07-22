@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A4604016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1015/C1017/C1023 
+</title>
+<servinfosub id = "AFRAP70A4604016001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.257in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1015: Défaillance du capteur G longitudinal de l&#39;ensemble de capteur d&#39;embardée / G
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signal du capteur G longitudinal hors limites spécifiées 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le signal de capteur G longitudinal ne change pas même si le véhicule accélère ou décélère. 
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Module de commande ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Support d&#39;actionneur 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1017: Performance de circuit de capteur G latéral
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le signal du capteur G latéral se trouve en dehors de la plage spécifiée. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le signal de capteur G latéral ne change pas alors que le véhicule tourne vers la droite ou vers la gauche. 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1023: Performance de circuit de capteur d&#39;embardée
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le signal du capteur d&#39;embardée se trouve en dehors de la plage spécifiée. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Alors que le véhicule est à l&#39;arrêt, le signal de capteur d&#39;embardée est supérieur à la valeur prescrite. 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A4604016002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A4604016003">
+<testgroup id = "AFRAP70A4604016004">
+<question>
+La &#34;Vérification du système ESP<sup>&#174;</sup>&#34; a-t-elle été effectuée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A4604001">Vérification du système ESP&#174;</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604016006">
+<title>
+Vérification du module de commande ESP&#174; et du support d&#39;actionneur 
+</title>
+<test1>
+<ptxt>
+Vérifier l&#39;ensemble de groupe hydraulique / module de commande ESP<sup>&#174;</sup> et l&#39;actionneur de support. 
+<intxreftitleoff1 refid = "AFRAP70A4606004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer les pièces défectueuses. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604016005">
+<title>
+Vérification des DTC de l&#39;ESP&#174;
+</title>
+<test1>
+<ptxt>
+Suivre le point 
+<intxref refid = "AFRAP70A4604005">Vérification des DTC</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Y a-t-il d&#39;autres DTC que C1015, C1017 et C1023? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer l&#39;ensemble de groupe hydraulique / module de commande ESP<sup>&#174;</sup> et vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

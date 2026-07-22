@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A8204012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1012
+</title>
+<servinfosub id = "ASLAP70A8204012001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.597in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.597in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1012: Prerušované spojenie s konektorom SDM
+</emph>
+</ptxt>
+<ptxt>
+Poruchové spojenie s konektorom SDM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Konektor SDM
+</ptxt>
+</item>
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A8204012002">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A8204012003">
+<testgroup id = "ASLAP70A8204012004">
+<question>
+Vykonala sa „Kontrola diagnostického systému airbagov“?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A8204001">Kontrola diagnostického systému airbagov</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A8204012005">
+<title>
+Kontrola konektora SDM
+</title>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie konektora SDM a “Pripojenie kolíka zistenia” konektora SDM.
+</ptxt>
+</test1>
+<question>
+Je v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Nahraďte SDM novou jednotkou. 
+<intxreftitleoff1 refid = "ASLAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Skontrolujte kvôli občasným problémom. 
+<intxreftitleoff1 refid = "ASLAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<attention3>
+<ptxt>
+Po skončení prehliadky a opravných prácach vykonajte nasledovné:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Znovu pripojte všetky komponenty systému airbagov a skontrolujte, či sú všetky komponenty správne namontované.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ak sa vyskytujú DTC, vymažte ich podľa 
+<intxref refid = "ASLAP70A8204006">Vymazanie DTC</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Zopakujte 
+<intxref refid = "ASLAP70A8204001">Kontrola diagnostického systému airbagov</intxref>
+ na potvrdenie, že porucha bola napravená.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

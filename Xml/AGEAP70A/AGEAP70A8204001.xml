@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A8204001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Überprüfung des Airbag-Diagnosesystems
+</title>
+<ptxt>
+Siehe 
+<intxref refid = "AGEAP70A8200001">Vorsichtsmaßnahmen bei der Wartung des Airbagsystems</intxref>
+, Airbagsystem gemäß dem folgenden Verfahren prüfen.
+</ptxt>
+<servinfosub id = "AGEAP70A8204001001">
+<title>
+Überprüfungsablauf des Airbag-Diagnosesystems
+</title>
+<diag type = "test" id = "AGEAP70A8204001002">
+<testgroup id = "AGEAP70A8204001003">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+Die DTCs abrufen. Siehe dazu 
+<intxref refid = "AGEAP70A8204005">DTC-Überprüfung</intxref>
+.
+</ptxt>
+<paragroup>
+<attention3>
+<ptxt>
+Wenn keine Kommunikation zwischen dem SUZUKI-Diagnosegerät und dem Fahrzeug hergestellt werden kann, &#34;DLC- und Kommunikationsprüfung (keine Kommunikation mit SDM)&#34; durchführen.
+</ptxt>
+</attention3>
+</paragroup>
+</test1>
+<test1>
+<ptxt>
+DTC löschen. Siehe dazu 
+<intxref refid = "AGEAP70A8204006">Löschen von DTCs</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegen bei der erneuten Prüfung DTCs vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche und danach weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A8204001004">
+<title>
+Sichtprüfung
+</title>
+<test1>
+<ptxt>
+Eine Sichtprüfung gemäß 
+<intxref refid = "AGEAP70A8204002">Sichtprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das defekte Bauteil reparieren oder austauschen, dann weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A8204001005">
+<title>
+Überprüfung auf Aufprallanzeichen
+</title>
+<test1>
+<ptxt>
+Fahrzeug auf Anzeichen für Aufprall überprüfen.
+</ptxt>
+</test1>
+<question>
+Sind Anzeichen für einen Aufprall vorhanden?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Defekte Verbindungen überprüfen und gemäß 
+<intxref refid = "AGEAP70A8204054">Erforderliche Reparatur und Überprüfung nach einem Unfall</intxref>
+ austauschen, dann weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A8204001006">
+<title>
+Überprüfung auf zeitweilige Störungen
+</title>
+<test1>
+<ptxt>
+Auf zeitweilige Störungen überprüfen. Siehe dazu 
+<intxref refid = "AGEAP70A0006002">Überprüfung auf Wackelkontakt und schlechte Verbindungen</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das defekte Bauteil reparieren oder austauschen, dann weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A8204001007">
+<title>
+Endkontrolle
+</title>
+<test1>
+<ptxt>
+Sicherstellen, dass das Störungssymptom nicht mehr vorhanden ist und das Airbag-System einwandfrei funktioniert. Falls die erfolgte Reparatur mit einem DTC in Beziehung stand, den betreffenden DTC einmal löschen und sicherstellen, dass kein DTC mehr angezeigt wird.
+</ptxt>
+</test1>
+<question>
+Tritt die Störung wieder auf?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zurück zu Schritt 1.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

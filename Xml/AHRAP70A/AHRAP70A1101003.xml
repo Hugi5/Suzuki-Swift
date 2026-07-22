@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Opis sustava ugrađene dijagnostike
+</title>
+<ptxt>
+ECM u ovom vozilu ima sljedeće funkcije.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kada je kontakt uključen sa zaustavljenim motorom, MIL (1) se uključuje radi provjere strujnog kruga MIL-a (1).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kada ECM detektira kvar koji ima negativan utjecaj na emisiju vozila dok motor radi, on uključuje MIL (1) u sklopu mjerača na ploči s instrumentima ili treperenje (treperi samo kada se detektira izostanak paljenja što može prouzročiti oštećenje katalizatora) i pohranjuje područje s kvarom u njegovu memoriju.
+</ptxt>
+<ptxt>
+(Ako ECM detektira kvar samo u prvom ciklusu vožnje (pogledajte 
+<intxref refid = "AHRAP70A1101003002">Ciklus vožnje</intxref>
+), ali ne detektira isti kvar u iduća dva uzastopna ciklusa vožnje, ECM ne uključuje MIL (1) iako zadržava povezani DTC u svojoj memoriji.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Za određene neispravnosti, ECM preuzima logiku detekcije 3 ciklusa vožnje (pogledajte 
+<intxref refid = "AHRAP70A1101003003">Logika detekcije u 3 ciklusa vožnje</intxref>
+) kako bi spriječio neispravno detektiranje. 
+</ptxt>
+<ptxt>
+Prema ovoj logici, MIL se uključuje kada se isti kvar pojavi u 3 uzastopna ciklusa vožnje.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kada se detektira kvar, trenutačno stanje motora i uvjeti vožnje pohranjuju se u memoriju ECM-a kao podaci snimke stanja. (Detalje potražite u opisu pod naslovom 
+<intxref refid = "AHRAP70A1101003007">Brisanje podataka snimke stanja:</intxref>
+.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Komunicirati se može putem DLC-a (3) koristeći ne samo SUZUKI alat za skeniranje (2), nego i OBD generički alat za skeniranje koji koristi CAN komunikaciju. (Dijagnostičkim informacijama može se pristupiti upotrebom pomoću za skeniranje.)
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "AHRAP70A1101003001">
+<title>
+Ciklus zagrijavanja
+</title>
+<ptxt>
+Ciklus zagrijavanja nastavak je rada motora nakon pokretanja motora dok temperatura rashladne tekućine ne poraste za najmanje 22 &#176;C (40 &#176;F) ili dosegne minimalnu temperaturu od 71 &#176;C (160 &#176;F).
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1101003002">
+<title>
+Ciklus vožnje
+</title>
+<ptxt>
+&#34;Ciklus vožnje&#34; vrijeme je od pokretanja motora do sljedećeg isključivanja motora.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1101003003">
+<title>
+Logika detekcije u 3 ciklusa vožnje
+</title>
+<ptxt>
+Detektirani kvar u prvom ciklusu vožnje pohranjuje se u memoriju ECM-a (u obliku DTC-a na čekanju), ali MIL u tom trenutku ne svijetli. ECM aktivira MIL da zasvijetli pri trećoj detekciji istog kvara u sljedeća dva ciklusa vožnje.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1101003004">
+<title>
+DTC na čekanju
+</title>
+<ptxt>
+&#34;DTC na čekanju&#34; odnosi se na one DTC-ove na koje se primjenjuje &#34;logika detekcije u 3 ciklusa vožnje&#34;. Ako je ovakav DTC detektiran i privremeno pohranjen tijekom prvog od tri uzastopna ciklusa vožnje, nazivamo ga &#34;DTC na čekanju&#34;.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1101003005">
+<title>
+Podaci snimke stanja
+</title>
+<ptxt>
+ECM u svoju memoriju pohranjuje stanje motora i uvjete vožnje u trenutku detekcije kvara. Ovi podaci nazivaju se &#34;Podaci snimke stanja&#34;.
+</ptxt>
+<ptxt>
+Stoga je pregledom podataka snimke stanja moguće znati stanje motora i uvjete vožnje (npr. je li motor topao ili ne, je li se vozilo kretalo ili je mirovalo, je li mješavina zrak/gorivo bila siromašna ili bogata) u trenutku detekcije kvara. Također, ECM ima funkciju pohranjivanja podataka snimke stanja za tri različita kvara redom kako se detektiraju. Korištenjem ove funkcije moguće je znati redoslijed detektiranja tih kvarova. Ovo je korisno prilikom ponovnog provjeravanja ili dijagnosticiranja problema.
+</ptxt>
+<ptxt>
+Detalje o podacima snimke stanja koji se mogu iščitati iz ECM-a potražite u dolje navedenoj tablici.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.934in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sustav goriva
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Izračunato opterećenje
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kratkoročno namještanje smjese goriva
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Dugoročno namještanje smjese goriva
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Brzina vrtnje motora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Brzina vozila
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kut pretpaljenja
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Temperatura usisanog zraka
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Apsolutni TP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Radni ciklus pražnjenja EVAP spremnika
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vrijeme nakon pokretanja motora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Razina u spremniku goriva
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Barometarski tlak
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Napon akumulatora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relativni TP**
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Apsolutni TP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Apsolutni APP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Apsolutni APP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ciljani položaj zaklopke
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Podaci snimke stanja sa zvjezdicom (*) označavaju omjer između napona napajanja i izlaznog napona pripadajućeg senzora.
+</ptxt>
+<ptxt>
+Kada napon napajanja iznosi 5,0 V, a izlazni napon 4,0 V, podaci snimke stanja prikazuju se kako slijedi:
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Za sustave čiji je izlazni napon proporcionalan ulaznom, prikazuje se 80 % (postotak maksimalnog referentnog ulaznog napona).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Za sustave čiji je izlazni napon obrnuto proporcionalan ulaznom, prikazuje se 20 % (100 % minus postotak maksimalnog referentnog ulaznog napona).
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Za relativni TP sa zvjezdicama (**) u gornjoj tablici, on označava formulom izračunatu vrijednost ((izlazni napon - izlazni napon pri zatvorenom položaju zaklopke)/napon napajanja).
+</ptxt>
+<ptxt>
+Kada napon napajanja iznosi 5,0 V i izlazni napon pri zatvorenom položaju zaklopke iznosi 1,0 V, podaci snimke stanja prikazuju se kako slijedi.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Pri zatvorenom položaju zaklopke (izlazni napon = 1,0 V) prikazuje 0 %.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pri sasvim otvorenom položaju zaklopke (izlazni napon 4,0 V), prikazuje 60 %.
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Međutim, za sustave čiji je izlazni napon obrnuto proporcionalan ulaznom, prikazuje 100 % minus gore navedena formula.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Podaci snimke stanja (na primjer)
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "AHRAP70A1101003006" page = "1">
+<title>
+Prioritet podataka snimke stanja:
+</title>
+<ptxt>
+ECM ima 4 snimke u kojima se mogu pohraniti podaci snimke stanja.
+</ptxt>
+<ptxt>
+Snimka 1 posebna je snimka u kojoj podaci snimke stanja o kvarovima koji utječu na emisiju imaju prednost nad podacima koji se odnose na ostale (opće) kvarove. Ako je detektiran bilo koji kvar koji utječe na emisiju dok Snimka 1 drži podatke povezane s općim kvarovima (podaci prioriteta &#34;2&#34; u sljedećoj tablici), tada se trenutno pohranjeni podaci zamjenjuju podacima koji se tiču novodetektiranog kvara (podaci prioriteta &#34;1&#34; prikazanih u sljedećoj tablici).
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Prioritet
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Podaci snimke stanja u Snimci 1
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Podaci podrazumijevaju svaku od sljedećih neispravnosti: detektiran izostanak paljenja (P0300-P0304), presiromašna smjesa u sustavu (P0171) i prebogata smjesa u sustavu (P0172)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Podaci podrazumijevaju i druge neispravnosti osim gore navedenih.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Snimke 2 do 4 dodijeljene su općim neispravnostima. One pojedinačno pohranjuju podatke snimke stanja za 3 različite opće neispravnosti redoslijedom detekcije (odnosno, Snimka 2 pohranjuje podatke za prvu detektiranu neispravnosti, a Snimka 4 pohranjuje podatke za zadnju detektiranu neispravnost). Za razliku od podataka Snimke 1, podaci u ove tri snimke nisu ažurirani, tako da podaci snimke stanja za bilo koju naknadno detektiranu neispravnost nisu nigdje pohranjeni.
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039Q.swf" width = "183.000mm" height = "49.215mm" ver = "02" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: Nema podataka snimke stanja
+</ptxt>
+</topic>
+<topic id = "AHRAP70A1101003007" page = "1">
+<title>
+Brisanje podataka snimke stanja:
+</title>
+<ptxt>
+Kada je DTC izbrisan, također je izbrisan i podatak snimke stanja neispravnosti označen ovim DTC-om.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AHRAP70A1101003008" page = "1">
+<title>
+Test spremnosti sustava
+</title>
+<ptxt>
+Test spremnosti sustava izvodi se u svrhu potvrđivanja da svaki sustav povezan sa emisijom ispuha zadovoljava stanja koja dozvoljavaju ECM-u da detektira neispravnost ako se ona javi i postavi odgovarajući DTC.
+</ptxt>
+<ptxt>
+Test se izvodi promatranjem određenih stavki (komponenti) pomoću alata za skeniranje (SUZUKI alat za skeniranje ili OBD generički alat za skeniranje koji koristi CAN komunikaciju). Kada test prikaže da su ispunjeni unaprijed utvrđeni uvjeti za testirani sustav, ECM izvodi dijagnostiku sustava, mijenja status testa spremnosti sustava iz &#34;Nedovršeno&#34; u &#34;Dovršeno&#34; i aktivira prikaz statusa &#34;Dovršeno&#34; na alatu za skeniranje.
+</ptxt>
+<ptxt>
+Status &#34;Dovršeno&#34; održava se dok se alatom za skeniranje ne obavi brisanje DTC-a.
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Status testa spremnosti sustava može se promijeniti iz &#34;Dovršeno&#34; u &#34;Nedovršeno&#34; ako se izvede bilo koji od sljedećih servisnih radova.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Odspajanje negativnog kabela (–) s akumulatora
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odspajanje ECM konektora
+</ptxt>
+</item>
+<item>
+<ptxt>
+Uklanjanje kabela uzemljenja ECM-a
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Stavke (komponente) označene u sljedećoj tablici nadziru se u testu spremnosti sustava kako bi se potvrdila spremnost za detektiranje DTC-a koji su navedeni pored svake nadzirane stavke.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Status &#34;Dovršen&#34; ili &#34;Nedovršen&#34; identificiran kroz sustav testa spremnosti NE znači &#34;Normalan&#34; ili &#34;Abnormalan&#34; rezultat dijagnostike.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AHRAP70A1101003009">
+<title>
+Nadzirana stavka u tablici testa spremnosti sustava
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Nadzirana stavka
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC vezan uz nadziranu stavku
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Katalizator
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Senzor O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Grijač O2 senzora
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

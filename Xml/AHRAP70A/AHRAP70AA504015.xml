@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70AA504015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1134
+</title>
+<servinfosub id = "AHRAP70AA504015001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1134: Baterija daljinskog upravljača je prazna
+</emph>
+</ptxt>
+<ptxt>
+S daljinskog upravljača prima se signal isteka baterije daljinskog upravljača.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Baterija daljinskog upravljača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Daljinski upravljač
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70AA504015002">
+<title>
+Postupak potvrde DTC-a
+</title>
+<attention3>
+<ptxt>
+Pripremite sve registrirane daljinske upravljače prije izvršavanja postupka potvrde DTC-a.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrdite da je postavka &#34;Upozorenje baterije daljinskog upravljača&#34; u načinu rada &#34;Aktivan&#34;. 
+<intxreftitleoff1 refid = "AHRAP70AA504009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Stavite daljinski upravljač unutar područja rada pokretanja motora bez ključa i otvorite i zatvorite vrata više od 2 puta.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ponovite korak 3) 6 puta.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Napravite korake 3) i 4) sa svim registriranim daljinskim upravljačima.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHRAP70AA504015003">
+<title>
+Rješavanje problema DTC-a
+</title>
+<diag type = "test" id = "AHRAP70AA504015004">
+<testgroup id = "AHRAP70AA504015005">
+<title>
+Provjera daljinskog upravljača
+</title>
+<test1>
+<ptxt>
+Pripremite sve registrirane daljinske upravljače.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt dok nosite sa sobom daljinski upravljač.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite svjetli li svjetlo upozorenja potrošnje baterije daljinskog upravljača u kombiniranom mjeraču.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Napravite korake 2) do 4) za sve registrirane daljinske upravljače.
+</ptxt>
+</test1>
+<question>
+Svjetli li svjetlo upozorenja potrošnje baterije daljinskog upravljača u kombiniranom mjeraču?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj. (U prošlosti je detektiran signal isteka baterije daljinskog upravljača. (DTC nije obrisan))
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA504015006">
+<title>
+Provjera baterije daljinskog upravljača
+</title>
+<test1>
+<ptxt>
+Zamijenite bateriju odgovarajućeg daljinskog upravljača novom. 
+<intxreftitleoff1 refid = "AHRAP70AA506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izbrišite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70AA504015002">Postupak potvrde DTC-a</intxref>
+ i zatim ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Detektira li se DTC B1134 i dalje?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite daljinski upravljač i ponovno provjerite DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

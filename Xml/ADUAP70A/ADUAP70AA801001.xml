@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ADUAP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschrijving van het communicatiesysteem
+</title>
+<servinfosub id = "ADUAP70AA801001001">
+<title>
+Beschrijving van het systeem
+</title>
+<ptxt>
+De communicatie van elk regelapparaat en elke regeleenheid wordt tot stand gebracht door de voordurende invoer/uitvoer van digitale aan/uit-signalen waarbij diverse gegevenselementen evenwijdig worden beheerd. De verzending/ontvangst van deze gegevens wordt aangeroepen via een seriële communicatie-interface.
+</ptxt>
+<ptxt>
+Voor boordcommunicatiesystemen zijn verschillende typen seriële communicatie-interfaces in gebruik, zoals UART-, CAN- en LIN-protocollen (communicatienormen).
+</ptxt>
+<ptxt>
+UART wordt gebruikt voor de communicatie tussen het regelapparaat van het startsysteem met afstandsbediening en de stuursloteenheid.
+</ptxt>
+<ptxt>
+LIN wordt gebruikt voor communicatie tussen de combimeter en het regelapparaat van het parkeersensorsysteem, en voor communicatie tussen het HVAC-regelapparaat en het paneel van de automatische A/C.
+</ptxt>
+<ptxt>
+Daarnaast worden de gegevens van het regelapparaat van het startsysteem met afstandsbediening (model met drukknopstartsysteem), de BCM, de ECM, de combimeter, het P/S-regelapparaat, het HVAC-regelapparaat (model met automatische A/C), het ESP<sup>&#174;</sup>-regelapparaat, de SDM en de stuurhoeksensor verstuurd/ontvangen via een gedraaid paar bestaand uit twee gegevenstransmissielijnen (CAN Hoog-lijn en CAN Laag-lijn), verbonden door middel van CAN-communicatie. De gegevens die door het ene regelapparaat verkregen worden, kunnen via CAN-communicatie met het andere regelapparaat uitgewisseld worden.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ADUAP70AA801001002">
+<title>
+CAN-communicatiesignaal
+</title>
+<ptxt>
+Het CAN-communicatiesysteem is een serieel communicatiesysteem om via gegevenstransmissielijnen een groot aantal gegevens (sensorwaarden, regelingsgegevens en regelsignalen) als digitale aan/uit-signalen door te geven. Dit systeem gebruikt twee lijnen (CAN Hoog en CAN Laag) voor het communicatiecircuit om een hoge betrouwbaarheid te behouden, zelfs bij seriële communicatie met een hoge snelheid.
+</ptxt>
+<ptxt>
+De seriële communicatie wordt zoals hieronder weergegeven, tot stand gebracht met 2,5 V als referentieniveau voor zowel het CAN Hoog-signaal (1) als het CAN Laag-signaal (2). Het bereik van het CAN Hoog-signaal ligt tussen 2,5 V en ongeveer 3,5 V en dat van het CAN Laag-signaal tussen 2,5 V en ongeveer 1,5 V. Als beide op 2,5 V staan, wordt het signaal beoordeeld als UIT. Als het CAN Hoog-signaal 3,5 V en het CAN Laag-signaal 1,5 V is (dat wil zeggen dat het verschil tussen de hoge en lage spanning meer dan ongeveer 2 V is), dan wordt het signaal als AAN beschouwd. Daarom is het kenmerkend voor het CAN-communicatiesignaal dat de golfvorm van het signaal symmetrisch is tussen CAN Hoog- en CAN Laag-signalen ten opzichte van het 2,5 V-niveau. De CAN-communicatie mislukt als de symmetrische signaalvorm ineenzakt.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002D.swf" width = "183.000mm" height = "47.725mm" ver = "01" gw = "338" gh = "119"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

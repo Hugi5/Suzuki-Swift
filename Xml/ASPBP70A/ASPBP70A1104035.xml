@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A1104035" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0420
+</title>
+<attention3>
+<ptxt>
+Para la distinción de tipo del sistema OBD, consulte &#34;Discriminación del sistema OBD&#34; en 
+<intxref refid = "ASPBP70A1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</attention3>
+<servinfosub id = "ASPBP70A1104035001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.855in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.349in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0420: Eficiencia del sistema de catalizador por debajo del límite 
+</emph>
+</ptxt>
+<ptxt>
+La amplitud media de la señal de HO2S-2 es superior al valor especificado con el vehículo en el estado especificado.
+</ptxt>
+<ptxt>
+(Tipo A: lógica de detección de 3 ciclos de conducción, pero el MIL no se enciende)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción, pero el MIL no se enciende)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sistema de escape
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-1 y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-2 y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+TWC
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104035002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "IBP60B110019S.swf" width = "183.000mm" height = "98.609mm" ver = "01" gw = "441" gh = "263"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.317in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.919in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.317in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.658in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.317in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.748in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conector del ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TWC
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HO2S-1
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HO2S-2
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<p-change/>
+<servinfosub id = "ASPBP70A1104035003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention1>
+<ptxt>
+Si no se selecciona una carretera apta ni se toman las medidas de precaución adecuadas al efectuar una prueba de carretera, podría producirse un accidente.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Elija una carretera nivelada y sin tráfico para reducir el riesgo de sufrir un accidente.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Realice la prueba con sumo cuidado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Para la realización de la prueba de carretera, se requiere la presencia de 2 personas: un conductor y un ayudante.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Compruebe que se cumplen las siguientes condiciones en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+El control de realimentación de A/F (aire/combustible) (bucle cerrado) está activado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECT durante el arranque del motor &#62; –9&#176;C (16&#176;F)
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Compruebe que no se detectan los siguientes DTC en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Calentador de HO2S-1 (P0030, P0031 y P0032)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Calentador de HO2S-2 (P0036, P0037 y P0038)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor TP (P0122, P0123, P0222 y P0223)
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-1 (P0130, P0131, P0132, P0133 y P0134)
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-2 (P0137, P0138, P0140, P2270 y P2271)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sistema de reajuste de combustible (P0171 y P0172)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Fallo de encendido en el cilindro detectado (P0300)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Válvula de purga del recipiente de EVAP (P0443, P0458 y P0459)
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Caliente el motor hasta que llegue a la temperatura normal de funcionamiento.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Con el motor a un régimen de 2.600 a 3.500 rpm, conduzca el vehículo constantemente a 100 a 120 km/h (62 a 75 mile/h) durante 5 min. o más en 6ª velocidad (modelo con M/T) o en la posición D (modelo con CVT). (Mantenga la apertura de la válvula de mariposa constante en este paso.)
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Compruebe si ha finalizado o no la prueba de supervisión/disponibilidad del catalizador. Para ello, utilice la herramienta de escaneado. Si la prueba de supervisión/disponibilidad del catalizador no se ha completado, compruebe las condiciones del vehículo (medioambientales) y vuelva a repetir los pasos del 2) al 3).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104035004">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A1104035005">
+<testgroup id = "ASPBP70A1104035006">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104035007">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Compruebe el DTC.
+</ptxt>
+</test1>
+<question>
+¿Se detecta algún otro DTC además del P0420?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104035008">
+<title>
+Inspección del sistema de escape
+</title>
+<test1>
+<ptxt>
+Compruebe si el sistema de escape presenta fugas, daños y conexiones sueltas.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o reemplace las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104035009">
+<title>
+Verificación del circuito de HO2S-2
+</title>
+<test1>
+<ptxt>
+Inspeccione los circuitos de masa y de señal conforme al paso 3 de 
+<intxref refid = "ASPBP70A1104026">DTC P0137 / P0138 / P0140</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104035010">
+<title>
+Inspección del circuito de la señal de la HO2S-1
+</title>
+<test1>
+<ptxt>
+Compruebe el circuito de señal de HO2S-1 de acuerdo con el paso 3 de
+<intxref refid = "ASPBP70A1104023">DTC P0131 / P0132</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104035011">
+<title>
+Nueva comprobación del DTC.
+</title>
+<test1>
+<ptxt>
+Sustituya el colector de escape (que incorpora el TWC). 
+<intxreftitleoff1 refid = "ASPBP70A1B06002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Realice el &#34;procedimiento de confirmación de DTC&#34;.
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P0420?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104035012">
+<title>
+Nueva comprobación del DTC.
+</title>
+<test1>
+<ptxt>
+Sustituya el HO2S-2. 
+<intxreftitleoff1 refid = "ASPBP70A1306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe el DTC.
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P0420?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104035013">
+<title>
+Nueva comprobación del DTC.
+</title>
+<test1>
+<ptxt>
+Sustituya el HO2S-1. 
+<intxreftitleoff1 refid = "ASPBP70A1306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe el DTC.
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P0420?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

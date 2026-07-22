@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A4604016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1015 / C1017 / C1023
+</title>
+<servinfosub id = "AHUAP70A4604016001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.257in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1015: A szögsebesség- / G-érzékelő egységben található hosszanti G-érzékelő hibája
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A hosszanti G-érzékelő jele az előírt tartományon kívül van.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A hosszirányú G-érzékelő jele nem változik, pedig a jármű jobbra vagy balra fordul.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</item>
+<item>
+<ptxt>
+Aktuátor konzol
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1017: Oldalirányú G-érzékelő áramkörének teljesítménye
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az oldalirányú G-érzékelő jele az előírt tartományon kívül van.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az oldalirányú G-érzékelő jele nem változik, pedig a jármű jobbra vagy balra fordul.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1023: Szögsebesség-érzékelő áramkörének teljesítménye
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A szögsebesség-érzékelő jele kívül esik az előírt tartományon.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A jármű áll, a szögesebesség-érzékelő jele mégis nagyobb az előírt értéknél.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604016002">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A4604016003">
+<testgroup id = "AHUAP70A4604016004">
+<question>
+Végrehajtásra került az „ESP<sup>®</sup> rendszer ellenőrzése”?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604016006">
+<title>
+ESP® vezérlőmodul és aktuátor tartó ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet és az aktuátor tartóját. 
+<intxreftitleoff1 refid = "AHUAP70A4606004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás alkatrészeket.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604016005">
+<title>
+Az ESP® hibakódjainak ellenőrzése
+</title>
+<test1>
+<ptxt>
+Hajtsa végre a következőket: 
+<intxref refid = "AHUAP70A4604005">DTC ellenőrzése</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Található a C1015, C1017 és C1023 hibakódokon kívül más DTC is?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a vonatkozó DTC-hibaelhárítással.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

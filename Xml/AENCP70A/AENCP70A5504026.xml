@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENCP70A5504026" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0722
+</title>
+<servinfosub id = "AENCP70A5504026001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.238in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.964in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0722: Output Speed Sensor Circuit No Signal
+</emph>
+</ptxt>
+<ptxt>
+This DTC is detected if any one of the following conditions is met.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vehicle speed signal is lower than specified value even if secondary pulley speed signal is higher than specified value.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output signal value of vehicle speed sensor is lower than half of the actual vehicle speed for specified time.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(1 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vehicle speed sensor and/or its circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENCP70A5504026002">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "IBP70A550019.swf" width = "183.000mm" height = "89.970mm" ver = "01" gw = "468" gh = "239"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.090in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.718in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "0.634in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+TCM connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vehicle speed sensor signal circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+TCM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vehicle speed sensor connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Sensor ground circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vehicle speed sensor power supply circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vehicle speed sensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENCP70A5504026003">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Perform road test in a place where there is no traffic to prevent an accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Road test should be performed with two persons, a driver and a tester, on a level road.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+Check that the following conditions are satisfied in this procedure.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+DTC P0705 or P0707 is not detected.
+</ptxt>
+</item>
+<item>
+<ptxt>
+11 V &#60; Battery voltage &#60; 15 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Start engine and drive vehicle in M range at 40 km/h (25 mile/h) for 10 sec.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENCP70A5504026004">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENCP70A5504026005">
+<testgroup id = "AENCP70A5504026006">
+<question>
+Was “CVT System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENCP70A5504001">CVT System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504026007">
+<title>
+Vehicle speed sensor power supply circuit check
+</title>
+<test1>
+<ptxt>
+With ignition OFF, disconnect “C60” connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connection to “C60” connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that “A1” circuit is battery voltage.
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504026008">
+<title>
+Vehicle speed sensor signal circuit and ground circuit check
+</title>
+<test1>
+<ptxt>
+With ignition OFF, disconnect “C09” and “E19” connectors.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connection to “C09” and “E19” connectors.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check the following points.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistance of “B1” and “C1” circuits: less than 1 Ω
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “B1” circuit and ground: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “B1” circuit terminal and other terminal at “C60” connector: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “C1” circuit terminal and other terminal at “C60” connector: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Voltage of “B1” and “C1” circuits: approx. 0 (when ignition is ON)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Are they in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504026009">
+<title>
+Vehicle speed sensor check
+</title>
+<test1>
+<ptxt>
+Check vehicle speed sensor. 
+<intxreftitleoff1 refid = "AENCP70A5506032"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Substitute a known-good TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENCP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace vehicle speed sensor. 
+<intxreftitleoff1 refid = "AENCP70A5506031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

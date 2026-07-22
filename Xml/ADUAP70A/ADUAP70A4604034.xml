@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A4604034" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1090 / C1091 / C1094
+</title>
+<servinfosub id = "ADUAP70A4604034001">
+<title>
+DTC-waarnemingsvoorwaarde en plaats van de storing
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.780in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.399in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC-waarnemingsvoorwaarde
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Plaats van de storing
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1090: De ECM neemt een storing in de rolteller van het ESP<sup>&#174;</sup>-regelapparaat waar
+</emph>
+</ptxt>
+<ptxt>
+Het ESP<sup>&#174;</sup>-regelapparaat stuurt ongeldige CAN-gegevens naar de ECM.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN-communicatiecircuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>&#174;</sup>-regelapparaat
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1091: Ongeldige CAN-gegevens van de ECM 
+</emph>
+</ptxt>
+<ptxt>
+Er wordt een DTC die verband houdt met de ECM waargenomen.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1094: Verwerpingsstatus van het koppelverzoek
+</emph>
+</ptxt>
+<ptxt>
+Het ESP<sup>&#174;</sup>-regelapparaat ontvangt ongeldige CAN-gegevens van de ECM (over de motorkoppelregeling).
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ADUAP70A4604034002">
+<title>
+DTC-storingzoeken
+</title>
+<diag type = "test" id = "ADUAP70A4604034003">
+<testgroup id = "ADUAP70A4604034004">
+<question>
+Werd &#34;Controle van ESP<sup>&#174;</sup>-systeem&#34; uitgevoerd?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A4604001">Controle van ESP&#174;-systeem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A4604034005">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Voer 
+<intxref refid = "ADUAP70A4604005">DTC-controle</intxref>
+ uit.
+</ptxt>
+</test1>
+<question>
+Worden er behalve C1090, C1091 of C1094 nog andere DTC&#39;s weergegeven?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar DTC-storingzoeken van de betrokken DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar stap 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A4604034006">
+<title>
+DTC-controle van de ECM
+</title>
+<test1>
+<ptxt>
+Controleer de DTC&#39;s van de ECM. 
+<intxreftitleoff1 refid = "ADUAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Worden DTC U0073 of U0121 waargenomen?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70AA804004">Storingzoeken bij &#34;Communicatiebus uit&#34;</intxref>
+ of 
+<intxref refid = "ADUAP70AA804003">Storingzoeken naar verbroken communicatie</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vervang het samenstel van de hydraulische regeleenheid / het regelapparaat van het ESP<sup>&#174;</sup> en controleer de DTC opnieuw. 
+<intxreftitleoff1 refid = "ADUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70AA504010" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1120 / B1170
+</title>
+<servinfosub id = "AHUAP70AA504010001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1120: Kulcsnélküli indítás vezérlőmodul belső hiba
+</emph>
+</ptxt>
+<ptxt>
+Kulcsnélküli indítás vezérlőmoduljának belső hibája
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Kulcsnélküli indítás vezérlőmodulja
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1170: EEPROM hozzáférési hiba
+</emph>
+</ptxt>
+<ptxt>
+Kulcsnélküli indítás vezérlőmoduljának belső hibája (EEPROM hiba)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70AA504010002">
+<title>
+DTC megerősítési eljárás
+</title>
+<s1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHUAP70AA504010003">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70AA504010004">
+<testgroup id = "AHUAP70AA504010005">
+<title>
+DTC-újraellenőrzés
+</title>
+<test1>
+<ptxt>
+Törölje a DTC-t. 
+<intxreftitleoff1 refid = "AHUAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Hajtsa végre a következőket: 
+<intxref refid = "AHUAP70AA504010002">DTC megerősítési eljárás</intxref>
+, majd újból kérdezze le a DTC-ket.
+</ptxt>
+</test1>
+<question>
+Továbbra is észlelhető a B1120 vagy a B1170 hibakód?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Cserélje ki a kulcsnélküli indítás vezérlőmodulját, és ismételje meg a DTC ellenőrzést. 
+<intxreftitleoff1 refid = "AHUAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vége.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

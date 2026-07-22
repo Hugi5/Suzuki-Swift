@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzuki Swift Manuals</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            padding: 80px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container that forces the header text to stack and align left, exactly like the logo graphic */
+        .logo-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            margin-bottom: 50px;
+        }
+
+        .suzuki-title {
+            font-family: 'Arial Black', Impact, sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: #000000;
+            line-height: 1;
+            margin: 0;
+            /* Stretches the font wider horizontally to match the flat text shape */
+            transform: scaleX(1.4);
+            transform-origin: left;
+        }
+
+        .swift-title {
+            font-family: 'Arial Black', Impact, sans-serif;
+            font-size: 6.2rem;
+            font-weight: 900;
+            color: #000000;
+            line-height: 1;
+            margin: 15px 0 20px 0;
+            /* Drastically skews the font sideways and stretches it to match the emblem */
+            transform: skewX(-20deg) scaleX(1.4);
+            transform-origin: left;
+            letter-spacing: -2px;
+        }
+
+        .service-heading {
+            font-family: Arial, sans-serif;
+            font-size: 2.1rem;
+            font-weight: bold;
+            color: #000000;
+            line-height: 1;
+            margin: 5px 0 0 0;
+            transform: scaleX(1.1);
+            transform-origin: left;
+            letter-spacing: 0.5px;
+        }
+
+        /* Keeps the button navigation centered below the left-aligned title layout */
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 380px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 18px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            border: 1px solid #1a3cb5;
+            
+            background: linear-gradient(rgba(45, 85, 245, 0.85) 2px, transparent 2px);
+            background-size: 100% 4px;
+            background-color: #5d7dfa; 
+            
+            transition: background-color 0.1s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(rgba(26, 60, 181, 0.9) 2px, transparent 2px);
+            background-size: 100% 4px;
+            background-color: #4564e6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left-Aligned Emblem Block Layout -->
+    <div class="logo-group">
+        <div class="suzuki-title">SUZUKI</div>
+        <div class="swift-title">SWIFT</div>
+        <div class="service-heading">SERVICE MANUAL</div>
+    </div>
+
+    <!-- Centered Menu Buttons underneath -->
+    <div class="menu-container">
+        <a class="btn" href="/xml/aenap70a/index.html">K12B Manual</a>
+        <a class="btn" href="/xml/aenap70b/index.html">K14B Manual</a>
+        <a class="btn" href="/xml/aenbp70a/index.html">M16A Manual</a>
+        <a class="btn" href="/xml/aencp70a/index.html">K12B Manual (Hong Kong)</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A1104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Kontrola systému motora a riadenia emisií
+</title>
+<ptxt>
+Podrobnosti každého kroku nájdete v nasledujúcich bodoch.
+</ptxt>
+<diag type = "test" id = "ASLAP70A1104001001">
+<testgroup id = "ASLAP70A1104001002">
+<title>
+Analýza sťažností zákazníkov 
+<intxreftitleoff1 refid = "ASLAP70A1104001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vykonajte analýzu sťažnosti zákazníkov podľa 
+<intxref refid = "ASLAP70A1104001013">Krok 1: Analýza sťažností zákazníkov</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Bola vykonaná analýza sťažnosti zákazníka?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vykonajte analýzu sťažností zákazníka.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001003">
+<title>
+Kontrola, záznam a vymazanie DTC momentových údajov rámca 
+<intxreftitleoff1 refid = "ASLAP70A1104001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC (vrátane predbežného DTC) podľa 
+<intxref refid = "ASLAP70A1104001014">Krok 2: Kontrola, záznam a vymazanie DTC / momentových údajov rámca</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké DTC?/Uchované údaje rámca?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vytlačte alebo zapíšte si DTC a uchované údaje rámca. Vymažte ich podľa postupu v časti 
+<intxref refid = "ASLAP70A1104004">Vymazanie DTC</intxref>
+ a pokračujte krokom 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001004">
+<title>
+Vizuálna prehliadka 
+<intxreftitleoff1 refid = "ASLAP70A1104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vykonajte vizuálnu prehliadku podľa 
+<intxref refid = "ASLAP70A1104008">Vizuálna prehliadka</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je tam nejaká porucha?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poruchovú časť a pokračujte krokom 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001005">
+<title>
+Vizuálna prehliadka 
+<intxreftitleoff1 refid = "ASLAP70A1104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vykonajte vizuálnu prehliadku podľa 
+<intxref refid = "ASLAP70A1104008">Vizuálna prehliadka</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je tam nejaká porucha?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poruchovú časť a pokračujte krokom 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001006">
+<title>
+Potvrdenie symptómov problému 
+<intxreftitleoff1 refid = "ASLAP70A1104001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Potvrďte príznak poruchy podľa 
+<intxref refid = "ASLAP70A1104001016">Krok 5: Potvrdenie príznakov problému</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Bol identifikovaný prejav poruchy?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001007">
+<title>
+Opätovná kontrola a zápis DTC momentových údajov rámca 
+<intxreftitleoff1 refid = "ASLAP70A1104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Znova skontrolujte DTC a momentové údaje rámca podľa 
+<intxref refid = "ASLAP70A1104003">Kontrola DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001008">
+<title>
+Opätovná kontrola a zápis DTC momentových údajov rámca 
+<intxreftitleoff1 refid = "ASLAP70A1104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Znova skontrolujte DTC a momentové údaje rámca podľa 
+<intxref refid = "ASLAP70A1104003">Kontrola DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 10.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001009">
+<title>
+Základná kontrola motora a diagnostika príznakov 
+<intxreftitleoff1 refid = "ASLAP70A1104001020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Skontrolujte a opravte ich podľa 
+<intxref refid = "ASLAP70A1104009">Základná kontrola motora</intxref>
+ a 
+<intxref refid = "ASLAP70A1104010">Diagnostika príznakov motora</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Sú kontrola a oprava ukončené?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poruchovú časť(-ti) a pokračujte krokom 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001010">
+<title>
+Riešenie problémov pre DTC 
+<intxreftitleoff1 refid = "ASLAP70A1104001021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Skontrolujte a opravte podľa príslušného riešenia problémov DTC.
+</ptxt>
+</test1>
+<question>
+Sú kontrola a oprava ukončené?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poruchovú časť(-ti) a pokračujte krokom 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001011">
+<title>
+Kontrola skrytých problémov 
+<intxreftitleoff1 refid = "ASLAP70A1104001022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Podľa postupu uvedeného v časti 
+<intxref refid = "ASLAP70A1104001022">Krok 10: Kontrola skrytých problémov</intxref>
+ skontrolujte, či sa vyskytli skryté problémy.
+</ptxt>
+</test1>
+<question>
+Je tam nejaká porucha?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poruchovú časť a pokračujte krokom 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104001012">
+<title>
+Posledný potvrdzovací test 
+<intxreftitleoff1 refid = "ASLAP70A1104001025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vymažte prípadné DTC.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vykonajte posledný potvrdzovací test podľa postupu uvedeného v časti 
+<intxref refid = "ASLAP70A1104001025">Krok 11: Posledný potvrdzovací test</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je tam nejaký príznak problému, DTC alebo nezvyčajný stav?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "ASLAP70A1104001013">
+<title>
+Krok 1: Analýza sťažností zákazníkov
+</title>
+<ptxt>
+Zaznamenajte podrobnosti problému (porucha, sťažnosť) a to, ako vznikli podľa popisu zákazníka. Tu použite ďalej uvedený dotazník. Ten uľahčí zhromažďovanie informácií potrebných pre správnu analýzu a diagnostiku.
+</ptxt>
+<attention3>
+<ptxt>
+Tento formulár je štandardný vzor. Upravuje sa podľa podmienok typických pre jednotlivé trhy.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Formulár na preverenie poruchy u zákazníka (príklad)
+</title>
+<graphic graphicname = "I9P60A111042V.swf" width = "183.000mm" height = "208.015mm" ver = "01" gw = "516" gh = "573"/>
+</figure>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001014" page = "2">
+<title>
+Krok 2: Kontrola, záznam a vymazanie DTC / momentových údajov rámca
+</title>
+<ptxt>
+Najskôr skontrolujte DTC (vrátane predbežného DTC). 
+<intxreftitleoff1 refid = "ASLAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Ak sa uvádza DTC, vytlačte alebo zapíšte si ho a aj uchovaný údaj rámca. 
+<intxreftitleoff1 refid = "ASLAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001015" page = "2">
+<title>
+Kroky 3 a 4: Vizuálna prehliadka
+</title>
+<ptxt>
+Skontrolujte najskôr zrakom tie časti, ktoré podporujú správny chod motora. 
+<intxreftitleoff1 refid = "ASLAP70A1104008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001016" page = "2">
+<title>
+Krok 5: Potvrdenie príznakov problému
+</title>
+<topic id = "ASLAP70A1104001017">
+<title>
+Ak v kroku 2 nie je DTC:
+</title>
+<ptxt>
+Na základe informácií získaných v častiach 
+<intxref refid = "ASLAP70A1104001013">Krok 1: Analýza sťažností zákazníkov</intxref>
+ a 
+<intxref refid = "ASLAP70A1104001014">Krok 2: Kontrola, záznam a vymazanie DTC / momentových údajov rámca</intxref>
+ potvrďte prejavy poruchy.
+</ptxt>
+</topic>
+<topic id = "ASLAP70A1104001018">
+<title>
+Ak je v kroku 2 DTC:
+</title>
+<ptxt>
+Znovu skontrolujte DTC podľa „Postup potvrdenia DTC“ uvedenej v každom riešení problémov DTC.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001019" page = "2">
+<title>
+Kroky 6 a 7: Opätovná kontrola a zápis DTC/uchovaného údaja rámca
+</title>
+<ptxt>
+Pri kontrole dodržiavajte postup uvedený v časti 
+<intxref refid = "ASLAP70A1104003">Kontrola DTC</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001020" page = "2">
+<title>
+Krok 8: Základná kontrola motora a diagnostika príznakov
+</title>
+<s1>
+<ptxt>
+Vykonajte základnú kontrolu motora. 
+<intxreftitleoff1 refid = "ASLAP70A1104009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+V prípade, že sa v „Základnej kontrole motora“ nevyskytuje poruchová časť, vykonajte 
+<intxref refid = "ASLAP70A1104010">Diagnostika príznakov motora</intxref>
+ na základe objavených symptómov pri kontrole vozidla v nasledovných krokoch.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Analýza sťažností zákazníkov
+</ptxt>
+</item>
+<item>
+<ptxt>
+Potvrdenie príznakov problému
+</ptxt>
+</item>
+</list1>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001021" page = "2">
+<title>
+Krok 9: Riešenie problémov pre DTC
+</title>
+<ptxt>
+Na príslušnom DTC vykonajte riešenie problémov alebo poruchové časti vymeňte.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001022" page = "2">
+<title>
+Krok 10: Kontrola skrytých problémov
+</title>
+<topic id = "ASLAP70A1104001023">
+<title>
+Ak v kroku 2 nie je DTC:
+</title>
+<ptxt>
+Skontrolujte, či sa nevyskytujú skryté problémy. 
+<intxreftitleoff1 refid = "ASLAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</topic>
+<topic id = "ASLAP70A1104001024">
+<title>
+Ak je v kroku 2 DTC:
+</title>
+<ptxt>
+Skontrolujte príslušné časti obvodu zisteného DTC (napr. káblový zväzok, konektor, atď.).
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104001025" page = "2">
+<title>
+Krok 11: Posledný potvrdzovací test
+</title>
+<ptxt>
+Potvrďte, že príznak problému zmizol a motor je v normálnom stave. Ak sa opravená porucha týka DTC, vymažte DTC, vykonajte potvrdenie DTC a potvrďte, že žiadne DTC nie je označené.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

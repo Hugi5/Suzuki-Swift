@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGKAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Περιγρα&#248;ή Συστήματος OBD
+</title>
+<ptxt>
+Ο εγκέ&#248;αλος ECM στο αυτοκίνητο αυτό έχει τις παρακάτω λειτουργίες.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Όταν η ανά&#248;λεξη είναι σε θέση &#34;ON&#34; με τον κινητήρα σταματημένο, η ενδεικτική λυχνία MIL (1) ανάβει για να ελέγξει το κύκλωμα του MIL (1).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Όταν ο εγκέ&#248;αλος ECM ανιχνεύει μία βλάβη, η οποία επηρεάζει αρνητικά την εκπομπή των ρύπων ενώ ο κινητήρας λειτουργεί, τότε ο εγκέ&#248;αλος ECM δίνει εντολή στην ενδεικτική λυχνία βλάβης MIL (1), η οποία βρίσκεται στα όργανα στον πίνακα των οργάνων να ανάψει ή να αναβοσβήσει (αναβοσβήνει μόνον όταν ανιχνεύεται ελαττωματική ανά&#248;λεξη, η οποία μπορεί να δημιουργήσει σε βλάβη του καταλύτη) και καταγρά&#248;ει στην μνήμη την περιοχή η οποία δυσλειτουργεί.
+</ptxt>
+<ptxt>
+(Αν ο εγκέ&#248;αλος ECM ανιχνεύσει μία δυσλειτουργία μόνο στον πρώτο κύκλο οδήγησης (ανατρέξτε στο 
+<intxref refid = "AGKAP70A1101003002">Κύκλος Οδήγησης</intxref>
+.) αλλά δεν ανιχνεύσει την ίδια δυσλειτουργία στους επόμενους 2 συνεχόμενους κύκλους οδήγησης, ο εγκέ&#248;αλος ECM δεν ανάβει την λυχνία MIL (1), μολονότι διατηρεί τον συσχετιζόμενο κωδικό DTC στη μνήμη του.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Γιά κάποιες δυσλειτουργίες, ο εγκέ&#248;αλος ECM υιοθετεί την λογική ανίχνευσης σε 3 κύκλους οδήγησης (ανατρέξτε στο 
+<intxref refid = "AGKAP70A1101003003">Λογική Ανίχνευσης 3 Κύκλου(ων) Οδήγησης</intxref>
+ ) για να αποτρέψει εσ&#248;αλμένη ανίχνευση.
+</ptxt>
+<ptxt>
+Με την συγκεκριμένη λογική, η λυχνία MIL ενεργοποιείται όταν η δυσλειτουργία εντοπιστεί σε 3 συνεχόμενους κύκλους οδήγησης.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Όταν ανιχνεύεται μία δυσλειτουργία, οι συνθήκες που επικρατούν στον κινητήρα και οι συνθήκες οδήγησης κατά τη στιγμή ανίχνευσης της δυσλειτουργίας καταγρά&#248;ονται στη μνήμη του εγκέ&#248;αλου ECM σαν δεδομένα παγωμένης οθόνης. (Για λεπτομέρειες, ανατρέξτε στην περιγρα&#248;ή στο 
+<intxref refid = "AGKAP70A1101003007">Διαγρα&#248;ή των στοιχείων παγωμένης οθόνης: </intxref>
+.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Είναι δυνατόν να επικοινωνήσετε μέσω του DLC (3) χρησιμοποιώντας όχι μόνον το διαγνωστικό εργαλείο της SUZUKI (2) αλλά επίσης και ένα διαγνωστικό εργαλείο γενικής χρήσης OBD, επικοινωνίας CAN. (Οι διαγνωστικές πληρο&#248;ορίες μπορούν να ελεγχθούν χρησιμοποιώντας διαγνωστικό εργαλείο.)
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "AGKAP70A1101003001">
+<title>
+Κύκλος Προθέρμανσης
+</title>
+<ptxt>
+Ένας &#39;&#39;κύκλος προθέρμανσης&#39;&#39; σημαίνει ό,τι διατηρούμε τη λειτουργία του κινητήρα μετά την εκκίνηση μέχρι η θερμοκρασία του ψυκτικού υγρού να ανέβει τουλάχιστον κατά 22 &#176;C (40 &#176;F) ή να &#248;θάσει μία ελάχιστη θερμοκρασία των 71 &#176;C (160 &#176;F).
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGKAP70A1101003002">
+<title>
+Κύκλος Οδήγησης
+</title>
+<ptxt>
+Ο &#34;Κύκλος Οδήγησης&#34; είναι η διάρκεια από μια εκκίνηση κινητήρα μέχρι την απενεργοποίησή του.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGKAP70A1101003003">
+<title>
+Λογική Ανίχνευσης 3 Κύκλου(ων) Οδήγησης
+</title>
+<ptxt>
+Η δυσλειτουργία που ανιχνεύεται στον πρώτο κύκλο οδήγησης αποθηκεύεται στη μνήμη του εγκε&#248;άλου ECM (υπό τη μορ&#248;ή του κωδικού βλάβης DTC υπό εκκρεμότητα), αλλά η λυχνία MIL δεν ανάβει σε αυτή τη &#248;άση. Ο εγκέ&#248;αλος ECM προκαλεί την έναυση της λυχνίας MIL όταν ανιχνεύσει για τρίτη &#248;ορά την ίδια δυσλειτουργία στους επόμενους δύο κύκλους οδήγησης.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGKAP70A1101003004">
+<title>
+DTC υπό εκκρεμότητα
+</title>
+<ptxt>
+&#34;Ο κωδικός βλάβης DTC υπό εκκρεμότητα&#34; είναι σχετικός με αυτούς τους κωδικούς DTC για τους οποίους ε&#248;αρμόζεται η &#39;&#39;λογική 3 κύκλων ανίχνευσης&#39;&#39;. Αν ένας τέτοιος κωδικός DTC ανιχνευθεί και αποθηκευθεί προσωρινά κατά τη διάρκεια του πρώτου από τους 3 συνεχόμενους κύκλους οδήγησης, ο κωδικός DTC ονομάζεται &#39;&#39;Κωδικός βλάβης DTC υπό εκκρεμότητα&#34;.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGKAP70A1101003005">
+<title>
+Στοιχεία Παγωμένης Οθόνης
+</title>
+<ptxt>
+Ο ECM αποθηκεύει στη μνήμη του τις συνθήκες κινητήρα και οδήγησης κατά την στιγμή του εντοπισμού δυσλειτουργίας. Αυτά τα στοιχεία ονομάζονται &#34; Στοιχεία παγωμένης οθόνης&#34;.
+</ptxt>
+<ptxt>
+Επομένως, είναι δυνατόν να γνωρίζετε τις συνθήκες του κινητήρα και της οδήγησης (π.χ. εάν ο κινητήρας ήταν ζεστός ή όχι, εάν το αυτοκίνητο βρισκόταν σε κίνηση ή ήταν σταματημένο, εάν το μείγμα αέρα / καυσίμου ήταν &#248;τωχό ή πλούσιο) όταν ανιχνεύτηκε μία δυσλειτουργία ελέγχοντας τα στοιχεία της παγωμένης οθόνης. Επίσης, ο ECM διαθέτει μία λειτουργία για να αποθηκεύει στη μνήμη κάθε στοιχείο παγωμένης οθόνης για τρεις δια&#248;ορετικές δυσλειτουργίες με τη σειρά που η δυσλειτουργία έχει ανιχνευτεί. Κάνοντας χρήση αυτής της λειτουργίας, είναι δυνατόν να γνωρίζετε την σειρά των δυσλειτουργιών οι οποίες έχουν ανιχνευτεί. Αυτό βοηθά όταν κάνετε επανέλεγχο ή όταν κάνετε διάγνωση ενός προβλήματος.
+</ptxt>
+<ptxt>
+Για λεπτομέρειες σχετικά με τα δεδομένα παγωμένης οθόνης που μπορούν να αναγνωστούν από τον εγκέ&#248;αλο ECM, ανατρέξτε στον παρακάτω πίνακα.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.059in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Σύστημα Καυσίμου
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Υπολογισμένο Φορτίο
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Βραχυπρόθεσμη Ρύθμιση Καυσίμου
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Μακρυπρόθεσμη Ρύθμιση Καυσίμου
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Στρο&#248;ές Κινητήρα
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ταχύτητα οχήματος
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Αβάνς Ανά&#248;λεξης
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Αισθητήρας Θερμοκρασίας Αέρα Εισαγωγής
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Απόλυτη TP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Κύκλος Εξαερισμού Κάνιστρου EVAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Χρόνος Μετά την Εκκίνηση Κινητήρα
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Επίπεδο Δεξαμενής Καυσίμου
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Βαρομ Πίεση
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Τάση Μπαταρίας
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Σχετική TP**
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Απόλυτη TP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Απόλυτη APP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Απόλυτη APP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Θέση Στόχος Πεταλούδας
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Δεδομένα παγωμένης οθόνης με αστερίσκο (*) αποτελούν ένδειξη της αναλογίας της τάσης εξόδου προς την τρο&#248;οδοσία ρεύματος του σχετιζόμενου αισθητήρα.
+</ptxt>
+<ptxt>
+Όταν η τάση παροχής ισχύος είναι 5,0 V και η τάση εξόδου είναι 4,0 V, τα δεδομένα παγωμένης οθόνης απεικονίζονται όπως παρακάτω.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Για συστήματα στα οποία η έξοδος είναι ανάλογη της τάσης εισόδου, απεικονίζει 80% (= το μέγιστο ποσοστό τάσης εισόδου ανα&#248;οράς).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Για συστήματα στα οποία η έξοδος είναι αντιστρό&#248;ως ανάλογη της τάσης εισόδου, απεικονίζει 20% (=100% πλην το μέγιστο ποσοστό τάσης εισόδου ανα&#248;οράς).
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Η σχετική TP με αστερίσκους (**) στον παραπάνω πίνακα, απεικονίζεται από την σχέση ((τάση εξόδου - τάση εξόδου σε κλειστή θέση πεταλούδας) / τάση παροχής ισχύος).
+</ptxt>
+<ptxt>
+Όταν η τάση τρο&#248;οδοσίας ρεύματος είναι 5,0 V και η τάση εξόδου σε κλειστή θέση πεταλούδας είναι 1,0 V, τα δεδομένα παγωμένης οθόνης απεικονίζονται όπως παρακάτω.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Σε κλειστή θέση πεταλούδας (τάση εξόδου = 1,0 V), απεικονίζει 0%.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Σε πλήρως ανοικτή θέση πεταλούδας (τάση εξόδου = 4,0 V), απεικονίζει 60%.
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Ωστόσο, σε συστήματα στα οποία η έξοδος είναι αντιστρό&#248;ως ανάλογη της τάσης εισόδου, απεικονίζει 100% πλην την σχέση που ανα&#248;έρθηκε παραπάνω.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Δεδομένα παγωμένης οθόνης (για παράδειγμα)
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "AGKAP70A1101003006" page = "1">
+<title>
+Προτεραιότητα των στοιχείων παγωμένης οθόνης: 
+</title>
+<ptxt>
+Ο εγκέ&#248;αλος ECM διαθέτει 4 οθόνες όπου μπορούν να αποθηκευτούν στοιχεία παγωμένης οθόνης.
+</ptxt>
+<ptxt>
+Η οθόνη 1 είναι μία ειδική οθόνη όπου τα δεδομένα παγωμένης οθόνης σχετικά με δυσλειτουργίες που επηρεάζουν την εκπομπή καυσαερίων έχουν προτεραιότητα σε σχέση με δεδομένα που α&#248;ορούν σε άλλες (γενικές) δυσλειτουργίες. Αν κάποια δυσλειτουργία που επηρεάζει την εκπομπή καυσαερίων ανιχνευθεί ενώ η Οθόνη 1 διατηρεί δεδομένα που α&#248;ορούν γενικές δυσλειτουργίες (δεδομένα προτεραιότητας &#39;&#39;2&#39;&#39; στον ακόλουθο πίνακα), τότε τα ήδη αποθηκευμένα δεδομένα αντικαθίστανται από δεδομένα που α&#248;ορούν στη νεότερη ανιχνευόμενη δυσλειτουργία (δεδομένα προτεραιότητας &#39;&#39;1&#39;&#39; στον ακόλουθο πίνακα).
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Προτεραιότητα
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Δεδομένα παγωμένης οθόνης στην Οθόνη 1
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Δεδομένα που α&#248;ορούν κάποια από τις παρακάτω δυσλειτουργίες: Ελαττωματική Ανά&#248;λεξη Ανιχνεύθηκε (P0300 – P0304), Σύστημα Υπερβολικά Φτωχό (P0171) και Σύστημα Υπερβολικά Πλούσιο (P0172)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Δεδομένα που α&#248;ορούν άλλες δυσλειτουργίες από τις παραπάνω.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Οι οθόνες 2 έως 4 παρουσιάζουν τις γενικές δυσλειτουργίες. Αυτές αποθηκεύουν ανεξάρτητα τα δεδομένα παγωμένης οθόνης από 3 δια&#248;ορετικές δυσλειτουργίες με τη σειρά ανίχνευσης (δηλαδή, η Οθόνη 2 αποθηκεύει τα δεδομένα για τη δυσλειτουργία που ανιχνεύθηκε πρώτα και η Οθόνη 4 τα δεδομένα για τη δυσλειτουργία που ανιχνεύθηκε τελευταία.) Σε αντίθεση με την Οθόνη 1, τα δεδομένα σε αυτές τις 3 οθόνες δεν ανανεώνονται, έτσι τα δεδομένα παγωμένης οθόνης για κάθε δυσλειτουργία που ανιχνεύθηκε μεταγενέστερα δεν αποθηκεύονται πουθενά.
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039R.swf" width = "183.000mm" height = "49.215mm" ver = "01" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: Δεν υπάρχουν στοιχεία παγωμένης οθόνης
+</ptxt>
+</topic>
+<topic id = "AGKAP70A1101003007" page = "1">
+<title>
+Διαγρα&#248;ή των στοιχείων παγωμένης οθόνης: 
+</title>
+<ptxt>
+Όταν ένας κωδικός DTC διαγρά&#248;εται, τα δεδομένα παγωμένης οθόνης για τη δυσλειτουργία που αντιπροσωπεύεται από αυτό τον κωδικό διαγρά&#248;ονται επίσης.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AGKAP70A1101003008" page = "1">
+<title>
+Δοκιμή Ετοιμότητας Συστήματος
+</title>
+<ptxt>
+Το τεστ ετοιμότητας συστήματος εκτελείται με σκοπό να επιβεβαιώσει ότι καθένα από τα σχετιζόμενα με εκπομπή ρύπων καυσαερίων συστήματα καλύπτουν τις συνθήκες που επιτρέπουν στον εγκέ&#248;αλο ECM να ανιχνεύσει μία δυσλειτουργία, αν προκύψει, και να ορίσει τον αντίστοιχο κωδικό DTC.
+</ptxt>
+<ptxt>
+Το τεστ πραγματοποιείται με τον έλεγχο των συγκεκριμένων στοιχείων (εξαρτημάτων) με τη χρήση ενός διαγνωστικού εργαλείου (διαγνωστικού εργαλείου SUZUKI ή διαγνωστικού εργαλείου γενικής χρήσης OBD με επικοινωνία CAN). Όταν το τεστ δείχνει ότι οι προδιαγεγραμμένες συνθήκες για το υπό δοκιμή σύστημα ικανοποιούνται, ο εγκέ&#248;αλος ECM εκτελεί μία ενσωματωμένη διάγνωση του συστήματος, αλλάζει την κατάσταση της ετοιμότητας από &#39;&#39;Όχι Πλήρης&#39;&#39; σε &#39;&#39;Πλήρης&#39;&#39; και προξενεί την εμ&#248;άνιση της κατάστασης &#39;&#39;Πλήρης&#39;&#39; στο διαγνωστικό εργαλείο.
+</ptxt>
+<ptxt>
+Η κατάσταση &#34;Πλήρης&#34;, παραμένει μέχρι να εκτελεστεί η λειτουργία διαγρα&#248;ής κωδικού DTC με την χρήση του διαγνωστικού εργαλείου.
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Η κατάσταση τεστ ετοιμότητας συστήματος μπορεί να αλλάξει από &#39;&#39;Πλήρης&#39;&#39; σε &#39;&#39;μη Πλήρης&#39;&#39; αν εκτελείται κάποια από τις ακόλουθες εργασίες συντήρησης.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Αποσύνδεση του αρνητικού πόλου (–) της μπαταρίας
+</ptxt>
+</item>
+<item>
+<ptxt>
+Αποσύνδεση των &#248;ις ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Α&#248;αίρεση του καλωδίου γείωσης του εγκέ&#248;αλου ECM
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Τα μέρη (εξαρτήματα) που εμ&#248;ανίζονται στον παρακάτω πίνακα ελέγχονται στο τεστ ετοιμότητας για να επιβεβαιωθεί η ετοιμότητα για ανίχνευση των κωδικών DTC που παρατίθενται δίπλα από κάθε εξάρτημα που ελέγχεται.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Η κατάσταση &#39;&#39;Πλήρης&#39;&#39; ή &#39;&#39;Μη Πλήρης&#39;&#39;που προσδιορίζεται μέσω του τεστ ετοιμότητας συστήματος ΔΕΝ συνεπάγεται το &#39;&#39;Κανονικό&#39;&#39; ή μη &#39;&#39;Κανονικό&#39;&#39; αποτέλεσμα της ενσωματωμένης αυτοδιάγνωσης του συστήματος.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AGKAP70A1101003009">
+<title>
+Παρακολουθούμενα είδη του πίνακα δοκιμής ετοιμότητας συστήματος.
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Παρακολουθούμενο είδος
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC που σχετίζεται με το παρακολουθούμενο είδος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Καταλύτης
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Αισθητήρας O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Θερμαντήρας Αισθητήρα Ο2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

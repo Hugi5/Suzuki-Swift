@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA324010" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1644
+</title>
+<servinfosub id = "ASLAP70AA324010001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.166in"/>
+<colspec colnum = "2" colname = "2" colwidth = "4.039in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1644: Nesprávne priradenie ID imobilizéra
+</emph>
+</ptxt>
+<ptxt>
+Chyba overenia medzi ECM a riadiacou jednotkou bezkľúčového štartovania.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Diaľkový ovládač
+</ptxt>
+</item>
+<item>
+<ptxt>
+ID kód ECM nie je zaregistrovaný v riadiacej jednotke bezkľúčového štartovania
+</ptxt>
+</item>
+<item>
+<ptxt>
+Diaľkový ovládač nie je zaregistrovaný
+</ptxt>
+</item>
+<item>
+<ptxt>
+Konektor/Obvod spínača motora
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spínač motora
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napájací/uzemňovací obvod riadiacej jednotky bezkľúčového štartovania
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka štartovania bez kľúča
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70AA324010002">
+<title>
+Riešenie problémov DTC
+</title>
+<attention3>
+<ptxt>
+Ak je riadiaca jednotka bezkľúčového štartovania taká, že už bola zaregistrovaná v inom vozidle (použitá), diaľkové ovládače sa nedajú zaregistrovať. Ak je potrebná výmena, vždy montujte novú riadiacu jednotku bezkľúčového štartovania.
+</ptxt>
+</attention3>
+<diag type = "test" id = "ASLAP70AA324010003">
+<testgroup id = "ASLAP70AA324010004">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC riadiacej jednotky systému bezkľúčového štartovania. 
+<intxreftitleoff1 refid = "ASLAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ešte stále sa zisťuje DTC B1189?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70AA324018">DTC B1189:Model s bezkľúčovým štartovaním</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA324010005">
+<title>
+Opätovná kontrola DTC
+</title>
+<test1>
+<ptxt>
+Potvrďte, či je diaľkový ovládač v oblasti činnosti funkcie bezkľúčového naštartovania motora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spínač zapaľovania sa nachádza v polohe OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Znovu skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ešte stále je zistené DTC P1644?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec. (Možnosť odnesenia diaľkového ovládača mimo prevádzkovej oblasti.)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA324010006">
+<title>
+Kontrola napájacieho a uzemňujúceho obvodu riadiacej jednotky bezkľúčového štartovania
+</title>
+<test1>
+<ptxt>
+Skontrolujte obvod napájania a uzemnenia riadiacej jednotky bezkľúčového štartovania. 
+<intxreftitleoff1 refid = "ASLAP70AA504031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poškodený káblový zväzok.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA324010007">
+<title>
+Registrácia riadiacej jednotky motora
+</title>
+<test1>
+<ptxt>
+Vykonajte 
+<intxref refid = "ASLAP70AA326003">Registrácia riadiacej jednotky motora:Model s bezkľúčovým štartovaním</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Znovu skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ešte stále je zistené DTC P1644?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec. (ECM nebola zaregistrovaná.)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA324010008">
+<title>
+Registrácia diaľkového ovládača
+</title>
+<test1>
+<ptxt>
+Vykonajte „Registrácia kľúča imobilizéra“. 
+<intxreftitleoff1 refid = "ASLAP70AA326002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spínač zapaľovania sa nachádza v polohe OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Znovu skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ešte stále je zistené DTC P1644?
+</question>
+<result type = "yes"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. Ak je stále detekovaný DTC P1644, vymeňte riadiacu jednotku bezkľúčového štartovania a opätovne skontrolujte DTC.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Riadiaca jednotka motora: 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka štartovania bez kľúča: 
+<intxreftitleoff1 refid = "ASLAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec. (Diaľkový ovládač nebol zaregistrovaný)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

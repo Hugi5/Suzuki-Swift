@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPBP70AA501003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descripción de la función de bloqueo de puertas del sistema de arranque sin llave
+</title>
+<ptxt>
+Existen 3 métodos distintos de bloqueo/desbloqueo para la función de bloqueo de puertas: mediante el interruptor de solicitud, mediante el sistema de entrada sin llave o accionando el cilindro de la llave.
+</ptxt>
+<servinfosub id = "ASPBP70AA501003001">
+<title>
+Bloqueo/desbloqueo mediante el interruptor de solicitud de la puerta
+</title>
+<ptxt>
+Bloquea o desbloquea las puertas mediante el interruptor de solicitud de las puertas tal como se muestra a continuación.
+</ptxt>
+<s1>
+<ptxt>
+Pulse el interruptor de solicitud de la puerta integrado en la manilla exterior de la puerta del conductor o del pasajero, o en la puerta del maletero.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+El módulo de control de arranque sin llave (1) activa la antena interior intermedia (2), la antena interior trasera (3) para transmitir una señal de solicitud en el interior del vehículo y en el compartimiento de equipajes.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Si el módulo de control de arranque sin llave determina que el mando a distancia (5) no se encuentra en el interior del vehículo o en el compartimiento de equipajes, activa la antena exterior de la puerta en la que se pulsó el interruptor de solicitud y envía la señal de solicitud al mando a distancia.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+El mando a distancia que recibe la señal de solicitud envía el código ID al módulo de control de arranque sin llave a través de la antena exterior; esta antena funciona a modo de receptor de entrada sin llave (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+El módulo de control de arranque sin llave compara el código ID enviado desde el mando a distancia con el código ID registrado en él. Si los códigos ID coinciden, el módulo de control de arranque sin llave envía una señal de solicitud de bloqueo/desbloqueo (en función del estado del interruptor del bloqueo de puerta) al BCM (7) a través de la línea de comunicación CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+El BCM activa el actuador del bloqueo de puerta.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50001.swf" width = "183.000mm" height = "96.389mm" ver = "02" gw = "414" gh = "257"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.440in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.884in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.884in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Los puntos del &#34;1&#34; al &#34;6&#34; correspondientes al flujo de la señal coinciden con los pasos del 1) al 6).
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Interruptor de solicitud de la puerta del pasajero
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Cada actuador del bloqueo de puerta
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antena exterior trasera
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antena exterior del lado del pasajero
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Interruptor de solicitud del extremo de la puerta del maletero
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Interruptor de solicitud de la puerta del conductor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antena exterior del lado del conductor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "ASPBP70AA501003002">
+<title>
+Área de funcionamiento
+</title>
+<ptxt>
+La distancia existente entre el mando a distancia y las antenas de las puertas debe ser de aproximadamente 80 cm como máximo (31,5 in, 2,6 ft.) (1) para garantizar la operatividad de la función de bloqueo de puertas. Además, el bloqueo y desbloqueo solo es posible si el mando a distancia se encuentra dentro del radio de alcance del interruptor de solicitud de la puerta que se ha pulsado. (Por ejemplo: Si se pulsa el interruptor de solicitud de la puerta del conductor, el mando a distancia debe encontrarse dentro del área de funcionamiento de la antena exterior del lado del conductor.)
+</ptxt>
+<attention3>
+<ptxt>
+Es posible que el bloqueo o desbloqueo de la puerta no funcione si se da alguna de las condiciones siguientes: 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Si el mando a distancia se encuentra demasiado cerca del vehículo, cerca del suelo o demasiado alto.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si se colocan vehículos del mismo tipo equipados con el sistema de arranque sin llave cerca unos de otros y si ambos sistemas se activan al mismo tiempo.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si el mando a distancia registrado y el no registrado se llevan encima al mismo tiempo.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50002.swf" width = "88.000mm" height = "60.211mm" ver = "01" gw = "234" gh = "154"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.968in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.968in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.968in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antena exterior del lado del pasajero
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antena exterior del lado del conductor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Antena exterior trasera
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+<topic id = "ASPBP70AA501003003">
+<title>
+Función de seguridad
+</title>
+<ptxt>
+No se pueden bloquear las puertas con el interruptor de solicitud de la puerta si se presenta alguno de los estados que se indican a continuación.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+El modo de encendido es ACC o conexión (posición ON).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Una de las puertas está abierta.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El módulo de control de arranque sin llave ha determinado que el mando a distancia se encuentra en el interior del vehículo.
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "ASPBP70AA501003004">
+<title>
+Función de cancelación del bloqueo con el mando a distancia dentro del vehículo
+</title>
+<ptxt>
+Esta función evita que el conductor bloquee las puertas con el mando a distancia dentro del vehículo.
+</ptxt>
+<ptxt>
+Si la antena interior intermedia (1) o la antena interior trasera (2) detecta el mando a distancia (el mando a distancia se encuentra en el interior del vehículo) bajo la condición que se describe a continuación, el módulo de control de arranque sin llave emite una solicitud de desbloqueo de las puertas al BCM a través de la línea de comunicación CAN.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Se bloquean las puertas con el cilindro de la llave (llave de emergencia) o con el botón de bloqueo de puerta con una de las puertas abierta.
+</ptxt>
+</item>
+</list1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Puede que la función de cancelación del bloqueo con el mando a distancia dentro del vehículo no funcione si el mando a distancia se encuentra sobre el panel de instrumentos, en uno de los compartimentos portaobjetos, en el piso del lado del conductor o del pasajero, en el compartimento de la puerta, etc.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si la función del sistema de arranque sin llave está desactivada, la función de cancelación del bloqueo con el mando a distancia dentro del vehículo no se encontrará operativa.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50003.swf" width = "88.000mm" height = "50.137mm" ver = "01" gw = "200" gh = "126"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.619in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.497in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Área de detección de la antena interior intermedia
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Área de detección de la antena interior trasera
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPBP70AA501003005">
+<title>
+Bloqueo/desbloqueo con el sistema de entrada sin llave
+</title>
+<ptxt>
+Si se cumplen todas las condiciones que se describen a continuación y el módulo de control de arranque sin llave recibe una señal de bloqueo o desbloqueo desde el mando a distancia a través del receptor de entrada sin llave, el módulo de control de arranque sin llave emite una señal de solicitud de bloqueo/desbloqueo de puertas (en función del estado del interruptor del bloqueo de puerta) al BCM a través de la línea de comunicación CAN. Cuando el BCM recibe la señal, activa los actuadores de bloqueo de las puertas.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+El encendido se encuentra en modo de desconexión (posición OFF).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Todas las puertas están cerradas. (Al bloquear las puertas)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "ASPBP70AA501003006">
+<title>
+Bloqueo/desbloqueo con el cilindro de la llave
+</title>
+<ptxt>
+Si el módulo de control de arranque sin llave recibe una señal de bloqueo o desbloqueo procedente del interruptor del cilindro de la llave al accionar dicho cilindro, el módulo de control de arranque sin llave emite una señal de solicitud de bloqueo/desbloqueo de puertas (en función del estado del interruptor del bloqueo de puerta) al BCM a través de la línea de comunicación CAN. Cuando el BCM recibe la señal, activa los actuadores de bloqueo de las puertas.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPBP70AA501003007">
+<title>
+Función de bloqueo con temporizador
+</title>
+<ptxt>
+Esta función vuelve a bloquear las puertas de forma automática si se desbloquean con el interruptor de solicitud de la puerta o con el sistema de entrada sin llave y, durante 30 segundos no se abre ninguna puerta.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

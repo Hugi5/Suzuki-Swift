@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70AA504015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1134
+</title>
+<servinfosub id = "AITAP70AA504015001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1134: Batteria telecomando scarica
+</emph>
+</ptxt>
+<ptxt>
+Viene ricevuto il segnale di batteria telecomando scarica dal telecomando.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Batteria del telecomando
+</ptxt>
+</item>
+<item>
+<ptxt>
+Telecomando
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70AA504015002">
+<title>
+Procedura di conferma DTC
+</title>
+<attention3>
+<ptxt>
+Prima di eseguire la Procedura di conferma DTC, preparare tutti i telecomandi registrati.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34;.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Accertare che l&#39;impostazione di &#34;Spia batteria telecomando&#34; sia in modalità &#34;Attiva&#34;. 
+<intxreftitleoff1 refid = "AITAP70AA504009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Posizionare il telecomando entro il raggio d&#39;azione del sistema di avviamento senza chiave, quindi chiudere e aprire la porta per più di 2 volte.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ripetere il passo 3) 6 volte.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Eseguire i passi 3) e 4) per tutti i telecomandi registrati.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70AA504015003">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70AA504015004">
+<testgroup id = "AITAP70AA504015005">
+<title>
+Controllo telecomando
+</title>
+<test1>
+<ptxt>
+Preparare tutti i telecomandi registrati.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34; avendo con sé il telecomando.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare se la spia consumo batteria telecomando si accende nel quadro strumenti.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Portare l&#39;accensione su &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Eseguire i passi da 2) a 4) per tutti i telecomandi.
+</ptxt>
+</test1>
+<question>
+La spia consumo batteria telecomando si accende nel quadro strumenti?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine [in passato, è stato rilevato il segnale di batteria telecomando scarica (DTC non cancellato)]
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70AA504015006">
+<title>
+Controllo batteria telecomando
+</title>
+<test1>
+<ptxt>
+Sostituire la batteria del telecomando corrispondente con una nuova. 
+<intxreftitleoff1 refid = "AITAP70AA506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Cancellare il DTC. 
+<intxreftitleoff1 refid = "AITAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70AA504015002">Procedura di conferma DTC</intxref>
+ e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+È ancora presente il DTC B1134?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire il telecomando e ripetere il controllo della presenza DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A4604019" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1024
+</title>
+<servinfosub id = "AITAP70A4604019001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.328in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.861in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1024: Prestazioni circuito sensore angolo sterzo
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+La CPU del sensore angolo sterzo rileva un&#39;anomalia interna.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il segnale del sensore angolo sterzo non è nell&#39;intervallo specificato.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il segnale del sensore angolo sterzo non varia sebbene il veicolo si trovi in condizione di sterzata a destra o a sinistra.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore angolo sterzo
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A4604019002">
+<title>
+Ricerca guasti
+</title>
+<attention2>
+<ptxt>
+La presenza di entrambi i DTC C1024 e C1075 indica un guasto interno del sensore angolo sterzo. Sostituire il sensore angolo sterzo. 
+<intxreftitleoff1 refid = "AITAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</attention2>
+<diag type = "test" id = "AITAP70A4604019003">
+<testgroup id = "AITAP70A4604019004">
+<question>
+È stato eseguito il &#34;Controllo sistema ESP<sup>®</sup>&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A4604001">Controllo sistema ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604019005">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70A4604005">Controllo presenza DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Sono presenti il DTC U0073 e/o il DTC U0126?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fare riferimento alla procedura diagnostica relativa al DTC rilevato.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604019006">
+<question>
+Vengono rilevati entrambi i DTC C1024 e C1075?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire il sensore angolo sterzo. 
+<intxreftitleoff1 refid = "AITAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604019007">
+<title>
+Ispezione del sensore angolo sterzo a bordo del veicolo
+</title>
+<test1>
+<ptxt>
+Controllare il sensore angolo sterzo. 
+<intxreftitleoff1 refid = "AITAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup> e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire il sensore angolo sterzo. 
+<intxreftitleoff1 refid = "AITAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

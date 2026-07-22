@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70A1101007" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Descrizione della calibrazione del sistema di controllo farfalla motorizzata
+</title>
+<ptxt>
+L&#39;ECM calcola l&#39;apertura ottimale della valvola a farfalla del sistema di controllo della farfalla motorizzata partendo dalla posizione di farfalla completamente chiusa. Il dato relativo alla posizione di chiusura completa è memorizzato nella ECM. Tuttavia, la posizione di chiusura completa della valvola a farfalla del sistema di controllo della farfalla motorizzata (tensione del segnale proveniente dal sensore di posizione farfalla a farfalla completamente chiusa) può subire piccole variazioni in funzione delle singole differenze intrinseche nelle valvole a farfalla e nei sensori di posizione farfalla. Poiché occorre tenere presenti queste piccole variazioni individuali per comandare correttamente la valvola a farfalla, è necessario che registrare la posizione di valvola completamente chiusa nella ECM. Quando questi dati vengono registrati nella ECM, vengono memorizzati all&#39;interno della RAM e sono successivamente utilizzati come riferimento nella gestione della valvola medesima. Questo dato viene perso ogni volta che si effettua una delle operazioni descritte in &#34;Norme di sicurezza riguardanti la calibrazione del sistema di controllo farfalla motorizzata&#34; in 
+<intxref refid = "AITAP70A1000001">Norme di sicurezza riguardanti il motore</intxref>
+.
+</ptxt>
+<ptxt>
+Inoltre, a seguito della sostituzione della farfalla motorizzata e/o del gruppo sensore APP, è necessario cancellare le informazioni sulla posizione di chiusura completa della valvola a farfalla nell&#39;ECM e registrare quelle nuove, altrimenti l&#39;ECM non sarà in grado di riconoscere correttamente tale posizione.
+</ptxt>
+<ptxt>
+Per la procedura di registrazione di suddette informazioni, fare riferimento a 
+<intxref refid = "AITAP70A1306005">Calibrazione del sistema di controllo farfalla motorizzata</intxref>
+. (Dopo aver cancellato le informazioni relative alla posizione di chiusura completa dalla ECM, soltanto la prima volta dopo che l&#39;accensione viene messa in posizione ON, la valvola a farfalla si apre e si chiude per circa 60 secondi al fine di memorizzare la posizione di chiusura completa. Se il motore viene avviato mentre è in corso questo processo di memorizzazione, potrebbero verificarsi sintomi quali l&#39;&#34;avviamento prolungato&#34; o l&#39;&#34;incremento lento del regime di giri subito dopo l&#39;avviamento&#34;. Ad ogni modo, portare l&#39;accensione su &#34;OFF&#34; e, riavviando poi il motore, la posizione verrà registrata correttamente nella ECM.)
+</ptxt>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

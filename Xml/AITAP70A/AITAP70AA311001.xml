@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Introduzione al sistema di controllo immobilizzatore
+</title>
+<ptxt>
+Portando il commutatore di accensione su &#34;ON&#34;, l&#39;antenna a bobina dell&#39;immobilizzatore riceve il codice transponder dalla chiave di accensione.
+</ptxt>
+<ptxt>
+L&#39;antenna a bobina dell&#39;immobilizzatore, a sua volta, trasmette il codice del transponder ricevuto alla BCM per mezzo della linea di comunicazione seriale.
+</ptxt>
+<ptxt>
+La BCM confronta questo codice transponder con quello già registrato nella BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Se i due codici transponder corrispondono, la BCM invia il segnale di autorizzazione all&#39;avviamento motore alla ECM per mezzo della linea di comunicazione CAN.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Se i due codici transponder non corrispondono, la BCM invia il segnale di non autorizzazione all&#39;avviamento motore alla ECM per mezzo della linea di comunicazione CAN.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Dopo aver ricevuto il segnale di non autorizzazione all&#39;avviamento motore, l&#39;ECM interrompe l&#39;iniezione del carburante, inibendo così l&#39;avviamento del motore.
+</ptxt>
+<ptxt>
+Contemporaneamente, la BCM o la ECM invia un segnale al quadro strumenti, con cui richiede l&#39;accensione a luce fissa o lampeggiante della spia immobilizzatore. Vedendo lampeggiare o restare accesa la spia immobilizzatore, il conducente viene avvertito della presenza di un&#39;anomalia.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001I.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "504" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

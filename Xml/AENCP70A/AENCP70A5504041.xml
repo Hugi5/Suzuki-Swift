@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENCP70A5504041" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1708
+</title>
+<servinfosub id = "AENCP70A5504041001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<attention3>
+<ptxt>
+When replacing new TCM, DTC P1708 is detected.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.581in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.605in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P1708: Slope Sensor Not Learned
+</emph>
+</ptxt>
+<ptxt>
+Slope sensor initialization is not completed.
+</ptxt>
+<ptxt>
+(1 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Slope sensor calibration has not been performed.
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENCP70A5504041002">
+<title>
+DTC Confirmation Procedure
+</title>
+<s1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENCP70A5504041003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENCP70A5504041004">
+<testgroup id = "AENCP70A5504041005">
+<question>
+Was “CVT System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENCP70A5504001">CVT System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504041006">
+<title>
+DTC check
+</title>
+<question>
+Is there any DTC(s) other than P1708?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504041007">
+<title>
+Slope sensor calibration
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENCP70A5506036">Slope Sensor Calibration</intxref>
+, and then clear DTC P1708. 
+<intxreftitleoff1 refid = "AENCP70A5504012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform DTC confirmation procedure, and check DTC.
+</ptxt>
+</test1>
+<question>
+Is DTC P1708 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Substitute a known-good TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENCP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

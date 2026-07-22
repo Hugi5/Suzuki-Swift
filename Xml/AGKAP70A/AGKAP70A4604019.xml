@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A4604019" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1024
+</title>
+<servinfosub id = "AGKAP70A4604019001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.328in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.861in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1024: Απόδοση Κυκλώματος Αισθητήρα Γωνίας Στρο&#248;ής
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ο CPU του αισθητήρα γωνίας στρο&#248;ής ανιχνεύει εσωτερική βλάβη.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Το σήμα του αισθητήρα γωνίας στρο&#248;ής βρίσκεται εκτός προκαθορισμένης κλίμακας.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Το σήμα του αισθητήρα στρο&#248;ής δεν αλλάζει αν και το αυτοκίνητο στρίβει δεξιά ή αριστερά.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Αισθητήρας γωνίας στρο&#248;ής
+</ptxt>
+</item>
+<item>
+<ptxt>
+Μονάδα ελέγχου ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A4604019002">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<attention2>
+<ptxt>
+Η ανίχνευση και του κωδικού DTC C1024 και του C1075 σημαίνει εσωτερική δυσλειτουργία του αισθητήρα γωνίας στρο&#248;ής. Αντικαταστήστε τον αισθητήρα γωνίας στρο&#248;ής. 
+<intxreftitleoff1 refid = "AGKAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</attention2>
+<diag type = "test" id = "AGKAP70A4604019003">
+<testgroup id = "AGKAP70A4604019004">
+<question>
+Πραγματοποιήθηκε ο &#34;Έλεγχος του Συστήματος ESP<sup>&#174;</sup>&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A4604001">Έλεγχος Συστήματος ESP&#174;</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604019005">
+<title>
+Έλεγχος Κωδικού Βλάβης DTC
+</title>
+<test1>
+<ptxt>
+Εκτελέστε 
+<intxref refid = "AGKAP70A4604005">Έλεγχος Κωδικού DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Έχει ανιχνευθεί ο κωδικός DTC U0073 ή/και ο U0126;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στην ισχύουσα διάγνωση κωδικού βλάβης.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604019006">
+<question>
+Έχει ανιχνευθεί και ο κωδικός DTC C1024 και ο C1075;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε τον αισθητήρα γωνίας στρο&#248;ής. 
+<intxreftitleoff1 refid = "AGKAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604019007">
+<title>
+Επιθεώρηση επί του αυτοκινήτου του αισθητήρα γωνίας στρο&#248;ής
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τον αισθητήρα γωνίας στρο&#248;ής. 
+<intxreftitleoff1 refid = "AGKAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι το αποτέλεσμα του ελέγχου ΟΚ;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε το συγκρότημα υδραυλικής μονάδας / μονάδας ελέγχου ESP<sup>&#174;</sup> και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Αντικαταστήστε τον αισθητήρα γωνίας στρο&#248;ής. 
+<intxreftitleoff1 refid = "AGKAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

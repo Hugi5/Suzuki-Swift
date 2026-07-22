@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA314018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1188
+</title>
+<servinfosub id = "ASLAP70AA314018001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.229in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.966in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1188: Chyba komunikácie transpondéra
+</emph>
+</ptxt>
+<ptxt>
+Overenie chyby medzi kľúčom zapaľovania a BCM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kľúč zapaľovanie nie je zaregistrovaný
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kľúč zapaľovania 
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70AA314018002">
+<title>
+Riešenie problémov DTC
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pred začatím riešenia problémov si preštudujte časť 
+<intxref refid = "ASLAP70AA310002">Bezpečnostné opatrenia v systéme imobilizéra:Model so spínačom zapaľovania</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ak je BCM taká, že už bola zaregistrovaná v inom vozidle (použitá), kľúč zapaľovania sa nedá zaregistrovať. Ak je potrebná výmena, vždy namontujte novú BCM.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "ASLAP70AA314018003">
+<testgroup id = "ASLAP70AA314018004">
+<title>
+Kontrola štartovania motora
+</title>
+<test1>
+<ptxt>
+Naštartujte motor pomocou náhradného kľúča zapaľovania.
+</ptxt>
+</test1>
+<question>
+Štartuje motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Koniec. (kľúč zapaľovania nebol zaregistrovaný)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314018005">
+<title>
+Registrácia kľúča imobilizéra
+</title>
+<test1>
+<ptxt>
+Vykonajte „Registrácia kľúča imobilizéra“. 
+<intxreftitleoff1 refid = "ASLAP70AA316002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spínač zapaľovania sa nachádza v polohe OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Znovu skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ešte stále sa zisťuje DTC B1188?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte BCM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec. (Kľúč zapaľovania nie je zaregistrovaný.)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

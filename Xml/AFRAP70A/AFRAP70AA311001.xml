@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Introduction au système antidémarrage 
+</title>
+<ptxt>
+Lorsque le contacteur d&#39;allumage est mis en position ON, l&#39;antenne de bobine de dispositif antidémarrage reçoit le code de transpondeur de la clé de contact. 
+</ptxt>
+<ptxt>
+L&#39;antenne de bobine de dispositif antidémarrage transmet ensuite le code de transpondeur ainsi reçu au BCM via les communications sérielles. 
+</ptxt>
+<ptxt>
+Le BCM compare ce code de transpondeur avec le code de transpondeur qui a déjà été enregistré dans le BCM. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Si les deux codes de transpondeurs concordent, le BCM envoie un signal d&#39;autorisation de démarrage de moteur à l&#39;ECM via la communication CAN. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si les deux codes de transpondeurs ne concordent pas, le BCM envoie un signal d&#39;interdiction de démarrage de moteur à l&#39;ECM via la communication CAN. 
+</ptxt>
+</item>
+</list1>
+<ptxt>
+A la réception du signal d&#39;interdiction de démarrage de moteur, l&#39;ECM suspend l&#39;injecteur de carburant, empêchant ainsi le démarrage du moteur. 
+</ptxt>
+<ptxt>
+En même temps, le BCM ou l&#39;ECM envoie un signal au combiné d&#39;instruments, demandant l&#39;éclairage ou le clignotement du témoin de dispositif antidémarrage. Le conducteur est ainsi alerté de la présence d&#39;un dysfonctionnement par l&#39;éclairage ou le clignotement du témoin de dispositif antidémarrage. 
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001F.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "495" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

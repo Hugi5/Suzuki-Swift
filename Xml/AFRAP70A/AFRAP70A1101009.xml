@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70A1101009" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description du système de commande de générateur 
+</title>
+<ptxt>
+Le système de commande de générateur comprend un générateur (1), un capteur de courant de charge électrique (6) et l&#39;ECM (4). 
+</ptxt>
+<ptxt>
+L&#39;ECM commande l&#39;électricité générée (en modifiant la tension du régulateur IC (2)) de façon à l&#39;adapter au moteur et aux conditions de charge électrique. Pour empêcher une chute du régime de ralenti qui résulterait d&#39;une augmentation subite de la charge électrique et de l&#39;augmentation consécutive de la charge du moteur, l&#39;ECM effectue un contrôle pour que la sortie du générateur augmente progressivement. Dans le cas d&#39;une augmentation temporaire de la demande en génération d&#39;électricité pendant la conduite, l&#39;ECM effectue un contrôle pour limiter le fonctionnement du générateur et limiter ainsi l&#39;accroissement de la charge sur le moteur afin de maintenir les performances du moteur quand cela est nécessaire (pendant l&#39;accélération par exemple). 
+</ptxt>
+<servinfosub id = "AFRAP70A1101009001">
+<title>
+Fonctionnement 
+</title>
+<ptxt>
+L&#39;ECM contrôle de manière optimale la tension de sortie du générateur en modifiant le taux de service du signal de la borne &#34;C&#34; (borne de commande de générateur), sur la base des informations suivantes. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Etat du moteur (ECT, vitesse du véhicule, régime moteur, TP, etc.) (8) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tension de la batterie (tension d&#39;alimentation de l&#39;ECM) (9) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Conditions de charge électrique (moteur de soufflante, désembueur de lunette arrière, phares, ventilateur de radiateur, A/C, etc.) (10) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tension de sortie de la borne &#34;FR&#34; (taux de service de commande de bobine d&#39;induction (3)) qui indique le taux de fonctionnement de la bobine d&#39;induction. 
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Le signal de cycle de service à la borne &#34;C&#34; du générateur ajuste la tension de régulation du régulateur IC, qui à son tour contrôle le taux de service de la bobine d&#39;induction et par conséquent la tension de sortie (sortie de la borne &#34;B&#34;) du générateur. 
+</ptxt>
+<ptxt>
+Pour plus de détails sur la tension de sortie du générateur, se reporter au Système de Charge à la Section 1J&#34;.) 
+</ptxt>
+<ptxt>
+De plus, la condition de génération du générateur est commandée au niveau optimal par l&#39;utilisation du capteur de courant de charge électrique (6) qui détecte les conditions de charge électrique (consommation de courant) de manière linéaire, même lorsqu&#39;une variation soudaine de charge électrique survient, réduisant ainsi la charge du moteur. 
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A111040.swf" width = "183.000mm" height = "76.506mm" ver = "01" gw = "415" gh = "200"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.276in"/>
+<colspec colnum = "2" colname = "2" colwidth = "4.573in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.276in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.118in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.276in"/>
+<colspec colnum = "6" colname = "6" colwidth = "0.586in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Contacteur d&#39;allumage (modèle à contacteur d&#39;allumage) ou relais IG1 (modèle à démarrage sans clé) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Pilote CAN 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Batterie 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Combiné d&#39;instruments 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

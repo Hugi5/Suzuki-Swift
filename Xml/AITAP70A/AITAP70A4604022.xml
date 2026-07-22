@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A4604022" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C102A
+</title>
+<servinfosub id = "AITAP70A4604022001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C102A: Funzionamento continuo del comando ABS
+</emph>
+</ptxt>
+<ptxt>
+Il comando ABS viene attivato su tutte le ruote ininterrottamente.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<ptxt>
+In modalità di arresto d&#39;emergenza, quando la centralina ESP<sup>®</sup> interrompe il controllo, la spia si spegne ma il DTC rimane memorizzato come presente per tutto il ciclo di accensione in corso.
+</ptxt>
+<ptxt>
+È normale che, una volta spostata l&#39;accensione da &#34;OFF&#34; a &#34;ON&#34;, il DTC diventi un DTC storico.
+</ptxt>
+</attention3>
+</servinfosub>
+<servinfosub id = "AITAP70A4604022002">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A4604022003">
+<testgroup id = "AITAP70A4604022005">
+<question>
+È stato eseguito il &#34;Controllo sistema ESP<sup>®</sup>&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A4604001">Controllo sistema ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604022004">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70A4604005">Controllo presenza DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+È presente il DTC C102A?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup> e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A1104071" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+ECM táp- és testáramkörének ellenőrzése
+</title>
+<servinfosub id = "AHUAP70A1104071001">
+<title>
+Kapcsolási rajz
+</title>
+<figure>
+<graphic graphicname = "IAP70A110007.swf" width = "183.000mm" height = "152.837mm" ver = "01" gw = "467" gh = "417"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.273in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.071in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.273in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.549in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.273in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.622in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM csatlakozó (nézet: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+H1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Gyújtás „ON” állásban jeláramkör
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fojtószeleptest
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+APP érzékelő (főérzékelő) tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+I1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM 1. sz. testáramkör
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fojtószelep-aktuátor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+APP érzékelő (segédérzékelő) tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+I2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM 2. sz. testáramkör
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő (főérzékelő)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+MAP érzékelő tápáramköre és MAF érzékelő referenciafeszültség-áramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+I3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM 3. sz. testáramkör
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő (segédérzékelő)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Elektromosterhelés-érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Főrelé
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+D1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+A/C hűtőközegnyomás-érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+APP érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+14.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+“FI” biztosíték
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+E1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+APP érzékelő (főérzékelő)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+15.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+“IG COIL” biztosíték
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+F1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Főrelé vezérlő áramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+APP érzékelő (segédérzékelő)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+16.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Gyújtáskapcsoló (gyújtáskapcsolóval szerelt modell) vagy IG1 relé (nyomógombos indítórendszerrel szerelt modell)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+F2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+1. sz. fő tápáramkör
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+MAF és IAT érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+17.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fő biztosítéktábla
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+F3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+2. sz. fő tápáramkör
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+MAP érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+18.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Akkumulátor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+G1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Főrelé tápáramköre (tekercs oldali)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Elektromosterhelés-érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+G2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Főrelé tápáramköre (kapcsoló oldali)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+A/C hűtőközegnyomás-érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104071002">
+<title>
+Az áramkör leírása
+</title>
+<ptxt>
+A gyújtás „OFF” állásában a főrelé bekapcsol (az érintkezők záródnak), és az ECM a fő áramforrástól tápfeszültséget kap. Az ECM ezután 5 V-os feszültséget kapcsol a következő érzékelőkre: A/C hűtőközegnyomás-érzékelő, APP érzékelő, TP érzékelő, MAP érzékelő, MAF érzékelő és elektromosterhelés-érzékelő.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104071003">
+<title>
+Hibakeresés
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Hibakeresés előtt feltétlenül olvassa el az „ECM áramkör ellenőrzésére vonatkozó óvintézkedések” c. részt. a következő fejezetben: 
+<intxref refid = "AHUAP70A1000001">A motorral kapcsolatos óvintézkedések</intxref>
+ .
+</ptxt>
+</item>
+<item>
+<ptxt>
+Mielőtt végrehajtja feltétlenül győződjön meg arról, hogy az ECM tápáramkörének érintett biztosítékai nem olvadtak ki.
+</ptxt>
+<ptxt>
+Ha bármelyik biztosíték kiolvadt, cserélje ki, és ellenőrizze, hogy a kiolvadt biztosítékokhoz kapcsolódó áramkörök nem testzárlatosak-e.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AHUAP70A1104071004">
+<testgroup id = "AHUAP70A1104071005">
+<title>
+Az akkumulátor ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze, hogy az akkumulátor feszültsége legalább 11 V-e.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ellenőrizze az akkumulátort és a generátort, lásd: 
+<intxref refid = "AHUAP70A1A04001">Akkumulátor ellenőrzése</intxref>
+ és 
+<intxref refid = "AHUAP70A1A04003">Generátorpróba</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104071006">
+<title>
+Főrelé áramellátásának ellenőrzése
+</title>
+<test1>
+<ptxt>
+A gyújtás „OFF” állásában szerelje ki a főrelét (1) az 1. sz. független áramköri biztosítéktáblából.
+</ptxt>
+<testfigure>
+<graphic graphicname = "I9P60A111039.swf" width = "90.000mm" height = "44.484mm" ver = "02" gw = "157" gh = "110"/>
+</testfigure>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy megfelelő-e a főrelé csatlakozójának érintkezése.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozások megfelelők, kapcsolja a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy a „G1” és a „G2” áramkörök, illetve a testelés között akkumulátorfeszültség mérhető-e.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Győződjön meg arról, hogy az „FI” biztosíték nincs kiolvadva. Ha az ellenőrzés eredménye kielégítő, javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104071007">
+<title>
+A főrelé ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a főrelét. 
+<intxreftitleoff1 refid = "AHUAP70A1306023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Cserélje ki a főrelét.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104071008">
+<title>
+Gyújtáskapcsoló (gyújtáskapcsolóval szerelt modell) vagy gyújtási üzemmód (nyomógombos indítórendszerrel szerelt modell) áramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+A gyújtás „OFF” állásában szerelje a főrelét az 1. sz. különálló áramköri biztosítéktáblába.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le a „C01” és „E01” csatlakozókat az ECM-ről.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy megfelelő-e az érintkezők csatlakozása a “C01” és “E01” csatlakozókhoz.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozások megfelelők, kapcsolja a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy a „H1” és a testelés között akkumulátorfeszültség mérhető-e.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa az 5. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Győződjön meg arról, hogy az „IG COIL” biztosíték nincs kiolvadva. Ha az ellenőrzés eredménye kielégítő, javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104071009">
+<title>
+Főrelé vezérlő áramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy az „F1” és a testelés között akkumulátorfeszültség mérhető-e.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 6. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104071010">
+<title>
+Fő tápáramkör ellenőrzése
+</title>
+<test1>
+<ptxt>
+Munkavezeték használatával földelje az „F1” áramkört.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy az „F2” és az „F3” áramkörök, illetve a testelés között akkumulátorfeszültség mérhető-e.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 7. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104071011">
+<title>
+ECM testáramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy az „I1”, „I2” és „I3” áramkör és a testelés közötti ellenállás kevesebb-e mint 1 &#937;.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 8. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104071012">
+<title>
+Érzékelő-tápáramkör ellenőrzése
+</title>
+<test1>
+<ptxt>
+A gyújtás „OFF” állásában csatlakoztassa a „C01” és „E01” csatlakozókat az ECM-re.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le a csatlakozókat az APP érzékelőről, a MAF és IAT érzékelőről, a MAP érzékelőről, az elektromosterhelés-érzékelőről, a fojtószeleptest egységről és az A/C hűtőközegnyomás-érzékelőről.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy megfelelő-e az érintkezők csatlakozása az egyes érzékelők csatlakozóinál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozások megfelelők, kapcsolja a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy a következő áramkörök és a testelés között kb. 5 V feszültség mérhető-e.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A1
+</ptxt>
+</item>
+<item>
+<ptxt>
+A2
+</ptxt>
+</item>
+<item>
+<ptxt>
+B1
+</ptxt>
+</item>
+<item>
+<ptxt>
+C1
+</ptxt>
+</item>
+<item>
+<ptxt>
+D1
+</ptxt>
+</item>
+<item>
+<ptxt>
+E1
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Az ECM táp- és testáramkörének állapota megfelelő.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ellenőrizze a vezetékköteget szakadás, akkumulátor felé fennálló zárlat és testelés felé fennálló zárlat tekintetében. Ha a vezetékköteg állapota megfelelő, cserélje ki az ECM-et, és ellenőrizze ismét az ECM tápáramkörét és testáramkörét. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

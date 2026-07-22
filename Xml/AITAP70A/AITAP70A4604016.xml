@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A4604016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1015 / C1017 / C1023
+</title>
+<servinfosub id = "AITAP70A4604016001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.257in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1015: Guasto sensore G longitudinale nel gruppo sensore d’imbardata / sensore G
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Il segnale del sensore G longitudinale non è nell&#39;intervallo specificato.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il segnale del sensore G longitudinale non varia sebbene il veicolo si trovi in condizione di accelerazione o decelerazione.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Staffa attuatore
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1017: Prestazioni circuito sensore di accelerazione laterale G
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Il segnale del sensore di accelerazione G laterale non è nell&#39;intervallo specificato.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il segnale del sensore G laterale non varia sebbene il veicolo si trovi in condizione di sterzata a destra o a sinistra.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1023: Prestazioni circuito sensore di imbardata
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Il segnale del sensore di imbardata non rientra nell&#39;intervallo specificato.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nonostante il veicolo sia fermo, il segnale del sensore di imbardata è superiore al valore specificato.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A4604016002">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A4604016003">
+<testgroup id = "AITAP70A4604016004">
+<question>
+È stato eseguito il &#34;Controllo sistema ESP<sup>®</sup>&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A4604001">Controllo sistema ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604016006">
+<title>
+Controllo centralina ESP® e staffa attuatore
+</title>
+<test1>
+<ptxt>
+Controllare il gruppo centralina elettroidraulica ESP<sup>®</sup> e la staffa attuatore. 
+<intxreftitleoff1 refid = "AITAP70A4606004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604016005">
+<title>
+Controllo presenza DTC nel sistema ESP®
+</title>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70A4604005">Controllo presenza DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Sono presenti altri DTC oltre il C1015, C1017 e C1023?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fare riferimento alla procedura diagnostica relativa al DTC rilevato.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup> e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

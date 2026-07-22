@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Beschreibung der HVAC-Steuerung
+</title>
+<servinfosub id = "AGEAP70A7221002001">
+<title>
+Temperaturregelung
+</title>
+<ptxt>
+Das HVAC-Steuermodul errechnet die Ziel-Temperaturregelungsklappen-Position, basierend auf Signalen des Temperaturreglers, des Innentemperatursensors, des Außentemperatursensors und des Solarsensors und steuert das Stellglied für Temperaturregelung so, dass die aktuelle Temperaturregelungsklappen-Position an die gewünschte Position angepasst wird.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A7221002002">
+<title>
+Lüfterdrehzahlsteuerung
+</title>
+<ptxt>
+Das HVAC-Steuermodul errechnet die Soll-Gebläsedrehzahl, basierend auf Signalen des Temperaturreglers, des Innentemperatursensors, des Außentemperatursensors, des ECT-Sensors und des Solarsensors, vergleicht diese mit der aktuellen Gebläsestärke im Gebläsemotorregler und steuert die Gebläsestärke so, dass sie an die gewünschte Stärke angepasst wird.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A7221002003">
+<title>
+Luftstromregelung
+</title>
+<ptxt>
+Das HVAC-Steuermodul errechnet die Ziel-Temperaturreglerklappen-Position, basierend auf Signalen des Temperaturreglers, des Innentemperatursensors, des Außentemperatursensors, des ECT-Sensors und des Solarsensors. Unter Verwendung der Ziel-Temperaturregelungsklappen-Position berechnet das Modul dann die Ziel-Luftstromregelklappen-Position und steuert das Stellglied für Luftstromreglung, so dass die Zielposition der Klappen erreicht wird.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A7221002004">
+<title>
+Luftzufuhr-Positionssteuerung
+</title>
+<ptxt>
+Das HVAC-Steuermodul erfasst die Position der Luftansaugregelklappe anhand der Signale vom Temperaturregler, Innentemperatursensor, Außentemperatursensor und Solarsensor und regelt die Position der Luftansaugregelklappe, um eine der folgenden Stellungen zu wählen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+FRISCHLUFT-Stellung (FRE)
+</ptxt>
+</item>
+<item>
+<ptxt>
+UMLUFT-Stellung (REC)
+</ptxt>
+</item>
+<item>
+<ptxt>
+MISCH-Stellung (MIX)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<c-change/>
+<servinfosub id = "AGEAP70A7221002005">
+<title>
+Steuerung des A/C-Kompressorrelais
+</title>
+<ptxt>
+Das HVAC-Steuermodul gibt das Einschaltsignal für den A/C-Schalter über das BCM an das ECM aus, wenn der Fahrzeugzustand die folgenden Bedingungen erfüllt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/C-Schalter ist eingeschaltet
+</ptxt>
+</item>
+<item>
+<ptxt>
+Verdampfertemperatur liegt über dem Sollwert
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es wird keine Störung im Verdampfer-Temperatursensor erfasst
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Die Kommunikation von ECM und BCM erfolgt über das CAN (Netzwerk für digitale Datenübertragung). (Genaue Angaben zur CAN-Kommunikation siehe 
+<intxref refid = "AGEAP70AA801001">Beschreibung des Kommunikationssystems</intxref>
+).
+</ptxt>
+<ptxt>
+Das ECM schaltet das A/C-Kompressorrelais ein, wenn der Fahrzeugzustand die folgenden Bedingungen erfüllt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Das Einschaltsignal für den A/C-Schalter geht ein
+</ptxt>
+</item>
+<item>
+<ptxt>
+Der A/C-Kältemitteldruck liegt im Sollbereich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die Motordrehzahl liegt im Sollbereich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die Motorkühlmitteltemperatur liegt unter dem Sollwert
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die Drosselklappenöffnung liegt unter dem Sollwert
+</ptxt>
+</item>
+<item>
+<ptxt>
+Das Fahrzeug wird weder gestartet noch stark beschleunigt
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es wird keine Störung des ECT-Sensors erfasst
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es wird keine Störung des Drucksensors für A/C-Kältemittel erfasst
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AGEAP70A7221002006">
+<title>
+Kühlerlüfterrelaissteuerung
+</title>
+<ptxt>
+Das ECM schaltet das Kühlerlüfterrelais und das A/C-Kompressorrelais gleichzeitig ein.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A7221002007">
+<title>
+Aufbau des HVAC-Systems
+</title>
+<ptxt>
+Siehe &#34;Aufbau des HVAC-Systems&#34; in 
+<intxref refid = "AGEAP70A7211001">Beschreibung des HVAC-Systems:Manuelle Ausführung</intxref>
+.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

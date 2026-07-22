@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A5504012" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Borrado de DTC
+</title>
+<s1>
+<ptxt>
+Asegúrese de que el encendido esté desconectado (posición OFF).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conecte la herramienta de escaneado SUZUKI al DLC. 
+<intxreftitleoff1 refid = "ASPBP70A5504011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conecte el encendido (posición ON).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Borre el DTC y el DTC pendiente siguiendo las instrucciones que aparecen en la herramienta de escaneado. Para obtener más información, consulte el manual del usuario de la herramienta de escaneado.
+</ptxt>
+<ptxt>
+Si no es posible establecer la comunicación entre la herramienta de escaneado y el TCM, vaya a 
+<intxref refid = "ASPBP70AA804001">Inspección de la comunicación CAN</intxref>
+.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Tras el borrado, desconecte el encendido (posición OFF) y desconecte la herramienta de escaneado SUZUKI del DLC.
+</ptxt>
+<attention3>
+<ptxt>
+Los DTC pendientes y confirmados y los datos de imagen fija almacenados en la memoria del TCM también se borran en los siguientes casos. Procure no borrarlos antes de registrarlos.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Cuando no se vuelve a detectar la misma avería (DTC) durante 40 ciclos de calentamiento del motor.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Aunque se borren los DTC pendientes y confirmados, los DTC permanentes no se borran.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

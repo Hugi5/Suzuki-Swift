@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Opis sustava komunikacije
+</title>
+<servinfosub id = "AHRAP70AA801001001">
+<title>
+Opis sustava
+</title>
+<ptxt>
+Komunikacija za svaki upravljački modul i uređaj odvija se kroz stalni ulaz / izlaz digitalnih signala uključivanja / isključivanja uz istovremeno upravljanje raznim podacima. Slanje / primanje ovih podataka naziva se sučelje serijske komunikacije.
+</ptxt>
+<ptxt>
+Vrste sučelja serijske komunikacije kao UART, CAN i LIN protokoli (komunikacijski standardi) prilagođeni su za komunikacijske sustave u vozilu.
+</ptxt>
+<ptxt>
+UART se koristi u komunikaciji s upravljačkog modula sustava pokretanja bez ključa na jedinicu brave upravljača.
+</ptxt>
+<ptxt>
+LIN se koristi u komunikaciji s kombiniranog mjerača prema upravljačkom modulu sustava senzora parkiranja, te za komunikaciju upravljačkog modula HVAC jedinice s pločom A/C-a.
+</ptxt>
+<ptxt>
+Uz to, upravljački modul sustava pokretanja bez ključa (model sa sustavom pokretanja pritiskom bez ključa), BCM, ECM, kombinirani mjerač, upravljački modul P/S-a, upravljački modul HVAC jedinice (model s automatskim klima uređajem), upravljački modul ESP<sup>®</sup>-a, SDM i senzor kuta zakreta svi šalju / primaju podatke kroz upredeni par dva komunikacijska voda (CAN visoki i CAN niski) koji su povezani putem CAN komunikacije. Podaci dobiveni od jednog upravljačkog modula mogu se podijeliti s drugim upravljačkim modulom komunicirajući putem CAN-a.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70AA801001002">
+<title>
+Signal CAN komunikacije
+</title>
+<ptxt>
+Sustav CAN komunikacije je sustav serijske komunikacije za prijenos većeg broja podataka (vrijednosti sa senzora, upravljačkih podataka i upravljačkih signala) u vidu digitalnih signala UKLJ. - ISKLJ. putem komunikacijskih vodova. Ovaj sustav koristi dva voda (CAN visoki i CAN niski) za krug komunikacije kako bi zadržao visoku pouzdanost čak i kada se koristi za vrlo brzu serijsku komunikaciju. 
+</ptxt>
+<ptxt>
+Serijska komunikacija odvija se na dolje prikazani način, s 2,5 V kao referentnom razinom i za signal CAN High (1) i za signal CAN Low (2). Signal CAN High ima raspon od 2,5 V do 3,5 V, a signal CAN Low od 2,5 V do približno 1,5 V. Kad obje vrijednosti iznose 2,5 V, procjenjuje se da je signal ISKLJ. Kad je signal CAN High 3,5 V, a signal CAN Low 1,5 V (odnosno kad je razlika između napona High i Low veća od oko 2 V), procjenjuje se da je signal UKLJ. Iz tog je razloga značajka signala CAN komunikacije da je valni oblik signala simetričan između signala CAN visokih i CAN niskih s obzirom na razinu od 2,5 V. CAN komunikacija je poremećena ako se takav simetričan signal uruši.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002Q.swf" width = "183.000mm" height = "47.374mm" ver = "01" gw = "338" gh = "118"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A1104073" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "AFRAP70A1104073001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<attention3>
+<ptxt>
+Après exécution de la reprogrammation de l&#39;ECM, si le DTC P0602 est indiqué, il est possible que la reprogrammation de l&#39;ECM ne se soit pas correctement terminée.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.970in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.234in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0602: Erreur de programmation du module de commande
+</emph>
+</ptxt>
+<ptxt>
+Dysfonctionnement interne d&#39;ECM ou erreur de programmation d&#39;ECM
+</ptxt>
+<ptxt>
+(logique de détection sur 1 D/C) 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Défaillance de la reprogrammation de l&#39;ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuit d&#39;alimentation électrique d&#39;ECM et/ou circuit de masse
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104073002">
+<title>
+Procédure de confirmation de DTC 
+</title>
+<s1>
+<ptxt>
+Mettre le contacteur d&#39;allumage en position ON pendant 10 sec.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104073003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A1104073005">
+<testgroup id = "AFRAP70A1104073006">
+<title>
+Nouvelle vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Effacer le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre le contacteur d&#39;allumage en position OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Effectuer la procédure de confirmation des DTC et vérifier les DTC. 
+</ptxt>
+</test1>
+<question>
+Le DTC P0602 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vérifier les pannes intermittentes. 
+<intxreftitleoff1 refid = "AFRAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104073007">
+<title>
+Vérification de la reprogrammation d&#39;ECM
+</title>
+<question>
+La reprogrammation de l&#39;ECM a-t-elle été exécutée?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Exécuter une nouvelle fois, correctement, la reprogrammation de l&#39;ECM.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104073008">
+<title>
+Vérification du circuit de mise à la masse et d&#39;alimentation électrique de l&#39;ECM
+</title>
+<test1>
+<ptxt>
+Vérifier les circuits de masse et d&#39;alimentation de l&#39;ECM. 
+<intxreftitleoff1 refid = "AFRAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer l&#39;ECM par un ECM en bon état et vérifier à nouveau. 
+<intxreftitleoff1 refid = "AFRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer le faisceau de câbles défectueux.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

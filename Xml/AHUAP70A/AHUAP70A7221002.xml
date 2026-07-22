@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+HVAC vezérlés leírása
+</title>
+<servinfosub id = "AHUAP70A7221002001">
+<title>
+Hőmérséklet-szabályozás
+</title>
+<ptxt>
+A HVAC vezérlőmodul a hőmérséklet-választótól, a belső levegő hőmérséklet-érzékelőtől, a külső levegő hőmérséklet-érzékelőtől és a napsugárzás-érzékelőtől érkező jelek alapján kiszámítja a hőmérsékletet-szabályozó csappantyú optimális helyzetét, majd ennek megfelelően szabályozza a hőmérséklet-szabályozó aktuátort.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A7221002002">
+<title>
+Ventilátor fordulatszámának vezérlése
+</title>
+<ptxt>
+A HVAC vezérlőmodul a hőmérséklet-választó, a belső levegő hőmérséklet-érzékelő, a külső levegő hőmérséklet-érzékelő, az ECT érzékelő és a napsugárzás-érzékelő jelei alapján kiszámítja a szellőztető ventilátor előirányzott fordulatszámát, majd azt a szellőztetőmotor szabályozóegységétől kapott pillanatnyi fordulatszám-jellel összehasonlítva vezérli a ventilátor motorját.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A7221002003">
+<title>
+Levegő-kiáramlás szabályozása
+</title>
+<ptxt>
+A HVAC vezérlőmodul a hőmérséklet-választó, a belső levegő hőmérséklet-érzékelő, a külső levegő hőmérséklet-érzékelő, az ECT érzékelő és a napsugárzás-érzékelő jele alapján kiszámítja a hőmérséklet-szabályozás csappantyú előirányzott helyzetét. Az így kapott hőmérséklet-szabályozó csappantyú előirányzott helyzetet azután tovább számolja, és kiszámítja a légáram-szabályozó csappantyú előirányzott helyzetét, és vezérli a légáram-szabályozó aktuátorát oly módon, hogy a pillanatnyi légáram-szabályozó panel helyzete váljon célhelyzetté.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A7221002004">
+<title>
+A levegőbeszívás-szabályozó csappantyú vezérlése
+</title>
+<ptxt>
+A HVAC vezérlőmodul a hőmérséklet-választó, a belső levegő hőmérséklet-érzékelő, a külső levegő hőmérséklet-érzékelő és a napsugárzás-érzékelő jelei alapján meghatározza a levegőbeszívás-szabályozó csappantyú helyzetét, és a csappantyút a következő helyzetek egyikébe vezérli.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+FRESH pozíció (FRE, friss))
+</ptxt>
+</item>
+<item>
+<ptxt>
+RECIRCULATION pozíció (REC, keringetés)
+</ptxt>
+</item>
+<item>
+<ptxt>
+MIX pozíció (MIX, keverés)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<c-change/>
+<servinfosub id = "AHUAP70A7221002005">
+<title>
+A/C kompresszor relé vezérlése
+</title>
+<ptxt>
+A HVAC vezérlőmodul A/C bekapcsolás jelet küld a BCM-en keresztül az ECM-nek, ha a jármű állapota kielégíti az alábbi feltételeket.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/C bekapcsolva.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A párologtató hőmérséklete magasabb az előírt értéknél
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nem észlelhető hiba a párologtató hőmérséklet-érzékelőjének működésében
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Az ECM és a BCM CAN-en (Helyi hálózatvezérlő) keresztül kommunikálnak. (A CAN kommunikáció további részleteit lásd: 
+<intxref refid = "AHUAP70AA801001">Kommunikációs rendszer leírása</intxref>
+ ).
+</ptxt>
+<ptxt>
+Ha a jármű állapota kielégíti az alábbi feltételeket, az ECM bekapcsolja az A/C kompresszor reléjét.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/C kapcsoló ON jele a bemeneten
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az A/C hűtőközegnyomás az előírt tartományban van
+</ptxt>
+</item>
+<item>
+<ptxt>
+A motor fordulatszáma az előírt tartományban van
+</ptxt>
+</item>
+<item>
+<ptxt>
+A hűtőfolyadék hőmérséklete alacsonyabb az előírt értéknél
+</ptxt>
+</item>
+<item>
+<ptxt>
+A fojtószelepnyílás kisebb az előírt értéknél
+</ptxt>
+</item>
+<item>
+<ptxt>
+A jármű nem indul és nem gyorsul hirtelen
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nem észlelhető hiba az ECT érzékelő működésében
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nem észlelhető hiba az A/C hűtőközegnyomás-érzékelő működésében
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHUAP70A7221002006">
+<title>
+Hűtőventilátor reléjének vezérlése
+</title>
+<ptxt>
+Az ECM az A/C kompresszor relé bekapcsolásával egy időben bekapcsolja az hűtőventilátor relét is.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A7221002007">
+<title>
+HVAC-rendszer kialakítása
+</title>
+<ptxt>
+Lásd: 
+<intxref refid = "AHUAP70A7211001">HVAC rendszer leírása:Manuális típus</intxref>
+ , „HVAC rendszer felépítése”.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

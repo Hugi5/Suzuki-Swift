@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A1104026" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0137 / P0138 / P0140
+</title>
+<servinfosub id = "ASPBP70A1104026001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<attention3>
+<ptxt>
+Para la distinción de tipo del sistema OBD, consulte &#34;Discriminación del sistema OBD&#34; en 
+<intxref refid = "ASPBP70A1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.843in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0137: Tensión baja en el circuito del sensor O2 (sensor 2) 
+</emph>
+</ptxt>
+<ptxt>
+La tensión de salida del circuito de HO2S-2 es inferior a 0,06 V durante 30 seg. después de calentar el motor.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+HO2S-2 y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Calentador de HO2S-2 y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sistema de escape
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sistema de admisión de aire
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sistema de combustible
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0138: Tensión alta en el circuito del sensor O2 (sensor 2) 
+</emph>
+</ptxt>
+<ptxt>
+La tensión de salida del circuito de señal de HO2S-2 es superior a 1,25 V durante 25 seg.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0140: No se detecta ninguna actividad en el circuito del sensor O2 (sensor 2) 
+</emph>
+</ptxt>
+<ptxt>
+La tensión de salida del circuito de HO2S-2 permanece entre 0,42 y 0,50 V durante 500 seg.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104026002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "IBP60B110011S.swf" width = "183.000mm" height = "103.493mm" ver = "03" gw = "441" gh = "277"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.662in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.970in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.699in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Conector del ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de alimentación eléctrica del calentador de HO2S-2
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-2
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de alimentación eléctrica del calentador de HO2S-1
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de señal de HO2S-2
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de señal de HO2S-1
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de masa de HO2S-2
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Hilo blindado
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de masa de HO2S-1
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de accionamiento del calentador de HO2S-2
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Circuito de accionamiento del calentador de HO2S-1
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-1
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104026003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<topic id = "ASPBP70A1104026004">
+<title>
+P0137
+</title>
+<attention1>
+<ptxt>
+Si no se selecciona una carretera apta ni se toman las medidas de precaución adecuadas al efectuar una prueba de carretera, podría producirse un accidente.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Elija una carretera nivelada y sin tráfico para reducir el riesgo de sufrir un accidente.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Realice la prueba con sumo cuidado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Para la realización de la prueba de carretera, se requiere la presencia de 2 personas: un conductor y un ayudante.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Compruebe que se cumplen las siguientes condiciones en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Tensión de la batería ≥ 11 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+El control de realimentación de A/F (aire/combustible) (bucle cerrado) está activado.
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Compruebe que no se detectan los siguientes DTC en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Calentador de HO2S-2 (P0036, P0037 y P0038)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensor ECT (P0116, P0117 y P0118)
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Caliente el motor hasta que llegue a la temperatura normal de funcionamiento.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conduzca el vehículo a 50 a 80 km/h (31 a 50 mile/h) durante 10 min. o más.
+</ptxt>
+</s1>
+</topic>
+<topic id = "ASPBP70A1104026005">
+<title>
+P0138 / P0140
+</title>
+<attention1>
+<ptxt>
+Si no se selecciona una carretera apta ni se toman las medidas de precaución adecuadas al efectuar una prueba de carretera, podría producirse un accidente.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Elija una carretera nivelada y sin tráfico para reducir el riesgo de sufrir un accidente.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Realice la prueba con sumo cuidado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Para la realización de la prueba de carretera, se requiere la presencia de 2 personas: un conductor y un ayudante.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Compruebe que se cumple la siguiente condición en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Tensión de la batería &#62; 11 V
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Compruebe que no se detectan los siguientes DTC en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Calentador de HO2S-2 (P0036, P0037 y P0038)
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Caliente el motor hasta que llegue a la temperatura normal de funcionamiento.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conduzca el vehículo a 50 a 80 km/h (31 a 50 mile/h) durante 10 min. o más.
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104026006">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A1104026007">
+<testgroup id = "ASPBP70A1104026008">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104026009">
+<title>
+Verificación de DTC
+</title>
+<question>
+¿Aparece otro DTC además del P0137, P0138 y P0140?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de los DTC correspondientes.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104026010">
+<title>
+Comprobación del circuito de masa y el circuito de señal de HO2S-2
+</title>
+<test1>
+<ptxt>
+Con el interruptor de encendido en posición OFF, desconecte los conectores &#34;C01&#34; y &#34;E01&#34; del ECM y el conector HO2S-2.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si la conexión de los terminales a los conectores &#34;C01&#34; y &#34;E01&#34; y el conector HO2S-2 es correcta.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, compruebe los puntos siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistencia de los circuitos &#34;B2&#34; y &#34;B3&#34;: menos de 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre cada uno de los circuitos &#34;B2&#34; y &#34;B3&#34; y masa: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el terminal del circuito &#34;B2&#34; y otro terminal del conector HO2S-2: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el terminal del circuito &#34;B3&#34; y otro terminal del conector HO2S-2: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de los circuitos &#34;B2&#34; y &#34;B3&#34;: Aproximadamente 0 V (cuando el encendido está en posición ON)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104026011">
+<title>
+Inspección del sistema de admisión de aire y de los gases de escape
+</title>
+<test1>
+<ptxt>
+Compruebe si hay obstrucciones o fugas en el sistema de admisión de aire y en el sistema de los gases de escape.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya la pieza defectuosa.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104026012">
+<title>
+Inspección del circuito del calentador de la HO2S-2
+</title>
+<test1>
+<ptxt>
+Inspeccione los circuitos del calentador de HO2S-2; para ello, consulte los pasos 2 y 3 de 
+<intxref refid = "ASPBP70A1104016">DTC P0036 / P0037 / P0038</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya la pieza defectuosa.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104026013">
+<title>
+Verificación de los inyectores de combustible y sus circuitos
+</title>
+<test1>
+<ptxt>
+Revise el circuito del inyector de combustible. 
+<intxreftitleoff1 refid = "ASPBP70A1704003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Inspeccione los inyectores de combustible. 
+<intxreftitleoff1 refid = "ASPBP70A1706009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Inyectores de combustible o sus circuitos defectuosos.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104026014">
+<title>
+Nueva comprobación del DTC.
+</title>
+<test1>
+<ptxt>
+Sustituya el HO2S-2. 
+<intxreftitleoff1 refid = "ASPBP70A1306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Realice el &#34;Procedimiento de confirmación del DTC&#34; para comprobar los DTC.
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P0137, P0138 o P0140?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

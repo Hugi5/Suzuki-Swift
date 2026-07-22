@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A4604018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1021 / C1022 / C1025 / C1026 / C1031 / C1032 / C1033 / C1035 / C1036
+</title>
+<servinfosub id = "AHUAP70A4604018001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.823in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.366in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1021/ C1025 / C1031/ C1035: Jobb első / bal első / jobb hátsó / bal hátsó kerékfordulatszám-érzékelő áramköri feszültsége
+</emph>
+</ptxt>
+<ptxt>
+A kerékfordulatszám-érzékelő jele az előírt tartományon kívül van.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kerékfordulatszám-érzékelő
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kerékfordulatszám-érzékelő áramköre
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kerékfordulatszám-érzékelő jeladótárcsája
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1022 / C1026 / C1032 / C1036: Jobb első / bal első / jobb hátsó / bal hátsó kerékfordulatszám-érzékelő vagy jeladótárcsa jel teljesítménye
+</emph>
+</ptxt>
+<ptxt>
+A rendszer a kerékfordulatszám-érzékelő normálistól eltérő jelét észlelte folyamatosan.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1033: Kerékfordulatszám-érzékelő eltérése
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A rendszer kerékfordulatszám-érzékelő normálistól eltérő jelét észlelte két vagy több kerékfordulatszám-érzékelőnél folyamatosan.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az ABS vezérlőrendszer a megadott időnél tovább működik.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A kerékfordulatszám-érzékelő vezérlésének tápfeszültsége kívül esik az előírt tartományon.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<ptxt>
+Ha a járművet az alább felsorolt feltételek valamelyike között használták, a DTC-k egyike akkor is tárolódhat, ha az érzékelő kifogástalan állapotban van. Ha fennáll ennek a lehetősége, törölje a DTC-t (lásd: 
+<intxreftitleoff1 refid = "AHUAP70A4604006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+), majd végezzen menetpróbát (lásd: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+, 3. lépés), és ellenőrizze, fennáll-e valamilyen rendellenesség.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Behúzott rögzítőfékkel közlekedett a járművel.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Menet közben az egyik kerék kipörgött.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A megemelt jármű kerekét (kerekeit) megforgatta.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604018002">
+<title>
+Kapcsolási rajz
+</title>
+<figure>
+<graphic graphicname = "IAP70A460008.swf" width = "183.000mm" height = "79.150mm" ver = "03" gw = "372" gh = "208"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.276in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.284in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.276in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.344in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.228in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.777in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul csatlakozója (nézet: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Bal hátsó kerékfordulatszám-érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jobb első kerékfordulatszám-érzékelő
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Bal első kerékfordulatszám-érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Bal hátsó kerékfordulatszám-érzékelő jeláramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Bal hátsó kerékfordulatszám-érzékelő
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Bal első kerékfordulatszám-érzékelő jeláramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+D1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jobb hátsó kerékfordulatszám-érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jobb hátsó kerékfordulatszám-érzékelő
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jobb első kerékfordulatszám-érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+D2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jobb hátsó kerékfordulatszám-érzékelő jeláramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jobb első kerékfordulatszám-érzékelő jeláramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Bal első kerékfordulatszám-érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Kerékfordulatszám-érzékelő vezérlője
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604018003">
+<title>
+DTC hibakeresés
+</title>
+<topic id = "AHUAP70A4604018004">
+<title>
+Előkészületek
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Győződjön meg arról, hogy nem észlelhető DTC C1057.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Egymás után legalább nyolcszor hajtsa végre a következő eljárást.
+</ptxt>
+</item>
+</list1>
+<s1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Vezesse a járművet legalább 20 km/h (12 mérföld/h) sebességgel legalább 1 percig.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Győződjön meg arról, hogy a gyújtáskapcsoló „OFF” helyzetben van.
+</ptxt>
+</s1>
+</topic>
+<diag type = "test" id = "AHUAP70A4604018005">
+<testgroup id = "AHUAP70A4604018006">
+<question>
+Megtörtént az „ESP® rendszer ellenőrzése”?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604018007">
+<title>
+Abroncsnyomás ellenőrzése
+</title>
+<test1>
+<ptxt>
+Győződjön meg arról, hogy a gumiabroncs nyomása megfelelő értékű-e.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Állítsa be az abroncsnyomást, vagy cserélje ki a gumiabroncsot, majd ellenőrizze újra a DTC-t.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604018008">
+<title>
+Kerékfordulatszám-érzékelő tápáramkörének és jeláramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le az „E24” csatlakozót és a kerékfordulatszám-érzékelő csatlakozóit.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze az „E24” csatlakozó és a kerékfordulatszám-érzékelő csatlakozóinak csatlakozását.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozások megfelelők, ellenőrizze a következőket.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az „A1”, „A2”, „B1”, „B2”, „C1”, „C2”, „D1” és „D2” áramkörök közötti ellenállás: kevesebb mint 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az „A1”, „A2”, „B1”, „B2”, „C1”, „C2”, „D1” és „D2” áramkörök és a testelés közötti ellenállás: végtelen nagy
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az „A1” áramkör érintkezője és a bal első kerékfordulatszám-érzékelő csatlakozójának más érintkezői közötti ellenállás: végtelen nagy
+</ptxt>
+</item>
+<item>
+<ptxt>
+A „B1” áramkör érintkezője és a jobb első kerékfordulatszám-érzékelő csatlakozójának más érintkezői közötti ellenállás: végtelen nagy
+</ptxt>
+</item>
+<item>
+<ptxt>
+A „C1” áramkör érintkezője és a bal hátsó kerékfordulatszám-érzékelő csatlakozójának más érintkezői közötti ellenállás: végtelen nagy
+</ptxt>
+</item>
+<item>
+<ptxt>
+A „D1” áramkör érintkezője és a jobb hátsó kerékfordulatszám-érzékelő csatlakozójának más érintkezői közötti ellenállás: végtelen nagy
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az „A1”, „A2”, „B1”, „B2”, „C1”, „C2”, „D1” és „D2” áramkörök közötti feszültség: 0-1 V (a gyújtás „ON” állásában)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604018009">
+<title>
+Kerékfordulatszám-érzékelő jelének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a megfelelő kerékfordulatszám-érzékelő kimenő feszültségét és hullámformáját. 
+<intxreftitleoff1 refid = "AHUAP70A4606006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelel az előírásnak?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa az 5. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604018010">
+<title>
+Kerékfordulatszám-érzékelő ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a megfelelő kerékfordulatszám-érzékelőt. 
+<intxreftitleoff1 refid = "AHUAP70A4606009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 6. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Tisztítsa meg, javítsa meg vagy cserélje ki a kerékfordulatszám-érzékelőt.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Első kerékfordulatszám-érzékelő: 
+<intxreftitleoff1 refid = "AHUAP70A4606010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Hátsó kerékfordulatszám-érzékelő: 
+<intxreftitleoff1 refid = "AHUAP70A4606011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604018011">
+<title>
+Kerékfordulatszám-érzékelő jeladótárcsájának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a megfelelő kerékfordulatszám-érzékelő jeladótárcsát. 
+<intxreftitleoff1 refid = "AHUAP70A4606012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Tisztítsa meg, javítsa meg vagy cserélje ki a kerékfordulatszám-érzékelő jeladótárcsáját.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Első kerékfordulatszám-érzékelő jeladótárcsája: 
+<intxreftitleoff1 refid = "AHUAP70A4606010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Hátsó kerékfordulatszám-érzékelő jeladótárcsa: 
+<intxreftitleoff1 refid = "AHUAP70A4606011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ :
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

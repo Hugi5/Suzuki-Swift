@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9B">
+<servcat sctnbr = "09" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGKAP70A9201001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Περιγρα&#248;ή Συστήματος Φωτισμού
+</title>
+<servinfosub id = "AGKAP70A9201001001">
+<title>
+Σύστημα αυτόματης ενεργοποίησης προβολέων (εάν διατίθεται)
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Το σύστημα αυτόματης ενεργοποίησης προβολέων είναι ένα σύστημα για τον έλεγχο της αυτόματης λειτουργίας ON / OFF των προβολέων, των &#248;ώτων θέσης, των πίσω &#248;αναριών, των &#248;ώτων πινακίδας κυκλο&#248;ορίας και για τη βέλτιστη ρύθμιση του εσωτερικού &#248;ωτισμού ανάλογα με τη &#248;ωτεινότητα του περιβάλλοντος όταν ο διακόπτης &#248;ωτισμού βρίσκεται στη θέση AUTO.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ο εγκέ&#248;αλος BCM ελέγχει τη λειτουργία του συστήματος αυτόματης ενεργοποίησης προβολέων βάσει των σημάτων έντασης του &#248;ωτός από τον αισθητήρα αυτόματης ενεργοποίησης προβολέων.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Με την ανά&#248;λεξη στη θέση &#34;ON&#34; και το διακόπτη &#248;ωτισμού στη θέση &#34;AUTO&#34;, ο εγκέ&#248;αλος BCM ελέγχει τη λειτουργία των προβολέων, των &#248;ώτων θέσης, των πίσω &#248;αναριών και των &#248;ώτων πινακίδας κυκλο&#248;ορίας με τους ακόλουθους τρόπους ανάλογα με τις συνθήκες εξωτερικού &#248;ωτισμού.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.134in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.134in"/>
+<colspec colnum = "3" colname = "3" colwidth = "2.512in"/>
+<colspec colnum = "4" colname = "4" colwidth = "0.986in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.412in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Διακόπτης &#248;ώτων
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ανά&#248;λεξη
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκες εξωτερικού &#248;ωτισμού
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Προβολείς
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Φώτα θέσης, πίσω &#248;ώτα και &#248;ώτα πινακίδας κυκλο&#248;ορίας
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Any - Οποιοδήποτε
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Οποιαδήποτε συνθήκη
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΘΕΣΗΣ
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Any - Οποιοδήποτε
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Οποιαδήποτε συνθήκη
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΠΡΟΒΟΛΕΙΣ
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Any - Οποιοδήποτε
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Οποιαδήποτε συνθήκη
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+AUTO
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Δια&#248;ανές
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+AUTO
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Προσωρινά σκοτάδι υπό &#248;ωτεινές συνθήκες
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+AUTO
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Χαμήλωμα &#248;ώτων
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+AUTO
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Σκούρο χρώμα
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+AUTO
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Προσωρινά &#248;ως υπό σκοτεινές συνθήκες
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΟN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+AUTO
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ΚΛΕΙΔΩΜΑ (OFF)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Οποιαδήποτε συνθήκη
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+OFF
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AGKAP70A9201001002">
+<title>
+Σύστημα DRL (εάν διατίθεται)
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Το σύστημα DRL αποτελείται από τη μονάδα ελέγχου DRL (μοντέλο με διακόπτη ανά&#248;λεξης) ή τον εγκέ&#248;αλο BCM (μοντέλο εκκίνησης χωρίς κλειδί), το διακόπτη &#248;ωτισμού, τα πίσω &#248;ώτα, τα &#248;ώτα θέσης, τα &#248;ώτα πινακίδας κυκλο&#248;ορίας, τους προβολείς και τη γεννήτρια.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Όταν ο κινητήρας είναι σε λειτουργία και ο διακόπτης &#248;ωτισμού είναι στη θέση &#34;OFF&#34;, η μονάδα ελέγχου DRL (μοντέλο με διακόπτη ανά&#248;λεξης) ή ο εγκέ&#248;αλος BCM (μοντέλο με μπουτόν εκκίνησης χωρίς κλειδί) προκαλεί το άναμμα της μικρής σκάλας των προβολέων με χαμηλή &#248;ωτεινότητα.
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENBP70AA101002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description of Cruise Control System Components and Functions
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.420in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.788in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "center">
+<ptxt>
+Component
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "center">
+<ptxt>
+Function
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+ECM and electric throttle body
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+ECM executes centralized control over all functions including setting a constant speed, resuming it, setting coast, and cancelling cruise control minimum limit speed.
+</ptxt>
+<ptxt>
+ECM controls electric throttle valve opening to keep actual vehicle speed at set (target) speed.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+MAIN (ON/OFF) switch
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+This switch has a momentary contact type button to turn cruise control function ON and OFF.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+SET/COAST switch
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+When this switch is pressed (ON) and then released (OFF) while vehicle is running at a speed 40 km/h (25 mile/h) or higher, vehicle speed at that OFF moment is stored in memory and it is maintained (constant cruising).
+</ptxt>
+<ptxt>
+When this switch (ON) is continuously pressed during constant cruising, vehicle speed will continually decrease as long as switch is ON. When it is released (OFF), vehicle speed at that moment is stored in memory and vehicle starts constant cruising.
+</ptxt>
+<ptxt>
+Pressing this switch (ON) during constant cruising decreases vehicle speed according to number of times the switch is pressed.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+RES/ACC switch
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+When this switch is pressed (ON) during constant cruising, vehicle speed will continually increase as long as switch is ON. When it is released (OFF), vehicle speed at that moment is stored in memory and vehicle starts constant cruising. If vehicle speed is higher than 40 km/h (25 mile/h) after cruise control is canceled, pressing this switch ON momentarily will resume vehicle running at the speed.
+</ptxt>
+<ptxt>
+Pressing this switch (ON) during constant cruising increases vehicle speed according to number of times the switch is pressed.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+CANCEL switch
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+When this switch is pressed (ON), cruise control (throttle valve control) is canceled.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Wheel speed sensor (vehicle speed signal)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ECM receives speed sensor signal from ESP<sup>®</sup> control module through CAN communication and calculates vehicle speed using that signal.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Brake light switch
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Brake light switch has 2 contact points. One contact point closes when brake pedal is depressed to light brake light and provide a voltage signal to the ECM.
+</ptxt>
+<ptxt>
+The other contact point (brake pedal position switch) opens when brake pedal is depressed to shut off power to cruise control of ECM, thereby cancelling cruise control (throttle valve control).
+</ptxt>
+<ptxt>
+This switch is installed to cancel cruise control.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+CPP No.2 switch (M/T model)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+When clutch pedal is depressed, CPP No.2 switch closes and provides a ground signal to ECM.
+</ptxt>
+<ptxt>
+ECM cancels cruise control (throttle valve control) when this signal is inputted.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+TCM (CVT model)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+TCM sends transmission shift position signal through CAN communication to ECM.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+“CRUISE” indicator light
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+In the state with ignition in ON and cruise control system in OFF, pressing MAIN (ON/OFF) switch once and releasing it will activate the cruise control system and ECM will cause indicator light to light up.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+“SET” indicator light
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+The “SET” indicator light lights up when cruise control (throttle valve control) is functioning.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

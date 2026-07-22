@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A4604028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1047 / C1048 
+</title>
+<servinfosub id = "AFRAP70A4604028001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.814in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.366in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1047: Performance du signal des deux capteurs de vitesse de roue avant ou d&#39;encodeur
+</emph>
+</ptxt>
+<ptxt>
+Le taux d&#39;embardée estimé à partir des deux capteurs de vitesse de roue avant ne correspond pas au signal de capteur d&#39;embardée. 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Capteur d&#39;angle de braquage 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Capteur de vitesse de roue 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuit du capteur de vitesse de roue 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Encodeur de capteur de vitesse de roue 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1048: Performance du signal des deux capteurs de vitesse de roue arrière ou d&#39;encodeur 
+</emph>
+</ptxt>
+<ptxt>
+Le taux d&#39;embardée estimé à partir des deux capteurs de vitesse de roue arrière ne correspond pas au signal de capteur d&#39;embardée. 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A4604028002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A4604028003">
+<testgroup id = "AFRAP70A4604028004">
+<question>
+La &#34;Vérification du système ESP<sup>&#174;</sup>&#34; a-t-elle été effectuée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A4604001">Vérification du système ESP&#174;</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604028005">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Suivre le point 
+<intxref refid = "AFRAP70A4604005">Vérification des DTC</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC autres que C1047 ou C1048 sont-ils détectés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604028006">
+<title>
+Vérification sur véhicule du capteur d&#39;angle de braquage 
+</title>
+<test1>
+<ptxt>
+Vérifier le capteur d&#39;angle de braquage. 
+<intxreftitleoff1 refid = "AFRAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Son état est-il correct? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 4. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Remplacer le capteur d&#39;angle de braquage et vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604028007">
+<title>
+Vérification du capteur de vitesse de roue 
+</title>
+<test1>
+<ptxt>
+Vérifier le capteur de vitesse de roue, l&#39;encodeur de capteur de vitesse de roue et/ou le circuit de capteur de vitesse de roue concerné en fonction du point 
+<intxref refid = "AFRAP70A4604018">DTC C1021 / C1022 / C1025 / C1026 / C1031 / C1032 / C1033/ C1035 / C1036</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer l&#39;ensemble de groupe hydraulique / module de commande ESP<sup>&#174;</sup> et vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer la pièce défectueuse. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

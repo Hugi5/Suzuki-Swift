@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A4604021" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1028
+</title>
+<servinfosub id = "AFRAP70A4604021001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.510in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.653in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1028: Tension de circuit de capteur de pression de maître-cylindre
+</emph>
+</ptxt>
+<ptxt>
+Le signal de capteur de pression de maître-cylindre est en dehors de la plage prescrite. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Système de freinage 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A4604021002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A4604021003">
+<testgroup id = "AFRAP70A4604021004">
+<question>
+La &#34;Vérification du système ESP<sup>&#174;</sup>&#34; a-t-elle été effectuée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A4604001">Vérification du système ESP&#174;</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604021005">
+<title>
+Vérification du système de freinage 
+</title>
+<test1>
+<ptxt>
+Vérifier les points suivants. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fuite de liquide de frein ou présence d&#39;air dans le système de freinage hydraulique. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Jeu entre la plaquette et le disque de frein trop important. 
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Les résultats de la vérification sont-ils corrects? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer l&#39;ensemble de groupe hydraulique / module de commande ESP<sup>&#174;</sup> et vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer, remplacer ou régler le système de freinage. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

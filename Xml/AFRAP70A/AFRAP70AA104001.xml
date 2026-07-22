@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Vérification du système de régulateur de vitesse 
+</title>
+<diag type = "test" id = "AFRAP70AA104001001">
+<testgroup id = "AFRAP70AA104001002">
+<test1>
+<ptxt>
+Noter tous les détails relatifs au problème. L&#39;utilisation d&#39;un questionnaire facilitera le recueil des informations permettant de réaliser une analyse et un diagnostic adéquats. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier si le problème décrit au point 
+<intxref refid = "AFRAP70AA104002">Questionnaire pour le client (exemple)</intxref>
+ survient effectivement dans le véhicule. (Cette étape doit être exécutée en présence du client dans la mesure du possible.) 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier la présence de DTC au niveau de l&#39;ECM et du module de commande ESP<sup>&#174;</sup>, puis enregistrer le(s) DTC. 
+</ptxt>
+</test1>
+<question>
+Y a-t-il des DTC autres que ceux en relation avec le système de régulateur de vitesse (autres que les DTC P0504, P0575 et P0649)? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA104001003">
+<question>
+Y a-t-il encore des DTC en relation avec le système de régulateur de vitesse? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes correspondant à ce(s) DTC, et passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA104001004">
+<test1>
+<ptxt>
+Vérifier et réparer les pièces de base en se reportant au point 
+<intxref refid = "AFRAP70AA104007">Diagnostic des symptômes du système de régulateur de vitesse</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Une anomalie est-elle constatée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Réparer ou remplacer la ou les pièce(s) défectueuse(s) et passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 4. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA104001005">
+<test1>
+<ptxt>
+Rechercher d&#39;éventuels problèmes intermittents en se reportant au point 
+<intxref refid = "AFRAP70A0006002">Vérification de branchement intermittent et de mauvais contact</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Une anomalie est-elle constatée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Réparer ou remplacer la ou les pièce(s) défectueuse(s) et passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 5. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA104001006">
+<test1>
+<ptxt>
+Confirmer que le problème est résolu et que le système de régulateur de vitesse fonctionne normalement. Si les réparations effectuées sont liées au DTC, l&#39;effacer une fois puis confirmer qu&#39;aucun DTC n&#39;est indiqué. 
+</ptxt>
+</test1>
+<question>
+Y a-t-il un symptôme de problème, un DTC ou une anomalie? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer au point 2) de l&#39;étape 1 et effectuer à nouveau la recherche de pannes. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

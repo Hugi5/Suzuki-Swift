@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A6304013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1141 / C1142 / C1143 / C1145
+</title>
+<servinfosub id = "AITAP70A6304013001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.778in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1141: Malfunzionamento tensione circuito motorino P/S
+</emph>
+</ptxt>
+<ptxt>
+La tensione dei terminali del circuito di uscita del motorino P/S è maggiore del limite superiore (8,5 V) o è inferiore al limite inferiore (0,2 V) per oltre il lasso di tempo specificato.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Centralina del servosterzo
+</ptxt>
+</item>
+<item>
+<ptxt>
+Motorino P/S (gruppo piantone dello sterzo)
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1142: Malfunzionamento corrente circuito motorino P/S 1
+</emph>
+</ptxt>
+<ptxt>
+La corrente di comando misurata del motorino P/S è superiore al valore obiettivo per almeno 10 A.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1143: Corrente circuito motorino P/S eccessiva
+</emph>
+</ptxt>
+<ptxt>
+La corrente del circuito di comando del motorino P/S è superiore a 65 A.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1145: Malfunzionamento corrente circuito motorino P/S 2
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+La corrente di comando misurata del motorino P/S è continuamente inferiore a 2 A per oltre 5 secondi anche se la corrente obiettivo è superiore a 4 A.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La corrente di comando misurata del motorino P/S è inferiore a 0,8 A e il ciclo di lavoro utile del motorino è superiore al 90% per un totale di 1 secondo anche se la corrente di comando obiettivo è inferiore a 8 A.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A6304013002">
+<title>
+Schema del circuito
+</title>
+<figure>
+<graphic graphicname = "IAP70A630007.swf" width = "183.000mm" height = "67.643mm" ver = "01" gw = "342" gh = "175"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.254in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.302in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.227in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.281in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.708in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Connettore &#34;E12&#34; del motorino P/S (vista [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito 2 uscita motorino P/S
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+CPU
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito 1 uscita motorino P/S
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Centralina del servosterzo
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Motorino servosterzo
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AITAP70A6304013003">
+<title>
+Procedura di conferma DTC
+</title>
+<s1>
+<ptxt>
+Avviare il motore.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Girare il volante completamente, in entrambe le direzioni.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A6304013004">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A6304013005">
+<testgroup id = "AITAP70A6304013006">
+<question>
+È stato eseguito il &#34;Controllo sistema ESP&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A6304001">Controllo del sistema P/S</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304013007">
+<title>
+Controllo dei circuiti del motorino P/S e di uscita del motorino P/S
+</title>
+<test1>
+<ptxt>
+Con accensione su &#34;OFF&#34;, scollegare il connettore &#34;E12&#34; del motorino P/S dalla centralina P/S.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare i collegamenti ai terminali del connettore &#34;E12&#34; del motorino P/S.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono in ordine, controllare i seguenti punti:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+resistenza tra i circuiti &#34;A1&#34; e &#34;A2&#34;: circa 1 Ω
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il circuito &#34;A1&#34; e la massa: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+tensione del circuito &#34;A1&#34;: 0 – 1 V (con accensione su &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Controllare il motorino P/S. 
+<intxreftitleoff1 refid = "AITAP70A6306013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Sono OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la centralina P/S e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire il motorino P/S (gruppo piantone dello sterzo). 
+<intxreftitleoff1 refid = "AITAP70A6206009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

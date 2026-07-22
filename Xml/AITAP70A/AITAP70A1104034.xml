@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104034" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0340 / P0365
+</title>
+<servinfosub id = "AITAP70A1104034001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.842in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0340: Circuito sensore &#34;A&#34; posizione albero a camme
+</emph>
+</ptxt>
+<ptxt>
+Uno dei seguenti contatori di errore è superiore al valore specificato con motore in funzione. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Il segnale del sensore CMP di aspirazione non viene inviato mentre è inviato quello del sensore CKP.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il segnale del sensore CMP di aspirazione è superiore ai contatori specificati quando il segnale di uscita del sensore CKP è normale.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(Logica di rilevamento a 3 D/C)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore CMP di aspirazione e/o il relativo circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ruota fonica
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0365: Circuito sensore &#34;B&#34; posizione albero a camme
+</emph>
+</ptxt>
+<ptxt>
+Uno dei seguenti contatori di errore è superiore al valore specificato con motore in funzione. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Il segnale del sensore CMP di scarico non viene inviato mentre è inviato quello del sensore CKP.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il segnale del sensore CMP di scarico è superiore ai contatori specificati quando il segnale di uscita del sensore CKP è normale.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(Logica di rilevamento a 3 D/C)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore CMP di scarico e/o il relativo circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ruota fonica
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A1104034002">
+<title>
+Schema del circuito
+</title>
+<figure>
+<graphic graphicname = "I9P60A111018.swf" width = "183.000mm" height = "111.217mm" ver = "03" gw = "440" gh = "299"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.320in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.574in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.081in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.320in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.442in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Connettore ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale del sensore CMP di scarico
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Sensore CMP di aspirazione
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione sensore CMP di aspirazione
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di massa sensore CMP di scarico
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Sensore CMP di scarico
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale del sensore CMP di aspirazione
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione sensore CKP
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Sensore CKP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di massa sensore CMP di aspirazione
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale del sensore CKP
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione sensore CMP di scarico
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di massa sensore CKP
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AITAP70A1104034003">
+<title>
+Procedura di conferma DTC
+</title>
+<s1>
+<ptxt>
+Tenere il motore al regime minimo per 10 secondi.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A1104034004">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A1104034005">
+<testgroup id = "AITAP70A1104034006">
+<question>
+È stata eseguita la procedura &#34;Verifica del sistema di controllo del motore e delle emissioni&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104001">Verifica del sistema di controllo del motore e delle emissioni</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104034007">
+<title>
+Controllo circuito di alimentazione sensore CMP
+</title>
+<test1>
+<ptxt>
+Ad accensione su &#34;OFF&#34;, scollegare il connettore del sensore CMP relativo al DTC.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verificare che il collegamento al connettore del sensore CMP sia corretto.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono OK, portare l&#39;accensione in posizione &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare che la tensione tra &#34;A1&#34; e &#34;A3&#34; o &#34;B1&#34; e &#34;B3&#34; corrisponda alla tensione di batteria.
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104034008">
+<title>
+Controllo del circuito di massa del sensore CMP
+</title>
+<test1>
+<ptxt>
+Controllare che la tensione tra &#34;A1&#34; o &#34;B1&#34; e la massa corrisponda alla tensione di batteria.
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Riparare o sostituire il circuito &#34;A3&#34; o &#34;B3&#34;.
+</ptxt>
+<ptxt>
+Se viene rilevato nuovamente questo DTC, sostituire la ECM e ripetere il controllo presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire il cablaggio difettoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104034009">
+<title>
+Controllo circuito segnale del sensore CMP
+</title>
+<test1>
+<ptxt>
+Con accensione su OFF, scollegare i connettori &#34;C01&#34; e &#34;E01&#34; dalla ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare l&#39;integrità dei collegamenti dei terminali ai connettori &#34;C01&#34; e &#34;E01&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono in ordine, controllare i seguenti punti:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+resistenza del circuito &#34;A2&#34; o &#34;B2&#34;: meno di 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il circuito &#34;A2&#34; o &#34;B2&#34; e la massa: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il terminale del circuito &#34;A2&#34; o &#34;B2&#34; e l&#39;altro terminale del connettore del sensore CMP: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+tensione del circuito &#34;A2&#34; o &#34;B2&#34;: 0 – 1 V (con accensione su &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire il cablaggio difettoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104034010">
+<title>
+Controllo sensore CMP e ruota fonica
+</title>
+<test1>
+<ptxt>
+Controllare quanto segue: 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore CMP 
+<intxreftitleoff1 refid = "AITAP70A1306018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ruota fonica 
+<intxreftitleoff1 refid = "AITAP70A1406014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la ECM e ripetere il controllo della presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

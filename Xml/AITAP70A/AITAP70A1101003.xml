@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Descrizione del sistema OBD
+</title>
+<ptxt>
+Su questo tipo di veicolo, la ECM svolge le funzioni indicate di seguito.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Con accensione su ON a motore spento, la spia MIL (1) si accende per controllare il circuito della spia MIL (1).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Se, a motore in funzione, la ECM rileva un guasto che si ripercuote negativamente sulle emissioni del veicolo, fa accendere a luce fissa o lampeggiante (lampeggiante in caso di mancate accensioni che possono danneggiare il catalizzatore) la spia MIL (1) nel quadro strumenti del cruscotto e registra gli estremi del guasto nella propria memoria.
+</ptxt>
+<ptxt>
+(Se la ECM rileva un guasto soltanto nel primo ciclo di guida (fare riferimento a 
+<intxref refid = "AITAP70A1101003002">Ciclo di guida</intxref>
+) ma non lo rileva più nei successivi 2 cicli di guida, l&#39;ECM non fa accendere la spia MIL (1) nonostante memorizzi il DTC associato.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Per alcuni malfunzionamenti, l&#39;ECM adotta la logica di rilevamento in 3 cicli di guida (fare riferimento a 
+<intxref refid = "AITAP70A1101003003">Logica di rilevamento in 3 cicli di guida</intxref>
+) per evitare eventuali errori. 
+</ptxt>
+<ptxt>
+Con questa logica, la MIL si accende a seguito del rilevamento del medesimo guasto per 3 cicli di guida consecutivi.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Quando viene rilevato un guasto, le condizioni operative del motore e del veicolo esistenti in quel momento vengono congelate nella memoria dell&#39;ECM. (Per i dettagli, fare riferimento alla descrizione in 
+<intxref refid = "AITAP70A1101003007">Cancellazione dei dati congelati:</intxref>
+.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tuttavia, il dialogo mediante presa DLC (3) può avvenire anche senza utilizzare lo strumento di diagnosi SUZUKI (2), ma utilizzando strumento di diagnosi generico OBD di comunicazione CAN. (È possibile accedere alle informazioni diagnostiche mediante uno strumento di diagnosi).
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "AITAP70A1101003001">
+<title>
+Ciclo di riscaldamento
+</title>
+<ptxt>
+Con &#34;ciclo di riscaldamento&#34; si intende mantenere il motore in funzione dopo l&#39;avviamento fino a che la temperatura del liquido di raffreddamento raggiunge almeno i 22 &#176;C (40 &#176;F) o la temperatura minima di 71 &#176;C (160 &#176;F).
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A1101003002">
+<title>
+Ciclo di guida
+</title>
+<ptxt>
+Un &#34;ciclo di guida&#34; inizia con l&#39;avviamento del motore e termina con il suo spegnimento.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A1101003003">
+<title>
+Logica di rilevamento in 3 cicli di guida
+</title>
+<ptxt>
+Il malfunzionamento rilevato in occasione del primo ciclo di guida viene memorizzato nella ECM (sotto forma di DTC sospeso) e, in questo caso, la spia MIL non si accende ancora. L&#39;ECM fa accendere la spia MIL quando rileva per la terza volta il medesimo malfunzionamento nei successivi due cicli di guida.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A1101003004">
+<title>
+DTC sospesi
+</title>
+<ptxt>
+Con &#34;DTC sospesi&#34; si intendono quei DTC ai quali viene applicata la &#34;Logica di rilevamento in 3 cicli di guida&#34;. Se viene rilevato un DTC di questo tipo e viene memorizzato provvisoriamente durante il primo dei tre cicli consecutivi di guida, il DTC viene denominato &#34;DTC sospeso&#34;.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A1101003005">
+<title>
+Dati congelati
+</title>
+<ptxt>
+La ECM memorizza i dati sulle condizioni operative del motore e del veicolo esistenti nel momento in cui ha rilevato un guasto. Questi dati vengono definiti &#34;Dati congelati&#34;.
+</ptxt>
+<ptxt>
+Pertanto analizzando i dati congelati è possibile sapere quali erano le condizioni del motore e del veicolo (per esempio se il motore era in temperatura o meno, se il veicolo era in marcia o fermo, se la miscela era magra o ricca) nel momento in cui è stato rilevato il guasto. Inoltre, l&#39;ECM ha anche la funzione di memorizzare i dati congelati relativi a tre diversi guasti nell&#39;ordine cronologico di rilevamento. Utilizzando questa funzione, è possibile conoscere l’ordine in cui sono stati rilevati i malfunzionamenti. Il suo uso è utile quando si ricontrolla o si diagnostica un guasto.
+</ptxt>
+<ptxt>
+Per dettagli relativi ai dati congelati che possono essere letti dall&#39;ECM, fare riferimento alla tabella sottostante.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.455in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Impianto di alimentazione
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Carico calcolato
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fattore di regolazione a breve termine della miscela
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fattore di regolazione a lungo termine della miscela
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Regime motore
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Velocità del veicolo
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Anticipo accensione
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Temperatura aria aspirata
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione assoluta 1 della valvola a farfalla*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ciclo di lavoro spurgo canister EVAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tempo dall&#39;avviamento del motore
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Livello del carburante nel serbatoio
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pressione barometrica
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensione batteria
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione relativa della valvola a farfalla**
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione assoluta 2 della valvola a farfalla*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione assoluta 1 del pedale acceleratore *
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione assoluta 2 del pedale acceleratore *
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posizione programmata della valvola a farfalla
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+I dati congelati accompagnati da asterisco (*) indicano il rapporto tensione di uscita - tensione di alimentazione del sensore preso in considerazione.
+</ptxt>
+<ptxt>
+Quando la tensione di alimentazione è pari a 5,0 V e la tensione di uscita è 4,0 V, i dati congelati sono visualizzati come segue.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Per i sistemi in cui la tensione di uscita è proporzionale a quella di entrata, viene visualizzato 80% (= la percentuale della tensione di riferimento massima in ingresso).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Per i sistemi in cui la tensione di uscita è inversamente proporzionale a quella di entrata, viene visualizzato 20% (= 100% meno la percentuale della tensione di riferimento massima in ingresso).
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Per quanto riguarda la posizione relativa della valvola a farfalla con gli asterischi (**) in tabella, essa indica il valore calcolato con la formula ((tensione di uscita - tensione di uscita in posizione di farfalla chiusa) / tensione di alimentazione).
+</ptxt>
+<ptxt>
+Quando la tensione di alimentazione è pari a 5,0 V e la tensione di uscita in posizione di farfalla chiusa è 1,0 V, i dati congelati sono visualizzati come segue.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Con farfalla chiusa (tensione di uscita = 1,0 V), visualizza 0%.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Con farfalla completamente aperta (tensione di uscita = 4,0 V), visualizza 60%.
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Tuttavia, per i sistemi in cui la tensione di uscita è inversamente proporzionale a quella di entrata, viene visualizzato 100% meno la formula di cui sopra.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Esempio di dati congelati
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "AITAP70A1101003006" page = "1">
+<title>
+Priorità dei dati congelati
+</title>
+<ptxt>
+Sono 4 i riquadri che la ECM utilizza per salvare i dati congelati.
+</ptxt>
+<ptxt>
+Il riquadro 1 è un riquadro speciale in cui i dati congelati relativi ai guasti che influiscono negativamente sulle emissioni allo scarico hanno priorità su quelli relativi ad altri malfunzionamenti (generici). Se, quando il riquadro 1 sta conservando un dato relativo ad un guasto generico (di priorità &#34;2&#34; come indicato nella tabella sotto), si verifica un guasto che influisce sulle emissioni, i dati attualmente memorizzati vengono sostituiti da quelli relativi all&#39;ultimo guasto rilevato (dati con priorità &#34;1&#34; come da tabella sotto).
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Priorità
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Dati congelati nel riquadro 1
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Dati relativi a uno dei seguenti malfunzionamenti: Mancata accensione (P0300 – P0304), Miscela troppo magra (P0171) e Miscela troppo ricca (P0172)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Dati relativi a malfunzionamenti diversi da quelli sopra.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Ai riquadri da 2 a 4 sono assegnati i malfunzionamenti generici. Memorizzano singolarmente i dati congelati per 3 diversi malfunzionamenti generici in base all&#39;ordine di rilevamento (ossia il riquadro 2 memorizza i dati relativi al primo guasto rilevato mentre il riquadro 4 i dati sull&#39;ultimo). Al contrario dei dati del riquadro 1, i dati congelati di questi 3 riquadri non vengono aggiornati, pertanto le informazioni sui malfunzionamenti rilevati successivamente non vengono memorizzati.
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039I.swf" width = "183.000mm" height = "49.215mm" ver = "02" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: Nessun dato congelato
+</ptxt>
+</topic>
+<topic id = "AITAP70A1101003007" page = "1">
+<title>
+Cancellazione dei dati congelati:
+</title>
+<ptxt>
+Cancellando un DTC, vengono cancellati anche i dati congelati relativi al guasto rappresentato dal DTC stesso.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AITAP70A1101003008" page = "1">
+<title>
+Verifica stato di approntamento del sistema
+</title>
+<ptxt>
+La verifica stato di approntamento del sistema viene eseguita al fine di confermare che ciascuno dei sistemi relativi alle emissioni allo scarico soddisfa le condizioni che consentono alla ECM di rilevare un guasto quando si verifica e di impostare il corrispondente DTC.
+</ptxt>
+<ptxt>
+La verifica viene svolta monitorando le voci specifiche (componenti) per mezzo dello strumento di diagnosi (strumento di diagnosi SUZUKI o strumento di diagnosi generico OBD di comunicazione CAN). Quando la verifica indica che le condizioni stabilite a priori per il sistema da testare sono soddisfatte, la ECM esegue la diagnosi di bordo del sistema, cambia lo stato della verifica stato di approntamento del sistema da &#34;Incompleto&#34; a &#34;Completo&#34; e fa visualizzare lo stato &#34;Completo&#34; sullo strumento di diagnosi.
+</ptxt>
+<ptxt>
+Lo stato &#34;Completo&#34; permane fino a quando non viene eseguita la cancellazione dei DTC con lo strumento di diagnosi.
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Lo stato della verifica stato di approntamento del sistema potrebbe passare da &#34;Completo&#34; a &#34;Incompleto&#34; se viene eseguita una delle seguenti operazioni di servizio.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Distacco del cavo negativo (-) della batteria
+</ptxt>
+</item>
+<item>
+<ptxt>
+Distacco dei connettori dell&#39;ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Rimozione del cavo di massa dell&#39;ECM
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Le voci (componenti) indicate nella tabella sotto sono controllate dalla verifica stato di approntamento del sistema per confermare che il sistema è pronto a rilevare i DTC elencati accanto a ciascuna di esse.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lo stato &#34;Completo&#34; o &#34;Incompleto&#34;, identificato attraverso la verifica stato di approntamento del sistema, NON indica l&#39;esito &#34;Normale&#34; o &#34;Anormale&#34; della diagnosi di bordo.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AITAP70A1101003009">
+<title>
+Tabella elemento di monitoraggio della verifica stato di approntamento del sistema
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Elemento di monitoraggio
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC relativo all&#39;elemento di monitoraggio
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Marmitta catalitica
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Sonda lambda
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Riscaldatore sonda lambda
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

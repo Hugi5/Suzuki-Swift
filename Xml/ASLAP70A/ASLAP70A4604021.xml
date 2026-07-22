@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A4604021" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1028
+</title>
+<servinfosub id = "ASLAP70A4604021001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.510in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.653in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1028: Napätie obvodu snímača tlaku hlavného valca
+</emph>
+</ptxt>
+<ptxt>
+Signál snímača tlaku hlavného valca je mimo predpísanej hodnoty.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Brzdový systém
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka ESP<sup>®</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A4604021002">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A4604021003">
+<testgroup id = "ASLAP70A4604021004">
+<question>
+Bola vykonaná „Kontrola systému ESP<sup>®</sup>“?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A4604001">Kontrola systému ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A4604021005">
+<title>
+Kontrola brzdového systému
+</title>
+<test1>
+<ptxt>
+Skontrolujte nasledovné body:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Unikanie brzdovej kvapaliny alebo vzduch v hydraulickom brzdovom systéme.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Príliš veľká vôľa doštičky ku kotúču. 
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Sú výsledky kontroly primerané?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte zostavu hydraulickej jednotky/riadiacej jednotky ESP<sup>®</sup> a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte, vymeňte alebo nastavte brzdový systém.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

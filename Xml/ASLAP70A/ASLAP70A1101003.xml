@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Popis systému OBD
+</title>
+<ptxt>
+Riadiaca jednotka motora má vo vozidle tieto funkcie.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ak motor stojí a spínač zapaľovania je prepnutý do polohy „ON“, kontrolka poruchy (1) sa rozsvieti, aby ste skontrolovali jej žiarovku.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Keď riadiaca jednotka motora odhalí poruchu, ktorá škodlivo pôsobí na emisie vozidla počas chodu motora, rozsvieti sa alebo bliká kontrolné svetlo poruchy (1) v zapojení s meracím prístrojom prístrojovej dosky (bliká len keď odhalí zlyhanie, ktoré môže poškodiť katalyzátor) a do pamäte si uloží miesto poruchy.
+</ptxt>
+<ptxt>
+(Ak ECM detekuje poruchu iba v prvom jazdnom cykle (viď 
+<intxref refid = "ASLAP70A1101003002">Cyklus jazdy</intxref>
+ .), ale nedetekuje rovnakú poruchu v nasledovných 2 jazdných cykloch, ECM nezapne MIL (1), aj keď príslušná DTC zostane v jej pamäti.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pri niektorých poruchách má ECM logiku rozpoznania 3 jazdných cyklov (viď 
+<intxref refid = "ASLAP70A1101003003">Logika rozpoznávania 3 jazdných cyklov</intxref>
+ ), aby sa predišlo nesprávnemu rozpoznaniu. 
+</ptxt>
+<ptxt>
+Pomocou tejto logiky sa MIL pri rozpoznaní rovnakej poruchy v 3 postupných jazdných cykloch zapne.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ak bola zistená porucha, v pamäti riadiacej jednotky motora sa uloží stav motora a jazdné podmienky v tom momente v podobe rámcových údajov. (Viac informácií nájdete v časti 
+<intxref refid = "ASLAP70A1101003007">Vymazanie momentových údajov rámca:</intxref>
+.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Komunikácia cez DLC (3) je možná nielen pomocou skenovacieho zariadenia SUZUKI (2), ale aj pomocou bežného skenovacieho zariadenia komunikácie OBD. (Diagnostické údaje možno sprístupniť pomocou skenovacieho zariadenia.)
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "ASLAP70A1101003001">
+<title>
+Cyklus zahrievania
+</title>
+<ptxt>
+Zahrievací cyklus je taká prevádzka vozidla, pri ktorej sa teplota chladiacej kvapaliny zvýši aspoň o 22 &#176;C (40 &#176;F) od naštartovania motora a dosiahne minimálnu teplotu 71 &#176;C (160 &#176;F).
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1101003002">
+<title>
+Cyklus jazdy
+</title>
+<ptxt>
+Jazdný cyklus je doba od naštartovania motora po nasledovné vypnutie motora.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1101003003">
+<title>
+Logika rozpoznávania 3 jazdných cyklov
+</title>
+<ptxt>
+Porucha zistená v prvom cykle sa uloží do pamäte riadiacej jednotky motora (ako predbežný DTC). Kontrolné svetlo poruchy MIL sa v tomto prípade nesvieti. ECM spôsobuje rozsvietenie MIL keď detekuje tretíkrát rovnakú poruchu v nasledovných dvoch jazdných cykloch.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1101003004">
+<title>
+Predbežný DTC
+</title>
+<ptxt>
+Predbežný DTC sa týka tých DTC, na ktoré je aplikovaná logika rozoznávania 3 jazdných cyklov. Ak je detekovaný taký DTC a dočasne uložený počas prvého z troch následných jazdných cyklov, tento DTC sa nazýva predbežný DTC.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A1101003005">
+<title>
+Uchované údaje rámca
+</title>
+<ptxt>
+ECM si uloží do svojej pamäte stav motora a jazdné podmienky v čase zistenia poruchy. Tieto údaje sú &#34;Uchované údaje rámca&#34;.
+</ptxt>
+<ptxt>
+A tak skontrolovaním uchovaných údajov rámca je možné zistiť stav motora a jazdné podmienky (napr., či bol motor teplý alebo nie, či vozidlo bolo v prevádzke alebo stálo, či bola zmes vzduchu/paliva chudobná alebo bohatá) v čase, keď bola porucha zistená. Funkciou riadiacej jednotky motora je teda uložiť každý údaj rámca pre tri rôzne poruchy v takom poradí, ako boli zistené. Použitie tejto funkcie umožňuje zistiť poradie zistených porúch. To pomáha pri opätovnej kontrole a diagnostike problémov.
+</ptxt>
+<ptxt>
+Detaily o údajoch rámca, ktoré sa dajú vyčítať z ECM nájdete v nižšie uvedenej tabuľke.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.101in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Palivový systém
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vypočítaná záťaž
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Krátkodobá úprava paliva
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Dlhodobá úprava paliva
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Rýchlosť motora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vehicle Speed
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Zapaľovací posun
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Teplota nasávaného vzduchu
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolútne TP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+EVAP Canist Prg Duty
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Čas po naštartovaní motora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Hladina paliva v nádrži
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Atmosférický tlak
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Napätie akumulátora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relatívne TP**
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolútne TP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolútne APP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolútne APP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Poloha uzavretej škrtiacej klapky
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Uchované údaje rámca s hviezdičkou (*) indikujú pomer výstupného napätia k napätiu napájania príslušného snímača.
+</ptxt>
+<ptxt>
+Keď je napájacie napätie 5,0 V a výstupné napätie 4,0 V, uchovaný údaj rámca zobrazuje nasledovné.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+V prípade systémov, kde je výstupné napätie priamo úmerné vstupnému napätiu, zobrazí sa 80 % (= percento maximálneho vstupného referenčného napätia).
+</ptxt>
+</item>
+<item>
+<ptxt>
+V prípade systémov, kde je výstupné napätie priamo úmerné vstupnému napätiu, zobrazí sa 20 % (= percento maximálneho vstupného referenčného napätia).
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pre príslušné TP s hviezdičkou (**) vo vyššie uvedenej tabuľke indikuje hodnotu vypočítanú podľa vzorca (výstupné napätie - výstupné napätie so zatvorenou škrtiacou klapkou/napätie napájania).
+</ptxt>
+<ptxt>
+Keď je napájacie napätie 5,0 V a výstupné napätie v polohe zatvorenej škrtiacej klapky 1,0 V, uchovaný údaj rámca zobrazuje nasledovné.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+V polohe zatvorenej škrtiacej klapky (výstupné napätie = 1,0 V), zobrazí 0 %.
+</ptxt>
+</item>
+<item>
+<ptxt>
+V polohe úpne otvorenej škrtiacej klapky (výstupné napätie = 4,0 V), zobrazí 60 %.
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Pre systémy, kde je výstup priamo úmerný vstupnému napätiu však zobrazí 100 % mínus vyššie uvedený vzorec.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Uchované údaje rámca (napríklad)
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "ASLAP70A1101003006" page = "1">
+<title>
+Priorita uchovaných údajov rámca:
+</title>
+<ptxt>
+Riadiaca jednotka motora má 4 rámce, v ktorých môžu byť uložené údaje rámca.
+</ptxt>
+<ptxt>
+Rámec 1 je špeciálny rámec, kde údaje rámca týkajúce sa poruchy ovplyvňujúcej emisie majú prioritu pred údajmi týkajúcimi sa iných (všeobecných) porúch. Ak je detekovaná akákoľvek porucha ovplyvňujúca emisie, zatiaľ čo rámec 1 obsahuje údaje týkajúce sa všeobecných porúch (priorita údajov „2“ v nasledovnej tabuľke), vtedy sa aktuálne uložené údaje nahradia údajmi, týkajúcimi sa novo detekovanej poruchy (priorita údajov „1“ v nasledovnej tabuľke).
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Priorita
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Momentové údaje rámca v rámci 1
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Údaje týkajúce sa ktorejkoľvek z nasledovných porúch: Zistené vynechanie valcov (P0300 – P0304), Palivový systém je príliš ochudobnený (P0171) a Palivový systém je príliš bohatý (P0172)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Údaje týkajúce sa iných, ako vyššie uvedených porúch.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Rámce 2 a 4 sú pridelené k všeobecným poruchám. Individuálne uložia rámcové údaje pre 3 rôzne všeobecné poruchy v poradí detekovania (napr. rámec 2 uloží údaje prvej vybranej poruchy a rámec 4 údaje pre naposledy detekovanú poruchu). Na rozdiel od údajov rámca 1 sa údaje v týchto 3 rámcoch neaktualizujú, preto sa údaje nehybného rámca pre ktorúkoľvek následne detekovanú poruchu neuložia nikde.
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039V.swf" width = "183.000mm" height = "49.215mm" ver = "02" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: Bez uchovaných údajov rámca
+</ptxt>
+</topic>
+<topic id = "ASLAP70A1101003007" page = "1">
+<title>
+Vymazanie momentových údajov rámca:
+</title>
+<ptxt>
+Keď je DTC vymazaný, údaje nehybného rámca pre poruchu predstavovanú týmto DTC sa vymažú tiež.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "ASLAP70A1101003008" page = "1">
+<title>
+Skúška pripravenosti systému
+</title>
+<ptxt>
+Skúška pripravenosti systému sa vykonáva za účelom potvrdenia, že každý systém prislúchajúci k výfukovým plynom spĺňa podmienky, ktoré umožňujú ECm detekovať poruchu, ak sa vyskytne a na nastavenie príslušného DTC.
+</ptxt>
+<ptxt>
+Skúška sa vykonáva monitorovaním špecifických položiek (komponentov) pomocou skenovacieho nástroja (skenovacieho nástroja SUZUKI alebo iného bežného OBD skenovacieho zariadnenia komunikácie CAN). Keď skúška ukáže, že vopred určené podmienky pre skúšobný systém sú splnené, ECM vykoná vlastnú diagnostiku systému, zmení stav skúšky pripravenosti systému z „Incomplete (Nedokončené)“ na „Complete (Dokončené)“ a zobrazí na skenovacom nástroji stav „Complete“.
+</ptxt>
+<ptxt>
+Stav „Complete (Dokončené)“ sa udrží, až kým sa pomocou skenovacieho nástroja nevykoná činnosť vymazania DTC.
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Stav skúšky pripravenosti systému sa môže zmeniť z „Complete (Dokončené)“ na „Incomplete (Nedokončené)“, ak sú vykonané nasledovné servisné činnosti.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Odpojenie záporného kábla (-) akumulátora
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpojenie konektorov ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpojenie uzemňovacieho kábla ECM
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Položky (komponenty) indikované v nižšie uvedenej tabuľke sú monitorované v skúške pripravenosti systému, pre potvrdenie pripravenosti na detekovanie DTC, ktoré sú uvedené vedľa každej monitorovanej položky.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Stav „Complete (Dokončené)“ alebo „Incomplete (Nedokončené)“ identifikovaný skúškou pripravenosti systému NEZNAMENÁ výsledok „Normal (Normálny)“ alebo „Abnormal (Nenormálny)“ vlastnej diagnostiky.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "ASLAP70A1101003009">
+<title>
+Tabuľka položky monitorovania skúšky pripravenosti systému
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Položka monitorovania
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC prislúchajúce k položke monitorovania
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Katalyzátor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Snímač O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Ohrievač snímača O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

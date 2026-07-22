@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENBP70A1104013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0010 / P2088 / P2089
+</title>
+<servinfosub id = "AENBP70A1104013001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<attention3>
+<ptxt>
+For type distinction of OBD system, refer to “Discrimination for OBD System” under 
+<intxref refid = "AENBP70A1101003">OBD System Description</intxref>
+.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.830in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.374in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph etype = "bold">
+P0010: “A” Camshaft Position Actuator Circuit / Open
+</emph>
+</ptxt>
+<ptxt>
+OCV drive circuit is open.
+</ptxt>
+<ptxt>
+(Type A and C: 3 D/C detection logic)
+</ptxt>
+<ptxt>
+(Type B: 2 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+OCV and/or its circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P2088: “A” Camshaft Position Actuator Control Circuit Low
+</emph>
+</ptxt>
+<ptxt>
+OCV drive circuit is shorted to ground.
+</ptxt>
+<ptxt>
+(Type A and C: 3 D/C detection logic)
+</ptxt>
+<ptxt>
+(Type B: 2 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P2089: “A” Camshaft Position Actuator Control Circuit High
+</emph>
+</ptxt>
+<ptxt>
+OCV drive circuit is shorted to power supply.
+</ptxt>
+<ptxt>
+(Type A and C: 3 D/C detection logic)
+</ptxt>
+<ptxt>
+(Type B: 2 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENBP70A1104013002">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "IBP60B110010.swf" width = "183.000mm" height = "85.138mm" ver = "01" gw = "441" gh = "225"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.584in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.317in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.334in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+OCV drive circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+OCV power supply circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+OCV
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENBP70A1104013003">
+<title>
+DTC Confirmation Procedure
+</title>
+<attention3>
+<ptxt>
+Confirm that the following condition is met in this “DTC Confirmation Procedure”.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Battery voltage &#62; 8.5 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Run engine at idle for 10 sec.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENBP70A1104013004">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENBP70A1104013005">
+<testgroup id = "AENBP70A1104013006">
+<question>
+Was “Engine and Emission Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENBP70A1104001">Engine and Emission Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104013007">
+<title>
+OCV power supply circuit check
+</title>
+<test1>
+<ptxt>
+With ignition OFF, disconnect connector from OCV.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connection to OCV connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that voltage between “A1” and ground is battery voltage.
+</ptxt>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+<ptxt>
+If this DTC is detected again, replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104013008">
+<title>
+OCV drive circuit check
+</title>
+<test1>
+<ptxt>
+With ignition OFF, disconnect “C01” and “E01” connectors from ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connections to “C01” and “E01” connectors.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check the following points.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistance of “A2” circuit: less than 1Ω
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “A2” circuit and ground: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “A1” circuit terminal and “A2” circuit terminal at OCV connector: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Voltage of “A2” circuit: approx. 0 V (When ignition is ON)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104013009">
+<title>
+OCV check
+</title>
+<test1>
+<ptxt>
+Check OCV. 
+<intxreftitleoff1 refid = "AENBP70A1306024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace OCV.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104013010">
+<title>
+Troubleshooting of other DTC(s) detected at the same time
+</title>
+<question>
+Is other DTC(s) detected together?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

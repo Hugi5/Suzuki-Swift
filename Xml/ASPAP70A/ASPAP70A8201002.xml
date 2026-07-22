@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPAP70A8201002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descripción del interruptor de desactivación del airbag del pasajero 
+</title>
+<ptxt>
+El interruptor de desactivación del airbag del pasajero (1) está instalado en la guantera. Se utiliza para suspender el funcionamiento del módulo (inflador) del airbag del pasajero en determinadas circunstancias, como por ejemplo cuando se coloca un sistema de sujeción para niños en el asiento del pasajero delantero. 
+</ptxt>
+<ptxt>
+El SDM determina si debe activarse o desactivarse el funcionamiento del módulo (inflador) del airbag del pasajero en función del ajuste del interruptor de desactivación del airbag (Air bag ON/Air bag OFF). La configuración del interruptor de desactivación se puede modificar en cualquier posición del interruptor de encendido o en cualquier modo de encendido. 
+</ptxt>
+<ptxt>
+Cuando el encendido está conectado (posición &#34;ON&#34;), el SDM detecta la posición del ajuste (Air bag ON/Air bag OFF) del interruptor de desactivación del airbag del pasajero y determina si debe activarse o desactivarse el funcionamiento del módulo (inflador) del airbag del pasajero. Si el interruptor de desactivación se encuentra en la posición Air bag OFF, se enciende el indicador de desactivación (2) del airbag del pasajero situado entre las rejillas de ventilación central del panel de instrumentos para indicar que el módulo (inflador) del airbag del pasajero se encuentra desactivado. 
+</ptxt>
+<ptxt>
+Además, incluso si se cambió el ajuste del interruptor de desactivación del airbag del pasajero con el encendido en &#34;ON&#34;, el SDM no almacena ningún DTC y no enciende la luz de advertencia del airbag. 
+</ptxt>
+<attention1>
+<ptxt>
+Si no se realiza el ajuste del interruptor de desactivación del airbag del pasajero tal como se indica, se podrían ocasionar lesiones muy graves al pasajero. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Si utiliza un sistema de sujeción para niños en el asiento del pasajero delantero, coloque el interruptor de desactivación del airbag del pasajero en la posición &#34;Air bag OFF&#34; (modo de desactivación). 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si extrae el sistema de sujeción para niños del asiento del pasajero delantero, coloque el interruptor de desactivación del airbag del pasajero en la posición &#34;Air bag ON&#34; (modo de activación). 
+</ptxt>
+</item>
+</list1>
+</attention1>
+<figure>
+<graphic graphicname = "I9P60A820006S.swf" width = "183.000mm" height = "65.670mm" ver = "02" gw = "495" gh = "170"/>
+</figure>
+<servinfosub id = "ASPAP70A8201002001">
+<title>
+Modo de activación 
+</title>
+<ptxt>
+Si el encendido está conectado (posición &#34;ON&#34;) y el interruptor de desactivación del airbag del pasajero (1) se encuentra en la posición &#34;Air bag ON&#34; (el punto de contacto se cierra), se activará el indicador de desactivación del airbag del pasajero (2) durante 6,0 segundos (encendido durante 4 segundos y apagado durante 2 segundos) para la comprobación de la luz. A continuación, la señal de &#34;Air bag ON&#34; se transmite al SDM (3), que apaga el indicador de desactivación del airbag del pasajero (2) y el sistema pasa al modo de activación. En el modo de activación, el sistema de airbag se controla de la forma habitual. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70A8201002002">
+<title>
+Modo de desactivación 
+</title>
+<ptxt>
+Si el encendido está conectado (posición &#34;ON&#34;) y el interruptor de desactivación del airbag del pasajero (1) se encuentra en la posición &#34;Air bag OFF&#34; (el punto de contacto se abre), se activará el indicador de desactivación del airbag del pasajero (2) durante 6,0 segundos (encendido durante 4 segundos y apagado durante 2 segundos) para la comprobación de la luz al igual que en el modo de activación. A continuación, la señal de &#34;Air bag OFF&#34; se transmite al SDM (3), que enciende el indicador de desactivación del airbag del pasajero (2) y el sistema pasa al modo de desactivación. En el modo de desactivación, el módulo (inflador) del airbag del pasajero (4) siempre está desactivado. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70A8201002003">
+<title>
+Funcionamiento a prueba de fallos 
+</title>
+<ptxt>
+Si se produce un problema y no es posible evaluar el estado del interruptor de desactivación del airbag del pasajero (1), el SDM (3) activa el parpadeo (a intervalos de 0,5 seg. segundos) del indicador de desactivación (2) del airbag del pasajero tras la comprobación de la luz para advertir de una anomalía. El modo de funcionamiento del módulo (inflador) del airbag del pasajero depende de condición en la que ocurrió el desperfecto. 
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A820007S.swf" width = "183.000mm" height = "93.140mm" ver = "02" gw = "476" gh = "248"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.968in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "3.020in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Módulo (inflador) del airbag 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Posición del interruptor de desactivación del airbag del pasajero 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

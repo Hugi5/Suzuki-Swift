@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A1104059" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2228 / P2229
+</title>
+<servinfosub id = "ASPBP70A1104059001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<attention3>
+<ptxt>
+Para la distinción de tipo del sistema OBD, consulte &#34;Discriminación del sistema OBD&#34; en 
+<intxref refid = "ASPBP70A1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.143in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.027in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2228: Valor bajo en el circuito del sensor de presión barométrica &#34;A&#34; 
+</emph>
+</ptxt>
+<ptxt>
+La tensión de la señal del sensor de presión barométrica es inferior al valor especificado durante el tiempo especificado.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensor de presión barométrica en el ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2229: Valor alto en el circuito del sensor de presión barométrica &#34;A&#34; 
+</emph>
+</ptxt>
+<ptxt>
+La tensión de la señal del sensor de presión barométrica es superior al valor especificado durante el tiempo especificado.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104059002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<s1>
+<ptxt>
+Conecte el encendido (posición ON) durante 1 min.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104059003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A1104059004">
+<testgroup id = "ASPBP70A1104059005">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104059006">
+<title>
+Verificación del circuito de masa y de la alimentación del ECM
+</title>
+<test1>
+<ptxt>
+Compruebe el circuito de alimentación eléctrica y el circuito de masa del ECM. 
+<intxreftitleoff1 refid = "ASPBP70A1104068"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare el circuito de masa y de alimentación eléctrica del ECM.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

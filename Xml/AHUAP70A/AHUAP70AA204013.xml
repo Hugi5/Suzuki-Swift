@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10B">
+<servcat sctnbr = "10" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70AA204013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1133
+</title>
+<servinfosub id = "AHUAP70AA204013001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.385in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.833in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1133: Akkumulátor feszültsége túl magas
+</emph>
+</ptxt>
+<ptxt>
+A tartalék áramforrás áramkörének feszültsége a &#34;DOME&#34; biztosítéktól adott ideig folyamatosan magasabb mint 16,0 V.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Töltőrendszer
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70AA204013002">
+<title>
+DTC megerősítési eljárás
+</title>
+<s1>
+<ptxt>
+Indítsa be a motort, ha ez lehetséges.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHUAP70AA204013003">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70AA204013004">
+<testgroup id = "AHUAP70AA204013006">
+<title>
+Ellenőrizze a paramétereket
+</title>
+<test1>
+<ptxt>
+A gyújtás „OFF” állásában csatlakoztassa a SUZUKI vizsgálókészüléket a DLC-hez.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze a „Battery Voltage” paramétert a SUZUKI vizsgálókészüléken. 
+<intxreftitleoff1 refid = "AHUAP70AA204007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Megfelelő az állapota?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Vége. (Időszakos hiba.)
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA204013005">
+<title>
+Töltőrendszer ellenőrzése	 
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a töltőrendszert. 
+<intxreftitleoff1 refid = "AHUAP70A1A04003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Megfelelő az állapota?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki a BCM-et, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Javítsa meg a töltőrendszert.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

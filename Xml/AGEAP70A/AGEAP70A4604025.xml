@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A4604025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1039/C1071
+</title>
+<servinfosub id = "AGEAP70A4604025001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1039: Interne Störung der Gierraten-/G-Sensor-Baugruppe
+</emph>
+</ptxt>
+<ptxt>
+Interne Störung der Gierraten-/G-Sensors erfasst.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1071: Interne Störung im ESP<sup>&#174;</sup>-Steuermodul 
+</emph>
+</ptxt>
+<ptxt>
+Interne Störung im ESP<sup>&#174;</sup>-Steuermodul erfasst.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604025002">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A4604025003">
+<testgroup id = "AGEAP70A4604025004">
+<question>
+Wurde die &#34;ESP<sup>&#174;</sup>-Systemprüfung&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A4604001">ESP&#174;-Systemprüfung</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604025005">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604005">DTC-Überprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Liegen andere DTC(s) als C1039 und C1071 vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+ESP<sup>&#174;</sup>-Hydraulikeinheit/Steuermodul-Baugruppe austauschen und DTC erneut überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

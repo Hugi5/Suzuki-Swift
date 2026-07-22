@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70A8204052" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+SDM Power Supply and Ground Circuit Check
+</title>
+<servinfosub id = "AENAP70A8204052001">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "I9P60A820108.swf" width = "183.000mm" height = "57.720mm" ver = "02" gw = "300" gh = "147"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.778in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.264in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.229in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+“L04” connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+“A/B” fuse
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Floor harness
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Ignition power supply
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+J/B
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENAP70A8204052002">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70A8204052003">
+<testgroup id = "AENAP70A8204052004">
+<title>
+Battery voltage check
+</title>
+<test1>
+<ptxt>
+Check battery voltage.
+</ptxt>
+</test1>
+<question>
+Is voltage in 9 – 16 V?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Check charging system and repair it. 
+<intxreftitleoff1 refid = "AENAP70A1A04003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A8204052005">
+<title>
+SDM connection check
+</title>
+<test1>
+<ptxt>
+Check for proper connection to SDM connector.
+</ptxt>
+</test1>
+<question>
+Is it connected securely?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Intermittent trouble. Check for intermittent trouble. 
+<intxreftitleoff1 refid = "AENAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+If OK, substitute a known-good SDM and recheck connection. 
+<intxreftitleoff1 refid = "AENAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A8204052006">
+<title>
+Fuse check
+</title>
+<test1>
+<ptxt>
+Confirm that ignition is in “OFF”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check “A/B” fuse.
+</ptxt>
+</test1>
+<question>
+Is “A/B” fuse in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace floor harness and then replace “A/B” fuse.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A8204052007">
+<title>
+Power circuit check
+</title>
+<test1>
+<ptxt>
+Confirm that ignition is in “OFF”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect “L04” connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure voltage between “L04-18” terminal and ground.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L8B095">
+<s-part>
+(A)
+</s-part>
+<s-number num = "09932-76010">
+09932–76010
+</s-number>
+</servicetoolitem>
+</servicetool>
+<testfigure>
+<graphic graphicname = "IAW101820157.swf" width = "90.000mm" height = "34.401mm" ver = "01" gw = "194" gh = "81"/>
+</testfigure>
+</test1>
+<question>
+Is voltage in 10 – 14 V?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace floor harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A8204052008">
+<title>
+Ground circuit check
+</title>
+<test1>
+<ptxt>
+Set ignition “OFF”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “L04-23” terminal and ground.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L8B096">
+<s-part>
+(A)
+</s-part>
+<s-number num = "09932-76010">
+09932–76010
+</s-number>
+</servicetoolitem>
+</servicetool>
+<testfigure>
+<graphic graphicname = "IAW101820158.swf" width = "90.000mm" height = "34.895mm" ver = "01" gw = "193" gh = "82"/>
+</testfigure>
+</test1>
+<question>
+Is resistance 1 &#937; or less?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+SDM power circuit and ground circuit are in good condition.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace floor harness.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

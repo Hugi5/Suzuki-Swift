@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70AA304015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1173
+</title>
+<servinfosub id = "ASPBP70AA304015001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.229in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.966in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1173: Transpondedor sin registrar 
+</emph>
+</ptxt>
+<ptxt>
+El código del transpondedor del transpondedor integrado en el mando a distancia no está registrado.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+El mando a distancia no está registrado
+</ptxt>
+</item>
+<item>
+<ptxt>
+Conector/circuito de comunicación CAN
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de arranque sin llave
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70AA304015002">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<attention3>
+<ptxt>
+Es posible que no se pueda registrar con normalidad el inmovilizador por averías en el mando a distancia.
+</ptxt>
+</attention3>
+</servinfosub>
+<diag type = "test" id = "ASPBP70AA304015003">
+<testgroup id = "ASPBP70AA304015004">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Verificación del DTC en el módulo de control de arranque sin llave. 
+<intxreftitleoff1 refid = "ASPBP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se detecta algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70AA304015005">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Verifique los DTC relacionados con la comunicación CAN.
+</ptxt>
+</test1>
+<question>
+¿Se detecta algún DTC relacionado con la CAN?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías del DTC de CAN.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70AA304015006">
+<title>
+Registro del mando a distancia
+</title>
+<test1>
+<ptxt>
+Realice el &#34;Registro de la llave del inmovilizador&#34;. 
+<intxreftitleoff1 refid = "ASPBP70AA306002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Asegúrese de que el encendido esté desconectado (posición OFF).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Conecte el encendido (posición ON).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPBP70AA304003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC B1173?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el módulo de control de arranque sin llave y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70AA506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección. (El mando a distancia no se ha registrado)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70A4604021" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1028
+</title>
+<servinfosub id = "ASPAP70A4604021001">
+<title>
+Condición de detección del DTC y área afectada 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.510in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.653in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1028: Tensión del circuito del sensor de presión del cilindro maestro
+</emph>
+</ptxt>
+<ptxt>
+La señal del sensor de presión del cilindro maestro del freno está fuera del margen especificado. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sistema de frenos 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70A4604021002">
+<title>
+Localización y reparación de la avería correspondiente al DTC 
+</title>
+<diag type = "test" id = "ASPAP70A4604021003">
+<testgroup id = "ASPAP70A4604021004">
+<question>
+¿Se ha llevado a cabo el procedimiento de &#34;Inspección del sistema ESP<sup>&#174;</sup>&#34;? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70A4604001">Comprobación del sistema del ESP&#174;</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70A4604021005">
+<title>
+Comprobación del sistema de frenos 
+</title>
+<test1>
+<ptxt>
+Compruebe los puntos siguientes. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fuga o de líquido de frenos o aire en el sistema de frenos hidráulicos. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Holgura entre la pastilla y el freno de disco demasiado grande. 
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Son correctos los resultados de la comprobación? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el conjunto de la unidad hidráulica/módulo de control del ESP<sup>&#174;</sup> y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare, sustituya o ajuste el sistema de frenos. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

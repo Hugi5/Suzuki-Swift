@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B8204013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1013
+</title>
+<servinfosub id = "AENAP70B8204013001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.144in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.043in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1013: SDM Internal Failure
+</emph>
+</ptxt>
+<ptxt>
+Malfunctioned SDM internal circuit, G sensor, memory or CPU.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70B8204013002">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70B8204013003">
+<testgroup id = "AENAP70B8204013004">
+<question>
+Was “Air Bag Diagnostic System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B8204001">Air Bag Diagnostic System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B8204013005">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Clear DTC. 
+<intxreftitleoff1 refid = "AENAP70B8204006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Confirm that ignition is in “OFF”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check DTC. 
+<intxreftitleoff1 refid = "AENAP70B8204005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is DTC B1013 still indicated?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace SDM and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70B8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Check intermittent trouble. 
+<intxreftitleoff1 refid = "AENAP70B0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<attention3>
+<ptxt>
+Upon completion of inspection and repair work, perform the following items.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Reconnect all air bag system components and ensure all components are properly mounted.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Clear DTCs, referring to 
+<intxref refid = "AENAP70B8204006">DTC Clearance</intxref>
+ if any DTC is detected.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Repeat 
+<intxref refid = "AENAP70B8204001">Air Bag Diagnostic System Check</intxref>
+ to confirm that the trouble has been solved.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A7224026" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1546
+</title>
+<servinfosub id = "AITAP70A7224026001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.868in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.316in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1546: Malfunzionamento pressione refrigerante A/C
+</emph>
+</ptxt>
+<ptxt>
+La pressione del fluido refrigerante A/C è inferiore al valore specificato sebbene la temperatura esterna sia superiore al valore specificato.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore della pressione del fluido refrigerante A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensore di temperatura aria esterna
+</ptxt>
+</item>
+<item>
+<ptxt>
+Carica di refrigerante insufficiente
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A7224026002">
+<title>
+Procedura di conferma DTC
+</title>
+<s1>
+<ptxt>
+Avviare il motore ed attivare l&#39;impianto A/C.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A7224026003">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A7224026004">
+<testgroup id = "AITAP70A7224026005">
+<title>
+Controllo pressione refrigerante A/C
+</title>
+<test1>
+<ptxt>
+Premere l&#39;interruttore A/C su ON e azionare il compressore A/C.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare il parametro &#34;Pressione refrigerante&#34; nella modalità &#34;Elenco dati&#34; dello strumento di diagnosi SUZUKI. 
+<intxreftitleoff1 refid = "AITAP70A7224008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+La pressione è superiore a 0,34 MPa?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Caricare il fluido refrigerante e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A7226001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224026006">
+<title>
+Controllo sensore della pressione del fluido refrigerante A/C
+</title>
+<test1>
+<ptxt>
+Controllare il sensore della pressione del fluido refrigerante A/C. 
+<intxreftitleoff1 refid = "AITAP70A7226022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Il sensore è integro?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire il sensore della pressione del fluido refrigerante A/C. 
+<intxreftitleoff1 refid = "AITAP70A7226023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224026007">
+<title>
+Controllo sensore di temperatura aria esterna
+</title>
+<test1>
+<ptxt>
+Controllare il sensore di temperatura aria esterna. 
+<intxreftitleoff1 refid = "AITAP70AA206005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Il sensore è integro?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire il sensore di temperatura aria esterna. 
+<intxreftitleoff1 refid = "AITAP70AA206004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224026008">
+<title>
+Controllo impianto A/C
+</title>
+<test1>
+<ptxt>
+Controllare l’impianto A/C. 
+<intxreftitleoff1 refid = "AITAP70A7224001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Il sistema funziona correttamente?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la centralina HVAC e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70A7224002">Diagnosi guasti per pressione anomala:Tipo automatico</intxref>
+ e ricontrollare la presenza di DTC.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Opis kontrola HVAC sustava
+</title>
+<servinfosub id = "AHRAP70A7221002001">
+<title>
+Kontrola temperature
+</title>
+<ptxt>
+Upravljački modul HVAC sustava izračunava položaj kontrolnih vrata za ciljanu temperaturu na osnovi signala prekidača temperature, senzora temperature zraka unutrašnjosti, senzora temperature zraka u okolini i senzora sunčevog svjetla i kontrolira aktuator kontrole temperature tako da aktualni položaj vrata kontrole temperature odgovara ciljanom položaju.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A7221002002">
+<title>
+Kontrola brzine ventilatora
+</title>
+<ptxt>
+Upravljački modul HVAC sustava izračunava ciljanu brzinu ventilatora puhala na osnovi signala prekidača temperature, senzora temperature zraka unutrašnjosti, senzora temperature zraka u okolini, ECT senzora i senzora sunčevog svjetla, uspoređuje izmjerenu brzinu s aktualnom brzinom ventilatora puhala koja se unosi u kontroler motora puhala za namještanje aktualne brzine motora puhala prema ciljanoj razini.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A7221002003">
+<title>
+Kontrola protoka zraka
+</title>
+<ptxt>
+Upravljački modul HVAC sustava izračunava ciljani položaj vrata kontrole temperature na osnovi signala prekidača temperature, senzora temperature zraka unutrašnjosti, senzora temperature zraka u okolini, ECT senzora i senzora sunčevog svjetla. Korištenjem tako dobivenog položaja vrata kontrole temperature, dalje računa ciljani položaj vrata kontrole protoka zraka i kontrolira aktuator kontrole protoka zraka tako da aktualni položaj vrata kontrole protoka zraka postane ciljani položaj.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A7221002004">
+<title>
+Kontrola položaja usisa zraka
+</title>
+<ptxt>
+Upravljački modul HVAC sustava određuje položaj vrata kontrole usisa zraka na osnovi signala prekidača temperature, senzora temperature zraka unutrašnjosti, senzora temperature zraka u okolini i senzora sunčevog svjetla te odabire bilo koji od sljedećih položaja kontrolirajući položaj vrata kontrole usisa zraka.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Položaj za SVJEŽI ZRAK (FRE)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Položaj za RECIRKULACIJU (REC)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Položaj za MIJEŠANJE ZRAKA (MIX)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<c-change/>
+<servinfosub id = "AHRAP70A7221002005">
+<title>
+Kontrola releja kompresora klima uređaja
+</title>
+<ptxt>
+Upravljački modul HVAC sustava ECM-u putem BCM-a šalje signal za uključivanje prekidača klima uređaja kad stanje vozila zadovoljava dolje opisane uvjete.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Klima uređaj je uključen
+</ptxt>
+</item>
+<item>
+<ptxt>
+Temperatura isparivača veća je od specificirane vrijednosti
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nije detektiran kvar senzora temperature isparivača
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Komunikacija s ECM-om i BCM-om odvija se putem CAN-a (mreže sustava kontrolera). (Za više detalja o CAN komunikaciji pogledajte upute u 
+<intxref refid = "AHRAP70AA801001">Opis sustava komunikacije</intxref>
+).
+</ptxt>
+<ptxt>
+ECM uključuje relej kompresora klima uređaja kada stanje vozila zadovoljava dolje opisane uvjete.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Prima se signal za uključivanje prekidača klima uređaja
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tlak rashladnog sredstva klima uređaja je unutar propisanog raspona
+</ptxt>
+</item>
+<item>
+<ptxt>
+Brzina vrtnje motora je unutar propisanog raspona
+</ptxt>
+</item>
+<item>
+<ptxt>
+Temperatura rashladne tekućine motora niža je od specificirane vrijednosti
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otvaranje zaklopke manje je od specificirane vrijednosti
+</ptxt>
+</item>
+<item>
+<ptxt>
+Vozilo nije ni u stanju pokretanja, niti u stanju brzog ubrzavanja
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nije učen kvar ECT senzora
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nije učen kvar senzora tlaka rashladnog sredstva klima uređaja
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHRAP70A7221002006">
+<title>
+Kontrola releja ventilatora hlađenja hladnjaka
+</title>
+<ptxt>
+ECM uključuje relej ventilatora hlađenja hladnjaka istodobno kada uključuje i relej kompresora klima uređaja.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A7221002007">
+<title>
+Konstrukcija HVAC sustava
+</title>
+<ptxt>
+Pogledajte pod naslovom “Konstrukcija HVAC sustava” u poglavlju 
+<intxref refid = "AHRAP70A7211001">Opis HVAC sustava:Ručni tip</intxref>
+.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

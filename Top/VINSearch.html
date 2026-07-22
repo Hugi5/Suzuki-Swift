@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>VIN Search</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+	th.lang {font-size:14px}
+	td.base {font-size:14px}
+	td.mname {font-size:16px}
+	td.cap {font-size:18px}
+</style>
+<script type="text/JavaScript" src="./js/prototype.js"></script>
+<script type="text/JavaScript" src="./js/global_Val_LngMsg.js"></script>
+<script type="text/javascript" src="./js/global_Val.js"></script>
+<script type="text/JavaScript" src="./js/common.js"></script>
+<script type="text/JavaScript" src="./js/Vinsrc.js"></script>
+<script language="JavaScript">
+<!--
+	document.onkeydown = funcKey;
+	var InVIN = '';
+
+function GoSearch(strV) {
+	var ret = SearchVIN(strV);
+	return ret;
+}
+
+function initForm() {
+	InitDisp_Lang('VINS');
+	document.getElementById("srcVin").focus();
+	
+}
+
+function funcKey(e) {
+	if (window.event) {
+		var ev = window.event;
+	}
+	else {
+		var ev = e;
+	}
+	if (ev.target) {
+		var el = ev.target;
+	}
+	else {
+		el = ev.srcElement;
+	}
+	if(ev && el) {
+		var code = ev.keyCode;
+		var id = el.id;
+		var tagnm = el.tagName;
+	}
+	else{
+		return false;
+	}
+
+	if ( (code == 13) && (tagnm == 'INPUT') && (id == 'srcVin') ) {
+		InVIN = document.getElementById("srcVin").value;
+		var Ret = GoSearch(InVIN);
+		var wcnt = 0;
+		if (Ret == true) {
+			for (var i = 0 ; i < 1000000 ; i++) {
+				wcnt++;
+			}
+		}
+		return Ret;
+	
+	}
+}
+
+function SrcVin() {
+	InVIN = document.getElementById("srcVin").value;
+	
+	if ((InVIN.length > 0) && (InVIN != '')) {
+		var Ret = GoSearch(document.getElementById("srcVin").value);
+		if (Ret == true) {
+			return Ret;
+		}
+	}
+}
+
+function formReset() {
+	var resetID = document.getElementById("srcVin");
+	resetID.value = "";
+}
+
+// -->
+</script>
+</head>
+<body onload="initForm();">
+<div align="center">
+	<br>
+	<table border="0" cellpadding="2" cellspacing="0" width="850">
+		<tr><td class="cap"><font color="#00008b"><b><div id="cVS" name="cVS"></div></b></font></td></tr>
+	</table>
+	<br>
+	<hr width="850">
+	<br>
+	<table border="0" cellpadding="2" cellspacing="0" width="720">
+	<tr>
+		<td align="center">
+			<table border="1" cellpadding="2" cellspacing="0" width="640">
+<!--			<form name="VINForm" onSubmit="SrcVin();" method="POST">	-->
+			<tr>
+			<td bgcolor="#add8e6">
+				<table border="0" cellpadding="3" cellspacing="0" width="100%">
+
+					<tr>
+						<td width="30" height="1"></td>
+						<td width="10"></td>
+						<td width="100"></td>
+						<td></td>
+					</tr>
+
+					<tr><td colspan="4" class="mname"><b><div id="lblVSrc"></div></b></td></tr>
+					<tr><td height="20" colspan="4">&nbsp;</td></tr>
+					<tr>
+						<td width="30">&nbsp;</td>
+						<td colspan="2" class="base"><b><div id="lbInVin" name="lbInVin"></div></b></td>
+						<td>
+							<table border="0" cellpadding="3" cellspacing="0" width="100%">
+							<tr>
+								<td width="250">
+									<input type="text" maxlength="17" name="srcVin" size="30" id="srcVin">
+								</td>
+								<td width="90">
+									<table border="1" cellpadding="2" cellspacing="0" width="80" height="25">
+									<tr><td bgcolor="#ffe4b5" align="center" class="base">
+										<div id="bOK"></div>
+									</td></tr>
+									</table>
+								</td>
+								<td>
+									<table border="1" cellpadding="0" cellspacing="0" width="80" height="25">
+<!--										<tr><td bgcolor="#ffe4b5" align="center" class="base"><a href="javascript:document.forms[0].reset();"><font size="2"><b><div id="bRset"></div></b></font></a>	-->
+<!--										<tr><td bgcolor="#ffe4b5" align="center" class="base"><a href="javascript:document.forms[0].reset();"><b><div id="bRset"></div></b></a>	-->
+										<tr><td bgcolor="#ffe4b5" align="center" class="base"><a href="JavaScript:formReset();"><b><div id="bRset"></div></b></a>
+										</td></tr>
+									</table>
+								</td>
+							</tr>
+							</table>
+						</td>
+					</tr>
+					<tr><td height="10" colspan="4"> </td></tr>
+					<tr>
+						<td widtzh="30">&nbsp;</td>
+						<td width="10">&nbsp;</td>
+						<td colspan="2" class="base"><b><div id="lbDig"></div></b></td>
+					</tr>
+					<tr>
+						<td width="30">&nbsp;</td>
+						<td colspan="2" align="right" class="base" rowspan="2" valign="top"><b><div id="lbEx" name="lbEx"></div></b></td>
+						<td align="left" class="base"><b><div id="lbEx17" name="lbEx17"></div></b></td>
+					</tr>
+<!-- Add Start 2008.06.18 -->
+					<tr>
+						<td width="30">&nbsp;</td>
+						<td align="left" class="base"><b><div id="lbEx17_2" name="lbEx17_2"></div></b></td>
+					</tr>
+<!-- Add Start 2008.06.18 -->
+					<tr>
+						<td width="30">&nbsp;</td>
+						<td colspan="2">&nbsp;</td>
+						<td align="left" class="base"><b><div id="lbEx12" name="lbEx12"></div></b></td>
+					</tr>
+				</table>
+				<br>
+				<table border="0" cellpadding="5" cellspacing="0" width="100%">
+				<tr>
+					<td align="left" width="320">
+						<table border="0" cellpadding="2" cellspacing="0" width="100%">
+						<tr>
+							<td width="10">&nbsp;</td>
+							<td>
+								<table border="1" cellpadding="0" cellspacing="0" width="150">
+									<tr><td align="center" bgcolor="#ffe4b5"  height="25" class="base">
+									<div id="bVList" name="bVList"></div>
+									</td></tr>
+								</table>
+							</td>
+						</tr>
+						</table>
+					</td>
+					<td>
+						<table border="0" cellpadding="2" cellspacing="0" width="100%">
+						<tr><td align="center" class="base">
+						&nbsp;
+						</td></tr>
+						</table>
+					</td>
+					<td width="140">&nbsp;</td>
+					<td>	
+						<table border="1" cellpadding="2" cellspacing="0" width="100" height="25">
+						<tr><td bgcolor="#ffe4b5" align="center" class="base">
+						<div id="bBk" name="bBk"></div>
+						</td></tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+<!--		</form>	-->
+		</table>
+	</td></tr>
+	</table>
+	
+	</div>
+</body>
+</html>

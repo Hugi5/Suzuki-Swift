@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Úvod do riadiaceho systému imobilizéra
+</title>
+<ptxt>
+Keď je spínač zapaľovania v polohe “ON”, imobilizér antény vinutia prijíma kód transpondéra zo spínača zapaľovania.
+</ptxt>
+<ptxt>
+Anténa vinutia imobilizéra potom prenesie kódy transpondéra prijaté do BCM prostredníctvom sériových komunikácií.
+</ptxt>
+<ptxt>
+BCM porovná tento kód transpondéra s kódom transpondéra, ktorý už bol zaregistrovaný do BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ak sa oba kódy transpondéra zhodujú, BCM odošle signál na povolenie naštartovania motora do ECM cez komunikáciu CAN.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ak sa oba kódy transpondéra zhodujú, BCM odošle signál na povolenie naštartovania motora do ECM cez komunikáciu CAN.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Keď je prijatý signálu zakázania naštartovania motra ECM spôsobí zastavenie vstreknutia paliva, čo zakáže naštartovanie motora.
+</ptxt>
+<ptxt>
+V rovnaký čas BCM alebo ECM odošle signál do združeného merača, požiadaním rozsvietenia alebo blikania kontrolky imobilizéra. Vodič je potom upozornený na prítomnosť abnormality rozsvietením alebo zablikaním kontrolky imobilizéra.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001V.swf" width = "88.000mm" height = "12.350mm" ver = "04" gw = "496" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

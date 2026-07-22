@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9B">
+<servcat sctnbr = "09" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENBP70A9201003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Headlight Auto Leveling System Description
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+The headlight auto leveling system consists of the headlight auto leveling and washer control module, headlight leveling actuator, rear vehicle height sensor, lighting switch and combination meter.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When the ignition is ON, the headlight auto leveling and washer control module monitors the vehicle position based on the signals from the rear vehicle height sensor installed on the rear suspension. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+The headlight auto leveling and washer control module communicates with other control modules through CAN communication line.
+</ptxt>
+<ptxt>
+For more details of CAN communication, refer to 
+<intxref refid = "AENBP70AA801001">Communication System Description</intxref>
+.
+</ptxt>
+</item>
+</list1>
+<servinfosub id = "AENBP70A9201003001">
+<title>
+Headlight Auto Leveling Control
+</title>
+<topic id = "AENBP70A9201003002">
+<title>
+Auto leveling control when vehicle is stopped
+</title>
+<ptxt>
+When the same vehicle height is maintained for a specified time after the vehicle height is changed and the headlights are on, the headlight auto leveling and washer control module drives the headlight leveling actuators to maintain the proper optical axis based on the vehicle height detected just before the headlights are on.
+</ptxt>
+</topic>
+<topic id = "AENBP70A9201003003">
+<title>
+Auto leveling control when vehicle is in motion
+</title>
+<ptxt>
+When a constant speed drive at 30 km/h (19 mile/h) or higher on other than rough roads is detected for a specified time and the headlights are on, the headlight auto leveling and washer control module drives the headlight leveling actuators to maintain the optical axis properly based on the vehicle height detected just before the headlights are on. When a change in the vehicle height is detected for a specified time, the headlight auto leveling and washer control module judges that the vehicle is running in a rough road and stops the auto leveling control.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AENBP70A9201003004">
+<title>
+Headlight Auto Leveling System Initialization
+</title>
+<ptxt>
+In case the headlight auto leveling and washer control module is replaced or rear vehicle height sensor is removed, reinstalled or replaced, the headlight auto leveling system must be initialized. 
+<intxreftitleoff1 refid = "AENBP70A9206018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENBP70A9201003005">
+<title>
+Self-Diagnosis Function
+</title>
+<ptxt>
+When the headlight auto leveling and washer control module detects an abnormality in the headlight auto leveling system, it causes the auto leveling warning light (1) in the combination meter (2) to turn on.
+</ptxt>
+<figure>
+<graphic graphicname = "IBP60B920001.swf" width = "88.000mm" height = "61.182mm" ver = "01" gw = "205" gh = "157"/>
+</figure>
+</servinfosub>
+<servinfosub id = "AENBP70A9201003006">
+<title>
+Fail-Safe Function
+</title>
+<ptxt>
+When the headlight auto leveling and washer control module detects an abnormality in the headlight auto leveling system, it initiates fail-safe control, stopping operation of headlight leveling actuators.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA104008" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0575
+</title>
+<servinfosub id = "AFRAP70AA104008001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.197in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.010in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+DTC P0575: Circuit d&#39;entrée du régulateur de vitesse 
+</emph>
+</ptxt>
+<ptxt>
+Ce DTC est détecté si n&#39;importe laquelle des conditions suivantes est remplie. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+La tension de signal du circuit de signal de contacteur de régulateur de vitesse est continuellement supérieure à celle spécifiée pour une période déterminée. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Les signaux ON d&#39;un ou de tous les contacteurs suivants du système de régulateur de vitesse sont détectés plus longtemps que le temps spécifié. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Contacteur MAIN (ON/OFF) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Contacteur CANCEL 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Contacteur RES/ACC 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Contacteur SET/COAST 
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Connecteur / circuit du contacteur de régulateur de vitesse 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Contacteur du régulateur de vitesse 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA104008002">
+<title>
+Schéma du circuit 
+</title>
+<figure>
+<graphic graphicname = "IAP70PA10003.swf" width = "183.000mm" height = "75.710mm" ver = "03" gw = "475" gh = "198"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.315in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.291in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.965in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.267in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.968in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Connecteur de l&#39;ECM (vue: [a]) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Contacteur CANCEL 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Connecteur du contacteur de régulateur de vitesse (vue: [a]) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Contacteur du régulateur de vitesse 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Contacteur MAIN (ON/OFF) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuit de signal de contacteur de régulateur de vitesse 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Contacteur RES/ACC 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuit de mise à la masse de contacteur de régulateur de vitesse 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Contacteur SET/COAST 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AFRAP70AA104008003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70AA104008004">
+<testgroup id = "AFRAP70AA104008005">
+<title>
+Vérification des paramètres 
+</title>
+<test1>
+<ptxt>
+Brancher l&#39;outil de balayage SUZUKI sur le DLC, allumage en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier le &#34;contacteur CANCEL de régulateur de vitesse&#34;, le &#34;contacteur RES/ACC de régulateur de vitesse&#34;, le &#34;contacteur SET/COAST de régulateur de vitesse&#34; et le &#34;contacteur ON/OFF de régulateur de vitesse&#34; affichés sur l&#39;outil de balayage SUZUKI. 
+<intxreftitleoff1 refid = "AFRAP70AA104006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Sont-ils en bon état? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fin. (problème intermittent) 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA104008006">
+<title>
+Vérification du circuit du‎ contacteur de régulateur de vitesse 
+</title>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Débrancher les connecteurs &#34;C01&#34;, &#34;E01&#34; et &#34;G371&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier si le branchement de borne aux connecteurs &#34;C01&#34;, &#34;E01&#34; et &#34;G371&#34; est correct. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si les branchements sont corrects, vérifier les points suivants. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Résistance des circuits &#34;A1&#34; et &#34;A2&#34;: en dessous de 3 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Résistance entre le circuit &#34;A1&#34; et la masse: infinie 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Résistance entre la borne du circuit &#34;A1&#34; et les autres bornes du connecteur &#34;G371&#34;: infinie 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Résistance entre la borne du circuit &#34;A2&#34; et les autres bornes du connecteur &#34;G371&#34;: infinie 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tension des circuits &#34;A1&#34; et &#34;A2&#34;: 0 – 1 V (lorsque l&#39;allumage est sur &#34;ON&#34;) 
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Sont-ils en bon état? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer le faisceau de câbles défectueux. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA104008007">
+<title>
+Vérification du contacteur de régulateur de vitesse 
+</title>
+<test1>
+<ptxt>
+Vérifier le contacteur de régulateur de vitesse. 
+<intxreftitleoff1 refid = "AFRAP70AA106002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Son état est-il correct? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer l&#39;ECM et vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer le contacteur de régulateur de vitesse. 
+<intxreftitleoff1 refid = "AFRAP70AA106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

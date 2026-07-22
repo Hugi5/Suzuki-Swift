@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENAP70BA321003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description of Engine Starting Procedure
+</title>
+<ptxt>
+In the case that remote controller battery is flat, there is system trouble, and/or the keyless push start system is disabled engine starting procedure is as follows.
+</ptxt>
+<s1>
+<ptxt>
+When depressing clutch pedal, the keyless start control module outputs a PUSH indicator light signal through CAN communication.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Push engine switch.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Keyless start control module outputs an immobilizer indicator light signal and a PUSH indicator light signal through CAN communication.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Place remote controller on the engine switch for about 2 seconds while combination meter blinks PUSH indicator light.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Keyless start control module reads transponder code of remote controller through immobilizer coil antenna equipped in engine switch.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+The starting motor control relay turns ON and the starting motor starts, a steering lock release request is output to the steering lock unit through serial communication, and a message is sent to the ECM to permit engine starting only when transponder code corresponds with the registered code.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+When transponder code does not correspond with the registered code, keyless start control module does not turn on the starting motor control relay to inhibit the starting motor operation.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA32001.swf" width = "183.000mm" height = "134.726mm" ver = "03" gw = "491" gh = "365"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

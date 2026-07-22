@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A1104028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0137 / P0138 / P0140
+</title>
+<servinfosub id = "ADUAP70A1104028001">
+<title>
+DTC-waarnemingsvoorwaarde en plaats van de storing
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.439in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.765in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+DTC-waarnemingsvoorwaarde
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Plaats van de storing
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0137: Lage spanning in het O2-sensorcircuit
+</emph>
+</ptxt>
+<ptxt>
+Als de HO2S-signaalspanning lager is dan 0,06 V mag de HO2S-signaalcircuitspanning niet wijzigen gedurende 5 sec. bij het toepassen van de spanning op het HO2S-signaalcircuit.
+</ptxt>
+<ptxt>
+(Opsporingslogica van 3 rijcycli)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+HO2S en/of bijbehorend circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S-verwarming en/of bijbehorend circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Uitlaatsysteem
+</ptxt>
+</item>
+<item>
+<ptxt>
+Luchtinlaatsysteem
+</ptxt>
+</item>
+<item>
+<ptxt>
+Brandstofsysteem
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0138: Hoge spanning in het O2-sensorcircuit
+</emph>
+</ptxt>
+<ptxt>
+Uitgangsspanning van het HO2S-signaalcircuit is hoger dan 1,1 V gedurende 5 sec.
+</ptxt>
+<ptxt>
+(Opsporingslogica van 3 rijcycli)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0140: Geen activiteit waargenomen in het circuit van de O2-sensor 
+</emph>
+</ptxt>
+<ptxt>
+Aan een van de volgende voorwaarden is voldaan.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+HO2S-signaalcircuit is onderbroken.
+</ptxt>
+</item>
+<item>
+<ptxt>
+De interne weerstand van HO2S is hoger dan de voorgeschreven waarde, zelfs als de geschatte temperatuur van het uitlaatgas hoger is dan de voorgeschreven waarde.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(Opsporingslogica van 3 rijcycli)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ADUAP70A1104028002">
+<title>
+Schakelschema
+</title>
+<figure>
+<graphic graphicname = "I9P60A111012D.swf" width = "183.000mm" height = "121.825mm" ver = "02" gw = "440" gh = "329"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.884in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.741in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.699in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM-stekkerverbinding (Aanzicht: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A6: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Stuurkring A/F-sensorverwarming
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Regelweerstand van de A/F-sensor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Voedingscircuit A/F-sensorverwarming
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Voedingscircuit HO2S-verwarming
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Stekker van de A/F-sensor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F-sensorsignaalcircuit (IA)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-signaalcircuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Afschermingsdraad
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F-sensorsignaalcircuit (IP)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S-massacircuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Signaalcircuit van de A/F-sensor (VM)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Stuurkring HO2S-verwarming
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Verwerkingseenheid A/F-signaal
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A5: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F-sensorsignaalcircuit (UN)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F-sensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ADUAP70A1104028003">
+<title>
+DTC-controleprocedure
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Voer een proefrit uit op een plaats zonder verkeer om ongevallen te voorkomen.
+</ptxt>
+</item>
+<item>
+<ptxt>
+De proefrit moet door 2 personen worden uitgevoerd, een bestuurder en iemand die de test uitvoert, op een vlakke weg.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+Controleer of aan de volgende voorwaarde in deze &#34;DTC-controleprocedure&#34; is voldaan.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Accuspanning &#62; 10,7 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Laat de motor op de normale bedrijfstemperatuur komen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Rijd constant 50 tot 80 km/h (31 tot 50 mile/h) gedurende 20 min. of langer.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Stop het voertuig en laat de motor gedurende 5 min. stationair draaien
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ADUAP70A1104028004">
+<title>
+DTC-storingzoeken
+</title>
+<diag type = "test" id = "ADUAP70A1104028005">
+<testgroup id = "ADUAP70A1104028006">
+<question>
+Is de &#34;Controle van het motor- en emissieregelsysteem&#34; uitgevoerd?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1104001">Controle van het motor- en emissieregelsysteem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104028007">
+<title>
+DTC-controle
+</title>
+<question>
+Zijn er behalve P0137, P0138 en P0140 nog andere DTC&#39;s?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar storingzoeken voor de betrokken DTC(&#39;s).
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar stap 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104028008">
+<title>
+Controle signaal- en massacircuit van de HO2S
+</title>
+<test1>
+<ptxt>
+Maak stekkerverbindingen &#34;C01&#34; en &#34;E01&#34; van de ECM en HO2S-stekker los als het contactslot in de &#34;OFF&#34;-stand staat.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controleer of de klemaansluitingen goed op de stekkerverbindingen &#34;C01&#34; en &#34;E01&#34; en de HO2S-stekker zijn aangesloten.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Als de aansluitingen in orde zijn, controleer dan de volgende punten.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Weerstand van circuit &#34;B2&#34; en &#34;B3&#34;: minder dan 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Weerstand tussen elk van de circuits &#34;B2&#34; en &#34;B3&#34; en de massa: oneindig
+</ptxt>
+</item>
+<item>
+<ptxt>
+Weerstand tussen circuitaansluitklem &#34;B2&#34; en elke andere aansluitklem aan de HO2S-stekker: oneindig
+</ptxt>
+</item>
+<item>
+<ptxt>
+Weerstand tussen circuitaansluitklem &#34;B3&#34; en elke andere aansluitklem aan de HO2S-stekker: oneindig
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spanning van circuit &#34;B2&#34; en &#34;B3&#34;: 0 tot 1 V (als de ontsteking is ingeschakeld)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repareer of vervang de defecte bedradingsbundel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104028009">
+<title>
+Controle uitlaatsysteem en luchtinlaatsysteem
+</title>
+<test1>
+<ptxt>
+Controleer het uitlaatsysteem en het luchtinlaatsysteem op verstopping en lekkage.
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repareer of vervang het defecte onderdeel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104028010">
+<title>
+Controle van het HO2S-verwarmingscircuit
+</title>
+<test1>
+<ptxt>
+Controleer het HO2S-verwarmingscircuit volgens stap 2 en 3 onder 
+<intxref refid = "ADUAP70A1104016">DTC P0036 / P0037 / P0038</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repareer of vervang het defecte onderdeel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104028011">
+<title>
+Controle brandstofverstuivers en bijbehorend circuit
+</title>
+<test1>
+<ptxt>
+Controleer het brandstofverstuivercircuit. 
+<intxreftitleoff1 refid = "ADUAP70A1704003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controleer de brandstofverstuivers. 
+<intxreftitleoff1 refid = "ADUAP70A1706009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Verstuiver(s) of bijbehorend circuit defect.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104028012">
+<title>
+DTC opnieuw controleren
+</title>
+<test1>
+<ptxt>
+Vervang de HO2S. 
+<intxreftitleoff1 refid = "ADUAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Voer de DTC-controleprocedure uit en controleer de DTC&#39;s.
+</ptxt>
+</test1>
+<question>
+Wordt DTC P0137, P0138 of P0140 nog waargenomen?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vervang de ECM en controleer de DTC opnieuw. 
+<intxreftitleoff1 refid = "ADUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Einde.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

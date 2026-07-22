@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104045" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0606
+</title>
+<servinfosub id = "AGEAP70A1104045001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.226in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.971in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0606: Steuermodul-Prozessor
+</emph>
+</ptxt>
+<ptxt>
+Störung des internen ECM-Prozessors
+</ptxt>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Stromversorgungskreis und/oder Masseschaltkreis des ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/F-Sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104045002">
+<title>
+Systembeschreibung
+</title>
+<ptxt>
+Das interne Steuermodul befindet sich im ECM.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104045003">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Zunächst muss die Fehlersuche für die DTCs durchgeführt werden, die unerwartet bei der &#34;Überprüfung von Diagnosecodes&#34; erfasst wurden.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sicherstellen, dass die folgenden Bedingungen bei dieser &#34;Überprüfung von Diagnosecodes&#34; erfüllt sind.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Batteriespannung &#62; 10,7 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0030, P0031, P0032, P0131 bzw. P0132 wird nicht erfasst.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Den Motor 1 Min. lang im Leerlauf laufen lassen
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104045004">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A1104045005">
+<testgroup id = "AGEAP70A1104045006">
+<title>
+DTCs erneut abrufen
+</title>
+<test1>
+<ptxt>
+DTC löschen. 
+<intxreftitleoff1 refid = "AGEAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die Zündung auf &#34;OFF&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Überprüfung von Diagnosecodes durchführen und DTCs überprüfen.
+</ptxt>
+</test1>
+<question>
+Wird DTC P0606 weiterhin erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Auf zeitweilige Störung überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104045007">
+<title>
+Überprüfung von ECM-Stromversorgungs- und ECM-Massekreis
+</title>
+<test1>
+<ptxt>
+Stromversorgungs- und Masseschaltkreis des ECM überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104045008">
+<title>
+DTCs erneut abrufen
+</title>
+<test1>
+<ptxt>
+Den A/F-Sensor austauschen. 
+<intxreftitleoff1 refid = "AGEAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Überprüfung von Diagnosecodes durchführen und DTCs überprüfen.
+</ptxt>
+</test1>
+<question>
+Wird DTC P0606 weiterhin erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

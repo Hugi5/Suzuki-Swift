@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A5504018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "ASPBP70A5504018001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<attention3>
+<ptxt>
+Después de ejecutar la reprogramación del TCM, si se indica el DTC P0602, es posible que la reprogramación del TCM no se haya completado correctamente.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.092in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.121in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph etype = "bold">
+P0602: Error de programación del módulo de control 
+</emph>
+</ptxt>
+<ptxt>
+Fallo interno del TCM (error de programación de datos)
+</ptxt>
+<ptxt>
+(Lógica de detección de 1 ciclo de conducción, pero la luz de advertencia de la transmisión no se enciende)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fallo de la reprogramación del TCM
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504018002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<s1>
+<ptxt>
+Conecte el encendido (posición ON).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504018003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A5504018004">
+<testgroup id = "ASPBP70A5504018005">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de la CVT&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A5504001">Inspección del sistema de la CVT</intxref>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504018006">
+<title>
+Verificación de DTC
+</title>
+<question>
+¿Aparece otro DTC además del P0602?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504018007">
+<title>
+Comprobación del procedimiento de la operación de reprogramación y preparación de equipo
+</title>
+<question>
+¿Hay algún problema con el procedimiento de la operación de reprogramación, la herramienta de escaneado SUZUKI o el DLC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Compruebe los procedimientos de operación e inspeccione la herramienta de escaneado SUZUKI y el DLC.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504018008">
+<title>
+Reprogramación del TCM
+</title>
+<question>
+¿Se ejecutó la reprogramación del TCM?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Problema intermitente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el TCM y lleve a cabo la reprogramación nuevamente. 
+<intxreftitleoff1 refid = "ASPBP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

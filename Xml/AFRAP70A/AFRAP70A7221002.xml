@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Description de la commande HVAC 
+</title>
+<servinfosub id = "AFRAP70A7221002001">
+<title>
+Commande de température 
+</title>
+<ptxt>
+Le module de commande HVAC calcule la position cible du volet de commande de température sur la base des signaux émis par le sélecteur de température, le capteur de température d&#39;habitacle, le capteur de température d&#39;air extérieur et le capteur d&#39;ensoleillement puis commande l&#39;actionneur de commande de température de façon à ce que la position actuelle du volet de commande de température corresponde à la position cible. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A7221002002">
+<title>
+Commande de vitesse du ventilateur 
+</title>
+<ptxt>
+Le module de commande HVAC calcule la vitesse cible de ventilateur de soufflante sur la base des signaux transmis par le sélecteur de température, le capteur de température d&#39;air intérieur, le capteur de température d&#39;air extérieur, le capteur ECT et le capteur d&#39;ensoleillement; par conséquent, il compare la vitesse calculée avec la vitesse actuelle de ventilateur de soufflante, transmise par le dispositif de commande de moteur de soufflante, afin de régler la vitesse actuelle de ventilateur de soufflante sur la vitesse cible. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A7221002003">
+<title>
+Commande de sortie d&#39;air 
+</title>
+<ptxt>
+Le module de commande HVAC calcule la position cible de trappe de commande de température sur la base des signaux émis par le sélecteur de température, le capteur de température d&#39;air intérieur, le capteur de température d&#39;air extérieur, le capteur ECT et le capteur de puissance de rayonnement solaire. Sur la base de la position cible de volet de commande de température ainsi obtenue, il calcule alors la position cible du volet de commande de débit d&#39;air et commande l&#39;actionneur de commande de débit d&#39;air de façon à ce que la position actuelle du volet de commande de débit d&#39;air corresponde à la position cible. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A7221002004">
+<title>
+Commande de position d&#39;admission d&#39;air 
+</title>
+<ptxt>
+Le module de commande HVAC détermine la position du volet de commande d&#39;admission d&#39;air sur la base des signaux émis par le sélecteur de température, le capteur de température d&#39;habitacle, le capteur de température d&#39;air extérieur et le capteur d&#39;ensoleillement puis il sélectionne l&#39;une des positions suivantes en commandant la position du volet de commande d&#39;admission d&#39;air. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Position FRESH (FRE) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Position RECIRCULATION (REC) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Position MIX (MIX) 
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<c-change/>
+<servinfosub id = "AFRAP70A7221002005">
+<title>
+Commande de relais de compresseur A/C 
+</title>
+<ptxt>
+Le module de commande HVAC envoie un signal ON de contacteur A/C à l&#39;ECM via le BCM lorsque l&#39;état du véhicule répond aux conditions décrites ci-dessous. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le contacteur A/C est en position ON 
+</ptxt>
+</item>
+<item>
+<ptxt>
+La température de l&#39;évaporateur est supérieure à la valeur spécifiée 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Aucun dysfonctionnement au niveau du capteur de température d&#39;évaporateur n&#39;est détecté 
+</ptxt>
+</item>
+</list1>
+<ptxt>
+La communication de l&#39;ECM et du BCM est assurée par le CAN (réseau de commande local). (pour plus de détails concernant la communication CAN, se reporter au point 
+<intxref refid = "AFRAP70AA801001">Description du système de communication</intxref>
+). 
+</ptxt>
+<ptxt>
+L&#39;ECM active le relais de compresseur A/C lorsque l&#39;état du véhicule répond aux conditions décrites ci-dessous. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Le signal ON de contacteur A/C est émis 
+</ptxt>
+</item>
+<item>
+<ptxt>
+La pression de réfrigérant A/C se situe dans la plage spécifiée 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le régime moteur se situe dans la plage spécifiée 
+</ptxt>
+</item>
+<item>
+<ptxt>
+La température du liquide de refroidissement du moteur est inférieure à la valeur spécifiée 
+</ptxt>
+</item>
+<item>
+<ptxt>
+L&#39;ouverture du papillon est inférieure à la valeur spécifiée 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le véhicule n&#39;est ni en état de démarrage, ni en état d&#39;accélération rapide 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Aucun dysfonctionnement au niveau du capteur ECT n&#39;est détecté 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Aucun dysfonctionnement au niveau du capteur de pression de réfrigérant A/C n&#39;est détecté 
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AFRAP70A7221002006">
+<title>
+Commande de relais de ventilateur de refroidissement de radiateur 
+</title>
+<ptxt>
+L&#39;ECM active en même temps le relais de ventilateur de refroidissement de radiateur et le relais de compresseur A/C. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A7221002007">
+<title>
+Composition du système HVAC 
+</title>
+<ptxt>
+Se reporter à &#34;Composition du système HVAC&#34; au point 
+<intxref refid = "AFRAP70A7211001">Description du système HVAC:Type manuel</intxref>
+. 
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

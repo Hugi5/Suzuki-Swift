@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70A1101007" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Beschreibung der Kalibrierung des elektrischen Drosselklappensystems
+</title>
+<ptxt>
+Das ECM errechnet den geregelten Öffnungswinkel der Drosselklappe auf Grundlage der vollständig geschlossenen Drosselklappenposition der elektrischen Drosselklappensteuerung. Die Daten der vollständig geschlossenen Position werden im Speicher des ECM abgelegt. Die Schließposition der Drosselklappe der elektrischen Drosselklappensteuerung (Signalspannung des Drosselklappenstellungssensors bei vollständig geschlossener Drosselklappe) unterscheidet sich stets zwischen den Systemen, da sie durch individuelle Bauteiltoleranzen der Drosselklappe und des Drosselklappen-Positionssensors beeinflusst wird. Da diese individuellen Differenzen für die Steuerung der Drosselklappe berücksichtigt werden müssen, ist es notwendig, die Daten der vollständig geschlossenen Drosselklappenposition im ECM zu registrieren. Wenn diese Daten im ECM registriert sind, werden sie im RAM (Speicher) des ECM gespeichert und als Basisdaten für die Steuerung der Drosselklappe verwendet. Diese Daten gehen verloren, wenn die in 
+<intxref refid = "AGEAP70A1000001">Vorsichtsmaßnahmen für den Motor</intxref>
+ unter &#34;Vorsichtsmaßnahmen bei der Kalibrierung des elektrischen Drosselklappensystems&#34; aufgeführten Arbeiten ausgeführt werden.
+</ptxt>
+<ptxt>
+Nachdem das Drosselklappengehäuse und/oder die APP-Sensor-Baugruppe ausgetauscht wurden, müssen die Daten der vollständig geschlossenen Position im Speicher des ECM einmal gelöscht und neue Daten registriert werden. Andernfalls kann das ECM die vollständig geschlossene Position nicht ordnungsgemäß beurteilen.
+</ptxt>
+<ptxt>
+Für das Verfahren zur Registrierung dieser Daten siehe 
+<intxref refid = "AGEAP70A1306005">Kalibrierung des elektrischen Drosselklappensteuersystems</intxref>
+. (Nach Verlust der Daten der vollständigen Schließposition öffnet und schließt das ECM die Drosselklappe beim nächsten Einschalten der Zündung für ca. 60 Sek., um die vollständige Schließposition der Drosselklappe zu registrieren. Wenn der Motor während dieser Registrierung gestartet wird, können Symptome wie z. B. &#34;längere Anlasszeit&#34; oder &#34;langsamer Anstieg der Motordrehzahl direkt nach dem Starten&#34; auftreten. Durch Ausschalten der Zündung und Neustart des Motor kann die Position korrekt im ECM registriert werden.)
+</ptxt>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

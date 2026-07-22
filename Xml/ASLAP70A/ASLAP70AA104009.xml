@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA104009" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0649
+</title>
+<servinfosub id = "ASLAP70AA104009001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.981in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.227in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+DTC P0649: Riadiaci obvod kontrolky rýchlosti
+</emph>
+</ptxt>
+<ptxt>
+Kontrolka CRUISE / SET a jej signál zo združeného merača sa nezmení, aj keď ECM vysiela požiadavku na zapnutie alebo vypnutie kontrolky CRUISE / SET do združeného merača cez komunikáciu CAN.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Komunikačný obvod CAN
+</ptxt>
+</item>
+<item>
+<ptxt>
+Združený merač
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70AA104009002">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70AA104009003">
+<testgroup id = "ASLAP70AA104009004">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte riadiace jednotky komunikujúce prostredníctvom CAN, či nemajú DTC.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké CAN-DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte združený merač a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ Ak je detekovaná DTC P0649 opätovne, vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

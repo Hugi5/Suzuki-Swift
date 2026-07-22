@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENCP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "1">
+<title>
+HVAC Control Description
+</title>
+<servinfosub id = "AENCP70A7221002001">
+<title>
+Temperature Control
+</title>
+<ptxt>
+HVAC control module calculates the target temperature control door position based on signals from the temperature selector, inside air temperature sensor, outside air temperature sensor and sunload sensor and controls the temperature control actuator so that the current position of the temperature control door matches its target position.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENCP70A7221002002">
+<title>
+Fan Speed Control
+</title>
+<ptxt>
+HVAC control module calculates the target blower fan speed based on signals from the temperature selector, inside air temperature sensor, outside air temperature sensor, ECT sensor and sunload sensor, compares the speed thus calculated with the current blower fan speed inputted from the blower motor controller to adjust the current blower fan speed to the target level.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENCP70A7221002003">
+<title>
+Air Flow Outlet Control
+</title>
+<ptxt>
+HVAC control module calculates the target temperature control door position based on signals from the temperature selector, inside air temperature sensor, outside air temperature sensor, ECT sensor and sunload sensor. Using thus obtained target temperature control door position, it further calculates the target air flow control door position and controls the air flow control actuator so that the current air flow control door position becomes the target position.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENCP70A7221002004">
+<title>
+Air Intake Position Control
+</title>
+<ptxt>
+HVAC control module determines the position of the air intake control door based on signals from the temperature selector, inside air temperature sensor, outside air temperature sensor and sunload sensor and selects any of the following positions by controlling the position of the air intake control door.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+FRESH position (FRE)
+</ptxt>
+</item>
+<item>
+<ptxt>
+RECIRCULATION position (REC)
+</ptxt>
+</item>
+<item>
+<ptxt>
+MIX position (MIX)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AENCP70A7221002005">
+<title>
+A/C Compressor Relay Control
+</title>
+<ptxt>
+HVAC control module outputs A/C switch ON signal to ECM via BCM when the vehicle state satisfies the conditions described below.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/C switch is ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Evaporator temperature is higher than specified value
+</ptxt>
+</item>
+<item>
+<ptxt>
+Evaporator temperature sensor malfunction is not detected
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Communication of ECM and BCM is established by CAN (Controller Area Network). (For more detail of CAN communication, refer to 
+<intxref refid = "AENCP70AA801001">Communication System Description</intxref>
+).
+</ptxt>
+<ptxt>
+ECM turns ON the A/C compressor relay when the vehicle state satisfies the conditions described below.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/C switch ON signal is inputted
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/C refrigerant pressure is within specified range
+</ptxt>
+</item>
+<item>
+<ptxt>
+Engine speed is within specified range
+</ptxt>
+</item>
+<item>
+<ptxt>
+Engine coolant temperature is lower than specified value
+</ptxt>
+</item>
+<item>
+<ptxt>
+Throttle opening is lower than specified value
+</ptxt>
+</item>
+<item>
+<ptxt>
+Vehicle is not in either starting or quick acceleration state
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECT sensor malfunction is not detected
+</ptxt>
+</item>
+<item>
+<ptxt>
+A/C refrigerant pressure sensor malfunction is not detected
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AENCP70A7221002006">
+<title>
+Radiator Cooling Fan Relay Control
+</title>
+<ptxt>
+ECM turns on the radiator cooling fan relay at the same time when ECM turns ON the A/C compressor relay.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENCP70A7221002007">
+<title>
+HVAC System Construction
+</title>
+<ptxt>
+Refer to “HVAC System Construction” in 
+<intxref refid = "AENCP70A7211001">HVAC System Description:Manual Type</intxref>
+.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

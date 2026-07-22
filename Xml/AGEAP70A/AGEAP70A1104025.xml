@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0131 / P0132 / P2237 / P2243 / P2251/ P2626
+</title>
+<servinfosub id = "AGEAP70A1104025001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.872in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.303in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0131: Niedrige Spannung im Lambdasonden-Schaltkreis 
+</emph>
+</ptxt>
+<ptxt>
+Eine der folgenden Bedingungen ist erfüllt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis VM des A/F-Sensors liegt bei laufendem Motor für 10 Sek. unter dem Sollwert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis UN des A/F-Sensors liegt bei laufendem Motor für 10 Sek. unter dem Sollwert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis IA des A/F-Sensors liegt bei laufendem Motor für 10 Sek. unter dem Sollwert.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/F-Sensor und/oder zugehöriger Schaltkreis
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0132: Hohe Spannung im Lambdasonden-Schaltkreis 
+</emph>
+</ptxt>
+<ptxt>
+Eine der folgenden Bedingungen ist erfüllt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis VM des A/F-Sensors überschreitet bei laufendem Motor für 10 Sek. den Sollwert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis UN des A/F-Sensors überschreitet bei laufendem Motor für 10 Sek. den Sollwert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis IA des A/F-Sensors überschreitet bei laufendem Motor für 10 Sek. den Sollwert.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2237: Steuerkreis der Lambdasonde (Plusstrom)/Unterbrechung
+</emph>
+</ptxt>
+<ptxt>
+Eine der folgenden Bedingungen ist erfüllt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/F-Sensorsignal verharrt über bestimmte Zeit auf Festwert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im A/F-Sensorsignalkreis (IP) liegt bei Kraftstoffabschaltung für 5 Sek. unter 1,7 V.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im A/F-Sensorsignalkreis (IP) verharrt beim Anreichern bzw. Abmagern für 10 Sek. auf einem Festwert.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2243: Referenzspannungs-Schaltkreis der Lambdasonde/Unterbrechung 
+</emph>
+</ptxt>
+<ptxt>
+Eine der folgenden Bedingungen ist erfüllt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis UN des A/F-Sensors ist bei laufendem Motor für 5 Sek. über 4,7 V.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis UN des A/F-Sensors ist bei laufendem Motor für 5 Sek. unter 0,3 V.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2251: Minusstrom-Steuerkreis der Lambdasonde/Unterbrechung
+</emph>
+</ptxt>
+<ptxt>
+Die Ausgangsspannung des A/F-Sensorsignalkreises (VM) beträgt 1,47 bis 1,53 V für 5 Sek..
+</ptxt>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2626: Pumpstromkreis der Lambdasonde für Gemischsteuerung/Unterbrechung
+</emph>
+</ptxt>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis IA des A/F-Sensors ist bei laufendem Motor für 5 Sek. über 4,8 V.
+</ptxt>
+<ptxt>
+(3-Fahrten-Testlogik)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104025002">
+<title>
+Schaltplan
+</title>
+<figure>
+<graphic graphicname = "I9P60A111012G.swf" width = "183.000mm" height = "121.825mm" ver = "02" gw = "440" gh = "329"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.127in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.324in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.616in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM-Steckverbinder (Ansicht: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A6: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Treiberschaltkreis der A/F-Sensorheizung
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Regelwiderstand des A/F-Sensors
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Stromversorgungskreis der A/F-Sensorheizung
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Stromversorgungskreis der Lambdasondenheizung
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F-Sensorstecker
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Signalkreis des A/F-Sensors (IA)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Signalkreis der beheizten Lambdasonde
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Abgeschirmtes Kabel
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Signalkreis des A/F-Sensors (IP)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Masseschaltkreis der beheizten Lambdasonde
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Signalkreis des A/F-Sensors (VM)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Treiberschaltkreis der Lambdasondenheizung
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F-Signalprozessor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A5: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Signalkreis des A/F-Sensors (UN)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F-Sensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104025003">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<topic id = "AGEAP70A1104025004">
+<title>
+P0131 / P0132
+</title>
+<attention3>
+<ptxt>
+Sicherstellen, dass die folgende Bedingung bei dieser &#34;Überprüfung von Diagnosecodes&#34; erfüllt ist.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Batteriespannung &#62; 10,7 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Den Motor 30 Sek. lang im Leerlauf laufen lassen
+</ptxt>
+</s1>
+</topic>
+<topic id = "AGEAP70A1104025005">
+<title>
+P2237 / P2626
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Eine Probefahrt an einem sicheren, verkehrsfreien Ort durchführen, an dem die Möglichkeit von Verkehrsunfällen praktisch ausgeschlossen ist.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die Probefahrt sollte von zwei Personen - Fahrer und Prüfer - auf einer ebenen Straße ausgeführt werden.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Zunächst muss die Fehlersuche für die DTCs durchgeführt werden, die unerwartet bei der &#34;Überprüfung von Diagnosecodes&#34; erfasst wurden.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sicherstellen, dass die folgenden Bedingungen bei dieser &#34;Überprüfung von Diagnosecodes&#34; erfüllt sind.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Batteriespannung &#62; 10,7 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0030, P0031, P0032, P0443, P0458 bzw. P0459 wird nicht erfasst.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Den Motor anlassen und auf normale Betriebstemperatur bringen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Den Motor 3 Min. lang im Leerlauf laufen lassen
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Das Fahrzeug bei konstant 50 bis 80 km/h (31 bis 50 mile/h) mindestens 10 Min. lang fahren.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Das Gaspedal freigeben und das Fahrzeug 5 Sek. lang im Schiebebetrieb mit Motorbremswirkung (Kraftstoffabschaltung aktiviert) rollen lassen.
+</ptxt>
+</s1>
+</topic>
+<topic id = "AGEAP70A1104025006">
+<title>
+P2243 / P2251
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Zunächst muss die Fehlersuche für die DTCs durchgeführt werden, die unerwartet bei der &#34;Überprüfung von Diagnosecodes&#34; erfasst wurden.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sicherstellen, dass die folgenden Bedingungen bei dieser &#34;Überprüfung von Diagnosecodes&#34; erfüllt sind.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Batteriespannung &#62; 10,7 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0030, P0031 bzw. P0032 wird nicht erfasst.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Den Motor anlassen und auf normale Betriebstemperatur bringen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Den Motor 3 Min. lang im Leerlauf laufen lassen
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104025007">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A1104025008">
+<testgroup id = "AGEAP70A1104025009">
+<question>
+Wurde die &#34;Überprüfung des Motor- und Abgassteuerungssystems&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104001">Überprüfung des Motor- und Abgassteuerungssystems</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104025010">
+<title>
+DTC-Überprüfung
+</title>
+<question>
+Werden andere DTCs als P0131, P0132, P2237, P2243, P2251 und P2626 erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104025011">
+<title>
+Überprüfung des A/F-Sensorsignalkreises
+</title>
+<test1>
+<ptxt>
+Die Zündung ausschalten, die Steckverbinder &#34;C01&#34; und &#34;E01&#34; vom ECM und den Steckverbinder des A/F-Sensors abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Klemmenanschluss an den ECM-Steckverbindern &#34;C01&#34;, &#34;E01&#34; und am Steckverbinder des A/F-Sensors prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Wenn die Anschlüsse in Ordnung sind, folgende Punkte überprüfen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Widerstand in den Schaltkreisen &#34;A2&#34;, &#34;A3&#34;, &#34;A4&#34; und &#34;A5&#34;: weniger als 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Schaltkreis &#34;A2&#34;, &#34;A3&#34;, &#34;A4&#34; bzw. &#34;A5&#34; und Masse: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Anschlussklemme &#34;A2&#34; und den anderen Klemmen am Steckverbinder des A/F-Sensors: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Anschlussklemme &#34;A3&#34; und den anderen Klemmen am Steckverbinder des A/F-Sensors: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Anschlussklemme &#34;A4&#34; und den anderen Klemmen am Steckverbinder des A/F-Sensors: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Anschlussklemme &#34;A5&#34; und den anderen Klemmen am Steckverbinder des A/F-Sensors: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spannung in den Schaltkreisen &#34;A2&#34;, &#34;A3&#34;, &#34;A4&#34; und &#34;A5&#34;: 0 bis 1 V (bei Zündung auf &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104025012">
+<title>
+DTCs erneut abrufen
+</title>
+<test1>
+<ptxt>
+Den A/F-Sensor austauschen. 
+<intxreftitleoff1 refid = "AGEAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+DTC-Abruf durchführen, um auf DTCs zu prüfen.
+</ptxt>
+</test1>
+<question>
+Wird DTC P0131, P0132, P2237, P2243, P2251 und/oder P2626 weiterhin erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A7224026" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1546
+</title>
+<servinfosub id = "AFRAP70A7224026001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.097in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.100in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1546: dysfonctionnement de la pression de réfrigérant A/C 
+</emph>
+</ptxt>
+<ptxt>
+La pression de réfrigérant A/C est inférieure à la valeur spécifiée, bien que la température extérieure soit supérieure à la valeur spécifiée. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Capteur de pression de réfrigérant A/C 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Capteur de température d&#39;air extérieur 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Quantité insuffisante de réfrigérant 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande HVAC 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A7224026002">
+<title>
+Procédure de confirmation de DTC 
+</title>
+<s1>
+<ptxt>
+Démarrer le moteur et activer le système A/C. 
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70A7224026003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A7224026004">
+<testgroup id = "AFRAP70A7224026005">
+<title>
+Vérification de la pression de réfrigérant A/C 
+</title>
+<test1>
+<ptxt>
+Tourner le contacteur A/C et activer le compresseur A/C. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier la valeur &#34;Press réfrigérant&#34; à l&#39;aide du mode &#34;Liste de données&#34; de l&#39;outil de balayage SUZUKI. 
+<intxreftitleoff1 refid = "AFRAP70A7224008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+La pression est-elle supérieure à 0,34 MPa? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Recharger en réfrigérant et revérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A7226001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A7224026006">
+<title>
+Vérification du capteur de pression de réfrigérant A/C 
+</title>
+<test1>
+<ptxt>
+Vérifier le capteur de pression de réfrigérant A/C. 
+<intxreftitleoff1 refid = "AFRAP70A7226022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le capteur est-il en bon état? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer le capteur de pression de réfrigérant A/C. 
+<intxreftitleoff1 refid = "AFRAP70A7226023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A7224026007">
+<title>
+Vérification du capteur de température d&#39;air extérieur 
+</title>
+<test1>
+<ptxt>
+Vérifier le capteur de température d&#39;air extérieur. 
+<intxreftitleoff1 refid = "AFRAP70AA206005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le capteur est-il en bon état? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 4. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer le capteur de température d&#39;air extérieur. 
+<intxreftitleoff1 refid = "AFRAP70AA206004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A7224026008">
+<title>
+Vérification du système A/C 
+</title>
+<test1>
+<ptxt>
+Vérifier le système A /C. 
+<intxreftitleoff1 refid = "AFRAP70A7224001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le système est-il en bon état? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le module de commande HVAC et revérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Effectuer le point 
+<intxref refid = "AFRAP70A7224002">Diagnostic des pannes liées à une pression anormale:Type automatique</intxref>
+ et vérifier de nouveau le DTC. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

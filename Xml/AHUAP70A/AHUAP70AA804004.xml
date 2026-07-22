@@ -1,0 +1,1489 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70AA804004" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Hibaelhárítás „Kommunikációs busz kikapcsolva” állapot esetén
+</title>
+<attention3>
+<ptxt>
+A következő folyamat végrehajtása előtt feltétlenül végezze el a következőket: 
+<intxref refid = "AHUAP70AA804001">CAN kommunikáció ellenőrzése</intxref>
+.
+</ptxt>
+</attention3>
+<servinfosub id = "AHUAP70AA804004001">
+<title>
+Kapcsolási rajz
+</title>
+<figure>
+<graphic graphicname = "IAP70AA80002.swf" width = "183.000mm" height = "159.041mm" ver = "02" gw = "484" gh = "434"/>
+</figure>
+<figure>
+<graphic graphicname = "IAP70AA80003.swf" width = "183.000mm" height = "126.802mm" ver = "01" gw = "503" gh = "343"/>
+<callout-l>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.507in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.534in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.280in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.075in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.453in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Gyújtáskapcsolóval szerelt modell
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Nyomógombos indítórendszerrel szerelt modell
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Szervokormány-vezérlő modul
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[a] - [j]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN kommunikációs vezeték (kapcsolat a „Diagnosztikai folyamat táblázat” [a]-[j] diagnosztikai folyamatával)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN vezérlő
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[k]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Csatlakozó nézet
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kormányszög-érzékelő
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Egyesítő csatlakozó (G308)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Műszeregység
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HVAC vezérlőmodul (automatikus A/C-vel szerelt modell)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Egyesítő csatlakozó (G309)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+DLC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout-l>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70AA804004002">
+<title>
+Diagnosztikai folyamat
+</title>
+<ptxt>
+Ha a „CAN kommunikációs busz kikapcsolva” üzenetet észleli bármelyik vezérlőmodulban, vagy ha nem lehetséges mindegyik vezérlőmodullal/érzékelővel CAN kommunikációt létesíteni a SUZUKI vizsgálókészülék segítségével, végezze el a következő eljárást.
+</ptxt>
+<s1>
+<ptxt>
+A gyújtás „OFF” állásában csatlakoztassa az oszcilloszkópot vagy a SUZUKI vizsgálókészüléket a DLC-hez.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Oszcilloszkóppal vagy a SUZUKI vizsgálókészülék oszcilloszkóp funkciójával vizsgálja meg a következő feltételek esetén jelentkező hullámformát, „ON” helyzetbe kapcsolt gyújtási módnál.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.285in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.285in"/>
+<colspec colnum = "3" colname = "3" colwidth = "4.618in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Csatorna
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Elektróda
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Érintkező száma
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-11 
+<intxreftitleoff1 refid = "AHUAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Testelés
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-3 
+<intxreftitleoff1 refid = "AHUAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Testelés
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s1>
+<s1>
+<ptxt>
+Hasonlítsa össze a megfigyelt hullámformát és a Referencia-hullámformaként megadott hullámformákat. Válassza ki a leginkább hasonlító hullámformát, majd azonosítsa a hibás rendszert és a hiba okát. 
+<intxreftitleoff1 refid = "AHUAP70AA804004003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Végezze el a hibakeresést. 
+<intxreftitleoff1 refid = "AHUAP70AA804004006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AHUAP70AA804004003">
+<title>
+Referencia-hullámforma
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az alábbi táblázat bemutatja a SUZUKI vizsgálókészülék oszcilloszkóp funkciójával észlelt hullámformákat. Ezeket csak példaként említjük.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A &#34;Példák a rendellenes hullámformákra&#34; pontban felsorolt hullámformák csak a CAN kommunikációs hullámformák közül kiválasztott példák, melyek hiba esetén láthatók. Lehetséges azonban, hogy ezek a hullámformák nem pontosan ugyanolyanok, mint az észlelt hullámformák. Ezért, hogy azonosítsa a rendellenességet, válassza ki azt a hullámformát, ami a legjobban hasonlít a megfigyelt hullámformához, lásd: 
+<intxref refid = "AHUAP70AA804004005">Példák rendellenes hullámformákra</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AHUAP70AA804004004">
+<title>
+Normális hullámforma
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.075in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.692in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.771in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Normális hullámforma
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Leírás
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81005.swf" width = "137.083mm" height = "70.379mm" ver = "07" gw = "312" gh = "188"/>
+</entry>
+<entry colname = "5" morerows = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A CAN magas jel és a CAN alacsony jel referencia-feszültsége egyaránt 2,5 V. A CAN magas jel hullámformája 2,5-3,5 V, míg a CAN alacsony jel hullámformája 2,5-1,5 V között változik.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Az egyes csatornák alap-jelszintje
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+1-es csatorna hullámformája (CAN magas jelszint)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Volt/div az egyes csatornáknál
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[E]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+2-es csatorna hullámformája (CAN alacsony jelszint)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Idő/div az egyes csatornáknál
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+<topic id = "AHUAP70AA804004005">
+<title>
+Példák rendellenes hullámformákra
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.349in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.026in"/>
+<colspec colnum = "3" colname = "3" colwidth = "2.068in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.766in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Lehetséges ok
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Hullámforma karakterisztikája
+</ptxt>
+</entry>
+<entry colname = "4" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Leírás
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CAN magas jel
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CAN alacsony jel
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Testzárlatos
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81007.swf" width = "51.460mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81008.swf" width = "52.527mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+Ha a CAN magas jel vezetéke testzárlatos
+</emph>
+</ptxt>
+<ptxt>
+A CAN magas jel és a CAN alacsony jel is a GND feszültségszinten (0 V) van
+</ptxt>
+<ptxt>
+<emph>
+Ha a CAN alacsony jel vezetéke testzárlatos
+</emph>
+</ptxt>
+<ptxt>
+A CAN magas jel és a CAN alacsony jel referencia szintje is a GND feszültségszint (0 V), és a CAN magas jel hullámformája véletlenszerűen oszcillál.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN magas jel: 0 V és 3 V között
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN alacsony jel: Állandó 0 V
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Nyitva
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80004.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80005.jpg" width = "52.527mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+Ha a CAN magas jel vezetéke megszakadt
+</emph>
+</ptxt>
+<ptxt>
+A CAN magas jel és a CAN alacsony jel referencia-feszültsége egyaránt 2,5 V, és a hullámformák véletlenszerűen oszcillálnak.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN magas jel: 3,5 V és 1,0 V között
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN alacsony jel: 2,5 V és 1,0 V között
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+Ha a CAN alacsony jel vezetéke megszakadt
+</emph>
+</ptxt>
+<ptxt>
+A CAN magas jel és a CAN alacsony jel referencia-feszültsége egyaránt 2,5 V, és a hullámformán véletlenszerűen oszcillálnak.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN magas jel: 2,5 V és 4,0 V között
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN alacsony jel: 1,5 V és 4,0 V között
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Zárlat a tápáramkör felé (12 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80006.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81011.swf" width = "52.527mm" height = "68.770mm" ver = "09" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+Ha a CAN magas jel vezetéke zárlatos a tápáramkör felé (12 V)
+</emph>
+</ptxt>
+<ptxt>
+A CAN magas jel értéke állandó 12 V és a CAN alacsony jel véletlenszerűen oszcillál 12 V és 2 V között.
+</ptxt>
+<ptxt>
+<emph>
+Ha a CAN alacsony jel vezetéke zárlatos a tápáramkör felé (12 V)
+</emph>
+</ptxt>
+<ptxt>
+A CAN magas jel és a CAN alacsony jel is állandó 12 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Zárlat a tápáramkör felé (5 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80007.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8T201A80010.swf" width = "52.527mm" height = "68.812mm" ver = "01" gw = "138" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+Ha a CAN magas jel vezetéke zárlatos a tápáramkör felé (5 V)
+</emph>
+</ptxt>
+<ptxt>
+A CAN magas jel és a CAN alacsony jel referencia-feszültsége egyaránt 5,0 V, és a hullámformák véletlenszerűen oszcillálnak.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN magas jel: 5,5 V és 4,5 V között
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN alacsony jel: 5,0 V és 1,5 V között
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+Ha a CAN alacsony jel vezetéke zárlatos a tápáramkör felé (5 V)
+</emph>
+</ptxt>
+<ptxt>
+A referencia feszültség 5 V és a fázis azonos a CAN magas jel és a CAN alacsony jel esetén is, továbbá hullámformájuk szabálytalanul oszcillál 5 V és 2,5 V között.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A CAN magas jel és a CAN alacsony jel vezetéke egymással zárlatos
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81014.swf" width = "103.987mm" height = "68.770mm" ver = "08" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A CAN magas jel és a CAN alacsony jel is állandó 2,5 V.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+<servinfosub id = "AHUAP70AA804004006">
+<title>
+Hibaelhárítás
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Hibák diagnosztizálása előtt feltétlenül ellenőrizze a jármű aktuálisan szervizelt berendezéseit, valamint a CAN kommunikációs vezetékre csatlakozó vezérlőmodulokat és érzékelőket.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A vizsgálókészülék használata előtt olvassa el a kezelési (használati) útmutatót.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A hibaelhárítás során a SUZUKI vizsgálókészülékkel végzett „Kommunikációs busz ellenőrzés” végrehajtásához lásd: 
+<intxref refid = "AHUAP70AA804004024">A kommunikációs busz ellenőrzésének megítélése </intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AHUAP70AA804004007">
+<testgroup id = "AHUAP70AA804004008">
+<title>
+CAN kommunikációs áramkör ellenőrzése
+</title>
+<test1>
+<ptxt>
+Válassza le a negatív (–) kábelt az akkumulátorról.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le a csatlakozókat a CAN útján kommunikáló vezérlőmodulok és érzékelők mindegyikéről. 
+<intxreftitleoff1 refid = "AHUAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze a CAN kommunikációs áramkör megfelelő csatlakozását az összes (CAN kommunikációt használó) vezérlőmodul / érzékelő csatlakozója és a DLC között.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozások rendben vannak, ellenőrizze a CAN kommunikációs áramkörök alábbi pontjait, a 
+<intxref refid = "AHUAP70AA804004002">Diagnosztikai folyamat</intxref>
+ 2. lépésének eredménye alapján.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az áramkör megszakadt
+</ptxt>
+</item>
+<item>
+<ptxt>
+Rövidre zárva a tápáramkörrel
+</ptxt>
+</item>
+<item>
+<ptxt>
+Testzárlat
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN kommunikációs vezetékek zárlata egymással
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Megfelelő az állapota?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki a hibás vezetékköteget.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004009">
+<title>
+ECM érintkező ellenállás ellenőrzése
+</title>
+<test1>
+<ptxt>
+Csatlakoztassa az &#34;E01&#34; csatlakozót az ECM-re.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mérje meg az ellenállást az ESP<sup>®</sup> vezérlőmodul csatlakozójának „E24-2” és „E24-16” érintkezője között.
+</ptxt>
+</test1>
+<question>
+Az ellenállás 114 – 134 &#937;?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki az ECM-et, és ismételje meg a DTC-k ellenőrzését. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004010">
+<title>
+Műszeregység csatlakozó ellenállásának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Csatlakoztassa a csatlakozót a műszeregységhez.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mérje meg az ellenállást a DLC „G211-11” és „G211-3” érintkezője között.
+</ptxt>
+</test1>
+<question>
+Az ellenállás 114 – 134 &#937;?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a műszeregységet, és ismételje meg az ellenőrzést. 
+<intxreftitleoff1 refid = "AHUAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004012">
+<title>
+Műszeregység, szervokormány-vezérlő modul, BCM, ESP® vezérlőmodul, ECM és kulcsnélküli indítás vezérlőmodul ellenőrzése
+</title>
+<test1>
+<ptxt>
+Csatlakoztassa a csatlakozókat a szervokormány-vezérlő modulhoz, a BMC-hez, az ESP<sup>®</sup> vezérlőmodulhoz és a kulcsnélküli indítás vezérlőmoduljához (nyomógombos indítórendszerrel szerelt modell).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Csatlakoztassa a negatív (–) kábelt az akkumulátorhoz.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg a CAN kommunikáció hibátlan állapotáról a műszeregység, a szervokormány-vezérlő modul, a BCM, az ESP<sup>®</sup> vezérlőmodul, az ECM és a kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell) között. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+A kommunikáció normál állapotú?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Hajtsa végre a csatlakoztatott vezérlőmoduloknak / érzékelőknek megfelelően a következőt: „Kommunikáció ellenőrzése”. 
+<intxreftitleoff1 refid = "AHUAP70AA804004019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa az 5. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004013">
+<title>
+Szervokormány-vezérlő modul kommunikációjának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le a szervokormány vezérlőmodul „G50” csatlakozóját.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Csatlakoztassa a szervokormány vezérlőmodul csatlakozójának következő érintkezőit munkavezetékkel.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A „G50-4” és „G50-5” érintkezők között
+</ptxt>
+</item>
+<item>
+<ptxt>
+A „G50-7” és a „G50-6” érintkezők között
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg a CAN kommunikáció hibátlan állapotáról a műszeregység, a BCM, az ESP<sup>®</sup> vezérlőmodul, az ECM és a kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell) között. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+A kommunikáció normál állapotú?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki a szervokormány-vezérlő modult, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 6. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004014">
+<title>
+BCM kommunikációjának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le a munkavezetékeket a szervokormány-vezérlő modul csatlakozójáról, majd csatlakoztassa a csatlakozót a szervokormány-vezérlő modulhoz.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le az alábbi csatlakozókat a BCM-ről.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Gyújtáskapcsolóval szerelt modell: „G04” és „E04” csatlakozók
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nyomógombos indítórendszerrel szerelt modell: „G05” és „E05” csatlakozók
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Csatlakoztassa a BCM csatlakozójának következő érintkezőit munkavezetékkel.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Gyújtáskapcsolóval szerelt modell:
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+A „G04-2” és „E04-5” érintkezők között
+</ptxt>
+</item>
+<item>
+<ptxt>
+A „G04-18” és „E04-12” érintkezők között
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Nyomógombos indítórendszerrel szerelt modell:
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+A „G05-2” és „E05-6” érintkezők között
+</ptxt>
+</item>
+<item>
+<ptxt>
+A „G05-1” és „E05-7” érintkezők között
+</ptxt>
+</item>
+</list2>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg a CAN kommunikáció hibátlan állapotáról a műszeregység, a szervokormány-vezérlő modul, az ESP<sup>®</sup> vezérlőmodul, az ECM és a kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell) között. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+A kommunikáció normál állapotú?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki a BCM-et, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 7. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004016">
+<title>
+ESP® vezérlőmodul kommunikációjának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le a szervizvezetéket a BCM csatlakozókról, majd kösse be BCM csatlakozókat.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le az ESP<sup>®</sup> vezérlőmodul csatlakozóját.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Csatlakoztassa az ESP<sup>®</sup> vezérlőmodul csatlakozójának következő érintkezőit munkavezetékkel.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az „E24-1” és „E24-2” érintkezők között
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az „E24-15” és „E24-16” érintkezők között
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg a CAN kommunikáció hibátlan állapotáról a műszeregység, a szervokormány-vezérlő modul, a BCM, az ECM és a kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell) között. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+A kommunikáció normál állapotú?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> vezérlőmodult, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 8. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004017">
+<title>
+Műszeregység kommunikációjának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza le a szervizvezetéket az ESP<sup>®</sup> vezérlőmodul csatlakozójáról, majd kösse be az ESP<sup>®</sup> vezérlőmodul csatlakozóját.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Cserélje ki a műszeregységet. 
+<intxreftitleoff1 refid = "AHUAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg a CAN kommunikáció hibátlan állapotáról a szervokormány-vezérlő modul, a BCM, az ESP<sup>®</sup> vezérlőmodul, az ECM és a kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell) között. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+A kommunikáció normál állapotú?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Vége. (A műszeregység meghibásodott.)
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<paragroup>
+<ptxt>
+Gyújtáskapcsolóval szerelt modell: Cserélje ki az ECM-et, és ismételje meg a DTC-k ellenőrzését. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Nyomógombos indítórendszerrel szerelt modell: Folytassa a 9. lépéssel.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA804004018">
+<title>
+ECM kommunikációjának ellenőrzése
+</title>
+<test1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Cserélje ki az ECM-et. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg a CAN kommunikáció hibátlan állapotáról a műszeregység, a szervokormány-vezérlő modul, a BCM, az ESP<sup>®</sup> vezérlőmodul, az ECM és a kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell) között. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+A kommunikáció normál állapotú?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Vége. (ECM meghibásodott.)
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a kulcsnélküli indítás vezérlőmodulját, és ismételje meg a DTC ellenőrzést. 
+<intxreftitleoff1 refid = "AHUAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+<servinfosub id = "AHUAP70AA804004019">
+<title>
+Kommunikáció ellenőrzése
+</title>
+<topic id = "AHUAP70AA804004020">
+<title>
+Kormányszög-érzékelő
+</title>
+<s1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Csatlakoztassa a kormányszög-érzékelő csatlakozóját.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ellenőrizze, hogy a vezérlőmodulok, az érzékelő és a kormányszög-érzékelő között a CAN kommunikáció megfelelően működik-e. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ha bármilyen hibát talál, cserélje ki a kormányszög-érzékelőt, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "AHUAP70AA804004021">
+<title>
+SDM
+</title>
+<s1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Csatlakoztassa a &#34;G11&#34; csatlakozót az SDM-hez.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Győződjön meg a már csatlakoztatott modulokat, érzékelőt és az SDM-et vezérlő CAN kommunikáció hibátlan állapotáról. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ha bármilyen hibát talál, cserélje ki az SDM-et, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "AHUAP70AA804004022">
+<title>
+HVAC vezérlőmodul (automatikus A/C-vel szerelt modell)
+</title>
+<s1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Csatlakoztassa a csatlakozót a HVAC vezérlőmodulhoz.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Válassza a “Kommunikációs busz ellenőrzése” opciót a SUZUKI vizsgálókészülék “Busz ellenőrzés” menüpontjánál.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Győződjön meg a már csatlakoztatott modulokat, érzékelőt és a HVAC vezérlő modult vezérlő CAN kommunikáció hibátlan állapotáról. 
+<intxreftitleoff1 refid = "AHUAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ha bármilyen hibát talál, cserélje ki a HVAC vezérlőmodult, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "AHUAP70AA804004024">
+<title>
+A kommunikációs busz ellenőrzésének megítélése 
+</title>
+<ptxt>
+A SUZUKI vizsgálókészülékkel végzett „Kommunikációs busz ellenőrzés&#34; esetén vegye figyelembe a következő táblázatot az eredmény elbírálásához.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.542in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.677in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Megítélés
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A kommunikációs busz ellenőrzésének kijelzője
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Hibátlan
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az összes csatlakoztatott vezérlőmodul / érzékelő (amelyek a CAN útján kommunikálnak) megjelenik, és a háttérszín fehér.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A fenti állapot változatlan marad, amíg 1 percnél hosszabb ideig figyeli.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Rendellenes
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+A csatlakoztatott vezérlőmodulok / érzékelők (amelyek a CAN útján kommunikálnak) közül legalább egy nem jelenik meg.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A csatlakoztatott (CAN útján kommunikáló) vezérlőmodulok / érzékelők nevei “szürke” vagy “világoskék” háttérszínnel jelennek meg.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A csatlakoztatott (CAN útján kommunikáló) vezérlőmodulok / érzékelők “szürke” (a vezérlőmodulok / érzékelők számának csökkenése) vagy “világoskék” (a vezérlőmodulok / érzékelők számának növekedése) háttérszínnel jelennek meg.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A „Kommunikációs busz ellenőrzés” nem hajtható végre.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

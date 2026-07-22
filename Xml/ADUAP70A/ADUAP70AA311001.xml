@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ADUAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Inleiding in het regelsysteem van de startblokkering
+</title>
+<ptxt>
+Als het contactslot op ON staat, ontvangt de spoelantenne van de startblokkering de transpondercode van de contactsleutel.
+</ptxt>
+<ptxt>
+De spoelantenne van de startblokkering zendt vervolgens de ontvangen transpondercode naar de BCM door middel van seriële communicatie.
+</ptxt>
+<ptxt>
+De BCM vergelijkt deze transpondercode met de al in de BCM geregistreerde transpondercode.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Als beide transpondercodes overeenkomen, stuurt de BCM een motorstarttoestemmingssignaal naar de ECM via CAN-communicatie.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Als beide transpondercodes niet overeenkomen, stuurt de BCM een motorstartverbodsignaal naar de ECM via CAN-communicatie.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Na ontvangst van het motorstartverbodsignaal onderbreekt de ECM de brandstofinspuiting zodat de motor niet start.
+</ptxt>
+<ptxt>
+Tegelijkertijd stuurt de BCM of ECM een signaal naar de combimeter. Deze regelt het branden of knipperen van het startblokkeringscontrolelichtje. De bestuurder krijgt dan een waarschuwing over de aanwezigheid van een abnormale toestand door middel van het branden of knipperen van het startblokkeringscontrolelichtje.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001D.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "501" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

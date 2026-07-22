@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70AA314014" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1169
+</title>
+<servinfosub id = "AGEAP70AA314014001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.229in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.966in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1169: Registrierungsfehler 
+</emph>
+</ptxt>
+<ptxt>
+Registrierungsfehler von ECM oder Zündschlüssel.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Schaltkreis/Steckverbinder der Stromversorgung
+</ptxt>
+</item>
+<item>
+<ptxt>
+Schaltkreis/Steckverbinder der CAN-Kommunikation
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70AA314014002">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70AA314014003">
+<testgroup id = "AGEAP70AA314014004">
+<title>
+DTC-Überprüfung
+</title>
+<question>
+Sind andere DTCs als B1169 erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA314014005">
+<title>
+ECM-Registrierung
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70AA316003">ECM-Registrierung:Modell mit Zündschalter</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Sicherstellen, dass die Zündung ausgeschaltet ist.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird DTC B1169 weiterhin erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

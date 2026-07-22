@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css" >
+<meta http-equiv="Content-Script-Type" content="text/javascript" >
+<link rel="stylesheet" href="./css/main.css" type="text/css" >
+<script type="text/JavaScript" src="./js/global_Val.js" ></script>
+<script type="text/JavaScript" src="./js/xmlctrl.js" ></script>
+<script type="text/JavaScript" src="./js/xml_read.js" ></script>
+<script type="text/JavaScript" src="./js/cmnstruct.js" ></script>
+<title></title>
+<script type="text/javascript" language="JavaScript">
+<!--
+
+function onCreate() {
+	var fn = "";
+	// XMLの読み込み・保持
+
+	//Manual List
+	fn = XMLDir + manXML;
+	load_xml(fn);
+	xmlDataKeepList(1);
+	
+	//Model Select
+	fn = XMLDir + modXML;
+	load_xml(fn);
+	xmlDataKeepList(2);
+
+	//VIN Search
+	fn = XMLDir + vinXML;
+	load_xml(fn);
+	xmlDataKeepList(3);
+	
+	parent.manB.location.href = "TopPage.html";
+
+
+}
+
+function onDestroy() {
+	var fn = "TopPage.html";
+	parent.manB.location.href = fn;
+}
+
+
+-->
+</script>
+</head>
+<body onload="onCreate();">
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descrizione del sistema di comunicazione
+</title>
+<servinfosub id = "AITAP70AA801001001">
+<title>
+Descrizione del sistema
+</title>
+<ptxt>
+La comunicazione delle centraline e dei dispositivi avviene grazie alla trasmissione e ricezione continue di segnali digitali di tipo ON/OFF, unitamente ad altre informazioni gestite in parallelo. La trasmissione e la ricezione di questi dati è chiamata interfaccia di comunicazione seriale.
+</ptxt>
+<ptxt>
+Negli impianti di comunicazione per uso automobilistico, le tipologie di interfaccia di comunicazione seriale adottate sono i protocolli UART, CAN e LIN (standard di comunicazione).
+</ptxt>
+<ptxt>
+Il protocollo UART è utilizzato per la comunicazione tra centralina sistema di avviamento senza chiave e gruppo bloccasterzo.
+</ptxt>
+<ptxt>
+Il protocollo LIN è utilizzato per la comunicazione tra quadro strumenti e centralina sistema sensori di parcheggio e per la comunicazione tra centralina HVAC e pannello A/C automatico.
+</ptxt>
+<ptxt>
+Inoltre, la trasmissione e la ricezione dei dati di centralina sistema di avviamento senza chiave (modello con sistema di avviamento motore a pulsante senza chiave), BCM, ECM, quadro strumenti, centralina P/S, centralina HVAC (modelli con A/C auto), centralina ESP<sup>®</sup>, SDM e sensore angolo sterzo avviene intrecciando le due linee di comunicazione CAN alta e bassa velocità (doppino di comunicazione), collegate attraverso il sistema di comunicazione CAN. I dati ottenuti da una centralina possono essere condivisi con tutte le centraline attraverso la linea di comunicazione CAN.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70AA801001002">
+<title>
+Segnale comunicazione CAN
+</title>
+<ptxt>
+Il sistema di comunicazione su linea CAN è di tipo seriale e serve a trasmettere molteplici dati (valori letti dai sensori, dati di controllo e segnali di comando) sotto forma di segnali digitali ON-OFF, attraverso le linee di comunicazione. Per il circuito di comunicazione, questo sistema utilizza due linee, la CAN ad alta velocità e la CAN a bassa velocità, in maniera da mantenere elevata l&#39;affidabilità anche in caso di utilizzo della comunicazione seriale ad alta velocità. 
+</ptxt>
+<ptxt>
+La comunicazione seriale avviene come indicato sotto, partendo da un valore di tensione di riferimento di 2,5 V sia per il segnale CAN ad alta velocità (1) che per il segnale CAN a bassa velocità (2). L&#39;intervallo del segnale della linea CAN ad alta velocità è compreso tra 2,5 V a circa 3,5 V, mentre quello del segnale della linea CAN a bassa velocità varia da 2,5 V a circa 1,5 V. Quando entrambi sono pari a 2,5 V, il segnale è inteso come disattivo (OFF). Quando il segnale della linea CAN ad alta velocità è pari a 3,5 V e quello della linea CAN a bassa velocità è di 1,5 V (ossia, la differenza tra la tensione dell&#39;alta velocità e quella della bassa velocità è superiore a 2 V), il segnale è inteso come attivo (ON). Per questo motivo, tratto distintivo di questo segnale di comunicazione linea CAN è che la forma d&#39;onda del segnale è simmetrica tra le linee CAN ad alta e a bassa velocità, partendo dal livello di 2,5 V. Quando tale segnale cade, la comunicazione CAN si interrompe.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002I.swf" width = "183.000mm" height = "47.375mm" ver = "01" gw = "338" gh = "118"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

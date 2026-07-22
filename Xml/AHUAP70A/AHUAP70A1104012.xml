@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A1104012" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+A MIL bekapcsolva marad miután a motor beindult
+</title>
+<servinfosub id = "AHUAP70A1104012001">
+<title>
+Hibaelhárítás
+</title>
+<diag type = "test" id = "AHUAP70A1104012002">
+<testgroup id = "AHUAP70A1104012003">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Indítsa be a motort és ellenőrizze újra az ECM hibakódjait járó motor mellett.
+</ptxt>
+</test1>
+<question>
+Észlelhető valamilyen DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a vonatkozó MIL művelet hibaelhárításával.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+A meglévő helyett tegyen be egy biztosan jó műszeregységet, és ellenőrizze ismét a DTC-t. 
+<intxreftitleoff1 refid = "AHUAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Ha a MIL továbbra is égve marad, cserélje ki az ECM-et, és ismételje meg a MIL működésének ellenőrzését. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

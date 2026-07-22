@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Indításgátló vezérlőrendszer bemutatása
+</title>
+<ptxt>
+Amikor a gyújtáskapcsolót „ON” állásba fordítják, az indításgátló tekercsantennája fogadja a gyújtáskulcstól érkező transzponder kódot.
+</ptxt>
+<ptxt>
+Az indításgátló tekercsantennája ezután továbbítja a transzponder kódját, ami így soros kommunikáció útján a BCM-hez kerül.
+</ptxt>
+<ptxt>
+A BCM összehasonlítja a transzponder kódját a BCM-ben már regisztrált kóddal.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ha a két transzponder kód egyezik, a BCM motorindítást engedélyező jelet küld az ECM-nek CAN kommunikáció útján.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ha a két transzponder kód nem egyezik, a BCM motorindítást tiltó jelet küld az ECM-nek CAN kommunikáció útján.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+A motorindítást letiltó jel fogadásakor az ECM letiltja az üzemanyag-befecskendezést és a gyújtást, meggátolva ezzel a motor indítását.
+</ptxt>
+<ptxt>
+A BCM és az ECM ezzel párhuzamosan jelet küld a műszeregységnek, amelyben kéri az indításgátló visszajelző lámpájának folyamatos világítását vagy villogását. A vezetőt ezután az indításgátló visszajelző lámpája figyelmezteti a rendellenességre.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001H.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "490" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

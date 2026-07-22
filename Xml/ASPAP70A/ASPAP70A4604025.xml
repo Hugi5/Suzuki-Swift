@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70A4604025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1039 / C1071 
+</title>
+<servinfosub id = "ASPAP70A4604025001">
+<title>
+Condición de detección del DTC y área afectada 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1039: Fallo interno del conjunto del sensor G/giroscopio
+</emph>
+</ptxt>
+<ptxt>
+Se ha detectado un fallo interno en el sensor giroscopio / sensor G. 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Módulo de control ESP<sup>&#174;</sup>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1071: Avería interna del módulo de control del ESP<sup>&#174;</sup>
+</emph>
+</ptxt>
+<ptxt>
+Se ha detectado un fallo interno en el módulo de control del ESP<sup>&#174;</sup>. 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70A4604025002">
+<title>
+Localización y reparación de la avería correspondiente al DTC 
+</title>
+<diag type = "test" id = "ASPAP70A4604025003">
+<testgroup id = "ASPAP70A4604025004">
+<question>
+¿Se ha llevado a cabo el procedimiento de &#34;Inspección del sistema ESP<sup>&#174;</sup>&#34;? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70A4604001">Comprobación del sistema del ESP&#174;</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70A4604025005">
+<title>
+Verificación de DTC 
+</title>
+<test1>
+<ptxt>
+Efectúe 
+<intxref refid = "ASPAP70A4604005">Comprobación del DTC</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+¿Aparece algún otro DTC además del C1039 y C1071? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización de averías del DTC correspondiente. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el conjunto de la unidad hidráulica/módulo de control del ESP<sup>&#174;</sup> y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

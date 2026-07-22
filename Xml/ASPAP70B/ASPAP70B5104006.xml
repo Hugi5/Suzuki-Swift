@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B5104006" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Tabla de la función a prueba de fallos
+</title>
+<ptxt>
+Se proporciona esta función mediante un mecanismo de seguridad que permite conducir de manera segura aun cuando falla la válvula solenoide, el sensor o su circuito. En la tabla siguiente se muestra la función a prueba de fallos para cada fallo de sensor, válvula solenoide o su circuito.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.746in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.638in"/>
+<colspec colnum = "3" colname = "3" colwidth = "3.825in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nombre de DTC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Función a prueba de fallos
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P062F 
+<intxreftitleoff1 refid = "ASPAP70B5104023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Error de EEPROM del módulo de control interno
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+El TCM controla con el valor predeterminado.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0705 
+<intxreftitleoff1 refid = "ASPAP70B5104024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Avería en el circuito del sensor de la gama de transmisión (entrada PRNDL)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<list1 type = "unordered">
+<item>
+<ptxt>
+La posición seleccionada está fijada en el orden prioritario mostrado a continuación.
+</ptxt>
+<ptxt>
+D&#62; 2&#62; L&#62; R&#62; N&#62; P
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detiene el siguiente control/función.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de marcha atrás
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de aprendizaje
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0707 
+<intxreftitleoff1 refid = "ASPAP70B5104025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal baja del circuito del sensor de posición de la transmisión
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<list1 type = "unordered">
+<item>
+<ptxt>
+El TCM controla los actuadores asumiendo que la posición seleccionada es &#34;D&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detiene el siguiente control/función.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de marcha atrás
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de aprendizaje
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0712 
+<intxreftitleoff1 refid = "ASPAP70B5104027"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal baja del circuito &#34;A&#34; del sensor de temperatura del líquido de transmisión
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<list1 type = "unordered">
+<item>
+<ptxt>
+El TCM controla los actuadores asumiendo que la temperatura del ATF es de 200&#176;C (392&#176;F).
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detiene el siguiente control/función.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Cambio ascendente al engranaje de 4ª
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de aprendizaje
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de cambio estático-dinámico
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0713 
+<intxreftitleoff1 refid = "ASPAP70B5104028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal alta del circuito &#34;A&#34; del sensor de temperatura del líquido de transmisión
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0717 
+<intxreftitleoff1 refid = "ASPAP70B5104029"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+No hay señal en el circuito &#34;A&#34; del sensor de velocidad de entrada/turbina
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+El TCM detiene el siguiente control/función.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Cambio ascendente al engranaje de 4ª
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de reducción de par
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de aprendizaje
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de cambio estático-dinámico
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de presión de la tubería
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0722 
+<intxreftitleoff1 refid = "ASPAP70B5104030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+No hay señal en el circuito del sensor de velocidad de salida
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<list1 type = "unordered">
+<item>
+<ptxt>
+El TCM calcula la velocidad del vehículo mediante el sensor de velocidad del eje de entrada.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detiene el siguiente control/función.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Cambio ascendente al engranaje de 4ª
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de reducción de par
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de aprendizaje
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de cambio estático-dinámico
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de presión de la tubería
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0742 
+<intxreftitleoff1 refid = "ASPAP70B5104031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Agarrotamiento en ON del circuito del embrague del convertidor de par
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+El TCM detiene el control de asentamiento.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0787 
+<intxreftitleoff1 refid = "ASPAP70B5104033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal baja del solenoide de cambio de distribución &#34;A&#34;
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "9" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<list1 type = "unordered">
+<item>
+<ptxt>
+La alimentación eléctrica de todas las válvulas solenoides está cortada.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La posición del cambio se fija en 3ª.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detiene el siguiente control/función.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Control de reducción de par
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de aprendizaje
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de cambio estático-dinámico
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de presión de la tubería
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0788 
+<intxreftitleoff1 refid = "ASPAP70B5104034"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal alta del solenoide de cambio de distribución &#34;A&#34;
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0961 
+<intxreftitleoff1 refid = "ASPAP70B5104035"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Rendimiento / Posición del circuito de control de la válvula solenoide &#34;A&#34; de regulación de presión
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0962 
+<intxreftitleoff1 refid = "ASPAP70B5104036"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal baja del circuito de control &#34;A&#34; del solenoide de control de presión
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0963 
+<intxreftitleoff1 refid = "ASPAP70B5104037"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal alta del circuito de control &#34;A&#34; del solenoide de control de presión
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0973 
+<intxreftitleoff1 refid = "ASPAP70B5104038"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal baja del circuito de control del solenoide de cambio &#34;A&#34;
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0974 
+<intxreftitleoff1 refid = "ASPAP70B5104039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal alta del circuito de control del solenoide de cambio &#34;A&#34;
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0976 
+<intxreftitleoff1 refid = "ASPAP70B5104038"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal baja del circuito de control del solenoide de cambio &#34;B&#34;
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0977 
+<intxreftitleoff1 refid = "ASPAP70B5104039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal alta del circuito de control del solenoide de cambio &#34;B&#34;
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P1702 
+<intxreftitleoff1 refid = "ASPAP70B5104023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Error en la suma de comprobación de la memoria del módulo de control interno
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P1878 
+<intxreftitleoff1 refid = "ASPAP70B5104041"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vibración del embrague del convertidor de par
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+El TCM detiene la función de enclavamiento controlada por deslizamiento.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2762 
+<intxreftitleoff1 refid = "ASPAP70B5104042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Rendimiento / Posición del circuito de control de la válvula solenoide de regulación de la presión del embrague del convertidor de par
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<list1 type = "unordered">
+<item>
+<ptxt>
+El TCM detiene el cambio ascendente al engranaje de 4ª cuando la temperatura del ATF es de 150&#176;C (302&#176;F) o superior.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La posición del cambio se fija en 1ª cuando la velocidad del vehículo es de 10 km/h (6 mile/h) o menor.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detiene el siguiente control/función
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de asentamiento
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2763 
+<intxreftitleoff1 refid = "ASPAP70B5104043"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal alta del circuito de control de la válvula solenoide de regulación de la presión del embrague del convertidor de par
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2764 
+<intxreftitleoff1 refid = "ASPAP70B5104044"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Señal baja del circuito de control de la válvula solenoide de regulación de la presión del embrague del convertidor de par
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+U0073 
+<intxreftitleoff1 refid = "ASPAP70B5104045"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Bus de comunicación de los módulos de control apagado
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<list1 type = "unordered">
+<item>
+<ptxt>
+El TCM controla los actuadores asumiendo que el régimen del motor es de 0 rpm.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM controla los actuadores asumiendo que la ECT es de 90&#176;C (194&#176;F).
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM fija que la presión de la tubería sea del 100%.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM controla el control de cambio de engranaje asumiendo que la posición de la mariposa es del 0%.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM controla los actuadores asumiendo que el par del motor es de 160 N&#183;m.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detiene el siguiente control/función.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Cambio ascendente al engranaje de 4ª
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de reducción de par
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento controlada por deslizamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Función de enclavamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de aprendizaje
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de cambio estático-dinámico
+</ptxt>
+</item>
+<item>
+<ptxt>
+Control de presión de la tubería
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+U0100 
+<intxreftitleoff1 refid = "ASPAP70B5104046"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Comunicación perdida con el ECM
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

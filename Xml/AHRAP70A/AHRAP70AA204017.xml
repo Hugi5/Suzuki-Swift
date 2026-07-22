@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10B">
+<servcat sctnbr = "10" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70AA204017" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1157
+</title>
+<servinfosub id = "AHRAP70AA204017001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.635in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.573in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a	
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1157: Unos signala aktiviranja zračnog jastuka
+</emph>
+</ptxt>
+<ptxt>
+Signal aktiviranja zračnog jastuka šalje se iz SDM-a prema BCM-u.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70AA204017002">
+<title>
+Postupak potvrde DTC-a
+</title>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Isključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHRAP70AA204017003">
+<title>
+Rješavanje DTC problema
+</title>
+<diag type = "test" id = "AHRAP70AA204017004">
+<testgroup id = "AHRAP70AA204017005">
+<title>
+Ponovna provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Izbrišite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA204004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70AA204017002">Postupak potvrde DTC-a</intxref>
+ i zatim ponovno provjerite DTC.
+</ptxt>
+</test1>
+<question>
+Detektira li se i dalje DTC B1157?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj. (Zračni jastuk se u prošlosti napuhao. (DTC nije obrisan))
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA204017006">
+<title>
+Ponovna provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Zamijenite SDM. 
+<intxreftitleoff1 refid = "AHRAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70AA204017002">Postupak potvrde DTC-a</intxref>
+ i zatim ponovno provjerite DTC.
+</ptxt>
+</test1>
+<question>
+Detektira li se i dalje DTC B1157?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite BCM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj. (SDM je bio neispravan)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

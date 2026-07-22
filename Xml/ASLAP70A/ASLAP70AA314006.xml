@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA314006" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1610
+</title>
+<servinfosub id = "ASLAP70AA314006001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.281in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1610: Neregistrované ID imobilizéra
+</emph>
+</ptxt>
+<ptxt>
+ID kód imobilizéra nie je zaregistrovaný.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ID ECM nie je zaregistrovaný v BCM.
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Komunikačný obvod/konektor CAN
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka pripojená s vedením komunikácie CAN.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70AA314006002">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70AA314006003">
+<testgroup id = "ASLAP70AA314006005">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC v BCM. 
+<intxreftitleoff1 refid = "ASLAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Zobrazuje sa DTC B1173, B1175 alebo B1176?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314006004">
+<title>
+Registrácia riadiacej jednotky motora
+</title>
+<test1>
+<ptxt>
+Vykonajte 
+<intxref refid = "ASLAP70AA316003">Registrácia riadiacej jednotky motora:Model so spínačom zapaľovania</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Znovu skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je stále detekovaný DTC P1610?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec. (ECM nebola zaregistrovaná.)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314006006">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC prislúchajúce ku komunikácii CAN.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké CAN-DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

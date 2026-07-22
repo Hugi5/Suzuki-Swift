@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B1104009" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Inspección básica del motor
+</title>
+<ptxt>
+Esta comprobación es muy importante para la localización y reparación de averías cuando el ECM no ha detectado ningún DTC y no se han encontrado anomalías en 
+<intxref refid = "ASPAP70B1104008">Inspección visual</intxref>
+.
+</ptxt>
+<ptxt>
+Siga cuidadosamente las instrucciones de la tabla.
+</ptxt>
+<diag type = "test" id = "ASPAP70B1104009001">
+<testgroup id = "ASPAP70B1104009002">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009003">
+<title>
+Compruebe la tensión de la batería
+</title>
+<question>
+¿Es igual o mayor que 11 V?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Cargue o sustituya la batería.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009004">
+<question>
+¿Gira el motor para arrancar?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1904001">Diagnóstico de síntomas del sistema de arranque</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009005">
+<question>
+¿Arranca el motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009006">
+<title>
+Compruebe el régimen de ralentí
+</title>
+<test1>
+<ptxt>
+Compruebe el régimen de ralentí del motor. 
+<intxreftitleoff1 refid = "ASPAP70B1106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1104010">Diagnóstico de síntomas del motor</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009007">
+<title>
+Inspeccione el sistema de encendido
+</title>
+<test1>
+<ptxt>
+Inspeccione el sistema de encendido. 
+<intxreftitleoff1 refid = "ASPAP70B1804001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1104010">Diagnóstico de síntomas del motor</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o reemplace las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009008">
+<title>
+Compruebe que el sistema inmovilizador funciona
+</title>
+<test1>
+<ptxt>
+Inspeccione el sistema de control del inmovilizador
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Modelos con interruptor de encendido: 
+<intxreftitleoff1 refid = "ASPAP70BA314001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Modelos con sistema de arranque por pulsación sin llave: 
+<intxreftitleoff1 refid = "ASPAP70BA324001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Avería en el sistema de control del inmovilizador.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009009">
+<title>
+Compruebe la alimentación de combustible
+</title>
+<test1>
+<ptxt>
+Compruebe la alimentación de combustible. 
+<intxreftitleoff1 refid = "ASPAP70B1706014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1104010">Diagnóstico de síntomas del motor</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o reemplace las piezas defectuosas.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1104009010">
+<title>
+Revise el circuito del inyector de combustible
+</title>
+<test1>
+<ptxt>
+Inspeccione el circuito del inyector de combustible remitiéndose a 
+<intxref refid = "ASPAP70B1704003">Inspección del circuito del inyector de combustible</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1104010">Diagnóstico de síntomas del motor</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1704003">Inspección del circuito del inyector de combustible</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

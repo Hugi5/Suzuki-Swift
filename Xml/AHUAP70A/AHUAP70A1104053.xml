@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A1104053" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2101 / P2119
+</title>
+<servinfosub id = "AHUAP70A1104053001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.842in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign = "top">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P2101: „A” fojtószelep-aktuátor vezérlőmotor áramkörének tartománya / működése
+</emph>
+</ptxt>
+<ptxt>
+Az alábbi feltételek bármelyike teljesül. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A fojtószelep előírt és mért célhelyzete közötti eltérés nagyobb az előírtnál.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A fojtószelep-aktuátor jelének kitöltési aránya meghatározott ideig nincs a megadott tartományban.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(1 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fojtószelep-aktuátor és/vagy áramköre
+</ptxt>
+</item>
+<item>
+<ptxt>
+TP érzékelő és/vagy áramköre
+</ptxt>
+</item>
+<item>
+<ptxt>
+Elektromos fojtószeleptest egység
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2119: Fojtószelep-aktuátor vezérlő fojtószeleptest tartománya / működése
+</emph>
+</ptxt>
+<ptxt>
+Az alábbi feltételek bármelyike teljesül. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az az idő, ami alatt a a fojtószelep visszatér részben nyitott helyzetből a mechanikai alaphelyzetbe, nagyobb az előírt értéknél a visszatérítő rugó ellenőrzési folyamata közben, a gyújtás „OFF” állásba kapcsolása után.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A mért alapértelmezett fojtószelephelyzet az előírt tartományon kívül van.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(1 működési ciklusos észlelési logika)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104053002">
+<title>
+Kapcsolási rajz
+</title>
+<figure>
+<graphic graphicname = "I9P60A111016.swf" width = "183.000mm" height = "94.194mm" ver = "03" gw = "440" gh = "250"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.268in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.126in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.268in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.952in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.268in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.432in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM csatlakozó (nézet: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő (főérzékelő) jeláramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő (főérzékelő)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fojtószelep-aktuátor vezérlőáramköre (zárva)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő (segédérzékelő) jeláramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő (segédérzékelő)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fojtószelep-aktuátor vezérlőáramköre (nyitva)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő testáramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fojtószelep-aktuátor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TP érzékelő tápáramköre
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Elektromos fojtószeleptest egység
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104053003">
+<title>
+DTC megerősítési eljárás
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ügyeljen arra, hogy először a „DTC megerősítési eljárás” során váratlanul észlelt hibakódokkal kapcsolatban végezzen hibakeresést.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Győződjön meg arról, hogy a következő feltételek teljesülnek a “DTC megerősítési eljárás” során.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Akkumulátorfeszültség &#62; 8 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECT &#62; 5 &#176;C
+</ptxt>
+</item>
+<item>
+<ptxt>
+IAT &#62; 5 &#176;C
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0122, P0123, P0222, P0223, P2135 vagy P2176 nem észlelhető.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Tartsa a gázpedált 2 másodpercig teljesen lenyomott helyzetben.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Tartsa a gázpedált 2 másodpercig alapjárati helyzetben.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Állítsa a gyújtást „OFF” állásba 1 percre, majd állítsa a gyújtást „ON” állásba.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHUAP70A1104053004">
+<title>
+DTC-hibaelhárítás
+</title>
+<diag type = "test" id = "AHUAP70A1104053005">
+<testgroup id = "AHUAP70A1104053006">
+<question>
+Megtörtént “A motorvezérlő és károsanyagkibocsátás-csökkentő rendszer ellenőrzése”?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A1104001">Motorvezérlő és károsanyagkibocsátás-csökkentő rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104053007">
+<title>
+DTC-újraellenőrzés
+</title>
+<test1>
+<ptxt>
+Törölje a DTC-t.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Végezze el az elektromos fojtószelep vezérlőrendszerének kalibrálását. 
+<intxreftitleoff1 refid = "AHUAP70A1306005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze újból a DTC-t.
+</ptxt>
+</test1>
+<question>
+Továbbra is észlelhető a P2101 vagy a P2119 DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vége.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104053008">
+<title>
+Fojtószelep-aktuátor vezérlő áramkör ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a fojtószelep-aktuátor vezérlőáramköreit, lásd: 
+<intxref refid = "AHUAP70A1104052">DTC P2100</intxref>
+ , 2. lépés.
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Folytassa a 4. lépéssel.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Javítsa meg a fojtószelep-aktuátor vezérlő áramkörét.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A1104053009">
+<title>
+Elektromos fojtószeleptest egység ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze az elektromos fojtószeleptest működését. 
+<intxreftitleoff1 refid = "AHUAP70A1306004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Cserélje ki az ECM-et, és ismételje meg a DTC-k ellenőrzését. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Cserélje ki az elektromos fojtószeleptest egységet.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

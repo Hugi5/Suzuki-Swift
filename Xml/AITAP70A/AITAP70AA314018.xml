@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70AA314018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1188
+</title>
+<servinfosub id = "AITAP70AA314018001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.229in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.966in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1188: Errore di comunicazione transponder
+</emph>
+</ptxt>
+<ptxt>
+Errore di verifica tra chiave di accensione e BCM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+La chiave di accensione non è stata registrata.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Chiave d’accensione 
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70AA314018002">
+<title>
+Ricerca guasti
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Prima di eseguire la ricerca guasti, leggere quanto riportato in 
+<intxref refid = "AITAP70AA310002">Norme di sicurezza riguardanti il sistema immobilizzatore:Modello con commutatore di accensione</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Se la BCM è stata registrata su un altro veicolo (articolo usato), non è possibile registrare le chiavi di accensione. In caso di sostituzione, installare sempre una BCM nuova.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AITAP70AA314018003">
+<testgroup id = "AITAP70AA314018004">
+<title>
+Controllo avviamento motore
+</title>
+<test1>
+<ptxt>
+Avviare il motore usando la chiave di accensione di scorta.
+</ptxt>
+</test1>
+<question>
+Il motore si avvia?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fine (la chiave di accensione non è stata registrata).
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70AA314018005">
+<title>
+Registrazione della chiave di accensione
+</title>
+<test1>
+<ptxt>
+Eseguire &#34;Registrazione chiave immobilizzatore&#34;. 
+<intxreftitleoff1 refid = "AITAP70AA316002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verificare che l&#39;accensione sia in posizione &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+È ancora presente il DTC B1188?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la BCM e ripetere il controllo della presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine (la chiave di accensione non era stata registrata)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

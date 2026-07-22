@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A6304001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Controllo del sistema P/S
+</title>
+<attention1>
+<ptxt>
+Eseguire una prova in un luogo a traffico limitato per non correre il rischio di causare incidenti.
+</ptxt>
+</attention1>
+<ptxt>
+Fare riferimento alle pagine seguenti per la descrizione dettagliata dei singoli passi della procedura.
+</ptxt>
+<diag type = "test" id = "AITAP70A6304001001">
+<testgroup id = "AITAP70A6304001002">
+<title>
+Analisi dell&#39;inconveniente lamentato dal cliente 
+<intxreftitleoff1 refid = "AITAP70A6304001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Analizzare la descrizione dell&#39;inconveniente fornita dal cliente.
+</ptxt>
+</test1>
+<question>
+È stata eseguita l&#39;analisi dell&#39;inconveniente lamentato dal cliente?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Analizzare la descrizione dell&#39;inconveniente fornita dal cliente.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001003">
+<title>
+Controllo, annotazione e cancellazione DTC 
+<intxreftitleoff1 refid = "AITAP70A6304001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Controllare la presenza di DTC (inclusi i DTC sospesi).
+</ptxt>
+</test1>
+<question>
+Ci sono DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Stampare o annotare i DTC, dopodiché cancellarli facendo riferimento a 
+<intxref refid = "AITAP70A6304004">Cancellazione DTC</intxref>
+ e andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001004">
+<title>
+Ispezione visiva 
+<intxreftitleoff1 refid = "AITAP70A6304001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eseguire un&#39;ispezione visiva. 
+<intxreftitleoff1 refid = "AITAP70A6304008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose, quindi andare al passo 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001005">
+<title>
+Ispezione visiva 
+<intxreftitleoff1 refid = "AITAP70A6304001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eseguire un&#39;ispezione visiva. 
+<intxreftitleoff1 refid = "AITAP70A6304008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose, quindi andare al passo 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001006">
+<title>
+Conferma del sintomo di guasto 
+<intxreftitleoff1 refid = "AITAP70A6304001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Confermare il sintomo di guasto.
+</ptxt>
+</test1>
+<question>
+Il sintomo di guasto è stato riscontrato?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001007">
+<title>
+Ulteriore controllo e registrazione dei DTC 
+<intxreftitleoff1 refid = "AITAP70A6304001017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A6304003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001008">
+<title>
+Ulteriore controllo e registrazione dei DTC 
+<intxreftitleoff1 refid = "AITAP70A6304001017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A6304003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 10.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001009">
+<title>
+Diagnosi dello sterzo e diagnosi del sistema P/S basate sui sintomi 
+<intxreftitleoff1 refid = "AITAP70A6304001018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Controllare e riparare.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Diagnosi dello sterzo basata sui sintomi: 
+<intxreftitleoff1 refid = "AITAP70A6104001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Diagnosi del sistema P/S basata sui sintomi: 
+<intxreftitleoff1 refid = "AITAP70A6304009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+I controlli e le riparazioni sono completati?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Controllare e riparare le parti difettose, quindi andare al passo 10.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001010">
+<title>
+Ricerca guasti basata sui DTC 
+<intxreftitleoff1 refid = "AITAP70A6304001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Controllare e riparare.
+</ptxt>
+</test1>
+<question>
+I controlli e le riparazioni sono completati?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Controllare e riparare le parti difettose, quindi andare al passo 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001011">
+<title>
+Controllo presenza guasti intermittenti 
+<intxreftitleoff1 refid = "AITAP70A6304001020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Controllare la presenza di guasti intermittenti.
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose, quindi andare al passo 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A6304001012">
+<title>
+Verifica finale 
+<intxreftitleoff1 refid = "AITAP70A6304001021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Cancellare il DTC qualora presente.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Eseguire la verifica finale.
+</ptxt>
+</test1>
+<question>
+Sono presenti sintomi di malfunzionamento, DTC o condizioni anomale?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<p-change/>
+<servinfosub id = "AITAP70A6304001013">
+<title>
+Passo 1: Analisi dell&#39;inconveniente lamentato dal cliente
+</title>
+<ptxt>
+Registrare i dettagli dell&#39;inconveniente (guasto, lamentela) e le modalità di comparsa come indicati dal cliente. A questo scopo, l&#39;uso di un questionario come quello riportato di seguito faciliterà la raccolta delle informazioni necessarie per un&#39;approfondita analisi e una corretta diagnosi. Se necessario, verificare se il problema lamentato dal cliente e riportato nel &#34;Questionario per il cliente&#34; trova riscontro.
+</ptxt>
+<ptxt>
+(Se possibile, svolgere questa verifica con il cliente).
+</ptxt>
+<figure>
+<title>
+Questionario per il cliente (esempio)
+</title>
+<graphic graphicname = "IAP70A630004I.swf" width = "183.000mm" height = "126.015mm" ver = "01" gw = "484" gh = "340"/>
+</figure>
+<attention3>
+<ptxt>
+Il questionario riportato nel presente manuale serve solo da esempio. All’atto pratico va adattato alle caratteristiche peculiari di ogni singolo mercato.
+</ptxt>
+</attention3>
+</servinfosub>
+<servinfosub id = "AITAP70A6304001014" page = "2">
+<title>
+Passo 2: Controllo, annotazione e cancellazione DTC
+</title>
+<ptxt>
+Controllare la presenza di DTC (DTC correnti e sospesi), facendo riferimento a 
+<intxref refid = "AITAP70A6304003">Controllo presenza DTC</intxref>
+.
+</ptxt>
+<ptxt>
+Se sono presenti DTC, stamparli o trascriverli, dopodiché cancellarli facendo riferimento a 
+<intxref refid = "AITAP70A6304004">Cancellazione DTC</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A6304001015" page = "2">
+<title>
+Passi 3 e 4: Ispezione visiva
+</title>
+<ptxt>
+Controllare visivamente se la spia &#34;P/S&#34; funziona correttamente e se connettori e componenti sono integri, facendo riferimento a 
+<intxref refid = "AITAP70A6304008">Ispezione visiva</intxref>
+ .
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A6304001016" page = "2">
+<title>
+Passo 5: Conferma del sintomo di guasto
+</title>
+<ptxt>
+Sulla base delle informazioni riportate in 
+<intxref refid = "AITAP70A6304001013">Passo 1: Analisi dell&#39;inconveniente lamentato dal cliente</intxref>
+ e 
+<intxref refid = "AITAP70A6304001014">Passo 2: Controllo, annotazione e cancellazione DTC</intxref>
+, confermare i sintomi del guasto. Inoltre, riconfermare i sintomi del guasto eseguendo un prova su strada e sterzando il volante fino a battuta sia a destra che a sinistra, con veicolo fermo.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A6304001017" page = "2">
+<title>
+Passi 6 e 7: Ulteriore controllo e registrazione dei DTC
+</title>
+<ptxt>
+Per la procedura di controllo, fare riferimento a 
+<intxref refid = "AITAP70A6304003">Controllo presenza DTC</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A6304001018" page = "2">
+<title>
+Passo 8: Diagnosi dello sterzo e diagnosi del sistema P/S basate sui sintomi
+</title>
+<ptxt>
+Eseguire innanzitutto il controllo di base del sistema dello sterzo. 
+<intxreftitleoff1 refid = "AITAP70A6104001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ Una volta arrivati alla fine della scheda, controllare le parti del sistema sospetto facendo riferimento a 
+<intxref refid = "AITAP70A6304009">Diagnosi del sistema P/S basata sui sintomi</intxref>
+ e basandosi sui sintomi riscontrati (tramite l’analisi dell&#39;inconveniente lamentato dal cliente, la conferma del sintomo di guasto e/o l&#39;ispezione di base del sistema P/S). Riparare o sostituire le parti difettose.
+</ptxt>
+</servinfosub>
+<c-change/>
+<servinfosub id = "AITAP70A6304001019" page = "2">
+<title>
+Passo 9: Ricerca guasti basata sui DTC
+</title>
+<ptxt>
+Fare riferimento alla procedura diagnostica relativa al DTC rilevato e riparare o sostituire le parti difettose.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A6304001020" page = "2">
+<title>
+Passo 10: Controllo presenza guasti intermittenti
+</title>
+<ptxt>
+Controllare le parti maggiormente esposte a guasti intermittenti (cioè cablaggio, connettori, ecc.) facendo riferimento a 
+<intxref refid = "AITAP70A0006002">Controllo presenza di connessioni difettose e contatti intermittenti</intxref>
+ e al circuito relativo al DTC registrato al passo 2.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A6304001021" page = "2">
+<title>
+Passo 11: Verifica finale
+</title>
+<ptxt>
+Accertare che il sintomo di guasto sia scomparso e che l’impianto del servosterzo sia esente da condizioni anomale. Se il guasto riparato riguardava un DTC, cancellarlo, quindi eseguire la procedura di conferma DTC per accertare che non ricompaia.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

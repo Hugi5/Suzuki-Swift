@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70AA501003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Opis funkcije brave vrata sustava pokretanja bez ključa
+</title>
+<ptxt>
+Funkcija zaključavanja vrata sastoji se od 3 tipa metoda zaključavanja / otključavanja: pomoću prekidača zahtjeva vrata, pomoću sustava ulaska bez ključa i pomoću rada cilindra brave.
+</ptxt>
+<servinfosub id = "AHRAP70AA501003001">
+<title>
+Zaključavanje / otključavanje pomoću prekidača zahtjeva vrata
+</title>
+<ptxt>
+Sva vrata se zaključavaju i otključavaju bilo kojim prekidačem zahtjeva vrata ugrađenim na vanjske ručke vrata na prednjim vratima (vozača i suvozača) i vratima prtljažnika kako slijedi.
+</ptxt>
+<s1>
+<ptxt>
+Pritiskom gumba prekidača zahtjeva šalje se signal zahtjeva za zaključavanje ili otključavanje na upravljački modul sustava pokretanja bez ključa.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa (1) aktivira srednju unutrašnju antenu (2), stražnju unutarnju antenu (3), stražnju vanjsku antenu (4) kako bi poslao signal zahtjeva u kabinu vozila i prostor prtljažnika.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Kada upravljački modul sustava pokretanja bez ključa utvrdi da daljinski upravljač (5) nije u kabini vozila i prostoru prtljažnika, on aktivira vanjsku antenu na vratima čiji je prekidač zahtjeva pritisnut i šalje signal zahtjeva daljinskom upravljaču.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Daljinski upravljač koji primi signal zahtjeva šalje ID kod upravljačkom modulu sustava pokretanja bez ključa preko vanjske antene koja ima funkciju prijamnika ulaska bez ključa (6).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa uspoređuje ID kod kojega je poslao daljinski upravljač s ID kodom registriranim u upravljački modul sustava pokretanja bez ključa. Ako se ID kodovi podudaraju, upravljački modul sustava pokretanja bez ključa šalje signal zahtjeva zaključavanja / otključavanja vrata (ovisno o stanju prekidača brave vrata) BCM-u (7) putem CAN komunikacije.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+BCM aktivira aktuator brave vrata.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA50001.swf" width = "183.000mm" height = "96.389mm" ver = "02" gw = "414" gh = "257"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.440in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.884in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.884in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Tok signala &#34;1&#34; do &#34;6&#34; povezan je s koracima 1) do 6)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vanjska antena na strani suvozača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Prekidač zahtjeva vrata prtljažnika
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Prekidač zahtjeva vozačevih vrata
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vanjska antena na strani vozača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Prekidač zahtjeva suvozačevih vrata
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Aktivator brave svakih vrata
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</s1>
+<topic id = "AHRAP70AA501003002">
+<title>
+Područje rada
+</title>
+<ptxt>
+Udaljenost između daljinskog upravljača i svake antene vrata treba biti približno unutar 80 cm (31,5 in, 2,6 ft) (1), kako bi se osigurao rad funkcije brave vrata. Također, zaključavanje i otključavanje je moguće kada je daljinski upravljač unutar područja rada gdje je prekidač zahtjeva vrata pritisnut. (Na primjer: Kada se pritisne prekidač zahtjeva vozačevih vrata, daljinski upravljač treba biti unutar područja rada vanjske antene vozača.)
+</ptxt>
+<attention3>
+<ptxt>
+Otključavanje ili zaključavanje vrata možda neće raditi u bilo kojem od sljedećih stanja.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ako je daljinski upravljač postavljen preblizu vozila, blizu tla ili previsoko.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ako su isti tipovi vozila opremljeni sustavom pokretanja bez ključa smješteni jedno pored drugog, a istovremeno se upravlja s oba sustava pokretanja bez ključa.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ako se registrirani i neregistrirani daljinski upravljači istovremeno nose.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50002.swf" width = "88.000mm" height = "60.211mm" ver = "01" gw = "234" gh = "154"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.968in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.968in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.968in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vanjska antena na strani suvozača
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vanjska antena na strani vozača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Vanjska antena na stražnjem kraju
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+<topic id = "AHRAP70AA501003003">
+<title>
+Sigurnosna funkcija
+</title>
+<ptxt>
+Vrata se ne mogu zaključati prekidačem zahtjeva vrata u bilo kojem od sljedećih uvjeta.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Način paljenja je &#34;ACC&#34; ili &#34;UKLJ.&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Jedna su vrata otvorena.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa utvrđuje da se daljinski upravljač nalazi u prostoru kabine vozila.
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "AHRAP70AA501003004">
+<title>
+Funkcija sprječavanja zaključavanja vozila iznutra na daljinskom upravljaču.
+</title>
+<ptxt>
+Ova funkcija sprječava vozača da zaključa vrata i napusti vozilo, a daljinski upravljač ostavi u kabini vozila.
+</ptxt>
+<ptxt>
+Kada srednja unutrašnja antena (1) ili stražnja unutrašnja antena (2) detektiraju daljinski upravljač (npr. daljinski upravljač je u kabini vozila)  pod sljedećim uvjetom, upravljački modul sustava pokretanja bez ključa šalje signal za otključavanje vrata BCM-u putem CAN komunikacije.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vrata se zaključavaju cilindrom brave (ključ za nuždu) ili gumbom zaključavanja vrata kada su jedna vrata otvorena.
+</ptxt>
+</item>
+</list1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Funkcija sprječavanja zaključavanja vozila iznutra na daljinskom upravljaču možda neće raditi kada je daljinski upravljač na ploči s instrumentima, u jednom od pretinaca, oko područja za noge na strani vozača ili suvozača ili u pretincu u vratima, itd.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kada je funkcija sustava pokretanja bez ključa isključena, funkcija sprječavanja zaključavanja vozila iznutra na daljinskom upravljaču ne radi.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "I9P60AA50003.swf" width = "88.000mm" height = "50.137mm" ver = "01" gw = "200" gh = "126"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.619in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.497in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Područje detekcije srednje unutrašnje antene
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Područje detekcije stražnje unutrašnje antene
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</topic>
+</servinfosub>
+<servinfosub id = "AHRAP70AA501003005">
+<title>
+Zaključavanje / otključavanje sa sustavom ulaska bez ključa
+</title>
+<ptxt>
+Kada se ispune svi sljedeći uvjeti i upravljački modul sustava pokretanja bez ključa primi signal zaključavanja ili otključavanja od daljinskog upravljača preko prijamnika ulaska bez ključa, upravljački modul sustava ulaska bez ključa šalje signal zahtjeva za zaključavanje / otključavanje vrata (ovisno o stanju prekidača brave vrata) BCM-u putem CAN komunikacije. Kada BCM zaprimi signal, aktivira aktuator svake brave vrata.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Način paljenja je isključen.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sva vrata su zatvorena. (Pri zaključavanju vrata)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHRAP70AA501003006">
+<title>
+Zaključavanje / otključavanje s cilindrom brave
+</title>
+<ptxt>
+Kada upravljački modul sustava pokretanja bez ključa primi signal zaključavanja ili otključavanja s prekidača cilindra brave putem rada cilindra brave, upravljački modul sustava ulaska bez ključa šalje signal zahtjeva za zaključavanje / otključavanje vrata (ovisno o stanju prekidača brave vrata) BCM-u putem CAN komunikacije. Kada BCM zaprimi signal, aktivira aktuator svake brave vrata.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70AA501003007">
+<title>
+Funkcija vremenskog zaključavanja
+</title>
+<ptxt>
+Ova funkcija automatski ponovo zaključava vrata ako su vrata otključana prekidačem zahtjeva vrata ili sustavom ulaska bez ključa i nijedna vrata nisu otvarana približno 30 sekundi.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

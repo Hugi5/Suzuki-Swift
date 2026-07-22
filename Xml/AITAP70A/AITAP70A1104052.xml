@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104052" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P2100
+</title>
+<servinfosub id = "AITAP70A1104052001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.843in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.361in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P2100: Circuito motorino comando &#34;A&#34; attuatore farfalla / aperto
+</emph>
+</ptxt>
+<ptxt>
+Viene rilevato un malfunzionamento dell&#39;attuatore farfalla e/o del relativo circuito (interruzione, corto verso l&#39;alimentazione o corto a massa).
+</ptxt>
+<ptxt>
+(Logica di rilevamento a 1 D/C)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Attuatore farfalla e/o il relativo circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A1104052002">
+<title>
+Schema del circuito
+</title>
+<figure>
+<graphic graphicname = "I9P60A111016.swf" width = "183.000mm" height = "94.194mm" ver = "03" gw = "440" gh = "250"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.268in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.126in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.268in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.126in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.268in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.293in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Connettore ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale sensore TP (principale)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Sensore TP (principale)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di controllo attuatore farfalla (chiusura)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale del sensore TP (secondario)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Sensore TP (secondario)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di controllo attuatore farfalla (apertura)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di massa sensore TP
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Attuatore farfalla
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di alimentazione sensore TP
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Gruppo corpo farfalla motorizzata
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AITAP70A1104052003">
+<title>
+Procedura di conferma DTC
+</title>
+<s1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34;.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Tenere il pedale dell’acceleratore completamente premuto per 2 secondi.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Tenere il pedale dell’acceleratore rilasciato per 2 secondi.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A1104052004">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A1104052005">
+<testgroup id = "AITAP70A1104052006">
+<question>
+È stata eseguita la procedura &#34;Verifica del sistema di controllo del motore e delle emissioni&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A1104001">Verifica del sistema di controllo del motore e delle emissioni</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104052007">
+<title>
+Controllo circuito di comando attuatore farfalla
+</title>
+<test1>
+<ptxt>
+Con accensione su OFF, scollegare i connettori &#34;C01&#34; e &#34;E01&#34; della ECM e il connettore del gruppo corpo farfallato.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verificare che il collegamento ai connettori &#34;C01&#34; e E01&#34; e al connettore del gruppo corpo farfallato sia corretto.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Se i collegamenti sono in ordine, controllare i seguenti punti:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+resistenza dei circuiti &#34;A1&#34; e &#34;A2&#34;: meno di 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra ciascun circuito &#34;A1&#34; e &#34;A2&#34; e la massa: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il terminale del circuito &#34;A1&#34; e l&#39;altro terminale del connettore gruppo corpo farfallato: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+resistenza tra il terminale del circuito &#34;A2&#34; e l&#39;altro terminale del connettore gruppo corpo farfallato: infinita
+</ptxt>
+</item>
+<item>
+<ptxt>
+tensione dei circuiti &#34;A1&#34; e &#34;A2&#34;: 0 – 1 V (con accensione su &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare il circuito di comando attuatore farfalla.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104052008">
+<title>
+Controllo gruppo corpo farfalla motorizzata
+</title>
+<test1>
+<ptxt>
+Controllare il funzionamento del gruppo corpo farfalla motorizzata. 
+<intxreftitleoff1 refid = "AITAP70A1306004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la ECM e ripetere il controllo della presenza DTC. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire il gruppo corpo farfalla motorizzata.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

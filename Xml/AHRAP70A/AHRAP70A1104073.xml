@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A1104073" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "AHRAP70A1104073001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<attention3>
+<ptxt>
+Ako se nakon reprogramiranja ECM-a prikazuje DTC P0602, možda reprogramiranje ECM-a nije pravilno dovršeno.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.970in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.234in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0602: Pogreška programiranja upravljačkog modula
+</emph>
+</ptxt>
+<ptxt>
+Unutarnja pogreška ECM-a ili pogreška programiranja ECM-a
+</ptxt>
+<ptxt>
+(logika detekcije 1 ciklusa vožnje)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pogreška reprogramiranja ECM-a
+</ptxt>
+</item>
+<item>
+<ptxt>
+Krug napajanja i/ili krug uzemljenja ECM-a
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70A1104073002">
+<title>
+Opis sustava
+</title>
+<s1>
+<ptxt>
+Kontakt bravu zakrenite u položaj ON na 10 sekundi.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHRAP70A1104073003">
+<title>
+Postupak potvrde DTC-a
+</title>
+<diag type = "test" id = "AHRAP70A1104073005">
+<testgroup id = "AHRAP70A1104073006">
+<title>
+Ponovna provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Izbrišite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Kontakt bravu zakrenite u položaj OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Obavite postupak potvrde DTC-a i provjerite DTC.
+</ptxt>
+</test1>
+<question>
+Detektira li se i dalje DTC C0602?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Provjerite postoje li isprekidani problemi. 
+<intxreftitleoff1 refid = "AHRAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104073007">
+<title>
+Provjera reprogramiranja ECM-a
+</title>
+<question>
+Je li izvršeno reprogramiranje ECM-a?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ponovo pravilno reprogramirajte ECM.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104073008">
+<title>
+Provjera kruga napajanja i uzemljenja ECM-a
+</title>
+<test1>
+<ptxt>
+Provjerite krugove napajanja i uzemljenja ECM-a. 
+<intxreftitleoff1 refid = "AHRAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite ispravnim ECM-om i ponovno provjerite. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

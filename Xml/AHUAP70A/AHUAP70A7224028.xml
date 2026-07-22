@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A7224028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1557 / B1561 / B1563
+</title>
+<servinfosub id = "AHUAP70A7224028001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.922in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.288in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1557: Kerékfordulatszám-érzékelő és/vagy áramkörének működési hibája
+</emph>
+</ptxt>
+<ptxt>
+A HVAC vezérlőmodul érvénytelen adatokat kap a járműsebesség-érzékelő jelről a BCM-től.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kerékfordulatszám-érzékelő
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1561: Motor-hűtőfolyadék hőmérséklet-érzékelő és/vagy áramkörének működési hibája
+</emph>
+</ptxt>
+<ptxt>
+A HVAC vezérlőmodul érvénytelen ECT jel adatokat kap az ECM-től.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECT érzékelő
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1563: A/C hűtőközegnyomás-érzékelő és/vagy áramkörének működési hibája
+</emph>
+</ptxt>
+<ptxt>
+A HVAC vezérlőmodul érvénytelen A/C hűtőközegnyomás-jeleket kap az ECM-től.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/C hűtőközegnyomás-érzékelő
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A7224028002">
+<title>
+DTC megerősítési eljárás
+</title>
+<attention3>
+<ptxt>
+Győződjön meg arról, hogy az alábbi feltételek teljesülnek-e, amikor ezt az eljárást alkalmazza.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+U0073, U0100, U0140 és/vagy U0155 nem észlelhető
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Indítsa be a motort, és működtesse az A/C rendszert.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+B1557: Vezesse a járművet kb. 1 percig.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHUAP70A7224028003">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A7224028004">
+<testgroup id = "AHUAP70A7224028005">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+DTC ellenőrzés az ECM-ben. 
+<intxreftitleoff1 refid = "AHUAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Észlelhető valamilyen DTC?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a vonatkozó DTC-hibaelhárítással. 
+<intxreftitleoff1 refid = "AHUAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a HVAC vezérlőmodult, és ismételje meg a DTC ellenőrzést. 
+<intxreftitleoff1 refid = "AHUAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

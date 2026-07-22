@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A4604019" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1024
+</title>
+<servinfosub id = "AGEAP70A4604019001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.328in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.861in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1024: Schaltkreisleistung Lenkwinkelsensor
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CPU im Lenkwinkelsensor erfasst eine interne Störung.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lenkwinkel-Sensorsignal außerhalb des Sollbereichs.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal des Lenkwinkelsensors ändert sich nicht, obwohl Fahrzeug nach rechts oder links gelenkt wird.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Lenkwinkelsensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604019002">
+<title>
+DTC-Fehlersuche
+</title>
+<attention2>
+<ptxt>
+Werden sowohl DTC C1024 als auch C1075 erfasst, liegt eine interne Störung des Lenkwinkelsensors vor. Den Lenkwinkelsensor austauschen. 
+<intxreftitleoff1 refid = "AGEAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</attention2>
+<diag type = "test" id = "AGEAP70A4604019003">
+<testgroup id = "AGEAP70A4604019004">
+<question>
+Wurde die &#34;ESP<sup>&#174;</sup>-Systemprüfung&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A4604001">ESP&#174;-Systemprüfung</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604019005">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604005">DTC-Überprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Werden DTC U0073 und/oder U0126 erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604019006">
+<question>
+Werden DTC C1024 und C1075 erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Den Lenkwinkelsensor austauschen. 
+<intxreftitleoff1 refid = "AGEAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604019007">
+<title>
+Überprüfung des Lenkwinkelsensors am Fahrzeug
+</title>
+<test1>
+<ptxt>
+Lenkwinkelsensor prüfen. 
+<intxreftitleoff1 refid = "AGEAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ESP<sup>&#174;</sup>-Hydraulikeinheit/Steuermodul-Baugruppe austauschen und DTC erneut überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Den Lenkwinkelsensor austauschen. 
+<intxreftitleoff1 refid = "AGEAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENBP70A1104044" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "AENBP70A1104044001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<attention3>
+<ptxt>
+After a reprogramming of ECM is executed but the DTC P0602 is indicated, it is possible that the reprogramming of ECM was not completed correctly.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.087in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.117in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph etype = "bold">
+P0602: Control Module Programming Error 
+</emph>
+</ptxt>
+<ptxt>
+ECM internal failure (data programming error).
+</ptxt>
+<ptxt>
+(1 D/C detection logic but MIL does not light up) 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Reprogramming failure of ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM power supply circuit and/or ground circuit 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENBP70A1104044002">
+<title>
+DTC Confirmation Procedure
+</title>
+<s1>
+<ptxt>
+Set ignition ON for 1 min.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENBP70A1104044003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENBP70A1104044004">
+<testgroup id = "AENBP70A1104044005">
+<title>
+DTC recheck
+</title>
+<test1>
+<ptxt>
+Clear DTC. 
+<intxreftitleoff1 refid = "AENBP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform “DTC Confirmation Procedure”, and check DTC.
+</ptxt>
+</test1>
+<question>
+Is DTC P0602 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Intermittent trouble.
+</ptxt>
+<ptxt>
+Check for intermittent trouble referring to 
+<intxref refid = "AENBP70A0006002">Intermittent Connection and Poor Contact Inspection</intxref>
+.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104044006">
+<title>
+ECM reprogramming check
+</title>
+<question>
+Was reprogramming of ECM executed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Execute reprogramming of ECM correctly again.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A1104044007">
+<title>
+ECM power and ground circuit check
+</title>
+<test1>
+<ptxt>
+Check ECM power and ground circuit. 
+<intxreftitleoff1 refid = "AENBP70A1104068"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

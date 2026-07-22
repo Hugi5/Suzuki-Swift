@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Popis komunikačného systému
+</title>
+<servinfosub id = "ASLAP70AA801001001">
+<title>
+Popis systému
+</title>
+<ptxt>
+Komunikácia pre každú riadiacu jednotku a zariadenia je uskutočňovaná cez neustály vstup/výstup digitálnych signálov ZAP/VYP s položkami s rôznymi údajmi. Vysielanie/prijímanie týchto údajov sa nazýva rozhranie sériovej komunikácie.
+</ptxt>
+<ptxt>
+Typy rozhrania sériovej komunikácie ako protokoly UART, CAN a LIN (štandardy komunikácie) bolo prebrané pre komunikačný systém v aute.
+</ptxt>
+<ptxt>
+UART sa používa na komunikáciu z riadiacej jednotky bezkľúčového štartovania do jednotky zámky riadenia.
+</ptxt>
+<ptxt>
+LIN sa používa na komunikáciu zo združeného merača do riadiacej jednotky systému parkovacieho snímača a na komunikáciu z riadiacej jednotky HVAC do panela automatickej klimatizácie.
+</ptxt>
+<ptxt>
+Okrem toho riadiaca jednotka bezkľúčového štartovania (model s bezkľúčovým štartovaním), BCM, ECM, združený merač, riadiaca jednotka P/S, riadiaca jednotka HVAC (model s automatickou klimatizáciou), riadiaca jednotka ESP<sup>®</sup>, SDM a snímač uhla natočenia volantu sú vysielané/prijímané údaje cez obtočené káble dvoch komunikačných vedení (CAN High a CAN Low) pripojené cez komunikáciu CAN. Údaje dosiahnuté jednou riadiacou jednotkou môžete zdieľať s ďalšou riadiacou jednotkou cez CAN.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70AA801001002">
+<title>
+Komunikačný signál CAN
+</title>
+<ptxt>
+Systém komunikácie CAN je systém sériovej komunikácie, ktorý prenáša viacero údajov (údaje zo snímačov, riadiace údaje a riadiace signály) ako digitálne signály ON-OFF cez komunikačnú linku. Tento systém využívať pre komunikačný obvod dve komunikačné linky (vysokú a nízku CAN) tak, aby zachovával vysokú spoľahlivosť aj pri používaní na vysokorýchlostnú sériovú komunikáciu. 
+</ptxt>
+<ptxt>
+Sériová komunikácia sa, podľa nižšie uvedeného, realizuje s 2,5 V ako referenčnou úrovňou pre vysoký signál CAN (1), ako aj pre nízky signál CAN (2). Rozsah vysokého signálu CAN je od 2,5 V do pribl. 3,5 V a nízkeho signálu CAN je od 2,5 V do pribl. 1,5 V. Ak sú oba na 2,5 V, signál je posúdený ako vypnutý. Keď je vysoký signál CAN 3,5 V a nízky signál CAN je 1,5 V (keď je rozdiel medzi vysokým a nízkym napätím viac ako 2 V), signál je posúdený ako zapnutý. Z toho dôvodu je preto vlastnosťou komunikačného signálu CAN, že jeho priebeh je symetrický medzi vysokým a nízkym signálom CAN s ohľadom na úroveň 2,5 V. Komunikácia CAN zlyhá, ak zlyhá tento formát signálu.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002V.swf" width = "183.000mm" height = "47.375mm" ver = "01" gw = "338" gh = "118"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

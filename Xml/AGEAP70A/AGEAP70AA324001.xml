@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70AA324001" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+Überprüfung des Wegfahrsperren-Steuersystems
+</title>
+<diag type = "test" id = "AGEAP70AA324001001">
+<testgroup id = "AGEAP70AA324001003">
+<title>
+Zündung auf &#34;ON&#34; überprüfen
+</title>
+<test1>
+<ptxt>
+Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Das Kupplungspedal drücken.
+</ptxt>
+</test1>
+<question>
+Leuchten die ON-Kontrollleuchte und die PUSH-Kontrollleuchte auf?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70AA504001">Überprüfung des Systems für schlüsselloses Starten</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324001004">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+Die DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird ein DTC erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324001006">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+DTC bezüglich CAN-Kommunikation überprüfen.
+</ptxt>
+</test1>
+<question>
+Werden CAN-DTC(s) erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324001005">
+<question>
+Dreht der Motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1904001">Symptomdiagnose für das Anlassersystem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA324001002">
+<title>
+Überprüfung des Motorstarts
+</title>
+<question>
+Springt der Motor an?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das Wegfahrsperren-Steuersystem funktioniert einwandfrei.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104009">Grundlegende Motorüberprüfung</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

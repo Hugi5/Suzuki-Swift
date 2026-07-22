@@ -1,0 +1,1256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70AA804003" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Rješavanje problema prekida komunikacije
+</title>
+<servinfosub id = "AHRAP70AA804003001">
+<title>
+Shema ožičenja
+</title>
+<figure>
+<graphic graphicname = "IAP70AA80002.swf" width = "183.000mm" height = "159.041mm" ver = "02" gw = "484" gh = "434"/>
+</figure>
+<figure>
+<graphic graphicname = "IAP70AA80003.swf" width = "183.000mm" height = "126.802mm" ver = "01" gw = "503" gh = "343"/>
+<callout-l>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.507in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.756in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.263in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.075in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.280in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.196in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Model s kontakt bravom
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul servoupravljača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[a] do [j]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN komunikacijski vod (veza sa dijagnostičkim tokovima [a] do [j] od &#34;Tablice za odabir dijagnostičkog toka&#34;)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa (model pokretanja pritiskom prekidača)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN pobuđivač
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[k]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Pogled na konektor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Senzor kuta zakretanja upravljača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G308)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kombinirani mjerač
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Upravljački modul HVAC sustava (model s automatskim klima uređajem)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G309)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+DLC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout-l>
+</figure>
+</servinfosub>
+<servinfosub id = "AHRAP70AA804003002">
+<title>
+Postupak dijagnosticiranja
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Obavezno izvršite 
+<intxref refid = "AHRAP70AA804001">Provjera CAN komunikacije</intxref>
+ prije izvršavanja ovog postupka.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Javljanje višestrukih pogreški nije uključeno u raspon dijagnostike problema.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<ptxt>
+Kada se u bilo kojem od upravljačkih modula detektira &#34;Prekid komunikacije&#34; izvršite dijagnosticiranje primjenjujući sljedeći postupak.
+</ptxt>
+<s1>
+<ptxt>
+Spojite SUZUKI alat za skeniranje na DLC.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Odaberite &#34;Provjera sabirnice komunikacije&#34; u izborniku &#34;Provjera sabirnice&#34; SUZUKI alata za skeniranje i potražite upravljački modul kojemu je komunikacija onemogućena (nije prikazan na zaslonu).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Na temelju rezultata provjere iznad, odaberite odgovarajući dijagnostički tok ([a] do [j]) iz 
+<intxref refid = "AHRAP70AA804003003">Tablica za odabir dijagnostičkog toka</intxref>
+.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Izvršite rješavanje problema prema odabranom dijagnostičkom toku.
+</ptxt>
+</s1>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AHRAP70AA804003003">
+<title>
+Tablica za odabir dijagnostičkog toka
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ako zasebni upravljački modul ili senzor ne uspije komunicirati, provjerite je li krug napajanja ili uzemljenja upravljačkog modula u dobrom stanju, tako da pogledate dijagram kruga sustava, itd. prije dijagnosticiranja pogreške pomoću tablice toka.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ako nije moguće odabrati odgovarajući dijagnostički tok iz &#34;Tablice za odabir dijagnostičkog toka&#34; ili &#34;moguće je odabrati dva ili više dijagnostičkih tokova&#34;, izvršite 
+<intxref refid = "AHRAP70AA804004">Rješavanje problema isključene sabirnice komunikacije</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Dijagnostički tokovi [a] do [j] povezuju se sa CAN komunikacijskim vodovima [a] do [j] od 
+<intxref refid = "AHRAP70AA804003001">Shema ožičenja</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.053in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.155in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Upravljački modul / senzor onemogućene komunikacije
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Dijagnostički tok
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Svi upravljački moduli s kojima CAN komunicira
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[a] 
+<intxreftitleoff1 refid = "AHRAP70AA804003005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa (model s pokretanjem pritiskom bez ključa), senzor kuta zakreta, upravljački modul HVAC-a (model s automatskim klima uređajem), upravljački modul P/S-a, BCM, upravljački modul ESP<sup>®</sup>-a i ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[b] 
+<intxreftitleoff1 refid = "AHRAP70AA804003009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Upravljački modul P/S-a, BCM, upravljački modul ESP<sup>®</sup>-a i ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[c] 
+<intxreftitleoff1 refid = "AHRAP70AA804003012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BCM, upravljački modul ESP<sup>®</sup>-a i ECM 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[d] 
+<intxreftitleoff1 refid = "AHRAP70AA804003015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a i ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[e] 
+<intxreftitleoff1 refid = "AHRAP70AA804003023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[f] 
+<intxreftitleoff1 refid = "AHRAP70AA804003031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[g] 
+<intxreftitleoff1 refid = "AHRAP70AA804003035"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa (model pokretanja pritiskom prekidača)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[h] 
+<intxreftitleoff1 refid = "AHRAP70AA804003039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Senzor kuta zakretanja upravljača
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[i] 
+<intxreftitleoff1 refid = "AHRAP70AA804003042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Upravljački modul HVAC sustava (model s automatskim klima uređajem)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[j] 
+<intxreftitleoff1 refid = "AHRAP70AA804003045"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70AA804003004">
+<title>
+Rješavanje problema
+</title>
+<topic id = "AHRAP70AA804003005">
+<title>
+Dijagnostički tok: [a]
+</title>
+<diag type = "test" id = "AHRAP70AA804003006">
+<testgroup id = "AHRAP70AA804003007">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravni spoj na DLC i konektor kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [a] CAN komunikacije između DLC-a i konektora kombiniranog mjerača.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804003008">
+<title>
+Provjera zaključnog otpora kombiniranog mjerača
+</title>
+<test1>
+<ptxt>
+Spojite konektor kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Iskopčajte ECM konektor &#34;E01&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izmjerite otpor između terminala “G211-11” i “G211-3” DLC-a.
+</ptxt>
+</test1>
+<question>
+Je li otpor 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70AA804004">Rješavanje problema isključene sabirnice komunikacije</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite kombinirani mjerač i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003009">
+<title>
+Dijagnostički tok: [b]
+</title>
+<diag type = "test" id = "AHRAP70AA804003010">
+<testgroup id = "AHRAP70AA804003011">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Iskopčajte konektor kombiniranog mjerača i konektor &#34;G50&#34; upravljačkog modula P/S-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [b] CAN komunikacije između konektora kombiniranog mjerača i konektora upravljačkog modula P/S-a.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite kombinirani mjerač i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Popravite ili zamijenite sljedeći neispravni dio.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Krug [b] CAN komunikacije neispravan je između kombiniranog mjerača i J/C-a
+</ptxt>
+</item>
+<item>
+<ptxt>
+Neispravan J/C “G308”
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003012">
+<title>
+Dijagnostički tok: [c]
+</title>
+<diag type = "test" id = "AHRAP70AA804003013">
+<testgroup id = "AHRAP70AA804003014">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Iskopčajte konektor &#34;G50&#34; upravljačkog modula P/S-a i konektor kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom upravljačkog modula servoupravljača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [c] CAN komunikacije između konektora upravljačkog modula P/S-a i konektora kombiniranog mjerača.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul P/S-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Popravite ili zamijenite sljedeći neispravni dio.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Krug [c] CAN komunikacije neispravan je između upravljačkog modula P/S-a i J/C-a
+</ptxt>
+</item>
+<item>
+<ptxt>
+Neispravan J/C “G308”
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003015">
+<title>
+Dijagnostički tok: [d]
+</title>
+<diag type = "test" id = "AHRAP70AA804003016">
+<testgroup id = "AHRAP70AA804003017">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor &#34;G50&#34; upravljačkog modula P/S-a i sljedeće konektore.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model s kontakt bravom: Konektor BCM-a &#34;G04&#34;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa: Konektor BCM-a &#34;G05&#34;
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom upravljačkog modula servoupravljača i konektorom BCM-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [d] CAN komunikacije između konektora upravljačkog modula P/S-a i konektora BCM-a.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804003018">
+<title>
+Provjera otpora strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Spojite konektor upravljačkog modula servoupravljača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izmjerite otpor između sljedećih terminala konektora BCM-a.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model s kontakt bravom: terminali “G04-2” i “G04-18”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa: terminali “G05-2” i “G05-1”
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je li otpor 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite BCM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul P/S-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003023">
+<title>
+Dijagnostički tok: [e]
+</title>
+<diag type = "test" id = "AHRAP70AA804003024">
+<testgroup id = "AHRAP70AA804003025">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor upravljačkog modula ESP<sup>®</sup>-a i sljedeće konektore.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model s kontakt bravom: Konektor BCM-a &#34;E04&#34;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model sa sustavom pokretanja pritiskom prekidača, bez ključa: Konektor BCM-a &#34;E05&#34;
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom BCM-a i konektorom upravljačkog modula ESP<sup>®</sup>-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [e] CAN komunikacije između konektora BCM-a i konektora upravljačkog modula ESP<sup>®</sup>-a.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804003026">
+<title>
+Provjera otpora strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Spojite konektor BCM-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izmjerite otpor između terminala “E24-1” i “E24-15” konektora upravljačkog modula ESP<sup>®</sup>-a.
+</ptxt>
+</test1>
+<question>
+Je li otpor 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite BCM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003031">
+<title>
+Dijagnostički tok: [f]
+</title>
+<diag type = "test" id = "AHRAP70AA804003032">
+<testgroup id = "AHRAP70AA804003033">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor upravljačkog modula ESP<sup>®</sup>-a i konektor &#34;E01&#34; ECM-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom upravljačkog modula ESP<sup>®</sup>-a i konektorom &#34;E01&#34; ECM-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [f] CAN komunikacije između konektora upravljačkog modula ESP<sup>®</sup>-a i konektora ECM-a.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804003034">
+<title>
+Provjera zaključnog otpora ECM-a
+</title>
+<test1>
+<ptxt>
+Spojite ECM konektor.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izmjerite otpor između terminala “E24-2” i “E24-16” konektora upravljačkog modula ESP<sup>®</sup>-a.
+</ptxt>
+</test1>
+<question>
+Je li otpor 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70AA804004">Rješavanje problema isključene sabirnice komunikacije</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite ECM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003035">
+<title>
+Dijagnostički tok: [g]
+</title>
+<diag type = "test" id = "AHRAP70AA804003036">
+<testgroup id = "AHRAP70AA804003037">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor kombiniranog mjerača i konektor &#34;G11&#34; SDM-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom kombiniranog mjerača i konektorom SDM-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [g] CAN komunikacije između konektora kombiniranog mjerača i konektora SDM-a.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Popravite ili zamijenite sljedeći neispravni dio.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Krug [g] CAN komunikacije neispravan je između kombiniranog mjerača i SDM-a.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Slab spoj konektora “G369” i “G370”
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA804003038">
+<title>
+Provjera otpora strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Spojite konektor kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Iskopčajte ECM konektor &#34;E01&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izmjerite otpor između terminala “G11-13” i “G11-14” konektora SDM-a.
+</ptxt>
+</test1>
+<question>
+Je li otpor 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite SDM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite kombinirani mjerač i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003039">
+<title>
+Dijagnostički tok: [h]
+</title>
+<diag type = "test" id = "AHRAP70AA804003040">
+<testgroup id = "AHRAP70AA804003041">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Iskopčajte konektor kombiniranog mjerača i konektor &#34;G28&#34; upravljačkog modula sustava pokretanja bez ključa.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom kombiniranog mjerača i konektorom upravljačkog modula sustava pokretanja bez ključa.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [h] CAN komunikacije između konektora upravljačkog modula sustava pokretanja bez ključa i kombiniranog mjerača.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul sustava pokretanja bez ključa i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Popravite ili zamijenite sljedeći neispravni dio.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Krug [h] CAN komunikacije neispravan je između upravljačkog modula sustava pokretanja bez ključa i J/C-a.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Neispravan J/C “G309”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Slab spoj konektora “G308” i “G309”
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003042">
+<title>
+Dijagnostički tok: [i]
+</title>
+<diag type = "test" id = "AHRAP70AA804003043">
+<testgroup id = "AHRAP70AA804003044">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor senzora kuta zakreta i konektor kombiniranog mjerača. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom senzora kuta zakreta i konektorom kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [i] CAN komunikacije između konektora senzora kuta zakreta i konektora kombiniranog mjerača.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite senzor kuta zakreta upravljača i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Popravite ili zamijenite sljedeći neispravni dio.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Krug [i] CAN komunikacije neispravan je između senzora kuta zakretanja i J/C-a.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Neispravan J/C “G309”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Slab spoj konektora “G308” i “G309”
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AHRAP70AA804003045">
+<title>
+Dijagnostički tok: [j]
+</title>
+<diag type = "test" id = "AHRAP70AA804003046">
+<testgroup id = "AHRAP70AA804003047">
+<title>
+Provjera strujnog kruga CAN komunikacije
+</title>
+<test1>
+<ptxt>
+Odspojite negativni kabel (–) s akumulatora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odspojite konektor upravljačkog modula HVAC-a i konektor kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja s konektorom upravljačkog modula HVAC-a i konektorom kombiniranog mjerača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite postoji li prekid u krugu [j] CAN komunikacije između konektora kombiniranog mjerača i konektora upravljačkog modula HVAC-a.
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite upravljački modul HVAC sustava i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Popravite ili zamijenite sljedeći neispravni dio.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Krug [j] CAN komunikacije neispravan je između upravljačkog modula HVAC-a i J/C-a.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Neispravan J/C “G309”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Slab spoj konektora “G308” i “G309”
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

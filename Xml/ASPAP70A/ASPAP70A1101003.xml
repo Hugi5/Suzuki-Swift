@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Descripción del sistema OBD 
+</title>
+<ptxt>
+El ECM de este vehículo tiene las funciones que se describen a continuación: 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Con el encendido conectado (posición &#34;ON&#34;) con el motor parado, la MIL (1) se enciende para comprobar el circuito de la MIL (1). 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando el ECM detecta una avería que perjudica a las emisiones del vehículo mientras el motor está funcionando, el ECM enciende la MIL (1) en el juego de instrumentos del panel de instrumentos, o la hace parpadear (la luz parpadea solamente cuando se detecta un fallo de encendido que puede dañar el catalizador), y el área afectada queda registrada en su memoria. 
+</ptxt>
+<ptxt>
+(Si el ECM detecta una avería solo en el primer ciclo de conducción (consulte 
+<intxref refid = "ASPAP70A1101003002">Ciclo de conducción </intxref>
+) pero no detecta la misma avería en los 2 ciclos de conducción consecutivos siguientes, el ECM no enciende la MIL (1) aunque guarda en su memoria el DTC asociado.) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+En el caso de algunas averías, el ECM adopta la lógica de detección de 3 ciclos de conducción (consulte 
+<intxref refid = "ASPAP70A1101003003">Lógica de detección de 3 ciclos de conducción </intxref>
+) para evitar la detección errónea. 
+</ptxt>
+<ptxt>
+Con esta lógica, la MIL se enciende cuando la misma avería se detecta en 3 ciclos de conducción consecutivos. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando se detecta una avería, las condiciones del motor y de la conducción en ese momento se almacenan en la memoria del ECM como datos de imagen fija. (Para obtener información más detallada, consulte 
+<intxref refid = "ASPAP70A1101003007">Borrado de los datos de imagen fija: </intxref>
+). 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es posible comunicarse a través del DLC (3) utilizando no sólo la herramienta de escaneado SUZUKI (2), sino también la herramienta de escaneado genérica OBD de la comunicación CAN. (Es posible acceder a la información de diagnóstico utilizando una herramienta de escaneado.) 
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "ASPAP70A1101003001">
+<title>
+Ciclo de calentamiento 
+</title>
+<ptxt>
+Un &#34;ciclo de calentamiento&#34; significa mantener el motor en funcionamiento después de arrancar hasta que la temperatura del refrigerante sea de al menos 22 &#176;C (40 &#176;F) o alcance una temperatura mínima de 71 &#176;C (160 &#176;F). 
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70A1101003002">
+<title>
+Ciclo de conducción 
+</title>
+<ptxt>
+Un &#34;ciclo de conducción&#34; es la duración desde el arranque del motor hasta el siguiente apagado del motor. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70A1101003003">
+<title>
+Lógica de detección de 3 ciclos de conducción 
+</title>
+<ptxt>
+La avería detectada en el primer ciclo de conducción se almacena en la memoria del ECM (en forma de un DTC pendiente) pero la MIL no se enciende en ese momento. El ECM hace que la MIL se encienda cuando detecta por tercera vez la misma avería en los dos ciclos de conducción siguientes. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70A1101003004">
+<title>
+DTC pendiente 
+</title>
+<ptxt>
+El &#34;DTC pendiente&#34; es relevante para aquellos DTC a los que se aplica la &#34;lógica de detección de 3 ciclos de conducción&#34;. Si se detecta dicho DTC y se almacena provisionalmente durante el primero de los tres ciclos de conducción consecutivos, el DTC recibe el nombre de &#34;DTC pendiente&#34;. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPAP70A1101003005">
+<title>
+Datos de imagen fija 
+</title>
+<ptxt>
+El ECM almacena en su memoria el estado del motor y las condiciones de la conducción en el momento de la detección de una avería. Estos datos se llaman &#34;Datos de imagen fija&#34;. 
+</ptxt>
+<ptxt>
+Por consiguiente, es posible examinar los datos de imagen fija y conocer las condiciones del motor y de la conducción (por ejemplo, si el motor estaba caliente o no, si el vehículo estaba en marcha o detenido, si la mezcla de aire/combustible era rica o pobre) cuando se detectó una avería. Además, el ECM tiene una función que permite almacenar los datos de cada imagen fija para tres averías diferentes y en el orden en que se detectaron. Mediante esta función, es posible conocer el orden de detección de estas averías. Esto es útil cuando se vuelve a revisar o se diagnostica un problema. 
+</ptxt>
+<ptxt>
+Para obtener información detallada acerca de los datos fijos que se pueden leer desde el ECM, consulte la tabla siguiente. 
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.594in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sistema Combust 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Carga calculada 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Reaj combust cort plaz 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Reaj combust larg plaz 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régimen de motor 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Velocidad Vehículo 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Avance Encendido 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Temperatura del aire de admisión 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP absoluta 1* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Serv purg recip EVAP 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tiempo tras el arranque del motor 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nivel Tanq Combust
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Presión Baromét 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tensión de Batería 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP relativa** 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP absoluta 2* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+APP absoluta 1* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+APP absoluta 2* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Pos marip deseada 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Los datos de imagen fija con asterisco (*) indican la relación de la tensión de salida con la tensión de alimentación eléctrica del sensor relativo. 
+</ptxt>
+<ptxt>
+Cuando la tensión de la alimentación eléctrica es de 5,0 V y la tensión de salida es de 4,0 V, los datos de imagen fija se visualizan de la manera siguiente. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Para los sistemas en los que la salida es proporcional a la tensión de entrada, muestra 80 % (= el porcentaje de la tensión de referencia de entrada máxima). 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Para los sistemas en los que la salida es inversamente proporcional a la tensión de entrada, muestra 20 % (= 100 % menos el porcentaje de la tensión de referencia de entrada máxima). 
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+En cuanto a la TP relativa con asteriscos (**) de la tabla anterior, indica el valor calculado mediante la fórmula ([tensión de salida - tensión de salida en la posición de mariposa cerrada] / tensión de la alimentación eléctrica). 
+</ptxt>
+<ptxt>
+Cuando la tensión de la alimentación eléctrica sea de 5,0 V y la tensión de salida en la posición de la mariposa cerrada sea de 1,0 V, los datos de imagen fija se visualizarán de la manera siguiente. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+En la posición de la mariposa cerrada (tensión de salida = 1,0 V), muestra 0 %. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+En la posición de la mariposa complemente cerrada (tensión de salida = 4,0 V), muestra 60 %. 
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Sin embargo, para los sistemas en los que la salida es inversamente proporcional a la tensión de entrada, muestra 100 % menos el resultado de la fórmula mencionada arriba. 
+</ptxt>
+</attention3>
+<figure>
+<title>
+Datos de imagen fija (por ejemplo) 
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "ASPAP70A1101003006" page = "1">
+<title>
+Prioridad de los datos de imagen fija: 
+</title>
+<ptxt>
+El ECM tiene 4 recuadros donde se pueden guardar los datos de imagen fija. 
+</ptxt>
+<ptxt>
+El recuadro 1 es un recuadro especial en el que los datos de imagen fija relacionados con las averías que afectan a las emisiones tienen prioridad respecto a los datos relativos a otras averías (generales). Si se detecta cualquier avería que afecta a las emisiones mientras el recuadro 1 almacena datos relacionados con averías generales (datos de prioridad &#34;2&#34; de la tabla siguiente), los datos guardados en ese momento se sustituyen entonces por los datos relativos a la avería recién detectada (datos de prioridad &#34;1&#34; de la siguiente tabla). 
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Prioridad 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Datos de imagen fija en el recuadro 1 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Datos relacionados con cualquiera de las siguientes averías: Fallo de encendido detectado (P0300 - P0304), sistema demasiado pobre (P0171) y sistema demasiado rico (P0172) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Datos relacionados con averías distintas a las anteriores. 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Los recuadros 2 a 4 se asignan a averías generales. Almacenan de manera individual los datos de imagen fija para 3 averías generales diferentes en el orden de detección (es decir, el recuadro 2 almacena los datos para la primera avería detectada y el recuadro 4 los datos para la última avería detectada). A diferencia de los datos del recuadro 1, los datos de estos 3 recuadros no se actualizan, por lo que los datos de imagen fija de cualquier avería detectada posteriormente no se almacenan. 
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039S.swf" width = "183.000mm" height = "49.215mm" ver = "02" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: No hay datos de imagen fija 
+</ptxt>
+</topic>
+<topic id = "ASPAP70A1101003007" page = "1">
+<title>
+Borrado de los datos de imagen fija: 
+</title>
+<ptxt>
+Cuando se borra un DTC, los datos de imagen fija para la avería representada por dicho DTC también se borran. 
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPAP70A1101003008" page = "1">
+<title>
+Prueba de disponibilidad del sistema 
+</title>
+<ptxt>
+La prueba de disponibilidad del sistema se realiza con el objetivo de confirmar que cada uno de los sistemas relacionados con las emisiones de escape cumple las condiciones que permiten al ECM detectar una avería cuando aparece y establecer el DTC correspondiente. 
+</ptxt>
+<ptxt>
+La prueba se realiza supervisando los elementos específicos (componentes) con una herramienta de escaneado (herramienta de escaneado SUZUKI o herramienta de escaneado genérica OBD de la comunicación CAN). Cuando la prueba muestra que se cumplen las condiciones preestablecidas para el sistema comprobado, el ECM realiza un diagnóstico a bordo del sistema, el estado de la prueba de disponibilidad del sistema cambia de &#34;Incompleta&#34; a &#34;Completa&#34;, y hace que se muestre el estado &#34;Completa&#34; en la herramienta de escaneado. 
+</ptxt>
+<ptxt>
+El estado &#34;Completa&#34; se mantiene hasta que se realiza el borrado de DTC utilizando la herramienta de escaneado. 
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+El estado de la prueba de disponibilidad del sistema puede cambiar de &#34;Completa&#34; a &#34;Incompleta&#34; si se realiza alguna de las siguientes operaciones de mantenimiento. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Desconexión del cable negativo (–) de la batería 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Desconexión de los conectores del ECM. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Desconexión del cable de masa del ECM 
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Los elementos (componentes) indicados en la tabla siguiente se supervisan en esta prueba de disponibilidad del sistema para confirmar la disponibilidad para detectar los DTC enumerados junto a cada punto de supervisión. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+El estado &#34;Completa&#34; o &#34;Incompleta&#34; identificado mediante la prueba de disponibilidad del sistema NO significa que el resultado del diagnóstico a bordo sea &#34;Normal&#34; o &#34;Anómala&#34;. 
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "ASPAP70A1101003009">
+<title>
+Tabla de elementos de supervisión de la prueba de disponibilidad del sistema 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Elemento de supervisión
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC relacionado con el elemento de supervisión
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Catalizador
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Sensor O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Calentador del sensor O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

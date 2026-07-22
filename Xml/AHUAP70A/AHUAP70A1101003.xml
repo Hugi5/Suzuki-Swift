@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Az OBD rendszer leírása
+</title>
+<ptxt>
+A járműben az ECM az alábbi feladatokat látja el.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ha a gyújtáskapcsolót ON helyzetbe fordítja és a motor áll, a MIL (1) kigyullad, így jelezve a MIL (1) áramkörének működőképes állapotát.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ha az ECM járó motor mellett olyan hibát érzékel, amely hátrányosan befolyásolja a jármű károsanyag-kibocsátását, bekapcsolja vagy villogtatja a műszercsoportban elhelyezett hibajelző lámpát (1) (villogás csak akkor jelentkezik, ha a készülék a katalizátort veszélyeztető gyújtáskihagyást észlel), és a hibás területre vonatkozó információt a memóriában tárolja.
+</ptxt>
+<ptxt>
+(Ha az ECM az első működési ciklusban (lásd 
+<intxref refid = "AHUAP70A1101003002">Működési ciklus</intxref>
+ ) észleli hibát, ám a következő 2 egymást követő működési ciklusban nem észlelhető a hiba, az ECM nem aktiválja a MIL (1) lámpát, viszont a kapcsolódó DTC a memóriájába kerül.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Bizonyos meghibásodások esetében az ECM 3 működési ciklusos észlelési logikát alkalmaz (lásd: 
+<intxref refid = "AHUAP70A1101003003">3 működési ciklusos észlelési logika</intxref>
+ ), hogy megakadályozza a hibás észlelést. 
+</ptxt>
+<ptxt>
+Ezzel a logikával a MIL lámpa bekapcsol, ha ugyanaz a meghibásodás 3 egymást követő menetciklusban bekövetkezik.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Hiba észlelése esetén az ekkor fennálló motor- és menetviszonyok abban a pillanatban környezeti paraméter adatok formájában kerülnek tárolásra az ECM memóriájában. (Részletes információkat lásd: 
+<intxref refid = "AHUAP70A1101003007">Környezeti adatok törlése:</intxref>
+.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+A DLC (3) útján történő kommunikációra nemcsak a SUZUKI vizsgálókészülék (2) használható, hanem CAN kommunikációs OBD általános vizsgálókészülék is. (A diagnosztikai adatok vizsgálókészülék használatával érhetők el.)
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "AHUAP70A1101003001">
+<title>
+Bemelegítési ciklus
+</title>
+<ptxt>
+A „bemelegítési ciklus” a motor azon üzemi időszakát jelenti, ami alatt a hűtőfolyadék legalább 22 &#176;C-kal (40 &#176;F) felmelegszik, illetve eléri a 71 &#176;C-os (160 &#176;F) minimális hőmérsékletet.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A1101003002">
+<title>
+Működési ciklus
+</title>
+<ptxt>
+A „működési ciklus” a motor elindításától a motor leállításáig tartó időszak.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A1101003003">
+<title>
+3 működési ciklusos észlelési logika
+</title>
+<ptxt>
+Az első működési ciklusban észlelt hibás működés az ECM memóriájában tárolódik (feltételes DTC formájában), de a MIL ekkor még nem gyullad ki. Az ECM felkapcsolja a MIL lámpát, ha harmadszor is ugyanazt az üzemzavart észleli egymás után következő két működési ciklusban.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A1101003004">
+<title>
+Feltételes DTC
+</title>
+<ptxt>
+A „Feltételes DTC” olyan DTC-k esetében fontos, amelyekre „3 működési ciklusos észlelési logika” érvényes. Ha ilyen DTC észlelésre kerül és ideiglenesen eltárolódik a három egymást követő működési ciklus első ciklusában, a DTC neve „feltételes DTC”.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70A1101003005">
+<title>
+Tárolt paraméterkörnyezeti adatok
+</title>
+<ptxt>
+Az ECM a memóriájában tárolja a motor- és menetviszonyokat a működési hiba észlelésének pillanatában. Ezen adatok neve „Tárolt paraméterkörnyezet”.
+</ptxt>
+<ptxt>
+A tárolt paraméterkörnyezeti adatok ellenőrzésével megismerhetők a hibás működéskor fennálló motor- és menetviszony-adatok (pl. meleg volt-e a motor vagy nem, a jármű haladt-e vagy állt, a levegő/üzemanyag keverék szegény vagy dús volt-e). Ezenfelül az ECM képes arra, hogy három különböző hibás működés befagyasztott adatait tárolja abban a sorrendben, ahogyan azok jelentkeztek. E funkció segítségével megállapítható az észlelt működési hibák sorrendje. Ez hasznos lehet az ismételt ellenőrzésnél vagy a hibák diagnosztizálásánál.
+</ptxt>
+<ptxt>
+Az ECM-ből kiolvasható tárolt paraméter-környezeti adatok részleteit lásd az alábbi táblázatban.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.101in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fuel System
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Calculated Load
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Short Term Fuel Trim
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Long Term Fuel Trim
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Engine Speed
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vehicle Speed
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ignition Advance
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Intake Air Temperature
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute TP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+EVAP Canist Prg Duty
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Time After Engine Start
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fuel Tank Level
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Barometric Pres
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Battery Voltage
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relative TP**
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute TP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute APP 1 *
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute APP 2 *
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Target Throt Pos
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A csillaggal (*) jelölt tárolt paraméter-környezeti adatok jelölik az adott érzékelő kimenő feszültsége és tápfeszültsége közötti arányt.
+</ptxt>
+<ptxt>
+Ha a tápfeszültség 5,0 V és a kimenő feszültség 4,0 V, a környezeti paraméter adat az alábbi módon jelenik meg.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Azon rendszereknél, ahol a kimenet egyenesen arányos a bemeneti feszültséggel, 80%-ot jelenít meg (= a maximális bemeneti referencia feszültség százaléka).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Azon rendszereknél, ahol a kimenet fordítottan arányos a bemeneti feszültséggel, 20%-ot jelenít meg (=100% mínusz a maximális bemeneti referencia feszültség százaléka).
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A fenti táblázatban két csillaggal (**) jelölt relatív TP a következő képlettel számított értéket jelöli: ((kimenő feszültség - kimenő feszültség a fojtószelep zárt helyzetében) / tápfeszültség).
+</ptxt>
+<ptxt>
+Ha a tápfeszültség 5,0 V és a kimenő feszültség zárt fojtószelep helyzetben 1,0 V, a környezeti paraméter adat az alábbi módon jelenik meg.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+A fojtószelep zárt helyzetében (kimenő feszültség = 1,0 V) 0%-ot mutat.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Szélesre nyitott fojtószelep helyzetben (kimenő feszültség = 4,0 V) 60%-ot mutat.
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Azonban olyan rendszerek esetén, ahol a kimenet fordítottan arányos a bemeneti feszültséggel, a kijelzőn a 100% mínusz a fenti képlet eredménye látható.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Tárolt paraméterkörnyezet (példa)
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "AHUAP70A1101003006" page = "1">
+<title>
+A tárolt paraméterkörnyezeti adatok prioritása:
+</title>
+<ptxt>
+Az ECM négy tárhellyel rendelkezik a tárolt paraméterkörnyezeti adatok tárolására.
+</ptxt>
+<ptxt>
+Az 1. tárhely egy speciális tárhely, amelyben a károsanyag-kibocsátást érintő működési hibák tárolt paraméter-környezete elsőbbséget élvez a más (általános) üzemzavarok adataival szemben. Ha bármilyen, a károsanyag-kibocsátással kapcsolatos működési hiba kerül észlelésre, miközben az 1. tárhely általános működési hibákkal kapcsolatos adatokat tárol (a következő táblázatban „2”-es prioritású adatok), az aktuálisan tárolt adatokat helyét az újonnan észlelt üzemzavar adatai (a következő táblázatban „1”-es prioritású adatok) veszik át.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Prioritás
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Paraméterkörnyezeti adatok az 1. tárhelyen
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+A következő működési hibák bármelyikét érintő adatok: Gyújtási hiba (P0300 – P0304), a keverék túl szegény (P0171) és a keverék túl dús (P0172)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+A fentiektől eltérő működési hibákat érintő adatok.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+A 2. - 4. tárhelyek az általános üzemzavarok számára vannak fenntartva. A tárhelyek külön tárolják 3 általános meghibásodás tárolt paraméter-környezetének adatait, előfordulásuk sorrendjében (azaz a 2. tárhely az elsőként észlelt üzemzavar adatait, a 4. tárhely pedig az utolsóként észlelt üzemzavar adatait tárolja). Az 1. tárhellyel ellentétben az ezen a 3 tárhelyen tárolt adatok nem frissülnek, vagyis a később észlelt üzemzavarok tárolt paraméter-környezetét a rendszer nem tárolja el.
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039H.swf" width = "183.000mm" height = "49.215mm" ver = "02" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: Nincs befagyasztott adat
+</ptxt>
+</topic>
+<topic id = "AHUAP70A1101003007" page = "1">
+<title>
+Környezeti adatok törlése:
+</title>
+<ptxt>
+A DTC törlésével az érintett üzemzavarhoz tartozó tárolt paraméter-környezet is törlésre kerül.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AHUAP70A1101003008" page = "1">
+<title>
+Rendszer készenléti teszt
+</title>
+<ptxt>
+A rendszer készenléti teszt annak ellenőrzésére szolgál, hogy károsanyag-kibocsátással kapcsolatos rendszerek megfelelnek-e azoknak a feltételeknek, amelyek ahhoz szükségesek, hogy az ECM észlelje az esetleges üzemzavarokat, és kiadja a megfelelő DTC-t.
+</ptxt>
+<ptxt>
+A teszt bizonyos elemek (komponensek) vizsgálatával történik, vizsgálókészülék (SUZUKI vizsgálókészülék vagy CAN kommunikációs OBD általános vizsgálókészülék) használatával. Ha a teszt eredményez az, hogy a tesztelt rendszerre előzetesen megállapított feltételek teljesülnek, az ECM fedélzeti diagnosztikát végez a rendszeren, a rendszer készenléti teszt státuszát „Befejezetlen”-ről „Befejezett”-re állítja, és a „Befejezett” státuszt megjeleníti a vizsgálókészüléken.
+</ptxt>
+<ptxt>
+A „Complete” állapot addig marad meg, amíg a vizsgálókészülékkel végzett DTC törlési művelet tart.
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ha a következő szervizműveletek egyikét elvégzi, előfordulhat, hogy a rendszer készenléti teszt állapota „Complete”-ről „Incomplete”-re változik.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Az akkumulátor negatív (–) kábelének leválasztása
+</ptxt>
+</item>
+<item>
+<ptxt>
+Leválasztja az ECM csatlakozóit
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM testkábelének eltávolítása
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Az alábbi táblázatban jelzett elemek (alkatrészek) a rendszer készenléti teszt során ellenőrzésre kerülnek, annak megállapítására, hogy készen állnak-e az egyes felügyelt elemek mellett felsorolt DTC észlelésére.
+</ptxt>
+</item>
+<item>
+<ptxt>
+A rendszer készenléti teszt keretében megállapított „Complete” vagy „Incomplete” állapot NEM egyezik meg a fedélzeti diagnosztika „Normal” és „Abnormal” eredményével.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AHUAP70A1101003009">
+<title>
+Rendszer készenléti teszt táblázat figyelt elemei
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Figyelt elem
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Figyelt elemmel kapcsolatos DTC
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Katalizátor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Lambdaszonda
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Lamdbaszonda fűtés
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

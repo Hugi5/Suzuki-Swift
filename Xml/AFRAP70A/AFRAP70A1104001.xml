@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A1104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Vérification du système de régulation des émissions et de commande du moteur 
+</title>
+<ptxt>
+Pour plus de détails sur chacune des étapes, se reporter aux points suivants. 
+</ptxt>
+<diag type = "test" id = "AFRAP70A1104001001">
+<testgroup id = "AFRAP70A1104001002">
+<title>
+Analyse des remarques du client 
+<intxreftitleoff1 refid = "AFRAP70A1104001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Effectuer l&#39;analyse des remarques du client en se référant à 
+<intxref refid = "AFRAP70A1104001013">Etape 1: Analyse des remarques du client </intxref>
+. 
+</ptxt>
+</test1>
+<question>
+L&#39;analyse des remarques du client a-t-elle été effectuée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Effectuer l&#39;analyse des remarques du client. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001003">
+<title>
+Contrôle, enregistrement et effacement des DTC / données d&#39;arrêt sur image 
+<intxreftitleoff1 refid = "AFRAP70A1104001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC (y compris les DTC en attente) en se reportant au point 
+<intxref refid = "AFRAP70A1104001014">Etape 2: Vérification, enregistrement et suppression des DTC / données d&#39;arrêt sur image </intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Y a-t-il un ou plusieurs DTC / données d&#39;arrêt sur image? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Imprimer les DTC et données d&#39;arrêt sur image ou les noter puis les effacer en se reportant au point 
+<intxref refid = "AFRAP70A1104004">Suppression des DTC</intxref>
+ et passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 4. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001004">
+<title>
+Vérification visuelle 
+<intxreftitleoff1 refid = "AFRAP70A1104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Effectuer la vérification visuelle en se reportant au point 
+<intxref refid = "AFRAP70A1104008">Vérification visuelle</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Une anomalie est-elle constatée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Réparer ou remplacer la pièce défectueuse et passer à l&#39;étape 11. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 5. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001005">
+<title>
+Vérification visuelle 
+<intxreftitleoff1 refid = "AFRAP70A1104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Effectuer la vérification visuelle en se reportant au point 
+<intxref refid = "AFRAP70A1104008">Vérification visuelle</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Une anomalie est-elle constatée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Réparer ou remplacer la pièce défectueuse et passer à l&#39;étape 11. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 8. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001006">
+<title>
+Confirmation des symptômes de problème 
+<intxreftitleoff1 refid = "AFRAP70A1104001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Confirmer les symptômes du problème en se reportant au point 
+<intxref refid = "AFRAP70A1104001016">Etape 5: Confirmation des symptômes de problème </intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Le symptôme de problème est-il identifié? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 6. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 7. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001007">
+<title>
+Contre-vérification et enregistrement des DTC / données d&#39;arrêt sur image 
+<intxreftitleoff1 refid = "AFRAP70A1104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vérifier à nouveau les DTC et les données d&#39;arrêt sur image en se reportant au point 
+<intxref refid = "AFRAP70A1104003">Vérification des DTC</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC sont-ils signalés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 9. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 8. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001008">
+<title>
+Contre-vérification et enregistrement des DTC / données d&#39;arrêt sur image 
+<intxreftitleoff1 refid = "AFRAP70A1104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vérifier à nouveau les DTC et les données d&#39;arrêt sur image en se reportant au point 
+<intxref refid = "AFRAP70A1104003">Vérification des DTC</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC sont-ils signalés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 9. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 10. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001009">
+<title>
+Examen de base du moteur et diagnostic des symptômes du moteur 
+<intxreftitleoff1 refid = "AFRAP70A1104001020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vérifier et réparer conformément aux points 
+<intxref refid = "AFRAP70A1104009">Vérification de base du moteur</intxref>
+ et 
+<intxref refid = "AFRAP70A1104010">Diagnostic des symptômes du moteur</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Les vérifications et réparations sont-elles terminées? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 11. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vérifier et remplacer la ou les pièce(s) défectueuse(s) et passer à l&#39;étape 11. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001010">
+<title>
+Recherche de pannes sur la base des DTC 
+<intxreftitleoff1 refid = "AFRAP70A1104001021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Vérifier et réparer selon la recherche de pannes de DTC applicable. 
+</ptxt>
+</test1>
+<question>
+Les vérifications et réparations sont-elles terminées? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 11. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vérifier et remplacer la ou les pièce(s) défectueuse(s) et passer à l&#39;étape 11. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001011">
+<title>
+Vérification des problèmes intermittents 
+<intxreftitleoff1 refid = "AFRAP70A1104001022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Rechercher d&#39;éventuels problèmes intermittents en se reportant au point 
+<intxref refid = "AFRAP70A1104001022">Etape 10: Vérification des problèmes intermittents </intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Une anomalie est-elle constatée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Réparer ou remplacer la ou les pièce(s) défectueuse(s) et passer à l&#39;étape 11. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 11. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A1104001012">
+<title>
+Test de confirmation de bon fonctionnement final 
+<intxreftitleoff1 refid = "AFRAP70A1104001025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Effacer les DTC le cas échéant. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Effectuer l&#39;essai de confirmation final en se reportant à 
+<intxref refid = "AFRAP70A1104001025">Etape 11: Test de confirmation final </intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Y a-t-il un symptôme de problème, un DTC ou une anomalie? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 6. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "AFRAP70A1104001013">
+<title>
+Etape 1: Analyse des remarques du client 
+</title>
+<ptxt>
+Noter tous les détails relatifs au problème (panne, remarque) et les circonstances d&#39;apparition du problème tels que décrits par le client. Pour ce faire, utiliser un formulaire de vérification comme indiqué afin de recueillir aisément des informations nécessaires à une analyse et un diagnostic adéquats. 
+</ptxt>
+<attention3>
+<ptxt>
+Ce formulaire est un modèle standard. Il convient de le modifier en fonction des caractéristiques de chaque marché. 
+</ptxt>
+</attention3>
+<figure>
+<title>
+Formulaire de vérification du problème exposé par le client (exemple) 
+</title>
+<graphic graphicname = "I9P60A111042F.swf" width = "183.000mm" height = "218.598mm" ver = "01" gw = "517" gh = "603"/>
+</figure>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001014" page = "2">
+<title>
+Etape 2: Vérification, enregistrement et suppression des DTC / données d&#39;arrêt sur image 
+</title>
+<ptxt>
+D&#39;abord, vérifier les DTC (y compris les DTC en attente). 
+<intxreftitleoff1 refid = "AFRAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Si un DTC est indiqué, l&#39;imprimer avec les données d&#39;arrêt sur image ou le noter, puis l&#39;effacer. 
+<intxreftitleoff1 refid = "AFRAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001015" page = "2">
+<title>
+Etapes 3 et 4: Vérification visuelle 
+</title>
+<ptxt>
+Avant toute opération, veiller à effectuer une vérification visuelle des éléments permettant le fonctionnement correct du moteur. 
+<intxreftitleoff1 refid = "AFRAP70A1104008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001016" page = "2">
+<title>
+Etape 5: Confirmation des symptômes de problème 
+</title>
+<topic id = "AFRAP70A1104001017">
+<title>
+En cas d&#39;absence de DTC à l&#39;étape 2: 
+</title>
+<ptxt>
+Sur la base des informations obtenues aux points 
+<intxref refid = "AFRAP70A1104001013">Etape 1: Analyse des remarques du client </intxref>
+ et 
+<intxref refid = "AFRAP70A1104001014">Etape 2: Vérification, enregistrement et suppression des DTC / données d&#39;arrêt sur image </intxref>
+, confirmer les symptômes de problème. 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104001018">
+<title>
+En présence de DTC à l&#39;étape 2: 
+</title>
+<ptxt>
+Vérifier de nouveau le DTC en procédant comme indiqué dans la &#34;Procédure de confirmation des DTC&#34; décrite pour chaque Recherche des pannes à partir des DTC. 
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001019" page = "2">
+<title>
+Etapes 6 et 7: Revérification et enregistrement dans les DTC / données d&#39;arrêt sur image 
+</title>
+<ptxt>
+Se reporter au point 
+<intxref refid = "AFRAP70A1104003">Vérification des DTC</intxref>
+ pour la procédure de vérification. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001020" page = "2">
+<title>
+Etape 8: Vérification de base du moteur et diagnostic des symptômes du moteur 
+</title>
+<s1>
+<ptxt>
+Effectuer un contrôle de base du moteur. 
+<intxreftitleoff1 refid = "AFRAP70A1104009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+En l&#39;absence de dysfonctionnement détecté lors de la procédure de &#34;Vérification de base du moteur&#34;, effectuer 
+<intxref refid = "AFRAP70A1104010">Diagnostic des symptômes du moteur</intxref>
+ sur la base des symptômes détectés sur le véhicule au cours des étapes suivantes. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Analyse des remarques du client 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Confirmation des symptômes de la panne 
+</ptxt>
+</item>
+</list1>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001021" page = "2">
+<title>
+Etape 9: Recherche de pannes sur la base des DTC 
+</title>
+<ptxt>
+Effectuer la recherche des pannes à partir des DTC applicables et réparer ou remplacer les pièces défectueuses. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001022" page = "2">
+<title>
+Etape 10: Vérification des problèmes intermittents 
+</title>
+<topic id = "AFRAP70A1104001023">
+<title>
+En cas d&#39;absence de DTC à l&#39;étape 2: 
+</title>
+<ptxt>
+Rechercher d&#39;éventuels problèmes intermittents. 
+<intxreftitleoff1 refid = "AFRAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1104001024">
+<title>
+En présence de DTC à l&#39;étape 2: 
+</title>
+<ptxt>
+Vérifier les pièces associées aux DTC détectés (par ex., faisceau de câbles, connecteur, etc.). 
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AFRAP70A1104001025" page = "2">
+<title>
+Etape 11: Test de confirmation final 
+</title>
+<ptxt>
+S&#39;assurer que le symptôme de problème ne se manifeste plus et que le moteur ne présente plus aucune anomalie. Si les réparations effectuées ont trait au DTC en question, le supprimer, effectuer la procédure de confirmation du DTC et vérifier si aucun DTC n&#39;est indiqué. 
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

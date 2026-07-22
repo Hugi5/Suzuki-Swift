@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Einführung in das Wegfahrsperren-Steuersystem
+</title>
+<ptxt>
+Wenn der Zündschalter auf &#34;ON&#34; gestellt wird, empfängt die Wegfahrsperren-Empfangsspule den Transpondercode vom Zündschlüssel.
+</ptxt>
+<ptxt>
+Daraufhin überträgt die Wegfahrsperren-Empfangsspule den so empfangenen Transpondercode über serielle Kommunikation zum BCM.
+</ptxt>
+<ptxt>
+Das BCM vergleicht diesen Transpondercode mit dem bereits im BCM registrierten Transpondercode.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Wenn beide Transpondercodes übereinstimmen, sendet das BCM das Motorstart-Erlaubnissignal über CAN-Kommunikation zum ECM.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Stimmen die beiden Transpondercodes nicht überein, sendet das BCM das Motorstart-Sperrsignal über CAN-Kommunikation zum ECM.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Auf Empfang des Motorstart-Sperrsignals veranlasst das ECM eine Sperre der Kraftstoffeinspritzung, um somit das Starten des Motors zu verhindern.
+</ptxt>
+<ptxt>
+Gleichzeitig sendet das BCM oder ECM ein Signal zum Kombiinstrument, das ein Aufleuchten oder Blinken der Wegfahrsperrenleuchte anfordert. Durch Aufleuchten oder Blinken der Wegfahrsperrenleuchte wird der Fahrer auf das Vorhandensein einer Störung aufmerksam gemacht.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001G.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "500" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

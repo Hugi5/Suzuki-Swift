@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70AA324013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1168
+</title>
+<servinfosub id = "ASPAP70AA324013001">
+<title>
+Condición de detección del DTC y área afectada 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.234in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.970in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1168: La contraseña no coincide 
+</emph>
+</ptxt>
+<ptxt>
+Se ha introducido una contraseña incorrecta. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Se ha introducido una contraseña incorrecta 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70AA324013002">
+<title>
+Localización y reparación de la avería correspondiente al DTC 
+</title>
+<diag type = "test" id = "ASPAP70AA324013003">
+<testgroup id = "ASPAP70AA324013004">
+<title>
+Entrada de la contraseña del inmovilizador 
+</title>
+<test1>
+<ptxt>
+Vuelva a introducir la contraseña del inmovilizador. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Asegúrese de que el interruptor de encendido está en la posición &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Conecte el encendido (posición &#34;ON&#34;). 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC B1168? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vuelva a comprobar la contraseña del inmovilizador. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección. (Se ha introducido una contraseña incorrecta) 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

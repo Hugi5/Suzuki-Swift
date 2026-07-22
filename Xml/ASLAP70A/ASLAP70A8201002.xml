@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70A8201002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Popis spínača deaktivácie airbagu spolujazdca
+</title>
+<ptxt>
+Spínač airbagu spolujazdca (1) sa nachádza v spínacej skrinke. Používa sa na zastavenie činnosti jednotky airbagu (inflátora) spolujazdca v takých prípadoch, ako je montáž detskej sedačky na predné sedadlo spolujazdca.
+</ptxt>
+<ptxt>
+SDM určí, kedy aktivovať alebo deaktivovať činnosť jednotky airbagu (inflátora) spolujazdca na základe spínača deaktivácie airbagu (Airbag ZAP/Airbag VYP). Nastavenie spínača deaktivovania môžete zmeniť v ktorejkoľvek polohe spínača zapaľovania alebo v ktoromkoľvek režime zapaľovania.
+</ptxt>
+<ptxt>
+Keď je zapaľovanie v polohe “ON”, SDM deteguje polohu nastavenia (Airbag ZAP/Airbag VYP) spínača deaktivovania airbagu spolujazdca a určí, či aktivovať alebo deaktivovať činnosť jednotky airbag (inflátora) spolujazdca. Ak je spínač deaktivovania v polohe OFF, zapne indikátor deaktivovania airbagu spolujazdca (2) medzi strednou ventilačnou mriežkou na prístrojovej doske, aby indikovala, že jednotka airbagu (inflátor) spolujazdca je deaktivovaná.
+</ptxt>
+<ptxt>
+Okrem toho, aj keď je nastavenie spínača deaktivovania airbagu spolujazdca zmenené počas zapaľovania v polohe “ON”, SDM neuloží žiadne DTC a nezapne výstražnú kontrolku airbagu.
+</ptxt>
+<attention1>
+<ptxt>
+Nedodržanie nasledovných pokynov pre spínač deaktivovania airbagu spolujazdca spôsobí vážne poranenie spolujazdca.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ak používate detskú sedačku nasadenú na prednom sedadle pre spolucestujúceho, uistite sa, že ste spínač deaktivovania airbagov nastavili do polohy OFF (režim deaktivovania).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ak ste detskú sedačku dali dole z predného sedadla pre spolucestujúceho, uistite sa, že ste spínač deaktivovania airbagov nastavili do polohy ON (režim aktivovania).
+</ptxt>
+</item>
+</list1>
+</attention1>
+<figure>
+<graphic graphicname = "I9P60A820006V.swf" width = "183.000mm" height = "65.670mm" ver = "02" gw = "495" gh = "170"/>
+</figure>
+<servinfosub id = "ASLAP70A8201002001">
+<title>
+Režim aktivovania
+</title>
+<ptxt>
+Keď je spínač zapaľovania v polohe “ON” keď je spínač deaktivovania airbagu spolujazdca (1) v polohe “Air bag ON” (kontaktová poloha je zatvorená), indikátor deaktivovania airbagu spolujazdca (2) sa na 6,0 sekúnd aktivuje (na 4 sekundy a vyp. na 2 sekundy) pre kontrolu kontrolky, signál “Air bag ON signal” sa odošle do SDM (3), ktorá potom vypne indikátor deaktivovania airbagu spolujazdca (2) a systém vstúpi do aktívneho režimu. A režime aktivovania sa systém airbagov riadi normálnym spôsobom.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A8201002002">
+<title>
+Režim deaktivovania
+</title>
+<ptxt>
+Keď je spínač zapaľovania v polohe “ON” keď je spínač deaktivovania airbagu spolujazdca (1) v polohe “Air bag OFF” (kontaktová poloha je otvorená), indikátor deaktivovania airbagu spolujazdca (2) sa na 6,0 sekúnd aktivuje (na 4 sekundy a vyp. na 2 sekundy) pre kontrolu kontrolky ako v režime aktivávie, signál “Air bag OFF signal” sa odošle do SDM (3), ktorá potom zapne indikátor deaktivovania airbagu spolujazdca (2) a systém vstúpi do neaktívneho režimu. V režime deaktivovania sa jednotka airbagu (inflátor) spolujazdca (4) vždy deaktivuje.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASLAP70A8201002003">
+<title>
+Bezpečnostná prevádzka
+</title>
+<ptxt>
+Ak sa vyskytne porucha, pričom je možné posúdiť stav spínača deaktivovania airbagov spolujazdca (1), SDM (3) vyvolá blikanie kontrolky deaktivovania airbagov (2) (v 0,5 sekundových intervaloch) aj po kontrole žiarovky, čím vlastne upozorňuje na výskyt nezvyčajného správania. Prevádzkový režim jednotky airbagu spolujazdca (inflátora) závisí od podmienok, keď sa vyskytne problém.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A820007V.swf" width = "183.000mm" height = "91.376mm" ver = "02" gw = "476" gh = "243"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.968in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "3.020in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Jednotka (inflátor) airbagu
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Poloha spínača deaktivovania airbagov spolujazdca
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

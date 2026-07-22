@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B8204012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1012
+</title>
+<servinfosub id = "ASPAP70B8204012001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.597in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.597in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1012: Conexión intermitente del conector del SDM 
+</emph>
+</ptxt>
+<ptxt>
+Conexión defectuosa del conector del SDM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Conector del SDM
+</ptxt>
+</item>
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70B8204012002">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPAP70B8204012003">
+<testgroup id = "ASPAP70B8204012004">
+<question>
+¿Se realizó la &#34;Inspección del sistema de diagnóstico del airbag&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B8204001">Inspección del sistema de diagnóstico del airbag</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B8204012005">
+<title>
+Inspección del conector del SDM
+</title>
+<test1>
+<ptxt>
+Compruebe que la conexión del conector del SDM es correcta y compruebe la &#34;patilla de detección de conexión&#34; del conector del SDM.
+</ptxt>
+</test1>
+<question>
+¿Está en buenas condiciones?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el SDM por otro nuevo. 
+<intxreftitleoff1 refid = "ASPAP70B8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Compruebe si hay alguna avería intermitente. 
+<intxreftitleoff1 refid = "ASPAP70B0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<attention3>
+<ptxt>
+Después de terminar la inspección y las reparaciones, realice los siguientes pasos.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vuelva a conectar los componentes del sistema de airbag, y asegúrese de que están correctamente montados.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si se detecta algún DTC, bórrelo como se explica en 
+<intxref refid = "ASPAP70B8204006">Borrado de DTC</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Repita los pasos de 
+<intxref refid = "ASPAP70B8204001">Inspección del sistema de diagnóstico del airbag</intxref>
+ para asegurarse de que la avería está corregida.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

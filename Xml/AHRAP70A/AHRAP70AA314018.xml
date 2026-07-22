@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70AA314018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1188
+</title>
+<servinfosub id = "AHRAP70AA314018001">
+<title>
+Detektirano DTC stanje i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.229in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.966in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano DTC stanje
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1188: Komunikacijska pogreška primopredajnika
+</emph>
+</ptxt>
+<ptxt>
+Pogreška potvrde između ključa za pokretanje i BCM-a.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ključ za pokretanje nije registriran
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ključ za pokretanje 
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70AA314018002">
+<title>
+Rješavanje problema DTC-a
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Prije rješavanja problema obavezno pročitajte upute u 
+<intxref refid = "AHRAP70AA310002">Mjere opreza za sustav blokade motora:Model s kontakt bravom</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ako se radi o BCM-u koji je bio registriran u drugom vozilu (prethodno korištena stavka), ključ za pokretanje ne može se registrirati. Kada je zamjena neophodna, uvijek ugradite novi BCM.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AHRAP70AA314018003">
+<testgroup id = "AHRAP70AA314018004">
+<title>
+Provjera pokretanja motora
+</title>
+<test1>
+<ptxt>
+Pokrenite motor pomoću rezervnog ključa za pokretanje.
+</ptxt>
+</test1>
+<question>
+Je li se motor pokrenuo?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Kraj. (Ključ za pokretanje nije registriran)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70AA314018005">
+<title>
+Registracija ključa za pokretanje
+</title>
+<test1>
+<ptxt>
+Izvršite &#34;Registraciju ključa blokade motora&#34;. 
+<intxreftitleoff1 refid = "AHRAP70AA316002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uvjerite se da je kontakt isključen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Uključite kontakt.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Detektira li se i dalje DTC B1188?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite BCM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj. (Ključ za pokretanje nije registriran)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

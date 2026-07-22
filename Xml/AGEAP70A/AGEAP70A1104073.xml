@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104073" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "AGEAP70A1104073001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<attention3>
+<ptxt>
+Wenn nach der ECM-Neuprogrammierung der DTC P0603 angezeigt wird, wurde die Neuprogrammierung möglicherweise nicht vollständig abgeschlossen.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.602in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.602in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0602: Steuermodul-Programmierungsfehler
+</emph>
+</ptxt>
+<ptxt>
+Interner ECM-Fehler oder ECM-Programmierungsfehler
+</ptxt>
+<ptxt>
+(1-Fahrten-Testlogik)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECM-Neuprogrammierungsfehler
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM-Stromversorgungskreis und/oder -Massekreis
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104073002">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<s1>
+<ptxt>
+Den Zündschalter 10 s lang auf ON drehen.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104073003">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A1104073005">
+<testgroup id = "AGEAP70A1104073006">
+<title>
+DTCs erneut abrufen
+</title>
+<test1>
+<ptxt>
+DTC löschen. 
+<intxreftitleoff1 refid = "AGEAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Zündschalter auf OFF drehen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Überprüfung von Diagnosecodes durchführen und DTCs überprüfen.
+</ptxt>
+</test1>
+<question>
+Wird DTC P0602 weiterhin erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Auf zeitweilige Störung überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104073007">
+<title>
+Überprüfung der ECM-Neuprogrammierung
+</title>
+<question>
+Wurde die ECM-Neuprogrammierung ausgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Die ECM-Neuprogrammierung noch einmal korrekt ausführen.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104073008">
+<title>
+Überprüfung des ECM-Stromversorgungskreises und -Massekreises
+</title>
+<test1>
+<ptxt>
+ECM-Stromversorgungskreis und -Massekreis überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Intaktes Ersatz-ECM einbauen und Prüfung wiederholen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

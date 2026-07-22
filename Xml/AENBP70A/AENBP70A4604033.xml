@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENBP70A4604033" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1074 / C1075
+</title>
+<servinfosub id = "AENBP70A4604033001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1074: G Sensor Calibration
+</emph>
+</ptxt>
+<ptxt>
+Yaw rate / G sensor calibration is not completed.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Yaw rate / G sensor calibration is incomplete
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1075: Steering Angle Sensor Calibration
+</emph>
+</ptxt>
+<ptxt>
+Steering angle sensor calibration is not completed.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Steering angle sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+Steering angle sensor calibration is incomplete
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> control module
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENBP70A4604033002">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENBP70A4604033003">
+<testgroup id = "AENBP70A4604033004">
+<question>
+Was “ESP<sup>®</sup> System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENBP70A4604001">ESP® System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A4604033005">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENBP70A4604005">DTC Check</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is there DTC(s) other than C1074 or C1075?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to applicable DTC troubleshooting.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A4604033006">
+<title>
+Sensor calibration
+</title>
+<test1>
+<ptxt>
+Calibrate all sensors. 
+<intxreftitleoff1 refid = "AENBP70A4606002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is sensor calibration completed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace steering angle sensor. 
+<intxreftitleoff1 refid = "AENBP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70A4604033007">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Clear all DTC(s) and check DTC.
+</ptxt>
+</test1>
+<question>
+Is DTC C1074 and/or C1075 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+DTC C1074: Replace ESP<sup>®</sup> hydraulic unit / control module assembly and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+DTC C1075: Replace steering angle sensor and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

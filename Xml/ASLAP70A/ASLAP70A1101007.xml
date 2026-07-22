@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70A1101007" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Popis kalibrácie systému elektrického ovládania škrtiacej klapky
+</title>
+<ptxt>
+Riadiaca jednotka motora počíta riadené otváranie škrtiacej klapky na základe polohy úplného zatvorenia škrtiacej klapky v elektrickom systéme telesa škrtiacej klapky. Údaje o polohe úplného zatvorenia sú uložené v pamäti riadiacej jednotky motora. Polohy úplného zatvorenia škrtiacej klapky v elektrickom systéme telesa škrtiacej klapky (napäťový signál zo snímača polohy škrtiacej klapky pri úplnom zatvorení škrtiacej klapky) sa však vzájomne odlišujú v závislosti od jednotlivých rozdielov v rámci škrtiacej klapky a snímača polohy škrtiacej klapky. Pretože tieto jednotlivé rozdiely je potrebné brať v úvahu pri riadení škrtiacej klapky, je potrebné zaregistrovať polohu úplného zatvorenia škrtiacej klapky v riadiacej jednotke motora. Po zaregistrovaní týchto údajov v riadiacej jednotke motora sa tieto údaje uložia do RAM (pamäte) riadiacej jednotky motora a použijú ako základné údaje pre riadenie škrtiacej klapky. Tieto údaje sa vymažú ak vykonáte ktorúkoľvek činnosť, ktorá je uvedená v časti „Bezpečnostné opatrenia pri kalibrácii systému elektrického ovládania škrtiacej klapky“ v 
+<intxref refid = "ASLAP70A1000001">Bezpečnostné opatrenia týkajúce sa motora</intxref>
+.
+</ptxt>
+<ptxt>
+Po výmene telesa škrtiacej klapky a/alebo zostavy snímača polohy plynového pedála (APP) je tiež potrebné vymazať údaje o polohe úplného zatvorenia z pamäte riadiacej jednotky motora a zaregistrovať nové, pretože v opačnom prípade riadiaca jednotka nedokáže správne posúdiť polohu úplného zatvorenia.
+</ptxt>
+<ptxt>
+Pre informácie o procedúre registrácie takýchto údajov pozri 
+<intxref refid = "ASLAP70A1306005">Kalibrácia systému elektrického ovládania škrtiacej klapky</intxref>
+. (Po vymazaní údajov o polohe úplného zatvorenia, riadiaca jednotka motora, len pri prvom prepnutí spínača zapaľovania do polohy ON, otvorí a zatvorí škrtiacu klapku na 60 sekúnd, aby zaregistrovala polohu úplného zatvorenia škrtiacej klapky. Ak počas tohto procesu registrácie naštartujete motor, môže dôjsť k prejavu symptómov, akými sú napr. dlhší čas štartovania alebo pomalý nárast otáčok motora po naštartovaní. Ak však nastavíte zapaľovanie do polohy „OFF (VYP)“ a reštartujete motor, zaregistruje polohu do ECM správne.)
+</ptxt>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPAP70B5101006" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Descripción del sistema OBD
+</title>
+<attention3>
+<ptxt>
+Hay dos tipos de sistema OBD, según las especificaciones del vehículo. Para identificarlos, consulte 
+<intxref refid = "ASPAP70B5100003">Precauciones relacionadas con el sistema OBD</intxref>
+.
+</ptxt>
+</attention3>
+<servinfosub id = "ASPAP70B5101006001">
+<title>
+Modelo Euro-OBD
+</title>
+<ptxt>
+El TCM de este vehículo cuenta con las funciones que se describen a continuación.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Al conectar el encendido (posición &#34;ON&#34;) con el motor detenido, se enciende la MIL (1) para verificar la MIL y su circuito.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando el TCM detecta una avería en el sistema de control de la transmisión automática, enciende la MIL del juego de instrumentos y almacena el código de problemas de diagnóstico (DTC) en la memoria. Si detecta que el sistema ha permanecido normal por 3 ciclos de conducción continuos tras detectar una avería, hará que la MIL se apague aunque el DTC almacenado en la memoria del TCM permanecerá como un DTC del historial.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es posible comunicarse con el TCM a través del conector de enlace de datos (DLC) (2) utilizando no sólo la herramienta de escaneado SUZUKI, sino también una herramienta de escaneado genérica OBD de comunicación CAN. (es posible comprobar y borrar la información de diagnóstico con la herramienta de escaneado).
+</ptxt>
+</item>
+</list1>
+<servicetool>
+<servicetoolitem id = "L5A001">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+Herramienta de escaneado de SUZUKI (SUZUKI-SDT)
+</s-number>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "IAP70B510002.jpg" width = "88.000mm" height = "112.292mm" ver = "01" gw = "199" gh = "302"/>
+</figure>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Para obtener información sobre los siguientes elementos, consulte 
+<intxref refid = "ASPAP70B1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Lógica de detección de 2 ciclos de conducción
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ciclo de calentamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ciclo de conducción
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC pendiente
+</ptxt>
+</item>
+<item>
+<ptxt>
+Datos de imagen fija
+</ptxt>
+</item>
+</list2>
+</list1>
+</servinfosub>
+<servinfosub id = "ASPAP70B5101006002">
+<title>
+Modelo no Euro OBD
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Cuando el encendido está en &#34;ON&#34; y no se detecta ninguna avería en el sistema de control de la A/T, la luz de advertencia de la transmisión (1) se enciende durante 2 segundos y, a continuación, se coloca en posición OFF para comprobar el funcionamiento de la bombilla.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando el TCM detecta una avería en el sistema de control de la A/T, enciende la luz de advertencia de la transmisión y registra en su memoria el DTC.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es posible comunicarse con el TCM a través del DLC (2) mediante la herramienta de escaneado SUZUKI. Es posible comprobar y borrar la información de diagnóstico por medio de la herramienta de escaneado SUZUKI.
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70B510003.jpg" width = "88.000mm" height = "110.055mm" ver = "01" gw = "202" gh = "295"/>
+</figure>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Para obtener información sobre los siguientes elementos, consulte 
+<intxref refid = "ASPAP70B1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Lógica de detección de 2 ciclos de conducción
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ciclo de calentamiento
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ciclo de conducción
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC pendiente
+</ptxt>
+</item>
+<item>
+<ptxt>
+Datos de imagen fija
+</ptxt>
+</item>
+</list2>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

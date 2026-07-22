@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A1104009" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Basisonderzoek van de motor
+</title>
+<ptxt>
+Deze controle is erg belangrijk bij het onderzoeken van storingen als de ECM geen DTC heeft waargenomen en er bij 
+<intxref refid = "ADUAP70A1104008">Visueel onderzoek</intxref>
+ geen abnormale toestand is vastgesteld.
+</ptxt>
+<ptxt>
+Volg het stroomschema zorgvuldig.
+</ptxt>
+<diag type = "test" id = "ADUAP70A1104009001">
+<testgroup id = "ADUAP70A1104009002">
+<question>
+Is de &#34;Controle van het motor- en emissieregelsysteem&#34; uitgevoerd?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1104001">Controle van het motor- en emissieregelsysteem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009003">
+<title>
+Controleer de accuspanning
+</title>
+<question>
+Is de spanning 11 V of meer?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Laad of vervang de accu.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009004">
+<question>
+Draait de motor rond?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1904001">Diagnose van symptomen van startsysteem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009005">
+<question>
+Start de motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar stap 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009006">
+<title>
+Controleer het stationaire toerental
+</title>
+<test1>
+<ptxt>
+Controleer het stationaire toerental van de motor. 
+<intxreftitleoff1 refid = "ADUAP70A1106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1104010">Diagnose van motorsymptomen</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009007">
+<title>
+Controleer het ontstekingssysteem
+</title>
+<test1>
+<ptxt>
+Controleer het ontstekingssysteem. 
+<intxreftitleoff1 refid = "ADUAP70A1804001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1104010">Diagnose van motorsymptomen</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repareer of vervang defecte onderdelen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009008">
+<title>
+Controleer of het startblokkeersysteem werkt
+</title>
+<test1>
+<ptxt>
+Controleer het regelsysteem van de startblokkering.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model met contactslot: 
+<intxreftitleoff1 refid = "ADUAP70AA314001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model met drukknopstartsysteem: 
+<intxreftitleoff1 refid = "ADUAP70AA324001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Storing in het regelsysteem van de startblokkering.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009009">
+<title>
+Controleer de brandstoftoevoer
+</title>
+<test1>
+<ptxt>
+Controleer de brandstoftoevoer. 
+<intxreftitleoff1 refid = "ADUAP70A1706014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1104010">Diagnose van motorsymptomen</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repareer of vervang defecte onderdelen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104009010">
+<title>
+Controleer het brandstofverstuivercircuit
+</title>
+<test1>
+<ptxt>
+Controleer het brandstofverstuivercircuit volgens 
+<intxref refid = "ADUAP70A1704003">Controle van brandstofverstuivercircuit</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1104010">Diagnose van motorsymptomen</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1704003">Controle van brandstofverstuivercircuit</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

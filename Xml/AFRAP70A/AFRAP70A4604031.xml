@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A4604031" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1062
+</title>
+<servinfosub id = "AFRAP70A4604031001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1062: Echec du fonctionnement continu de l&#39;électrovanne 
+</emph>
+</ptxt>
+<ptxt>
+L&#39;électrovanne est activée pendant plus longtemps que la durée prescrite à l&#39;aide de l&#39;&#34;Active Test&#34; de l&#39;outil de balayage SUZUKI. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Module de commande ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A4604031002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A4604031003">
+<testgroup id = "AFRAP70A4604031004">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Laisser le véhicule pendant plus de 5 minutes, pour refroidir le système ESP<sup>&#174;</sup>. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Suivre le point 
+<intxref refid = "AFRAP70A4604005">Vérification des DTC</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Le DTC C1062 est-il détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer l&#39;ensemble de groupe hydraulique / module de commande ESP<sup>&#174;</sup> et vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

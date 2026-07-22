@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B5104019" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+No hay enclavamiento
+</title>
+<servinfosub id = "ASPAP70B5104019001">
+<title>
+Descripción de los síntomas
+</title>
+<ptxt>
+El TCM desactiva la válvula solenoide de TCC en cualquiera de las situaciones siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Se activa el interruptor de la luz de freno (se pisa el pedal del freno).
+</ptxt>
+</item>
+<item>
+<ptxt>
+La temperatura del ATF es inferior a –40&#176;C (–40&#176;F).
+</ptxt>
+</item>
+<item>
+<ptxt>
+La apertura de la mariposa llega al 0%.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El TCM detecta los siguientes DTC.
+</ptxt>
+<ptxt>
+P0705 / P0707 / P0712 / P0713 / P0717 / P0722 / P0787 / P0788 / P0961 / P0962 / P0963 / P0973 / P0974/ P0976 / P0977 / P1702 / P2762 / P2763 / P2764 / U0073 / U0100
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "ASPAP70B5104019002">
+<title>
+Localización y reparación de averías
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Efectúe una prueba en carretera en un lugar donde no haya tráfico para evitar accidentes.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La prueba en carretera deben realizarla dos personas, un conductor y un probador, en una carretera nivelada.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<diag type = "test" id = "ASPAP70B5104019003">
+<testgroup id = "ASPAP70B5104019004">
+<question>
+¿Se ha llevado a cabo el procedimiento de &#34;Inspección del sistema de control de la A/T&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B5104001">Inspección del sistema de control de A/T</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B5104019005">
+<title>
+Verificación de DTC
+</title>
+<question>
+¿Se detectan los DTC P0705, P0707, P0712, P0713, P0717, P0722, P0787, P0788, P0961, P0962, P0963, P0973, P0974, P0976, P0977, P1702, P1706, P2762, P2763, P2764, U0073 y/o U0100?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización de averías del DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B5104019006">
+<title>
+Inspección de la señal del interruptor de la luz de freno
+</title>
+<test1>
+<ptxt>
+Con el encendido en &#34;ON&#34;, verifique la tensión entre el terminal del conector de ECM y masa.
+</ptxt>
+<ptxt>
+Para obtener detalles sobre el conector del ECM, consulte 
+<intxref refid = "ASPAP70B1102003">Diagrama del circuito del sistema de control electrónico</intxref>
+.
+</ptxt>
+<spec>
+<title>
+Especificación de la señal del interruptor de luces de freno
+</title>
+<ptxt>
+El pedal de freno no está pisado: 0 – 1 V
+</ptxt>
+<ptxt>
+El pedal de freno está pisado: 8 – 14 V
+</ptxt>
+</spec>
+</test1>
+<question>
+¿Están los resultados de acuerdo con las especificaciones?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Reemplace un módulo de TCM en buen estado y vuelva a comprobar el funcionamiento del enclavamiento.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Interruptor de luces de freno mal ajustado o defectuoso.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

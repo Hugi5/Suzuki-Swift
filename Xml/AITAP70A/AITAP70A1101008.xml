@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70A1101008" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+Descrizione del sistema di controllo della farfalla motorizzata
+</title>
+<ptxt>
+Il sistema di controllo della farfalla motorizzata è composto dai seguenti elementi:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Corpo farfalla motorizzata completo di valvola a farfalla, attuatore farfalla e sensori di posizione farfalla (TP) (principale/secondario)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Gruppo pedale dell&#39;acceleratore completo di sensori APP (principale/secondario)
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+<servinfosub id = "AITAP70A1101008001">
+<title>
+Descrizione funzionale
+</title>
+<ptxt>
+L&#39;ECM (5) rileva la corsa che effettua il pedale dell&#39;acceleratore quando viene premuto, basandosi sulla tensione del segnale proveniente dal sensore APP (1). Usando i dati e le condizioni di funzionamento del motore, la ECM calcola l&#39;apertura ottimale della valvola a farfalla. Contemporaneamente, rileva la percentuale di apertura della valvola a farfalla risultante dal valore di tensione del segnale trasmesso dal sensore TP (3) integrato nel corpo farfalla motorizzata (2) e lo confronta con quello ottimale calcolato nel modo descritto in precedenza. Se i due valori sono differenti, la ECM regola di conseguenza (in un range che va dal 100% allo 0%) la percentuale del ciclo di lavoro utile del dispositivo di controllo attuatore farfalla per comandare l&#39;attuatore (4) stesso nel corpo farfalla motorizzata). Se non esiste differenza, l&#39;ECM fissa la percentuale del ciclo di lavoro utile a circa il 15% per mantenere l&#39;apertura della valvola a farfalla. In questo modo la valvola a farfalla (13) viene aperta o chiusa in modo che il suo valore d’apertura sia sempre quello ottimale.
+</ptxt>
+<ptxt>
+In questo sistema, i sensori TP e APP sono costituiti ciascuno da 2 sensori (principale e secondario), al fine di garantire un controllo altamente preciso ed affidabile e il rilevamento di ogni eventuale anomalia. Quando l&#39;ECM rileva un&#39;anomalia del sistema, interrompe il controllo dell&#39;attuatore della farfalla.
+</ptxt>
+<ptxt>
+In questo tipo di sistema il corpo farfallato non è dotato di valvola IAC per la regolazione del regime minimo. Il controllo velocità regime minimo è svolto dall&#39;attuatore farfalla regolando l&#39;apertura della valvola stessa.
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110003.swf" width = "183.000mm" height = "77.831mm" ver = "01" gw = "441" gh = "204"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.331in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.197in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.331in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.165in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.331in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.802in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CPU
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale sensore APP (secondario)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito di comando attuatore farfalla
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Eccitatore attuatore farfalla
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale sensore TP (principale)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale del sensore APP (principale)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito segnale del sensore TP (secondario)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

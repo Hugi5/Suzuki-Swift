@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70AA104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Controllo sistema Cruise control
+</title>
+<diag type = "test" id = "AITAP70AA104001001">
+<testgroup id = "AITAP70AA104001002">
+<test1>
+<ptxt>
+Annotare il problema descrivendolo nel dettaglio. A questo scopo, l&#39;uso di un questionario faciliterà la raccolta delle informazioni necessarie per un&#39;approfondita analisi e una corretta diagnosi.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verificare se il problema lamentato dal cliente e riportato nel 
+<intxref refid = "AITAP70AA104002">Questionario per il cliente (esempio)</intxref>
+ trova riscontro. (Se possibile, svolgere questa verifica con il cliente).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verificare la presenza di DTC nelle centraline ECM e ESP<sup>®</sup>, quindi registrare i DTC.
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC non relativi al sistema Cruise control (ossia DTC P0504, P0575 e P0649)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare alla ricerca guasti relativa al DTC corrispondente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70AA104001003">
+<question>
+Sono presenti DTC relativi al sistema Cruise control?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare alla ricerca guasti relativa ai DTC corrispondenti e procedere con il passo 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70AA104001004">
+<test1>
+<ptxt>
+Ispezionare e riparare i componenti di base facendo riferimento a 
+<intxref refid = "AITAP70AA104007">Diagnosi del sistema Cruise control basata sui sintomi</intxref>
+ .
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose, quindi andare al passo 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70AA104001005">
+<test1>
+<ptxt>
+Controllare la presenza di guasti intermittenti, facendo riferimento a 
+<intxref refid = "AITAP70A0006002">Controllo presenza di connessioni difettose e contatti intermittenti</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire le parti difettose, quindi andare al passo 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70AA104001006">
+<test1>
+<ptxt>
+Verificare se il problema è stato risolto e se il sistema Cruise control funziona correttamente. Se la riparazione effettuata è in relazione al guasto indicato dal DTC, cancellare quest’ultimo e assicurarsi che non vengano segnalati altri DTC.
+</ptxt>
+</test1>
+<question>
+Sono presenti sintomi di malfunzionamento, DTC o condizioni anomale?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al punto 2) del passo 1 e ripetere la procedura di ricerca guasti.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

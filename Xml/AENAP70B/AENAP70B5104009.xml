@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104009" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+A/T Basic Check
+</title>
+<ptxt>
+This check is important for troubleshooting when TCM has detected no DTC and no abnormality has been noted in 
+<intxref refid = "AENAP70B5104008">Visual Inspection</intxref>
+. Follow the flow carefully.
+</ptxt>
+<diag type = "test" id = "AENAP70B5104009001">
+<testgroup id = "AENAP70B5104009002">
+<question>
+Was “A/T Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B5104001">A/T Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009003">
+<title>
+Road test
+</title>
+<test1>
+<ptxt>
+Perform road test. 
+<intxreftitleoff1 refid = "AENAP70B5104010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009004">
+<title>
+Manual road test
+</title>
+<test1>
+<ptxt>
+Perform manual road test. 
+<intxreftitleoff1 refid = "AENAP70B5104011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009005">
+<title>
+Engine brake test
+</title>
+<test1>
+<ptxt>
+Perform engine brake test. 
+<intxreftitleoff1 refid = "AENAP70B5104012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009006">
+<title>
+Stall test
+</title>
+<test1>
+<ptxt>
+Perform stall test. 
+<intxreftitleoff1 refid = "AENAP70B5104013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009007">
+<title>
+Time lag test
+</title>
+<test1>
+<ptxt>
+Perform time lag test. 
+<intxreftitleoff1 refid = "AENAP70B5104014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009008">
+<title>
+Line pressure test
+</title>
+<test1>
+<ptxt>
+Perform line pressure test. 
+<intxreftitleoff1 refid = "AENAP70B5104015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is it OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009009">
+<ptxt>
+Proceed to “Trouble Diagnosis 1” in 
+<intxref refid = "AENAP70B5104017">A/T Symptom Diagnosis</intxref>
+.
+</ptxt>
+<question>
+Is trouble identified?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repair or replace faulty parts.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 9.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104009010">
+<ptxt>
+Proceed to “Trouble Diagnosis 2” in 
+<intxref refid = "AENAP70B5104017">A/T Symptom Diagnosis</intxref>
+.
+</ptxt>
+<question>
+Is trouble identified?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repair or replace faulty parts.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Proceed to “Trouble Diagnosis 3” in 
+<intxref refid = "AENAP70B5104017">A/T Symptom Diagnosis</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

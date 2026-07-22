@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A7224028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1557 / B1561 / B1563
+</title>
+<servinfosub id = "AITAP70A7224028001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.922in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.288in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1557: Malfunzionamento del sensore velocità ruota e/o del relativo circuito
+</emph>
+</ptxt>
+<ptxt>
+La centralina HVAC riceve dati non validi del segnale sensore velocità veicolo dalla ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore velocità ruota
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1561: Malfunzionamento del sensore della temperatura del liquido di raffreddamento del motore e/o del relativo circuito
+</emph>
+</ptxt>
+<ptxt>
+La centralina HVAC riceve dati non validi del segnale ECT dalla ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1563: Malfunzionamento del sensore della pressione del fluido refrigerante A/C e/o del relativo circuito
+</emph>
+</ptxt>
+<ptxt>
+La centralina HVAC riceve dati non validi del segnale pressione del fluido refrigerante A/C dalla ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore della pressione del fluido refrigerante A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A7224028002">
+<title>
+Procedura di conferma DTC
+</title>
+<attention3>
+<ptxt>
+Quando si esegue questa procedura, assicurarsi che sia soddisfatta la seguente condizione:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+DTC U0073, U0100, U0140 e/o U0155 assenti
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Avviare il motore ed attivare l&#39;impianto A/C.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+B1557: Marciare per circa 1 minuto.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AITAP70A7224028003">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A7224028004">
+<testgroup id = "AITAP70A7224028005">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Controllare la presenza di DTC nell&#39;ECM. 
+<intxreftitleoff1 refid = "AITAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fare riferimento alla procedura diagnostica relativa al DTC rilevato. 
+<intxreftitleoff1 refid = "AITAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire la centralina HVAC e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

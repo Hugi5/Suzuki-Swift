@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENCP70A5504018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "1">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "AENCP70A5504018001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<attention3>
+<ptxt>
+After reprogramming of TCM is executed, if DTC P0602 is indicated, it is possible that the reprogramming of TCM is not completed correctly.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.342in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.857in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph etype = "bold">
+P0602: Control Module Programming Error
+</emph>
+</ptxt>
+<ptxt>
+TCM internal failure (data programming error)
+</ptxt>
+<ptxt>
+(1 D/C detection logic but transmission warning light does not light up)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Reprogramming of TCM failure
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENCP70A5504018002">
+<title>
+DTC Confirmation Procedure
+</title>
+<s1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AENCP70A5504018003">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENCP70A5504018004">
+<testgroup id = "AENCP70A5504018005">
+<question>
+Was “CVT System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENCP70A5504001">CVT System Check</intxref>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504018006">
+<title>
+DTC check
+</title>
+<question>
+Is there any DTC(s) other than P0602?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504018007">
+<title>
+Reprogramming operation procedure check and equipment preparation
+</title>
+<question>
+Is there a problem with reprogramming operation procedure, SUZUKI scan tool or DLC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Check the operation procedures and inspect SUZUKI scan tool and DLC.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENCP70A5504018008">
+<title>
+TCM reprogramming
+</title>
+<question>
+Was reprogramming of TCM executed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Intermittent trouble. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace TCM and execute reprogramming again. 
+<intxreftitleoff1 refid = "AENCP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

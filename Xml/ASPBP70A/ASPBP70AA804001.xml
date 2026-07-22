@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70AA804001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Inspección de la comunicación CAN
+</title>
+<ptxt>
+Con la herramienta de escaneado SUZUKI, ejecute &#34;DTC avería sist com&#34; en &#34;Comprobación del bus&#34; y compruebe los DTC de todos los módulos de control conectados al bus de comunicación CAN.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.854in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.854in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.457in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Estado
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Acción
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Referencia
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sólo se detecta un DTC del historial en cualquiera de los sistemas
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Compruebe el DTC como se indica a continuación: 
+</ptxt>
+<list1 type = "ordered">
+<item>
+<ptxt>
+Desconecte y conecte los conectores de todos los módulos de control y del sensor conectados a la línea de comunicación CAN.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Compruebe las fuentes de alimentación de todos los módulos de control (incluyendo los fusibles) conectadas a la línea de comunicación CAN.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Arranque el motor y compruebe el DTC mientras está en régimen de ralentí
+</ptxt>
+<ptxt>
+Si el DTC detectado es un DTC del historial, podría tratarse de una avería temporal debido a una mala conexión en el conector o una alimentación eléctrica defectuosa.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Se ha detectado &#34;Bus Mod Control Off&#34; en uno de los sistemas (DTC actual)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Realice la &#34;Localización y reparación de averías para bus de comunicación apagado&#34;
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+<intxreftitleoff1 refid = "ASPBP70AA804004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Sólo se detecta la pérdida de comunicación en uno de los sistemas (DTC actual)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Realice el procedimiento de &#34;Localización y reparación de averías para la pérdida de comunicación&#34;.
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+<intxreftitleoff1 refid = "ASPBP70AA804003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+No se visualiza nada en la herramienta de escaneado SUZUKI (no es posible establecer comunicación con todos los sistemas).
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Compruebe si la herramienta de escaneado SUZUKI se encuentra en buen estado conectándola a otro vehículo.
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Realice el procedimiento de &#34;Localización y reparación de averías para la pérdida de comunicación&#34;.
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+<intxreftitleoff1 refid = "ASPBP70AA804003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

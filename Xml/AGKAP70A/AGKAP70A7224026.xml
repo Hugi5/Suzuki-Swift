@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A7224026" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1546
+</title>
+<servinfosub id = "AGKAP70A7224026001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.937in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.274in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1546: Δυσλειτουργία πίεσης ψυκτικού κλιματισμού 
+</emph>
+</ptxt>
+<ptxt>
+Η πίεση ψυκτικού κλιματισμού είναι μικρότερη από την καθορισμένη τιμή, παρόλο που η εξωτερική θερμοκρασία είναι μεγαλύτερη από την καθορισμένη τιμή.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Αισθητήρας πίεσης ψυκτικού υγρού του κλιματισμού A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+Αισθητήρας θερμοκρασίας εξωτερικού αέρα
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ανεπάρκεια ψυκτικού υγρού
+</ptxt>
+</item>
+<item>
+<ptxt>
+Εγκέ&#248;αλος HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A7224026002">
+<title>
+Διαδικασία Επιβεβαίωσης Κωδικού Βλάβης DTC
+</title>
+<s1>
+<ptxt>
+Ξεκινήστε τον κινητήρα και λειτουργήστε το σύστημα κλιματισμού A/C.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGKAP70A7224026003">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A7224026004">
+<testgroup id = "AGKAP70A7224026005">
+<title>
+Έλεγχος πίεσης ψυκτικού υγρού κλιματισμού
+</title>
+<test1>
+<ptxt>
+Ενεργοποιήστε τον διακόπτη A/C και λειτουργήστε τον συμπιεστή κλιματισμού.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ελέγξτε το &#34;Πίεση ψυκτικού&#34; χρησιμοποιώντας τη λειτουργία &#34;Κατάλογος δεδομένων&#34; στο διαγνωστικό εργαλείο SUZUKI. 
+<intxreftitleoff1 refid = "AGKAP70A7224008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι η πίεση πάνω από 0,34 MPa;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πληρώστε με ψυκτικό και επανελέγξτε τον Κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A7226001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A7224026006">
+<title>
+Έλεγχος του αισθητήρα πίεσης ψυκτικού υγρού του κλιματισμού
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τον αισθητήρα πίεσης ψυκτικού υγρού του κλιματισμού A/C. 
+<intxreftitleoff1 refid = "AGKAP70A7226022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ο αισθητήρας είναι σε καλή κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Αντικαταστήστε τον αισθητήρα πίεσης ψυκτικού υγρού του κλιματισμού A/C. 
+<intxreftitleoff1 refid = "AGKAP70A7226023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A7224026007">
+<title>
+Έλεγχος αισθητήρα θερμοκρασίας εξωτερικού αέρα
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τον αισθητήρα θερμοκρασίας εξωτερικού αέρα. 
+<intxreftitleoff1 refid = "AGKAP70AA206005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ο αισθητήρας είναι σε καλή κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Αντικαταστήστε τον αισθητήρα θερμοκρασίας εξωτερικού αέρα. 
+<intxreftitleoff1 refid = "AGKAP70AA206004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A7224026008">
+<title>
+Έλεγχος συστήματος A/C
+</title>
+<test1>
+<ptxt>
+Ελέγξτε το σύστημα A/C. 
+<intxreftitleoff1 refid = "AGKAP70A7224001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Βρίσκεται σε καλή κατάσταση το σύστημα;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε τη μονάδα ελέγχου HVAC και επανελέγξτε τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Εκτελέστε 
+<intxref refid = "AGKAP70A7224002">Διάγνωση Προβλημάτων για Ανώμαλη Πίεση:Αυτόματος Τύπος</intxref>
+ και ελέγξτε πάλι τον κωδικό DTC.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

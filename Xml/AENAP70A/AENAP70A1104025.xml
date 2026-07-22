@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70A1104025" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0131 / P0132 / P2237 / P2243 / P2251/ P2626
+</title>
+<servinfosub id = "AENAP70A1104025001">
+<title>
+DTC Detecting Condition and Trouble Area
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.872in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.303in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+DTC detecting condition
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Trouble area
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0131: O2 Sensor Circuit Low Voltage
+</emph>
+</ptxt>
+<ptxt>
+Any of the following conditions is met. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (VM) circuit is lower than specified value for 10 sec. with engine running.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (UN) circuit is lower than specified value for 10 sec. with engine running.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (IA) circuit is lower than specified value for 10 sec. with engine running.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 D/C detection logic)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/F sensor and/or its circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0132: O2 Sensor Circuit High Voltage
+</emph>
+</ptxt>
+<ptxt>
+Any of the following conditions is met. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (VM) circuit is higher than specified value for 10 sec. with engine running.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (UN) circuit is higher than specified value for 10 sec. with engine running.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (IA) circuit is higher than specified value for 10 sec. with engine running.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2237: O2 Sensor Positive Current Control Circuit / Open
+</emph>
+</ptxt>
+<ptxt>
+Any of the following conditions is met.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A/F sensor signal stays within specified value for specified time.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (IP) circuit drops to lower than 1.7 V for 5 sec. during fuel-cut control.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (IP) circuit remains within specified range for 10 sec. even during enrichment / enleanment control.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2243: O2 Sensor Reference Voltage Circuit / Open
+</emph>
+</ptxt>
+<ptxt>
+Any of the following conditions is met.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (UN) circuit is higher than 4.7 V for 5 sec. with engine running.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Output voltage of A/F sensor signal (UN) circuit is lower than 0.3 V for 5 sec. with engine running.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2251: O2 Sensor Negative Current Control Circuit / Open
+</emph>
+</ptxt>
+<ptxt>
+Output voltage of A/F sensor signal (VM) circuit is 1.47 to 1.53 V for 5 sec.
+</ptxt>
+<ptxt>
+(3 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P2626: O2 Sensor Pumping Current Trim Circuit / Open
+</emph>
+</ptxt>
+<ptxt>
+Output voltage of A/F sensor signal (IA) circuit is higher than 4.8 V for 5 sec. with engine running.
+</ptxt>
+<ptxt>
+(3 D/C detection logic)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENAP70A1104025002">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "I9P60A111012.swf" width = "183.000mm" height = "121.825mm" ver = "02" gw = "440" gh = "329"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.662in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.970in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.699in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM connector (View: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A6:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor heater drive circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor adjusting resistor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor heater power supply circuit
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S heater power supply circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor connector
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor signal circuit (IA)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S signal circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Shield wire
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor signal circuit (IP)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S ground circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor signal circuit (VM)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S heater drive circuit
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F signal processing unit
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A5:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor signal circuit (UN)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F sensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENAP70A1104025003">
+<title>
+DTC Confirmation Procedure
+</title>
+<topic id = "AENAP70A1104025004">
+<title>
+P0131 / P0132
+</title>
+<attention3>
+<ptxt>
+Confirm that the following condition is met in this “DTC Confirmation Procedure”.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Battery voltage &#62; 10.7 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Run engine at idle speed for 30 sec.
+</ptxt>
+</s1>
+</topic>
+<topic id = "AENAP70A1104025005">
+<title>
+P2237 / P2626
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Perform road test in a place where there is no traffic to prevent an accident.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Road test should be performed by two persons, a driver and a tester, on a level road.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Be sure to troubleshoot first unexpected DTCs previously detected in “DTC Confirmation Procedure”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Confirm that the following conditions are met in this “DTC Confirmation Procedure”.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Battery voltage &#62; 10.7 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0030, P0031, P0032, P0443, P0458 or P0459 is not detected.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Start engine and warm up to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Run engine at idle speed for 3 min.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Drive vehicle at 50 to 80 km/h (31 to 50 mile/h) constantly for 10 min. or more.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Release accelerator pedal, and keep vehicle coasting for 5 sec. with engine braking applied (fuel cut condition).
+</ptxt>
+</s1>
+</topic>
+<topic id = "AENAP70A1104025006">
+<title>
+P2243 / P2251
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Be sure to troubleshoot first unexpected DTCs previously detected in “DTC Confirmation Procedure”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Confirm that the following conditions are met in this “DTC Confirmation Procedure”.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Battery voltage &#62; 10.7 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0030, P0031 or P0032 is not detected.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Start engine and warm up to normal operating temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Run engine at idle speed for 3 min.
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "AENAP70A1104025007">
+<title>
+DTC Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70A1104025008">
+<testgroup id = "AENAP70A1104025009">
+<question>
+Was “Engine and Emission Control System Check” performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70A1104001">Engine and Emission Control System Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A1104025010">
+<title>
+DTC check
+</title>
+<question>
+Is there any DTC(s) other than P0131, P0132, P2237, P2243, P2251 and P2626?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A1104025011">
+<title>
+A/F sensor signal circuit check
+</title>
+<test1>
+<ptxt>
+When ignition is “OFF”, disconnect “C01” and “E01” connectors of ECM and A/F sensor connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper terminal connection to “C01” and “E01” connectors and A/F sensor connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check the following points.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistance of “A2”, “A3”, “A4” and “A5” circuits: less than 1 Ω
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between each of “A2”, “A3”, “A4” and “A5” circuits and ground: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “A2” circuit terminal and other terminal at A/F sensor connector: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “A3” circuit terminal and other terminal at A/F sensor connector: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “A4” circuit terminal and other terminal at A/F sensor connector: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistance between “A5” circuit terminal and other terminal at A/F sensor connector: infinity
+</ptxt>
+</item>
+<item>
+<ptxt>
+Voltage of “A2”, “A3”, “A4” and “A5” circuits: 0 to 1 V (when ignition is “ON”)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70A1104025012">
+<title>
+DTC recheck
+</title>
+<test1>
+<ptxt>
+Replace A/F sensor. 
+<intxreftitleoff1 refid = "AENAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform DTC confirmation procedure to check for DTCs.
+</ptxt>
+</test1>
+<question>
+Is DTC P0131, P0132, P2237, P2243, P2251 and/or P2626 still detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

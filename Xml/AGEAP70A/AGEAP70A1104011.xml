@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104011" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+MIL leuchtet nicht auf, wenn die Zündung bei abgestelltem Motor auf &#34;ON&#34; gestellt wird (Motor kann aber gestartet werden)
+</title>
+<servinfosub id = "AGEAP70A1104011001">
+<title>
+Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A1104011002">
+<testgroup id = "AGEAP70A1104011003">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+DTC bezüglich CAN-Kommunikation überprüfen.
+</ptxt>
+</test1>
+<question>
+Werden CAN-DTC(s) erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104011004">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+Prüfen, ob DTC für Kombiinstrument vorliegt.
+</ptxt>
+</test1>
+<question>
+Liegen DTC(s) vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+ECM austauschen und MIL erneut prüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

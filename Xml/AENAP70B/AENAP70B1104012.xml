@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B1104012" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+MIL Remains ON after Engine Starts
+</title>
+<servinfosub id = "AENAP70B1104012001">
+<title>
+Troubleshooting
+</title>
+<diag type = "test" id = "AENAP70B1104012002">
+<testgroup id = "AENAP70B1104012003">
+<title>
+DTC check
+</title>
+<test1>
+<ptxt>
+Start engine and recheck DTC of ECM and TCM while engine running.
+</ptxt>
+</test1>
+<question>
+Is there any DTC(s)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to troubleshooting for applicable MIL operation.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Substitute a known-good combination meter and recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70B9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+If MIL still remains ON, replace ECM and recheck MIL operation. 
+<intxreftitleoff1 refid = "AENAP70B1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

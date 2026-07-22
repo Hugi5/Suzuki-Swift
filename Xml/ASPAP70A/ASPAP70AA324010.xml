@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70AA324010" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1644
+</title>
+<servinfosub id = "ASPAP70AA324010001">
+<title>
+Condición de detección del DTC y área afectada 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.166in"/>
+<colspec colnum = "2" colname = "2" colwidth = "4.039in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1644: El ID del inmovilizador no coincide 
+</emph>
+</ptxt>
+<ptxt>
+Error de verificación entre el ECM y el módulo de control de arranque sin llave. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Mando a distancia 
+</ptxt>
+</item>
+<item>
+<ptxt>
+El código ID del ECM no está registrado en el módulo de control de arranque sin llave. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+El mando a distancia no está registrado 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Conector/circuito del interruptor del motor 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor del motor 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuito de alimentación eléctrica/de masa del módulo de control de arranque sin llave 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de arranque sin llave 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70AA324010002">
+<title>
+Localización y reparación de la avería correspondiente al DTC 
+</title>
+<attention3>
+<ptxt>
+Si el módulo de control de arranque sin llave fue registrado con otro vehículo (artículo utilizado), no se pueden registrar mandos a distancia. Instale siempre un módulo de control de arranque sin llave nuevo si es necesario realizar una sustitución. 
+</ptxt>
+</attention3>
+<diag type = "test" id = "ASPAP70AA324010003">
+<testgroup id = "ASPAP70AA324010004">
+<title>
+Verificación de DTC 
+</title>
+<test1>
+<ptxt>
+Verificación del DTC en el módulo de control de arranque sin llave. 
+<intxreftitleoff1 refid = "ASPAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se detecta también el DTC B1189? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70AA324018">DTC B1189:Modelo con sistema de arranque por pulsación sin llave</intxref>
+. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 2. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70AA324010005">
+<title>
+Nueva comprobación del DTC. 
+</title>
+<test1>
+<ptxt>
+Compruebe que el mando a distancia está en la zona de actuación de la función de arranque del motor sin llave. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Asegúrese de que el interruptor de encendido está en la posición &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Conecte el encendido (posición &#34;ON&#34;). 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P1644? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección. (Es posible sacar el mando a distancia fuera de la zona de actuación). 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70AA324010006">
+<title>
+Comprobación del circuito de alimentación eléctrica y de masa del módulo de control de arranque sin llave 
+</title>
+<test1>
+<ptxt>
+Inspeccione el circuito de alimentación eléctrica y de masa del módulo de control de arranque sin llave. 
+<intxreftitleoff1 refid = "ASPAP70AA504031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Está en buenas condiciones? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70AA324010007">
+<title>
+Registro del ECM 
+</title>
+<test1>
+<ptxt>
+Efectúe 
+<intxref refid = "ASPAP70AA326003">Registro del ECM:Modelo con sistema de arranque por pulsación sin llave</intxref>
+. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P1644? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección. (No se ha registrado el ECM) 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70AA324010008">
+<title>
+Registro del mando a distancia 
+</title>
+<test1>
+<ptxt>
+Realice el &#34;Registro de la llave del inmovilizador&#34;. 
+<intxreftitleoff1 refid = "ASPAP70AA326002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Asegúrese de que el interruptor de encendido está en la posición &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Conecte el encendido (posición &#34;ON&#34;). 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P1644? 
+</question>
+<result type = "yes"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. Si sigue detectándose el DTC P1644, sustituya el módulo de control de arranque sin llave y vuelva a realizar la comprobación de DTC. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+ECM: 
+<intxreftitleoff1 refid = "ASPAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de arranque sin llave: 
+<intxreftitleoff1 refid = "ASPAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección. (El mando a distancia no se ha registrado) 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

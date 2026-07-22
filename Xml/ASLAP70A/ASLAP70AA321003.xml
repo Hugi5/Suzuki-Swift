@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70AA321003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Popis postupu štartovania motora
+</title>
+<ptxt>
+V prípade vybitej batérie diaľkového ovládača sa vyskytne systémová chyba a/alebo je deaktivovaný systém bezkľúčového štartovania, postup štartovania motora je nasledovný.
+</ptxt>
+<s1>
+<ptxt>
+Po stlačení spojkového pedála vysiela modul bezkľúčového štartovania signál kontrolke PUSH pomocou komunikácie CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Spínač motora.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Riadiaca jednotka bezkľúčového štartovania vysiela signál kontrolky imobilizéra a kontrolka signálu PUSH cez komunikáciu CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Dajte diaľkový ovládač na spínač motora na pribl. 2 sekundy zatiaľ čo združený merač rozbliká kontrolku PUSH.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Riadiaca jednotka bezkľúčového štartovania načíta kód transpondéra diaľkového ovládača cez anténu imobilizéra, ktorá je v spínači motora.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Riaiace relé štartovania motora sa zapne a začne sa štartovanie motora, požiadavka na uvoľnenie zámky volantu sa vyšle cez sériovú komunikáciu a správa sa odošle do ECM, aby sa povolilo naštartovanie motora iba ak sa kód transpondéra zhoduje so zaregistrovaným kódom.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Keď sa kód transpondéra nezhoduje so zaregistrovaným kódom, riadiaca jednotka bezkľúčového štartovania nezapne riadiace relé štartovania motora a zakáže činnosť štartovania motora.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA32001V.swf" width = "88.000mm" height = "12.350mm" ver = "03" gw = "501" gh = "365"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

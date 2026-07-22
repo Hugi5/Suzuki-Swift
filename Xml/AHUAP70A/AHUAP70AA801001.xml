@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Kommunikációs rendszer leírása
+</title>
+<servinfosub id = "AHUAP70AA801001001">
+<title>
+A rendszer leírása
+</title>
+<ptxt>
+A vezérlőmodulok és a berendezések között a kommunikáció a különböző adatokat tartalmazó, párhuzamosan kezelendő ON/OFF digitális jelek folyamatos fogadásával és küldésével történik. A fenti adatok továbbítását/fogadását soros kommunikációs interfésznek nevezzük.
+</ptxt>
+<ptxt>
+A járművön belüli kommunikációs rendszerek soros kommunikációs interfész típusokat alkalmaznak, úgymint UART, CAN és LIN protokollok (kommunikációs szabványok).
+</ptxt>
+<ptxt>
+Az UART a kulcsnélküli indítás vezérlőmodul és a kormányzár egység közötti kommunikációra szolgál.
+</ptxt>
+<ptxt>
+A LIN a műszeregység és a parkolásérzékelő rendszer vezérlőmodulja, illetve a HVAC vezérlőmodul és az automatikus A/C panelje közötti kommunikációt biztosítja.
+</ptxt>
+<ptxt>
+Ezen kívül a kulcsnélküli indítás vezérlőmodulja (nyomógombos indítórendszerrel szerelt modell), A BCM, az ECM, a műszeregység, a szervokormány-vezérlő modul, a HVAC vezérlőmodul (automatikus A/C-vel szerelt modell), az ESP<sup>®</sup> vezérlőmodul, az SDM és a kormányszög-érzékelő küld és fogad adatokat a CAN kommunikáció csavart érpárján (CAN magas jelszint és CAN alacsony jelszint) keresztül. Egy vezérlőmodul által begyűjtött adatok CAN kommunikáció útján más vezérlőmodulokkal is megoszthatók.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHUAP70AA801001002">
+<title>
+CAN kommunikációs jel
+</title>
+<ptxt>
+A CAN kommunikációs rendszer soros kommunikációs rendszer, mely nagyszámú adatot (érzékelők, vezérlőegységek és vezérlő jelek értékeit) továbbít ON-OFF digitális jelekként a kommunikációs vezetéken. A rendszer két vezetéket használ (CAN magas és CAN alacsony) a kommunikációs áramkörben, nagy sebességű kommunikáció meleltt is kiváló megbízhatóságot szavatolva ezzel. 
+</ptxt>
+<ptxt>
+A soros kommunikáció az alábbi ábra szerint valósul meg 2,5 V feszültségű referencia szinttel a CAN magas jel (1) és a CAN alacsony jel (2) esetén is. A CAN magas jel tartománya 2,5 V -tól kb. 3,5 V-ig, míg a CAN alacsony jel tartománya 2,5 V -tól kb. 1,5 V-ig terjed. Amikor mindkettő értéke 2,5 V, a jelet a rendszer OFF állapotként értelmezi. Ha a CAN magas jel 3,5 V és a CAN alacsony jel 1,5 V (azaz, ha a magas és az alacsony feszültség közötti különbség nagyobb mint 2 V) a jelet a rendszer ON állapotként értelmezi. Ebből az okból, a CAN kommunikációs jel sajátossága, hogy a jel hullámformája szimmetrikus a CAN magas és a CAN alacsony jelek között a 2,5 V szintre. A CAN kommunikációban hiba jelentkezik, ha a jelforma szimmetriája megszűnik.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002H.swf" width = "183.000mm" height = "47.375mm" ver = "01" gw = "338" gh = "118"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

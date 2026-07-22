@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPAP70BA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Introducción al sistema de control del inmovilizador
+</title>
+<ptxt>
+Cuando el interruptor de encendido está en la posición “ON”, la antena de bobina del inmovilizador recibe el código del transpondedor de la llave de encendido.
+</ptxt>
+<ptxt>
+A continuación, la antena de bobina del inmovilizador transmite el código del transpondedor recibido al BCM a través de la comunicación en serie.
+</ptxt>
+<ptxt>
+El BCM compara el código del transpondedor con el que ya está registrado en el BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Si ambos coinciden, el BCM envía una señal de permiso de arranque del motor al ECM a través de la comunicación CAN.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si ambos no coinciden, el BCM envía una señal de prohibición de arranque del motor al ECM a través de la comunicación CAN.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Si recibe la señal de prohibición de arranque del motor, el ECM corta la inyección de combustible e impide que el motor se ponga en marcha.
+</ptxt>
+<ptxt>
+Al mismo tiempo, el BCM o el ECM envía una señal al juego de instrumentos para solicitar el encendido o el parpadeo de la luz indicadora del inmovilizador. Al iluminar o hacer parpadear la luz indicadora del inmovilizador, el conductor advierte que algo no va bien.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001S.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "496" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10B">
+<servcat sctnbr = "10" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70BA204003" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+DTC Check
+</title>
+<s1>
+<ptxt>
+Confirm that ignition is “OFF”.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Connect SUZUKI scan tool to DLC (1).
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L10B001">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+SUZUKI scan tool (SUZUKI-SDT)
+</s-number>
+<ptxt>
+</ptxt>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I9P60A121001.jpg" width = "88.000mm" height = "67.502mm" ver = "02" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Set ignition “ON”.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Read DTC according to instructions displayed on SUZUKI scan tool and print it or write it down. Refer to SUZUKI scan tool operator’s manual for further details.
+</ptxt>
+<attention3>
+<ptxt>
+If communication between SUZUKI scan tool and BCM is not possible, check related items according to the following points for recovery.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+SUZUKI scan tool and communication cable
+</ptxt>
+</item>
+<item>
+<ptxt>
+DLC power circuit and ground circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN communication system malfunction (“Control Module Communication Bus Off” is detected in any control module.)
+</ptxt>
+</item>
+</list1>
+</attention3>
+</s1>
+<s1>
+<ptxt>
+After completing the check, set ignition “OFF” and disconnect SUZUKI scan tool from DLC.
+</ptxt>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

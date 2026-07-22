@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70AA104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Inspección del sistema de control de crucero
+</title>
+<diag type = "test" id = "ASPBP70AA104001001">
+<testgroup id = "ASPBP70AA104001002">
+<test1>
+<ptxt>
+Registre los detalles del problema. Si utiliza un cuestionario para realizar sus anotaciones, recopilará más fácilmente toda la información necesaria para un análisis y diagnóstico adecuados.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si el problema descrito en 
+<intxref refid = "ASPBP70AA104002">Formulario de análisis de la queja del cliente</intxref>
+ se está produciendo en el vehículo. (si es posible, realice este paso con el cliente).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si hay DTC en el ECM, el módulo de control del ESP<sup>&#174;</sup> y el TCM (modelo con CVT) y, si los hay, regístrelos.
+</ptxt>
+</test1>
+<question>
+¿Hay algún DTC que no esté relacionado con el sistema de control de crucero (aparte de los DTC P0504, P0575 y P0649)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70AA104001003">
+<question>
+¿Se muestra algún DTC relacionado con el sistema de control de crucero?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la sección de localización y reparación de averías del DTC correspondiente y, después, al Paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70AA104001004">
+<test1>
+<ptxt>
+Inspeccione y repare las piezas básicas; consulte 
+<intxref refid = "ASPBP70AA104007">Diagnóstico de síntomas del sistema de control de crucero</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Existen anomalías?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repare o sustituya las piezas averiadas y vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70AA104001005">
+<test1>
+<ptxt>
+Compruebe si hay problemas intermitentes; para ello, consulte 
+<intxref refid = "ASPBP70A0006002">Inspección de conexión intermitente y contacto deficiente</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Existen anomalías?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repare o sustituya las piezas averiadas y vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70AA104001006">
+<test1>
+<ptxt>
+Verifique que el problema ha desaparecido y que el sistema de control de crucero no presenta ninguna anomalía. Si la reparación realizada está relacionada con el DTC, bórrelo una vez y confirme que no aparece ningún otro DTC.
+</ptxt>
+</test1>
+<question>
+¿Hay algún síntoma de problema, DTC o anomalía?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al punto 2) del Paso 1 y realice de nuevo el procedimiento de localización y reparación de averías.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

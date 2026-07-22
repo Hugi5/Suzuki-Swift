@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A4604022" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C102A
+</title>
+<servinfosub id = "AHRAP70A4604022001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C102A: Neprestani rad ABS kontrole
+</emph>
+</ptxt>
+<ptxt>
+ABS kontrola neprestano utječe na rad svih kotača.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<ptxt>
+Pri načinu rada u slučaju naglog zaustavljanja, kad upravljački modul ESP<sup>®</sup>-a zaustavi kontrolu, isključuje se svjetlo upozorenja, ali DTC se zadržava kao postojeći DTC tijekom aktualnog ciklusa paljenja.
+</ptxt>
+<ptxt>
+Normalno je da DTC postane povijesni DTC nakon što se isključeni kontakt uključi.
+</ptxt>
+</attention3>
+</servinfosub>
+<servinfosub id = "AHRAP70A4604022002">
+<title>
+Rješavanje problema DTC-a
+</title>
+<diag type = "test" id = "AHRAP70A4604022003">
+<testgroup id = "AHRAP70A4604022005">
+<question>
+Je li izvršena “Provjera ESP<sup>®</sup> sustava”?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A4604001">Provjera ESP® sustava</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604022004">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70A4604005">Provjera DTC-a</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je li otkriven DTC C102A?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite sklop hidrauličkog uređaja/upravljačkog modula ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

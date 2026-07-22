@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA504015" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1134
+</title>
+<servinfosub id = "ASLAP70AA504015001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.118in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.087in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1134: Výstraha o slabej batérii diaľkového ovládača
+</emph>
+</ptxt>
+<ptxt>
+Signál vybitia batérie diaľkového ovládača je prijatý z diaľkového ovládača.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Batéria diaľkového ovládača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Diaľkový ovládač
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70AA504015002">
+<title>
+Postup potvrdenia DTC
+</title>
+<attention3>
+<ptxt>
+Pripravte všetky zaregistrované diaľkové ovládače pred vykonaním procesu potvrdenia DTC.
+</ptxt>
+</attention3>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrďte, že nastavenie “Remote Controller Battery Warning” je v režime “Active”. 
+<intxreftitleoff1 refid = "ASLAP70AA504009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Diaľkový ovládač dajte do oblasti prevádzky bezkľúčového štartovania motora a zatvore dvere viac, ako 2-krát.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Krok 3) opakujte 6-krát.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Vykonajte krok 3) a 4) so všetkými zaregistrovanými diaľkovými ovládačmi.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70AA504015003">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70AA504015004">
+<testgroup id = "ASLAP70AA504015005">
+<title>
+Kontrola diaľkového ovládača
+</title>
+<test1>
+<ptxt>
+Pripravte si zaregistrovaný diaľkový ovládač.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spánač zapaľovania dajte do polohy “ON” s diaľkovým ovládačom.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skotrolujte, či na združenom merači nesvieti výstražná kontrolka spotreby batéria diaľkového ovládača.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vykonajte krok 2) až 4) pre všetky diaľkové ovládače.
+</ptxt>
+</test1>
+<question>
+Nesvieti na združenom merači výstražná kontrolka spotreby batéria diaľkového ovládača?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec. (V minulosti bol zistený signál vybitia batérie diaľkového ovládača. (DTC nie je vymazané))
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA504015006">
+<title>
+Kontrola batérie diaľkového ovládača
+</title>
+<test1>
+<ptxt>
+Vymeňte batériu v príslušnom diaľkovom ovládači za novú. 
+<intxreftitleoff1 refid = "ASLAP70AA506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vymažte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA504004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vykonajte 
+<intxref refid = "ASLAP70AA504015002">Postup potvrdenia DTC</intxref>
+ a potom znovu skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA504003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ešte stále sa zisťuje DTC B1134?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte diaľkový ovládač a opätovne skontrolujte DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

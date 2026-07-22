@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B5104050" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+ La luz de advertencia de la transmisión no se enciende al colocar el encendido en la posición &#34;ON&#34; (modelos no Euro-OBD)
+</title>
+<servinfosub id = "ASPAP70B5104050001">
+<title>
+Localización y reparación de averías
+</title>
+<diag type = "test" id = "ASPAP70B5104050002">
+<testgroup id = "ASPAP70B5104050003">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Verifique los DTC relacionados con la comunicación CAN.
+</ptxt>
+</test1>
+<question>
+¿Se detecta algún DTC relacionado con la CAN?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B5104050004">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Compruebe los DTC del juego de instrumentos.
+</ptxt>
+</test1>
+<question>
+¿Aparece algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Reemplace un módulo de TCM en buen estado y vuelva a realizar la comprobación del funcionamiento de la luz de advertencia de la transmisión. 
+<intxreftitleoff1 refid = "ASPAP70B5106030"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

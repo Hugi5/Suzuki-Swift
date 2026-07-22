@@ -1,0 +1,1256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70AA804003" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Fehlersuche bei Kommunikationsabbruch
+</title>
+<servinfosub id = "AGEAP70AA804003001">
+<title>
+Schaltplan
+</title>
+<figure>
+<graphic graphicname = "IAP70AA80002.swf" width = "183.000mm" height = "159.041mm" ver = "02" gw = "484" gh = "434"/>
+</figure>
+<figure>
+<graphic graphicname = "IAP70AA80003.swf" width = "183.000mm" height = "126.802mm" ver = "01" gw = "503" gh = "343"/>
+<callout-l>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.507in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.534in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.263in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.075in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.280in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.453in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Modell mit Zündschalter
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Modell mit schlüssellosem Startsystem
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+P/S-Steuermodul
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[a] bis [j]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN-Kommunikationsleitung (verknüpft mit Diagnoseablauf [a] bis [j] in der &#34;Diagnoseablauf-Auswahltabelle&#34;).
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Steuermodul für schlüsselloses Starten (Modell mit schlüssellosem Startsystem)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN-Treiber
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[k]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Ansicht Steckverbinder
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Lenkwinkelsensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G308)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Kombiinstrument
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HVAC-Steuermodul (Auto-A/C-Modell)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G309)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+DLC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout-l>
+</figure>
+</servinfosub>
+<servinfosub id = "AGEAP70AA804003002">
+<title>
+Diagnoseablauf
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sicherstellen, dass vor der Durchführung des Verfahrens die folgenden 
+<intxref refid = "AGEAP70AA804001">Überprüfung der CAN-Kommunikation</intxref>
+ durchgeführt werden.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Das Auftreten von mehreren Störungen ist nicht im Umfang dieser Fehlerdiagnose enthalten.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<ptxt>
+Wenn &#34;KommAbbruch&#34; für ein Steuermodul erfasst wird, eine Diagnose nach dem folgenden Verfahren durchführen.
+</ptxt>
+<s1>
+<ptxt>
+Das SUZUKI-Diagnosegerät an den DLC anschließen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Unter dem Menü &#34;Bus-Prüfung&#34; des SUZUKI-Diagnosegeräts &#34;KommBus-Prüfung&#34; auswählen und prüfen, welche Steuermodule nicht kommunizieren können (keine Anzeige auf dem Bildschirm).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Auf der Basis der obigen Prüfergebnisse den einschlägigen Diagnoseablauf ([a] bis [j]) von 
+<intxref refid = "AGEAP70AA804003003">Diagnoseablauf-Auswahltabelle</intxref>
+ auswählen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Die Fehlersuche entsprechend dem gewählten Diagnoseablauf durchführen.
+</ptxt>
+</s1>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AGEAP70AA804003003">
+<title>
+Diagnoseablauf-Auswahltabelle
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Falls die Kommunikation nur bei einem Steuermodul oder Sensor ausfällt, vor Beginn der Störungsdiagnose gemäß Ablaufplan anhand des Systemschaltplans usw. prüfen, ob der Stromversorgungskreis oder der Massekreis des betreffenden Steuermoduls oder Sensors in gutem Zustand ist.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ist es nicht möglich, einen geeigneten Diagnoseablauf unter &#34;Diagnoseablauf-Auswahltabelle&#34; oder &#34;Zwei oder mehrere Diagnoseabläufe auswählbar&#34; zu wählen, 
+<intxref refid = "AGEAP70AA804004">Fehlersuche bei &#34;Kommunikationsbus Aus&#34;</intxref>
+ durchführen.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die Diagnoseabläufe [a] bis [j] sind mit den CAN-Kommunikationsleitungen [a] bis [j] von 
+<intxref refid = "AGEAP70AA804003001">Schaltplan</intxref>
+ verknüpft.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.970in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.224in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Steuermodul/Sensor ohne Kommunikation
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Diagnoseablauf
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Alle über CAN kommunizierenden Steuermodule
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[a] 
+<intxreftitleoff1 refid = "AGEAP70AA804003005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Steuermodul für schlüsselloses Starten (Modell mit schlüssellosem Startsystem), Lenkwinkelsensor, HVAC-Steuermodul (Auto-A/C-Modell), P/S-Steuermodul, BCM, ESP<sup>&#174;</sup>-Steuermodul und ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[b] 
+<intxreftitleoff1 refid = "AGEAP70AA804003009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+P/S-Steuermodul, BCM, ESP<sup>&#174;</sup>-Steuermodul und ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[c] 
+<intxreftitleoff1 refid = "AGEAP70AA804003012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+BCM, ESP<sup>&#174;</sup>-Steuermodul und ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[d] 
+<intxreftitleoff1 refid = "AGEAP70AA804003015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul und ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[e] 
+<intxreftitleoff1 refid = "AGEAP70AA804003023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[f] 
+<intxreftitleoff1 refid = "AGEAP70AA804003031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[g] 
+<intxreftitleoff1 refid = "AGEAP70AA804003035"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Steuermodul für schlüsselloses Starten (Modell mit schlüssellosem Startsystem)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[h] 
+<intxreftitleoff1 refid = "AGEAP70AA804003039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Lenkwinkelsensor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[i] 
+<intxreftitleoff1 refid = "AGEAP70AA804003042"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+HVAC-Steuermodul (Auto-A/C-Modell)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+[j] 
+<intxreftitleoff1 refid = "AGEAP70AA804003045"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70AA804003004">
+<title>
+Fehlersuche
+</title>
+<topic id = "AGEAP70AA804003005">
+<title>
+Diagnoseablauf: [a]
+</title>
+<diag type = "test" id = "AGEAP70AA804003006">
+<testgroup id = "AGEAP70AA804003007">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Steckverbinder des Kombiinstruments abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf richtigen Anschluss an DLC- und Kombiinstrument-Steckverbinder prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [a] zwischen Kombiinstrument-Steckverbinder und DLC auf Unterbrechung überprüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA804003008">
+<title>
+Überprüfung des Kombiinstrumenten-Abschlusswiderstands
+</title>
+<test1>
+<ptxt>
+Den Steckverbinder des Kombiinstruments anschließen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den ECM-Steckverbinder &#34;E01&#34; abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Widerstand zwischen den Klemmen &#34;G211-11&#34; und &#34;G211-3&#34; des DLC messen.
+</ptxt>
+</test1>
+<question>
+Beträgt der Widerstand 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70AA804004">Fehlersuche bei &#34;Kommunikationsbus Aus&#34;</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Das Kombiinstrument austauschen und erneut DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003009">
+<title>
+Diagnoseablauf: [b]
+</title>
+<diag type = "test" id = "AGEAP70AA804003010">
+<testgroup id = "AGEAP70AA804003011">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Kombiinstrument-Steckverbinder und den Steckverbinder &#34;G50&#34; des P/S-Steuermoduls abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf richtigen Anschluss an Kombiinstrument-Steckverbinder prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [b] zwischen Kombiinstrument-Steckverbinder und Steckverbinder des P/S-Steuermoduls auf Unterbrechung überprüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das Kombiinstrument austauschen und erneut DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Folgende defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+CAN-Kommunikationsschaltkreis [b] zwischen Kombiinstrument und Verteilerstecker (J/C) defekt
+</ptxt>
+</item>
+<item>
+<ptxt>
+J/C &#34;G308&#34; ist defekt
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003012">
+<title>
+Diagnoseablauf: [c]
+</title>
+<diag type = "test" id = "AGEAP70AA804003013">
+<testgroup id = "AGEAP70AA804003014">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Steckverbinder &#34;G50&#34; des P/S-Steuermoduls und Kombiinstrument-Steckverbinder abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreie Verbindung zum Steckverbinder des P/S-Steuermoduls überprüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Verbindungen in Ordnung sind, den CAN-Kommunikationsschaltkreis [c] zwischen Steckverbinder des P/S-Steuermoduls und Kombiinstrument-Steckverbinder auf Unterbrechung überprüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das P/S-Steuermodul austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Folgende defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+CAN-Kommunikationsschaltkreis [c] zwischen P/S-Steuermodul und Verteilerstecker (J/C) defekt
+</ptxt>
+</item>
+<item>
+<ptxt>
+J/C &#34;G308&#34; ist defekt
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003015">
+<title>
+Diagnoseablauf: [d]
+</title>
+<diag type = "test" id = "AGEAP70AA804003016">
+<testgroup id = "AGEAP70AA804003017">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Steckverbinder &#34;G50&#34; des P/S-Steuermoduls und folgenden Steckverbinder abklemmen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Modell mit Zündschalter: BCM-Steckverbinder &#34;G04&#34;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Modell mit schlüssellosem Startsystem: BCM-Steckverbinder &#34;G05&#34;
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreie Verbindung zum Steckverbinder des P/S-Steuermoduls und BCM-Steckverbinder prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [d] zwischen dem Steckverbinder des P/S-Steuermoduls und dem BCM-Steckverbinder auf Unterbrechung prüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA804003018">
+<title>
+Widerstandsprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Den Steckverbinder des P/S-Steuermoduls anschließen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Widerstand zwischen den folgenden Anschlussklemmen am BCM-Steckverbinder messen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Modell mit Zündschalter: Anschlussklemmen &#34;G04-2&#34; und &#34;G04-18&#34;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Modell mit schlüssellosem Startsystem: Anschlussklemmen &#34;G05-2&#34; und &#34;G05-1&#34;
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Beträgt der Widerstand 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+BCM austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Das P/S-Steuermodul austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003023">
+<title>
+Diagnoseablauf: [e]
+</title>
+<diag type = "test" id = "AGEAP70AA804003024">
+<testgroup id = "AGEAP70AA804003025">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Steckverbinder des ESP<sup>&#174;</sup>-Steuermoduls und die folgenden Steckverbinder abklemmen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Modell mit Zündschalter: BCM-Steckverbinder &#34;E04&#34;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Modell mit schlüssellosem Startsystem: BCM-Steckverbinder &#34;E05&#34;
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreie Verbindung zu den Steckverbindern des BCM und des ESP<sup>&#174;</sup>-Steuermoduls prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [e] zwischen dem BCM-Steckverbinder und dem Steckverbinder des ESP<sup>&#174;</sup>-Steuermoduls auf Unterbrechung prüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA804003026">
+<title>
+Widerstandsprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+BCM-Steckverbinder anschließen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Widerstand zwischen den Anschlussklemmen &#34;E24-1&#34; und &#34;E24-15&#34; am Steckverbinder des ESP<sup>&#174;</sup>-Steuermoduls messen.
+</ptxt>
+</test1>
+<question>
+Beträgt der Widerstand 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das ESP<sup>&#174;</sup>-Steuermodul austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+BCM austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003031">
+<title>
+Diagnoseablauf: [f]
+</title>
+<diag type = "test" id = "AGEAP70AA804003032">
+<testgroup id = "AGEAP70AA804003033">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Steckverbinder des ESP<sup>&#174;</sup>-Steuermoduls und den Steckverbinder &#34;E01&#34; des ECM abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreie Verbindung zum Steckverbinder des ESP<sup>&#174;</sup>-Steuermoduls und zum ECM-Steckverbinder &#34;E01&#34; prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [f] zwischen dem Steckverbinder des ESP<sup>&#174;</sup>-Steuermoduls und dem ECM-Steckverbinder auf Unterbrechung prüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA804003034">
+<title>
+Überprüfung des ECM-Abschlusswiderstands
+</title>
+<test1>
+<ptxt>
+Den ECM-Steckverbinder anschließen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Widerstand zwischen den Anschlussklemmen &#34;E24-2&#34; und &#34;E24-16&#34; am Steckverbinder des ESP<sup>&#174;</sup>-Steuermoduls messen.
+</ptxt>
+</test1>
+<question>
+Beträgt der Widerstand 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70AA804004">Fehlersuche bei &#34;Kommunikationsbus Aus&#34;</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003035">
+<title>
+Diagnoseablauf: [g]
+</title>
+<diag type = "test" id = "AGEAP70AA804003036">
+<testgroup id = "AGEAP70AA804003037">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Kombiinstrument-Steckverbinder und SDM-Steckverbinder &#34;G11&#34; abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreien Anschluss an Kombiinstrument-Steckverbinder und SDM-Steckverbinder prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [g] zwischen dem Kombiinstrument-Steckverbinder und dem SDM-Steckverbinder auf Unterbrechung prüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Folgende defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+CAN-Kommunikationsschaltkreis [g] zwischen Kombiinstrument und SDM defekt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Schlechter Kontakt an Steckverbinder &#34;G369&#34; und &#34;G370&#34;
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70AA804003038">
+<title>
+Widerstandsprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Den Steckverbinder des Kombiinstruments anschließen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den ECM-Steckverbinder &#34;E01&#34; abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Widerstand zwischen den Anschlussklemmen &#34;G11-13&#34; und &#34;G11-14&#34; am SDM-Steckverbinder messen.
+</ptxt>
+</test1>
+<question>
+Beträgt der Widerstand 114 – 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+SDM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Das Kombiinstrument austauschen und erneut DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003039">
+<title>
+Diagnoseablauf: [h]
+</title>
+<diag type = "test" id = "AGEAP70AA804003040">
+<testgroup id = "AGEAP70AA804003041">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Steckverbinder des Kombiinstruments und den Steckverbinder &#34;G28&#34; des Steuermoduls für schlüsselloses Starten abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreie Verbindung zum Kombiinstrument-Steckverbinder und zum Steckverbinder des Steuermoduls für schlüsselloses Starten prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [h] zwischen dem Steckverbinder des Steuermoduls für schlüsselloses Starten und dem Kombiinstrument-Steckverbinder auf Unterbrechung prüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Steuermodul für schlüsselloses Starten ersetzen und DTC erneut überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Folgende defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+CAN-Kommunikationsschaltkreis [h] zwischen Steuermodul für schlüsselloses Starten und Verteilerstecker (J/C) defekt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+J/C &#34;G309&#34; ist defekt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Schlechter Kontakt an Steckverbinder &#34;G308&#34; und &#34;G309&#34;
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003042">
+<title>
+Diagnoseablauf: [i]
+</title>
+<diag type = "test" id = "AGEAP70AA804003043">
+<testgroup id = "AGEAP70AA804003044">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Lenkwinkelsensor-Steckverbinder und Kombiinstrument-Steckverbinder abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreie Verbindung zum Lenkwinkelsensor-Steckverbinder und Kombiinstrument-Steckverbinder prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [i] zwischen dem Lenkwinkelsensor-Steckverbinder und dem Kombiinstrument-Steckverbinder auf Unterbrechung prüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Den Lenkwinkelsensor austauschen und erneut DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Folgende defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+CAN-Kommunikationsschaltkreis [i] zwischen Lenkwinkelsensor und Verteilerstecker (J/C) defekt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+J/C &#34;G309&#34; ist defekt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Schlechter Kontakt an Steckverbinder &#34;G308&#34; und &#34;G309&#34;
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+<topic id = "AGEAP70AA804003045">
+<title>
+Diagnoseablauf: [j]
+</title>
+<diag type = "test" id = "AGEAP70AA804003046">
+<testgroup id = "AGEAP70AA804003047">
+<title>
+Überprüfung des CAN-Kommunikationsschaltkreises
+</title>
+<test1>
+<ptxt>
+Das Minuskabel (–) von der Batterie lösen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+HVAC-Steuermodul-Steckverbinder und Kombiinstrument-Steckverbinder abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreie Verbindung zu den Steckverbindern des HVAC-Steuermoduls und des Kombiinstruments prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Falls die Anschlüsse in Ordnung sind, den CAN-Kommunikationsschaltkreis [j] zwischen dem Kombiinstrument-Steckverbinder und dem HVAC-Steuermodul-Steckverbinder auf Unterbrechung prüfen.
+</ptxt>
+</test1>
+<question>
+Ist das Teil in gutem Zustand?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das HVAC-Steuermodul austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Folgende defekte Bauteile reparieren oder austauschen.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+CAN-Kommunikationsschaltkreis [j] zwischen HVAC-Steuermodul und Verteilerstecker (J/C) defekt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+J/C &#34;G309&#34; ist defekt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Schlechter Kontakt an Steckverbinder &#34;G308&#34; und &#34;G309&#34;
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+</testgroup>
+</diag>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

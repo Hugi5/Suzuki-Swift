@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A7224016" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1504-H
+</title>
+<servinfosub id = "AGEAP70A7224016001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.927in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.286in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1504-H: Störung des Solarsensors und/oder dessen Schaltkreises
+</emph>
+</ptxt>
+<ptxt>
+Signalspannung des Solarsensors liegt für einen bestimmten Zeitraum ständig über dem Sollwert (4,9 V).
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Solarsensor-Schaltkreis
+</ptxt>
+</item>
+<item>
+<ptxt>
+Solarsensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC-Steuermodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A7224016002">
+<title>
+Schaltplan
+</title>
+<figure>
+<graphic graphicname = "I9P60A723004.swf" width = "183.000mm" height = "60.727mm" ver = "02" gw = "330" gh = "156"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.574in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.706in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.706in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+HVAC-Steuermodul-Steckverbinder (Ansicht: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Solarsensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+HVAC-Steuermodul
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AGEAP70A7224016003">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<s1>
+<ptxt>
+Den Motor anlassen und die Klimaanlage einschalten.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A7224016004">
+<title>
+DTC-Fehlersuche
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Wenn DTC B1502-H gleichzeitig auftritt, liegt eventuell eine Unterbrechung im Masseschaltkreis des Sensors vor.
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC B1504 wird auch ohne Störung ausgegeben, wenn der Solarsensor nicht mit einer Glühlampe angestrahlt wird. Daher den Solarsensor unbedingt mit einer Glühlampe anstrahlen.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AGEAP70A7224016005">
+<testgroup id = "AGEAP70A7224016006">
+<title>
+Überprüfung der Diagnosegerät-Parameter
+</title>
+<test1>
+<ptxt>
+Den Solarsensor vertikal beleuchten, dabei die Glühlampe mit ca. 100 W etwa 100 mm (3,94 in.) vom Sensor entfernt halten.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Den Parameter &#34;Sonneneinstrahlung&#34; über den Modus &#34;Datenliste&#34; mit dem SUZUKI-Diagnosegerät überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A7224008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Beträgt der Wert für die Sonneneinstrahlung 0 W/m<sup>2</sup> (Signalspannung des Solarsensors liegt über 4,9 V)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zeitweilige Störung.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A7224016007">
+<title>
+Überprüfung des Solarsensor-Signalkreises
+</title>
+<test1>
+<ptxt>
+Den Solarsensorstecker abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die Kabelklemmen &#34;PNK&#34; und &#34;YEL/BLK&#34; des Solarsensorsteckers mit einem Prüfkabel verbinden.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A7224009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird DTC B1504-L erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Solarsensor austauschen. 
+<intxreftitleoff1 refid = "AGEAP70A7226031"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A7224016008">
+<title>
+Überprüfung des Solarsensor-Signalkreises
+</title>
+<test1>
+<ptxt>
+Die Kabelklemmen &#34;PNK&#34; und &#34;YEL/BLK&#34; des Steckverbinders &#34;G20&#34; mit einem Prüfkabel verbinden.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Die DTCs abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A7224009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Wird DTC B1504-L erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Den Armaturenbrett-Kabelbaum austauschen.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Das HVAC-Steuermodul austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

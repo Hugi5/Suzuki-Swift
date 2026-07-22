@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A4604028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1047 / C1048
+</title>
+<servinfosub id = "AGKAP70A4604028001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.814in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.366in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1047: Απόδοση των δύο μπροστινών αισθητήρων ταχύτητας τροχού ή του σήματος κωδικοποιητή 
+</emph>
+</ptxt>
+<ptxt>
+Ο βαθμός εκτροπής που εκτιμήθηκε από τους δύο αισθητήρες ταχύτητας μπροστινού τροχού δεν ταιριάζει με το σήμα του αισθητήρα βαθμού εκτροπής.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Αισθητήρας γωνίας στρο&#248;ής
+</ptxt>
+</item>
+<item>
+<ptxt>
+Αισθητήρας ταχύτητας τροχού
+</ptxt>
+</item>
+<item>
+<ptxt>
+Κύκλωμα αισθητήρα ταχύτητας τροχού
+</ptxt>
+</item>
+<item>
+<ptxt>
+Κωδικοποιητής αισθητήρα ταχύτητας τροχού
+</ptxt>
+</item>
+<item>
+<ptxt>
+Μονάδα ελέγχου ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1048: Απόδοση των δύο πίσω αισθητήρων ταχύτητας τροχού ή του σήματος κωδικοποιητή 
+</emph>
+</ptxt>
+<ptxt>
+Ο βαθμός εκτροπής που εκτιμήθηκε από τους δύο αισθητήρες ταχύτητας πίσω τροχού δεν ταιριάζει με το σήμα του αισθητήρα βαθμού εκτροπής.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A4604028002">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A4604028003">
+<testgroup id = "AGKAP70A4604028004">
+<question>
+Πραγματοποιήθηκε ο &#34;Έλεγχος του Συστήματος ESP<sup>&#174;</sup>&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A4604001">Έλεγχος Συστήματος ESP&#174;</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604028005">
+<title>
+Έλεγχος Κωδικού Βλάβης DTC
+</title>
+<test1>
+<ptxt>
+Εκτελέστε 
+<intxref refid = "AGKAP70A4604005">Έλεγχος Κωδικού DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Υπάρχουν άλλοι κωδικοί DTC εκτός από τους C1047 και C1048;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στην ισχύουσα διάγνωση κωδικού βλάβης.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604028006">
+<title>
+Επιθεώρηση επί του αυτοκινήτου του αισθητήρα γωνίας στρο&#248;ής
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τον αισθητήρα γωνίας στρο&#248;ής. 
+<intxreftitleoff1 refid = "AGKAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι σε καλή κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Αντικαταστήστε τον αισθητήρα γωνίας στρο&#248;ής και ελέγξτε τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604028007">
+<title>
+Έλεγχος αισθητήρα ταχύτητας τροχού
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τον ανα&#248;ερόμενο αισθητήρα ταχύτητας τροχού, τον κωδικοποιητή του αισθητήρα ταχύτητας τροχού ή/και το κύκλωμα του αισθητήρα ταχύτητας τροχού, σύμ&#248;ωνα με 
+<intxref refid = "AGKAP70A4604018">DTC C1021 / C1022 / C1025 / C1026 / C1031 / C1032 / C1033/ C1035 / C1036</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Είναι το αποτέλεσμα του ελέγχου ΟΚ;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε το συγκρότημα υδραυλικής μονάδας / μονάδας ελέγχου ESP<sup>&#174;</sup> και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Επισκευάστε ή αντικαταστήστε το ελαττωματικό εξάρτημα.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

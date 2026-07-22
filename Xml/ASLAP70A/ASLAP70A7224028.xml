@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A7224028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1557 / B1561 / B1563
+</title>
+<servinfosub id = "ASLAP70A7224028001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.922in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.288in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1557: Porucha snímača otáčok kolesa a/alebo jeho obvodu
+</emph>
+</ptxt>
+<ptxt>
+Riadiaca jednotka HVAC prijala nesprávne údaje signálu snímača rýchlosti vozidla z ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Snímač otáčok kolesa
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka ESP<sup>®</sup>
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1561: Porucha snímača teploty chladiacej kvapaliny motora a/alebo jeho obvodu
+</emph>
+</ptxt>
+<ptxt>
+Riadiaca jednotka HVAC prijala nesprávne údaje signálu ECT z ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Snímač ECT
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1563: Porucha snímača tlaku chladiacej zmesi klimatizácie a/alebo jeho obvodu
+</emph>
+</ptxt>
+<ptxt>
+Riadiaca jednotka HVAC prijala nesprávne údaje signálu tlaku chladiacej zmesi klimatizácie z ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Snímač tlaku chladiacej zmesi klimatizácie
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A7224028002">
+<title>
+Postup potvrdenia DTC
+</title>
+<attention3>
+<ptxt>
+Pred vykonaním tohto postupu sa najskôr uistite, že sú splnené nasledovné podmienky.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+U0073, U0100, U0140 a/alebo U0155 nie sú detekované.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Naštartujte motor a ovládajte systém klimatizácie.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+B1557: Jazdite vozidlom približne 1 minútu.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A7224028003">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A7224028004">
+<testgroup id = "ASLAP70A7224028005">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC v riadiacej jednotke motora. 
+<intxreftitleoff1 refid = "ASLAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným procesom riešenia DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte riadiacu jednotku HVAC a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

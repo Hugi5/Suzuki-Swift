@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9D">
+<servcat sctnbr = "09" scnbr = "04">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A9404009" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1952
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Dado que la tensión de cada terminal está afectada por la tensión de la batería, compruebe si ésta es de al menos 12 V cuando el encendido está conectado (posición ON).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Antes de continuar, asegúrese de confirmar que los fusibles relacionados con el circuito de alimentación eléctrica del módulo de control de la nivelación automática de los faros y del lavafaros no se han fundido.
+</ptxt>
+<ptxt>
+Si lo estuvieran, sustitúyalos y compruebe que los circuitos conectados a dichos fusibles no tienen un cortocircuito a masa.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<servinfosub id = "ASPBP70A9404009001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.753in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.451in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1952: Circuito de tensión de alimentación del motor del lavaparabrisas 
+</emph>
+</ptxt>
+<ptxt>
+La tensión de alimentación de la bomba del lavaparabrisas es inferior a 8 V durante 1 min.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuito de alimentación eléctrica de la bomba del lavaparabrisas
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de la nivelación automática de los faros y del lavafaros
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sistema de carga
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A9404009002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "IBP70A940008.swf" width = "183.000mm" height = "62.167mm" ver = "01" gw = "446" gh = "160"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.164in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "0.803in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.291in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conector del bloque de conexiones (Vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/B
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Módulo de control de la nivelación automática de los faros y del lavafaros
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conector del módulo de control de la nivelación automática de los faros y del lavafaros (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Fusible &#34;WIP&#34;
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica de la bomba del lavaparabrisas
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Al relé IG2
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPBP70A9404009003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<s1>
+<ptxt>
+Haga funcionar el motor en régimen de ralentí durante 1 min.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A9404009004">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<diag type = "test" id = "ASPBP70A9404009005">
+<testgroup id = "ASPBP70A9404009006">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Borre el DTC. 
+<intxreftitleoff1 refid = "ASPBP70A9404005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Desconecte el encendido (posición OFF).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Desconecte los conectores &#34;G14&#34; y &#34;G273&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si son correctas las conexiones de los terminales a los conectores &#34;G14&#34; y &#34;G273&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, conecte firmemente los conectores &#34;G14&#34; y &#34;G273&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Realice el &#34;Procedimiento de confirmación del DTC&#34; y vuelva a verificarlo. 
+<intxreftitleoff1 refid = "ASPBP70A9404004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC B1952?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Problema intermitente.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A9404009007">
+<title>
+Comprobación del módulo de control de la nivelación automática de los faros y del lavafaros
+</title>
+<test1>
+<ptxt>
+Desconecte el encendido (posición OFF).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Desconecte los conectores &#34;G14&#34; y &#34;G273&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe el circuito &#34;A1&#34; entre el conector &#34;G14&#34; y el conector &#34;G273&#34; en busca de circuitos abiertos, cortocircuitos a masa o cortocircuitos a la alimentación eléctrica.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A9404004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A9404009008">
+<title>
+Inspección del circuito de la tensión de alimentación de la bomba del lavaparabrisas
+</title>
+<test1>
+<ptxt>
+Compruebe la tensión del circuito &#34;A1&#34; con el motor en régimen de ralentí o en marcha a 3.000 rpm.
+</ptxt>
+</test1>
+<question>
+¿La tensión es de 10 – 14 V?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el módulo de control de la nivelación automática de los faros y del lavafaros y vuelva a comprobar el DTC. 
+<intxreftitleoff1 refid = "ASPBP70A9206015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Inspeccione el sistema de carga. 
+<intxreftitleoff1 refid = "ASPBP70A1A04003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description du système de communication 
+</title>
+<servinfosub id = "AFRAP70AA801001001">
+<title>
+Description du système 
+</title>
+<ptxt>
+Pour chaque module et dispositif de commande, la communication est établie via l&#39;entrée/sortie continue de signaux numériques ON/OFF, avec une gestion parallèle de plusieurs éléments de données. La transmission/émission de ces données est appelée interface de communication sérielle. 
+</ptxt>
+<ptxt>
+Plusieurs types d&#39;interface de communication sérielle, comme les protocoles (normes de communication) UART, CAN et LIN, ont été adoptés pour le système embarqué. 
+</ptxt>
+<ptxt>
+L&#39;UART est utilisé pour la communication entre module de commande de démarrage sans clé et l&#39;unité de verrouillage de direction. 
+</ptxt>
+<ptxt>
+La LIN est utilisée pour la communication entre le combiné d&#39;instruments et le module de commande de système de capteur de stationnement, et pour la communication entre le module de commande HVAC et le panneau A/C automatique. 
+</ptxt>
+<ptxt>
+De plus, le module de commande de démarrage sans clé (modèle à démarrage sans clé), le BCM, l&#39;ECM, le combiné d&#39;instruments, le module de commande P/S, le module de commande HVAC (modèle à A/C automatique), le module de commande ESP<sup>&#174;</sup>, le SDM et le capteur d&#39;angle de braquage transmettent/reçoivent des données grâce à une paire torsadée de deux lignes de communication (CAN élevé et CAN faible) connectées via la communication CAN. Les données obtenues par un module de commande peuvent être partagées avec l&#39;autre module de commande via le CAN. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70AA801001002">
+<title>
+Signal de communication CAN 
+</title>
+<ptxt>
+Le système de communication CAN est un système de communication sérielle qui transmet un ensemble de données (valeurs des capteurs, données de commande et signaux de commande) sous forme de signaux numériques ON-OFF via les lignes de communication. Ce système utilise deux lignes (CAN élevé et CAN faible) pour le circuit de communication afin de maintenir un niveau de fiabilité élevé même lors de l&#39;utilisation de la communication sérielle à haute vitesse. 
+</ptxt>
+<ptxt>
+La communication sérielle se produit comme indiqué ci-dessous, avec un niveau de référence de 2,5 V tant pour le signal CAN élevé (1) que pour le signal CAN faible (2). La plage du signal CAN élevé se situe entre 2,5 V et environ 3,5 V, et la plage de signal CAN faible entre 2,5 V et environ 1,5 V. Lorsque les deux indiquent 2,5 V, le signal est considéré comme OFF. Lorsque le signal CAN élevé indique 3,5 V et le signal CAN faible indique 1,5 V (c&#39;est-à-dire que la différence de tension élevée et la tension faible est supérieure à 2 V), le signal est considéré comme ON. Pour cette raison, une fonction du signal de communication CAN consiste à vérifier si la forme d&#39;onde de signal est symétrique entre les signaux CAN élevé et CAN faible à un niveau de 2,5 V. La communication CAN échoue lorsque la forme d&#39;onde de signal symétrique disparaît. 
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002F.swf" width = "183.000mm" height = "47.725mm" ver = "01" gw = "338" gh = "119"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

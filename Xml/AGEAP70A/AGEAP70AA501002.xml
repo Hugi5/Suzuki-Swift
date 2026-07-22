@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70AA501002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschreibung der Teile und Funktionen des Systems für schlüsselloses Starten
+</title>
+<ptxt>
+<intxrefpoff refid = "AGEAP70AA503001">Einbauorte der Bauteile des Systems für schlüsselloses Starten</intxrefpoff>
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.968in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.236in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Teil
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Aufbau/Funktion
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Steuermodul für schlüsselloses Starten
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich an der Unterseite des Armaturenbretts auf der Beifahrerseite. Überträgt über CAN-Kommunikation Informationen zwischen ECM, BCM, Kombiinstrument usw.
+</ptxt>
+<ptxt>
+Überwacht den Status aller Türsteuerschalter, Türschalter und Motorschalter. Sendet Anforderungen zum Ver- und Entriegeln der Türen, zum Starten des Motors und zum Entriegeln des Lenkschlosses.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fernbedienung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Empfängt Anforderungssignale von allen Antennen. Überträgt ID-Code und Anforderungssignal zum Empfänger für Türschloss-Fernbedienung. Enthält außerdem die folgende Ausrüstung und Funktionen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Betriebskontrollleuchte
+</ptxt>
+</item>
+<item>
+<ptxt>
+Falls die Batteriespannung im Zündungsmodus &#34;ON&#34; abfällt, wird ein Signal zum Steuermodul für schlüsselloses Starten übertragen, um den Fahrer durch Aufleuchten der Fernbedienungsbatterie-Warnleuchte im Kombiinstrument zu warnen, dass die Fernbedienungsbatterie schwach ist und ausgetauscht werden muss.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Notschlüssel zum Ver- und Entriegeln der Türen, falls System für schlüsselloses Starten aufgrund leerer Batterie usw. nicht funktioniert.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ver-/Entriegeltasten zum Ver- oder Entriegeln der Türen über die Türschloss-Fernbedienungsfunktion.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motorschalter
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich am Armaturenbrett auf der Fahrerseite. Umfasst Druckschalter zum Erfassen des Betriebsstatus.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Außenantenne auf Fahrerseite
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ist im Außentürgriff eingeschlossen. Überträgt Anforderungssignale zur Fernbedienung außerhalb des Fahrzeugs.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Außenantenne auf Beifahrerseite
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Hintere Außenantenne
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich auf der Rückseite der Rückwand. Überträgt Anforderungssignale zur Fernbedienung außerhalb des Fahrzeugs.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Mittlere Innenantenne
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich im Mittelkonsolenfach. Überträgt Anforderungssignale zur Fernbedienung innerhalb des Fahrzeugs.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Hintere Innenantenne
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich auf der Vorderseite der Rückwand. Überträgt Anforderungssignale zur Fernbedienung im Gepäckraum.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fahrertür-Steuerschalter
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich jeweils im Außentürgriff. Überträgt EIN/AUS-Informationen von den Türsteuerschaltern an das Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Beifahrertür-Steuerschalter
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Heckklappen-Steuerschalter
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich in der Heckklappe. Überträgt EIN/AUS-Informationen vom Heckklappen-Steuerschalter an das Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Jeder Türschalter
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Überträgt Informationen zum Öffnen/Schließen von jeder Tür an das Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Heckklappenschalter
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+In Heckklappenschloss eingebaut. Überträgt Informationen zum Öffnen/Schließen von der Heckklappe an das Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Lenkschlosseinheit
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich in der Lenksäule. Ver- oder entriegelt das Lenkschloss.
+</ptxt>
+<ptxt>
+Umfasst Detektorschalter zur Überwachung des Verriegelungsstatus (ver- oder entriegelt). Gibt Status über serielle Kommunikation an das Steuermodul für schlüsselloses Starten aus.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Wegfahrsperrenleuchte
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich im Kombiinstrument. Erlischt, wenn ID-Code der Fernbedienung beim Drücken des Motorschalters erkannt wird. Leuchtet auf, wenn Fernbedienung beim Drücken des Motorschalters nicht erkannt wird.
+</ptxt>
+<ptxt>
+Leuchtet auf bzw. blinkt, wenn Systemstörung vorliegt.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Diebstahlwarnleuchte
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich im Warnblinkschalter. Leuchtet auf bzw. blinkt, wenn die Alarmanlage eingestellt ist oder eine Systemstörung vorliegt.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ACC-Kontrollleuchte
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich im Kombiinstrument. Leuchtet im Zündungsmodus &#34;ACC&#34; auf.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ON-Kontrollleuchte
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Befindet sich im Kombiinstrument. Leuchtet im Zündungsmodus &#34;ON&#34; bei stehendem Motor auf.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+PUSH-Kontrollleuchte
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Befindet sich im Kombiinstrument.
+</ptxt>
+<ptxt>
+Leuchtet auf, wenn das Kupplungspedal betätigt ist.
+</ptxt>
+<ptxt>
+Blinkt beim Drücken des Motorschalters, falls der ID-Code der Fernbedienung nicht registriert ist.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ACC-Relais
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich in J/B. Änderung des Zündungsmodus durch Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+IG1-Relais
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+IG2-Relais
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Anlassermotor-Steuerrelais
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich im Hauptrelaiskasten. Schaltet auf &#34;EIN&#34; und versorgt den Anlassermotor mit Strom, wenn das Steuermodul für schlüsselloses Starten feststellt, dass der Motor gestartet werden kann.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CPP-Schalter
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich am Kupplungspedal. Überträgt Informationen zum Betrieb vom Kupplungspedal an das Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Äußerer Warnsummer
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich auf der Außenseite des oberen Windlaufblechs auf der Fahrerseite. Ertönt bei aktivierter Alarm- oder Warnfunktion.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fahrer-/Beifahrer-Türverriegelungsschalter
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich in beiden Vordertürverriegelungs-Stellgliedern. Überträgt Verriegelungs-/Entriegelungsinformationen von der Fahrer- bzw. Beifahrertür an das Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Schlosszylinderschalter
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich im Türverriegelungs-Stellglied der Fahrertür. Überträgt Verriegelungs-/Entriegelungsinformationen vom Türschlosszylinder an das Steuermodul für schlüsselloses Starten.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Empfänger der Türschloss-Fernbedienung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Befindet sich im Mittelkonsolenfach. Empfängt Signale von der Fernbedienung und gibt sie über serielle Kommunikation an das Steuermodul für schlüsselloses Starten aus.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

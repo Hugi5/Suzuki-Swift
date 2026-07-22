@@ -1,0 +1,49 @@
+body { margin:0px; padding:0px; }
+
+#divHead         { position:absolute; left:0px; top:0px; padding:0px; margin:0px; width:100%; height:40px; font:1em/1.5 Arial, Tahoma; background:url(../img/upper-bg.gif) repeat 0 0; }
+#divLeftNavi     { position:absolute; top:7px; left:5px; font-size:1em; }
+#cmbPage         { font-size:16px; width:485px; }
+#divSvgNavi      { position:absolute; top:5px; left:525px; }
+#divPrintNavi    { position:absolute; top:5px; left:735px; }
+#divRightNavi    { position:absolute; top:5px; right:5px; }
+#btn_change      { position:absolute; top:5px; left:790px; display:none; }
+#btnListSwitch   { width:16px; }
+
+#divList         { position:absolute; left:0px; top:40px; float:left; overflow:auto; font:1em/1.3 Arial, Tahoma; background: url(../img/side-ul-bg.gif) repeat 0 0;
+                   padding:5px; margin:0px; list-style-type:none; font-size:12px;}
+#divList ul      { list-style-type:none; margin-top:0px; margin-bottom:0px; }
+#divList li      { margin:0px; padding-left:5px; }
+#divList a       { text-decoration:none; color:#0000FF; }
+#divList :hover  { background-color:#fff6f0; }
+#divList .select { background-color:#ffa92c; }
+
+#divDiagramTop    { position:absolute; left:350px; top:40px; padding:10px; margin:0px; font:0.9em/1.5 Arial, Tahoma; overflow:auto; }
+#divDiagramBottom { display:none; position:absolute; left:350px; top:40px; padding:10px; margin:0px; font:0.9em/1.5 Arial, Tahoma; overflow:auto; }
+
+#divToolTip       { position:absolute; background-color:#ffff7f; border-color:#cccccc; font-size:16px;
+                    color:#000000; border-width:1; border-style:solid; display:none; }
+
+@media print
+{
+	body              { margin:0px; padding:0px; }
+	#divHead,
+	#divLeftNavi,
+	#cmbPage,
+	#divSvgNavi,
+	#divPrintNavi,
+	#divRightNavi,
+	#btn_change,
+	#btnListSwitch,
+	#divList,
+	#divList ul,
+	#divList li,
+	#divList a,
+	#divList :hover,
+	#divList .select,
+	#divToolTip       { display:none!important; }
+	#divDiagramBottom,
+	#divDiagramTop    { position:absolute; overflow:visible; width:100%; height:100%; top:0px; left:0px!important; }
+	#embDiagramBottom,
+	#embDiagramTop    { left:0px; top:0px; }
+}
+

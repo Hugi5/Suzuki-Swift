@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A4604022" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C102A
+</title>
+<servinfosub id = "AGEAP70A4604022001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C102A: ABS-Dauerbetrieb
+</emph>
+</ptxt>
+<ptxt>
+ABS-Funktion ist kontinuierlich an allen Rädern aktiviert.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<ptxt>
+Wenn das ESP<sup>&#174;</sup>-Steuermodul im Notlaufmodus die Steuerung abbricht, schaltet sich die Warnleuchte aus, der DTC bleibt jedoch als aktueller DTC während des gegenwärtigen Zündzyklus erhalten.
+</ptxt>
+<ptxt>
+Es ist normal, wenn der DTC beim Stellen der Zündung von &#34;OFF&#34; auf &#34;ON&#34; zu einem DTC für frühere Störungen wird.
+</ptxt>
+</attention3>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604022002">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A4604022003">
+<testgroup id = "AGEAP70A4604022005">
+<question>
+Wurde die &#34;ESP<sup>&#174;</sup>-Systemprüfung&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A4604001">ESP&#174;-Systemprüfung</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604022004">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604005">DTC-Überprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Wird DTC C102A erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ESP<sup>&#174;</sup>-Hydraulikeinheit/Steuermodul-Baugruppe austauschen und DTC erneut überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

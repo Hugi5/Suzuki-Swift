@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A4604001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+ESP&#174;-Systemprüfung
+</title>
+<ptxt>
+Einzelheiten zu den jeweiligen Prüfschritten siehe die Beschreibung nach dem folgenden allgemeinen Ablaufplan.
+</ptxt>
+<diag type = "test" id = "AGEAP70A4604001001">
+<testgroup id = "AGEAP70A4604001002">
+<title>
+Störungsanalyse 
+<intxreftitleoff1 refid = "AGEAP70A4604001008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604001009">Analyse des Diagnosefragebogens</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604001010">Überprüfung der Störungssymptome</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604001011">Abrufen, Aufzeichnen und Löschen von DTCs</intxref>
+ durchführen und erneut DTCs abrufen.
+</ptxt>
+</test1>
+<question>
+Wird nach dem Löschen des DTCs wieder derselbe DTC erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Gemäß geeigneter DTC-Fehlersuche überprüfen und reparieren, dann weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604001003">
+<title>
+Sichtprüfung 
+<intxreftitleoff1 refid = "AGEAP70A4604001012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604002">Sichtprüfung</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Liegt ein Defekt vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das defekte Bauteil reparieren oder austauschen, dann weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604001004">
+<title>
+Probefahrt 
+<intxreftitleoff1 refid = "AGEAP70A4604001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604001013">Schritt 3: Probefahrt</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Wird eine Störung erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das defekte Bauteil reparieren oder austauschen, dann weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604001005">
+<title>
+Bremsendiagnose 
+<intxreftitleoff1 refid = "AGEAP70A4604001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Bremssystem überprüfen und reparieren gemäß 
+<intxref refid = "AGEAP70A4104001">Symptomdiagnose für Bremsanlage</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Wird eine Störung erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das defekte Bauteil reparieren oder austauschen, dann weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604001006">
+<title>
+Überprüfung auf Wackelkontakte 
+<intxreftitleoff1 refid = "AGEAP70A4604001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Auf zeitweilige Störungen überprüfen. Siehe hierzu 
+<intxref refid = "AGEAP70A0006002">Überprüfung auf Wackelkontakt und schlechte Verbindungen</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Wird eine Störung erfasst?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Das defekte Bauteil reparieren oder austauschen, dann weiter mit Schritt 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 6.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A4604001007">
+<title>
+Endkontrolle 
+<intxreftitleoff1 refid = "AGEAP70A4604001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+<intxref refid = "AGEAP70A4604001016">Schritt 6: Endkontrolle</intxref>
+ durchführen.
+</ptxt>
+</test1>
+<question>
+Tritt die Störung erneut auf?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ende.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "AGEAP70A4604001008" page = "1">
+<title>
+Schritt 1: Störungsanalyse
+</title>
+<topic id = "AGEAP70A4604001009">
+<title>
+Analyse des Diagnosefragebogens
+</title>
+<ptxt>
+Die Einzelheiten zur Störung (Defekt, Beanstandung) und deren Auftreten notieren, wie sie vom Kunden beschrieben werden.
+</ptxt>
+<ptxt>
+Der in der folgenden Tabelle abgebildete Fragebogen erleichtert das Sammeln von Informationen, die für eine korrekte Diagnose und Reparatur erforderlich sind.
+</ptxt>
+<figure>
+<title>
+Diagnosefragebogen (Beispiel)
+</title>
+<graphic graphicname = "IAP70A460005G.swf" width = "183.000mm" height = "176.561mm" ver = "01" gw = "494" gh = "483"/>
+</figure>
+</topic>
+<topic id = "AGEAP70A4604001010">
+<title>
+Überprüfung der Störungssymptome
+</title>
+<ptxt>
+Wenn das vom Kunden im &#34;Diagnosefragebogen&#34; geschilderte Symptom am Fahrzeug bestätigt werden kann, feststellen, ob es sich dabei um einen Defekt handelt. (Diese Schritte möglichst im Beisein des Kunden durchführen.) Die Warnleuchte des Bremssystems gemäß &#34;Überprüfung der EBD-Warnleuchte (Bremswarnleuchte)&#34;, &#34;Überprüfung der ABS-Warnleuchte&#34; und &#34;Überprüfung der ESP<sup>&#174;</sup>-Warnleuchte&#34; unter 
+<intxref refid = "AGEAP70A4604004">Überprüfung der Warnleuchte</intxref>
+ überprüfen.
+</ptxt>
+</topic>
+<topic id = "AGEAP70A4604001011">
+<title>
+Abrufen, Aufzeichnen und Löschen von DTCs
+</title>
+<ptxt>
+<intxref refid = "AGEAP70A4604005">DTC-Überprüfung</intxref>
+ durchführen, Codes aufzeichnen und dann löschen. 
+<intxreftitleoff1 refid = "AGEAP70A4604006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A4604005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Falls beim ersten DTC-Abruf aufgezeichnete Codes nach dem Löschen der DTCs erneut ausgegeben werden, siehe 
+<intxref refid = "AGEAP70A4604005">DTC-Überprüfung</intxref>
+ für die weitere Diagnose.
+</ptxt>
+<ptxt>
+Werden die beim DTC-Abruf aufgezeichneten DTCs nach dem Löschen nicht mehr ausgegeben, führt das ESP<sup>&#174;</sup>-Steuermodul entweder keine Systemdiagnose mehr durch oder es liegt eine vorübergehende Störung vor. Deshalb die Diagnose wie unter 
+<intxref refid = "AGEAP70A4604001013">Schritt 3: Probefahrt</intxref>
+ beschrieben fortführen.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604001012" page = "1">
+<title>
+Schritt 2: Sichtprüfung
+</title>
+<ptxt>
+Zunächst eine Sichtprüfung aller Teile durchführen, die für eine ordnungsgemäße Funktion des ESP<sup>&#174;</sup>-Systems relevant sind. 
+<intxreftitleoff1 refid = "AGEAP70A4604002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604001013">
+<title>
+Schritt 3: Probefahrt
+</title>
+<ptxt>
+Das Fahrzeug mindestens zwei Minuten bei 40 km/h (25 mph) prüfen, einschließlich Links- und Rechtsdrehungen und mindestens einer Bremsenbetätigung. Dabei überprüfen, ob Störungssymptome auftreten (z. B. ob die ESP<sup>&#174;</sup> und/oder ABS-Warnleuchte leuchten).
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604001014">
+<title>
+Schritt 4: Bremsendiagnose
+</title>
+<ptxt>
+Die als Störungsursache in Frage kommenden Teile bzw. Systeme gemäß 
+<intxref refid = "AGEAP70A4101001">Bremssystembeschreibung</intxref>
+ und anhand der Symptome am Fahrzeug ermitteln (Symptome, die mit den Schritten 1 bis 3 ermittelt wurden). Defekte Bauteile reparieren oder ggf. austauschen.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604001015">
+<title>
+Schritt 5: Zeitweilige Störung
+</title>
+<ptxt>
+Die Teile (z.B. Kabelbäume oder Steckverbinder), bei denen ein Wackelkontakt wahrscheinlich ist, unter Bezug auf 
+<intxref refid = "AGEAP70A0006002">Überprüfung auf Wackelkontakt und schlechte Verbindungen</intxref>
+ prüfen und die durch den Störungscode (DTC) in Schritt 1 bis 5 angezeigten Schaltkreise untersuchen.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A4604001016">
+<title>
+Schritt 6: Endkontrolle
+</title>
+<ptxt>
+Sicherstellen, dass das Störungssymptom nicht mehr auftritt und das ESP<sup>&#174;</sup> einwandfrei funktioniert. Falls die durchgeführte Reparatur im Zusammenhang mit dem DTC steht, den entsprechenden DTC gemäß 
+<intxref refid = "AGEAP70A4604006">Löschen von DTCs</intxref>
+ löschen, eine Probefahrt durchführen und dann sicherstellen, dass der DTC nicht mehr angezeigt wird.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10B">
+<servcat sctnbr = "10" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70AA204013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1133
+</title>
+<servinfosub id = "AGKAP70AA204013001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.385in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.833in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1133: Πολύ Υψηλή Τάση Μπαταρίας 
+</emph>
+</ptxt>
+<ptxt>
+Η τάση του κυκλώματος ε&#248;εδρικής τρο&#248;οδοσίας από την ασ&#248;άλεια &#34;DOME&#34; είναι συνεχώς πάνω από 16,0 V για το καθορισμένο διάστημα.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Σύστημα &#248;όρτισης
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70AA204013002">
+<title>
+Διαδικασία Επιβεβαίωσης Κωδικού Βλάβης DTC
+</title>
+<s1>
+<ptxt>
+Ξεκινήστε τον κινητήρα, εάν είναι δυνατόν.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGKAP70AA204013003">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70AA204013004">
+<testgroup id = "AGKAP70AA204013006">
+<title>
+Έλεγχος παραμέτρων
+</title>
+<test1>
+<ptxt>
+Συνδέστε το διαγνωστικό εργαλείο SUZUKI στο DLC με την ανά&#248;λεξη &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Θέστε τον διακόπτη ανά&#248;λεξης στη θέση &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ελέγξτε την &#34;Τάση μπαταρίας&#34; που εμ&#248;ανίζεται στο διαγνωστικό εργαλείο SUZUKI. 
+<intxreftitleoff1 refid = "AGKAP70AA204007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι σε καλή κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Τέλος. (Διακοπτόμενο πρόβλημα.)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70AA204013005">
+<title>
+Έλεγχος του συστήματος &#248;όρτισης	
+</title>
+<test1>
+<ptxt>
+Ελέγξτε το σύστημα &#248;όρτισης. 
+<intxreftitleoff1 refid = "AGKAP70A1A04003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι σε καλή κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε τον εγκέ&#248;αλο ΒCM και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Επισκευάστε το σύστημα &#248;όρτισης.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

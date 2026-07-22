@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA104008" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0575
+</title>
+<servinfosub id = "ASLAP70AA104008001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.197in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.010in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+DTC P0575: Obvod vstupu tempomatu
+</emph>
+</ptxt>
+<ptxt>
+Toto DTC sa rozozná vtedy, ak je splnená jedna z nasledovných podmienok:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signálne napätie obvodu signálu spínača tempomatu je neustále vyššie ako predpísané napätie v predpísaný čas.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signály ON ktoréhokoľvek nasledovného spínača tempomatu sú detegované na dlhšie, ako je predpísaný čas.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+HLAVNÝ (ON/OFF) spínač
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spínač CANCEL
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spínač RES/ACC
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spínač SET/COAST
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Obvod / konektor spínača tempomatu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spínač tempomatu
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70AA104008002">
+<title>
+Schéma obvodu
+</title>
+<figure>
+<graphic graphicname = "IAP70PA10003.swf" width = "183.000mm" height = "75.710mm" ver = "03" gw = "475" gh = "198"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.315in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.291in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.965in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.267in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.968in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Konektor ECM (Pohľad: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Spínač CANCEL
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Konektor spínača tempomatu (Pohľad: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Spínač tempomatu
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+HLAVNÝ (ON/OFF) spínač
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signálny obvod spínača riadenia tempomatu
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Spínač RES/ACC
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Obvod uzemnenia spínača riadenia tempomatu
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Spínač SET/COAST
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASLAP70AA104008003">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70AA104008004">
+<testgroup id = "ASLAP70AA104008005">
+<title>
+Kontrola parametrov
+</title>
+<test1>
+<ptxt>
+Spínač zapaľovania prepnite do polohy OFF (vyp.) a k prípojke na údajové spojenie pripojte skenovacie zariadenie SUZUKI.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte “spínač tempomatu CANCEL”, “spínač tempomatu RES/ACC”, “spínač tempomatu SET/COAST” a “vypínač tempomatu”, ktoré sú zobrazené na skenovacom nástroji SUZUKI. 
+<intxreftitleoff1 refid = "ASLAP70AA104006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Sú v dobrom stave?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Koniec. (Občasná chyba)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA104008006">
+<title>
+Kontrola obvodu spínača tempomatu
+</title>
+<test1>
+<ptxt>
+Spínač zapaľovania sa nachádza v polohe OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojte konektory “C01”, “E01” a “G371”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie ku konektorom “C01”, “E01” a “G371”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, skontrolujte nasledovné.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Odpor obvodov „A1“ alebo „A2“: menej ako 3 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi obvodom „A1“ a uzemnením: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi svorkou obvodu „A1“ a konektorom „G371“ ďalšou svorkou v konektore alternátora: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi svorkou obvodu „A2“ a konektorom „G371“ ďalšou svorkou v konektore alternátora: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napätie obvodov „A1“ alebo „A2“: 0 - 1 V (keď je zapaľovanie zapnuté)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Sú v dobrom stave?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poškodený káblový zväzok.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA104008007">
+<title>
+Kontrola spínača tempomatu
+</title>
+<test1>
+<ptxt>
+Skontrolujte spínač tempomatu. 
+<intxreftitleoff1 refid = "ASLAP70AA106002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte spínač tempomatu. 
+<intxreftitleoff1 refid = "ASLAP70AA106001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B5104003" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Comprobación del DTC
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Hay dos tipos de sistema OBD, según las especificaciones del vehículo. Para identificarlos, consulte 
+<intxref refid = "ASPAP70B5100003">Precauciones relacionadas con el sistema OBD</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+En el caso del modelo Euro-OBD, en caso de que el MIL se encienda, la avería se detecta ya sea en el ECM o en el TCM y éste almacena la información de la avería (DTC, datos de imagen fija, etc.) en su memoria.
+</ptxt>
+<ptxt>
+Dependiendo de la variedad de la herramienta de escaneado, compruebe la información de la avería como se especifica a continuación.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Herramienta de escaneado SUZUKI: 
+</ptxt>
+<ptxt>
+Es necesario verificar el ECM y el TCM por separado, ya que la información de averías de ambos módulos no se puede leer y mostrar al mismo tiempo.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Herramienta de escaneado genérica OBD con comunicación CAN: 
+</ptxt>
+<ptxt>
+Inspeccione el ECM y el TCM (modelo con A/T) simultáneamente.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Prepare la herramienta de escaneado SUZUKI o la herramienta de escaneado genérica OBD con comunicación CAN.
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L5A002">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+Herramienta de escaneado de SUZUKI (SUZUKI-SDT)
+</s-number>
+</servicetoolitem>
+</servicetool>
+</s1>
+<s1>
+<ptxt>
+Con el encendido en la posición &#34;OFF&#34;, conecte la herramienta de escaneado al DLC (1) situado en el lado inferior del juego de instrumentos, en el lado del asiento del conductor.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A510004.jpg" width = "88.000mm" height = "67.502mm" ver = "03" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Conecte el encendido (posición &#34;ON&#34;) y compruebe que se encienda la MIL.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Lea los DTC y los datos de imagen fija, de acuerdo con las instrucciones mostradas en la herramienta de escaneado, e imprima o anote estos datos. Para obtener información más detallada, consulte el manual del usuario de la herramienta de escaneado.
+</ptxt>
+<attention3>
+<ptxt>
+Si no es posible la comunicación entre la herramienta de escaneado SUZUKI y el TCM, compruebe los elementos relacionados conforme a los siguientes puntos para la recuperación.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Herramienta de escaneado SUZUKI y cable de comunicación
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuito de masa y circuito de alimentación del DLC
+</ptxt>
+</item>
+<item>
+<ptxt>
+Avería del sistema de comunicación CAN (se detecta &#34;Bus de comunicación del módulo de control desactivado&#34; en cualquier módulo de control)
+</ptxt>
+</item>
+</list1>
+</attention3>
+</s1>
+<s1>
+<ptxt>
+Tras la verificación, desconecte el encendido (posición &#34;OFF&#34;) y desconecte la herramienta de escaneado del DLC.
+</ptxt>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10E">
+<servcat sctnbr = "10" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASLAP70AA501002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Popis častí a funkcií systému bezkľúčového štartovania
+</title>
+<ptxt>
+<intxrefpoff refid = "ASLAP70AA503001">Umiestnenie komponentov systému bezkľúčového štartovania</intxrefpoff>
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.968in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.236in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Časť
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Konštrukcia/Funkcia
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Riadiaca jednotka štartovania bez kľúča
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Namontované na spodnej strane prístrojovej dosky na strane spolujazdca. Vysiela informácie cez komunikáciu CAN medzi ECM, BCM a združeným meračom apod.
+</ptxt>
+<ptxt>
+Stav motora každého spínača požiadavky, spínača dverí a spínača motora. Urobte požiadavky na zamknutie, odomknutie dverí, naštartovanie motora a uvoľnenie zámky volantu.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Diaľkový ovládač
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prijíma dopytový signál zo všetkých antén. Vysiela identifikačný kód a signál požiadavky do prijímača bezkľúčového štartovania. Obsahuje tiež nasledovné zariadenie a funkcie.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kontrolka prevádzky
+</ptxt>
+</item>
+<item>
+<ptxt>
+So spínačom zapaľovania v polohe “ON”, ak klesne napätie akumulátora, prenáša signál do riadiacej jednotky bezkľúčového štartovania aby indikovala, že batéria diaľkového ovládača sa vybíja a rozsvieti výstražnú kontrolku spotreby batérie diaľkového ovládača v zduženom merači, aby upozornila vodiča na výmenu batérie.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Núdzový kľúč na zamknutie a odomknutie dverí keď systém bezkľúčového štartovania nefunguje z dôvodu vybitej batérie apod.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tlačidlá zamknutia/odomknutia na zamknutie alebo odomknutie dverí pomocou funkcie systému vstupu bezkľúčového štartovania.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spínač motora
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnený na prístrojovej doske na strane vodiča. Obsahuje tlačidlo, ktoré deteguje prevádzkový stav.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vonkajšia anténa na strane vodiča
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Na vonkajšej rukoväti dverí. Vysiela dopytové signály do diaľkového ovládača mimo vozidlo.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Anténa dverí na strane spolujazdca
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Zadná vonkajšia anténa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená na zadnej strane panela. Vysiela dopytové signály do diaľkového ovládača mimo vozidlo.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Stredná vnútorná anténa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená v skrinke strednej konzoly. Vysiela dopytové signály do diaľkového ovládača vo vnútri vozidla.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Zadná vnútorná anténa
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená na prednej strane panela. Vysiela dopytové signály do diaľkového ovládača v batožinovom priestore.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spínač požiadavky dverí vodiča
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnený na vonkajšej rukovätei dverí. Prenáša informácie ZAP/VYP z každého spínača požiadavky dverí do riadiacej jednotky bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spínač požiadavky dverí spolujazdca
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spínač požiadavky zadných koncových dverí
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnený na zadných koncových dverách. Prenáša informácie ZAP/VYP z každého spínača požiadavky zadných koncových dverí do riadiacej jednotky bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Každý dverový spínač
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prenáša informácie otvoriť/zatvoriť z každej riadiacej jednotky bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spínač zadných koncových dverí
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nachádza sa na jazýčku zadných koncových dverí. Prenáša informácie otvoriť/zatvoriť zo zadných koncových dverí do riadiacej jednotky bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Jednotka zámky volantu
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nachádza sa na stĺpiku riadenia. Uvoľňuje alebo zamyká zámku riadenia.
+</ptxt>
+<ptxt>
+Vrátane spínača detekovania odomknutia a spínač detekovania zamknutia, ktorý deteguje stav zámky riadenia. Stavy výstupu do riadiacej jednotky bezkľúčového štartovania cez sériovú komunikáciu.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrolka imobilizéra
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená na združenom merači. Vypne sa ak ID kód diaľkového ovládača zodpovedá stlačenému spínaču motora. Rozsvieti sa ak nemôže byť detekovaný diaľkový ovládač keď je stlačený spínač motora.
+</ptxt>
+<ptxt>
+Rozsvieti sa alebo bliká ak sa vyskytla chyba systému.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrolka bezpečnostného zariadenia proti zlodejom
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená na spínači výstražných svetiel. Rozsvieti sa alebo bliká ak je nastavený bezpečnostný alarm alebo ak sa vyskytne porucha systému.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kontrolka ACC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená na združenom merači. Rozsvieti sa, keď je režim zapaľovania v “ACC”.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Kontrolka zapnutia
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Umiestnená na združenom merači. Rozsvieti sa, keď je režim zapaľovania v ON so stojacim motorom.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Kontrolka PUSH
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Umiestnená na združenom merači. 
+</ptxt>
+<ptxt>
+Svieti, keď stlačíte spojkový pedál.
+</ptxt>
+<ptxt>
+Bliká ak ID kód diaľkového ovládača nie je zaregistrovaný so stlačeným spínačom motora.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé ACC
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená na J/B. Spínač režimu zapaľovania je pod kontrolou riadiaca jednotka bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé IG1
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé IG2
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relé ovládania štartéra
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnená na hlavnej reléovej skrinke. Zapne sa a dodáva napájanie do štartovania motora keď riadiaca jednotka bezkľúčového štartovania určí, že naštartovanie motora je možné.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CPP switch
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiesntený na spojkovom pedáli. Prenáša informácie prevádzky z spojkového pedála do riadiacej jednotky bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Výstražný vonkajší bzučiak
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnený na vonkajšej strane horného panela kapoty na strane vodiča. Znie, keď alarm výstražnej funkcie funguje.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spínač zámky dverí na strane vodiča/spolujazdca
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nachádza sa na oboch ovládačoch zámky predných dverí. Prenáša informácie zamknúť/odomknúť dverí vodiča/spolujazdca do riadiacej jednotky bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Spínač vložky zámky
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nachádza sa na ovládači zámky dverí. Prenáša informácie zamknúť/odomknúť zo spínača zámky dverí do riadiacej jednotky bezkľúčového štartovania.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Prijímač diaľkového ovládania centrálnej zámky dverí
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Umiestnený v skrinke strednej konzoly. Prijíma signál z diaľkového ovládača a vysiela ho do riadiacej jednotky bezkľúčového štartovania cez sériovú komunikáciu.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A1104073" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "ADUAP70A1104073001">
+<title>
+DTC-waarnemingsvoorwaarde en plaats van de storing
+</title>
+<attention3>
+<ptxt>
+Na het uitvoeren van een herprogrammering van de ECM is het mogelijk dat, indien DTC P0602 wordt getoond, de herprogrammering van de ECM niet correct is afgerond.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.602in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.602in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+DTC-waarnemingsvoorwaarde
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Plaats van de storing
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0602: Programmeerfout in regelapparaat
+</emph>
+</ptxt>
+<ptxt>
+Interne ECM-storing of ECM-programmeerfout
+</ptxt>
+<ptxt>
+(Opsporingslogica van 1 rijcycli)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Herprogrammeerfout van de ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM-voedingscircuit en/of -massacircuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ADUAP70A1104073002">
+<title>
+Beschrijving van het systeem
+</title>
+<s1>
+<ptxt>
+Zet het contactslot gedurende 10 sec. in de ON-stand.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ADUAP70A1104073003">
+<title>
+DTC-controleprocedure
+</title>
+<diag type = "test" id = "ADUAP70A1104073005">
+<testgroup id = "ADUAP70A1104073006">
+<title>
+DTC opnieuw controleren
+</title>
+<test1>
+<ptxt>
+Wis de DTC. 
+<intxreftitleoff1 refid = "ADUAP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Zet het contactslot op OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Voer de DTC-bevestigingsprocedure uit en controleer de DTC.
+</ptxt>
+</test1>
+<question>
+Wordt DTC P0602 nog waargenomen?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Controleer op sporadische storingen. 
+<intxreftitleoff1 refid = "ADUAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104073007">
+<title>
+Controle van de ECM-herprogrammering
+</title>
+<question>
+Is een herprogrammering van de ECM uitgevoerd?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Voer opnieuw een correcte herprogrammering van de ECM uit.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar stap 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104073008">
+<title>
+Controle van het ECM-voedings- en -massacircuit
+</title>
+<test1>
+<ptxt>
+Controleer de ECM-voedings- en -massacircuits. 
+<intxreftitleoff1 refid = "ADUAP70A1104071"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is het resultaat van de controle in orde?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sluit een goed bevonden ECM aan en controleer opnieuw. 
+<intxreftitleoff1 refid = "ADUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repareer of vervang de defecte bedradingsbundel.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

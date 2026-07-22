@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A1104011" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+MIL se ne uključuje kada se uključi kontakt i motor miruje (ali se motor može pokrenuti)
+</title>
+<servinfosub id = "AHRAP70A1104011001">
+<title>
+Rješavanje problema
+</title>
+<diag type = "test" id = "AHRAP70A1104011002">
+<testgroup id = "AHRAP70A1104011003">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provjerite DTC povezan s CAN komunikacijom.
+</ptxt>
+</test1>
+<question>
+Postoje li DTC-ovi koji se odnose na CAN?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na postupak rješavanja problema za dotični DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104011004">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provjerite DTC za kombinirani mjerač.
+</ptxt>
+</test1>
+<question>
+Jesu li detektirani DTC-ovi?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na postupak rješavanja problema za dotični DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite ECM i ponovo provjerite rad MIL-a. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

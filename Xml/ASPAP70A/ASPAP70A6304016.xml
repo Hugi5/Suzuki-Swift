@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70A6304016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1161 / C1162 
+</title>
+<servinfosub id = "ASPAP70A6304016001">
+<title>
+Condición de detección del DTC y área afectada 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.778in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1161: Datos no válidos de CAN de la velocidad del vehículo 
+</emph>
+</ptxt>
+<ptxt>
+Se reciben datos no válidos desde el ECM. 
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuito de comunicación CAN 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control de P/S 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1162: Datos no válidos de CAN del régimen del motor 
+</emph>
+</ptxt>
+<ptxt>
+Se reciben datos no válidos desde el ECM. 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPAP70A6304016002">
+<title>
+Procedimiento de confirmación del DTC 
+</title>
+<topic id = "ASPAP70A6304016003">
+<title>
+DTC C1161
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Compruebe el procedimiento de confirmación para el DTC P0500 Sensor de velocidad del vehículo &#34;A&#34;. 
+<intxreftitleoff1 refid = "ASPAP70A1104039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "ASPAP70A6304016004">
+<title>
+DTC C1162
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Compruebe el procedimiento de confirmación para el DTC P0335 Sensor de posición del cigüeñal &#34;A&#34;. 
+<intxreftitleoff1 refid = "ASPAP70A1104033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPAP70A6304016005">
+<title>
+Localización y reparación de la avería correspondiente al DTC 
+</title>
+<diag type = "test" id = "ASPAP70A6304016006">
+<testgroup id = "ASPAP70A6304016007">
+<question>
+¿Se ha realizado la &#34;Comprobación del sistema de P/S&#34;? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70A6304001">Comprobación del sistema de P/S</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70A6304016008">
+<title>
+Comprobación del DTC 
+</title>
+<test1>
+<ptxt>
+Revise el DTC del ECM. 
+<intxreftitleoff1 refid = "ASPAP70A6304003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Se detecta algún DTC? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente. (Fallo relacionado con el ECM) 
+<intxreftitleoff1 refid = "ASPAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el módulo de control de P/S y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

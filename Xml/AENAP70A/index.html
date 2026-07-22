@@ -1,0 +1,34 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+            "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+<head><title>SWIFT Service Manual</title>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+        "autoplay": "on",
+        "unmuteOverlay": "hidden",
+        "polyfill": true
+    };
+</script>
+<script type="text/javascript">
+function dragEnd_local() {
+  if(window.MAIN.document.getElementsByTagName('div').length!=0 && window.MAIN.document.getElementsByTagName('div')[0].className=="servinfo") {
+	  window.MAIN.dragEnd();
+  }
+}
+</script>
+</head>
+<frameset id="frames_rows" rows="1,60,*" style="border:none; margin:0px; padding:0px;" frameborder="1" border="1" framespacing="0" bordercolor="#7f99ff"> 
+	<frame name="CTL" scrolling="no" src="navi/ctl.html" style="border:none 0px; margin:0px; padding:0px; border-color:#7f99ff;" noresize frameborder="0" border="0">
+	<frame name="TOP" scrolling="no" src="navi/top.html" style="border:none 0px; margin:0px; padding:0px; border-color:#7f99ff;" noresize frameborder="0" border="0">
+
+<frameset id="frames_cols" cols="320,*" padding:0px;" framespacing="2" frameborder="1" border="2" bordercolor="#0033ff"> 
+	<frame name="NAVI" scrolling="yes">
+	<frame name="MAIN" scrolling="yes" src="navi/main.html" onresize="dragEnd_local()">
+</frameset>
+</frameset>
+
+</html>
+

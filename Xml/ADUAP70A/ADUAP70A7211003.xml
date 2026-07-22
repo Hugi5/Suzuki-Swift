@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ADUAP70A7211003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschrijving van de A/C-werking bij de ECM
+</title>
+<ptxt>
+De ECM regelt het A/C-compressorrelais en het radiateur-(condensor-)koelventilatorrelais zoals beschreven in onderstaande tabel na het ontvangen van het ON-signaal van de A/C-schakelaar van de HVAC-regeleenheid.
+</ptxt>
+<ptxt>
+Het ON-signaal van de A/C-schakelaar wordt van de HVAC-regeleenheid naar de BCM gestuurd. Vervolgens wordt het als A/C-verzoeksignaal naar de ECM gestuurd via CAN. Voor het CAN-communicatiesysteem, zie 
+<intxref refid = "ADUAP70AA801001">Beschrijving van het communicatiesysteem</intxref>
+.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.043in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.043in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.043in"/>
+<colspec colnum = "4" colname = "4" colwidth = "4.076in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Regelingsonderdeel
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ingangssensor (of -signaal)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Beschrijving
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A/C-compressorrelaisregeling
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Temperatuurregeling van de verdamper
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Verdampertemperatuursensor
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+De ECM regelt de A/C-compressor door het A/C-compressorrelais op ON/OFF te zetten volgens het verzoeksignaal van de BCM. De BCM stuurt het signaal gebaseerd op dat van de verdampertemperatuursensor om te voorkomen dat de verdamper bevriest.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Regeling bij laag motortoerental
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CKP-sensor (motortoerental)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+De ECM stopt de A/C-compressor, op basis van het CKP-sensorsignaal (motortoerental), door het A/C-compressorrelais op OFF te zetten om te voorkomen dat de motor stilvalt bij een laag motortoerental.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Regeling bij hoog motortoerental
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+De ECM zet de A/C-compressor af, op basis van het CKP-sensorsignaal (motortoerental), door het A/C-compressorrelais uit te zetten om te voorkomen dat de A/C-compressor te veel omwentelingen bij een hoog motortoerental maakt.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Regeling bij het starten van de motor
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+De ECM zet de A/C-compressor tijdelijk af, op basis van de CKP-sensorsignalen (motortoerental) en andere signalen, door het A/C-compressorrelais uit te zetten om te zorgen voor een stabiel stationair motortoerental onmiddellijk na het starten van de motor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Regeling bij abnormale koelmiddeldruk
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A/C-koelmiddeldruksensor
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+De ECM stopt de A/C-compressor, op basis van het A/C-koelmiddeldruksensorsignaal, door het A/C-compressorrelais op OFF te zetten om het systeem te beschermen wanneer de koelmiddeldruk abnormaal is.
+</ptxt>
+</item>
+<item>
+<ptxt>
+De ECM stopt de A/C-compressor door het A/C-compressorrelais op OFF te zetten wanneer de A/C-koelmiddeldruksensor een storing vertoont.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Regeling tijdens versnelling
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+De gaspedaalpositiesensor en de wieltoerentalsensor
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+De ECM stopt de A/C-compressor tijdelijk, op basis van het signaal van de gaspedaalpositiesensor, door het A/C-compressorrelais op OFF te zetten om te zorgen voor versnelling wanneer het gaspedaal volledig is ingedrukt, ongeacht de rijsnelheid.
+</ptxt>
+</item>
+<item>
+<ptxt>
+De ECM stopt de A/C-compressor tijdelijk, op basis van het signaal van de gaskleppositiesensor, door het A/C-compressorrelais op OFF te zetten om te zorgen voor versnelling wanneer het gaspedaal dieper dan de voorgeschreven waarde wordt ingedrukt bij een lage rijsnelheid.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Regeling bij een hoge motorkoelvloeistoftemperatuur
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ECT-sensor
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+De ECM stopt de A/C-compressor, op basis van het ECT-sensorsignaal, door het A/C-compressorrelais op OFF te zetten om oververhitting te vermijden wanneer de motorkoelvloeistoftemperatuur hoger is dan de voorgeschreven waarde.
+</ptxt>
+</item>
+<item>
+<ptxt>
+De ECM stopt de A/C-compressor door het A/C-compressorrelais op OFF te zetten wanneer de ECT-sensor een storing vertoont.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Radiateurkoelventilatorrelaisregeling (condensor)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+De A/C-koelmiddeldruksensor en de wieltoerentalsensor
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+De ECM drijft de radiateurkoelventilator in trage of snelle modus aan, op basis van signalen van de A/C-koelmiddeldruksensor en de wieltoerentalsensor, door radiateurkoelventilatorrelais nr. 1, nr. 2 en nr. 3 onder de volgende omstandigheden op ON/OFF te zetten wanneer het A/C-compressorrelais op ON staat.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Trage modus (radiateurkoelventilatorrelais nr. 1 staat op ON)
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+De rijsnelheid is lager dan het voorgeschreven bereik
+</ptxt>
+</item>
+<item>
+<ptxt>
+De rijsnelheid en de koelmiddeldruk zijn hoger dan het voorgeschreven bereik
+</ptxt>
+</item>
+<item>
+<ptxt>
+Er is geen defect in de wieltoerentalsensor waargenomen
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Snelle modus (radiateurkoelventilatorrelais nr. 1, nr. 2 en nr. 3 staan op ON)
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+De koelmiddeldruk is hoger dan het voorgeschreven bereik
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

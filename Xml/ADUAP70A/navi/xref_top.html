@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>XrefTop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" src="../../config8/stdio.js"></script>
+<script type="text/javascript" src="../../config8/ui.js"></script>
+<style type="text/css">
+body{
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	background-color: #7f99ff;
+	background-image: url(../../icon/top_back.gif);
+	background-repeat: repeat;
+	margin: 0px 2px;
+	border:none 0px;
+}
+
+a:active { color: #0033ff;text-decoration:none;}
+a:hover { color: #0033ff;text-decoration:none;}
+a:link { color: #0033ff;text-decoration:none;}
+a:visited { color: #0033ff;text-decoration:none;}
+
+.button {
+	font-size: 12px;
+	color: #0033ff;
+	background-color: #ffffff;
+	border:solid 1px #000000;
+	margin:2px;
+	padding:4px;
+	text-decoration:none;
+	cursor:pointer;
+}
+.button_clicked {
+	font-size: 12px;
+	color: #0033ff;
+	background-color: #ffcc00;
+	border:solid 1px #000000;
+	margin:2px;
+	padding:4px;
+	text-decoration:none;
+	cursor:default;
+}
+.button_inactive {
+	font-size: 12px;
+	color: #0033ff;
+	background-color: #ffffff;
+	border:solid 1px #000000;
+	margin:2px;
+	padding:4px;
+	text-decoration:none;
+}
+</style>
+</head>
+<body bgcolor="#7f99ff" onload="setUI_xref();" onunload="closeXrefWin();">
+<table border="0" width="90%" cellpadding="0" cellspacing="0">
+	<tr>
+	<td width="100%" align="right">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+						<div class="button" onclick="btnXrefUndo();"><img src="../../icon/undo.gif" width="30px" height="30px" border="0" title="Back to last page" id="iconUndo"></div>
+				</td>
+				<td align="center">
+						<div class="button" onclick="btnXrefPrint();"><img src="../../icon/print.gif" width="30px" height="30px" border="0" title="Print" id="iconPrint"></div>
+				</td>
+				<td align="center">
+						<div class="button" onclick="btnClose();"><img src="../../icon/close.gif" width="30px" height="30px" border="0" title="Close" id="iconClose"></div>
+				</td>
+				<td align="center">
+						<div class="button" onclick="btnHelp();"><img src="../../icon/help.gif" width="30px" height="30px" border="0" title="Help" id="iconHelp"></div>
+				</td>
+			</tr>
+		</table>
+	</td>
+	</tr>
+</table>
+</body>
+</html>

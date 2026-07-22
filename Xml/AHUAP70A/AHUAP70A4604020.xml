@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70A4604020" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1027
+</title>
+<servinfosub id = "AHUAP70A4604020001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.050in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.113in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1027: ESP<sup>®</sup> kiiktató kapcsoló hiba
+</emph>
+</ptxt>
+<ptxt>
+Az ESP<sup>®</sup> kiiktató kapcsoló az előírt időn túl „ON” állásban marad.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ESP<sup>®</sup> kiiktató kapcsoló
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> kiiktató kapcsoló áramköre
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604020002">
+<title>
+Kapcsolási rajz
+</title>
+<figure>
+<graphic graphicname = "IAP70A460009.swf" width = "183.000mm" height = "78.255mm" ver = "02" gw = "314" gh = "205"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "8" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.305in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.065in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.305in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.603in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.305in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.166in"/>
+<colspec colnum = "7" colname = "7" colwidth = "0.305in"/>
+<colspec colnum = "8" colname = "8" colwidth = "0.933in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul csatlakozója (nézet: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ESP<sup>®</sup> kiiktató kapcsoló jeláramköre
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+ESP<sup>®</sup> kiiktató kapcsoló
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+ESP<sup>®</sup> vezérlőmodul
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHUAP70A4604020003">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70A4604020004">
+<testgroup id = "AHUAP70A4604020005">
+<question>
+Végrehajtásra került az „ESP<sup>®</sup> rendszer ellenőrzése”?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a következővel: 
+<intxref refid = "AHUAP70A4604001">ESP® rendszer ellenőrzése</intxref>
+ .
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604020006">
+<title>
+ESP® kiiktató kapcsoló ellenőrzése
+</title>
+<test1>
+<ptxt>
+Győződjön meg arról, hogy a gyújtáskapcsoló „OFF” helyzetben van.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Távolítsa el az ESP<sup>®</sup> kiiktató kapcsolóját. 
+<intxreftitleoff1 refid = "AHUAP70A4606017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze az ESP<sup>®</sup> kiiktató kapcsoló egyes érintkezőinek megfelelő csatlakozását.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozások megfelelők, ellenőrizze az ESP<sup>®</sup> kiiktató kapcsolót. 
+<intxreftitleoff1 refid = "AHUAP70A4606018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Az ellenőrzés eredménye megfelelő?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> kiiktató kapcsolót.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70A4604020007">
+<title>
+ESP® kiiktató kapcsoló áramkörének ellenőrzése
+</title>
+<test1>
+<ptxt>
+Válassza le az „E24” csatlakozót.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze, hogy megfelelő-e a csatlakozás az „E24-38” érintkezőhöz.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ha a csatlakozás megfelelő, ellenőrizze az ellenállást az „E24-38” érintkező és a testelés között.
+</ptxt>
+</test1>
+<question>
+Az ellenállás végtelen nagy?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Cserélje ki az ESP<sup>®</sup> hidraulikaegységet / vezérlőmodul egységet, majd újból kérdezze le a DTC-ket. 
+<intxreftitleoff1 refid = "AHUAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Javítsa meg vagy cserélje ki az „A1” áramkört, ha az zárlatos.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

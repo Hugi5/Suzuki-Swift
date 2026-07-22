@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Description du système OBD 
+</title>
+<ptxt>
+L&#39;ECM de ce véhicule possède les fonctions suivantes. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Lorsque l&#39;allumage est sur &#34;ON&#34;, moteur coupé, le MIL (1) s&#39;allume pour vérifier le circuit du MIL (1). 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lorsque l&#39;ECM détecte un dysfonctionnement susceptible d&#39;entraîner des conséquences négatives sur les émissions du véhicule quand le moteur tourne, l&#39;ECM provoque l&#39;allumage ou le clignotement (uniquement en cas de raté d&#39;allumage risquant d&#39;endommager le catalyseur) du MIL (1) dans le combiné d&#39;instruments du tableau de bord, puis enregistre le dysfonctionnement en question dans sa mémoire. 
+</ptxt>
+<ptxt>
+(Si l&#39;ECM détecte un dysfonctionnement uniquement lors du premier cycle de conduite (se reporter au point 
+<intxref refid = "AFRAP70A1101003002">Cycle de conduite </intxref>
+.) mais ne détecte pas le même dysfonctionnement au cours des 2 cycles de conduite consécutifs suivants, l&#39;ECM n&#39;allume pas le MIL (1) bien qu&#39;il conserve le DTC associé dans sa mémoire.) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pour certains dysfonctionnements, l&#39;ECM adopte la logique de détection à 3 cycle(s) de conduite (se reporter au point 
+<intxref refid = "AFRAP70A1101003003">Logique de détection à 3 cycle(s) de conduite </intxref>
+) afin d&#39;éviter tout risque de détection erronée. 
+</ptxt>
+<ptxt>
+Selon cette logique, le témoin MIL s&#39;allume lorsque le même dysfonctionnement est détecté au cours de 3 cycles de conduite consécutifs. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lorsqu&#39;un dysfonctionnement est détecté, l&#39;état du moteur et les conditions de conduite au moment de la détection du dysfonctionnement sont enregistrés dans la mémoire de l&#39;ECM sous forme de données d&#39;arrêt sur image. (Pour plus de détails, se reporter à la description au point 
+<intxref refid = "AFRAP70A1101003007">Suppression des données d&#39;arrêt sur image: </intxref>
+.) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il est possible de communiquer via le DLC (3) à l&#39;aide de l&#39;outil de balayage SUZUKI (2) mais également en utilisant l&#39;outil de balayage générique OBD de communication CAN. (Les informations de diagnostic sont accessibles à l&#39;aide d&#39;un outil de balayage.) 
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "AFRAP70A1101003001">
+<title>
+Cycle de montée en température 
+</title>
+<ptxt>
+Un &#34;cycle de montée en température&#34; signifie que le moteur est maintenu en fonctionnement après le démarrage jusqu&#39;à ce que la température du liquide de refroidissement augmente de 22 &#176;C (40 &#176;F) minimum ou qu&#39;elle atteigne une température minimum de 71 &#176;C (160 &#176;F). 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1101003002">
+<title>
+Cycle de conduite 
+</title>
+<ptxt>
+Le &#34;cycle de conduite&#34; représente le temps qui s&#39;écoule entre le démarrage du moteur et la coupure du moteur suivante. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1101003003">
+<title>
+Logique de détection à 3 cycle(s) de conduite 
+</title>
+<ptxt>
+Le dysfonctionnement détecté lors du premier cycle de conduite est enregistré dans la mémoire de l&#39;ECM (sous forme de DTC en attente) mais le MIL ne s&#39;allume pas à ce stade. L&#39;ECM provoque l&#39;allumage du MIL lorsqu&#39;il détecte pour la troisième fois le même dysfonctionnement lors des deux cycles de conduite suivants. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1101003004">
+<title>
+DTC en attente 
+</title>
+<ptxt>
+&#34;DTC en attente&#34; correspond aux DTC auxquels la &#34;logique de détection à 3 cycle(s) de conduite&#34; est appliquée. Si un de ces DTC est détecté et temporairement stocké pendant le premier de trois cycles de conduite consécutifs, le DTC est appelé &#34;DTC en attente&#34;. 
+</ptxt>
+</servinfosub>
+<servinfosub id = "AFRAP70A1101003005">
+<title>
+Données d&#39;arrêt sur image 
+</title>
+<ptxt>
+L&#39;ECM enregistre en mémoire l&#39;état du moteur et les conditions de conduite au moment de la détection du dysfonctionnement. Ces données sont appelées &#34;Données d&#39;arrêt sur image&#34;. 
+</ptxt>
+<ptxt>
+Dans ces conditions, il est possible de connaître l&#39;état du moteur et les conditions de circulation (par ex. si le moteur était chaud ou non, si le véhicule roulait ou non, si le mélange air/carburant était pauvre ou riche) lorsqu&#39;un dysfonctionnement est détecté en vérifiant les données d&#39;arrêt sur image. L&#39;ECM enregistre également chaque donnée d&#39;arrêt sur image pour trois dysfonctionnements différents, dans l&#39;ordre de détection de chaque dysfonctionnement. Cette fonction permet de connaître l&#39;ordre dans lequel les dysfonctionnements ont été détectés. Cette fonction peut s&#39;avérer très utile dans le cadre de la contre-vérification ou du diagnostic d&#39;un problème. 
+</ptxt>
+<ptxt>
+Pour plus de détails concernant les données d&#39;arrêt sur image qui peuvent être lues sur l&#39;ECM, se reporter au tableau suivant. 
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.101in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Système de carburant 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Charge calculée 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régulation lambda à court terme 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régulation lambda à long terme 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Régime moteur 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vitesse du véhicule 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Avance à l&#39;allumage 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Température d&#39;air d&#39;admission 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP absolue 1* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Cycle opér purg cuve EVAP 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Temps après déma moteur 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Niveau résrvoir carb
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Press barométrique 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tension de batterie 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP relative** 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+TP absolue 2* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+APP absolue 1* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+APP absolue 2* 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Posit Papil Cible 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Les données d&#39;arrêt sur image avec astérisque (*) indiquent le rapport entre la tension de sortie et la tension d&#39;alimentation électrique du capteur associé. 
+</ptxt>
+<ptxt>
+Lorsque la tension d&#39;alimentation électrique est de 5,0 V et la tension de sortie de 4,0 V, les données d&#39;arrêt sur image affichent ce qui suit. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Pour les systèmes où la tension de sortie est proportionnelle à la tension d&#39;entrée, 80% s&#39;affiche (= pourcentage de la tension d&#39;entrée de référence maximum). 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pour les systèmes où la tension de sortie est inversement proportionnelle à la tension d&#39;entrée, 20% s&#39;affiche (= 100% moins le pourcentage de la tension d&#39;entrée de référence maximum). 
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pour la TP relative avec astérisques (**) dans le tableau ci-dessus, elle indique la valeur calculée à l&#39;aide de la formule suivante ((tension de sortie - tension de sortie en position de papillon fermé) / tension d&#39;alimentation électrique). 
+</ptxt>
+<ptxt>
+Lorsque la tension d&#39;alimentation électrique est de 5,0 V et la tension de sortie en position de papillon fermé de 1,0 V, les données d&#39;arrêt sur image affichent ce qui suit. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+En position de papillon fermé (tension de sortie = 1,0 V), 0% s&#39;affiche. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+En position de papillon grand ouvert (tension de sortie = 4,0 V), 60% s&#39;affiche. 
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Toutefois, pour les systèmes où la tension de sortie est inversement proportionnelle à la tension d&#39;entrée, 100% s&#39;affiche, moins la formule susmentionnée. 
+</ptxt>
+</attention3>
+<figure>
+<title>
+Données d&#39;arrêt sur image (exemple) 
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "AFRAP70A1101003006" page = "1">
+<title>
+Priorité des données d&#39;arrêt sur image: 
+</title>
+<ptxt>
+L&#39;ECM possède 4 trames permettant d&#39;enregistrer les données d&#39;arrêt sur image. 
+</ptxt>
+<ptxt>
+La trame 1 est une trame spéciale où les données d&#39;arrêt sur image concernant les dysfonctionnements affectant l&#39;émission ont la priorité sur les données liées à d&#39;autres dysfonctionnements (généraux). Si un quelconque dysfonctionnement affectant l&#39;émission est détecté pendant que la Trame 1 maintient une donnée concernant des dysfonctionnements généraux (données de priorité &#34;2&#34; dans le tableau suivant), alors les données actuellement enregistrées sont remplacées par les données concernant le nouveau dysfonctionnement détecté (données de priorité &#34;1&#34; dans le tableau suivant). 
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Priorité 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Données d&#39;arrêt sur image de la trame 1 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Données concernant l&#39;un des dysfonctionnements suivants: Ratés d&#39;allumage détectés (P0300 – P0304), système trop pauvre (P0171) et système trop riche (P0172) 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Données concernant des dysfonctionnements autres que ceux cités ci-dessus. 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Les trames 2 à 4 sont assignées aux dysfonctionnements généraux. Elles enregistrent individuellement les données d&#39;arrêt sur image pour 3 dysfonctionnements généraux différents dans l&#39;ordre de détection (c.-à-d. que la Trame 2 enregistre les données pour le premier dysfonctionnement détecté et la Trame 4 les données pour le dernier dysfonctionnement détecté). A la différence des données de la Trame 1, les données de ces 3 trames ne sont pas mises à jour, les données d&#39;arrêt sur image de tout dysfonctionnement détecté par la suite ne sont enregistrées nulle part. 
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039F.swf" width = "183.000mm" height = "49.215mm" ver = "02" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: Pas de données d&#39;arrêt sur image 
+</ptxt>
+</topic>
+<topic id = "AFRAP70A1101003007" page = "1">
+<title>
+Suppression des données d&#39;arrêt sur image: 
+</title>
+<ptxt>
+Lorsqu&#39;un DTC est supprimé, les données d&#39;arrêt sur image du dysfonctionnement représenté par ce DTC sont également effacées. 
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AFRAP70A1101003008" page = "1">
+<title>
+Essai d&#39;état de préparation du système 
+</title>
+<ptxt>
+L&#39;essai d&#39;état de préparation du système est réalisé dans le but de confirmer que chaque système associé aux émissions d&#39;échappement remplit les conditions qui permettent à l&#39;ECM de détecter un dysfonctionnement s&#39;il se produit et d&#39;émettre le DTC correspondant. 
+</ptxt>
+<ptxt>
+Le test est réalisé en contrôlant les éléments spécifiques (composants) en utilisant un outil de balayage (outil de balayage SUZUKI ou outil de balayage générique OBD de communication CAN). Quand le test montre que les conditions pré-établies pour le système testé sont réunies, l&#39;ECM effectue un diagnostic embarqué du système, modifie l&#39;état de l&#39;essai de préparation du système en le faisant passer de &#34;Incomplet&#34; à &#34;Complet&#34; et affiche le statut &#34;Complet&#34; sur l&#39;outil de balayage. 
+</ptxt>
+<ptxt>
+L&#39;état &#34;Complet&#34; est conservé jusqu&#39;à ce que l&#39;opération d&#39;effacement des DTC soit effectuée via l&#39;outil de balayage. 
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+L&#39;état de l&#39;essai de préparation du système peut passer de &#34;Complet&#34; à &#34;Incomplet&#34; si l&#39;une des opérations d&#39;entretien suivantes est effectuée. 
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Débranchement du câble négatif (–) de la batterie 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Débranchement des connecteurs de l&#39;ECM 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Dépose du câble de masse de l&#39;ECM 
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Les éléments (composants) indiqués dans le tableau ci-dessous sont contrôlés dans l&#39;essai d&#39;état de préparation du système afin de confirmer l&#39;état de préparation pour la détection des DTC mentionnés dans la liste à côté de chaque élément de contrôle. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le statut &#34;Complet&#34; ou &#34;Incomplet&#34; identifié via l&#39;essai d&#39;état de préparation du système ne signifie pas un résultat &#34;Normal&#34; ou &#34;Anormal&#34; du diagnostique embarqué. 
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AFRAP70A1101003009">
+<title>
+Elément de contrôle du tableau d&#39;essai d&#39;état de préparation du système 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Elément de contrôle
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC associé à l&#39;élément de contrôle
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Catalyseur
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Capteur O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Réchauffeur de capteur O2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

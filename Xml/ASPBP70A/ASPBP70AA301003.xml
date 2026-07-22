@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPBP70AA301003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descripción del procedimiento de arranque del motor
+</title>
+<ptxt>
+Si la pila del mando a distancia está agotada, hay un problema en el sistema o se ha desactivado el sistema de arranque por pulsación sin llave, el procedimiento de arranque del motor es el siguiente.
+</ptxt>
+<s1>
+<ptxt>
+Cuando se pisa el pedal del embrague, el módulo de control de arranque sin llave emite una señal de la luz indicadora de pulsación a través de la comunicación CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pulse el interruptor del motor.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+El módulo de control de arranque sin llave envía una señal de la luz indicadora de pulsación y una señal del inmovilizador a través de la comunicación CAN.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Toque el interruptor del motor con el mando a distancia durante aproximadamente 2 segundos mientras parpadea el indicador de pulsación en el juego de instrumentos .
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+El módulo de control de arranque sin llave lee el código del transpondedor del mando a distancia mediante la antena de bobina del inmovilizador equipada en el interruptor del motor.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+El relé de control del motor de arranque se activa y el motor de arranque se pone en marcha, se emite una solicitud de desbloqueo de la dirección a la unidad de bloqueo de la dirección mediante la comunicación en serie y se envía un mensaje al ECM para que el motor solo se pueda arrancar cuando el código del transpondedor se corresponda con el código registrado.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Si el código del transpondedor no se corresponde con el código registrado, el módulo de control de arranque sin llave no activa el relé de control del motor de arranque e impide el funcionamiento de dicho motor.
+</ptxt>
+<figure>
+<graphic graphicname = "IBP60BA30002S.swf" width = "183.000mm" height = "134.726mm" ver = "01" gw = "500" gh = "365"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

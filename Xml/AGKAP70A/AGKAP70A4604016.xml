@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A4604016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1015 / C1017 / C1023
+</title>
+<servinfosub id = "AGKAP70A4604016001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "5.257in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.924in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1015: Βλάβη αισθητήρα διαμηκών G στο συγκρότημα αισθητήρα βαθμού εκτροπής / αισθητήρα G 
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Το σήμα του αισθητήρα διαμηκών G βρίσκεται εκτός προκαθορισμένης κλίμακας.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Το σήμα του αισθητήρα διαμήκων G δεν αλλάζει αν και το αυτοκίνητο επιταχύνει ή επιβραδύνει.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Μονάδα ελέγχου ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Βάση ενεργοποιητή
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1017: Απόδοση Κυκλώματος Αισθητήρα Πλευρικού G
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Το σήμα του αισθητήρα πλευρικών G βρίσκεται εκτός προκαθορισμένης κλίμακας.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Το σήμα του αισθητήρα πλευρικών G δεν αλλάζει αν και το αυτοκίνητο στρίβει δεξιά ή αριστερά.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1023: Απόδοση Κυκλώματος Αισθητήρα Βαθμού Εκτροπής
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Το σήμα του αισθητήρα βαθμού εκτροπής βρίσκεται εκτός της καθορισμένης κλίμακας.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Αν και το αυτοκίνητο είναι ακινητοποιημένο, το σήμα του αισθητήρα βαθμού εκτροπής είναι μεγαλύτερο από την καθορισμένη τιμή.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A4604016002">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A4604016003">
+<testgroup id = "AGKAP70A4604016004">
+<question>
+Πραγματοποιήθηκε ο &#34;Έλεγχος του Συστήματος ESP<sup>&#174;</sup>&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A4604001">Έλεγχος Συστήματος ESP&#174;</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604016006">
+<title>
+Έλεγχος μονάδας ελέγχου ESP&#174; και βάσης συγκράτησης ενεργοποιητή
+</title>
+<test1>
+<ptxt>
+Ελέγξτε το συγκρότημα υδραυλικής μονάδας / μονάδας ελέγχου ESP<sup>&#174;</sup> και τη βάση συγκράτησης του ενεργοποιητή. 
+<intxreftitleoff1 refid = "AGKAP70A4606004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Είναι το αποτέλεσμα του ελέγχου ΟΚ;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Επισκευάστε ή αντικαταστήστε τα ελαττωματικά εξαρτήματα.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604016005">
+<title>
+Έλεγχος κωδικού DTC για ESP&#174;
+</title>
+<test1>
+<ptxt>
+Εκτελέστε 
+<intxref refid = "AGKAP70A4604005">Έλεγχος Κωδικού DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Υπάρχουν άλλοι κωδικοί DTC εκτός των C1015, C1017 και C1023;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στην ισχύουσα διάγνωση κωδικού βλάβης.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Αντικαταστήστε το συγκρότημα υδραυλικής μονάδας / μονάδας ελέγχου ESP<sup>&#174;</sup> και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

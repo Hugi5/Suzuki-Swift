@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A4604020" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1027
+</title>
+<servinfosub id = "AFRAP70A4604020001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.050in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.113in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1027: Défaillance du contacteur ESP<sup>&#174;</sup> OFF
+</emph>
+</ptxt>
+<ptxt>
+Le contacteur ESP<sup>&#174;</sup> OFF reste en position &#34;ON&#34; pendant une durée plus longue que le temps spécifié. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Contacteur ESP<sup>&#174;</sup> OFF 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuit de contacteur ESP<sup>&#174;</sup> OFF 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A4604020002">
+<title>
+Schéma du circuit 
+</title>
+<figure>
+<graphic graphicname = "IAP70A460009.swf" width = "183.000mm" height = "78.255mm" ver = "02" gw = "314" gh = "205"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "8" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.305in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.065in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.305in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.603in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.305in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.048in"/>
+<colspec colnum = "7" colname = "7" colwidth = "0.305in"/>
+<colspec colnum = "8" colname = "8" colwidth = "1.204in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Connecteur de module de commande ESP<sup>&#174;</sup> (vue: [a]) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuit de signal de contacteur ESP<sup>&#174;</sup> OFF 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+1. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Contacteur ESP<sup>&#174;</sup> OFF 
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+2. 
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Module de commande ESP<sup>&#174;</sup>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AFRAP70A4604020003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A4604020004">
+<testgroup id = "AFRAP70A4604020005">
+<question>
+La &#34;Vérification du système ESP<sup>&#174;</sup>&#34; a-t-elle été effectuée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer au point 
+<intxref refid = "AFRAP70A4604001">Vérification du système ESP&#174;</intxref>
+. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604020006">
+<title>
+Vérification du contacteur ESP&#174; OFF 
+</title>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Déposer le contacteur ESP<sup>&#174;</sup> OFF. 
+<intxreftitleoff1 refid = "AFRAP70A4606017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier si le branchement est correct à chaque borne du contacteur ESP<sup>&#174;</sup> OFF. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si les branchements sont corrects, vérifier le contacteur ESP<sup>&#174;</sup> OFF. 
+<intxreftitleoff1 refid = "AFRAP70A4606018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le résultat de la vérification est-il satisfaisant? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer le contacteur ESP<sup>&#174;</sup> OFF. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A4604020007">
+<title>
+Vérification du circuit de contacteur ESP&#174; OFF 
+</title>
+<test1>
+<ptxt>
+Débrancher le connecteur &#34;E24&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+S&#39;assurer que le branchement sur la borne &#34;E24-38&#34; est correct. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si le branchement est correct, vérifier la résistance entre la borne &#34;E24-38&#34; et la masse. 
+</ptxt>
+</test1>
+<question>
+La résistance est-elle égale à l&#39;infini? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer l&#39;ensemble de groupe hydraulique / module de commande ESP<sup>&#174;</sup> et vérifier à nouveau le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer ou remplacer le circuit &#34;A1&#34; en court-circuit. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

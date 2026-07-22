@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A5504056" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0796 / P0797
+</title>
+<servinfosub id = "ASPBP70A5504056001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.526in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.672in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0796: Rendimiento/agarrotamiento en OFF del solenoide de control de presión &#34;C&#34; 
+</emph>
+</ptxt>
+<ptxt>
+La relación calculada de la unidad de engranajes planetarios es superior al valor especificado durante el tiempo especificado incluso si la válvula solenoide del freno de baja está activada.
+</ptxt>
+<ptxt>
+(Lógica de detección de 1 ciclos de conducción)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Válvula solenoide de control del freno de baja y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0797: Solenoide de control de presión &#34;C&#34; fijo en la posición ON 
+</emph>
+</ptxt>
+<ptxt>
+Este DTC se detecta si se cumple alguna de las condiciones siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Cuando la relación real de la unidad de engranajes planetarios está fuera de la especificación, la relación de desaceleración es superior al valor especificado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La unidad de engranajes planetarios no cambia a la de la 2ª velocidad durante el tiempo especificado, aunque la válvula solenoide del freno de baja está desactivada.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(Lógica de detección de 2 ciclos de conducción para tipos A y C)
+</ptxt>
+<ptxt>
+(Lógica de detección de 1 ciclo de conducción para tipo B)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504056002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "IBP70A550020.swf" width = "183.000mm" height = "127.964mm" ver = "01" gw = "486" gh = "346"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.186in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.081in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.968in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Conector del TCM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito de accionamiento de la válvula solenoide de control de presión principal
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Válvula solenoide de control del TCC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Conector del solenoide (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A5: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito de accionamiento de la válvula solenoide de control del freno de baja
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Válvula solenoide de control de presión principal
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito de accionamiento de la válvula solenoide de control del embrague de alta y el freno de marcha atrás
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Conjunto de la CVT
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Válvula solenoide de control del freno de baja
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito de accionamiento de la válvula solenoide de control de presión de las tuberías
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Válvula solenoide de control del embrague de alta y el freno de marcha atrás
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+TCM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuito de accionamiento de la válvula solenoide de control del TCC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Válvula solenoide de control de presión de las tuberías
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504056003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Efectúe una prueba en carretera en un lugar donde no haya tráfico para evitar accidentes.
+</ptxt>
+</item>
+<item>
+<ptxt>
+La prueba en carretera deben realizarla dos personas, un conductor y un probador, en una carretera nivelada.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<topic id = "ASPBP70A5504056004">
+<title>
+P0796
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Si otro DTC distinto a P0796 se ha detectado recientemente durante este &#34;Procedimiento de confirmación de DTC&#34;, realice primero la localización de averías del DTC recién detectado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Compruebe que se cumplen las siguientes condiciones en este procedimiento.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+No se detecta otro DTC.
+</ptxt>
+</item>
+<item>
+<ptxt>
+11 V &#60; Tensión de la batería &#60; 15 V
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Arranque el motor y conduzca el vehículo en la posición D en la 1ª velocidad durante 2 seg. o más a partir del estado de parado, pisando el pedal del acelerador a fondo.
+</ptxt>
+</s1>
+</topic>
+<topic id = "ASPBP70A5504056011">
+<title>
+P0797
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Si otro DTC distinto a P0797 se ha detectado recientemente durante este &#34;Procedimiento de confirmación de DTC&#34;, realice primero la localización de averías del DTC recién detectado.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Compruebe que se cumplen las siguientes condiciones en este procedimiento.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+No se detecta otro DTC.
+</ptxt>
+</item>
+<item>
+<ptxt>
+11 V &#60; Tensión de la batería &#60; 15 V
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Arranque el motor y conduzca el vehículo en posición D en 2ª durante 2 seg. o más, cuando se pisa el pedal del acelerador a 20 a 30%, y conduciendo el vehículo a una velocidad de 50 km/h (31 mile/h) o más.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Detenga el vehículo.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Coloque el interruptor de encendido en la posición OFF y deje el interruptor de encendido en la posición OFF durante 10 seg.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Repita los pasos del 1) al 3).
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504056005">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A5504056006">
+<testgroup id = "ASPBP70A5504056007">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de la CVT&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A5504001">Inspección del sistema de la CVT</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504056008">
+<title>
+Inspección del circuito de accionamiento de la válvula solenoide de control del freno de baja
+</title>
+<test1>
+<ptxt>
+Con el interruptor de encendido en la posición OFF, desconecte los conectores &#34;C142&#34;, &#34;C09&#34; y &#34;E19&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si la conexión de los terminales a los conectores &#34;C142&#34;, &#34;C09&#34; y &#34;E19&#34; es correcta.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, compruebe los puntos siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistencia del circuito &#34;A5&#34;: menos de 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el circuito &#34;A5&#34; y la masa: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el terminal del circuito &#34;A5&#34; y otros terminales del conector &#34;C142&#34;: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión del circuito &#34;A5&#34;: aproximadamente 0 V (cuando el encendido está conectado (posición ON))
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Están en buenas condiciones?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504056009">
+<title>
+Comprobación de la válvula solenoide de control del freno de baja
+</title>
+<test1>
+<ptxt>
+Compruebe la resistencia de la válvula solenoide de control del freno de baja. 
+<intxreftitleoff1 refid = "ASPBP70A5506028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Está en buenas condiciones?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya la válvula solenoide de control del freno de baja (conjunto de CVT). 
+<intxreftitleoff1 refid = "ASPBP70A5506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504056010">
+<title>
+Comprobación la señal del circuito de accionamiento de la válvula solenoide de control del freno de baja
+</title>
+<test1>
+<ptxt>
+Conecte los conectores &#34;C142&#34;, &#34;C09&#34; y &#34;E19&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Conecte un osciloscopio entre &#34;A5&#34; y la masa y, a continuación, compruebe las señales del circuito de accionamiento de la válvula solenoide de control del freno de baja. 
+<intxreftitleoff1 refid = "ASPBP70A5504053"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Está en buenas condiciones?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el conjunto de la CVT. 
+<intxreftitleoff1 refid = "ASPBP70A5506019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el TCM por uno en buen estado y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPBP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70A1101010" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+A/F érzékelő leírása
+</title>
+<servinfosub id = "AHUAP70A1101010001">
+<title>
+A/F érzékelő leírása
+</title>
+<ptxt>
+Az A/F érzékelő a kipufogócsonkban helyezkedik el (a háromutas katalizátor előtt) és egy érzékelőfűtésből, egy érzékelőből és egy szabályozó ellenállásból áll.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+A rétegelt szerkezetű érzékelő egy cirkónium elemből, egy érzékelőkamrából és egy oxigén-referenciakamrából épül fel. Az ECM észleli a kipufogógáz oxigén-koncentrációját (A/F arány) SZEGÉNY-től (LEAN) - DÚS-ig (RICH) arányosan a cirkónium elem karakterisztikája segítségével.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az érzékelőfűtés az érzékelőelemeket kb. 780 &#176;C (1436 &#176;F) állandó hőmérsékleten tartja a kitöltési tényezőt vezérlő jel segítségével, az érzékelőelem aktiválása érdekében.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az érzékelő csatlakozójánál található szabályozó ellenállás kompenzálja az érzékelőelem kimeneti karakterisztikájában mutatkozó eltéréseket. Soha ne cserélje ki csak magát a csatlakozót, mivel az speciálisan az adott érzékelőhöz van beállítva.
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHUAP70A1101010002">
+<title>
+Általános működés
+</title>
+<s1>
+<ptxt>
+A cirkónium elem az észlelőkamra és a referencia-oxigénkamra közötti oxigén-koncentráció különbségének függvényében generál elektromotoros erőt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Az ECM szabályozza a gerjesztőáram intenzitását és az irányát a cirkónium elem felé, így fenntartja a feszültséget a két elektróda és a cirkónium elem (az &#34;LFUN&#34; és az &#34;LFVM&#34; érintkezők) között.
+</ptxt>
+<ptxt>
+Másképpen, az ECM a gerjesztőáram segítségével igyekszik fenntartani az oxigén-koncentrációt az érzékelőkamrában annak érdekében, hogy a cirkónium elem meghatározott értékű forrásfeszültséget generáljon.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Az ECM kiszámítja a kipufogógáz A/F arányát a gerjesztőáram nagyságának és irányának függvényében.
+</ptxt>
+</s1>
+<figure>
+<graphic graphicname = "I8C50B111045.swf" width = "183.000mm" height = "90.939mm" ver = "02" gw = "388" gh = "241"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "8" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.246in"/>
+<colspec colnum = "2" colname = "2" colwidth = "0.921in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.246in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.247in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.246in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.739in"/>
+<colspec colnum = "7" colname = "7" colwidth = "0.246in"/>
+<colspec colnum = "8" colname = "8" colwidth = "0.642in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+A/F érzékelő
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Észlelőkamra
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Elektróda
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Érzékelőfűtés
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Oxigén-referenciakamra
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+A/F -érzékelő jelfeldolgozó áramkör
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Érzékelőelem
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Szabályozó ellenállás
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+CPU
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Cirkónium elem
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Csatlakozó
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Kipufogógáz
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+<attention3>
+<ptxt>
+A kiadott gerjesztőáram +0,01 - +vmennyi mA a szegény állapotban és -vmennyi - -0,01 mA a dús állapotban.
+</ptxt>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

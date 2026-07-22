@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B5104004" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Borrado de DTC
+</title>
+<s1>
+<ptxt>
+Con el encendido apagado, conecte la herramienta genérica de escaneado OBD de comunicación CAN o la herramienta de escaneado SUZUKI al DLC.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Conecte el encendido (posición &#34;ON&#34;).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Borre el DTC y el DTC pendiente siguiendo las instrucciones que aparecen en la herramienta de escaneado. Los datos de imagen fija se borran junto con los DTC. Para obtener información más detallada, consulte el manual del usuario de la herramienta de escaneado.
+</ptxt>
+<ptxt>
+Si no es posible establecer la comunicación entre la herramienta de escaneado y el TCM, vaya a 
+<intxref refid = "ASPAP70BA804004">Localización y reparación de averías para Bus de comunicación apagado</intxref>
+.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Tras el borrado, desconecte el encendido (posición &#34;OFF&#34;) y desconecte la herramienta de escaneado del DLC.
+</ptxt>
+<attention3>
+<ptxt>
+El DTC y los datos de imagen fija almacenados en la memoria del TCM se borran también en los siguientes casos. Procure no borrarlos antes de registrarlos.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Cuando se corta la alimentación al módulo TCM (desconectando el cable de la batería, sacando el fusible o desconectando los conectores del TCM).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando no se vuelve a detectar la misma avería (DTC) durante 40 ciclos de calentamiento del motor.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

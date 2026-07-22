@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENBP70A5501005" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+OBD System Description
+</title>
+<servinfosub id = "AENBP70A5501005001">
+<title>
+Discrimination for OBD System
+</title>
+<ptxt>
+There are three types of OBD system, type A, B and C, in accordance with regulations in each country.
+</ptxt>
+<ptxt>
+The type of OBD system is identified by referring the market code shown in the ID plate, 
+<intxref refid = "AENBP70A0101010">Identification Plate</intxref>
+, on the dash panel in the engine compartment.
+</ptxt>
+<spec>
+<title>
+Vehicle equipped with the OBD system of Type A:
+</title>
+<ptxt>
+Market code E24 and E38
+</ptxt>
+</spec>
+<spec>
+<title>
+Vehicle equipped with the OBD system of Type B:
+</title>
+<ptxt>
+Market code E35
+</ptxt>
+</spec>
+<spec>
+<title>
+Vehicle equipped with the OBD system of Type C:
+</title>
+<ptxt>
+Market code E30, E43 and E96
+</ptxt>
+</spec>
+<table frame = "all" colsep = "1" rowsep = "1">
+<title>
+Difference in OBD system type
+</title>
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.477in"/>
+<colspec colnum = "2" colname = "2" colwidth = "0.983in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.000in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Type A
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Type B and C
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Freeze frame data
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+SUZUKI scan tool (SUZUKI SDT)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CAN communication OBD generic scan tool
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Not available
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENBP70A5501005005">
+<title>
+General Description (Type A)
+</title>
+<ptxt>
+For CVT control system, TCM has the following functions.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+When ignition is ON with no malfunction in CVT control system detected, transmission warning light (1) lights for about 2 seconds and then goes OFF for bulb check.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When TCM detects a malfunction in CVT control system, it indicates transmission warning light and stores DTC in its memory.
+</ptxt>
+<ptxt>
+And TCM detects a malfunction which gives an adverse effect to vehicle emission in CVT control system while the engine is running, TCM requires ECM to make the MIL (2) in the combination meter of the instrument panel turn ON.
+</ptxt>
+</item>
+<item>
+<ptxt>
+TCM stores the malfunction area (DTC according to SAE J2012) in TCM memory. (If it judges that the system is normal for 3 driving cycles continuously after detecting a malfunction, however, it makes transmission warning light turn OFF although DTC stored in its memory will remain.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+It is possible to communicate with vehicle through DLC (3) using not only SUZUKI scan tool (4) but also CAN communication OBD generic scan tool which are in compliance with SAE J1978. (Diagnostic information can be accessed using a scan tool.)
+</ptxt>
+<figure>
+<graphic graphicname = "IBP70A550004.jpg" width = "88.000mm" height = "99.803mm" ver = "01" gw = "162" gh = "266"/>
+</figure>
+</item>
+<item>
+<ptxt>
+For information about the following items, refer to 
+<intxref refid = "AENBP70A1101003">OBD System Description</intxref>
+.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Warm-up cycle
+</ptxt>
+</item>
+<item>
+<ptxt>
+Driving cycle
+</ptxt>
+</item>
+<item>
+<ptxt>
+2 driving cycle detection logic
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pending DTC
+</ptxt>
+</item>
+<item>
+<ptxt>
+Freeze frame data
+</ptxt>
+</item>
+</list2>
+</list1>
+</servinfosub>
+<servinfosub id = "AENBP70A5501005006">
+<title>
+General Description (Type B and C)
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+When ignition is ON with no malfunction in CVT control system detected, transmission warning light (1) lights for about 2 seconds and then goes OFF for bulb check.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When TCM detects a malfunction in CVT control system, it indicates transmission warning light and stores DTC in its memory.
+</ptxt>
+</item>
+<item>
+<ptxt>
+It is possible to communicate with vehicle through DLC (2) using SUZUKI scan tool (3). Diagnostic information can be checked and erased using SUZUKI scan tool.
+</ptxt>
+<figure>
+<graphic graphicname = "IBP70A550005.jpg" width = "88.000mm" height = "99.803mm" ver = "01" gw = "162" gh = "266"/>
+</figure>
+</item>
+<item>
+<ptxt>
+For information about the following items, refer to 
+<intxref refid = "AENBP70A1101003">OBD System Description</intxref>
+.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Warm-up cycle
+</ptxt>
+</item>
+<item>
+<ptxt>
+Driving cycle
+</ptxt>
+</item>
+<item>
+<ptxt>
+2 driving cycle detection logic
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pending DTC
+</ptxt>
+</item>
+<item>
+<ptxt>
+Freeze frame data
+</ptxt>
+</item>
+</list2>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHUAP70A7211003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+A/C működésének leírása ECM-nél
+</title>
+<ptxt>
+A HVAC vezérlőegységtől érkező A/C kapcsoló ON jelének fogadása után, az ECM szabályozza az A/C kompresszor relét és a hűtő (A/C hűtő) ventilátor reléjét az alábbi táblázatban leírtaknak megfelelően.
+</ptxt>
+<ptxt>
+A HVAC vezérlőegységtől A/C kapcsoló ON jel érkezik a BCM-hez. Ezt követően az A/C parancsjeleként továbbítódik az ECM-hez a CAN-en keresztül. A CAN kommunikációs rendszer leírását lásd: 
+<intxref refid = "AHUAP70AA801001">Kommunikációs rendszer leírása</intxref>
+.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.043in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.043in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.043in"/>
+<colspec colnum = "4" colname = "4" colwidth = "4.076in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vezérlő elem
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bemenet érzékelő (vagy jel)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Leírás
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A/C kompresszor relé vezérlés
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Párologtató hőmérséklet-szabályozás
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Párologtató hőmérséklet-érzékelője
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Az ECM szabályozza az A/C kompresszort azzal, hogy az A/C kompresszor reléjét a BCM-től érkező parancsjel alapján ON/OFF állásba fordítja. A BCM elküldi a párologtató hőmérséklet-érzékelő jele alapján jelet küld a párologtató befagyásának megakadályozása érdekében.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vezérlés alacsony motor fordulatszámon
+</ptxt>
+</entry>
+<entry colname = "3" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CKP érzékelő (motor fordulatszám)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Az ECM megállítja az A/C kompresszort, miközben kikapcsolja az A/C kompresszor relét a CKP érzékelő (motor fordulatszám) jelének függvényében, így akadályozza meg a motor lefulladását alacsony motor fordulatszámon.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vezérlés nagy motor fordulatszámon
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Az ECM megállítja az A/C kompresszort, miközben kikapcsolja az A/C kompresszor relét a CKP érzékelő (motor fordulatszám) jelének függvényében, így akadályozza meg az A/C kompresszor túlforgását nagy motor fordulatszámon.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vezérlés a motor indításakor
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Az ECM megállítja ideiglenesen az A/C kompresszort, miközben kikapcsolja az A/C kompresszor relét a CKP érzékelő (motor fordulatszám) és további érzékelők jelének függvényében, hogy biztosítsa a motor stabil alapjárati fordulatszámát azonnal a motor indítása után.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vezérlés rendellenes hűtőközeg nyomás alatt
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A/C hűtőközegnyomás-érzékelő
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az ECM megállítja az A/C kompresszort, miközben KIKAPCSOLJA az A/C kompresszor relét az A/C hűtőközegnyomás-érzékelő jele alapján, hogy védje a rendszert, amikor a hűtőközeg nyomása rendellenes.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az ECM megállítja az A/C kompresszort, az A/C kompresszor relé kikapcsolásával, az A/C hűtőközegnyomás-érzékelő meghibásodásakor.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vezérlés gyorsításkor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Gázpedálhelyzet-érzékelő és kerékfordulatszám-érzékelő
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az ECM megállítja ideiglenesen az A/C kompresszort az A/C kompresszor relé kikapcsolásával a gázpedálhelyzet-érzékelő jelének függvényében, hogy biztosítsa a gyorsítást, miközben a gázpedált teljesen lenyomta, függetlenül a jármű sebességétől.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az ECM megállítja ideiglenesen az A/C kompresszort az A/C kompresszor relé kikapcsolásával a fojtószelephelyzet-érzékelő jelének függvényében, hogy biztosítsa a gyorsítást, amikor a gázpedál a meghatározottnál jobban le van nyomva, ha a jármű sebessége kicsi.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vezérlés nagy hűtőfolyadék-hőmérséklet esetén
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+ECT érzékelő
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az ECM megállítja az A/C kompresszort, miközben kikapcsolja az A/C kompresszor relét az ECT érzékelő jelének függvényében, így akadályozza meg a túlmelegedést, amikor a hűtőfolyadék hőmérséklete nagyobb az előírt szintnél.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Az ECM megállítja az A/C kompresszort, az A/C kompresszor relé kikapcsolásával, az ECT érzékelő meghibásodásakor.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry namest = "1" nameend = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Hűtő (A/C hűtő) ventilátor relé szabályozása
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A/C hűtőközegnyomás-érzékelő és kerékfordulatszám-érzékelő
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Az ECM meghajtja a hűtőventilátort kis vagy nagy fordulatszámú üzemmódban az alábbi állapotok között, az 1. sz., 2. sz. és 3. sz. hűtőventilátor relék bekapcsolásával/kikapcsolásával, az A/C hűtőközegnyomás-érzékelő és a kerékfordulatszám-érzékelő jele alapján, amikor az A/C kompresszor relé be van kapcsolva.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kis fordulatszámú üzemmód (1. sz. hűtőventilátor relé bekapcsolva)
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+A jármű sebessége kisebb mint az előírt érték
+</ptxt>
+</item>
+<item>
+<ptxt>
+A jármű sebessége nagyobb mint az előírt tartomány és a hűtőközeg nyomása nagyobb az előírt értéknél
+</ptxt>
+</item>
+<item>
+<ptxt>
+A kerékfordulatszám-érzékelő nem észlelhető
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Nagy fordulatszámú üzemmód (1. sz., 2. sz. és 3. sz. hűtőventilátor relé bekapcsolva)
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+A hűtőközeg nyomása nagyobb az előírt értéknél
+</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

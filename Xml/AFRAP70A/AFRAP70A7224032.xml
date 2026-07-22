@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A7224032" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1581
+</title>
+<servinfosub id = "AFRAP70A7224032001">
+<title>
+Condition de détection du DTC et organe incriminé
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.922in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.288in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1581: erreur EEPROM de panneau 
+</emph>
+</ptxt>
+<ptxt>
+Une erreur EEPROM est survenue dans le panneau A/C automatique.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Panneau A/C automatique
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A7224032006">
+<title>
+Procédure de confirmation de DTC
+</title>
+<s1>
+<ptxt>
+Démarrer le moteur et activer le système A/C.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70A7224032002">
+<title>
+Recherche de pannes à partir de DTC
+</title>
+<diag type = "test" id = "AFRAP70A7224032003">
+<testgroup id = "AFRAP70A7234025004">
+<title>
+Vérification de DTC
+</title>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;OFF&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34; et vérifier les DTC.
+</ptxt>
+</test1>
+<question>
+Le DTC B1581 est-il toujours détecté?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le panneau A/C automatique et revérifier les DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Problème intermittent.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

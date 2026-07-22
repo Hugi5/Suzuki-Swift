@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A1104011" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+La spia MIL non si accende quando l&#39;accensione è in posizione ON e il motore è spento (ma può essere avviato)
+</title>
+<servinfosub id = "AITAP70A1104011001">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A1104011002">
+<testgroup id = "AITAP70A1104011003">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Controllare il DTC relativo alla comunicazione CAN.
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC relativi alla rete CAN?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare alla ricerca guasti relativa al DTC corrispondente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A1104011004">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Controllare la presenza di DTC del quadro strumenti.
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare alla ricerca guasti relativa al DTC corrispondente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire la ECM e ripetere il controllo funzionale della MIL. 
+<intxreftitleoff1 refid = "AITAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

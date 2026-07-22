@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70AA321003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description de la procédure de démarrage du moteur 
+</title>
+<ptxt>
+Si la batterie du dispositif de commande à distance est déchargée, il y a un dysfonctionnement au niveau du système et/ou le système de démarrage sans clé est désactivé; la procédure de démarrage du moteur est la suivante. 
+</ptxt>
+<s1>
+<ptxt>
+Lorsque la pédale d&#39;embrayage est enfoncée, le module de commande de démarrage sans clé émet un signal de témoin PUSH via la communication CAN. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Appuyer sur le contacteur de moteur. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Le module de commande de démarrage sans clé émet un signal de témoin de dispositif antidémarrage et un signal de témoin PUSH via la communication CAN. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Mettre le dispositif de commande à distance sur le contacteur de moteur pendant environ 2 secondes pendant que le témoin PUSH de combiné d&#39;instruments clignote. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Le module de commande de démarrage sans clé lit le code de transpondeur du dispositif de commande à distance grâce à l&#39;antenne de bobine de dispositif antidémarrage intégrée au contacteur de moteur. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Le relais de commande de moteur de démarrage s&#39;allume et le moteur de démarrage démarre, une demande de déverrouillage de direction est envoyée à l&#39;unité de verrouillage de direction via la communication sérielle et un message est envoyé à l&#39;ECM pour permettre le démarrage du moteur uniquement lorsque le code de transpondeur correspond au code enregistré. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Si le code de transpondeur ne correspond pas au code enregistré, le module de commande de démarrage sans clé n&#39;allume pas le relais de commande de moteur de démarrage pour empêcher le fonctionnement du moteur de démarrage. 
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA32001F.swf" width = "183.000mm" height = "134.726mm" ver = "03" gw = "508" gh = "365"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

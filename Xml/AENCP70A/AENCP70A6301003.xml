@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENCP70A6301003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+OBD System Description
+</title>
+<ptxt>
+The P/S control module has an on-board self-diagnostic function which detects a malfunction in this system. Be sure to have full understanding of “OBD System Description” and each item in 
+<intxref refid = "AENCP70A6000003">Precautions for Diagnosing Trouble</intxref>
+, before executing diagnosis according to 
+<intxref refid = "AENCP70A6304001">P/S System Check</intxref>
+.
+</ptxt>
+<ptxt>
+The P/S control module performs the on-board diagnosis (self-diagnosis) on the system and operates the “P/S” warning light (1) as follows.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+The “P/S” warning light turns on when the ignition is “ON” (but the engine at stop) regardless of the condition of the P/S control system. This is only to check if the “P/S” warning light is operated properly.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When the engine is started, the on-board self diagnosis is performed and the “P/S” warning light turns off if no trouble is found.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When the P/S control module detects a trouble, the “P/S” warning light comes on to warn the driver of the trouble. At the same time, a DTC is stored in the module.
+</ptxt>
+<figure>
+<graphic graphicname = "IAP70B630001.swf" width = "183.000mm" height = "53.342mm" ver = "01" gw = "479" gh = "135"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.246in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.114in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Without tachometer
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+With tachometer
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</item>
+</list1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

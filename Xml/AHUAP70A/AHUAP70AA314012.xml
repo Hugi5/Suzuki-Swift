@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70AA314012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1167
+</title>
+<servinfosub id = "AHUAP70AA314012001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.260in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.945in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1167: Indításgátló információk nem egyeznek
+</emph>
+</ptxt>
+<ptxt>
+Ellenőrzési hiba a BCM és az ECM között.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Az ECM azonosító kódja nincs regisztrálva a BCM-ben
+</ptxt>
+</item>
+<item>
+<ptxt>
+A gyújtáskulcs nincs regisztrálva
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70AA314012002">
+<title>
+DTC hibakeresés
+</title>
+<attention3>
+<ptxt>
+Ha a BCM-et már másik járműben regisztrálták (használt egység), nem regisztrálhatók gyújtáskulcsok. Ha csere szükséges, mindig új BCM-et szereljen be.
+</ptxt>
+</attention3>
+<diag type = "test" id = "AHUAP70AA314012003">
+<testgroup id = "AHUAP70AA314012004">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a DTC-ket az ECM-ben. 
+<intxreftitleoff1 refid = "AHUAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Észlelhető bármilyen DTC?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa az érintett DTC-hez tartozó hibaelhárítással.	
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Folytassa a 2. lépéssel.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA314012005">
+<title>
+DTC-újraellenőrzés
+</title>
+<test1>
+<ptxt>
+Hajtsa végre a következőket: 
+<intxref refid = "AHUAP70AA316003">ECM regisztrálása:Gyújtáskapcsolóval szerelt modell</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg arról, hogy a gyújtáskapcsoló „OFF” helyzetben van.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze újból a DTC-t. 
+<intxreftitleoff1 refid = "AHUAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Továbbra is észlelhető a B1167 DTC?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa a 3. lépéssel.
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Vége. (Nem került ECM regisztrálásra)
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHUAP70AA314012006">
+<title>
+Gyújtáskulcs regisztrálása
+</title>
+<test1>
+<ptxt>
+Hajtsa végre az &#34;Indításgátló kulcs regisztrációt&#34;. 
+<intxreftitleoff1 refid = "AHUAP70AA316002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Győződjön meg arról, hogy a gyújtáskapcsoló „OFF” helyzetben van.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Állítsa a gyújtást „ON” állásba.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ellenőrizze újból a DTC-t. 
+<intxreftitleoff1 refid = "AHUAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Továbbra is észlelhető a B1167 DTC?
+</question>
+<result>
+Igen
+</result>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Cserélje ki a BCM-et, majd újból kérdezze le a DTC-ket. Ha a DTC B1167 még mindig jelentkezik, cserélje ki az ECM-et, és ismételje meg a DTC ellenőrzését.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+BCM: 
+<intxreftitleoff1 refid = "AHUAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM: 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list2>
+</list1>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Vége. (a gyújtáskulcs nem volt regisztrálva)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

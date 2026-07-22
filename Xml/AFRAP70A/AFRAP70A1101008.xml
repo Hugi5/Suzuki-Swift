@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70A1101008" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+Description du système de commande de papillon électrique 
+</title>
+<ptxt>
+Le système de commande de papillon électrique comprend les éléments suivants: 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Corps de papillon électrique intégrant le papillon, l&#39;actionneur de papillon et les capteurs TP (principal/secondaire) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ensemble de pédale d&#39;accélérateur intégrant les capteurs APP (principal/secondaire) 
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+<servinfosub id = "AFRAP70A1101008001">
+<title>
+Description du fonctionnement 
+</title>
+<ptxt>
+L&#39;ECM (5) détecte l&#39;extension d&#39;enfoncement de la pédale d&#39;accélérateur en se basant sur la tension du signal du capteur APP (1). A l&#39;aide de ces données et des conditions de fonctionnement du moteur, l&#39;ECM calcule l&#39;ouverture optimale du papillon. D&#39;autre part, il détecte l&#39;ouverture du papillon en se basant sur la tension de signal du capteur TP (3) inclus dans le corps de papillon électrique (2) et compare cette valeur avec l&#39;ouverture optimale du papillon calculée ci-dessus. Lorsqu&#39;une différence est constatée, l&#39;ECM modifie le taux de service (100% à 0%) de la commande de l&#39;actionneur de papillon en fonction de cette différence pour diriger l&#39;actionneur de papillon (4) intégré dans le corps de papillon électrique. Lorsqu&#39;aucune différence n&#39;est constatée, l&#39;ECM fixe le taux de service à environ 15% pour maintenir l&#39;ouverture du papillon. C&#39;est ainsi que le papillon (13) est ouvert et fermé pour obtenir l&#39;ouverture optimale du papillon. 
+</ptxt>
+<ptxt>
+Dans ce système, étant donné que le capteur TP et le capteur APP possèdent chacun 2 capteurs (principal et secondaire), une commande et une détection des anomalies d&#39;une grande précision et d&#39;une grande fiabilité sont garanties. Lorsque l&#39;ECM détecte une anomalie dans le système, il arrête de commander l&#39;actionneur de papillon. 
+</ptxt>
+<ptxt>
+Ce corps de papillon n&#39;est pas équipé d&#39;une soupape IAC pour la commande de régime de ralenti. La commande de régime de ralenti est activée par l&#39;actionneur de papillon en ajustant l&#39;ouverture du papillon. 
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110003.swf" width = "183.000mm" height = "77.831mm" ver = "01" gw = "441" gh = "204"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.276in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.968in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.276in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.068in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.276in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.233in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CPU
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuit de signal de capteur APP (secondaire) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuit d&#39;entraînement de l&#39;actionneur de papillon 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Entraînement d&#39;actionneur de papillon 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuit de signal de capteur TP (principal) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuit de signal de capteur APP (principal) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuit de signal de capteur TP (secondaire) 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

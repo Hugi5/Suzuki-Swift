@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70A1101007" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Description du calibrage du système de commande de papillon électrique 
+</title>
+<ptxt>
+L&#39;ECM calcule l&#39;ouverture commandée du papillon sur la base de la position complètement fermée du papillon du système de commande de papillon électrique. Les données de position complètement fermée sont enregistrées dans la mémoire de l&#39;ECM. Toutefois, la position complètement fermée du papillon du système de commande de papillon électrique (tension du signal en provenance du capteur de position de papillon lorsque le papillon est complètement fermé) diffère en fonction de différences individuelles du papillon et du capteur de position de papillon. Etant donné que ces différences individuelles doivent être prises en compte pour la commande du papillon, les données de position complètement fermée du papillon doivent être enregistrées dans l&#39;ECM. Lorsque ces données sont enregistrées dans l&#39;ECM, elles sont sauvegardées dans la RAM (mémoire) de l&#39;ECM et utilisées comme données de base pour la commande du papillon. Ces données sont effacées lorsque n&#39;importe lequel des travaux décrits dans les &#34;Précautions relatives au calibrage du système de commande de papillon électrique&#34; sous 
+<intxref refid = "AFRAP70A1000001">Précautions pour le moteur</intxref>
+ est effectué. 
+</ptxt>
+<ptxt>
+De plus, après tout remplacement de l&#39;ensemble de corps de papillon et/ou de l&#39;ensemble de capteur APP, les données de position complètement fermée conservées dans la mémoire de l&#39;ECM doivent être effacées une fois et de nouvelles données doivent être enregistrées, faute de quoi l&#39;ECM ne sera pas en mesure de déterminer correctement la position complètement fermée. 
+</ptxt>
+<ptxt>
+Pour la procédure d&#39;enregistrement de ces données, se reporter au point 
+<intxref refid = "AFRAP70A1306005">Calibrage du système de commande de papillon électrique</intxref>
+. (Une fois les données de position complètement fermée effacées de l&#39;ECM, uniquement la première fois, le papillon s&#39;ouvre et se ferme pendant environ 60 s après que l&#39;allumage soit sur &#34;ON&#34;, pour enregistrer la position complètement fermée du papillon. Si le moteur est mis en route au cours de ce processus d&#39;enregistrement, des symptômes tels qu&#39;un &#34;temps de lancement du moteur plus long&#34; ou une &#34;augmentation lente du régime moteur après le démarrage&#34; peuvent se manifester. Cependant, placer l&#39;allumage sur &#34;OFF&#34; une fois puis redémarrer le moteur pour enregistrer correctement la position dans l&#39;ECM.) 
+</ptxt>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

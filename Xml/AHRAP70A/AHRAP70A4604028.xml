@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A4604028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1047/C1048
+</title>
+<servinfosub id = "AHRAP70A4604028001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.814in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.366in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1047: Rad signala senzora brzine ili enkodera oba prednja kotača
+</emph>
+</ptxt>
+<ptxt>
+Brzina zanošenja koju su izmjerila oba senzora brzine prednjih kotača ne podudara se sa signalom senzora brzine zanošenja.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Senzor kuta zakretanja upravljača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Senzor brzine kotača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Strujni krug senzora brzine kotača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Enkoder senzora brzine kotača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1048: Rad signala senzora brzine ili enkodera oba stražnja kotača
+</emph>
+</ptxt>
+<ptxt>
+Brzina zanošenja koju su izmjerila oba senzora brzine stražnjih kotača ne podudara se sa signalom senzora brzine zanošenja.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70A4604028002">
+<title>
+Rješavanje problema DTC-a
+</title>
+<diag type = "test" id = "AHRAP70A4604028003">
+<testgroup id = "AHRAP70A4604028004">
+<question>
+Je li izvršena “Provjera ESP<sup>®</sup> sustava”?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A4604001">Provjera ESP® sustava</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604028005">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70A4604005">Provjera DTC-a</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Postoje li DTC-ovi osim C1047 i C1048?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na odgovarajuće rješavanje problema za dotični DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604028006">
+<title>
+Pregled senzora kuta zakretanja upravljača na vozilu
+</title>
+<test1>
+<ptxt>
+Provjerite senzor kuta zakretanja upravljača. 
+<intxreftitleoff1 refid = "AHRAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li u dobrom stanju?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 4. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Zamijenite senzor kuta zakretanja upravljača i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604028007">
+<title>
+Provjera senzora brzine kotača
+</title>
+<test1>
+<ptxt>
+Provjerite odgovarajući senzor brzine kotača, enkoder i/ili krug senzora brzine kotača prema uputama u 
+<intxref refid = "AHRAP70A4604018">DTC C1021/C1022/C1025/C1026/C1031/C1032/C1033/C1035/C1036</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite sklop hidrauličkog uređaja/upravljačkog modula ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravni dio.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

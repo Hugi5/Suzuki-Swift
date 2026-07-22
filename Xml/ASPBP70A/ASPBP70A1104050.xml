@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A1104050" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0660
+</title>
+<servinfosub id = "ASPBP70A1104050001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<attention3>
+<ptxt>
+Para la distinción de tipo del sistema OBD, consulte &#34;Discriminación del sistema OBD&#34; en 
+<intxref refid = "ASPBP70A1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.843in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P0660: Circuito abierto en el circuito de control de la válvula de ajuste del colector de admisión 
+</emph>
+</ptxt>
+<ptxt>
+Se detecta una avería en el actuador de la válvula IMT y/o su circuito (circuito abierto, cortocircuito a la alimentación eléctrica o cortocircuito a masa).
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción, pero el MIL no se enciende)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción, pero el MIL no se enciende)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Actuador de la válvula de sincronización del múltiple de admisión (IMT) y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104050002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "IBP60B110031.swf" width = "183.000mm" height = "81.597mm" ver = "04" gw = "441" gh = "215"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.456in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.335in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.289in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.231in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.550in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conector del ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de accionamiento del actuador de válvula de sincronización del múltiple de admisión (IMT) (abierto)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de accionamiento del actuador de válvula de sincronización del múltiple de admisión (IMT) (cerrado)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Actuador de la válvula de IMT
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104050003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention3>
+<ptxt>
+Compruebe que se cumple la siguiente condición en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Tensión de la batería &#62; 8,5 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Ponga en marcha el motor en régimen de ralentí durante 10 seg.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104050004">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A1104050005">
+<testgroup id = "ASPBP70A1104050006">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104050007">
+<title>
+Inspección del circuito de accionamiento del actuador de la válvula de sincronización del múltiple de admisión (IMT)
+</title>
+<test1>
+<ptxt>
+Con el interruptor de encendido desconectado (posición OFF), desconecte los conectores &#34;C01&#34; y &#34;E01&#34; del ECM y el conector del actuador de la válvula IMT.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verifique si la conexión del terminal a los conectores &#34;C01&#34; y &#34;E01&#34; y el conector del actuador de la válvula IMT es correcta.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, compruebe los puntos siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistencia de los circuitos &#34;A1&#34; y &#34;A2&#34;: menos de 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre los circuitos &#34;A1&#34; y &#34;A2&#34; y la masa: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre los terminales del circuito &#34;A1&#34; y &#34;A2&#34; en el conector del actuador de la válvula IMT: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión de los circuitos &#34;A1&#34; y &#34;A2&#34;: Aproximadamente 0 V (cuando el encendido está en posición ON)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104050008">
+<title>
+Comprobación del actuador de la válvula de sincronización del múltiple de admisión (IMT)
+</title>
+<test1>
+<ptxt>
+Compruebe el actuador de la válvula de sincronización del múltiple de admisión (IMT). 
+<intxreftitleoff1 refid = "ASPBP70A1306023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el actuador de la válvula de sincronización del múltiple de admisión (IMT). 
+<intxreftitleoff1 refid = "ASPBP70A1406010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

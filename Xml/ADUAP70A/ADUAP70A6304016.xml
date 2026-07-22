@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "6C">
+<servcat sctnbr = "06" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A6304016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1161 / C1162
+</title>
+<servinfosub id = "ADUAP70A6304016001">
+<title>
+DTC-waarnemingsvoorwaarde en plaats van de storing
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.347in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.778in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC-waarnemingsvoorwaarde
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Plaats van de storing
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1161: Ongeldige CAN-gegevens van rijsnelheid
+</emph>
+</ptxt>
+<ptxt>
+Er worden ongeldige gegevens ontvangen van de ECM.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN-communicatiecircuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+P/S-regelapparaat
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1162: Ongeldige CAN-gegevens van motortoerental 
+</emph>
+</ptxt>
+<ptxt>
+Er worden ongeldige gegevens ontvangen van de ECM.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ADUAP70A6304016002">
+<title>
+DTC-controleprocedure
+</title>
+<topic id = "ADUAP70A6304016003">
+<title>
+DTC C1161
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Zie de bevestigingsprocedure voor DTC P0500 rijsnelheidsensor &#34;A&#34;. 
+<intxreftitleoff1 refid = "ADUAP70A1104039"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+<topic id = "ADUAP70A6304016004">
+<title>
+DTC C1162
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Zie de bevestigingsprocedure voor DTC P0335 krukaspositiesensor &#34;A&#34;. 
+<intxreftitleoff1 refid = "ADUAP70A1104033"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</topic>
+</servinfosub>
+<servinfosub id = "ADUAP70A6304016005">
+<title>
+DTC-storingzoeken
+</title>
+<diag type = "test" id = "ADUAP70A6304016006">
+<testgroup id = "ADUAP70A6304016007">
+<question>
+Is &#34;controle van het P/S-systeem&#34; uitgevoerd?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A6304001">Controle van het P/S-systeem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A6304016008">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Controleer de DTC&#39;s van de ECM. 
+<intxreftitleoff1 refid = "ADUAP70A6304003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Zijn er DTC&#39;s?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar storingzoeken voor de betrokken DTC. (ECM-betrokken defect) 
+<intxreftitleoff1 refid = "ADUAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vervang het P/S-regelapparaat en controleer de DTC opnieuw. 
+<intxreftitleoff1 refid = "ADUAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A7224005" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+Controllo impianto aria condizionata
+</title>
+<diag type = "test" id = "AITAP70A7224005001">
+<testgroup id = "AITAP70A7224005002">
+<title>
+Analisi dell&#39;inconveniente lamentato dal cliente 
+<intxreftitleoff1 refid = "AITAP70A7224005011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eseguire la procedura &#34;Analisi dell&#39;inconveniente lamentato dal cliente&#34;.
+</ptxt>
+</test1>
+<question>
+È stata eseguita l&#39;analisi dell&#39;inconveniente lamentato dal cliente?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Analizzare la descrizione dell&#39;inconveniente fornita dal cliente.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224005003">
+<title>
+Ispezione visiva 
+<intxreftitleoff1 refid = "AITAP70A7224005012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eseguire la procedura &#34;Ispezione visiva&#34;.
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224005004">
+<title>
+Controllo presenza DTC 
+<intxreftitleoff1 refid = "AITAP70A7224005013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eseguire la procedura &#34;Controllo presenza DTC&#34;.
+</ptxt>
+</test1>
+<question>
+Ci sono DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224005005">
+<title>
+Ricerca guasti 
+<intxreftitleoff1 refid = "AITAP70A7224005014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eseguire la &#34;Ricerca guasti&#34;.
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa, quindi andare al passo 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224005006">
+<title>
+Controllo funzionale impianto A/C 
+<intxreftitleoff1 refid = "AITAP70A7224005015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ 
+</title>
+<test1>
+<ptxt>
+Effettuare &#34;Controllo funzionale impianto A/C&#34;.
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa, quindi andare al passo 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 6.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224005007">
+<title>
+Eseguire la diagnosi dell&#39;impianto A/C in base ai sintomi 
+<intxreftitleoff1 refid = "AITAP70A7224005016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ 
+</title>
+<test1>
+<ptxt>
+Ispezionare e riparare l&#39;impianto A/C.
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa, quindi andare al passo 7.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224005008">
+<title>
+Controllo presenza guasti intermittenti 
+<intxreftitleoff1 refid = "AITAP70A7224005017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Controllare se esistono guasti intermittenti.
+</ptxt>
+</test1>
+<question>
+Ci sono anomalie?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa, quindi andare al passo 8.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A7224005009">
+<title>
+Verifica finale 
+<intxreftitleoff1 refid = "AITAP70A7224005018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Eseguire la procedura &#34;Verifica finale&#34;.
+</ptxt>
+</test1>
+<question>
+Sono presenti codici di guasto?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fine
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "AITAP70A7224005010">
+<title>
+Descrizione dei singoli passi
+</title>
+<topic id = "AITAP70A7224005011">
+<title>
+Passo 1. Analisi dell&#39;inconveniente lamentato dal cliente
+</title>
+<ptxt>
+Chiedere al cliente ogni dettaglio utile ad individuare il problema.
+</ptxt>
+<ptxt>
+</ptxt>
+<figure>
+<title>
+Questionario per il cliente (esempio)
+</title>
+<graphic graphicname = "I9P60A723040I.swf" width = "183.000mm" height = "130.810mm" ver = "04" gw = "502" gh = "354"/>
+</figure>
+<attention3>
+<ptxt>
+Il modulo qui riportato serve solo da esempio. All’atto pratico va adattato alle caratteristiche peculiari di ogni singolo mercato.
+</ptxt>
+</attention3>
+</topic>
+<topic id = "AITAP70A7224005012" page = "2">
+<title>
+Passo 2. Ispezione visiva
+</title>
+<ptxt>
+Come azione preliminare, controllare visivamente quei componenti che concorrono al corretto funzionamento dell&#39;impianto di condizionamento dell&#39;aria facendo riferimento a 
+<intxref refid = "AITAP70A7224007">Ispezione visiva:Tipo automatico</intxref>
+.
+</ptxt>
+</topic>
+<topic id = "AITAP70A7224005013" page = "2">
+<title>
+Passo 3. Controllo presenza DTC
+</title>
+<ptxt>
+Controllare la presenza di DTC facendo riferimento a 
+<intxref refid = "AITAP70A7224009">Controllo presenza DTC:Tipo automatico</intxref>
+.
+</ptxt>
+</topic>
+<topic id = "AITAP70A7224005014" page = "2">
+<title>
+Passo 4. Ricerca guasti
+</title>
+<ptxt>
+In base al DTC, seguire la procedura diagnostica pertinente per individuare la causa del guasto, che può essere un sensore, un cablaggio, un connettore, un attuatore, la centralina ECM o quant&#39;altro e riparare le parti difettose.
+</ptxt>
+</topic>
+<topic id = "AITAP70A7224005015" page = "2">
+<title>
+Passo 5. Controllo funzionale impianto A/C
+</title>
+<ptxt>
+Controllare l&#39;impianto A/C sospetto facendo riferimento a 
+<intxref refid = "AITAP70A7224001">Controllo funzionale impianto A/C:Tipo automatico</intxref>
+.
+</ptxt>
+</topic>
+<topic id = "AITAP70A7224005016" page = "2">
+<title>
+Passo 6. Diagnosi dell&#39;impianto A/C basata sui sintomi
+</title>
+<ptxt>
+Controllare i componenti o i sistemi sospetti facendo riferimento a 
+<intxref refid = "AITAP70A7224003">Diagnosi dell&#39;impianto A/C basata sui sintomi:Tipo automatico</intxref>
+.
+</ptxt>
+</topic>
+<topic id = "AITAP70A7224005017" page = "2">
+<title>
+Passo 7. Controllo presenza guasti intermittenti
+</title>
+<ptxt>
+Facendo riferimento a 
+<intxref refid = "AITAP70A0006002">Controllo presenza di connessioni difettose e contatti intermittenti</intxref>
+, controllare le parti e il relativo circuito inerente il codice di guasto rilevato maggiormente esposte a guasti intermittenti (cioè cablaggio, connettore, ecc.).
+</ptxt>
+</topic>
+<topic id = "AITAP70A7224005018" page = "2">
+<title>
+Passo 8. Verifica finale
+</title>
+<ptxt>
+Accertare che il sintomo di guasto sia scomparso e che l&#39;impianto A/C sia esente da condizioni anomale. Cancellare i DTC registrati, quindi accertare che non vengano nuovamente rilevati e verificare che non ve ne siano degli altri.
+</ptxt>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

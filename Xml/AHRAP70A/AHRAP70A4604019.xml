@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A4604019" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1024
+</title>
+<servinfosub id = "AHRAP70A4604019001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.328in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.861in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1024: Rad strujnog kruga senzora kuta zakretanja upravljača
+</emph>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CPU detektira unutarnji kvar u senzoru kuta zakretanja upravljača.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal senzora kuta zakretanja upravljača nije u okviru propisanog raspona.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signal senzora kuta zakretanja upravljača ne mijenja se iako vozilo skreće lijevo ili desno.
+</ptxt>
+</item>
+</list1>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Senzor kuta zakretanja upravljača
+</ptxt>
+</item>
+<item>
+<ptxt>
+Upravljački modul ESP<sup>®</sup>-a
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70A4604019002">
+<title>
+Rješavanje problema DTC-a
+</title>
+<attention2>
+<ptxt>
+Detekcija oboje DTC C1024 i C1075 označava unutarnju nepravilnost senzora kuta zakretanja upravljača. Zamijenite senzor kuta zakretanja upravljača. 
+<intxreftitleoff1 refid = "AHRAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</attention2>
+<diag type = "test" id = "AHRAP70A4604019003">
+<testgroup id = "AHRAP70A4604019004">
+<question>
+Je li izvršena “Provjera ESP<sup>®</sup> sustava”?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A4604001">Provjera ESP® sustava</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604019005">
+<title>
+Provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70A4604005">Provjera DTC-a</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Jesu li detektirani DTC U0073 i/ili U0126?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na odgovarajuće rješavanje problema za dotični DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604019006">
+<question>
+Jesu li detektirani i DTC C1024 i C1075?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite senzor kuta zakretanja upravljača. 
+<intxreftitleoff1 refid = "AHRAP70A6206007"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 4. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A4604019007">
+<title>
+Pregled senzora kuta zakretanja upravljača na vozilu
+</title>
+<test1>
+<ptxt>
+Provjerite senzor kuta zakretanja upravljača. 
+<intxreftitleoff1 refid = "AHRAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite sklop hidrauličkog uređaja/upravljačkog modula ESP<sup>®</sup>-a i ponovno provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Zamijenite senzor kuta zakretanja upravljača. 
+<intxreftitleoff1 refid = "AHRAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

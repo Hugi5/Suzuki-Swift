@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link href="../css/index.css" rel="stylesheet" type="text/css" />
+<script src="../js/prototype.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script src="../js/model.js" type="text/javascript"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+<style type="text/css">
+html 
+{
+    height: 100%;
+    margin:auto;
+}
+
+* html 
+{
+    height: 100%;
+    margin:auto;
+}
+
+#container 
+{
+    height: 100%;
+    margin:auto;
+}
+
+.categoryBox 
+{  
+    background-color:white;
+    padding:3px;
+    margin:auto;
+    border-width:1px;
+    border-color:#d7d7d7;
+    border-style:solid;
+
+    -moz-border-radius:10px;      
+    -webkit-border-radius:10px;
+    border-radius: 10px;   
+}
+</style>
+</head>
+<body id="toppage" onload="Init()">
+<div id="container">
+	<table border="0" cellspacing="0" cellpadding="0" style="width:100%; margin:auto;">
+		<tr>
+			<td style="width:250px;vertical-align:top;">
+			<div>
+				<table id="search" cellspacing="0" cellpadding="0" style="width:100%;">
+					<tr>
+						<td>
+							<form method="post" action="">
+								<div class="categoryBox">
+								<strong id="language_title"></strong>
+								<select id="language">
+								</select>
+								<div class="KeywordSearch">
+								    <p>
+								    <a id="keyword_search" href="javascript:void(0)" onclick="OpenKeywordSearch()"></a>
+								    </p>
+								</div>
+								</div>
+							</form>
+						</td>
+					</tr>
+				</table>
+				<img src="../img/line.gif" width="250px"/>
+				<br/>
+				<div class="categoryBox">
+			        <ul style="padding:8px 0px 8px 16px;list-style-type:square;color:#d7d7d7;margin:auto;">
+			        	<li>
+			                <a id="foreword" href="javascript:void(0)" onclick="return JumpNavigate('./' + CUR_LANGUAGE + '/foreword.html');"></a><br/>
+			        	</li>
+			        	<li>
+			                <a id="precautions" href="javascript:void(0)" onclick="return JumpNavigate('./' + CUR_LANGUAGE + '/0000010.html');"></a><br/>
+			        	</li>
+			        	<li>
+			                <a id="general_description" href="javascript:void(0)" onclick="return JumpNavigate('./general.html');"></a><br/>
+			        	</li>
+			        	<li>
+			                <a id="how_to_read" href="javascript:void(0)" onclick="return JumpNavigate('./howto.html');"></a><br/>
+			        	</li>
+			        </ul>
+				</div>
+				<br/>
+				<br/>
+				<div class="categoryBox">
+				    <ul style="padding:8px 0px 8px 16px;list-style-type:square;color:#d7d7d7;margin:auto;">
+				    	<li>
+				            <a id="connector_layout_diagram" href="javascript:void(0)" onclick="Navigate(3); return false;"></a><br/>
+				    	</li>
+				    	<li>
+				            <a id="ground_point" href="javascript:void(0)" onclick="Navigate(4); return false;"></a><br/>
+				    	</li>
+				    	<li>
+				            <a id="power_supply_diagram" href="javascript:void(0)" onclick="Navigate(5); return false;"></a><br/>
+				    	</li>
+				    </ul>
+				    <ul style="padding:8px 0px 8px 16px;list-style-type:square;color:#d7d7d7;margin:auto;">
+				    	<li>
+				            <a id="fuse_junction_block" href="javascript:void(0)" onclick="Navigate(6); return false;"></a><br/>
+				    	</li>
+				    	<li>
+				            <a id="system_circuit_diagram" href="javascript:void(0)" onclick="Navigate(7); return false;"></a><br/>
+				    	</li>
+				    	<li>
+				            <a id="connector" href="javascript:void(0)" onclick="Navigate(8); return false;"></a><br/>
+				    	</li>
+				    </ul>
+				    <ul style="padding:8px 0px 8px 16px;list-style-type:square;color:#d7d7d7;margin:auto;">
+				    	<li>
+				            <a id="reassembling_note_for_wiring_harness" href="javascript:void(0)" onclick="Navigate(9); return false;"></a>
+				    	</li>
+				    </ul>
+				</div>
+			</div>
+			</td>
+			<td id="splitter" style="background:blue;width:2px;"></td>
+			<td  width="6"><img src="../img/line.gif" width="1"/></td>
+			<td style="vertical-align:middle">
+			<div style="margin:auto;vertical-align:middle">
+				<p>
+					<img id="imgLogo" style="margin:auto;" />
+				</p>
+				<table border="0" width="100%">
+					<tr>
+						<td align="right">
+							<span><a id="svgviewer_installer"></a>
+							<embed src="../svg/dummy.svg" width="0" height="0" name="svgdata"/></span>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<a id="how_to_operate_this_manual" href="javascript:void(0)" onclick="window.open('../pdf/' + CUR_LANGUAGE + '/HowToOperate.pdf','','toolbar=yes,menubar=yes,location=yes,scrollbars=yes,resizable=yes,status=yes');"></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			</td>
+		</tr>
+	</table>
+</div>	
+</body>
+</html>

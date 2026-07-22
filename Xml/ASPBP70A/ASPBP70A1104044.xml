@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A1104044" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0602
+</title>
+<servinfosub id = "ASPBP70A1104044001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<attention3>
+<ptxt>
+Después de ejecutar la reprogramación del ECM, si se indica el DTC P0602, es posible que la reprogramación del ECM no se haya completado correctamente.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.087in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.117in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph etype = "bold">
+P0602: Error de programación del módulo de control 
+</emph>
+</ptxt>
+<ptxt>
+Fallo interno del ECM (error de programación de datos).
+</ptxt>
+<ptxt>
+(Lógica de detección de 1 ciclos de conducción, pero la MIL no se enciende)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Fallo de reprogramación del ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuito de la alimentación eléctrica del ECM y/o circuito a masa
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104044002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<s1>
+<ptxt>
+Conecte el encendido (posición ON) durante 1 min.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104044003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A1104044004">
+<testgroup id = "ASPBP70A1104044005">
+<title>
+Nueva comprobación del DTC.
+</title>
+<test1>
+<ptxt>
+Borre el DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Desconecte el encendido (posición OFF).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Realice el &#34;Procedimiento de confirmación de DTC&#34; y, verifique el DTC.
+</ptxt>
+</test1>
+<question>
+¿Se sigue detectando el DTC P0602?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Problema intermitente.
+</ptxt>
+<ptxt>
+Compruebe si existen problemas intermitentes. Consulte para ello 
+<intxref refid = "ASPBP70A0006002">Inspección de conexión intermitente y contacto deficiente</intxref>
+.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104044006">
+<title>
+Comprobación de la reprogramación del ECM
+</title>
+<question>
+¿Se ejecutó la reprogramación del ECM?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vuelva a ejecutar correctamente la reprogramación del ECM.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104044007">
+<title>
+Verificación del circuito de masa y de la alimentación del ECM
+</title>
+<test1>
+<ptxt>
+Revise el circuito de masa y de alimentación del ECM. 
+<intxreftitleoff1 refid = "ASPBP70A1104068"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

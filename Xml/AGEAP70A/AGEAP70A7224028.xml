@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A7224028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1557/B1561/B1563
+</title>
+<servinfosub id = "AGEAP70A7224028001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.922in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.288in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1557: Störung des Raddrehzahlsensors und/oder dessen Schaltkreises 
+</emph>
+</ptxt>
+<ptxt>
+HVAC-Steuermodul empfängt ungültige Daten des Fahrzeug-Geschwindigkeitssensors vom ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Raddrehzahlsensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ESP<sup>&#174;</sup>-Steuermodul
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC-Steuermodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1561: Störung des Motorkühlmittel-Temperatursensors und/oder dessen Schaltkreises 
+</emph>
+</ptxt>
+<ptxt>
+HVAC-Steuermodul empfängt ungültige Daten des ECT-Signals vom ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECT-Sensor
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC-Steuermodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1563: Störung des Drucksensors für A/C-Kältemittel und/oder dessen Schaltkreises 
+</emph>
+</ptxt>
+<ptxt>
+HVAC-Steuermodul empfängt ungültige Daten des A/C-Kältemitteldrucksignals vom ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Drucksensor für A/C-Kältemittel
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+HVAC-Steuermodul
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A7224028002">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<attention3>
+<ptxt>
+Sicherstellen, dass die folgende Bedingung erfüllt ist, wenn dieses Verfahren angewendet wird.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+U0073, U0100, U0140 und/oder U0155 werden nicht erfasst
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Den Motor anlassen und die Klimaanlage einschalten.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+B1557: Fahrzeug etwa 1 Minute lang fahren.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A7224028003">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A7224028004">
+<testgroup id = "AGEAP70A7224028005">
+<title>
+DTC-Überprüfung
+</title>
+<test1>
+<ptxt>
+Die DTCs für das ECM abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Liegen DTC(s) vor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit betreffender DTC-Fehlersuche. 
+<intxreftitleoff1 refid = "AGEAP70A1104005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Das HVAC-Steuermodul austauschen und die DTCs erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENAP70AA311001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Immobilizer Control System Introduction
+</title>
+<ptxt>
+When the ignition switch is turned to “ON”, the immobilizer coil antenna receives transponder code from the ignition key.
+</ptxt>
+<ptxt>
+The immobilizer coil antenna then transmits the transponder code thus received to BCM by means of serial communications.
+</ptxt>
+<ptxt>
+BCM compares this transponder code with the transponder code that has already been registered in BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+If both the transponder codes agree, BCM sends engine start permission signal to ECM via CAN communication.
+</ptxt>
+</item>
+<item>
+<ptxt>
+If both the transponder codes do not agree, BCM sends engine start prohibition signal to ECM via CAN communication.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+Upon receipt of the engine start prohibition signal, ECM causes fuel injection to be suspended, thereby prohibiting the engine from starting.
+</ptxt>
+<ptxt>
+At the same time, BCM or ECM sends a signal to the combination meter, requesting illumination or blinking of the immobilizer indicator light. The driver is then alerted to presence of an abnormality by lighting or blinking of the immobilizer indicator light.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA31001.swf" width = "183.000mm" height = "117.673mm" ver = "04" gw = "490" gh = "317"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

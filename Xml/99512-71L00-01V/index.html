@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title></title>
+<script type="text/javascript">
+
+// 画面遷移先言語取得
+function GetLanguage()
+{
+	// 言語一覧
+	var aryLanguage = {
+		 "en" : "English"
+		,"ge" : "German"
+		,"fr" : "French"
+		,"sp" : "Spanish"
+		,"du" : "Dutch"
+		,"hu" : "Hungarian"
+		,"it" : "Italian"
+		,"sl" : "Slovak"
+		,"gk" : "Greek"
+		,"hr" : "Croatian"
+		,"tw" : "Taiwanese"
+	}
+
+	var strLanguage = "English";	// デフォルト英語
+	var strParams = document.location.search.substr(1).toLowerCase().split("&");	
+	var strLang = "";
+
+	// 言語パラメータ取得
+	for (var i = 0; i < strParams.length; i++)
+		if (strParams[i].substr(0, 5) == "lang=") strLang = strParams[i].substr(5).toLowerCase();
+
+	// 選択言語取得
+	if (strLang in aryLanguage) strLanguage = aryLanguage[strLang];
+	
+	return strLanguage;
+}
+
+function CheckOsBrowser()
+{
+	var userAgent = navigator.userAgent.toLowerCase();
+
+	if (userAgent.match(/win(dows )?nt 6\.1/) ||
+		userAgent.match(/win(dows )?nt 6\.0/) ||
+		userAgent.match(/win(dows )?(nt 5\.1|xp)/) ||
+		userAgent.match(/win(dows )?(nt 5\.2|xp)/) ||
+		userAgent.match(/win(dows )?(nt 5\.0|2000)/))
+	{
+		// Windows 7 or Windows Vista or Windows XP or Windows 2000";
+	}
+	else
+	{
+		return false;	// 対象外OS	
+	}
+
+	var appVersion = navigator.appVersion.toLowerCase();
+
+	if (userAgent.indexOf("msie") > -1)
+	{
+		// IE
+		var indexMSIE = appVersion.indexOf("msie");
+		if (indexMSIE < 0) return false;
+
+		var ver = parseFloat(appVersion.substr(indexMSIE + 5).split(";")[0]);
+		// if (ver < 6 || ver >= 9) return false;
+		if (ver < 6 || ver > 9) return false;
+		
+		// IE(64bit)
+		if (userAgent.indexOf("win64; x64;") > -1)
+		{
+			return false;
+		}
+	}
+	else if (userAgent.indexOf("firefox") > -1)
+	{
+		// Firefox
+		var ver = parseFloat(userAgent.substr(userAgent.indexOf("firefox") + 8).split(" ")[0]);
+		// if (ver < 3.5 || ver >= 3.7) return false;
+		if (ver < 3.5 || ver >= 7) return false;
+	}
+
+	return true;
+}
+
+function OnLoad()
+{
+	if (CheckOsBrowser())
+		// 遷移先言語のトップページへ
+		location.href = './html/index.html?language=' + GetLanguage();
+	else
+		// 遷移先言語のエラーページへ
+		location.href = './html/' + GetLanguage() + '/error.html';
+}
+
+</script>
+</head>
+<body onload="OnLoad();"></body>
+</html>

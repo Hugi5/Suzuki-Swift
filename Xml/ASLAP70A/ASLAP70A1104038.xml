@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A1104038" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0481 / P0694
+</title>
+<servinfosub id = "ASLAP70A1104038001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1" pgwide = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.328in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.874in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0481: Obvod riadenia ventilátora 2
+</emph>
+</ptxt>
+<ptxt>
+Obvod relé č. 2 a/alebo č. 3ventilátora chladiča je prerušený alebo skratovaný k uzemneniu.
+</ptxt>
+<ptxt>
+(logika rozpoznania 3 jazdného cyklu, ale kontrolka poruchy nesvieti)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Relé elektromotora ventilátora chladiča č. 1 (strana spínača) a/alebo jeho obvod
+</ptxt>
+</item>
+<item>
+<ptxt>
+Relé č. 2 elektromotora ventilátora chladiča (strana cievky) a/alebo jeho obvod
+</ptxt>
+</item>
+<item>
+<ptxt>
+Relé č. 3 elektromotora ventilátora chladiča (strana cievky) a/alebo jeho obvod
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+P0694: Vysoké napätie obvodu riadenia ventilátora 2
+</emph>
+</ptxt>
+<ptxt>
+Hnací obvod relé č. 2 a/alebo č. 3 ventilátora chladiča je skratovaný k napájaniu.
+</ptxt>
+<ptxt>
+(logika rozpoznania 3 jazdného cyklu, ale kontrolka poruchy nesvieti)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104038002">
+<title>
+Schéma obvodu
+</title>
+<figure>
+<graphic graphicname = "I9P60A111021.swf" width = "183.000mm" height = "111.584mm" ver = "02" gw = "440" gh = "300"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.300in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.236in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.317in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.399in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.317in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.574in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Konektor ECM (Pohľad: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Riadiaci obvod relé ventilátora chladiča č. 2 a č. 3
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relé ventilátora chladiča č. 2
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Obvod napájania relé č. 1 ventilátora chladiča (strana cievky)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Obvod napájania relé ventilátora chladiča č. 1 (strana spínača)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relé ventilátora chladiča č. 3
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Obvod napájania relé č. 2 ventilátora chladiča (strana cievky)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Obvod napájania relé ventilátora chladiča č. 2 (strana spínača)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Elektromotor ventilátora chladiča
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Obvod napájania relé č. 3 ventilátora chladiča (strana cievky)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+C3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Obvod napájania relé ventilátora chladiča č. 3 (strana spínača)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Poistka „RDTR“
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Riadiaci obvod relé ventilátora chladiča č. 1
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Relé ventilátora chladiča č. 1
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104038003">
+<title>
+Postup potvrdenia DTC
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Uistite sa, že ste vyriešili predtým detekované DTC v „Postup potvrdenia DTC“.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Potvrďte, že nasledovné podmienky sú splnené v tomto „Postupe potvrdenia DTC“.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Napätie akumulátora &#62; 8,5 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napätie akumulátora je nižšie ako 18 V keď je rýchlosť vozidla vyššia ako 20 km/hod. (12 míľ/hod.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0563 nie je detekovaný.
+</ptxt>
+</item>
+</list2>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Zahrejte motor na bežnú prevádzkovú teplotu.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Udržujte motor na voľnobežných otáčkach, kým teplota chladiacej kvapaliny nedosiahne 102 &#176;C (215,6 &#176;F) alebo viac.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104038004">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A1104038005">
+<testgroup id = "ASLAP70A1104038006">
+<question>
+Bola vykonaná &#34;Kontrola systému motora a riadenia emisií&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104001">Kontrola systému motora a riadenia emisií</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104038007">
+<title>
+Kontrola obvodu napájania relé č. 1 ventilátora chladiča (strana spínača)
+</title>
+<test1>
+<ptxt>
+So spínačom zapaľovania v polohe OFF (Vyp.) vyberte relé ventilátora chladiča č. 1, č. 2 a č. 3 .
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie svoriek ku konektorom relé ventilátora chladiča č. 1, č. 2 a č. 3 .
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, prepnite spínač zapaľovania do polohy „ON (zap.)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, že napätie medzi „C1“ a uzemnením je akumulátorové napätie.
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Skontrolujte, či nie je poistka „RDTR“ vypálená. Ak nie je poistka vypálená, opravte alebo vymeňte obvod „C1“.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104038008">
+<title>
+Kontrola relé ventilátora chladiča
+</title>
+<test1>
+<ptxt>
+Skontrolujte relé ventilátora chladiča č. 1, č. 2 a č. 3 
+<intxreftitleoff1 refid = "ASLAP70A1606011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte relé ventilátora chladiča č. 1, č. 2 a/alebo č. 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104038009">
+<title>
+Kontrola obvodu napájania relé ventilátora chladiča č. 2 a č. 3 (strana cievky)
+</title>
+<test1>
+<ptxt>
+Ak je zapaľovanie vypnuté, odpojte konektory „C01“ a „E01“ z ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie ku konektorom „C01“ a „E01“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, skontrolujte nasledovné.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Odpor obvodov „A2“ alebo „A3“: menej ako 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi každým obvodom „A2“ a „A3“ a uzemnením: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi svorkou obvodu „A2“ a ďalšou svorkou v konektore relé ventilátora chladiča č. 2: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi svorkou obvodu „A3“ a ďalšou svorkou v konektore relé ventilátora chladiča č. 3: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napätie obvodov „A2“ alebo „A3“: 0 až 1 V (keď je zapaľovanie zapnuté)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poškodený káblový zväzok.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104038010">
+<title>
+Kontrola riadiaceho obvodu relé ventilátora chladiča č. 2 a č. 3
+</title>
+<test1>
+<ptxt>
+Keď je zapaľovanie vypnuté, skontrolujte nasledovné body.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Odpor obvodu „B2“: menej ako 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi obvodom „B2“ a uzemnením: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi svorkou obvodu „B2“ a ďalšou svorkou v konektore hnacieho obvodu relé ventilátora chladiča č. 2 a č. 3: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napätie obvodu „B2“: 0 až 1 V (keď je zapaľovanie zapnuté)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poškodený káblový zväzok.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

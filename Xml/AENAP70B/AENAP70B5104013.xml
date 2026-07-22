@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104013" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Stall Test
+</title>
+<ptxt>
+This test is to check overall performance of A/T and engine by measuring stall speed in “D” and “R” ranges. Be sure to perform this test only when ATF is at normal operating temperature and its level is between FULL and LOW marks.
+</ptxt>
+<attention2>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Do not run engine at stall for more than 5 seconds continuously, or fluid temperature may rise excessively.
+</ptxt>
+</item>
+<item>
+<ptxt>
+After performing stall test, be sure to leave engine running at idle for longer than 1 minute before another stall test.
+</ptxt>
+</item>
+</list1>
+</attention2>
+<s1>
+<ptxt>
+Apply parking brake and block wheels.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Connect SUZUKI scan tool to DLC (1).
+</ptxt>
+<servicetool>
+<servicetoolitem id = "L5A003">
+<s-part>
+(A)
+</s-part>
+<s-number num = "NNNNN-00024">
+SUZUKI scan tool (SUZUKI-SDT)
+</s-number>
+<ptxt>
+</ptxt>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I9P60A510004.jpg" width = "88.000mm" height = "67.502mm" ver = "03" gw = "159" gh = "175"/>
+</figure>
+</s1>
+<s1>
+<ptxt>
+Display “Data list” mode on scan tool.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Start engine with select lever in “P” range.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Depress brake pedal fully.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Shift select lever to “D” range and depress accelerator pedal fully while watching tachometer. Read engine rpm quickly when it has become constant (stall speed).
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Release accelerator pedal immediately after stall speed is checked.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+In the same way, check stall speed in “R” range.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Stall speed should be within the following specification.
+</ptxt>
+<spec>
+<title>
+Engine stall speed 
+</title>
+<ptxt>
+Standard: 2,000 – 2,400 rpm
+</ptxt>
+</spec>
+</s1>
+<servinfosub id = "AENAP70B5104013001">
+<title>
+Troubleshooting
+</title>
+<diag type = "condition" id = "AENAP70B5104013002">
+<condition>
+<ptxt>
+Lower than standard level in both “D” and “R” ranges
+</ptxt>
+</condition>
+<ps>
+<ptxt>
+Engine output torque failure
+</ptxt>
+</ps>
+<action>
+<paragroup>
+<ptxt>
+<intxref refid = "AENAP70B1104009">Engine Basic Inspection</intxref>
+.
+</ptxt>
+</paragroup>
+</action>
+<ps>
+<ptxt>
+Faulty torque converter
+</ptxt>
+</ps>
+<action>
+<ptxt>
+Replace torque converter referring to 
+<intxref refid = "AENAP70B5106064">A/T Assembly Reassembly</intxref>
+.
+</ptxt>
+</action>
+<condition>
+<ptxt>
+Higher than standard level in “D” range
+</ptxt>
+</condition>
+<ps>
+<ptxt>
+Malfunction of pressure control solenoid valve (Low line pressure)
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106029">Solenoid Valve Inspection</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Faulty valve body component
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106026">Valve Body Assembly Removal and Installation</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Slippery forward clutch
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106046">Forward and Reverse Clutch Assembly Preliminary Check</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Faulty one-way clutch No.2
+</ptxt>
+</ps>
+<action>
+<ptxt>
+Check one-way clutch No.2 referring to 
+<intxref refid = "AENAP70B5106037">A/T Assembly Disassembly</intxref>
+.
+</ptxt>
+</action>
+<condition>
+<ptxt>
+Higher than standard level in “R” range
+</ptxt>
+</condition>
+<ps>
+<ptxt>
+Malfunction of pressure control solenoid valve (Low line pressure)
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106029">Solenoid Valve Inspection</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Faulty valve body component
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106026">Valve Body Assembly Removal and Installation</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Slippery reverse clutch
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106046">Forward and Reverse Clutch Assembly Preliminary Check</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Slippery 1st and reverse brake
+</ptxt>
+</ps>
+<action>
+<ptxt>
+Check 1st and reverse brake referring to 
+<intxref refid = "AENAP70B5106064">A/T Assembly Reassembly</intxref>
+.
+</ptxt>
+</action>
+<condition>
+<ptxt>
+Higher than standard level in both “D” and “R” ranges
+</ptxt>
+</condition>
+<ps>
+<ptxt>
+Malfunction of pressure control solenoid valve (Low line pressure)
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106029">Solenoid Valve Inspection</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Faulty valve body component
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106026">Valve Body Assembly Removal and Installation</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Clogged oil strainer
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106022">A/T Oil Strainer Assembly Removal and Installation</intxref>
+.
+</ptxt>
+</action>
+<ps>
+<ptxt>
+Faulty oil pump
+</ptxt>
+</ps>
+<action>
+<ptxt>
+<intxref refid = "AENAP70B5106040">Oil Pump Assembly Inspection</intxref>
+.
+</ptxt>
+</action>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

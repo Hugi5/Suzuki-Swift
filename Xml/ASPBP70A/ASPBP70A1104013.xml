@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A1104013" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0010 / P2088 / P2089
+</title>
+<servinfosub id = "ASPBP70A1104013001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<attention3>
+<ptxt>
+Para el tipo de distinción del sistema OBD, consulte &#34;Discriminación del sistema OBD&#34; en 
+<intxref refid = "ASPBP70A1101003">Descripción del sistema OBD</intxref>
+.
+</ptxt>
+</attention3>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.830in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.374in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph etype = "bold">
+P0010: Circuito del actuador de posición del árbol de levas &#34;A&#34; / Abierto 
+</emph>
+</ptxt>
+<ptxt>
+Circuito de accionamiento de la OCV abierto.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+OCV y/o su circuito
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P2088: Valor bajo en el circuito de control del actuador de posición del árbol de levas &#34;A&#34; 
+</emph>
+</ptxt>
+<ptxt>
+El circuito de accionamiento de la OCV está cortocircuitado a masa.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P2089: Valor alto en el circuito de control del actuador de posición del árbol de levas &#34;A&#34; 
+</emph>
+</ptxt>
+<ptxt>
+El circuito de accionamiento de la OCV está cortocircuitado a la alimentación eléctrica.
+</ptxt>
+<ptxt>
+(Tipos A y C: lógica de detección de 3 ciclos de conducción)
+</ptxt>
+<ptxt>
+(Tipo B: lógica de detección de 2 ciclos de conducción)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104013002">
+<title>
+Diagrama del circuito
+</title>
+<figure>
+<graphic graphicname = "IBP60B110010.swf" width = "183.000mm" height = "85.138mm" ver = "01" gw = "441" gh = "225"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.584in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.317in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.334in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conector del ECM (vista: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de accionamiento de la OCV
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Circuito de alimentación eléctrica de la OCV
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+OCV
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104013003">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention3>
+<ptxt>
+Compruebe que se cumple la siguiente condición en este &#34;Procedimiento de confirmación del DTC&#34;.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Tensión de la batería &#62; 8,5 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Mantenga el motor al ralentí durante 10 seg.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A1104013004">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A1104013005">
+<testgroup id = "ASPBP70A1104013006">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de control del motor y de las emisiones&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A1104001">Inspección del sistema de control del motor y de las emisiones</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104013007">
+<title>
+Inspección del circuito de alimentación eléctrica de la OCV
+</title>
+<test1>
+<ptxt>
+Con el interruptor de encendido en la posición OFF, desconecte el conector de la OCV.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verifique que la conexión del terminal al conector de la OCV sea correcta.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, conecte el encendido (posición ON).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Verifique que la tensión entre &#34;A1&#34; y la masa equivale a la tensión de la batería.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+<ptxt>
+Si se detecta este DTC de nuevo, sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104013008">
+<title>
+Comprobación del circuito de accionamiento de la OCV
+</title>
+<test1>
+<ptxt>
+Con el interruptor de encendido desconectado (posición OFF), desconecte los conectores &#34;C01&#34; y &#34;E01&#34; del ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Compruebe si las conexiones de los terminales a los conectores &#34;C01&#34; y &#34;E01&#34; son correctas.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si las conexiones son correctas, compruebe los puntos siguientes.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Resistencia del circuito &#34;A2&#34;: menos de 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre el circuito &#34;A2&#34; y la masa: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Resistencia entre los terminales del circuito &#34;A1&#34; y &#34;A2&#34; en el conector de la OCV: infinito
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tensión del circuito &#34;A2&#34;: Aproximadamente 0 V (cuando el encendido está en posición ON)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare o sustituya el mazo de cables defectuoso.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104013009">
+<title>
+Comprobación de la OCV
+</title>
+<test1>
+<ptxt>
+Compruebe la OCV. 
+<intxreftitleoff1 refid = "ASPBP70A1306024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya la OCV.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A1104013010">
+<title>
+Localización y reparación de averías de otros DTC detectados al mismo tiempo
+</title>
+<question>
+¿Se detectan otros DTC al mismo tiempo?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sustituya el ECM y vuelva a realizar la comprobación de DTC. 
+<intxreftitleoff1 refid = "ASPBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

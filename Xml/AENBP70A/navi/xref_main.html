@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head>
+    <script type="text/javascript"> 
+// <![CDATA[
+        function kinoko() {
+
+            if (document.readyState != null && document.readyState != 'complete') 
+                return false; 
+
+            var arg = location.search;
+
+            var n = arg.lastIndexOf("/");
+            var file = arg.substr(n + 1, arg.length - n);
+
+            file = "../" + file;
+
+            var key = "UI_lang=";
+
+            n = arg.lastIndexOf(key);
+            n += key.length;
+
+            var e = arg.indexOf("&", n);
+            var UI_lang = arg.substr(n, e - n);
+
+            if (window.ActiveXObject) {
+                styleMain = xmlLoad_gen("../../config8/suzuki_all.xsl");
+                srcMain = xmlLoad_gen(file);
+                styleMain.selectSingleNode("//xsl:param[@name='UI_lang']").setAttribute("select", "'" + UI_lang + "'");
+                htmlMain = srcMain.transformNode(styleMain);
+            }
+            else if (window.XSLTProcessor) {
+                if (!xsltProcessor_main) {
+                    var xsltProcessor_main = new XSLTProcessor();
+                    var serializer_main = new XMLSerializer();
+
+                    var xDoc_main = xmlLoad_gen("../../config8/suzuki_all.xsl");
+                    xsltProcessor_main.importStylesheet(xDoc_main);
+                    xsltProcessor_main.setParameter("", "UI_lang", UI_lang);
+                }
+                var srcMain = xmlLoad_gen(file);
+                xslMainDoc = xsltProcessor_main.transformToDocument(srcMain);
+                htmlMain = serializer_main.serializeToString(xslMainDoc);
+            }
+
+            document.open();
+            document.write(htmlMain);
+            document.close();
+        }
+
+        function xmlLoad_gen(strFile) {
+            if (window.ActiveXObject) {
+                var dom;
+
+                dom = new ActiveXObject("Msxml2.DOMDocument");
+                dom.async = false;
+                dom.validateOnParse = false;
+                dom.load(strFile);
+                if (dom.parseError != 0) {
+                    alert(dom.url + ": " + dom.parseError.reason + "\nline number: " + dom.parseError.line);
+                    return null;
+                }
+                else
+                    return dom;
+            }
+            else if (window.XSLTProcessor) {
+                var xDoc = document.implementation.createDocument("", "", null);
+                xDoc.async = false;
+                xDoc.load(strFile);
+                return xDoc;
+            }
+        }
+
+// ]]>
+    </script>
+
+</head>
+<body onload="kinoko();">
+</body>
+</html>

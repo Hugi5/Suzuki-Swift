@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A7224026" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1546
+</title>
+<servinfosub id = "ASLAP70A7224026001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.937in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.274in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1546: Porucha tlaku chladiacej zmesi klimatizácie
+</emph>
+</ptxt>
+<ptxt>
+Tlak chladiacej kvapaliny klimatizácie je nižší ako predpísaná hodnota napriek tomu, že vonkajšia teplota je vyššia ako predpísaná hodnota.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Snímač tlaku chladiacej zmesi klimatizácie
+</ptxt>
+</item>
+<item>
+<ptxt>
+Snímač vonkajšej teploty vzduchu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nedostatok chladiacej zmesi
+</ptxt>
+</item>
+<item>
+<ptxt>
+Riadiaca jednotka HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A7224026002">
+<title>
+Postup potvrdenia DTC
+</title>
+<s1>
+<ptxt>
+Naštartujte motor a ovládajte systém klimatizácie.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A7224026003">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A7224026004">
+<testgroup id = "ASLAP70A7224026005">
+<title>
+Kontrola tlaku chladiacej zmesi klimatizácie
+</title>
+<test1>
+<ptxt>
+Zapnite klimatizáciu a spustite kompresor klimatizácie.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte „Refrigerant Pressure“ pomocou režimu „Zoznamu údajov“ na skenovacom nástroji SUZUKI. 
+<intxreftitleoff1 refid = "ASLAP70A7224008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je tlak nasd 0,34 MPa?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Doplňte chladiacu kvapalinu a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A7226001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A7224026006">
+<title>
+Kontrola snímača tlaku chladiacej zmesi klimatizácie
+</title>
+<test1>
+<ptxt>
+Skontrolujte snímač tlaku chladiacej zmesi klimatizácie. 
+<intxreftitleoff1 refid = "ASLAP70A7226022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je snímač v dobrom stave?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte snímač tlaku chladiacej zmesi klimatizácie. 
+<intxreftitleoff1 refid = "ASLAP70A7226023"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A7224026007">
+<title>
+Kontrola snímača teploty vonkajšieho vzduchu
+</title>
+<test1>
+<ptxt>
+Kontrola senzora vonkajšej teploty vzduchu. 
+<intxreftitleoff1 refid = "ASLAP70AA206005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je snímač v dobrom stave?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte senzor vonkajšej teploty vzduchu. 
+<intxreftitleoff1 refid = "ASLAP70AA206004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A7224026008">
+<title>
+Kontrola klimatizácie
+</title>
+<test1>
+<ptxt>
+Skontrolujte systém klimatizácie. 
+<intxreftitleoff1 refid = "ASLAP70A7224001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je systém je v dobrom stave?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte riadiacu jednotku HVAC a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vykonajte 
+<intxref refid = "ASLAP70A7224002">Diagnostika porúch nezvyčajného tlaku:Automatický typ</intxref>
+ a znovu skontrolujte DTC.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

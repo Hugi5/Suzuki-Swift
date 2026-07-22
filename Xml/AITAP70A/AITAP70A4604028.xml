@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A4604028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1047 / C1048
+</title>
+<servinfosub id = "AITAP70A4604028001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.814in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.366in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1047: Prestazioni segnale sensori di velocità di entrambe le ruote anteriori o ruote foniche
+</emph>
+</ptxt>
+<ptxt>
+La velocità di imbardata stimata da entrambi i sensori di velocità delle ruote anteriori non corrisponde al segnale del sensore di imbardata.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensore angolo sterzo
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sensore velocità ruota
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuito sensore velocità ruota
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ruota fonica sensore velocità ruota
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina ESP<sup>®</sup>
+</ptxt>
+</item>
+</list1>
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1048: Prestazioni segnale sensori di velocità di entrambe le ruote posteriori o ruote foniche
+</emph>
+</ptxt>
+<ptxt>
+La velocità di imbardata stimata da entrambi i sensori di velocità delle ruote posteriori non corrisponde al segnale del sensore di imbardata.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A4604028002">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A4604028003">
+<testgroup id = "AITAP70A4604028004">
+<question>
+È stato eseguito il &#34;Controllo sistema ESP<sup>®</sup>&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A4604001">Controllo sistema ESP®</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604028005">
+<title>
+Controllo presenza DTC
+</title>
+<test1>
+<ptxt>
+Eseguire 
+<intxref refid = "AITAP70A4604005">Controllo presenza DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Sono presenti DTC diversi da C1047 o C1048?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fare riferimento alla procedura diagnostica relativa al DTC rilevato.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare al passo 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604028006">
+<title>
+Ispezione del sensore angolo sterzo a bordo del veicolo
+</title>
+<test1>
+<ptxt>
+Controllare il sensore angolo sterzo. 
+<intxreftitleoff1 refid = "AITAP70A4606015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+L&#39;esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Sostituire il sensore angolo sterzo e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A4604028007">
+<title>
+Controllo sensore velocità ruota
+</title>
+<test1>
+<ptxt>
+Controllare il circuito del sensore velocità ruota del caso, la relativa ruota fonica e/o il circuito del sensore medesimo secondo quanto indicato in 
+<intxref refid = "AITAP70A4604018">DTC C1021 / C1022 / C1025 / C1026 / C1031 / C1032 / C1033/ C1035 / C1036</intxref>
+ .
+</ptxt>
+</test1>
+<question>
+L’esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire il gruppo centralina elettroidraulica ESP<sup>®</sup> e ricontrollare la presenza di DTC. 
+<intxreftitleoff1 refid = "AITAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Riparare o sostituire la parte difettosa.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

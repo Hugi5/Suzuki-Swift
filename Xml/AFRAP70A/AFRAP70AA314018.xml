@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70AA314018" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1188
+</title>
+<servinfosub id = "AFRAP70AA314018001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.229in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.966in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1188: Erreur de communication de transpondeur 
+</emph>
+</ptxt>
+<ptxt>
+Vérification de l&#39;erreur entre la clé de contact et le BCM. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+La clé de contact n&#39;est pas enregistrée 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Clé de contact 
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70AA314018002">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Avant d&#39;effectuer une recherche de pannes, s&#39;assurer d&#39;avoir lu 
+<intxref refid = "AFRAP70AA310002">Précautions relatives au système de dispositif antidémarrage:Modèle à contacteur d&#39;allumage</intxref>
+. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Si le BCM a déjà été enregistré sur un autre véhicule (d&#39;occasion), les clés de contact ne peuvent pas être enregistrées. Poser toujours un BCM neuf lorsqu&#39;un remplacement est nécessaire. 
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AFRAP70AA314018003">
+<testgroup id = "AFRAP70AA314018004">
+<title>
+Vérification du démarrage du moteur 
+</title>
+<test1>
+<ptxt>
+Faire démarrer le moteur à l&#39;aide de la clé de contact de rechange. 
+</ptxt>
+</test1>
+<question>
+Le moteur démarre-t-il? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fin. (la clé de contact n&#39;a pas été enregistrée) 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70AA314018005">
+<title>
+Enregistrement de la clé de contact 
+</title>
+<test1>
+<ptxt>
+Effectuer l&#39;&#34;Enregistrement de clé du dispositif antidémarrage&#34;. 
+<intxreftitleoff1 refid = "AFRAP70AA316002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC B1188 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le BCM et vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. (la clé de contact n&#39;a pas été enregistrée) 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1G">
+<servcat sctnbr = "01" scnbr = "07">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B1704005" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Fuel Pressure Check
+</title>
+<servinfosub id = "AENAP70B1704005001">
+<title>
+System Diagram
+</title>
+<servicetool>
+<servicetoolitem id = "L1G002">
+<s-part>
+(A)
+</s-part>
+<s-number num = "09912-58442">
+09912–58442
+</s-number>
+</servicetoolitem>
+<servicetoolitem id = "L1G003">
+<s-part>
+(B)
+</s-part>
+<s-number num = "09912-58432">
+09912–58432
+</s-number>
+<ptxt>
+</ptxt>
+</servicetoolitem>
+<servicetoolitem id = "L1G004">
+<s-part>
+(C)
+</s-part>
+<s-number num = "09912-58490">
+09912–58490
+</s-number>
+<ptxt>
+</ptxt>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I3RM0A110081.swf" width = "183.000mm" height = "105.949mm" ver = "01" gw = "453" gh = "283"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.263in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.534in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.263in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.959in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.263in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.402in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Fuel injector
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Fuel delivery pipe
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Fuel pump assembly
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AENAP70B1704005002">
+<title>
+Troubleshooting
+</title>
+<attention3>
+<ptxt>
+Before using the following flow chart, confirm that battery voltage is 11 V or more. If it is lower, fuel pressure becomes lower than specification even if fuel pump and line are in good condition.
+</ptxt>
+</attention3>
+<diag type = "test" id = "AENAP70B1704005003">
+<testgroup id = "AENAP70B1704005004">
+<question>
+Was “Fuel Pump and Its Circuit Check” performed? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to 
+<intxref refid = "AENAP70B1704004">Fuel Pump and Its Circuit Check</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B1704005005">
+<title>
+Fuel pressure check 1
+</title>
+<test1>
+<ptxt>
+Check fuel pressure. 
+<intxreftitleoff1 refid = "AENAP70B1704006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B1704005006">
+<title>
+Fuel pressure check 2
+</title>
+<test1>
+<ptxt>
+Start engine and warm up to normal operating temperature.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Keep engine speed at 4,000 rpm.
+</ptxt>
+</test1>
+<question>
+Does fuel pressure show about same value as Step 2?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fuel pressure regulator is in faulty condition, replace fuel pump assembly. 
+<intxreftitleoff1 refid = "AENAP70B1706015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B1704005007">
+<title>
+Fuel line check
+</title>
+<test1>
+<ptxt>
+Check fuel pipe and joint for fuel leakage, damage or deformation.
+</ptxt>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Fuel system is in good condition.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair defective part.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B1704005008">
+<title>
+Fuel line check
+</title>
+<test1>
+<ptxt>
+Check fuel pipe and joint for damage or deformation.
+</ptxt>
+</test1>
+<question>
+Is check result OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Clogged fuel filter, faulty fuel pump, faulty fuel pressure regulator or fuel leakage from pipe connection in fuel tank.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair defective part.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

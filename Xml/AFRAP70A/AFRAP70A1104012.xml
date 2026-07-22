@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A1104012" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+Le témoin MIL reste allumé après le démarrage du moteur 
+</title>
+<servinfosub id = "AFRAP70A1104012001">
+<title>
+Recherche de pannes 
+</title>
+<diag type = "test" id = "AFRAP70A1104012002">
+<testgroup id = "AFRAP70A1104012003">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Faire démarrer le moteur et vérifier une nouvelle fois les DTC de l&#39;ECM, pendant que le moteur tourne. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC sont-ils signalés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes applicable au fonctionnement de MIL. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Remplacer le combiné d&#39;instruments par un élément en bon état et vérifier à nouveau les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Si le MIL reste toujours allumé, remplacer l&#39;ECM et vérifier à nouveau le fonctionnement du MIL. 
+<intxreftitleoff1 refid = "AFRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

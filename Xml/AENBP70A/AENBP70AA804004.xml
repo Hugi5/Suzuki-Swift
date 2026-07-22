@@ -1,0 +1,1563 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENBP70AA804004" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Troubleshooting for Communication Bus Off
+</title>
+<attention3>
+<ptxt>
+Be sure to perform 
+<intxref refid = "AENBP70AA804001">CAN Communication Check</intxref>
+ before performing this flow.
+</ptxt>
+</attention3>
+<servinfosub id = "AENBP70AA804004001">
+<title>
+Circuit Diagram
+</title>
+<figure>
+<graphic graphicname = "IBP70AA80004.swf" width = "183.000mm" height = "158.542mm" ver = "04" gw = "492" gh = "433"/>
+</figure>
+<figure>
+<graphic graphicname = "IBP70AA80005.swf" width = "183.000mm" height = "88.788mm" ver = "02" gw = "507" gh = "235"/>
+<callout-l>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.510in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.469in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.243in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.591in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.253in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.059in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+M/T model
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+P/S control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CVT model
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Keyless start control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+TCM (CVT model)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[a] to [m]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN communication line (linked with diagnosis flows [a] to [m] of “Diagnosis Flow Selection Table”)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Steering angle sensor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+CAN driver
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[n]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Connector view
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+HVAC control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+14.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G308)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Combination meter
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+15.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G309)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+DLC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Headlight auto leveling and washer control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ESP<sup>®</sup> control module
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout-l>
+</figure>
+</servinfosub>
+<servinfosub id = "AENBP70AA804004002">
+<title>
+Diagnosis Procedure
+</title>
+<ptxt>
+When “CAN Communication Bus Off” is detected in any control modules, or when it is not possible to communicate with all control modules / sensor with CAN using SUZUKI scan tool, check the following procedure.
+</ptxt>
+<s1>
+<ptxt>
+Connect oscilloscope or SUZUKI scan tool to DLC when ignition is OFF.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Using oscilloscope or oscilloscope function of SUZUKI scan tool, observe waveform in the following condition when ignition is ON.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.285in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.285in"/>
+<colspec colnum = "3" colname = "3" colwidth = "4.618in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Channel
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Probe
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Terminal No.
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-11 
+<intxreftitleoff1 refid = "AENBP70AA804004001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ground
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-3 
+<intxreftitleoff1 refid = "AENBP70AA804004001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Ground
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s1>
+<s1>
+<ptxt>
+Compare observed signal waveform and waveforms given as “Reference Waveform:”. Find the most similar signal waveform and identify the system in trouble and cause of trouble. 
+<intxreftitleoff1 refid = "AENBP70AA804004003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Perform troubleshooting. 
+<intxreftitleoff1 refid = "AENBP70AA804004006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</servinfosub>
+<p-change/>
+<servinfosub id = "AENBP70AA804004003">
+<title>
+Reference Waveform
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+The tables below show waveforms observed with oscilloscope function of SUZUKI scan tool. They are provided as reference examples.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Waveforms in “Examples of abnormal waveforms” are selected examples of CAN communication waveforms seen when an abnormality occurs. However, these waveform may not be exactly the same in appearance as observed waveforms. Therefore, to identify an abnormality, select the waveform that is most similar to the observed waveform from 
+<intxref refid = "AENBP70AA804004005">Examples of abnormal waveforms</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AENBP70AA804004004">
+<title>
+Normal waveform
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.075in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.692in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.771in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Normal waveform
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Description
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81005.swf" width = "137.083mm" height = "70.379mm" ver = "07" gw = "312" gh = "188"/>
+</entry>
+<entry colname = "5" morerows = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Reference voltage of both CAN High signal and CAN Low signal is 2.5 V. Waveform of CAN High signal is 2.5 – 3.5 V and that of CAN Low signal is 2.5 – 1.5 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Ground level of each channel
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Waveform of channel 1 (CAN High signal)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Volt/div of each channel
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[E]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Waveform of channel 2 (CAN Low signal)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Time/div of each channel
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+<topic id = "AENBP70AA804004005">
+<title>
+Examples of abnormal waveforms
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.349in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.026in"/>
+<colspec colnum = "3" colname = "3" colwidth = "2.068in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.766in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possible cause
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Characteristic waveform
+</ptxt>
+</entry>
+<entry colname = "4" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Description
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CAN High signal
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CAN Low signal
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Shorted to ground
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81007.swf" width = "51.460mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81008.swf" width = "52.527mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+In case CAN High signal wire is shorted to ground circuit
+</emph>
+</ptxt>
+<ptxt>
+Both of CAN High signal and CAN Low signal are fixed to GND level (0 V)
+</ptxt>
+<ptxt>
+<emph>
+In case CAN Low signal wire is shorted to ground circuit
+</emph>
+</ptxt>
+<ptxt>
+Reference level of both CAN High signal and CAN Low signal is GND level (0 V) and CAN High signal waveform oscillates irregularly.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN High signal: Between 0 V and 3 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN Low signal: Fixed to 0 V
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Opened
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80004.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80005.jpg" width = "52.527mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+In case CAN High signal wire is opened
+</emph>
+</ptxt>
+<ptxt>
+Reference voltage of both CAN High signal and CAN Low signal is 2.5 V and these waveforms oscillate irregularly.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN High signal: Between 3.5 V and 1.0 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN Low signal: Between 2.5 V and 1.0 V
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+In case CAN Low signal wire is opened
+</emph>
+</ptxt>
+<ptxt>
+Reference voltage of both CAN High signal and CAN Low signal is 2.5 V and these waveforms oscillate irregularly.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN High signal: Between 2.5 V and 4.0 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN Low signal: Between 1.5 V and 4.0 V
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Shorted to power supply circuit (12 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80006.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81011.swf" width = "52.527mm" height = "68.770mm" ver = "09" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+In case CAN High signal wire is shorted to power supply circuit (12 V)
+</emph>
+</ptxt>
+<ptxt>
+CAN High signal is fixed to 12 V and CAN Low signal oscillates irregularly between 12 V and 2 V.
+</ptxt>
+<ptxt>
+<emph>
+In case CAN Low signal wire is shorted to power supply circuit (12 V)
+</emph>
+</ptxt>
+<ptxt>
+Both of CAN High signal and CAN Low signal are fixed to 12 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Shorted to power supply circuit (5 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80007.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8T201A80010.swf" width = "52.527mm" height = "68.812mm" ver = "01" gw = "138" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+In case CAN High signal wire is shorted to power supply circuit (5 V)
+</emph>
+</ptxt>
+<ptxt>
+Reference voltage of both CAN High signal and CAN Low signal is 5.0 V and these waveforms oscillate irregularly.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN High signal: Between 5.5 V and 4.5 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+CAN Low signal: Between 5.0 V and 1.5 V
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+In case CAN Low signal wire is shorted to power supply circuit (5 V)
+</emph>
+</ptxt>
+<ptxt>
+Reference voltage is 5 V and phase is the same for both CAN High signal and CAN Low signal, and waveforms oscillate irregularly between 5 V and 2.5 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+CAN High signal and CAN Low signal wires are shorted to each other
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81014.swf" width = "103.987mm" height = "68.770mm" ver = "08" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Both of CAN High signal and CAN Low signal are fixed to near 2.5 V.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+<servinfosub id = "AENBP70AA804004006">
+<title>
+Troubleshooting
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Before diagnosing trouble, be sure to check equipment of vehicle being serviced as well as control modules and sensor connected to CAN communication line.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Before using scan tool, read its “Operator’s (Instruction) Manual” to know how to use it.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When performing “Communication Bus Check” using SUZUKI scan tool in this troubleshooting, refer to 
+<intxref refid = "AENBP70AA804004022">Judgment of Communication Bus Check</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "AENBP70AA804004007">
+<testgroup id = "AENBP70AA804004008">
+<title>
+CAN communication circuit check
+</title>
+<test1>
+<ptxt>
+Disconnect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect connectors from all the control modules and sensor communicating by CAN. 
+<intxreftitleoff1 refid = "AENBP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check for proper connection to each CAN communication circuit at all control module / sensor (communicating by CAN) and DLC.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+If connections are OK, check the following points of each CAN communication circuit based on results found in Step 2) of 
+<intxref refid = "AENBP70AA804004002">Diagnosis Procedure</intxref>
+.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Open circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Short to power circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Short to ground circuit
+</ptxt>
+</item>
+<item>
+<ptxt>
+Short to CAN communication wire with each other
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Is it in good condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repair or replace defective wire harness.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004009">
+<title>
+ECM terminating resistance check
+</title>
+<test1>
+<ptxt>
+Connect “E01” connector to ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “E24-2” and “E24-16” terminals of ESP<sup>®</sup> control module connector.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace ECM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004010">
+<title>
+Combination meter terminating resistance check
+</title>
+<test1>
+<ptxt>
+Connect connector to combination meter.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Measure resistance between “G211-11” and “G211-3” terminals of DLC.
+</ptxt>
+</test1>
+<question>
+Is resistance 114 – 134 Ω?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace combination meter and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004011">
+<title>
+Combination meter, P/S control module, BCM, TCM (CVT model), ESP® control module, ECM and keyless start control module communication check
+</title>
+<test1>
+<ptxt>
+Connect connectors to P/S control module, BCM, TCM (CVT model), ESP<sup>®</sup> control module and keyless start control module.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Connect negative (–) cable at battery.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that CAN communication is in normal condition for combination meter, P/S control module, BCM, TCM (CVT model), ESP<sup>®</sup> control module, ECM and keyless start control module. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is communication normal?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Perform “Communication Check” according to connected control modules / sensor. 
+<intxreftitleoff1 refid = "AENBP70AA804004017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004012">
+<title>
+P/S control module communication check
+</title>
+<test1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect P/S control module connector “G50”.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Connect the following terminals of P/S control module connector using service wires.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Between “G50-4” and “G50-5” terminals
+</ptxt>
+</item>
+<item>
+<ptxt>
+Between “G50-7” and “G50-6” terminals
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that CAN communication is in normal condition for combination meter, BCM, TCM (CVT model), ESP<sup>®</sup> control module, ECM and keyless start control module. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is communication normal?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace P/S control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 6.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004013">
+<title>
+BCM communication check
+</title>
+<test1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect service wires from P/S control module connector, and then connect connector to P/S control module.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect “G05” and “E05” connectors from BCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Connect the following terminals of BCM connectors using service wires.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Between “G05-2” and “E05-6” terminals
+</ptxt>
+</item>
+<item>
+<ptxt>
+Between “G05-1” and “E05-7” terminals
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that CAN communication is in normal condition for combination meter, P/S control module, TCM (CVT model), ESP<sup>®</sup> control module, ECM and keyless start control module. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is communication normal?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace BCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70AA206001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+M/T model: Go to Step 8.
+</ptxt>
+<ptxt>
+CVT model: Go to Step 7.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004023">
+<title>
+TCM communication check
+</title>
+<test1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect service wires from BCM connectors, and then connect connectors to BCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect “E-19” connector from TCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Connect the following terminals of TCM connector using service wires.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Between “E19-22” and “E19-11” terminals
+</ptxt>
+</item>
+<item>
+<ptxt>
+Between “E19-13” and “E19-12” terminals
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu of SUZUKI scan tool.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that CAN communication is normal condition for combination meter, P/S control module, BCM, ESP<sup>®</sup> control module, ECM and keyless start control module. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is communication normal?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace TCM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004014">
+<title>
+ESP® control module communication check
+</title>
+<test1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+M/T model:
+</ptxt>
+<ptxt>
+Disconnect service wires from BCM connectors, and then connect connectors to BCM.
+</ptxt>
+<ptxt>
+CVT model:
+</ptxt>
+<ptxt>
+Disconnect service wires from TCM connector, and then connect connector to TCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect ESP<sup>®</sup> control module connector.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Connect the following terminals of ESP<sup>®</sup> control module connector using service wires.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Between “E24-1” and “E24-2” terminals
+</ptxt>
+</item>
+<item>
+<ptxt>
+Between “E24-15” and “E24-16” terminals
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that CAN communication is in normal condition for combination meter, P/S control module, BCM, TCM (CVT model), ECM and keyless start control module. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is communication normal?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Replace ESP<sup>®</sup> control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 9.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004015">
+<title>
+Combination meter communication check
+</title>
+<test1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Disconnect service wires from ESP<sup>®</sup> control module connector, and then connect connector to ESP<sup>®</sup> control module.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Replace combination meter. 
+<intxreftitleoff1 refid = "AENBP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that CAN communication is in normal condition for P/S control module, BCM, TCM (CVT model), ESP<sup>®</sup> control module, ECM and keyless start control module. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is communication normal?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+End. (Combination meter was faulty.)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 10.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENBP70AA804004016">
+<title>
+ECM communication check
+</title>
+<test1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Replace ECM. 
+<intxreftitleoff1 refid = "AENBP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Check that CAN communication is in normal condition for combination meter, P/S control module, BCM, TCM (CVT model), ESP<sup>®</sup> control module, ECM and keyless start control module. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is communication normal?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+End. (ECM was faulty.)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Replace keyless start control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70AA506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+<servinfosub id = "AENBP70AA804004017">
+<title>
+Communication Check
+</title>
+<topic id = "AENBP70AA804004018">
+<title>
+Steering angle sensor
+</title>
+<s1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Connect connector to steering angle sensor.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Confirm that CAN communication already connecting the control modules, etc. and steering angle sensor is operating normally. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+If any malfunction is found, replace steering angle sensor and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "AENBP70AA804004019">
+<title>
+SDM
+</title>
+<s1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Connect “G11” connector to SDM.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Confirm the CAN communication that control modules, etc. and SDM which have been already connected is in normal condition. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+If any malfunction is found, replace SDM and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "AENBP70AA804004020">
+<title>
+HVAC control module
+</title>
+<s1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Connect connector to HVAC control module.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Confirm the CAN communication that control modules, etc. and HVAC control module which have been already connected is in normal condition. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+If any malfunction is found, replace HVAC control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A7206010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "AENBP70AA804004021">
+<title>
+Headlight auto leveling and washer control module
+</title>
+<s1>
+<ptxt>
+Set ignition OFF.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Connect connector to headlight auto leveling and washer control module.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Set ignition ON.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Select “Communication Bus Check” under “Bus Check” menu on SUZUKI scan tool.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Confirm the CAN communication that control modules, etc. and headlight auto leveling and washer control module which have been already connected is in normal condition. 
+<intxreftitleoff1 refid = "AENBP70AA804004022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+If any malfunction is found, replace headlight auto leveling and washer control module and recheck DTC. 
+<intxreftitleoff1 refid = "AENBP70A9206015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "AENBP70AA804004022">
+<title>
+Judgment of Communication Bus Check
+</title>
+<ptxt>
+When performing “Communication Bus Check” using SUZUKI scan tool, refer to the following table for judgment.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.542in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.677in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Judgment
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Display of Communication Bus Check
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Normal
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+All connected control modules / sensor (communicating by CAN) are displayed and its back ground color is “White”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Above state remains unchanged while monitoring for longer than 1 minute.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Abnormal
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Even one of connected control modules / sensor (communicating by CAN) is not displayed.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Background color for names of control modules / sensor (communicating by CAN) is displayed in “Gray” or “Light blue”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Background color for names of control modules / sensor (communicating by CAN) is changed to “Gray” (the numbers of control modules / sensor decrease) or “Light blue” (the numbers of control modules / sensor increase).
+</ptxt>
+</item>
+<item>
+<ptxt>
+“Communication Bus Check” cannot be executed.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

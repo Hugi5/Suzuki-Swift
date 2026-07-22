@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70AA104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Έλεγχος Συστήματος Σταθεροποίησης της Ταχύτητας
+</title>
+<diag type = "test" id = "AGKAP70AA104001001">
+<testgroup id = "AGKAP70AA104001002">
+<test1>
+<ptxt>
+Καταγράψτε τις λεπτομέρειες του προβλήματος. Για την καταγρα&#248;ή σας, η χρήση μιας &#248;όρμας ερωτηματολογίου θα διευκολύνει τη συλλογή πληρο&#248;οριών για την κατάλληλη ανάλυση και διάγνωση.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ελέγξτε εάν το πρόβλημα που περιγρά&#248;τηκε στο 
+<intxref refid = "AGKAP70AA104002">Ερωτηματολόγιο Πελάτη (Παράδειγμα)</intxref>
+ συμβαίνει πραγματικά στο αυτοκίνητο. (Αυτό το βήμα πρέπει να εκτελεστεί από κοινού με τον πελάτη εάν είναι δυνατόν.)
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ελέγξτε για κωδικό DTC τον εγκέ&#248;αλο ECM και τη μονάδα ελέγχου ESP<sup>&#174;</sup> και στη συνέχεια καταγράψτε τους κωδικούς DTC.
+</ptxt>
+</test1>
+<question>
+Υπάρχει κωδικός/οι DTC εκτός από κάποιον σχετικό με το σύστημα σταθεροποίησης της ταχύτητας (εκτός από P0504, P0575 και P0649);
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στην διάγνωση του αντίστοιχου Κωδικού DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70AA104001003">
+<question>
+Υπάρχει κάποιος/οι κωδικός/οί DTC που σχετίζεται/ονται με το σύστημα σταθεροποίησης της ταχύτητας;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στη διάγνωση του αντίστοιχου κωδικού DTC και, στη συνέχεια, πηγαίνετε στο Βήμα 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70AA104001004">
+<test1>
+<ptxt>
+Επιθεωρήστε και επισκευάστε τα βασικά τμήματα ανατρέχοντας στο 
+<intxref refid = "AGKAP70AA104007">Διάγνωση Συμπτωμάτων Συστήματος Σταθεροποίησης της Ταχύτητας</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Υπάρχει κάποια προβληματική κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Επισκευάστε ή αντικαταστήστε τα εξαρτήματα που δυσλειτουργούν, και να πάτε στο Βήμα 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70AA104001005">
+<test1>
+<ptxt>
+Ελέγξτε για διαλείπουσα βλάβη ανα&#248;ερόμενοι στο 
+<intxref refid = "AGKAP70A0006002">Επιθεώρηση διακοπτόμενης σύνδεσης και κακής επα&#248;ής</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Υπάρχει κάποια προβληματική κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Επισκευάστε ή αντικαταστήστε τα εξαρτήματα που δυσλειτουργούν, και να πάτε στο Βήμα 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70AA104001006">
+<test1>
+<ptxt>
+Επιβεβαιώστε ότι το πρόβλημα έχει λυθεί και το σύστημα σταθεροποίησης της ταχύτητας έχει απαλλαγεί από μη κανονικές καταστάσεις. Εάν αυτό που έχει επισκευαστεί σχετίζεται με τον κωδικό DTC, ελέγξτε μια &#248;ορά τον κωδικό DTC και, στη συνέχεια, επιβεβαιώστε ότι δεν υποδεικνύεται ο κωδικός DTC.
+</ptxt>
+</test1>
+<question>
+Υπάρχει κάποιο σύμπτωμα προβλήματος, Κωδικός DTC ή ανώμαλη κατάσταση;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 2) του Βήματος 1 και να εκτελέσετε πάλι την αντιμετώπιση προβλημάτων.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Τέλος.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

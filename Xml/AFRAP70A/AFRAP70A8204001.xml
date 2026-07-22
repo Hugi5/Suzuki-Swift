@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A8204001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Vérification du système de diagnostic d&#39;airbag 
+</title>
+<ptxt>
+Se reporter à 
+<intxref refid = "AFRAP70A8200001">Précautions pour l&#39;entretien du système d&#39;airbag</intxref>
+, vérifier le système d&#39;airbag selon la procédure suivante. 
+</ptxt>
+<servinfosub id = "AFRAP70A8204001001">
+<title>
+Schéma de vérification du système de diagnostic d&#39;airbag 
+</title>
+<diag type = "test" id = "AFRAP70A8204001002">
+<testgroup id = "AFRAP70A8204001003">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC en se reportant au point 
+<intxref refid = "AFRAP70A8204005">Vérification des DTC</intxref>
+. 
+</ptxt>
+<paragroup>
+<attention3>
+<ptxt>
+Si la communication entre l&#39;outil de balayage SUZUKI et le véhicule ne peut pas être établie, procéder à la &#34;Vérification du DLC et de sa communication (aucune communication vers le SDM)&#34;. 
+</ptxt>
+</attention3>
+</paragroup>
+</test1>
+<test1>
+<ptxt>
+Supprimer les DTC en se reportant au point 
+<intxref refid = "AFRAP70A8204006">Suppression des DTC</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC sont-ils signalés suite à une nouvelle vérification? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes correspondant à ce DTC puis, passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A8204001004">
+<title>
+Vérification visuelle 
+</title>
+<test1>
+<ptxt>
+Effectuer la vérification visuelle en se reportant au point 
+<intxref refid = "AFRAP70A8204002">Vérification visuelle</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Une anomalie est-elle constatée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Réparer ou remplacer la pièce défectueuse, et passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A8204001005">
+<title>
+Vérification des traces d&#39;impact 
+</title>
+<test1>
+<ptxt>
+Vérifier d&#39;éventuelles traces d&#39;impact sur le véhicule. 
+</ptxt>
+</test1>
+<question>
+Y a-t-il des traces d&#39;impact? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vérifier et remplacer les branchements défectueux selon 
+<intxref refid = "AFRAP70A8204054">Réparation et vérification requises après un accident</intxref>
+ puis passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 4. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A8204001006">
+<title>
+Vérification de problème intermittent 
+</title>
+<test1>
+<ptxt>
+Rechercher d&#39;éventuels problèmes intermittents en se reportant au point 
+<intxref refid = "AFRAP70A0006002">Vérification de branchement intermittent et de mauvais contact</intxref>
+. 
+</ptxt>
+</test1>
+<question>
+Une anomalie est-elle constatée? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Réparer ou remplacer la pièce défectueuse, et passer à l&#39;étape 5. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 5. 
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A8204001007">
+<title>
+Essai de confirmation final 
+</title>
+<test1>
+<ptxt>
+Confirmer que le symptôme du problème ne se manifeste plus et que le système d&#39;airbag ne présente plus d&#39;anomalies. Si les réparations effectuées ont trait au DTC, l&#39;effacer une fois puis confirmer qu&#39;aucun DTC n&#39;est indiqué. 
+</ptxt>
+</test1>
+<question>
+Le dysfonctionnement se produit-il à nouveau? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Retourner à l&#39;étape 1. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

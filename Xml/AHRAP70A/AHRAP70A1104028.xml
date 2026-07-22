@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHRAP70A1104028" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0137/P0138/P0140
+</title>
+<servinfosub id = "AHRAP70A1104028001">
+<title>
+Detektirano stanje DTC-a i problematično područje
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.842in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.362in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Detektirano stanje DTC-a
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Problematično područje
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0137: Niski napon kruga O2 senzora
+</emph>
+</ptxt>
+<ptxt>
+Kada je napon HO2S signala niži od 0,06 V, napon kruga HO2S signala ne mijenja se tijekom 5 s uz primjenu napona na krug HO2S signala.
+</ptxt>
+<ptxt>
+(logika detekcije 3 ciklusa vožnje)
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<list1 type = "unordered">
+<item>
+<ptxt>
+HO2S i/ili njegov krug
+</ptxt>
+</item>
+<item>
+<ptxt>
+HO2S grijač i/ili njegov krug
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ispušni sustav
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sustav usisa zraka
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sustav goriva
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0138: Visoki napon kruga O2 senzora
+</emph>
+</ptxt>
+<ptxt>
+Izlazni napon kruga signala HO2S veći je od 1,1 V tijekom 5 s.
+</ptxt>
+<ptxt>
+(logika detekcije 3 ciklusa vožnje)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0140: Nije detektirana aktivnost strujnog kruga O2 senzora
+</emph>
+</ptxt>
+<ptxt>
+Bilo koji od sljedećih uvjeta je ispunjen. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Strujni krug HO2S signala je prekinut.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Unutarnji otpor HO2S-a viši je od propisanog, čak iako je procijenjena temperatura ispušnih plinova viša od propisane.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(logika detekcije 3 ciklusa vožnje)
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHRAP70A1104028002">
+<title>
+Shema ožičenja
+</title>
+<figure>
+<graphic graphicname = "I9P60A111012.swf" width = "183.000mm" height = "121.825mm" ver = "02" gw = "440" gh = "329"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.286in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.724in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.320in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.664in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.264in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.699in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+[A]
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM konektor (pogled: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A6:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Pogonski krug grijača A/F senzora
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Regulacijski otpornik A/F senzora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug napajanja grijača A/F senzora
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B1:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug napajanja HO2S grijača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Konektor A/F senzora
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug signala A/F senzora (IA)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B2:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug signala HO2S-a
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Zaštitna žica
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug signala A/F senzora (IP)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug uzemljenja HO2S-a
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A4:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug signala A/F senzora (VM)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+B4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Pogonski krug HO2S grijača
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Jedinica za obradu signala A/F-a
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+A5:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+Krug signala A/F senzora (UN)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+A/F senzor
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle">
+<ptxt>
+HO2S
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHRAP70A1104028003">
+<title>
+Postupak potvrde DTC-a
+</title>
+<attention1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Provedite testnu vožnju u području gdje nema prometa kako biste spriječili nezgodu.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Test trebaju izvršiti dvije osobe, vozač i ispitivač, na ravnoj cesti.
+</ptxt>
+</item>
+</list1>
+</attention1>
+<attention3>
+<ptxt>
+Potvrdite da su zadovoljeni sljedeći uvjeti u ovom &#34;Postupku potvrde DTC-a&#34;.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Napon akumulatora &#62; 10,7 V
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Zagrijte motor do normalne radne temperature.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Vozite vozilo konstantnom brzinom od 50 do 80 km/h (31 do 50 milja/h) u trajanju od 20 min ili više.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Zaustavite vozilo i pustite motor neka radi u praznom hodu 5 min.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AHRAP70A1104028004">
+<title>
+Rješavanje problema DTC-a
+</title>
+<diag type = "test" id = "AHRAP70A1104028005">
+<testgroup id = "AHRAP70A1104028006">
+<question>
+Je li izvršena &#34;Provjera sustava upravljanja motorom i emisijom&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 2. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 
+<intxref refid = "AHRAP70A1104001">Provjera sustava upravljanja motorom i emisijom</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104028007">
+<title>
+Provjera DTC-a
+</title>
+<question>
+Postoje li DTC-ovi osim P0137, P0138 i P0140?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na odgovarajući postupak rješavanja problema za dotični DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Idite na 3. korak.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104028008">
+<title>
+Provjera kruga signala i uzemljenja HO2S-a
+</title>
+<test1>
+<ptxt>
+Kada je kontakt isključen, odspojite konektore &#34;C01&#34; i &#34;E01&#34; s ECM-a i konektor HO2S-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite ispravnost spoja terminala s konektorima &#34;C01&#34; i &#34;E01&#34; i konektorom HO2S-a.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ako su spojevi u redu, provjerite sljedeće točke.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Otpor krugova &#34;B2&#34; i &#34;B3&#34;: manji od 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između svakog od krugova &#34;B2&#34; i &#34;B3&#34; i uzemljenja: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između terminala kruga &#34;B2&#34; i drugih terminala na konektoru HO2S-a: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Otpor između terminala kruga &#34;B3&#34; i drugih terminala na konektoru HO2S-a: beskonačan
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napon krugova &#34;B2&#34; i &#34;B3&#34;: 0 do 1 V (kada je kontakt uključen)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 4. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravno ožičenje.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104028009">
+<title>
+Provjera ispušnog sustava i sustava usisa zraka
+</title>
+<test1>
+<ptxt>
+Provjerite jesu li ispušni sustav i sustav usisa zraka začepljeni ili propuštaju.
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 5. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravni dio.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104028010">
+<title>
+Provjera strujnog kruga HO2S grijača
+</title>
+<test1>
+<ptxt>
+Provjerite krugove HO2S grijača prema koracima 2 do 3 u poglavlju 
+<intxref refid = "AHRAP70A1104016">DTC P0036/P0037/P0038</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 6. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Popravite ili zamijenite neispravni dio.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104028011">
+<title>
+Provjerite brizgaljke goriva i njihov krug
+</title>
+<test1>
+<ptxt>
+Provjerite krug brizgaljke goriva. 
+<intxreftitleoff1 refid = "AHRAP70A1704003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Provjerite brizgaljke goriva. 
+<intxreftitleoff1 refid = "AHRAP70A1706009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je li rezultat provjere u redu?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Idite na 7. korak.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Neispravna jedna ili više brizgaljki ili njihovi krugovi.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AHRAP70A1104028012">
+<title>
+Ponovna provjera DTC-a
+</title>
+<test1>
+<ptxt>
+Zamijenite HO2S. 
+<intxreftitleoff1 refid = "AHRAP70A1306015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Izvršite postupak potvrde DTC-a i provjerite DTC-ove.
+</ptxt>
+</test1>
+<question>
+Jesu li detektirani DTC-ovi P137, P0138 ili P0140?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Zamijenite ECM i ponovo provjerite DTC. 
+<intxreftitleoff1 refid = "AHRAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Kraj.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

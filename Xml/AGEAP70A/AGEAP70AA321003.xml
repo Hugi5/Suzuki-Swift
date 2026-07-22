@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70AA321003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Beschreibung des Verfahrens zum Starten des Motors
+</title>
+<ptxt>
+Im Falle einer leeren Fernbedienungsbatterie, einer Systemstörung und/oder einer Deaktivierung des schlüssellosen Startsystems lässt sich der Motor wie folgt starten.
+</ptxt>
+<s1>
+<ptxt>
+Bei gedrücktem Kupplungspedal gibt das Steuermodul für schlüsselloses Starten über die CAN-Kommunikation ein PUSH-Kontrollleuchtensignal aus.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Motorschalter drücken.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Das Steuermodul für schlüsselloses Starten gibt ein Wegfahrsperrenleuchtensignal und ein PUSH-Kontrollleuchtensignal über CAN-Kommunikation aus.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Die Fernbedienung für etwa 2 Sekunden, während die PUSH-Kontrollleuchte im Kombiinstrument blinkt, auf den Motorschalter legen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Das Steuermodul für schlüsselloses Starten liest den Transponder-Code der Fernbedienung über die im Motorschalter integrierte Empfangsspule für Wegfahrsperre.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Das Anlassermotor-Steuerrelais wird auf &#34;EIN&#34; gestellt und der Anlassermotor startet. An die Lenkschlosseinheit wird ein Anforderungssignal zum Ausrücken des Lenkschlosses gesendet und an das ECM wird eine Meldung gesendet, dass der Motor nur dann gestartet werden darf, wenn der Transponder-Code mit dem registrierten Code übereinstimmt.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Stimmt der Transponder-Code nicht mit dem registrierten Code überein, schaltet das Steuermodul für schlüsselloses Starten das Anlassermotorrelais nicht um und der Motor kann nicht gestartet werden.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA32001G.swf" width = "183.000mm" height = "134.726mm" ver = "03" gw = "490" gh = "365"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

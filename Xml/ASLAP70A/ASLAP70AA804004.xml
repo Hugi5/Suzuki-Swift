@@ -1,0 +1,1453 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA804004" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Riešenie problémov v prípade vypnutia komunikačnej zbernice
+</title>
+<attention3>
+<ptxt>
+Nezabudnite vykonať 
+<intxref refid = "ASLAP70AA804001">Kontrola komunikácie CAN</intxref>
+ pred začatím diagnostiky.
+</ptxt>
+</attention3>
+<servinfosub id = "ASLAP70AA804004001">
+<title>
+Schéma obvodu
+</title>
+<figure>
+<graphic graphicname = "IAP70AA80002.swf" width = "183.000mm" height = "159.041mm" ver = "02" gw = "484" gh = "434"/>
+</figure>
+<figure>
+<graphic graphicname = "IAP70AA80003.swf" width = "183.000mm" height = "126.802mm" ver = "01" gw = "503" gh = "343"/>
+<callout-l>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.507in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.673in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.280in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.075in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.315in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.189in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Model so spínačom zapaľovania
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+SDM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Riadiaca jednotka ESP<sup>®</sup>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Model s bezkľúčovým štartovaním
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Riadiaca jednotka posilňovača riadenia
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[a] k [j]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Vedenie komunikácie CAN (vedenie s diagnostickým prietokom [a] až [j] podľa “Diagnosis Flow Selection Table”)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Riadiaca jednotka bezkľúčového štartovania (model s bezkľúčovým štartovaním)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Ovládač CAN
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[k]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Pohľad konektora
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Snímač uhla natočenia volantu
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G308)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Združený merač
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Riadiaca jednotka ohrevu, vetrania a klimatizácie (modely s klimatizáciou)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+J/C (G309)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+DLC
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+BCM
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout-l>
+</figure>
+</servinfosub>
+<servinfosub id = "ASLAP70AA804004002">
+<title>
+Postup diagnostiky
+</title>
+<ptxt>
+Keď je detekované “CAN Communication Bus Off” v ktorejkoľvek riadiacej jednotke, alebo ak nie je možná komunikácia so všetkými riadiacimi jednotkami/snímačom s CAN pomocou skenovacieho nástroja SUZUKI, skontrolujte nasledovné.
+</ptxt>
+<s1>
+<ptxt>
+Spínač zapaľovania prepnite do polohy OFF (vyp.) a pripojte osciloskop alebo skenovacie zariadenie SUZUKI.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pomocou osciloskopu alebo funkcie osciloskopu skenovacieho zariadenia SUZUKI, pozorujte krivku na nasledovné stavy so spínačom zapaľovania v polohe ON.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.285in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.285in"/>
+<colspec colnum = "3" colname = "3" colwidth = "4.618in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Kanál
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Sonda
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Č. svorky
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-11 
+<intxreftitleoff1 refid = "ASLAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Uzemnenie
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
++
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+G211-3 
+<intxreftitleoff1 refid = "ASLAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+–
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Uzemnenie
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s1>
+<s1>
+<ptxt>
+Porovnajte zistený priebeh signálu s priebehom uvedeným v časti Refereknčná krivka. Nájdite najpodobnejšiu krivku a identifikujte poruchový systém a príčinu poruchy. 
+<intxreftitleoff1 refid = "ASLAP70AA804004003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Vykonajte riešenie problémov. 
+<intxreftitleoff1 refid = "ASLAP70AA804004006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</servinfosub>
+<p-change/>
+<servinfosub id = "ASLAP70AA804004003">
+<title>
+Referenčná krivka
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Nižšie uvedená tabuľka zobrazuje krivky zistené funkciou osciloskopu skenovacieho nástroja SUZUKI. Sú poskytnuté ako referenčné príklady.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Krivky v “Príkladoch“ sú vbyrané príklady kriviek komunikácie CAN, keď sa vyskytne abnormalita. Tieto krivky však nemusia byť úplne presné ako zistené krivky. Ak chcete preto stanoviť obsah nezvyčajnosti, vyberte si krivku, ktorá je najpodobnejšia krivke spozorovanej v 
+<intxref refid = "ASLAP70AA804004005">Príklady nezvyčajných kriviek</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "ASLAP70AA804004004">
+<title>
+Normálna krivka
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "5" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.075in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.692in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.771in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Normálna krivka
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Popis
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry namest = "1" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81005.swf" width = "137.083mm" height = "70.379mm" ver = "07" gw = "312" gh = "188"/>
+</entry>
+<entry colname = "5" morerows = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Referenčné napätie signálu CAN High aj signálu CAN Low je 2,5 V. Krivka signálu CAN High je 2,5 - 3,5 V a signál CAN Low je 2,5 - 1,5 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Úroveň uzemnenia každého kanála
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[D]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Krivka kanálu 1 (vysoký signál CAN)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[B]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+VOLT/DIV každého kanála
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[E]:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Krivka kanálu 2 (nízky signál CAN)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[C]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Time/div každého kanála
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+<topic id = "ASLAP70AA804004005">
+<title>
+Príklady nezvyčajných kriviek
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.349in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.026in"/>
+<colspec colnum = "3" colname = "3" colwidth = "2.068in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.766in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Možná príčina
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Charakteristická krivka
+</ptxt>
+</entry>
+<entry colname = "4" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Popis
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Vysoký signál CAN
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Nízky signál CAN
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Skrat k uzemneniu
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81007.swf" width = "51.460mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81008.swf" width = "52.527mm" height = "68.770mm" ver = "10" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+V prípade, že je obvod vysokého signálu CAN skratovaný k obvodu uzemnenia:
+</emph>
+</ptxt>
+<ptxt>
+Oba signály, vysoký aj nízky, CAN sú na úrovni uzemnenia (0 V).
+</ptxt>
+<ptxt>
+<emph>
+V prípade, že je obvod nízkeho signálu CAN skratovaný k obvodu uzemnenia:
+</emph>
+</ptxt>
+<ptxt>
+Referenčná hodnota vysokého, ako aj nízkeho signálu CAN je hodnota uzemnenia (0 V) a krivka vysokého signálu CAN sa mení nepravidelne.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vysoký signál CAN: Medzi 0 V a 3 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nízky signál CAN: Pevne na 0 V
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Otvorené
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80004.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80005.jpg" width = "52.527mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+V prípade, že je vodič vysokého signálu CAN prerušený
+</emph>
+</ptxt>
+<ptxt>
+Referenčné napätie vysokého aj nízkeho signálu CAN je 2,5 V a tieto krivky sa menia nepravidelne.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vysoký signál CAN: Medzi 3,5 V a 1,0 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nízky signál CAN: Medzi 2,5 V a 1,0 V
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+V prípade, že je vodič nízkeho signálu CAN prerušený
+</emph>
+</ptxt>
+<ptxt>
+Referenčné napätie vysokého aj nízkeho signálu CAN je 2,5 V a tieto krivky sa menia nepravidelne.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vysoký signál CAN: Medzi 2,5 V a 4,0 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nízky signál CAN: Medzi 1,5 V a 4,0 V
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Skratovaný k obvodu napájania (12 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80006.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81011.swf" width = "52.527mm" height = "68.770mm" ver = "09" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+V prípade, že je obvod vysokého signálu CAN skratovaný k obvodu napájania (12 V)
+</emph>
+</ptxt>
+<ptxt>
+Vysoký signál CAN je pevný na 12 V a nízky signál CAN sa mení nepravidelne medzi 12 V a 2 V.
+</ptxt>
+<ptxt>
+<emph>
+V prípade, že je obvod nízkeho signálu CAN skratovaný k obvodu napájania (12 V)
+</emph>
+</ptxt>
+<ptxt>
+Oba signály, vysoký aj nízky, CAN sú na úrovni 12 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Skratovaný k obvodu napájania (5 V)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8G001A80007.jpg" width = "51.460mm" height = "68.220mm" ver = "01" gw = "135" gh = "183"/>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I8T201A80010.swf" width = "52.527mm" height = "68.812mm" ver = "01" gw = "138" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+V prípade, že je obvod vysokého signálu CAN skratovaný k obvodu napájania (5 V)
+</emph>
+</ptxt>
+<ptxt>
+Referenčné napätie vysokého aj nízkeho signálu CAN je 5,0 V a tieto krivky sa menia nepravidelne.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Vysoký signál CAN: Medzi 5,5 V a 4,5 V
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nízky signál CAN: Medzi 5,0 V a 1,5 V
+</ptxt>
+</item>
+</list1>
+<ptxt>
+<emph>
+V prípade, že je obvod nízkeho signálu CAN skratovaný k obvodu napájania (5 V)
+</emph>
+</ptxt>
+<ptxt>
+Referenčné napätie (5) je 5 V a tej istej fázy, ako je vysoký aj nízky signál CAN a ich krivky sa menia nepravidelne od 5 V do 2,5 V.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+V prípade, že sú obvody vysokého signálu CAN a nízkeho signálu CAN skratované navzájom
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<graphic graphicname = "I7N301A81014.swf" width = "103.987mm" height = "68.770mm" ver = "08" gw = "135" gh = "184"/>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Oba signály, vysoký aj nízky, CAN sú na úrovni takmer 2,5 V.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+<servinfosub id = "ASLAP70AA804004006">
+<title>
+Riešenie problémov
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Pred diagnostikou problému sa uistite, že ste skontrolovali zariadenie vozidla v servise, rovnako aj riadiace jednotky a snímač pripojené k vedeniu komunikácie CAN.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pred použitím skenovacieho nástroja SUZUKI si pozorne prečítajte prevádzkový manuál, aby ste vedeli, ako ho používať.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Pri vykonávaní „Kontrola komunikačnej zbernice“ pomocou skenovacieho nástroja Suzuki v tomto riešení problémov, obráťte sa na 
+<intxref refid = "ASLAP70AA804004024">Kontrola posúdenia komunikačnej zbernice </intxref>
+ .
+</ptxt>
+</item>
+</list1>
+</attention3>
+<diag type = "test" id = "ASLAP70AA804004007">
+<testgroup id = "ASLAP70AA804004008">
+<title>
+Kontrola komunikačného obvodu CAN
+</title>
+<test1>
+<ptxt>
+Na akumulátore odpojte kábel záporného (-) pólu.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojte konektory zo všetkých nasledovných riadiacich jednotiek a snímača komunikujúcich cez CAN. 
+<intxreftitleoff1 refid = "ASLAP70AA802001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, či je pripojenie svorky na každom vedení CAN všetkých konektorov riadiacich jednotiek (komunikujúcich cez CAN), snímača a DLC správne.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, skontrolujte nasledovné body každého obvodu komunikácie CAN na základe výsledkov nájdených v kroku 2) v 
+<intxref refid = "ASLAP70AA804004002">Postup diagnostiky</intxref>
+ .
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Obvod prerušený
+</ptxt>
+</item>
+<item>
+<ptxt>
+Skrat k obvodu napájania
+</ptxt>
+</item>
+<item>
+<ptxt>
+Skratované k uzemneniu
+</ptxt>
+</item>
+<item>
+<ptxt>
+Skratovaný k vodiču komunikácie CAN
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poškodený káblový zväzok.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004009">
+<title>
+Kontrola ukončovacieho odporu ECM
+</title>
+<test1>
+<ptxt>
+Pripojte konektor „E01“ k riadiacej jednotke motora.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odmerajte napätie medzi svorkami “E24-2” a “E24-16” konektora riadiacej jednotky ESP<sup>®</sup>.
+</ptxt>
+</test1>
+<question>
+Je odpor 114 - 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004010">
+<title>
+Kontrola ukončujúceho odporu združeného merača
+</title>
+<test1>
+<ptxt>
+Pripojte konektor k združenému meraču.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odmerajte odpor medzi svorkami DLC “G211-11” a “G211-3”.
+</ptxt>
+</test1>
+<question>
+Je odpor 114 - 134 &#937;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte združený merač a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004012">
+<title>
+Kontrola komunikácie združeného merača, riadiacej jednotky P/S, BCM, riadiacej jednotky ESP®, ECM a riadiacej jednotky bezkľúčového štartovania.
+</title>
+<test1>
+<ptxt>
+Pripojte konektory k riadiacej jednotke P/S, BCM, riadiacej jednotke ESP<sup>®</sup> a riadiacej jednotke bezkľúčového štartovania (model s bezkľúčovým štartovaním).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Pripojte kábel záporného (-) pólu k akumulátoru.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, či je komunikácia normálna pre združený merač, riadiacu jednotku P/S, BCM, riadiacu jednotku ESP<sup>®</sup>, ECM a riadiacu jednotku bezkľúčového štartovania (model s bezkľúčovým štartovaním). 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je komunikácia v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vykonajte “Kontrolu komunikácie” podľa pripojenej riadiacej jednotky/snímača. 
+<intxreftitleoff1 refid = "ASLAP70AA804004019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004013">
+<title>
+KOntrola komunikácie riadiacej jednotky posilňovača riadenia
+</title>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojte prípojku riadiacej jednotky posilňovača riadenia „G50“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte nasleovné koncovky riadiacej jednotky P/S pomocou servisných vodičov.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+medzi koncovkami „G50-4“ a „G50-5“
+</ptxt>
+</item>
+<item>
+<ptxt>
+medzi koncovkami „G50-7“ a „G50-6“
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, či je komunikácia normálna pre združený merač, BCM, riadiacu jednotku ESP<sup>®</sup>, ECM a riadiacu jednotku bezkľúčového štartovania (model s bezkľúčovým štartovaním). 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je komunikácia v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte riadiacu jednotku P/S a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A6306011"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 6.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004014">
+<title>
+Kontrola komunikácie BCM
+</title>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojte servisné vodiče od konektora riadiacej jednotky P/S a odpojte riadiacu jednotku P/S.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojte nasledovné konektory od BCM.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model so spínačom zapaľovania: konektory “G04” a “E04”
+</ptxt>
+</item>
+<item>
+<ptxt>
+Model s bezkľúčovým štartovaním: konektory “G05” a “E05”
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Pripojte nasledovné svorky konektorov BCM pomocou servisných vodičov.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Model so spínačom zapaľovania:
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+medzi svorkami “G04-2” a “E04-5”
+</ptxt>
+</item>
+<item>
+<ptxt>
+medzi svorkami “G04-18” a “E04-12”
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Model s bezkľúčovým štartovaním:
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+medzi svorkami “G05-2” a “E05-6”
+</ptxt>
+</item>
+<item>
+<ptxt>
+medzi svorkami “G05-1” a “E05-7”
+</ptxt>
+</item>
+</list2>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, či je komunikácia normálna pre združený merač, riadiacu jednotku P/S, riadiacu jednotku ESP<sup>®</sup>, ECM a riadiacu jednotku bezkľúčového štartovania (model s bezkľúčovým štartovaním). 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je komunikácia v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte BCM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004016">
+<title>
+Kontrola komunikácie riadiacej jednotky ESP®
+</title>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojre servisné vodiče od konektorov BCM a potom pripojte konektory k BCM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojte konektor riadiacej jednotky ESP<sup>®</sup>.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte nasleovné koncovky riadiacej jednotky ESP<sup>®</sup> pomocou servisných vodičov.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+medzi svorkami “E24-1” a “E24-2”
+</ptxt>
+</item>
+<item>
+<ptxt>
+medzi svorkami “E24-15” a “E24-16”
+</ptxt>
+</item>
+</list1>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, či je komunikácia normálna pre združený merač, riadiacu jednotku P/S, BCM, ECM a riadiacu jednotku bezkľúčového štartovania (model s bezkľúčovým štartovaním). 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je komunikácia v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte riadiacu jednotku ESP<sup>®</sup> a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004017">
+<title>
+Kontrola komunikácie združeného merača
+</title>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Odpojte servisné vodiče od konektora riadiacej jednotky ESP<sup>®</sup> a potom pripojte konektor riadiacej jednotky ESP<sup>®</sup>.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vymeňte združený prístroj. 
+<intxreftitleoff1 refid = "ASLAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, či je komunikácia normálna pre riadiacu jednotku P/S, BCM, riadiacu jednotku ESP<sup>®</sup>, ECM a riadiacu jednotku bezkľúčového štartovania (model s bezkľúčovým štartovaním). 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je komunikácia v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Koniec. (porucha združeného merača.)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Model so spínačom zapaľovania: Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Model s bezkľúčovým štartovaním: Prejdite na krok 9.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA804004018">
+<title>
+Kontrola komunikácie ECM
+</title>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vymeňte ECM. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, či je komunikácia normálna pre združený merač, riadiacu jednotku P/S, BCM, riadiacu jednotku ESP<sup>®</sup>, ECM a riadiacu jednotku bezkľúčového štartovania (model s bezkľúčovým štartovaním). 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je komunikácia v poriadku?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Koniec. (porucha ECM.)
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte riadiacu jednotku bezkľúčového štartovania a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA506003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+<servinfosub id = "ASLAP70AA804004019">
+<title>
+Kontrola komunikácie
+</title>
+<topic id = "ASLAP70AA804004020">
+<title>
+Snímač uhla natočenia volantu
+</title>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pripojte konektor k snímaču uhla natočenia volantu.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrďte, či komunikácia CAN už pripojená k riadiacim jednotkám, snímaču a snímaču uhla natočenia volantu funguje normálne. 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ak nájdete poruchu, vymeňte snímač uhla natočenia volantu a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A4606016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "ASLAP70AA804004021">
+<title>
+SDM
+</title>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pripojte prípojku G11 k SDM.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrďte komunikáciu CAN, že riadiace jednotky, snímač a SDM už boli pripojené, alebo sú v normálnom stave. 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ak nájdete poruchu, vyymeňte SDM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+<topic id = "ASLAP70AA804004022">
+<title>
+Riadiaca jednotka ohrevu, vetrania a klimatizácie (modely s klimatizáciou)
+</title>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „OFF (VYP)“.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pripojte konektor k riadiacej jednotke HVAC.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Na skenovacom nástroji SUZUKI vyberte režim Kontrola komunikácie zbernice v časti Kontrola zbernice.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Potvrďte komunikáciu CAN, že riadiace jednotky, snímač a riadiaca jednotka HVAC už boli pripojené, alebo sú v normálnom stave. 
+<intxreftitleoff1 refid = "ASLAP70AA804004024"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Ak nájdete poruchu, vymeňte riadiacu jednotku HVAC a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+</topic>
+</servinfosub>
+<servinfosub id = "ASLAP70AA804004024">
+<title>
+Kontrola posúdenia komunikačnej zbernice 
+</title>
+<ptxt>
+Pri vykonávaní Kontrola zbernice komunikácie pomocou skenovacieho zariadenia Suzuki sa obráťte na nasledovnú tabuľku kvôli posúdeniu.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.542in"/>
+<colspec colnum = "2" colname = "2" colwidth = "5.677in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Posúdenie
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Zobrazenie kontroly komunikačnej zbernice
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Normálny
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+• Všetky pripojené riadiace jednotky/snímače (ktoré komunikujú cez CAN) sú zobrazené a farba ich pozadia je &#34;biela&#34;.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Vyššie uvedený stav zostane nezmenený, ak je monitorovanie dlhšie ako 1 minúta.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Nenormálny
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Minimálne jedna z pripojených riadiacich jednotiek/snímačov (ktoré komunikujú cez CAN) sa nezobrazuje.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Farba pozadia minimálne jednej pripojenej komunikačnej jednotky/snímača (ktoré komunikujú cez CAN) sa zobrazí ako “sivá” alebo “svetlomodrá”.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Farba pozadia riadiacich jednotiek snímačov (komunikujúcich pomocou CAN) sa zmení na sivú (čísla riadiacich jednotiek / snímačov sa znižujú) alebo svetlomodrá (čísla riadiacich jednotiek snímačov sa zvyšujú).
+</ptxt>
+</item>
+<item>
+<ptxt>
+Nie je možné vykonať Kontrolu komunikačnej zbernice.
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

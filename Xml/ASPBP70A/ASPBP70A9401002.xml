@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9D">
+<servcat sctnbr = "09" scnbr = "04">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPBP70A9401002" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descripción del sistema del lavafaros
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+El sistema del lavafaros está compuesto por el módulo de control de la nivelación automática de los faros y del lavafaros, la bomba del lavafaros, la boquilla del lavafaros, el interruptor del lavafaros, el interruptor del lavaparabrisas y el interruptor de iluminación.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El modulo de la nivelación automática de los faros y del lavafaros controla el sistema del lavafaros.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El módulo de control de la nivelación automática de los faros y del lavafaros supervisa el estado del interruptor del lavafaros, la bomba del lavaparabrisas, el interruptor de luz y el interruptor del motor.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Es posible supervisar el estado del interruptor del lavafaros y el interruptor del lavaparabrisas mediante la herramienta de escaneado SUZUKI.
+</ptxt>
+</item>
+</list1>
+<servinfosub id = "ASPBP70A9401002001">
+<title>
+Control del lavafaros
+</title>
+<ptxt>
+El control del lavafaros tiene dos sistemas de control, uno es el control automático de los faros en el que la bomba del lavafaros se activa junto con la bomba del lavaparabrisas y el otro es el control manual, en el que la bomba del lavafaros se activa mediante la señal de conexión (ON) del interruptor del lavafaros.
+</ptxt>
+<topic id = "ASPBP70A9401002002">
+<title>
+Control automático / manual
+</title>
+<ptxt>
+Cuando se cumplen todas las siguientes condiciones, el módulo de control de la nivelación automática de los faros y del lavafaros activa la bomba del lavafaros durante el tiempo especificado.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Encendido: ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Faros: ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Bomba del lavafaros: OFF
+</ptxt>
+</item>
+<item>
+<ptxt>
+Bomba del lavaparabrisas: ON (control automático)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Interruptor del lavafaros: ON (control manual)
+</ptxt>
+</item>
+</list1>
+<attention3>
+<ptxt>
+En el control automático, la bomba del lavafaros se activa sólo una vez. La bomba del lavafaros se reactiva si se produce alguna de las siguientes condiciones.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Faros: OFF → ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Encendido: OFF → ON, faros: ON
+</ptxt>
+</item>
+</list1>
+</attention3>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "9C">
+<servcat sctnbr = "09" scnbr = "03">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A9304006" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1810
+</title>
+<servinfosub id = "AFRAP70A9304006001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.597in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.597in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1810: Circuit de capteur de niveau de carburant / coupure 
+</emph>
+</ptxt>
+<ptxt>
+Le signal de niveau de carburant n&#39;a pas été entré pour une période spécifiée ou plus longue. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Combiné d&#39;instruments 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Capteur de niveau de carburant 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Circuit de capteur de niveau de carburant 
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A9304006002">
+<title>
+Schéma du circuit 
+</title>
+<figure>
+<graphic graphicname = "I9P60A930006.swf" width = "183.000mm" height = "38.046mm" ver = "02" gw = "417" gh = "91"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.371in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.750in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.319in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.043in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Connecteur de combiné d&#39;instruments (vue: [a]) 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+CPU
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Combiné d&#39;instruments 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Capteur de niveau de carburant 
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AFRAP70A9304006003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A9304006004">
+<testgroup id = "AFRAP70A9304006005">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Effacer le DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA204004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mettre l&#39;allumage en position &#34;ON&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Le DTC B1810 est-il toujours détecté? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 2. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vérifier les pannes intermittentes. 
+<intxreftitleoff1 refid = "AFRAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A9304006006">
+<title>
+Vérification du capteur de niveau de carburant 
+</title>
+<test1>
+<ptxt>
+Vérifier le capteur de niveau de carburant. 
+<intxreftitleoff1 refid = "AFRAP70A1706018"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Son état est-il correct? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à l&#39;étape 3. 
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Remplacer le capteur de niveau de carburant et revérifier le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A1706017"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AFRAP70A9304006007">
+<title>
+Vérification du circuit de capteur de niveau de carburant 
+</title>
+<test1>
+<ptxt>
+S&#39;assurer que l&#39;allumage est en position &#34;OFF&#34;. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Débrancher le combiné d&#39;instruments et les connecteurs de capteur de niveau de carburant. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Vérifier si le branchement au combiné d&#39;instruments et aux bornes de capteur de niveau de carburant est correct. 
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Si les branchements sont corrects, vérifier si le circuit entre le connecteur de combiné d&#39;instruments et le capteur de niveau de carburant ne présente pas de coupure de circuit, de court-circuit à la masse ou de court-circuit à l&#39;alimentation électrique. 
+</ptxt>
+</test1>
+<question>
+Sont-ils en bon état? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Remplacer le combiné d&#39;instruments et revérifier le DTC. 
+<intxreftitleoff1 refid = "AFRAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Réparer le faisceau de câbles défectueux et revérifier le DTC. 
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

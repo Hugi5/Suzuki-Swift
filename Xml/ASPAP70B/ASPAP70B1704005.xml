@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1G">
+<servcat sctnbr = "01" scnbr = "07">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPAP70B1704005" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Comprobación de la presión de combustible
+</title>
+<servinfosub id = "ASPAP70B1704005001">
+<title>
+Esquema del sistema
+</title>
+<servicetool>
+<servicetoolitem id = "L1G002">
+<s-part>
+(A)
+</s-part>
+<s-number num = "09912-58442">
+09912-58442
+</s-number>
+</servicetoolitem>
+<servicetoolitem id = "L1G003">
+<s-part>
+(B)
+</s-part>
+<s-number num = "09912-58432">
+09912-58432
+</s-number>
+<ptxt>
+</ptxt>
+</servicetoolitem>
+<servicetoolitem id = "L1G004">
+<s-part>
+(C)
+</s-part>
+<s-number num = "09912-58490">
+09912-58490
+</s-number>
+<ptxt>
+</ptxt>
+</servicetoolitem>
+</servicetool>
+<figure>
+<graphic graphicname = "I3RM0A110081.swf" width = "183.000mm" height = "105.949mm" ver = "01" gw = "453" gh = "283"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.263in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.249in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.263in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.667in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.263in"/>
+<colspec colnum = "6" colname = "6" colwidth = "1.819in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Inyector de combustible
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Tubo de descarga de combustible
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "top" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Conjunto de la bomba de combustible
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASPAP70B1704005002">
+<title>
+Localización y reparación de averías
+</title>
+<attention3>
+<ptxt>
+Antes de utilizar el siguiente diagrama de flujo, confirme que la tensión de la batería es de 11 V o superior. Si es inferior, la presión se reduce por debajo de las especificaciones, incluso si la línea y bomba de combustible están en buenas condiciones.
+</ptxt>
+</attention3>
+<diag type = "test" id = "ASPAP70B1704005003">
+<testgroup id = "ASPAP70B1704005004">
+<question>
+¿Se realizó la inspección de la bomba de combustible y sus circuitos?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPAP70B1704004">Inspección de la bomba de combustible y sus circuitos</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1704005005">
+<title>
+Comprobación de la presión de combustible 1
+</title>
+<test1>
+<ptxt>
+Compruebe la presión del combustible. 
+<intxreftitleoff1 refid = "ASPAP70B1704006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1704005006">
+<title>
+Comprobación de la presión de combustible 2
+</title>
+<test1>
+<ptxt>
+Arranque el motor y deje que se caliente hasta que alcance su temperatura normal de funcionamiento.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Mantenga el régimen del motor a 4.000 rpm.
+</ptxt>
+</test1>
+<question>
+¿Muestra la presión de combustible el mismo valor aproximado que en el paso 2?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+El regulador de la presión de combustible está averiado, sustituya el conjunto de la bomba de combustible. 
+<intxreftitleoff1 refid = "ASPAP70B1706015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1704005007">
+<title>
+Inspección de la tubería de combustible
+</title>
+<test1>
+<ptxt>
+Inspeccione el tubo de combustible y la junta por si hubiera fugas de combustible, daños o deformaciones.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+El sistema de combustible está en buenas condiciones.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare la pieza defectuosa.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPAP70B1704005008">
+<title>
+Inspección de la tubería de combustible
+</title>
+<test1>
+<ptxt>
+Inspeccione el tubo de combustible y la junta por si hubiera daños o deformaciones.
+</ptxt>
+</test1>
+<question>
+¿Es correcto el resultado de la inspección?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Filtro de combustible obstruido, bomba de combustible defectuosa, regulador de presión de combustible defectuoso o fugas de combustible por la conexión del tubo en el depósito de combustible.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Repare la pieza defectuosa.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

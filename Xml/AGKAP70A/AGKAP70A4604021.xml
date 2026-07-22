@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A4604021" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1028
+</title>
+<servinfosub id = "AGKAP70A4604021001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.510in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.653in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1028: Τάση Κυκλώματος Αισθητήρα Πίεσης Αντλίας Φρένων
+</emph>
+</ptxt>
+<ptxt>
+Το σήμα του αισθητήρα πίεσης αντλίας &#248;ρένων βρίσκεται εκτός του καθορισμένου εύρους.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Σύστημα &#248;ρένων
+</ptxt>
+</item>
+<item>
+<ptxt>
+Μονάδα ελέγχου ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A4604021002">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A4604021003">
+<testgroup id = "AGKAP70A4604021004">
+<question>
+Πραγματοποιήθηκε ο &#34;Έλεγχος του Συστήματος ESP<sup>&#174;</sup>&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A4604001">Έλεγχος Συστήματος ESP&#174;</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604021005">
+<title>
+Έλεγχος συστήματος &#248;ρένων
+</title>
+<test1>
+<ptxt>
+Ελέγξτε τα ακόλουθα σημεία: 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Διαρροή υγρού &#248;ρένων ή αέρας στο σύστημα υδραυλικών &#248;ρένων.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Υπερβολικά μεγάλο διάκενο μεταξύ τακακιού και δίσκου.
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Είναι τα αποτελέσματα του ελέγχου ΟΚ;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε το συγκρότημα υδραυλικής μονάδας / μονάδας ελέγχου ESP<sup>&#174;</sup> και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Επισκευάστε, αντικαταστήστε ή ρυθμίστε το σύστημα &#248;ρένων.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

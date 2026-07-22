@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AGEAP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Beschreibung des Borddiagnosesystems
+</title>
+<ptxt>
+Das ECM dieses Fahrzeugs erfüllt folgende Aufgaben.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Wird der Zündschalter bei abgestelltem Motor auf ON gedreht, wird die MIL (1) eingeschaltet, um die Betriebsbereitschaft des Schaltkreises der MIL (1) zu überprüfen.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Falls das ECM während des Motorbetriebs eine Störung erfasst, die den Schadstoffausstoß des Fahrzeugs nachhaltig erhöht, schaltet es die MIL (1) im Kombiinstrument des Armaturenbretts ein bzw. auf Blinken (Blinken nur bei Erfassung von Fehlzündungen, die den Katalysator beschädigen können) und speichert den Störungsbereich.
+</ptxt>
+<ptxt>
+(Falls das ECM eine Störung nur während des ersten Fahrzyklus (siehe 
+<intxref refid = "AGEAP70A1101003002">Fahrzyklus</intxref>
+) aber nicht mehr bei den nächsten 2 darauf folgenden Fahrzyklen erkennt, steuert das ECM die MIL (1) nicht an, speichert jedoch den zugeordneten DTC ab.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Bei einigen Störungen verwendet das ECM die 3-Fahrten-Testlogik, um eine fehlerhafte Erfassung zu verhindern (siehe 
+<intxref refid = "AGEAP70A1101003003">3-Fahrten-Testlogik</intxref>
+).
+</ptxt>
+<ptxt>
+Bei dieser Logik wird die MIL eingeschaltet, wenn dieselbe Störung in 3 aufeinander folgenden Fahrzyklen erfasst wird.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Wird eine Störung erfasst, so werden die jeweiligen Motor- und Fahrbedingungen zum Zeitpunkt der Störungserfassung im ECM-Speicher als Schnappschussdaten gespeichert. (Für Einzelheiten siehe Beschreibung unter 
+<intxref refid = "AGEAP70A1101003007">Löschen von Schnappschussdaten: </intxref>
+.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Die Kommunikation über den DLC (3) ist nicht nur mit dem SUZUKI-Diagnosegerät (2), sondern auch mit einem Standard-OBD-Diagnosegerät mit CAN-Schnittstelle möglich. (Diagnosedaten können mit einem Diagnosegerät abgefragt werden.)
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IAP70A110001.jpg" width = "88.000mm" height = "99.871mm" ver = "01" gw = "205" gh = "267"/>
+</figure>
+<servinfosub id = "AGEAP70A1101003001">
+<title>
+Warmlaufphase
+</title>
+<ptxt>
+Als Warmlaufphase bezeichnet man die Zeitspanne nach dem Starten des Motors, bis die Kühlmitteltemperatur um mindestens 22 &#176;C (40 &#176;F) bzw. auf eine Mindesttemperatur von 71 &#176;C (160 &#176;F) angestiegen ist.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1101003002">
+<title>
+Fahrzyklus
+</title>
+<ptxt>
+Als &#34;Fahrzyklus&#34; bezeichnet man die Zeitspanne nach dem Anlassen des Motors bis zum folgenden Abschalten.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1101003003">
+<title>
+3-Fahrten-Testlogik
+</title>
+<ptxt>
+Die während des ersten Fahrzyklus erfasste Störung wird im ECM-Speicher (in Form eines vorgemerkten DTCs) gespeichert; die MIL leuchtet zu diesem Zeitpunkt jedoch nicht auf. Das ECM schaltet die MIL erst nach der dritten Erfassung der gleichen Störung während der nächsten beiden Fahrzyklen ein.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1101003004">
+<title>
+Vorgemerkter DTC
+</title>
+<ptxt>
+Ein &#34;vorgemerkter DTC&#34; bezieht sich auf DTCs, die von der 3-Fahrten-Testlogik beim ersten Störungsauftritt gesetzt werden. Solch ein DTC wird bei Störungsauftritt im ersten von drei aufeinander folgenden Fahrzyklen vorübergehend gespeichert, weshalb man ihn als &#34;vorgemerkten DTC&#34; bezeichnet.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AGEAP70A1101003005">
+<title>
+Schnappschussdaten
+</title>
+<ptxt>
+Das ECM speichert die Motor- und Fahrbedingungen zum Zeitpunkt der Feststellung einer Fehlfunktion im Speicher. Diese Daten werden als &#34;Schnappschussdaten&#34; bezeichnet.
+</ptxt>
+<ptxt>
+Um die bei einem auftretenden Fehler herrschenden Bedingungen (z. B.. Motor warm oder kalt, Fahrzeug stehend oder fahrend, Luft/Kraftstoff-Mischungsverhältnis fett oder mager) zu ermitteln, ist es somit lediglich erforderlich, die Schnappschussdaten abzufragen. Ferner kann das ECM Schnappschussdaten für drei verschiedene Störungen in der Reihenfolge ihres Auftretens abspeichern. Mit dieser Funktion ist es somit möglich, die Reihenfolge des Auftretens verschiedener Störungen zu ermitteln. Dies ist eine nützliche Funktion beim erneuten Überprüfen oder Diagnostizieren einer Störung.
+</ptxt>
+<ptxt>
+Einzelheiten zu den Schnappschussdaten, die vom ECM ausgelesen werden können, siehe Tabelle unten.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.434in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kraftstoffsystem
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kalkulierte Last
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Kurzzeit-Gemischkorrektur
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Langzeit-Gemischkorrektur
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAP
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Motordrehzahl
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fahrzeuggeschwindigkeit
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Zündverstellung
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ansauglufttemperatur
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute Drosselklappenstellung 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+EVAP-Kanisterspülung
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Zeit n. Motorstart
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Tankfüllstand
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Luftdruck
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Batteriespannung
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relative Drosselklappenstellung**
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute Drosselklappenstellung 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute Gaspedalstellung 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute Gaspedalstellung 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Soll DK Position
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Die mit einem Sternchen (*) gekennzeichneten Schnappschussdaten zeigen das Verhältnis zwischen Stromversorgungsspannung und Ausgangsspannung des betreffenden Sensors.
+</ptxt>
+<ptxt>
+Wenn die Stromversorgungsspannung 5,0 V und die Ausgangsspannung 4,0 V ist, werden folgende Schnappschussdaten angezeigt.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Bei Systemen, in denen die Ausgangsspannung proportional zur Eingangsspannung ist, wird 80% (= Prozentsatz der maximalen Eingangs-Referenzspannung) angezeigt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Bei Systemen, in denen die Ausgangsspannung umgekehrt proportional zur Eingangsspannung ist, wird 20% (= 100% minus Prozentsatz der maximalen Eingangs-Referenzspannung) angezeigt.
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Für die relative Drosselklappenstellung mit Sternchen (**) in der obigen Tabelle wird der mit der Formel ((Ausgangsspannung - Ausgangsspannung bei geschlossener Drosselklappe) / Stromversorgungsspannung) berechnete Wert angezeigt.
+</ptxt>
+<ptxt>
+Wenn die Stromversorgungsspannung gleich 5,0 V und die Ausgangsspannung bei geschlossener Drosselklappe 1,0 V ist, werden folgende Schnappschussdaten angezeigt.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Bei geschlossener Drosselklappe (Ausgangsspannung = 1,0 V) wird 0% angezeigt.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Bei weit geöffneter Drosselklappe (Ausgangsspannung = 4,0 V) wird 60% angezeigt.
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+Bei Systemen, in denen die Ausgangsspannung umgekehrt proportional zur Eingangsspannung ist, wird jedoch 100% minus oben angegebene Formel angezeigt.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Schnappschussdaten (Beispiel)
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "AGEAP70A1101003006" page = "1">
+<title>
+Priorität von Schnappschussdaten: 
+</title>
+<ptxt>
+Das ECM verfügt über 4 Frames bzw. Speicherplätze, in denen die Schnappschussdaten gespeichert werden können.
+</ptxt>
+<ptxt>
+Frame 1 ist ein spezieller Speicherplatz, in dem den Schadstoffausstoß betreffende Schnappschussdaten Vorrang vor Daten über (allgemeine) Störungen haben. Wird eine Störung erfasst, die sich auf die Emissionen auswirkt, während Frame 1 bereits Daten einer allgemeinen Störung (Priorität &#34;2&#34; in der nachfolgenden Tabelle) enthält, werden diese Daten durch die Schnappschussdaten der neu erfassten Störung (Priorität &#34;1&#34; in der nachfolgenden Tabelle) überschrieben.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Priorität
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Schnappschussdaten in Frame 1
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Schnappschussdaten bei Erfassung von folgenden Störungen: &#34;Fehlzündung erfasst&#34; (P0300-P0304), &#34;Gemisch zu mager&#34; (P0171) und &#34;Gemisch zu fett&#34; (P0172)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Daten bei anderen Störungen als oben.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Die Frames 2 bis 4 sind allgemeinen Störungen zugeordnet. Diese können die Schnappschussdaten für 3 verschiedene, allgemeine Störungen in der Reihenfolge ihres Auftretens abspeichern (d.h. Frame 2 speichert die Daten der ersten und Frame 4 die Daten der letzten erfassten Störung). Im Gegensatz zu den Daten in Frame 1 werden die Inhalte in diesen 3 Frames nicht aktualisiert, wodurch evtl. nachfolgende Störungen nicht mehr im Speicher registriert werden.
+</ptxt>
+<figure>
+<graphic graphicname = "I7Y50A110039G.swf" width = "183.000mm" height = "49.215mm" ver = "02" gw = "498" gh = "123"/>
+</figure>
+<ptxt>
+—: Keine Schnappschussdaten
+</ptxt>
+</topic>
+<topic id = "AGEAP70A1101003007" page = "1">
+<title>
+Löschen von Schnappschussdaten: 
+</title>
+<ptxt>
+Beim Löschen eines DTC werden die mit diesem DTC verknüpften Schnappschussdaten simultan gelöscht.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AGEAP70A1101003008" page = "1">
+<title>
+Systemfunktionsprüfung
+</title>
+<ptxt>
+Die Systemfunktionsprüfung soll sicherstellen, dass alle Systeme, die sich auf den Schadstoffausstoß auswirken, die Voraussetzungen erfüllen, damit das ECM eine Störung bei Auftritt erfassen und den entsprechenden DTC registrieren kann.
+</ptxt>
+<ptxt>
+Diese Prüfung erfolgt durch Überwachung von spezifischen Posten (Komponenten) per Diagnosegerät (SUZUKI-Diagnosegerät oder CAN-kompatibles Standard-OBD-Diagnosegerät). Sobald die Prüfung ergibt, dass das getestete System die Voraussetzungen erfüllt, löst das ECM eine Selbstdiagnose des Systems aus und ändert dessen Prüfungsstatus von &#34;Unvollständig&#34; zu &#34;Vollständig&#34;, was durch Anzeige von &#34;Vollständig&#34; auf dem Diagnosegerät bestätigt wird.
+</ptxt>
+<ptxt>
+Wenn der Zustand &#34;Vollständig&#34; angezeigt wird, wird er bis zur Durchführung von &#34;DTC Löschen&#34; mit dem Diagnosegerät beibehalten.
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Der Zustand der Systemfunktionsprüfung kann von &#34;Vollständig&#34; auf &#34;Unvollständig&#34; wechseln, wenn folgende Vorgänge durchgeführt werden.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Abklemmen des Massekabels (–) von der Batterie
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lösen der ECM-Steckverbinder
+</ptxt>
+</item>
+<item>
+<ptxt>
+Lösen des ECM-Massekabels
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+Die in der Tabelle unten aufgeführten Posten (Komponenten) werden bei der Systemfunktionsprüfung kontrolliert, um die Fähigkeit zur Erfassung der neben dem jeweiligen Posten aufgelisteten DTCs sicherzustellen.
+</ptxt>
+</item>
+<item>
+<ptxt>
+&#34;Vollständig&#34; oder &#34;Unvollständig&#34; als Ergebnis bei der Systemfunktionsprüfung ist NICHT mit der Bedeutung von &#34;Normal&#34; bzw. &#34;Abnormal&#34; bei der Selbstdiagnose gleichzusetzen.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AGEAP70A1101003009">
+<title>
+Tabelle der von der Systemfunktionsprüfung überwachten Elemente
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Überwachtes Element
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC zum überwachten Element
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Katalysator
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Lambdasonde
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Lambdasondenheizung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0135
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B4604001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+ESP® System Check
+</title>
+<ptxt>
+Refer to the description after the following general flow for details of each step.
+</ptxt>
+<diag type = "test" id = "AENAP70B4604001001">
+<testgroup id = "AENAP70B4604001002">
+<title>
+Malfunction analysis 
+<intxreftitleoff1 refid = "AENAP70B4604001008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604001009">Customer complaint analysis</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604001010">Problem symptom confirmation</intxref>
+.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604001011">DTC check, record and clearance</intxref>
+ and recheck DTC.
+</ptxt>
+</test1>
+<question>
+Is same DTC detected again after performing DTC clearance?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Inspect and repair referring to applicable DTC troubleshooting, and then go to Step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B4604001003">
+<title>
+Visual inspection 
+<intxreftitleoff1 refid = "AENAP70B4604001012"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604002">Visual Inspection</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is there any faulty condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repair or replace malfunction part, and then go to Step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B4604001004">
+<title>
+Driving test 
+<intxreftitleoff1 refid = "AENAP70B4604001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604001013">Step 3: Driving Test</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is malfunction detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repair or replace malfunction part, and then go to step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B4604001005">
+<title>
+Brakes diagnosis 
+<intxreftitleoff1 refid = "AENAP70B4604001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Inspect and repair brake system referring to 
+<intxref refid = "AENAP70B4104001">Brakes Symptom Diagnosis</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is malfunction detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repair or replace malfunction part, and then go to step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B4604001006">
+<title>
+Intermittent problem check 
+<intxreftitleoff1 refid = "AENAP70B4604001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Check for intermittent troubles referring to 
+<intxref refid = "AENAP70B0006002">Intermittent Connection and Poor Contact Inspection</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Is malfunction detected?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repair or replace malfunction part, and then go to step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 6.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B4604001007">
+<title>
+Final confirmation test 
+<intxreftitleoff1 refid = "AENAP70B4604001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</title>
+<test1>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604001016">Step 6: Final Confirmation Test</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Does trouble recur?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "AENAP70B4604001008" page = "1">
+<title>
+Step 1: Malfunction Analysis
+</title>
+<topic id = "AENAP70B4604001009">
+<title>
+Customer complaint analysis
+</title>
+<ptxt>
+Record details of the problem (failure, complaint) and how it occurred as described by the customer. 
+</ptxt>
+<ptxt>
+For this purpose, use of such a questionnaire form as shown in the following table will facilitate collecting information to the point required for proper analysis and diagnosis.
+</ptxt>
+<figure>
+<title>
+Customer questionnaire (Example)
+</title>
+<graphic graphicname = "IAP70A460005.swf" width = "183.000mm" height = "169.322mm" ver = "01" gw = "494" gh = "463"/>
+</figure>
+</topic>
+<topic id = "AENAP70B4604001010">
+<title>
+Problem symptom confirmation
+</title>
+<ptxt>
+If symptom in “Customer Questionnaire” is found or reproduced in the vehicle, confirm the symptom is problem or not. (This step should be done with the customer if possible.) Check warning light related to brake system referring to “EBD Warning Light (Brake Warning Light) Check”, “ABS Warning Light Check” and “ESP<sup>®</sup> Warning Light Check” under 
+<intxref refid = "AENAP70B4604004">Warning Light Check</intxref>
+.
+</ptxt>
+</topic>
+<topic id = "AENAP70B4604001011">
+<title>
+DTC check, record and clearance
+</title>
+<ptxt>
+Perform 
+<intxref refid = "AENAP70B4604005">DTC Check</intxref>
+ procedure, record it and then clear it. 
+<intxreftitleoff1 refid = "AENAP70B4604006"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+Recheck DTC. 
+<intxreftitleoff1 refid = "AENAP70B4604005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<ptxt>
+When DTC which is recorded at DTC check procedure is detected again after performing DTC clearance, go to 
+<intxref refid = "AENAP70B4604005">DTC Check</intxref>
+ to proceed the diagnosis.
+</ptxt>
+<ptxt>
+When DTC which is recorded at DTC check procedure is not indicated anymore after performing DTC clearance, ESP<sup>®</sup> control module does not perform the system diagnosis, or temporary abnormality may occur, therefore go to 
+<intxref refid = "AENAP70B4604001013">Step 3: Driving Test</intxref>
+ to proceed to the diagnosis.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AENAP70B4604001012" page = "1">
+<title>
+Step 2: Visual Inspection
+</title>
+<ptxt>
+As a preliminary step, be sure to perform visual check of the items that support proper function of the ESP<sup>®</sup> system. 
+<intxreftitleoff1 refid = "AENAP70B4604002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B4604001013">
+<title>
+Step 3: Driving Test
+</title>
+<ptxt>
+Test the vehicle at 40 km/h (25 mph) for at least two minutes including a turn to the right, a turn to the left and a vehicle stop using foot brake at least once to check if any trouble symptom (such as ESP<sup>®</sup> warning light and/or ABS warning light) exists.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B4604001014">
+<title>
+Step 4: Brakes Diagnosis
+</title>
+<ptxt>
+Check the parts or system suspected as a possible cause referring to 
+<intxref refid = "AENAP70B4101001">Brake System Description</intxref>
+ and based on symptoms appearing on the vehicle (symptoms observed through Steps 1 to 3). Repair faulty parts or replace them, if necessary).
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B4604001015">
+<title>
+Step 5: Intermittent Problem
+</title>
+<ptxt>
+Check parts that are prone to cause intermittent trouble (e.g. wire harness, connector), referring to 
+<intxref refid = "AENAP70B0006002">Intermittent Connection and Poor Contact Inspection</intxref>
+ and the related circuit of which DTC is recorded in Step 1 to 5.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B4604001016">
+<title>
+Step 6: Final Confirmation Test
+</title>
+<ptxt>
+Confirm that the problem symptom is not observed any more and ESP<sup>®</sup> is free from any abnormal conditions. If what has been repaired is related to malfunction DTC, clear the DTC referring to 
+<intxref refid = "AENAP70B4604006">DTC Clearance</intxref>
+and perform test driving and confirm that the DTC is not indicated.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

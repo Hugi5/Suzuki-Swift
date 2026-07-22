@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A7224029" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1570
+</title>
+<servinfosub id = "AITAP70A7224029001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.922in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.288in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1570: Guasto segnale tipo di motore
+</emph>
+</ptxt>
+<ptxt>
+La centralina HVAC riceve dati non validi del segnale tipo di motore dalla ECM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Centralina HVAC
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A7224029002">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A7224029003">
+<testgroup id = "AITAP70A7224029005">
+<title>
+Controllo dati forniti dallo strumento di diagnosi
+</title>
+<test1>
+<ptxt>
+Collegare lo strumento di diagnosi con accensione in posizione OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Portare l&#39;accensione su &#34;ON&#34; e selezionare la modalità &#34;ELENCO DATI&#34;.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Controllare il parametro &#34;Tipo di motore&#34; visualizzato sullo strumento di diagnosi.
+</ptxt>
+</test1>
+<question>
+Il tipo di motore è corretto, come indicato nei &#34;Dati forniti dallo strumento di diagnosi&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la centralina HVAC con una di provata affidabilità e ricontrollare.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Sostituire la ECM con una di provata affidabilità e ricontrollare.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AITAP70A8204012" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1012
+</title>
+<servinfosub id = "AITAP70A8204012001">
+<title>
+Condizioni che generano il DTC e possibili aree di guasto
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.597in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.597in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condizioni che generano il DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Possibili aree di guasto
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1012: Collegamento intermittente connettore SDM
+</emph>
+</ptxt>
+<ptxt>
+Collegamento difettoso del connettore SDM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Connettore della centralina SDM
+</ptxt>
+</item>
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AITAP70A8204012002">
+<title>
+Ricerca guasti
+</title>
+<diag type = "test" id = "AITAP70A8204012003">
+<testgroup id = "AITAP70A8204012004">
+<question>
+È stato eseguito il &#34;Controllo del sistema diagnostico dell&#39;airbag&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Andare al passo 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Andare a 
+<intxref refid = "AITAP70A8204001">Controllo del sistema diagnostico dell&#39;airbag</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AITAP70A8204012005">
+<title>
+Controllo connettore SDM
+</title>
+<test1>
+<ptxt>
+Controllare il collegamento al connettore della SDM e il &#34;piedino di rilevamento collegamento&#34; del connettore SDM.
+</ptxt>
+</test1>
+<question>
+L&#39;esito del controllo è OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sostituire la SDM con una nuova. 
+<intxreftitleoff1 refid = "AITAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Controllare la presenza di guasti intermittenti. 
+<intxreftitleoff1 refid = "AITAP70A0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<attention3>
+<ptxt>
+Al termine dell&#39;ispezione e dell&#39;intervento, eseguire le operazioni descritte di seguito.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ricollegare tutti i componenti del sistema airbag e verificarne la corretta installazione.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Se presenti, cancellare gli eventuali DTC facendo riferimento a 
+<intxref refid = "AITAP70A8204006">Cancellazione DTC</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ripetere 
+<intxref refid = "AITAP70A8204001">Controllo del sistema diagnostico dell&#39;airbag</intxref>
+ per verificare che il guasto sia stato effettivamente eliminato.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

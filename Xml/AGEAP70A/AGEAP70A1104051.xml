@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGEAP70A1104051" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0A5A
+</title>
+<servinfosub id = "AGEAP70A1104051001">
+<title>
+Bedingung für DTC-Erfassung und Störungsbereich
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.843in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.361in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Bedingung für DTC-Erfassung
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Störungsbereich
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0A5A: Bereich/Leistung des Schaltkreises des Generator-Stromsensors
+</emph>
+</ptxt>
+<ptxt>
+Eine der folgenden Bedingungen ist erfüllt.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis des Sensors für elektrische Last ist für 5 Sek. über 4,8 V.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis des Sensors für elektrische Last ist für 5 Sek. unter 0,2 V.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Ausgangsspannung im Signalschaltkreis des Sensors für elektrische Last fluktuiert für 5 Sek. geringer als der Sollwert.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(3-Fahrten-Testlogik, die MIL leuchtet jedoch nicht auf)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sensor für elektrische Last und/oder zugehöriger Schaltkreis
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104051002">
+<title>
+Schaltplan
+</title>
+<figure>
+<graphic graphicname = "I9P60A111024.swf" width = "183.000mm" height = "90.249mm" ver = "02" gw = "440" gh = "239"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.637in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.337in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.246in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.319in"/>
+<colspec colnum = "6" colname = "6" colwidth = "0.498in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM-Steckverbinder (Ansicht: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signalkreis des Batterietemperatursensors
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Stromversorgungskreis des Sensors für elektrische Last
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A4: 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Masseschaltkreis des Sensors für elektrische Last
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2: 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signalkreis des Sensors für elektrische Last
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Sensor für elektrische Last
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104051003">
+<title>
+Überprüfung von Diagnosecodes
+</title>
+<s1>
+<ptxt>
+Die Zündung 10 Sek. lang auf &#34;ON&#34; stellen.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Den Motor im Leerlauf starten und 1 Min. drehen lassen.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AGEAP70A1104051004">
+<title>
+DTC-Fehlersuche
+</title>
+<diag type = "test" id = "AGEAP70A1104051005">
+<testgroup id = "AGEAP70A1104051006">
+<question>
+Wurde die &#34;Überprüfung des Motor- und Abgassteuerungssystems&#34; durchgeführt?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit 
+<intxref refid = "AGEAP70A1104001">Überprüfung des Motor- und Abgassteuerungssystems</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104051007">
+<title>
+Überprüfung des Stromversorgungskreises des Sensors für elektrische Last
+</title>
+<test1>
+<ptxt>
+Die Zündung ausschalten und den Stecker des Sensors für elektrische Last abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf einwandfreien Klemmenanschluss am Steckverbinder des Sensors für elektrische Last prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Wenn die Anschlüsse in Ordnung sind, die Zündung auf &#34;ON&#34; stellen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Sicherstellen, dass zwischen &#34;A1&#34; und &#34;A4&#34; eine Spannung von ca. 5 V anliegt.
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Weiter mit Schritt 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104051008">
+<title>
+Überprüfung des Masseschaltkreises des Sensors für elektrische Last
+</title>
+<test1>
+<ptxt>
+Sicherstellen, dass zwischen &#34;A1&#34; und Masse eine Spannung von ca. 5 V anliegt.
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Den Schaltkreis &#34;A4&#34; reparieren.
+</ptxt>
+<ptxt>
+Falls dieser DTC wieder erfasst wird, das ECM austauschen und erneute DTC-Prüfung durchführen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Den Schaltkreis &#34;A1&#34; reparieren.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104051009">
+<title>
+Überprüfung des Signalkreises des Sensors für elektrische Last
+</title>
+<test1>
+<ptxt>
+Die Zündung ausschalten und die Steckverbinder &#34;C01&#34; und &#34;E01&#34; vom ECM abklemmen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Auf korrekten Klemmenanschluss der Steckverbinder &#34;C01&#34; und &#34;E01&#34; prüfen.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Wenn die Anschlüsse in Ordnung sind, folgende Punkte überprüfen.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Widerstand im Schaltkreis &#34;A2&#34;: weniger als 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Schaltkreis &#34;A2&#34; und Masse: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Widerstand zwischen Anschlussklemme &#34;A2&#34; und den anderen Anschlussklemmen am Stecker des Sensors für elektrische Last: unendlich
+</ptxt>
+</item>
+<item>
+<ptxt>
+Spannung im Schaltkreis &#34;A2&#34;: 0 bis 1 V (bei Zündung auf &#34;ON&#34;)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Weiter mit Schritt 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Defekten Kabelbaum reparieren oder austauschen.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGEAP70A1104051010">
+<title>
+Überprüfung des Sensors für elektrische Last
+</title>
+<test1>
+<ptxt>
+Den Sensor für elektrische Last überprüfen. 
+<intxreftitleoff1 refid = "AGEAP70A1306028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ist Prüfergebnis OK?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+ECM austauschen und DTC erneut abrufen. 
+<intxreftitleoff1 refid = "AGEAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Den Sensor für elektrische Last austauschen.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

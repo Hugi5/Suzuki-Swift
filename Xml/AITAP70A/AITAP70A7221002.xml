@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AITAP70A7221002" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Descrizione dei controlli del sistema HVAC
+</title>
+<servinfosub id = "AITAP70A7221002001">
+<title>
+Controllo temperatura
+</title>
+<ptxt>
+La centralina HVAC calcola la posizione che deve avere la serranda di controllo temperatura in base ai segnali ricevuti dal selettore di regolazione della temperatura, dal sensore di temperatura aria interna, dal sensore di temperatura aria esterna e dal sensore irraggiamento solare, e controlla il relativo attuatore in modo che la serranda assuma tale posizione.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A7221002002">
+<title>
+Controllo della velocità ventilatore
+</title>
+<ptxt>
+La centralina HVAC calcola la velocità che deve avere il ventilatore in base ai segnali ricevuti dal selettore di regolazione della temperatura, dal sensore di temperatura aria interna, dal sensore di temperatura aria esterna, dal sensore ECT e dal sensore di irraggiamento solare, la confronta con la velocità effettiva del ventilatore fornitagli dalla centralina di controllo del motorino del ventilatore ed effettua le necessarie regolazioni.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A7221002003">
+<title>
+Controllo direzione flusso aria
+</title>
+<ptxt>
+La centralina HVAC calcola la posizione che deve avere la serranda di controllo temperatura in base ai segnali ricevuti dal selettore di regolazione della temperatura, dal sensore temperatura aria interna, dal sensore temperatura aria esterna, dal sensore ECT e dal sensore irraggiamento solare. Una volta determinata la posizione che deve avere la serranda di controllo temperatura, la centralina calcola altresì la posizione che deve avere la serranda di controllo direzione flusso aria e attiva l’attuatore preposto affinché la serranda assuma tale posizione.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A7221002004">
+<title>
+Controllo posizione serranda presa aria
+</title>
+<ptxt>
+La centralina HVAC stabilisce e successivamente comanda la posizione che deve avere assumere la serranda controllo flusso aria in base ai segnali provenienti dal selettore di regolazione della temperatura, dal sensore di temperatura aria interna, dal sensore di temperatura aria esterna e dal sensore irraggiamento solare.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Posizione ARIA FRESCA (FRE)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Posizione RICIRCOLO (REC)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Posizione di MISCELAZIONE (MIX)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<c-change/>
+<servinfosub id = "AITAP70A7221002005">
+<title>
+Controllo relè compressore A/C
+</title>
+<ptxt>
+Quando vengono soddisfatte le condizioni del veicolo descritte sotto, la centralina HVAC invia il segnale di attivazione dell&#39;interruttore A/C alla ECM attraverso la BCM:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Interruttore A/C ON
+</ptxt>
+</item>
+<item>
+<ptxt>
+Temperatura evaporatore maggiore del valore specificato
+</ptxt>
+</item>
+<item>
+<ptxt>
+Assenza di malfunzionamenti sensore temperatura evaporatore
+</ptxt>
+</item>
+</list1>
+<ptxt>
+La comunicazione tra ECM e BCM viene stabilita tramite la rete CAN (Controller Area Network). (Per ulteriori dettagli sulla linea di comunicazione CAN, fare riferimento a 
+<intxref refid = "AITAP70AA801001">Descrizione del sistema di comunicazione</intxref>
+)
+</ptxt>
+<ptxt>
+La ECM eccita il relè del compressore A/C quando vengono soddisfatte le seguenti condizioni del veicolo:
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Viene inviato il segnale di attivazione interruttore A/C
+</ptxt>
+</item>
+<item>
+<ptxt>
+La pressione refrigerante A/C rientra nell&#39;intervallo specificato
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il regime motore rientra nell&#39;intervallo specificato
+</ptxt>
+</item>
+<item>
+<ptxt>
+La temperatura liquido di raffreddamento del motore è inferiore al valore specificato
+</ptxt>
+</item>
+<item>
+<ptxt>
+L&#39;apertura farfalla è inferiore al valore specificato
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il veicolo non si trova né in condizione di avviamento, né di accelerazione rapida
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il sensore ECT non presenta guasti
+</ptxt>
+</item>
+<item>
+<ptxt>
+Il sensore della pressione del fluido refrigerante A/C non presenta guasti
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AITAP70A7221002006">
+<title>
+Controllo relè ventola di raffreddamento radiatore
+</title>
+<ptxt>
+La ECM eccita il relè ventola di raffreddamento del radiatore e il relè del compressore A/C nello stesso istante.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AITAP70A7221002007">
+<title>
+Struttura del sistema HVAC
+</title>
+<ptxt>
+Fare riferimento a &#34;Struttura del sistema HVAC&#34; come descritto in 
+<intxref refid = "AITAP70A7211001">Descrizione del sistema HVAC:Tipo manuale</intxref>
+.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

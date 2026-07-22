@@ -1,0 +1,809 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPAP70B5101001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descripción de la A/T
+</title>
+<ptxt>
+Se trata de un transeje automático de control completamente electrónico con 3 velocidades de avance más sobremarcha (O/D) y 1 velocidad de marcha atrás.
+</ptxt>
+<ptxt>
+El convertidor de par está constituido por 3 elementos, es de 1 etapa y 2 fases, e incorpora un mecanismo de enclavamiento controlado automáticamente.
+</ptxt>
+<ptxt>
+El dispositivo de cambio de engranajes está formado por una unidad de engranaje planetario de tipo Ravigneau, 3 embragues discos múltiples, 3 frenos de discos múltiples y 2 embragues unidireccionales.
+</ptxt>
+<ptxt>
+El dispositivo de regulación de la presión hidráulica está formado por el conjunto del cuerpo de válvula, una válvula solenoide de regulación de presión (solenoide lineal), 2 válvulas solenoides de cambio, una válvula solenoide TCC (solenoide lineal) y una válvula solenoide de distribución. La presión óptima en las tuberías, coherente con el par motor, se produce en la válvula solenoide de control de presión y depende de la señal de control procedente del TCM. Esto permite regular la presión de la tubería con una gran precisión, en función de la potencia del motor y de las condiciones de funcionamiento, para obtener una característica de cambio suave y una alta eficiencia.
+</ptxt>
+<ptxt>
+Se proporciona un sistema de mando de embrague a embrague para cambiar entre el engranaje de 3ª y de 4ª. Este sistema de embrague a embrague está fabricado para que funcione óptimamente, de manera que puedan realizarse los controles de la presión hidráulica como los mostrados a continuación.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Cuando se aumenta del engranaje de 3ª al de 4ª, para regular la presión hidráulica de vaciado al desembragar el embrague de avance, se utiliza una válvula solenoide de distribución que, durante el cambio, cambia desde un conducto hidráulico provisto de un orificio a otro.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Cuando se reduce de 4ª a 3ª, para regular la presión de la tubería aplicada al embrague de avance cuando éste se embraga, se utiliza una válvula solenoide de distribución que, durante el cambio, conmuta desde un conducto hidráulico provisto de un orificio a otro.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Al cambiar de 3ª a 4ª con la mariposa del motor abierta, para optimizar la presión de la tubería aplicada al embrague de avance cuando éste se desembraga, se procesa el control de aprendizaje para compensar la distribución de la conmutación de la válvula solenoide de distribución en todos los cambios.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Al reducir de 4ª a 3ª con la mariposa del motor abierta, para optimizar la presión de la tubería aplicada al embrague de avance cuando éste se embraga, se procesa el control de aprendizaje para compensar dicha presión en todos los cambios.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+La utilización de un engranaje planetario de tipo Ravigneau y este sistema de mando embrague a embrague simplifican enormemente la estructura, lo que hace posible utilizar un transeje ligero y compacto.
+</ptxt>
+<ptxt>
+Se realiza un control de aprendizaje de la presión de la tubería para proporcionar un tiempo de cambio óptimo en todas las subidas de marcha con la mariposa abierta. Si se detecta un tiempo de aumento de marcha prolongado, se incrementa la presión de tubería aplicada posteriormente durante el aumento de marcha. Por el contrario, si se detecta un tiempo de aumento de marcha corto, se reduce la presión de tubería aplicada posteriormente.
+</ptxt>
+<ptxt>
+<emph etype = "bold">
+Control del enclavamiento:
+</emph>
+</ptxt>
+<ptxt>
+Cuando la velocidad del vehículo supera el valor especificado, la válvula solenoide de TCC acopla completamente el TCC tras recibir la señal de control del TCM. Este control permite mejorar la eficacia del transeje.
+</ptxt>
+<ptxt>
+<emph etype = "bold">
+Función de enclavamiento controlada por deslizamiento: 
+</emph>
+</ptxt>
+<ptxt>
+Incluso a una velocidad inferior que la que alcanza el módulo TCC cuando queda completamente acoplado, el control sobre la válvula solenoide de TCC actúa a fin de que el TCC se deslice (se acople ligeramente) y, por lo tanto, mejora la eficacia del transeje. Mientras se ejecuta dicho control de deslizamiento, la presión de aceite aplicada al módulo TCC es controlada por la válvula solenoide TCC, con lo cual la diferencia entre el régimen del motor y la velocidad del eje de entrada se acerca al valor especificado.
+</ptxt>
+<ptxt>
+Asimismo, durante la desaceleración, se hace deslizar al TCC (se engrana ligeramente) para elevar el régimen del motor y alargar el rango de operación del corte de combustible, y así conseguir un mejor consumo de combustible.
+</ptxt>
+<ptxt>
+Por este motivo, es absolutamente necesario para la A/T el utilizar un ATF adecuado para el control de deslizamiento. El uso de cualquier otro líquido distinto del ATF especificado puede causar vibraciones u otros fallos.
+</ptxt>
+<ptxt>
+<emph etype = "bold">
+Control de cambio estático-dinámico:
+</emph>
+</ptxt>
+<ptxt>
+El control de cambio estático-dinámico consiste en un control de marcha atrás y un control de asentamiento. En el control de marcha atrás, si la palanca de cambios es cambiada a la posición &#34;R&#34; mientras el vehículo se mueve hacia adelante, el TCM cambia el engranaje a punto muerto para proteger las partes internas de A/T contra daños. El control de asentamiento controla que el cambio de marchas a la posición &#34;D&#34; mientras el vehículo está parado cambie al engranaje de 2ª temporalmente y después cambie al engranaje de 1ª para disminuir el impacto del cambio estático-dinámico.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60A510076.swf" width = "183.000mm" height = "186.552mm" ver = "01" gw = "395" gh = "512"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.223in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.144in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.250in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.658in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.276in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.450in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Placa impulsora
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Freno de 1ª y de marcha atrás (B3)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+21.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje solar planetario trasero
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Embrague del convertidor de par (TCC)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje anular planetario
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+22.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje solar planetario delantero
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Convertidor de par
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje de piñón planetario largo
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+23.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje de piñón planetario corto
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Eje de entrada
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+14.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Embrague unidireccional n&#176; 2 (F2)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+24.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Contraeje
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Bomba de aceite
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+15.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Freno de 2ª (B2)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+25.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje impulsado reductor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Tambor del embrague directo (doble como rotor del sensor de velocidad del eje de entrada)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+16.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Embrague unidireccional n&#176; 1 (F1)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+26.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Conjunto de la caja del diferencial
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Embrague directo (C2)
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+17.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Freno de O/D y de inercia de 2ª (B1)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+27.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje de mando final
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje de bloqueo de estacionamiento
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+18.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Eje intermedio
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+28.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje impulsor del sensor de velocidad del eje de salida
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Engranaje impulsor reductor
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+19.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Embrague de avance (C1)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Portador de planetario
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+20.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+Embrague invertido (C3)
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+<servinfosub id = "ASPAP70B5101001001">
+<title>
+Especificaciones
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.100in"/>
+<colspec colnum = "2" colname = "2" colwidth = "0.654in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.474in"/>
+<colspec colnum = "4" colname = "4" colwidth = "0.722in"/>
+<colspec colnum = "5" colname = "5" colwidth = "1.042in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.212in"/>
+<thead>
+<row rowsep = "1">
+<entry namest = "1" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Elemento
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Especificaciones
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Convertidor de par
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Tipo
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+3 elementos, 1 paso, 2 fases (con mecanismo (de enclavamiento) de TCC)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Relación del par de calado
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+1,9 – 2,1
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Bomba de aceite
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Tipo
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Bomba de aceite de engranaje interno de perfil de evolvente en círculo (sin tambor en media luna)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Sistema de impulsión
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Impulsada por el motor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" morerows = "17" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Dispositivo de cambio de engranajes
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Tipo
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Con engranaje planetario de 4 pasos de avance, 1 paso de marcha atrás
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "2" nameend = "3" morerows = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Posición de cambio
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "left">
+<ptxt>
+Posición &#34;P&#34;
+</ptxt>
+</entry>
+<entry namest = "5" nameend = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Engranaje en punto muerto, eje de salida fijo, arranque del motor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "left">
+<ptxt>
+Posición &#34;R&#34;
+</ptxt>
+</entry>
+<entry namest = "5" nameend = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Marcha atrás
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "left">
+<ptxt>
+Posición &#34;N&#34;
+</ptxt>
+</entry>
+<entry namest = "5" nameend = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Engranaje en punto muerto, arranque del motor
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "left">
+<ptxt>
+Posición &#34;D&#34; (O/D en ON)
+</ptxt>
+</entry>
+<entry namest = "5" nameend = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Cambio automático de marcha en avance de 1ª &#8596; 2ª &#8596; 3ª &#8596; 4ª
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "left">
+<ptxt>
+Posición &#34;D&#34; (O/D en OFF)
+</ptxt>
+</entry>
+<entry namest = "5" nameend = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Cambio automático de marcha en avance de 1ª &#8596; 2ª &#8596; 3ª &#8592; 4ª
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "left">
+<ptxt>
+Posición &#34;2&#34;
+</ptxt>
+</entry>
+<entry namest = "5" nameend = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Cambio automático de marcha en avance de 1ª &#8596; 2ª &#8592; 3ª
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" valign = "middle" align = "left">
+<ptxt>
+Posición &#34;L&#34;
+</ptxt>
+</entry>
+<entry namest = "5" nameend = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Reducción en avance a 1ª &#8592; 2ª &#8592; 3ª, y fija en engranaje de 1ª
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "2" morerows = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Relación de engranajes
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+1ª
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+2,875
+</ptxt>
+</entry>
+<entry colname = "5" morerows = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Número de
+</ptxt>
+<ptxt>
+dientes
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "0" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Engranaje solar planetario delantero: 24
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+2ª
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+1,568
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "0" border-bottom = "0" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Engranaje solar planetario trasero: 30
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+3ª
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+1,000
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "0" border-bottom = "0" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Engranaje de piñón planetario largo: 20
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+4ª (engranaje de sobremarcha)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+0,697
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "0" border-bottom = "0" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Engranaje de piñón planetario corto: 19
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Marcha atrás (engranaje de marcha atrás)
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+2,300
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "0" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Engranaje anular planetario: 69
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "2" nameend = "3" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Elementos de control
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "0" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Embrague de discos múltiples de tipo húmedo... 3 conjuntos
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "4" nameend = "6" border-top = "0" border-bottom = "0" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Freno de discos múltiples de tipo húmedo... 3 conjuntos
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "4" nameend = "6" border-top = "0" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Embrague unidireccional... 2 conjuntos
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Relación de engranajes de reducción
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+1,023
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Relación de reducción de engranaje de mando final
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+4,277
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Lubricación
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Sistema de lubricación
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Sistema de alimentación forzada por medio de la bomba de aceite
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Refrigeración
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Sistema de refrigeración
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Refrigeración asistida por radiador (enfriado por agua)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry namest = "1" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+Líquido empleado
+</ptxt>
+</entry>
+<entry namest = "4" nameend = "6" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "left">
+<ptxt>
+SUZUKI ATF 3317 o Mobil ATF 3309
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A4604031" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1062
+</title>
+<servinfosub id = "ASPBP70A4604031001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "3.599in"/>
+<colspec colnum = "2" colname = "2" colwidth = "3.599in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1062: Fallo de funcionamiento continuo de la válvula solenoide 
+</emph>
+</ptxt>
+<ptxt>
+La válvula solenoide se activa durante un tiempo superior al especificado con la &#34;prueba activa&#34; de la herramienta de escaneado SUZUKI.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Módulo de control ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A4604031002">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A4604031003">
+<testgroup id = "ASPBP70A4604031004">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Asegúrese de que el encendido esté desconectado (posición OFF).
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Deje el vehículo durante más de 5 minutos para que se enfríe el sistema del ESP<sup>&#174;</sup>.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Efectúe 
+<intxref refid = "ASPBP70A4604005">Comprobación del DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Se ha detectado el DTC C1062?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Sustituya el conjunto de la unidad hidráulica/módulo de control del ESP<sup>&#174;</sup> y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPBP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

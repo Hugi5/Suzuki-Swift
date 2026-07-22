@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5E">
+<servcat sctnbr = "05" scnbr = "05">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A5504062" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P1703
+</title>
+<servinfosub id = "ASPBP70A5504062001">
+<title>
+Condición de detección del DTC y área afectada
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.771in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.431in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condición de detección del DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Área afectada
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+P1703: Datos no válidos recibidos del módulo de control del ABS / ESP<sup>&#174;</sup>
+</emph>
+</ptxt>
+<ptxt>
+El módulo de control del sistema ESP<sup>&#174;</sup> detecta anormalidades en los datos de velocidad de la rueda.
+</ptxt>
+<ptxt>
+(Detección de 1 ciclo de conducción, pero la luz de advertencia de la transmisión no se enciende)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+TCM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Módulo de control ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504062002">
+<title>
+Procedimiento de confirmación del DTC
+</title>
+<attention3>
+<ptxt>
+Compruebe que se cumple la siguiente condición en este procedimiento.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+No se detecta el DTC U0073 o U0121.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Conecte el encendido (posición ON).
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASPBP70A5504062003">
+<title>
+Localización y reparación de la avería correspondiente al DTC
+</title>
+<diag type = "test" id = "ASPBP70A5504062004">
+<testgroup id = "ASPBP70A5504062005">
+<question>
+¿Se ha realizado la &#34;Inspección del sistema de la CVT&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya a 
+<intxref refid = "ASPBP70A5504001">Inspección del sistema de la CVT</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A5504062006">
+<title>
+Comprobación de DTC del módulo de control del ESP&#174;
+</title>
+<test1>
+<ptxt>
+Compruebe el DTC del módulo de control del ESP<sup>&#174;</sup>. 
+<intxreftitleoff1 refid = "ASPBP70A4604005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+¿Aparece algún DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización y reparación de averías de DTC correspondiente.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Sustituya el TCM por uno en buen estado y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPBP70A5506004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sustituya el módulo de control ESP y vuelva a comprobar los DTC. 
+<intxreftitleoff1 refid = "ASPBP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</item>
+</list1>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

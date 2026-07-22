@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPBP70AA801001" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Descripción del sistema de comunicación
+</title>
+<servinfosub id = "ASPBP70AA801001001">
+<title>
+Descripción del sistema
+</title>
+<ptxt>
+La comunicación con los módulos de control y dispositivos se establece a través de la recepción y del envío de señales digitales ON/OFF junto a diversos conjuntos de datos que se gestionan de forma paralela. El envío/recepción de estos datos recibe el nombre de interfaz de comunicación en serie.
+</ptxt>
+<ptxt>
+Para el sistema de comunicación del vehículo se han adoptado interfaces de comunicación en serie tales como los protocolos UART, CAN y LIN (estándares de comunicación).
+</ptxt>
+<ptxt>
+El protocolo UART se utiliza para establecer comunicación entre el módulo de control de arranque sin llave y la unidad de bloqueo de la dirección.
+</ptxt>
+<ptxt>
+LIN se utiliza para la comunicación del módulo de control HVAC al panel del A/C automático.
+</ptxt>
+<ptxt>
+Además, el módulo de control de arranque sin llave, el BCM, el ECM, el TCM (modelo con CVT), el juego de instrumentos, el módulo de control de P/S, el módulo de control de HVAC, el módulo de control del ESP<sup>&#174;</sup>, el SDM, el sensor del ángulo de dirección y el módulo de control de la nivelación automática de los faros y del lavafaros transmiten y reciben datos a través de un par trenzado o dos líneas de comunicación (CAN alta y CAN baja) conectados mediante la comunicación CAN. Los datos recibidos desde un módulo de control en concreto pueden compartirse con el resto de módulos de control.
+</ptxt>
+</servinfosub>
+<servinfosub id = "ASPBP70AA801001002">
+<title>
+Señales de comunicación CAN
+</title>
+<ptxt>
+El sistema de comunicación CAN es un sistema de comunicación en serie que permite enviar varios datos (valores de sensores, datos de control y señales de control) en forma de señales digitales ON/OFF por medio de las líneas de comunicación. Este sistema emplea dos líneas (CAN alta y CAN baja) como circuito de comunicación con el fin de mantener una alta fiabilidad incluso cuando se emplea para comunicaciones en serie de alta velocidad.
+</ptxt>
+<ptxt>
+La comunicación en serie se establece tal y como se muestra a continuación, utilizando 2,5 V como nivel de referencia para ambas señales de CAN alta (1) y baja (2). El intervalo de la señal de CAN alta va de 2,5 V a 3,5 V aproximadamente, y la de CAN baja va de 2,5 V a 1,5 V aproximadamente. Si el valor de ambas CAN es de 2,5 V, se determina que la señal corresponde a OFF. Si el valor de la señal de CAN alta es de 3,5 V y el de CAN baja de 1,5 V (es decir, si la diferencia entre la tensión de CAN alta y CAN baja es superior a aproximadamente 2 V), se determina que la señal corresponde a ON. Por este motivo, una característica de la señal de comunicación CAN consiste en que la forma de onda de dicha señal es simétrica entre las señales de CAN alta y CAN baja con respecto al valor 2,5 V. La comunicación CAN falla cuando dicha simetría desaparece.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10AA81002S.swf" width = "183.000mm" height = "47.725mm" ver = "01" gw = "338" gh = "119"/>
+</figure>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

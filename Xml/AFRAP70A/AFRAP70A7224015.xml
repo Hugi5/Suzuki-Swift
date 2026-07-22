@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "7B">
+<servcat sctnbr = "07" scnbr = "02">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AFRAP70A7224015" svcinfotypenbr = "06" svcinfoqualnbr = "02" page = "1" supplyoff = "1" modify = "0">
+<title>
+DTC B1503 / B1562 
+</title>
+<servinfosub id = "AFRAP70A7224015001">
+<title>
+Condition de détection du DTC et organe incriminé 
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.657in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.558in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Condition de détection du DTC 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Organe incriminé 
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1503: dysfonctionnement du capteur de température d&#39;évaporateur et/ou de son circuit 
+</emph>
+</ptxt>
+<ptxt>
+Le module de commande HVAC reçoit constamment des données incorrectes du capteur de température d’évaporateur en provenance du BCM via la ligne de communication CAN. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuit du capteur de température d&#39;évaporateur 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Capteur de température d&#39;évaporateur 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande HVAC 
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1562: dysfonctionnement du capteur de température d&#39;air extérieur et/ou de son circuit 
+</emph>
+</ptxt>
+<ptxt>
+Le module de commande HVAC reçoit constamment des données incorrectes du capteur de température d&#39;air extérieur transmis par le BCM via la ligne de communication CAN. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Circuit de capteur de température d&#39;air extérieur 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Capteur de température d&#39;air extérieur 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Module de commande HVAC 
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AFRAP70A7224015002">
+<title>
+Procédure de confirmation de DTC 
+</title>
+<attention3>
+<ptxt>
+S&#39;assurer que la condition suivante est respectée dans le cadre de cette procédure. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Les DTC U0073 et/ou U0140 ne sont pas détectés 
+</ptxt>
+</item>
+</list1>
+</attention3>
+<s1>
+<ptxt>
+Démarrer le moteur et activer le système A/C. 
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "AFRAP70A7224015003">
+<title>
+Recherche de pannes à partir de DTC 
+</title>
+<diag type = "test" id = "AFRAP70A7224015004">
+<testgroup id = "AFRAP70A7224015005">
+<title>
+Vérification de DTC 
+</title>
+<test1>
+<ptxt>
+Vérifier les DTC suivants du BCM. 
+</ptxt>
+<ptxt>
+B1503: B1145 et/ou B1146 
+</ptxt>
+<ptxt>
+B1562: B1141 et/ou B1142 
+</ptxt>
+</test1>
+<question>
+Un ou plusieurs DTC sont-ils détectés? 
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Passer à la recherche de pannes pour le DTC correspondant. 
+<intxreftitleoff1 refid = "AFRAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Remplacer le module de commande HVAC et revérifier les DTC. 
+<intxreftitleoff1 refid = "AFRAP70A7226010"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1">
+<servcat sctnbr = "01" scnbr = "00">
+<configtype typenbr = "0">
+<servinfotype sitcode = "0">
+<servinfo servinfosgmlid = "AHRAP70A1000001" svcinfotypenbr = "01" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Mjere opreza za motor
+</title>
+<servinfosub id = "AHRAP70A1000001001">
+<title>
+Upozorenje za zračni jastuk
+</title>
+<ptxt>
+Pogledajte 
+<intxref refid = "AHRAP70A0000012">Upozorenje za zračni jastuk</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001002">
+<title>
+Mjere opreza za servisiranje sustava goriva
+</title>
+<ptxt>
+Pogledajte 
+<intxref refid = "AHRAP70A1700001">Mjere opreza za servisiranje sustava goriva</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001003">
+<title>
+Mjere opreza za CAN komunikacijski sustav
+</title>
+<ptxt>
+Pogledajte pod naslovom 
+<intxref refid = "AHRAP70A0000014">Mjere opreza za CAN komunikacijski sustav</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001004">
+<title>
+Mjere opreza za katalizator
+</title>
+<ptxt>
+Pogledajte 
+<intxref refid = "AHRAP70A0000005">Mjere opreza za katalizator</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001005">
+<title>
+Mjere opreza za servisiranje elektroinstalacija
+</title>
+<ptxt>
+Pogledajte 
+<intxref refid = "AHRAP70A0000002">Mjere opreza za servisiranje elektroinstalacija</intxref>
+.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001006">
+<title>
+Napomena o ponovnom sklapanju ožičenja
+</title>
+<ptxt>
+Pazite da se prilikom ugradnje ožičenja pridržavate Priručnika sa shemama ožičenja.
+</ptxt>
+<ptxt>
+U suprotnom se mogu javiti problemi s elektrikom.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001007">
+<title>
+Mjere opreza za servisiranje motora
+</title>
+<attention2>
+<ptxt>
+Sljedeće informacije o servisiranju motora potrebno je pažljivo proučiti jer su važne u sprječavanju oštećenja motora i za osiguravanje pouzdanih performansi motora.
+</ptxt>
+</attention2>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kada podižete ili oslanjate motor, ne postavljajte dizalicu ispod korita ulja. Zbog malog razmaka između korita ulja i grubog filtra pumpe ulja, podizanje vozila na koritu ulja može prouzročiti njegovo savijanje prema grubom filtru i rezultirati oštećenjem jedinice za uzimanje ulja.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Tijekom rada na motoru potrebno je imati na umu da 12-voltni električni sustav može izazvati snažne i štetne kratke spojeve.
+</ptxt>
+<ptxt>
+Kada provodite bilo kakve radove gdje se električni terminali mogu uzemljiti, odspojite negativni kabel (-) s akumulatora.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Prilikom svakog uklanjanja pročistača zraka, tijela zaklopke ili usisne grane, potrebno je pokriti usisni otvor. Tako ćete spriječiti ulazak stranih tvari koje bi inače došle do cilindra kroz usisni kanal i prouzročile veliko oštećenje na motoru kada se pokrene.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Kada odspajate konektore, ne vucite ožičenje, nego pripazite da držite samo konektore. Kod konektora koji se zaključava pazite da ga otključate prije odspajanja.
+</ptxt>
+<ptxt>
+Ako pokušate odspojiti takav konektor bez otključavanja, možete ga oštetiti. Kada spajate konektor koji se zaključava, umetnite ga dok ne začujete klik i dobro ga pričvrstite.
+</ptxt>
+<figure>
+<graphic graphicname = "IYSQ01110001.swf" width = "88.000mm" height = "43.804mm" ver = "01" gw = "177" gh = "107"/>
+</figure>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001008">
+<title>
+Mjere opreza pri dijagnosticiranju problema
+</title>
+<ptxt>
+Dijagnostička informacija pohranjena u memoriju ECM-a može se očistiti ili provjeriti pomoću SUZUKI alata za skeniranje ili OBD generičkog alata za skeniranje koji koristi CAN komunikaciju. Prije uporabe alata za skeniranje pažljivo pročitajte njegov Korisnički priručnik da biste dobro razumjeli kako koristiti alat.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Prioriteti za dijagnostiku problema:
+</ptxt>
+<ptxt>
+Ako je pohranjeno dva ili više DTC-a, riješite probleme tih DTC-ova počevši s onim najprije detektiranim prateći upute u proceduri rješavanja problema.
+</ptxt>
+<ptxt>
+Ako nisu dane upute, rješavajte DTC-ove u skladu sa sljedećim prioritetima.
+</ptxt>
+</item>
+<list2 type = "ordered">
+<item>
+<ptxt>
+DTC-ovi osim DTC-a P0171 / P0172 (presiromašna/prebogata smjesa u sustavu goriva) i DTC P0300 / P0301 / P0302 / P0303 / P0304 (detektiran izostanak paljenja)
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0171 / P0172 (presiromašna/prebogata smjesa u sustavu goriva)
+</ptxt>
+</item>
+<item>
+<ptxt>
+DTC P0300 / P0301 / P0302 / P0303 / P0304 (detektiran izostanak paljenja)
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Obavezno pročitajte 
+<intxref refid = "AHRAP70A0000002">Mjere opreza za servisiranje elektroinstalacija</intxref>
+ prije pregleda i pridržavajte se navedenog.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Komunikacija ECM-a i drugog upravljačkog modula uspostavlja se putem CAN-a. (Za više detalja o CAN komunikaciji za ECM, pogledajte 
+<intxref refid = "AHRAP70AA801002">Općeniti opis dijagnostike sustava CAN komunikacije</intxref>
+). Stoga pažljivo rukujte CAN komunikacijskom linijom prema uputama u 
+<intxref refid = "AHRAP70A0000014">Mjere opreza za CAN komunikacijski sustav</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Prije rješavanja problema obavezno pročitajte upute u 
+<intxref refid = "AHRAP70A1000001010">Mjere opreza za pregled strujnog kruga ECM-a</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Po završetku pregleda i popravka, provedite &#34;Postupak potvrde DTC-a&#34; i potvrdite da je problem riješen.
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001009">
+<title>
+Mjere opreza pri zamjeni ECM-a
+</title>
+<list1 type = "unordered">
+<item>
+<ptxt>
+ECM morate zamijeniti novim. Kada mijenjate ECM provjerite sljedeća stanja. Izostanak ove provjere može prouzročiti oštećenje novog ECM-a.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Vrijednost otpora na svim relejima i aktuatorima je kao što je navedeno.
+</ptxt>
+</item>
+<item>
+<ptxt>
+TP senzor, APP senzor, MAP senzor, senzor struje električnog opterećenja, senzor tlaka rashladnog sredstva klima uređaja, MAF senzor i senzor tlaka servouređaja kočnice u dobrom su stanju i nijedan strujni krug napajanja nije u kratkom spoju s uzemljenjem.
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Provedite 
+<intxref refid = "AHRAP70A1306002">Postupak nakon zamjene ECM-a</intxref>
+.
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001010">
+<title>
+Mjere opreza za pregled strujnog kruga ECM-a
+</title>
+<ptxt>
+Ne mjerite napon kruga i/ili impulsni signal ECM-a umetanjem ticala za provjeru u zabrtvljeni terminal ECM-a.
+</ptxt>
+<ptxt>
+Prilikom mjerenja napona kruga i/ili impulsnog signala ECM-a, svakako spojite servisne žice (5) na terminale svih senzora/aktuatora (1) i konektora senzora/aktuatora (2). U suprotnom možete oštetiti zabrtvljene terminale, ECM i njegove krugove.
+</ptxt>
+<figure>
+<graphic graphicname = "I8C50A110001.swf" width = "88.000mm" height = "66.305mm" ver = "02" gw = "198" gh = "171"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.372in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.315in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.363in"/>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Voltmetar
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Osciloskop
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001011">
+<title>
+Mjere opreza za kalibraciju upravljačkog sustava električne zaklopke gasa
+</title>
+<ptxt>
+Podaci o potpuno otvorenom i zatvorenom položaju ventila pohranjeni su u ECM-u. 
+</ptxt>
+<ptxt>
+(Pojedinosti o kalibriranju upravljačkog sustava električne zaklopke gasa potražite u poglavlju 
+<intxref refid = "AHRAP70A1101007">Opis kalibracije sustava upravljanja električnom zaklopkom</intxref>
+.)
+</ptxt>
+<ptxt>
+Nakon obavljanja navedenih servisa, neophodno je kalibrirati položaj potpuno zatvorene i potpuno otvorene zaklopke u ECM-u. 
+<intxreftitleoff1 refid = "AHRAP70A1306005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Zamjena ECM-a
+</ptxt>
+</item>
+<item>
+<ptxt>
+Brisanje DTC-ova vezanih uz sustav tijela električne zaklopke (P0607, P0122, P0123, P0222, P0223, P2100, P2101, P2119, P2122, P2123, P2127, P2128, P2135, P2138 ili P2176)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Zamjena sklopa tijela električne zaklopke ili sklopa papučice gasa s APP senzorom
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odspajanje negativnog kabela (-) s akumulatora
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AHRAP70A1000001012">
+<title>
+Mjere opreza kod sustava upravljanja generatorom
+</title>
+<ptxt>
+U vezi s upravljanjem generatorom brzina motora može rasti ili padati zbog dolje opisanih uzročnih čimbenika.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Akumulator nije dovoljno napunjen ili je istekao njegov radni vijek.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napajanje kasnije dodanog pribora izvodi se izravno s terminala akumulatora.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Primjenjuje se veliko električno opterećenje.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Sljedeći DTC ukazuje na nepravilnost u nadzornom signalu polja generatora ili u sustavu senzora struje.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+P0515: Strujni krug senzora temperature akumulatora
+</ptxt>
+</item>
+<item>
+<ptxt>
+P0620: Upravljački strujni krug generatora
+</ptxt>
+</item>
+<item>
+<ptxt>
+P0622: Strujni krug polja/F terminala generatora
+</ptxt>
+</item>
+<item>
+<ptxt>
+P0A5A: Područje/performanse kruga senzora struje generatora
+</ptxt>
+</item>
+</list2>
+</list1>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

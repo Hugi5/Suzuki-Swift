@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10A">
+<servcat sctnbr = "10" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AHUAP70AA104009" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0649
+</title>
+<servinfosub id = "AHUAP70AA104009001">
+<title>
+DTC észlelésének körülményei és a hiba helye
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.981in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.227in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC észlelésének körülményei
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+A hiba helye
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+DTC P0649: Sebesség-visszajelző lámpa vezérlőáramköre
+</emph>
+</ptxt>
+<ptxt>
+A műszeregység “CRUISE / SET visszajelző lámpa jele” változatlan marad még akkor is, ha az ECM továbbítja a “CRUISE / SET visszajelző lámpa vezérlő jelének be- vagy kikapcsolására vonatkozó parancsjelet” a műszeregységhez a CAN kommunikációs vezetéken keresztül.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+CAN kommunikációs áramkör
+</ptxt>
+</item>
+<item>
+<ptxt>
+Műszeregység
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AHUAP70AA104009002">
+<title>
+DTC hibakeresés
+</title>
+<diag type = "test" id = "AHUAP70AA104009003">
+<testgroup id = "AHUAP70AA104009004">
+<title>
+DTC ellenőrzése
+</title>
+<test1>
+<ptxt>
+Ellenőrizze a CAN útján kommunikáló vezérlőegységet DTC-it.
+</ptxt>
+</test1>
+<question>
+Észlelt valamilyen CAN hibakódot?
+</question>
+<result>
+Igen
+</result>
+<action>
+<ptxt>
+Folytassa az érintett DTC-hez tartozó hibaelhárítással. 
+</ptxt>
+</action>
+<result>
+Nem
+</result>
+<action>
+<ptxt>
+Cserélje ki a műszeregységet és ismételje meg az ellenőrzést. 
+<intxreftitleoff1 refid = "AHUAP70A9306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+ Ha a DTC P0649 ismét jelentkezik, cserélje ki az ECM-et, és ismételje meg a DTC-k ellenőrzését. 
+<intxreftitleoff1 refid = "AHUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

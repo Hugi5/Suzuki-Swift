@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AHRAP70AA321003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Opis postupka pokretanja motora
+</title>
+<ptxt>
+U slučaju da se isprazni baterija daljinskog upravljača, dođe do sistemske pogreške i/ili sustav pokretanja pritiskom bez ključa prestane s radom, postupak pokretanja motora vrši se na sljedeći način.
+</ptxt>
+<s1>
+<ptxt>
+Prilikom pritiskanja papučice spojke, upravljački modul pokretanja bez ključa šalje signal indikatorskog svjetla PUSH putem CAN komunikacije.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Pritisnite prekidač motora.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa šalje signal indikatorskog svjetla blokade motora i signal indikatorskog svjetla PUSH putem CAN komunikacije.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Postavite daljinski upravljač na prekidač motora na približno 2 sekunde tijekom kojih kombinirani mjerač treperi indikatorskim svjetlom PUSH.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Upravljački modul sustava pokretanja bez ključa očitava kod primopredajnika daljinskog upravljača putem antene zavojnice blokade motora postavljene u prekidač motora.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Upravljački relej elektropokretača se uključuje i elektropokretač se pokreće, zahtjev otpuštanja brave upravljača šalje se na jedinicu brave upravljača putem serijske komunikacije, a na ECM se šalje poruka da dozvoli pokretanje motora samo kada kod primopredajnika odgovara registriranom kodu.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Kada kod primopredajnika ne odgovara registriranom kodu, upravljački modul sustava pokretanja bez ključa ne uključuje upravljački relej elektropokretača kako bi spriječio rad elektropokretača.
+</ptxt>
+<figure>
+<graphic graphicname = "I9P60AA32001Q.swf" width = "183.000mm" height = "134.726mm" ver = "03" gw = "504" gh = "365"/>
+</figure>
+</s1>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

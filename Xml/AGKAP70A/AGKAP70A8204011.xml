@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A8204011" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1011
+</title>
+<servinfosub id = "AGKAP70A8204011001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.242in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.951in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+B1011: Λανθασμένο Συγκρότημα SDM 
+</emph>
+</ptxt>
+<ptxt>
+Το SDM έχει μη συνεπή κωδικό ID.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+SDM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A8204011002">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A8204011003">
+<testgroup id = "AGKAP70A8204011004">
+<question>
+Εκτελέστηκε &#34;Έλεγχος Διαγνωστικού Συστήματος Αερόσακων&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A8204001">Έλεγχος Διαγνωστικού Συστήματος Αερόσακων</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A8204011005">
+<title>
+Έλεγχος τύπου συστήματος αερόσακων
+</title>
+<test1>
+<ptxt>
+Αναγνωρίστε τον αριθμό καναλιών SDM του αερόσακου, από τον αριθμό εξαρτήματος του SDM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Αναγνωρίστε τον αριθμό καναλιών αυτοκινήτου του αερόσακου, από τις μονάδες αερόσακων ή τους προεντατήρες που είναι εγκατεστημένοι στο αυτοκίνητο.
+</ptxt>
+</test1>
+<question>
+Το SDM αντιστοιχεί στις προδιαγρα&#248;ές του αυτοκινήτου;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Αντικαταστήστε την SDM και επανελέγξτε τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A8206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Αλλάξτε το SDM με ένα αντίστοιχο συμβατό με τις προδιαγρα&#248;ές των αερόσακων του αυτοκινήτου.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<attention3>
+<ptxt>
+Με την ολοκλήρωση της επιθεώρησης και της επισκευής, εκτελέστε τα παρακάτω.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Επανασυνδέστε όλα τα εξαρτήματα του συστήματος αερόσακων και βεβαιωθείτε ότι όλα τα εξαρτήματα είναι κατάλληλα στηριγμένα.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Διαγράψτε τους κωδικούς βλάβης DTC ανα&#248;ερόμενοι στο 
+<intxref refid = "AGKAP70A8204006">Διαγρα&#248;ή Κωδικού DTC</intxref>
+, εάν υπάρχουν.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Επαναλάβετε το 
+<intxref refid = "AGKAP70A8204001">Έλεγχος Διαγνωστικού Συστήματος Αερόσακων</intxref>
+ για να επιβεβαιώσετε ότι το πρόβλημα έχει επιλυθεί.
+</ptxt>
+</item>
+</list1>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

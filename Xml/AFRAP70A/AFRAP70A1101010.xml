@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AFRAP70A1101010" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Description du capteur A/F 
+</title>
+<servinfosub id = "AFRAP70A1101010001">
+<title>
+Description du capteur A/F 
+</title>
+<ptxt>
+Le capteur A/F se situe au niveau du combiné de collecteur d&#39;échappement (en face du catalyseur à trois voies) et comprend un réchauffeur de capteur, un élément de capteur et une résistance de réglage. 
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+L&#39;élément de capteur stratifié est constitué d&#39;un élément en zirconium, d&#39;une chambre de détection et d&#39;une chambre à oxygène de référence. L&#39;ECM détecte la concentration en oxygène (rapport A/F) des émissions d&#39;échappement à partir du mélange PAUVRE à RICHE, sur la base des caractéristiques du zircon. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+Le réchauffeur de capteur maintient en permanence la température de l&#39;élément de capteur à environ 780 &#176;C (1.436 &#176;F) grâce au signal de commande de service afin d&#39;activer l&#39;élément de capteur. 
+</ptxt>
+</item>
+<item>
+<ptxt>
+La résistance de réglage installée sur le connecteur de capteur compense la différence individuelle au niveau des caractéristiques de sortie de l&#39;élément de capteur. Ne remplacez jamais le connecteur séparément, car son réglage est fonction du capteur qui lui est associé. 
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AFRAP70A1101010002">
+<title>
+Fonctionnement général 
+</title>
+<s1>
+<ptxt>
+L&#39;élément en zirconium génère une force électromotrice en fonction de la différence de concentration en oxygène entre la chambre de détection et la chambre à oxygène de référence. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+L&#39;ECM contrôle l&#39;intensité et le sens du courant de pompage vers l&#39;élément en zirconium, de façon à maintenir une certaine tension entre les électrodes de l&#39;élément en zirconium (entre les bornes &#34;LFUN&#34; et &#34;LFVM&#34;). 
+</ptxt>
+<ptxt>
+En d&#39;autres mots, l&#39;ECM tente de maintenir la concentration en oxygène valeur dans la chambre de détection via le courant de pompage, de façon à générer la force électromotrice de l&#39;élément en zirconium selon une valeur spécifiée. 
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+L&#39;ECM calcule le rapport A/F au niveau des émissions d&#39;échappement en fonction de l&#39;intensité et du sens de courant de pompage. 
+</ptxt>
+</s1>
+<figure>
+<graphic graphicname = "I8C50B111045.swf" width = "183.000mm" height = "90.939mm" ver = "02" gw = "388" gh = "241"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "8" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.246in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.171in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.246in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.574in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.246in"/>
+<colspec colnum = "6" colname = "6" colwidth = "2.059in"/>
+<colspec colnum = "7" colname = "7" colwidth = "0.246in"/>
+<colspec colnum = "8" colname = "8" colwidth = "0.579in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Capteur A/F 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+5. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Chambre de détection 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+9. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+13. 
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Electrode 
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Réchauffeur de capteur 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+6. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Chambre à oxygène de référence 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+10. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Circuit de traitement du signal de capteur A/F 
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+3. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Elément de capteur 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+7. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Résistance de réglage 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+11. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+CPU
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+4. 
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Elément en zirconium 
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+8. 
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Connecteur 
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+12. 
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Emissions d&#39;échappement 
+</ptxt>
+</entry>
+<entry colname = "7" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "8" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+<attention3>
+<ptxt>
+La sortie de courant de pompage est de +0,01 à + certains mA à l&#39;état pauvre et de - certains à –0,01 mA à l&#39;état riche. 
+</ptxt>
+</attention3>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

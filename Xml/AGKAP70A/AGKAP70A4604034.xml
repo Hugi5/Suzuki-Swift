@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "4F">
+<servcat sctnbr = "04" scnbr = "06">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AGKAP70A4604034" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC C1090 / C1091 / C1094
+</title>
+<servinfosub id = "AGKAP70A4604034001">
+<title>
+Κατάσταση Ανίχνευσης Κωδικού Βλάβης και  Περιοχή Προβλήματος
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.780in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.399in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Συνθήκη ανίχνευσης κωδικού
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Περιοχή Προβλήματος
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph>
+C1090: Ο εγκέ&#248;αλος ECM Ανίχνευσε Βλάβη Μετρητή Κύλισης από τη Μονάδα Ελέγχου ESP<sup>&#174;</sup>
+</emph>
+</ptxt>
+<ptxt>
+Η μονάδα ελέγχου ESP<sup>&#174;</sup> στέλνει άκυρα δεδομένα CAN προς τον εγκέ&#248;αλο ECM.
+</ptxt>
+</entry>
+<entry colname = "2" morerows = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Κύκλωμα επικοινωνίας CAN
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+<item>
+<ptxt>
+Μονάδα ελέγχου ESP<sup>&#174;</sup>
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1091: Άκυρα δεδομένα CAN από τον εγκέ&#248;αλο ECM 
+</emph>
+</ptxt>
+<ptxt>
+Ανιχνεύθηκε κωδικός DTC σχετικά με τον εγκέ&#248;αλο ECM.
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+C1094: Κατάσταση Απόρριψης Αίτησης Ροπής
+</emph>
+</ptxt>
+<ptxt>
+Η μονάδα ελέγχου ESP<sup>&#174;</sup> λαμβάνει άκυρα δεδομένα CAN από τον εγκέ&#248;αλο ECM (σε σχέση με τον έλεγχο ροπής του κινητήρα).
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AGKAP70A4604034002">
+<title>
+Διάγνωση Κωδικού DTC
+</title>
+<diag type = "test" id = "AGKAP70A4604034003">
+<testgroup id = "AGKAP70A4604034004">
+<question>
+Πραγματοποιήθηκε ο &#34;Έλεγχος του Συστήματος ESP<sup>&#174;</sup>&#34;;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70A4604001">Έλεγχος Συστήματος ESP&#174;</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604034005">
+<title>
+Έλεγχος Κωδικού Βλάβης DTC
+</title>
+<test1>
+<ptxt>
+Εκτελέστε 
+<intxref refid = "AGKAP70A4604005">Έλεγχος Κωδικού DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+Υπάρχουν άλλοι κωδικοί DTC εκτός από τους C1090, C1091 ή C1094;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στην ισχύουσα διάγνωση κωδικού βλάβης.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Πηγαίνετε στο Βήμα 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AGKAP70A4604034006">
+<title>
+Έλεγχος Κωδικού DTC για τον ECM
+</title>
+<test1>
+<ptxt>
+Ελέγξτε για Κωδικό DTC στον ECM. 
+<intxreftitleoff1 refid = "AGKAP70A1104003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Έχει ανιχνευθεί ο κωδικός DTC U0073 ή ο U0121;
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Πηγαίνετε στο 
+<intxref refid = "AGKAP70AA804004">Διάγνωση για Δίαυλο Επικοινωνίας Εκτός Λειτουργίας</intxref>
+ ή 
+<intxref refid = "AGKAP70AA804003">Διάγνωση για Απώλεια Επικοινωνίας</intxref>
+.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Αντικαταστήστε το συγκρότημα υδραυλικής μονάδας / μονάδας ελέγχου ESP<sup>&#174;</sup> και ελέγξτε ξανά τον κωδικό DTC. 
+<intxreftitleoff1 refid = "AGKAP70A4606005"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

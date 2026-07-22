@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "1">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70AA314016" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC B1175
+</title>
+<servinfosub id = "ASLAP70AA314016001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.516in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.693in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+<emph etype = "bold">
+B1175: Neregistrované informácie imobilizéra
+</emph>
+</ptxt>
+<ptxt>
+ID kód imobilizéra nie je zaregistrovaný v BCM.
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Kľúč zapaľovanie nie je zaregistrovaný
+</ptxt>
+</item>
+<item>
+<ptxt>
+BCM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70AA314016002">
+<title>
+Riešenie problémov DTC
+</title>
+<attention3>
+<ptxt>
+Ak nevykonáte registráciu imobilizéra normálne, skontrolujte či ECM vyhovuje alebo nevyhovuje špecifikáciám, alebo či nie je zobrazená DTC komunikácie CAN. Ďalej skontrolujte samotný spínač zapaľovania.
+</ptxt>
+</attention3>
+<diag type = "test" id = "ASLAP70AA314016003">
+<testgroup id = "ASLAP70AA314016006">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC v BCM. 
+<intxreftitleoff1 refid = "ASLAP70AA204003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké CAN-DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314016005">
+<title>
+Kontrola DTC
+</title>
+<test1>
+<ptxt>
+Skontrolujte DTC prislúchajúce ku komunikácii CAN.
+</ptxt>
+</test1>
+<question>
+Našli ste nejaké CAN-DTC?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Pokračujte príslušným postupom riešenia DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70AA314016004">
+<title>
+Registrácia kľúča imobilizéra
+</title>
+<test1>
+<ptxt>
+Vykonajte „Registrácia kľúča imobilizéra“. 
+<intxreftitleoff1 refid = "ASLAP70AA316002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Spínač zapaľovania sa nachádza v polohe OFF.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Nastavte zapaľovanie na „ON (ZAP)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Znovu skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA314003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Ešte stále sa zisťuje DTC B1175?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte BCM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70AA206003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Koniec. (kľúč zapaľovania nebol zaregistrovaný)
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70A1104011" svcinfotypenbr = "06" svcinfoqualnbr = "03" supplyoff = "1" modify = "0">
+<title>
+MIL gaat niet branden met de ontsteking ingeschakeld en stilstaande motor (maar motor kan wel worden gestart)
+</title>
+<servinfosub id = "ADUAP70A1104011001">
+<title>
+Storingzoeken
+</title>
+<diag type = "test" id = "ADUAP70A1104011002">
+<testgroup id = "ADUAP70A1104011003">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Controleer DTC met betrekking tot CAN-communicatie.
+</ptxt>
+</test1>
+<question>
+Zijn er CAN-DTC&#39;s waargenomen?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar storingzoeken voor de betrokken DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70A1104011004">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Controleer de DTC voor de combimeter.
+</ptxt>
+</test1>
+<question>
+Zijn er DTC&#39;s?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar storingzoeken voor de betrokken DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vervang de ECM en controleer de MIL-werking opnieuw. 
+<intxreftitleoff1 refid = "ADUAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

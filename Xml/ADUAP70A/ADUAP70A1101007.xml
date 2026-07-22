@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ADUAP70A1101007" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "0">
+<title>
+Beschrijving van het ijken van het elektrische-gasklepregelsysteem
+</title>
+<ptxt>
+De ECM berekent de geregelde opening van de gasklep op basis van de volledig gesloten gaskleppositie van het elektrische-gasklepregelsysteem. De gegevens van de volledig gesloten positie worden in het ECM-geheugen opgeslagen. De volledig gesloten positie van de gasklep van het elektrische-gasklepregelsysteem (signaalspanning van gaskleppositiesensor als de gasklep volledig is gesloten) verschilt echter afhankelijk van de individuele afwijkingen van de gasklep en de gaskleppositiesensor. Doordat met deze afwijkingen rekening moet worden gehouden voor de gasklepregeling, moeten de gegevens van de volledig gesloten gaskleppositie in de ECM geregistreerd worden. Als zulke gegevens in de ECM worden geregistreerd, worden ze in het RAM (geheugen) van de ECM opgeslagen en als basisgegevens voor de gasklepregeling gebruikt. Deze gegevens worden gewist als een van de werken beschreven in &#34;Voorzorgsmaatregelen voor de ijking van het elektrische-gasklepregelsysteem&#34; onder 
+<intxref refid = "ADUAP70A1000001">Voorzorgsmaatregelen voor motor</intxref>
+ wordt uitgevoerd.
+</ptxt>
+<ptxt>
+Na het vervangen van het gasklephuis en/of de gaspedaalpositiesensor (APP-sensor), moeten de gegevens van de volledig gesloten positie in het geheugen van de ECM worden gewist en moeten nieuwe worden opgeslagen, zoniet kan de ECM de volledig gesloten positie niet correct vaststellen.
+</ptxt>
+<ptxt>
+Raadpleeg 
+<intxref refid = "ADUAP70A1306005">Ijking van het elektrische-gasklepregelsysteem</intxref>
+ voor de procedure om dergelijke gegevens te registreren. (Na het wissen van de gegevens van de volledig gesloten positie opent en sluit de ECM, alleen de eerste keer, de gasklep ongeveer 60 sec nadat het contactslot in de &#34;ON&#34;-stand werd gezet om de volledig gesloten gaskleppositie te registreren. Als de motor tijdens dit registratieproces wordt gestart, kunnen symptomen zoals &#34;langere starttijd&#34; of &#34;trage stijging van het motortoerental onmiddellijk na het starten&#34; optreden. Echter, het contactslot eenmaal in de &#34;OFF&#34;-stand zetten en de motor opnieuw starten zal de positie correct in de ECM registeren.)
+</ptxt>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

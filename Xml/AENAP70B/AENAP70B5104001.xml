@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "5A">
+<servcat sctnbr = "05" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "AENAP70B5104001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+A/T Control System Check
+</title>
+<ptxt>
+Refer to the following items for the details of each step.
+</ptxt>
+<diag type = "test" id = "AENAP70B5104001001">
+<testgroup id = "AENAP70B5104001002">
+<title>
+Customer complaint analysis 
+</title>
+<test1>
+<ptxt>
+Perform customer complaint analysis. 
+<intxreftitleoff1 refid = "AENAP70B5104001013"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Was customer complaint analysis performed?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Perform customer complaint analysis.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001003">
+<title>
+DTC / freeze frame data check, record and clear 
+</title>
+<test1>
+<ptxt>
+Check for DTC (current and pending DTC). 
+<intxreftitleoff1 refid = "AENAP70B5104001014"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any DTC(s)?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Print DTC and freeze frame data or write them down and clear them referring to 
+<intxref refid = "AENAP70B5104004">DTC Clearance</intxref>
+, and go to Step 3.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001004">
+<title>
+Visual inspection 
+</title>
+<test1>
+<ptxt>
+Perform visual inspection. 
+<intxreftitleoff1 refid = "AENAP70B5104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any faulty condition?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Repair or replace faulty part, and go to Step 11.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001005">
+<title>
+Visual inspection 
+</title>
+<test1>
+<ptxt>
+Perform visual inspection. 
+<intxreftitleoff1 refid = "AENAP70B5104001015"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any faulty condition?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Repair or replace faulty part, and go to Step 11.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001006">
+<title>
+Trouble symptom confirmation 
+</title>
+<test1>
+<ptxt>
+Confirm trouble symptom. 
+<intxreftitleoff1 refid = "AENAP70B5104001016"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is trouble symptom identified?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 7.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001007">
+<title>
+Recheck and record DTC / freeze frame data 
+</title>
+<test1>
+<ptxt>
+Recheck for DTC (current and pending DTC) and freeze frame data. 
+<intxreftitleoff1 refid = "AENAP70B5104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any DTC(s)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 8.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001008">
+<title>
+Recheck and record DTC / freeze frame data
+</title>
+<test1>
+<ptxt>
+Recheck for DTC (current and pending DTC) and freeze frame data. 
+<intxreftitleoff1 refid = "AENAP70B5104001019"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any DTC(s)?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 9.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 10.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001009">
+<title>
+A/T basic check and A/T symptom diagnosis
+</title>
+<test1>
+<ptxt>
+Perform A/T basic check and A/T symptom diagnosis. 
+<intxreftitleoff1 refid = "AENAP70B5104001020"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any faulty condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Check and repair faulty part(s), and go to Step 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Go to Step 10.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001010">
+<title>
+Troubleshooting for DTC
+</title>
+<test1>
+<ptxt>
+Perform troubleshooting for applicable DTC. 
+<intxreftitleoff1 refid = "AENAP70B5104001021"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Are check and repair complete?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 11.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<paragroup>
+<ptxt>
+Check and repair faulty part(s), and go to Step 11.
+</ptxt>
+</paragroup>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001011">
+<title>
+Intermittent problems check
+</title>
+<test1>
+<ptxt>
+Check for intermittent problems. 
+<intxreftitleoff1 refid = "AENAP70B5104001022"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any faulty condition?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Repair or replace faulty part(s), and go to Step 11.
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Go to Step 11.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "AENAP70B5104001012">
+<title>
+Final confirmation test
+</title>
+<test1>
+<ptxt>
+Perform final confirmation test. 
+<intxreftitleoff1 refid = "AENAP70B5104001025"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Is there any problem symptom, DTC or abnormal condition?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Go to Step 6.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+End.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+<servinfosub id = "AENAP70B5104001013">
+<title>
+Step 1. Customer Complaint Analysis
+</title>
+<ptxt>
+Record details of the problem (failure, complaint) and how it occurred as described by the customer. 
+</ptxt>
+<ptxt>
+For this purpose, use of such an inspection form will facilitate collecting information required for proper analysis and diagnosis.
+</ptxt>
+<attention3>
+<ptxt>
+The form is a standard sample. It should be modified according to conditions of each market.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Customer problem inspection form (Example)
+</title>
+<graphic graphicname = "I8C50B510014.swf" width = "183.000mm" height = "174.294mm" ver = "01" gw = "501" gh = "478"/>
+</figure>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001014" page = "2">
+<title>
+Step 2. DTC / Freeze Frame Data Check, Record and Clearance
+</title>
+<ptxt>
+First, check DTC (current and pending DTC). If DTC is indicated, print DTC and freeze frame data or write them down and then clear them. 
+<intxreftitleoff1 refid = "AENAP70B5104004"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001015" page = "2">
+<title>
+Step 3 and 4. Visual Inspection
+</title>
+<ptxt>
+As a preliminary step, be sure to perform visual check of the items that support proper function of engine and A/T. 
+<intxreftitleoff1 refid = "AENAP70B5104008"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001016" page = "2">
+<title>
+Step 5. Trouble Symptom Confirmation
+</title>
+<topic id = "AENAP70B5104001017">
+<title>
+In case that there is no DTC at Step 2:
+</title>
+<ptxt>
+Based on information obtained in 
+<intxref refid = "AENAP70B5104001013">Step 1. Customer Complaint Analysis</intxref>
+ and 
+<intxref refid = "AENAP70B5104001014">Step 2. DTC / Freeze Frame Data Check, Record and Clearance</intxref>
+, confirm trouble symptoms.
+</ptxt>
+</topic>
+<topic id = "AENAP70B5104001018">
+<title>
+In case that there is any DTC at Step 2:
+</title>
+<ptxt>
+Recheck DTC according to “DTC Confirmation Procedure” described in each DTC troubleshooting.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001019" page = "2">
+<title>
+Step 6 and 7. Rechecking and Record of DTC and Freeze Frame Data
+</title>
+<ptxt>
+Refer to 
+<intxref refid = "AENAP70B5104003">DTC Check</intxref>
+ for checking procedure.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001020" page = "2">
+<title>
+Step 8. A/T Basic Check and A/T Symptom Diagnosis
+</title>
+<s1>
+<ptxt>
+Perform A/T basic check. 
+<intxreftitleoff1 refid = "AENAP70B5104009"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+In case there is no faulty part found in inspection procedure of “A/T Basic Check”, perform 
+<intxref refid = "AENAP70B5104017">A/T Symptom Diagnosis</intxref>
+ based on symptom found in vehicle checking in the following items.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Customer complaint analysis
+</ptxt>
+</item>
+<item>
+<ptxt>
+Trouble symptom confirmation
+</ptxt>
+</item>
+</list1>
+</s1>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001021" page = "2">
+<title>
+Step 9. Troubleshooting for DTC
+</title>
+<ptxt>
+Perform applicable DTC troubleshooting and repair or replace faulty parts.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001022" page = "2">
+<title>
+Step 10. Intermittent Problems Check
+</title>
+<topic id = "AENAP70B5104001023">
+<title>
+In case that there is no DTC at Step 2:
+</title>
+<ptxt>
+Check for intermittent problem. 
+<intxreftitleoff1 refid = "AENAP70B0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</topic>
+<topic id = "AENAP70B5104001024">
+<title>
+In case that there is any DTC at Step 2:
+</title>
+<ptxt>
+Check parts related to detected DTC (e.g., wire harness, connector, etc.). 
+<intxreftitleoff1 refid = "AENAP70B0006002"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AENAP70B5104001025" page = "2">
+<title>
+Step 11. Final Confirmation Test
+</title>
+<ptxt>
+Confirm that the problem symptom has gone and the vehicle is free from any abnormal conditions. If what has been repaired is related to DTC, clear DTC once, perform DTC confirmation procedure and confirm that no DTC is indicated.
+</ptxt>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

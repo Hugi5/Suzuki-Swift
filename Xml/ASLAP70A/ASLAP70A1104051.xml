@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASLAP70A1104051" svcinfotypenbr = "06" svcinfoqualnbr = "02" supplyoff = "1" modify = "0">
+<title>
+DTC P0A5A
+</title>
+<servinfosub id = "ASLAP70A1104051001">
+<title>
+Podmienky rozoznania DTC a problémová oblasť
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "4.843in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.361in"/>
+<thead valign = "middle">
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Podmienky rozoznania DTC
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" align = "center">
+<ptxt>
+Problémová oblasť
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+<emph>
+P0A5A: Výkon/rozsah obvodu snímača prúdu alternátora
+</emph>
+</ptxt>
+<ptxt>
+Ktorákoľvek z nasledovných podmienok je splnená.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Signálny obvod snímača elektrického zaťaženia je vyšší ako 4,8 V na 5 sek.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signálny obvod snímača elektrického zaťaženia je nižší ako 0,2 V na 5 sek.
+</ptxt>
+</item>
+<item>
+<ptxt>
+Signálny obvod snímača elektrického zaťaženia kolíše nižšie ako predpísaná hodnota na 5 sek.
+</ptxt>
+</item>
+</list1>
+<ptxt>
+(logika rozpoznania 3 jazdného cyklu, ale kontrolka poruchy nesvieti)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<list1 type = "unordered">
+<item>
+<ptxt>
+Snímač elektrického zaťaženia a/alebo jeho obvody
+</ptxt>
+</item>
+<item>
+<ptxt>
+ECM
+</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104051002">
+<title>
+Schéma obvodu
+</title>
+<figure>
+<graphic graphicname = "I9P60A111024.swf" width = "183.000mm" height = "90.249mm" ver = "02" gw = "440" gh = "239"/>
+<callout>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "6" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.315in"/>
+<colspec colnum = "2" colname = "2" colwidth = "2.359in"/>
+<colspec colnum = "3" colname = "3" colwidth = "0.337in"/>
+<colspec colnum = "4" colname = "4" colwidth = "2.454in"/>
+<colspec colnum = "5" colname = "5" colwidth = "0.319in"/>
+<colspec colnum = "6" colname = "6" colwidth = "0.512in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+[A]:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Konektor ECM (Pohľad: [a])
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A3:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Signálny obvod snímača teploty akumulátora
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+2.
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+ECM
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A1:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Obvod napájania snímača elektrického zaťaženia
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A4:
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Uzemňovací obvod snímača elektrického zaťaženia
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+A2:
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Obvod signálu snímača elektrického zaťaženia
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+1.
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+Snímač elektrického prúdu elektrickej záťaže
+</ptxt>
+</entry>
+<entry colname = "5" border-top = "1" border-bottom = "1" border-left = "1" border-right = "0" align = "right">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "6" border-top = "1" border-bottom = "1" border-left = "0" border-right = "1" align = "left">
+<ptxt>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</callout>
+</figure>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104051003">
+<title>
+Postup potvrdenia DTC
+</title>
+<s1>
+<ptxt>
+Nastavte zapaľovanie na „ON“ na 10 sek.
+</ptxt>
+</s1>
+<s1>
+<ptxt>
+Motor nechajte 1 min. bežať na voľnobežných otáčkach.
+</ptxt>
+</s1>
+</servinfosub>
+<servinfosub id = "ASLAP70A1104051004">
+<title>
+Riešenie problémov DTC
+</title>
+<diag type = "test" id = "ASLAP70A1104051005">
+<testgroup id = "ASLAP70A1104051006">
+<question>
+Bola vykonaná &#34;Kontrola systému motora a riadenia emisií&#34;?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Pokračujte časťou 
+<intxref refid = "ASLAP70A1104001">Kontrola systému motora a riadenia emisií</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104051007">
+<title>
+Kontrola obvodu napájania snímača elektrického zaťaženia
+</title>
+<test1>
+<ptxt>
+Keď je zapaľovanie vypnuté, odpojte snímač elektrického zaťaženia.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie ku konektoru snímača elektrického zaťaženia.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, prepnite spínač zapaľovania do polohy „ON (zap.)“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte, že napätie medzi obvodom „A1“ a „A4“ je pribl. 5 V.
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 4.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Prejdite na krok 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104051008">
+<title>
+Kontrola uzemňovacieho obvodu snímača elektrického zaťaženia
+</title>
+<test1>
+<ptxt>
+Skontrolujte, že napätie medzi obvodom „A1“ a uzemnením je pribl. 5 V.
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<paragroup>
+<ptxt>
+Opravte obvod „A4“.
+</ptxt>
+<ptxt>
+Ak je detekovaná táto DTC opätovne, vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</paragroup>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte obvod „A1“.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104051009">
+<title>
+Kontrola obvodu signálu snímača elektrického zaťaženia
+</title>
+<test1>
+<ptxt>
+Ak je zapaľovanie vypnuté, odpojte konektory „C01“ a „E01“ z ECM.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Skontrolujte správne pripojenie ku konektorom „C01“ a „E01“.
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Ak sú pripojenia v poriadku, skontrolujte nasledovné.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Odpor obvodu „A2“: menej ako 1 &#937;
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi obvodom „A2“ a uzemnením: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Odpor medzi svorkou obvodu „A2“ a ďalšou svorkou konektora snímača elektrického prúdu elektrickej zážťaže: nekonečno
+</ptxt>
+</item>
+<item>
+<ptxt>
+Napätie obvodu „A2“: 0 až 1 V (keď je zapaľovanie zapnuté)
+</ptxt>
+</item>
+</list1>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Prejdite na krok 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Opravte alebo vymeňte poškodený káblový zväzok.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASLAP70A1104051010">
+<title>
+Kontrola snímača elektrického prúdu elektrickej záťaže
+</title>
+<test1>
+<ptxt>
+Kontrola snímača elektrického zaťaženia. 
+<intxreftitleoff1 refid = "ASLAP70A1306028"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Je výsledok kontroly uspokojivý?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vymeňte ECM a opätovne skontrolujte DTC. 
+<intxreftitleoff1 refid = "ASLAP70A1306001"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vymeňte snímač elektrického prúdu elektrickej zážťaže.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

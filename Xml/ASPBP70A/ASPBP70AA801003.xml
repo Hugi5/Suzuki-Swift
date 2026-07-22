@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10H">
+<servcat sctnbr = "10" scnbr = "08">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "ASPBP70AA801003" svcinfotypenbr = "03" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Tabla de datos de recepción y transmisión del sistema de comunicación CAN
+</title>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+T (Transmisión): Si dos o más módulos de control inician la transmisión a la vez, el módulo de control que transmita la información de mayor prioridad entra al modo de transmisión y todos los demás módulos de control entrarán al modo de recepción.
+</ptxt>
+</item>
+<item>
+<ptxt>
+R (Recepción): Todos los módulos de control conectados a las líneas de comunicación CAN reciben toda la información por medio de la línea de comunicación CAN. Cada módulo de control es capaz de seleccionar únicamente la información que necesita para efectuar su función de control.
+</ptxt>
+</item>
+<item>
+<ptxt>
+El ECM, por medio de la señal de velocidad de las ruedas transmitida desde el módulo de control del ESP<sup>&#174;</sup>, calcula y determina la velocidad del vehículo y transmite dicha información a todos los módulos de control.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<figure>
+<graphic graphicname = "IBP70AA80002S.swf" width = "183.000mm" height = "240.557mm" ver = "03" gw = "498" gh = "665"/>
+</figure>
+<figure>
+<graphic graphicname = "IBP70AA80003S.swf" width = "183.000mm" height = "222.079mm" ver = "02" gw = "498" gh = "613"/>
+</figure>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

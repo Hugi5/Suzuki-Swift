@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "1A">
+<servcat sctnbr = "01" scnbr = "01">
+<configtype typenbr = "0">
+<servinfotype sitcode = "1">
+<servinfo servinfosgmlid = "AENBP70A1101003" svcinfotypenbr = "03" svcinfoqualnbr = "01" page = "2" supplyoff = "1" modify = "1">
+<title>
+OBD System Description
+</title>
+<servinfosub id = "AENBP70A1101003010">
+<title>
+Discrimination for OBD System
+</title>
+<ptxt>
+There are three types of OBD system, type A, B and C, in accordance with the regulation of each country.
+</ptxt>
+<ptxt>
+For discrimination of market code, refer to 
+<intxref refid = "AENBP70A0101010">Identification Plate</intxref>
+.
+</ptxt>
+<spec>
+<title>
+Vehicle equipped with the OBD system of Type A:
+</title>
+<ptxt>
+Market code E06, E24, E38 and E71
+</ptxt>
+</spec>
+<spec>
+<title>
+Vehicle equipped with the OBD system of Type B:
+</title>
+<ptxt>
+Market code E35
+</ptxt>
+</spec>
+<spec>
+<title>
+Vehicle equipped with the OBD system of Type C:
+</title>
+<ptxt>
+Market code E05, E10, E30, E43 and E96
+</ptxt>
+</spec>
+<table frame = "all" colsep = "1" rowsep = "1">
+<title>
+OBD system summary table
+</title>
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.460in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.000in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.000in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Type A and B
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Type C
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Freeze frame data
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+System readiness test
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Not available
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+SUZUKI scan tool (SUZUKI- SDT)
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+CAN communication OBD generic scan tool
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Available
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Not available
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003014">
+<title>
+General Description (Type A and B)
+</title>
+<ptxt>
+The ECM has the following functions.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+When ignition is ON with the engine at a stop, the ECM turns on the MIL (1) to check the circuit of the MIL.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When ECM detects a malfunction which gives an adverse effect to vehicle emission while the engine is running, ECM makes the MIL in the combination meter of the instrument panel turn on or blink (blinking only when detecting a misfire which can cause damage to the catalyst) and stores the malfunction area in its memory.
+</ptxt>
+<ptxt>
+(If ECM detects a malfunction only in the first driving cycle (refer to 
+<intxref refid = "AENBP70A1101003002">Driving Cycle</intxref>
+) but does not detect the same malfunction in the next 2 consecutive driving cycles, ECM does not turn on MIL although it retains the associated DTC in its memory.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+For some malfunctions, ECM adopts the 2 (type B) or 3 (type A) driving cycle detection logic (refer to 
+<intxref refid = "AENBP70A1101003016">2 Driving Cycle Detection Logic</intxref>
+or 
+<intxref refid = "AENBP70A1101003003">3 Driving Cycle Detection Logic</intxref>
+) to prevent erroneous detection. 
+</ptxt>
+<ptxt>
+With this logic, MIL is turned on when the same malfunction is detected in 3 consecutive driving cycles.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When a malfunction is detected, engine and driving conditions at the moment the malfunction was detected are stored in ECM memory as freeze frame data. (For the details, refer to description on 
+<intxref refid = "AENBP70A1101003007">Freeze frame data clearance:</intxref>
+.)
+</ptxt>
+</item>
+<item>
+<ptxt>
+Not only SUZUKI scan tool (2) but also CAN communication OBD generic scan tool can communicate with ECM via DLC (3). (Diagnostic information can be accessed using a scan tool.)
+</ptxt>
+</item>
+</list1>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003015">
+<title>
+General Description (Type C)
+</title>
+<ptxt>
+ECM diagnoses troubles which may occur in the engine and emission control system when ignition is ON and the engine is running, and indicates the result by turning on MIL (1). ECM and MIL operate as follows.
+</ptxt>
+<list1 type = "unordered">
+<item>
+<ptxt>
+MIL lights when ignition is ON with the engine at a stop regardless of the condition of Engine and Emission control system. This is only to check MIL in the combination meter and its circuit.
+</ptxt>
+</item>
+<item>
+<ptxt>
+If the engine and emission control system is free from any troubles, the ECM turns off the MIL several seconds after the engine starts.
+</ptxt>
+</item>
+<item>
+<ptxt>
+When ECM detects a trouble which has occurred in the engine and emission control system, it makes MIL turn ON while the engine is running to warn the driver of such occurrence of trouble and at the same time it stores the trouble area in ECM memory. (The memory is kept as it is even if the trouble was only temporary and disappeared immediately. And it is not erased unless it is cleared by SUZUKI scan tool (2).)
+</ptxt>
+<ptxt>
+For further detail of the checking / clearing procedure, refer to 
+<intxref refid = "AENBP70A1104003">DTC Check</intxref>
+ or 
+<intxref refid = "AENBP70A1104004">DTC Clearance</intxref>
+.
+</ptxt>
+</item>
+<item>
+<ptxt>
+SUZUKI scan tool (2) can communicate with ECM via DLC (3).
+</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname = "IBP60B110001.jpg" width = "88.000mm" height = "126.685mm" ver = "01" gw = "205" gh = "343"/>
+</figure>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003001">
+<title>
+Warm-Up Cycle
+</title>
+<ptxt>
+A “Warm-Up Cycle” means sufficient vehicle operation such that the coolant temperature has risen by at least 22 &#176;C (40 &#176;F) from engine starting and reaches a minimum temperature of at least 70 &#176;C (160 &#176;F).
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003002">
+<title>
+Driving Cycle
+</title>
+<ptxt>
+A “Driving Cycle” is a duration from an engine startup to the following engine shutoff.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003016">
+<title>
+2 Driving Cycle Detection Logic
+</title>
+<ptxt>
+The malfunction detected in the first driving cycle is stored in ECM memory (in the form of pending DTC) but MIL does not light at this time. ECM causes the MIL to light up when it detects second time the same malfunction in the next driving cycle.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003003">
+<title>
+3 Driving Cycle Detection Logic
+</title>
+<ptxt>
+The malfunction detected in the first driving cycle is stored in ECM memory (in the form of pending DTC) but MIL does not light at this time. ECM causes the MIL to light up when it detects third time the same malfunction in the next two driving cycles.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003004">
+<title>
+Pending DTC
+</title>
+<ptxt>
+“Pending DTC” is relevant to those DTCs to which the 2 (type B) or 3 (type A and C) driving cycle detection logic is applied. If such a DTC is detected and stored temporarily during the first of three consecutive driving cycles, the DTC is called pending DTC.
+</ptxt>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003005">
+<title>
+Freeze Frame Data
+</title>
+<ptxt>
+ECM stores the engine and driving conditions at the moment of the detection of a malfunction in its memory. This data is called “Freeze Frame Data”.
+</ptxt>
+<ptxt>
+Therefore, it is possible to know engine and driving conditions (e.g., whether the engine was warm or not, whether the vehicle was running or stopped, whether air/fuel mixture was lean or rich) when a malfunction was detected by checking the freeze frame data. Also, ECM has a function to store each freeze frame data for three different malfunctions in the order of their detection. Utilizing this function, it is possible to know the order of detection of these malfunctions. If facilitates recheck and diagnosis of a trouble.
+</ptxt>
+<ptxt>
+For details of freeze data that can be read from ECM, refer to the table below.
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "1" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "2.101in"/>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+DTC
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Fuel System
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Calculated Load
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+ECT
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Short Term Fuel Trim
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Long Term Fuel Trim
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Engine Speed
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Vehicle Speed
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Ignition Advance
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Intake Air Temperature
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+MAF
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute TP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Time Since Engine Start
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+EVAP Canist Prg Duty
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Fuel Tank Level
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Barometric Pres
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Battery Voltage
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Relative TP**
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute TP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute APP 1*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Absolute APP 2*
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle">
+<ptxt>
+Target Throt Pos
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+Freeze frame data with asterisk (*) indicates the ratio of the output voltage to the power supply voltage of related sensor.
+</ptxt>
+<ptxt>
+When power supply voltage is 5.0 V and output voltage is 4.0 V, freeze frame data is displayed as follows.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+For systems where the output is proportional to the input voltage, it displays 80% (= the percent of maximum input reference voltage).
+</ptxt>
+</item>
+<item>
+<ptxt>
+For systems where the output is inversely proportional to the input voltage, it displays 20% (=100% minus the percent of maximum input reference voltage).
+</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type = "unordered">
+<item>
+<ptxt>
+For relative TP with asterisks (**) in above table, it indicates value calculated by formula ((output voltage – output voltage at closed throttle position) / power supply voltage).
+</ptxt>
+<ptxt>
+When power supply voltage is 5.0 V and output voltage at closed throttle position is 1.0 V, freeze frame data is displayed as follows.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+At closed throttle position (output voltage = 1.0 V), it displays 0%.
+</ptxt>
+</item>
+<item>
+<ptxt>
+At wide open throttle position (output voltage = 4.0 V), it displays 60%.
+</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>
+However, for systems where the output is inversely proportional to the input voltage, it displays 100% minus above mentioned formula.
+</ptxt>
+</attention3>
+<figure>
+<title>
+Freeze frame data (for example)
+</title>
+<graphic graphicname = "I9R90A111029.swf" width = "88.000mm" height = "76.570mm" ver = "01" gw = "149" gh = "201"/>
+</figure>
+<topic id = "AENBP70A1101003006" page = "1">
+<title>
+Priority of freeze frame data:
+</title>
+<ptxt>
+ECM has 4 frames where freeze frame data can be stored.
+</ptxt>
+<ptxt>
+Frame 1 is a special frame where freeze frame data concerning emission-affecting malfunction has priority over data related to other (general) malfunctions. If any emission-affecting malfunction is detected while Frame 1 is holding a data related to general malfunctions (priority “2” data in the following table), then the currently stored data is replaced by the data concerning the newly detected malfunction (priority “1” data in the following table).
+</ptxt>
+<table frame = "all" colsep = "1" rowsep = "1">
+<tgroup cols = "2" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "0.787in"/>
+<colspec colnum = "2" colname = "2" colwidth = "6.417in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Priority
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Freeze frame data in Frame 1
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+1
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Data concerning any of the following malfunctions: Misfire Detected (P0300 – P0304), System Too Lean (P0171) and System Too Rich (P0172)
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+2
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "top" align = "left">
+<ptxt>
+Data concerning malfunctions other than the above.
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+Frames 2 to 4 are assigned to general malfunctions. They individually store the freeze frame data for 3 different general malfunctions in the order of detection (i.e., Frame 2 stores the data for the first detected malfunction and Frame 4 the data for the last detected malfunction). Unlike the Frame 1 data, the data in these 3 frames are not updated, so freeze frame data for any malfunction detected subsequently are not stored anywhere.
+</ptxt>
+<figure>
+<graphic graphicname = "I7V10A111002.swf" width = "183.000mm" height = "49.215mm" ver = "01" gw = "464" gh = "123"/>
+</figure>
+<ptxt>
+—: No freeze frame data
+</ptxt>
+</topic>
+<topic id = "AENBP70A1101003007" page = "1">
+<title>
+Freeze frame data clearance:
+</title>
+<ptxt>
+When a DTC is cleared, the freeze frame data for the malfunction represented by this DTC is also cleared.
+</ptxt>
+</topic>
+</servinfosub>
+<servinfosub id = "AENBP70A1101003008" page = "1">
+<title>
+System Readiness Test (Type A and B)
+</title>
+<ptxt>
+The system readiness test is performed for the purpose of confirming that each of the exhaust-emission-related systems fulfills the conditions that allow ECM to detect a malfunction if it occurs and to set the corresponding DTC.
+</ptxt>
+<ptxt>
+The test is carried out by monitoring the specific items (components) using a scan tool (SUZUKI scan tool or CAN communication OBD generic scan tool). When the test shows that the conditions pre-established for the tested system are met, ECM performs an on-board diagnosis of the system, changes the status of the system readiness test from “Incomplete” to “Complete”, and causes the “Complete” status to be displayed on the scan tool.
+</ptxt>
+<ptxt>
+The “Complete” status is maintained until DTC clearance operation is performed using the scan tool.
+</ptxt>
+<attention3>
+<list1 type = "unordered">
+<item>
+<ptxt>
+The system readiness test status may change from “Complete” to “Incomplete” if any of the following service operations is performed.
+</ptxt>
+</item>
+<list2 type = "unordered">
+<item>
+<ptxt>
+Disconnection of battery negative (–) cable
+</ptxt>
+</item>
+<item>
+<ptxt>
+Disconnection of ECM connectors
+</ptxt>
+</item>
+<item>
+<ptxt>
+Removal of ECM ground cable
+</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>
+The items (components) indicated in the table below are monitored in the system readiness test to confirm the readiness for detecting the DTCs listed beside each monitoring item.
+</ptxt>
+</item>
+<item>
+<ptxt>
+The “Complete” or “Incomplete” status identified through the system readiness test does NOT mean the “Normal” or “Abnormal” result of the on-board diagnosis.
+</ptxt>
+</item>
+</list1>
+</attention3>
+<topic id = "AENBP70A1101003009">
+<title>
+Monitoring item of system readiness test
+</title>
+<table frame = "all" colsep = "1" rowsep = "1">
+<title>
+Type A:
+</title>
+<tgroup cols = "4" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<colspec colnum = "4" colname = "4" colwidth = "1.145in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Monitoring item
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC related to monitoring item
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Catalyst
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+O2 Sensor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2270
+</ptxt>
+</entry>
+<entry colname = "4" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame = "all" colsep = "1" rowsep = "1">
+<title>
+Type B:
+</title>
+<tgroup cols = "3" colsep = "1" rowsep = "1">
+<colspec colnum = "1" colname = "1" colwidth = "1.850in"/>
+<colspec colnum = "2" colname = "2" colwidth = "1.181in"/>
+<colspec colnum = "3" colname = "3" colwidth = "1.136in"/>
+<thead>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+Monitoring item
+</ptxt>
+</entry>
+<entry namest = "2" nameend = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1">
+<ptxt>
+DTC related to monitoring item
+</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row rowsep = "1">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+Catalyst
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0420
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+—
+</ptxt>
+</entry>
+</row>
+<row rowsep = "0">
+<entry colname = "1" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+O2 Sensor
+</ptxt>
+</entry>
+<entry colname = "2" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P0133
+</ptxt>
+</entry>
+<entry colname = "3" border-top = "1" border-bottom = "1" border-left = "1" border-right = "1" valign = "middle" align = "center">
+<ptxt>
+P2271
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</topic>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

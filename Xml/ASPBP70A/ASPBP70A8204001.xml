@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "8B">
+<servcat sctnbr = "08" scnbr = "02">
+<configtype typenbr = "0">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ASPBP70A8204001" svcinfotypenbr = "06" svcinfoqualnbr = "01" supplyoff = "1" modify = "0">
+<title>
+Inspección del sistema de diagnóstico del airbag
+</title>
+<ptxt>
+Consulte 
+<intxref refid = "ASPBP70A8200001">Medidas de precaución para el mantenimiento del sistema de airbag</intxref>
+ y compruebe el sistema de airbag según el procedimiento siguiente.
+</ptxt>
+<servinfosub id = "ASPBP70A8204001001">
+<title>
+Tabla de inspección del sistema de diagnóstico del airbag
+</title>
+<diag type = "test" id = "ASPBP70A8204001002">
+<testgroup id = "ASPBP70A8204001003">
+<title>
+Verificación de DTC
+</title>
+<test1>
+<ptxt>
+Compruebe el DTC refiriéndose a 
+<intxref refid = "ASPBP70A8204005">Comprobación del DTC</intxref>
+.
+</ptxt>
+<paragroup>
+<attention3>
+<ptxt>
+Si no se puede establecer la comunicación entre la herramienta de escaneado SUZUKI y el vehículo, lleve a cabo &#34;Comprobación del DLC y su comunicación (sin comunicación con el SDM)&#34;.
+</ptxt>
+</attention3>
+</paragroup>
+</test1>
+<test1>
+<ptxt>
+Borre el DTC como se indica en 
+<intxref refid = "ASPBP70A8204006">Borrado de DTC</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Aparece algún DTC al volver a realizar la comprobación?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Vaya a la localización de averías del DTC correspondiente y, después, al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 2.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A8204001004">
+<title>
+Inspección visual
+</title>
+<test1>
+<ptxt>
+Efectúe la inspección visual (consulte 
+<intxref refid = "ASPBP70A8204002">Inspección visual</intxref>
+).
+</ptxt>
+</test1>
+<question>
+¿Existen anomalías?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repare o sustituya la pieza defectuosa y vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A8204001005">
+<title>
+Inspección de signos de impacto
+</title>
+<test1>
+<ptxt>
+Compruebe los signos de impacto en el vehículo.
+</ptxt>
+</test1>
+<question>
+¿Hay algún signo de impacto?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Inspeccione las conexiones defectuosas y sustitúyalas según las instrucciones de 
+<intxref refid = "ASPBP70A8204054">Inspecciones y reparaciones necesarias después de un accidente</intxref>
+, y vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A8204001006">
+<title>
+Inspección de problemas intermitentes
+</title>
+<test1>
+<ptxt>
+Compruebe si hay problemas intermitentes; para ello, consulte 
+<intxref refid = "ASPBP70A0006002">Inspección de conexión intermitente y contacto deficiente</intxref>
+.
+</ptxt>
+</test1>
+<question>
+¿Existen anomalías?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Repare o sustituya la pieza defectuosa y vaya al paso 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Vaya al paso 5.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ASPBP70A8204001007">
+<title>
+Prueba de confirmación final
+</title>
+<test1>
+<ptxt>
+Confirme si el síntoma del problema ha desaparecido y que el sistema de airbag no presenta ninguna anomalía. Si la reparación realizada está relacionada con el DTC, bórrelo una vez, y compruebe que no aparece ningún DTC.
+</ptxt>
+</test1>
+<question>
+¿Vuelve a producirse la avería?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Regrese al paso 1.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Fin de la inspección.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfosub>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>

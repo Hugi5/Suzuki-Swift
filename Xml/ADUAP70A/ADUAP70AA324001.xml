@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><?xml-stylesheet type="text/xsl" href="..\config8\suzuki.xsl" ?><!DOCTYPE suzuki [<!ENTITY % sdatacharaents SYSTEM "..\config8\sdatacharaents.txt">%sdatacharaents;]><suzuki><manual>
+<section sectnbr = "10C">
+<servcat sctnbr = "10" scnbr = "03">
+<configtype typenbr = "2">
+<servinfotype sitcode = "4">
+<servinfo servinfosgmlid = "ADUAP70AA324001" svcinfotypenbr = "06" svcinfoqualnbr = "01" page = "1" supplyoff = "1" modify = "0">
+<title>
+Regelsysteemcontrole van de startblokkering
+</title>
+<diag type = "test" id = "ADUAP70AA324001001">
+<testgroup id = "ADUAP70AA324001003">
+<title>
+Controle ontsteking ingeschakeld
+</title>
+<test1>
+<ptxt>
+Schakel de ontsteking in
+</ptxt>
+</test1>
+<test1>
+<ptxt>
+Druk het koppelingspedaal in.
+</ptxt>
+</test1>
+<question>
+Gaan het ON-controlelichtje en PUSH-controlelichtje branden?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 2.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70AA504001">Controle van het startsysteem met afstandsbediening</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70AA324001004">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Controleer de DTC. 
+<intxreftitleoff1 refid = "ADUAP70AA324003"><img src = "..\icon\intxreftitleoff.gif"/></intxreftitleoff1>
+</ptxt>
+</test1>
+<question>
+Zijn er DTC&#39;s?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar storingzoeken voor de betrokken DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar stap 3.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70AA324001006">
+<title>
+DTC-controle
+</title>
+<test1>
+<ptxt>
+Controleer DTC met betrekking tot CAN-communicatie.
+</ptxt>
+</test1>
+<question>
+Zijn er CAN-DTC&#39;s waargenomen?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar storingzoeken voor de betrokken DTC.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar stap 4.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70AA324001005">
+<question>
+Draait de motor rond?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Ga naar stap 5.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1904001">Diagnose van symptomen van startsysteem</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+<testgroup id = "ADUAP70AA324001002">
+<title>
+Controle van het starten van de motor
+</title>
+<question>
+Start de motor?
+</question>
+<result type = "yes"/>
+<action>
+<ptxt>
+Het regelsysteem van de startblokkering is in orde.
+</ptxt>
+</action>
+<result type = "no"/>
+<action>
+<ptxt>
+Ga naar 
+<intxref refid = "ADUAP70A1104009">Basisonderzoek van de motor</intxref>
+.
+</ptxt>
+</action>
+</testgroup>
+</diag>
+</servinfo>
+</servinfotype>
+</configtype>
+</servcat>
+</section></manual></suzuki>
